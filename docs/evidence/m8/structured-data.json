@@ -1,0 +1,22 @@
+{
+  "result": "passed",
+  "slug": "abo-0050b24a441bc1f887d6",
+  "product_json_ld": {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Bàn Rivet — CT-355C",
+    "description": "Bàn trong bộ dữ liệu Amazon Berkeley Objects. Ảnh chụp và tên gốc liên kết theo mã B072ZLCB3M. Màu theo nguồn: nâu. Giá và hạn mức đặt thử của HoodooMart được mô phỏng riêng; không phải chào bán hay tồn kho Amazon.",
+    "sku": "abo-0050b24a441bc1f887d6",
+    "additionalProperty": [
+      {
+        "@type": "PropertyValue",
+        "name": "Giá đặt thử mô phỏng",
+        "value": 1290000,
+        "unitText": "VND"
+      }
+    ]
+  },
+  "trial_controls_visible": true,
+  "missing_product_http": 404,
+  "scope": "Actual Chrome after final build; demo price is not a merchant Offer"
+}

@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "D:\PTTKHT WEB ecommerce\data_pipeline\abo.py", line 384, in <module>
+    main()
+    ~~~~^^
+  File "D:\PTTKHT WEB ecommerce\data_pipeline\abo.py", line 376, in main
+    asyncio.run(import_catalog(args.action == "dry-run")),
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 721, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "D:\PTTKHT WEB ecommerce\apps\api\app\infrastructure\real_catalog.py", line 309, in import_catalog
+    validate_manifest(manifest)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "D:\PTTKHT WEB ecommerce\apps\api\app\infrastructure\real_catalog.py", line 51, in validate_manifest
+    raise ValueError("Source is a sample/replacement, not the mapped whole product")
+ValueError: Source is a sample/replacement, not the mapped whole product

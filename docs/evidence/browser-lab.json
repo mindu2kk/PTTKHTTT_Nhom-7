@@ -1,0 +1,445 @@
+{
+  "scope": "Two unthrottled local Chrome navigations, Docker production frontend; lab only, no field percentile claim",
+  "samples": [
+    {
+      "width": 1440,
+      "lcp_ms": 376,
+      "cls": 0,
+      "overflow": false,
+      "interaction_events": [
+        {
+          "id": 2105,
+          "duration": 32,
+          "name": "keydown"
+        },
+        {
+          "id": 2105,
+          "duration": 32,
+          "name": "keypress"
+        },
+        {
+          "id": 2112,
+          "duration": 24,
+          "name": "keydown"
+        },
+        {
+          "id": 2112,
+          "duration": 24,
+          "name": "keypress"
+        },
+        {
+          "id": 2126,
+          "duration": 16,
+          "name": "keydown"
+        },
+        {
+          "id": 2126,
+          "duration": 16,
+          "name": "keypress"
+        },
+        {
+          "id": 2133,
+          "duration": 16,
+          "name": "keydown"
+        },
+        {
+          "id": 2133,
+          "duration": 16,
+          "name": "keypress"
+        },
+        {
+          "id": 2147,
+          "duration": 16,
+          "name": "keydown"
+        },
+        {
+          "id": 2147,
+          "duration": 16,
+          "name": "keypress"
+        },
+        {
+          "id": 2154,
+          "duration": 16,
+          "name": "keydown"
+        },
+        {
+          "id": 2154,
+          "duration": 16,
+          "name": "keypress"
+        },
+        {
+          "id": 2161,
+          "duration": 24,
+          "name": "keydown"
+        },
+        {
+          "id": 2161,
+          "duration": 24,
+          "name": "keypress"
+        },
+        {
+          "id": 2175,
+          "duration": 16,
+          "name": "keydown"
+        },
+        {
+          "id": 2175,
+          "duration": 16,
+          "name": "keypress"
+        },
+        {
+          "id": 2182,
+          "duration": 24,
+          "name": "keydown"
+        },
+        {
+          "id": 2182,
+          "duration": 24,
+          "name": "keypress"
+        },
+        {
+          "id": 2196,
+          "duration": 16,
+          "name": "keydown"
+        },
+        {
+          "id": 2196,
+          "duration": 16,
+          "name": "keypress"
+        },
+        {
+          "id": 2203,
+          "duration": 16,
+          "name": "keydown"
+        },
+        {
+          "id": 2203,
+          "duration": 16,
+          "name": "keypress"
+        },
+        {
+          "id": 2224,
+          "duration": 16,
+          "name": "keydown"
+        },
+        {
+          "id": 2224,
+          "duration": 16,
+          "name": "keypress"
+        },
+        {
+          "id": 2238,
+          "duration": 24,
+          "name": "keydown"
+        },
+        {
+          "id": 2238,
+          "duration": 24,
+          "name": "keypress"
+        },
+        {
+          "id": 2245,
+          "duration": 16,
+          "name": "keydown"
+        },
+        {
+          "id": 2245,
+          "duration": 16,
+          "name": "keypress"
+        },
+        {
+          "id": 2252,
+          "duration": 16,
+          "name": "keydown"
+        },
+        {
+          "id": 2252,
+          "duration": 16,
+          "name": "keypress"
+        },
+        {
+          "id": 2259,
+          "duration": 24,
+          "name": "keydown"
+        },
+        {
+          "id": 2259,
+          "duration": 24,
+          "name": "keypress"
+        },
+        {
+          "id": 2273,
+          "duration": 16,
+          "name": "keydown"
+        },
+        {
+          "id": 2273,
+          "duration": 16,
+          "name": "keypress"
+        },
+        {
+          "id": 2280,
+          "duration": 32,
+          "name": "keydown"
+        },
+        {
+          "id": 2280,
+          "duration": 32,
+          "name": "keypress"
+        },
+        {
+          "id": 2287,
+          "duration": 24,
+          "name": "keydown"
+        },
+        {
+          "id": 2287,
+          "duration": 24,
+          "name": "keypress"
+        },
+        {
+          "id": 2301,
+          "duration": 40,
+          "name": "keydown"
+        }
+      ],
+      "inp_lab_candidate_ms": 40,
+      "inp_scope": "One short real typing/focus journey, <50 interactions: largest observed EventTiming duration (16ms reporting threshold). Lab candidate only, not field/representative INP. null means no >=16ms entry observed."
+    },
+    {
+      "width": 360,
+      "lcp_ms": 256,
+      "cls": 0,
+      "overflow": false,
+      "interaction_events": [
+        {
+          "id": 5915,
+          "duration": 24,
+          "name": "keydown"
+        },
+        {
+          "id": 5915,
+          "duration": 24,
+          "name": "keypress"
+        },
+        {
+          "id": 5922,
+          "duration": 24,
+          "name": "keydown"
+        },
+        {
+          "id": 5922,
+          "duration": 24,
+          "name": "keypress"
+        },
+        {
+          "id": 5936,
+          "duration": 16,
+          "name": "keydown"
+        },
+        {
+          "id": 5936,
+          "duration": 16,
+          "name": "keypress"
+        },
+        {
+          "id": 5943,
+          "duration": 24,
+          "name": "keydown"
+        },
+        {
+          "id": 5943,
+          "duration": 24,
+          "name": "keypress"
+        },
+        {
+          "id": 5964,
+          "duration": 48,
+          "name": "keydown"
+        },
+        {
+          "id": 5964,
+          "duration": 48,
+          "name": "keypress"
+        },
+        {
+          "id": 5971,
+          "duration": 24,
+          "name": "keydown"
+        },
+        {
+          "id": 5971,
+          "duration": 24,
+          "name": "keypress"
+        },
+        {
+          "id": 5978,
+          "duration": 16,
+          "name": "keydown"
+        },
+        {
+          "id": 5978,
+          "duration": 16,
+          "name": "keypress"
+        },
+        {
+          "id": 5985,
+          "duration": 16,
+          "name": "keydown"
+        },
+        {
+          "id": 5985,
+          "duration": 16,
+          "name": "keypress"
+        },
+        {
+          "id": 5992,
+          "duration": 24,
+          "name": "keydown"
+        },
+        {
+          "id": 5992,
+          "duration": 24,
+          "name": "keypress"
+        },
+        {
+          "id": 5999,
+          "duration": 24,
+          "name": "keydown"
+        },
+        {
+          "id": 5999,
+          "duration": 24,
+          "name": "keypress"
+        },
+        {
+          "id": 6006,
+          "duration": 16,
+          "name": "keydown"
+        },
+        {
+          "id": 6006,
+          "duration": 16,
+          "name": "keypress"
+        },
+        {
+          "id": 6013,
+          "duration": 16,
+          "name": "keydown"
+        },
+        {
+          "id": 6013,
+          "duration": 16,
+          "name": "keypress"
+        },
+        {
+          "id": 6020,
+          "duration": 24,
+          "name": "keydown"
+        },
+        {
+          "id": 6020,
+          "duration": 24,
+          "name": "keypress"
+        },
+        {
+          "id": 6034,
+          "duration": 16,
+          "name": "keydown"
+        },
+        {
+          "id": 6034,
+          "duration": 16,
+          "name": "keypress"
+        },
+        {
+          "id": 6041,
+          "duration": 32,
+          "name": "keydown"
+        },
+        {
+          "id": 6041,
+          "duration": 32,
+          "name": "keypress"
+        },
+        {
+          "id": 6048,
+          "duration": 24,
+          "name": "keydown"
+        },
+        {
+          "id": 6048,
+          "duration": 24,
+          "name": "keypress"
+        },
+        {
+          "id": 6055,
+          "duration": 16,
+          "name": "keydown"
+        },
+        {
+          "id": 6055,
+          "duration": 16,
+          "name": "keypress"
+        },
+        {
+          "id": 6062,
+          "duration": 16,
+          "name": "keydown"
+        },
+        {
+          "id": 6062,
+          "duration": 16,
+          "name": "keypress"
+        },
+        {
+          "id": 6069,
+          "duration": 24,
+          "name": "keydown"
+        },
+        {
+          "id": 6069,
+          "duration": 24,
+          "name": "keypress"
+        },
+        {
+          "id": 6090,
+          "duration": 24,
+          "name": "keydown"
+        },
+        {
+          "id": 6090,
+          "duration": 24,
+          "name": "keypress"
+        },
+        {
+          "id": 6097,
+          "duration": 24,
+          "name": "keydown"
+        },
+        {
+          "id": 6097,
+          "duration": 24,
+          "name": "keypress"
+        },
+        {
+          "id": 6104,
+          "duration": 24,
+          "name": "keydown"
+        },
+        {
+          "id": 6104,
+          "duration": 24,
+          "name": "keypress"
+        },
+        {
+          "id": 6111,
+          "duration": 24,
+          "name": "keyup"
+        }
+      ],
+      "inp_lab_candidate_ms": 48,
+      "inp_scope": "One short real typing/focus journey, <50 interactions: largest observed EventTiming duration (16ms reporting threshold). Lab candidate only, not field/representative INP. null means no >=16ms entry observed."
+    }
+  ]
+}

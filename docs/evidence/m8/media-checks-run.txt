@@ -1,0 +1,19 @@
+{
+  "sample_id": "VIVOSDEV05_155",
+  "source": "VIVOS, Luong & Vu, CC-BY-NC-SA-4.0, private academic test only",
+  "duration_seconds": 2.375,
+  "sha256": "5cb872c64c9c1b14426c76dd9d03b705f17d7ff5a4b1c6564d272c263822b1d7",
+  "asr_http_ms": 5515.78,
+  "recognizer": "faster-whisper base int8 CPU",
+  "inference_ms": 3411.272,
+  "model_load_ms": 2185.151,
+  "wer": 0.14285714285714285,
+  "scope": "One real human nonshopping clip; confirms actual local ASR adapter. Not TC2 or a quality benchmark; no transcript/audio redistributed",
+  "guards": {
+    "corrupt_image": 422,
+    "corrupt_audio": 422,
+    "invalid_cart_cookie": 422,
+    "valid_nojs_cart": 303,
+    "actual_transcript_shared_voice_pipeline": 200
+  }
+}

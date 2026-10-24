@@ -1,0 +1,50 @@
+{
+  "checks": [
+    {
+      "check": "e2e_storefront",
+      "exit_code": 0,
+      "seconds": 13.935
+    },
+    {
+      "check": "e2e_text",
+      "exit_code": 0,
+      "seconds": 10.952
+    },
+    {
+      "check": "e2e_image",
+      "exit_code": 0,
+      "seconds": 42.728
+    },
+    {
+      "check": "e2e_voice",
+      "exit_code": 0,
+      "seconds": 16.582
+    },
+    {
+      "check": "e2e_ondevice",
+      "exit_code": 0,
+      "seconds": 8.195
+    },
+    {
+      "check": "e2e_recording",
+      "exit_code": 0,
+      "seconds": 11.682
+    },
+    {
+      "check": "e2e_commerce",
+      "exit_code": 0,
+      "seconds": 40.054
+    },
+    {
+      "check": "read_only_audit",
+      "exit_code": 0,
+      "seconds": 4.928
+    },
+    {
+      "check": "browser_lab",
+      "exit_code": 0,
+      "seconds": 12.826
+    }
+  ],
+  "scope": "Selected current Docker-stack regression; individual JSON evidence retains assertions and simulation labels"
+}

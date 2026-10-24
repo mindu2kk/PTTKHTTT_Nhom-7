@@ -1,0 +1,33 @@
+{
+  "result": "passed",
+  "encoder": "actual OpenCLIP ViT-B/32 CPU",
+  "query_fixture": "original held-out illustration; not a real photograph",
+  "top_three": [
+    {
+      "id": "navy-sweater",
+      "score": 0.7746
+    },
+    {
+      "id": "catalog-01",
+      "score": 0.7634
+    },
+    {
+      "id": "catalog-02",
+      "score": 0.7634
+    }
+  ],
+  "first_http_ms": 2800.551,
+  "repeated_http_p95_ms": 129.739,
+  "cache_note": "Repeats reuse sanitized-image embedding cache; first query runs model; not 10 uncached inference measurements",
+  "metadata": {
+    "sha256": "72ecf60e82d329cf8dedb0e992f747f89184c56380dd0ab6c00d03aa2e123e00",
+    "width": 640,
+    "height": 640,
+    "model_revision": "1a25a446712ba5ee05982a381eed697ef9b435cf",
+    "model_name": "OpenCLIP ViT-B/32",
+    "cached": true,
+    "temporary_only": true
+  },
+  "filtered_candidates": 3,
+  "bad_file_status": 422
+}

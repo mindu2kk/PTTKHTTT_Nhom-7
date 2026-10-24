@@ -1,0 +1,118 @@
+{
+  "scope": "Three human VIVOS clips with controlled noise + two synthetic mixed-language shopping utterances; no regional or population accuracy claim",
+  "vivos_source": "https://zenodo.org/records/7068130",
+  "authors": [
+    "Hieu-Thi Luong",
+    "Hai-Quan Vu"
+  ],
+  "license": "VIVOS-derived excerpts/audio: CC-BY-NC-SA-4.0, academic only; audio stays private",
+  "results": [
+    {
+      "id": "noise-VIVOSDEV05_155",
+      "kind": "VIVOS human waveform + generated Gaussian noise, nominal SNR10dB, seed42",
+      "reference": "nửa vòng trái đất hơn bảy năm",
+      "hypothesis": "Nửa vòng trai đất hơn 7 năm.",
+      "status": 200,
+      "wer": 0.2857142857142857,
+      "cer": 0.13793103448275862,
+      "http_ms": 3132.715,
+      "actual_query": {
+        "modality": "voice",
+        "raw_text": "Nửa vòng trai đất hơn 7 năm.",
+        "normalized_text": "nua vong trai dat hon 7 nam.",
+        "hard_filters": [
+          {
+            "key": "gender",
+            "value": "nam",
+            "origin": "explicit_text",
+            "confidence": 1.0,
+            "operator": "eq"
+          }
+        ],
+        "soft_preferences": [],
+        "relaxed_filters": []
+      }
+    },
+    {
+      "id": "noise-VIVOSDEV05_212",
+      "kind": "VIVOS human waveform + generated Gaussian noise, nominal SNR10dB, seed42",
+      "reference": "bốn chiếc trống đại phèng la",
+      "hypothesis": "4 chiếc trống đại tiền là",
+      "status": 200,
+      "wer": 0.5,
+      "cer": 0.2857142857142857,
+      "http_ms": 962.685,
+      "actual_query": {
+        "modality": "voice",
+        "raw_text": "4 chiếc trống đại tiền là",
+        "normalized_text": "4 chiec trong dai tien la",
+        "hard_filters": [],
+        "soft_preferences": [],
+        "relaxed_filters": []
+      }
+    },
+    {
+      "id": "noise-VIVOSDEV15_209",
+      "kind": "VIVOS human waveform + generated Gaussian noise, nominal SNR10dB, seed42",
+      "reference": "họ thích nghi với văn hóa công ty như thế nào",
+      "hypothesis": "Họt tình nghi với văn hòa công ty như thế nào?",
+      "status": 200,
+      "wer": 0.2727272727272727,
+      "cer": 0.1111111111111111,
+      "http_ms": 1114.496,
+      "actual_query": {
+        "modality": "voice",
+        "raw_text": "Họt tình nghi với văn hòa công ty như thế nào?",
+        "normalized_text": "hot tinh nghi voi van hoa cong ty nhu the nao",
+        "hard_filters": [],
+        "soft_preferences": [],
+        "relaxed_filters": []
+      }
+    },
+    {
+      "id": "stress-mixed-0",
+      "kind": "Synthetic eSpeak mixed English/product sizes/Vietnamese spoken price; not a human speaker",
+      "reference": "tôi muốn mua áo hoodie size XL dưới năm trăm k",
+      "hypothesis": "Bộ mỗi mỗi ál hoa bes ai si khe lo vui lòng chẳng cơ",
+      "status": 200,
+      "wer": 1.2727272727272727,
+      "cer": 0.7608695652173914,
+      "http_ms": 1081.639,
+      "actual_query": {
+        "modality": "voice",
+        "raw_text": "Bộ mỗi mỗi ál hoa bes ai si khe lo vui lòng chẳng cơ",
+        "normalized_text": "bo moi moi al hoa bes ai si khe lo vui long chang co",
+        "hard_filters": [],
+        "soft_preferences": [],
+        "relaxed_filters": []
+      }
+    },
+    {
+      "id": "stress-mixed-1",
+      "kind": "Synthetic eSpeak mixed English/product sizes/Vietnamese spoken price; not a human speaker",
+      "reference": "áo len nam size L dưới năm trăm nghìn",
+      "hypothesis": "lên hầm xài phê lo dưới lắm chăm in.",
+      "status": 200,
+      "wer": 0.8888888888888888,
+      "cer": 0.5675675675675675,
+      "http_ms": 1181.653,
+      "actual_query": {
+        "modality": "voice",
+        "raw_text": "lên hầm xài phê lo dưới lắm chăm in.",
+        "normalized_text": "len ham xai phe lo duoi lam cham in.",
+        "hard_filters": [
+          {
+            "key": "material",
+            "value": "len",
+            "origin": "explicit_text",
+            "confidence": 1.0,
+            "operator": "eq"
+          }
+        ],
+        "soft_preferences": [],
+        "relaxed_filters": []
+      }
+    }
+  ],
+  "limitations": "Tiny stress smoke sample, generated noise is not real ambient recording; synthetic size/English tests expose failures, not language capability proof"
+}

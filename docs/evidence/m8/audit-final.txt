@@ -1,0 +1,41 @@
+{
+  "stored_real_records": 321,
+  "published_products": 318,
+  "photos": 624,
+  "working_photos": 624,
+  "indexed_photos": 624,
+  "invalid": [],
+  "categories_by_level": {
+    "0": 4,
+    "1": 4,
+    "2": 19
+  },
+  "category_distribution": {
+    "Bàn": 10,
+    "Giày nam": 83,
+    "Giày nữ": 83,
+    "Bộ sạc": 19,
+    "Loa": 3,
+    "Tai nghe": 5,
+    "Ốp điện thoại": 30,
+    "Bàn phím": 4,
+    "Gối": 5,
+    "Ghế": 17,
+    "Thảm": 15,
+    "Ghế sofa": 13,
+    "Đèn bàn": 7,
+    "Dụng cụ nhà bếp": 8,
+    "Phụ kiện máy tính": 9,
+    "Máy pha cà phê": 1,
+    "Chuột máy tính": 1,
+    "Cốc": 4,
+    "Chảo": 1
+  },
+  "missing_brand": 16,
+  "missing_color": 57,
+  "missing_material": 189,
+  "source_prices_available": 0,
+  "merchant_stock_available": 0,
+  "offer_scope": "Separate simulated offer and trial capacity, not source stock",
+  "photo_bytes": 40076402
+}

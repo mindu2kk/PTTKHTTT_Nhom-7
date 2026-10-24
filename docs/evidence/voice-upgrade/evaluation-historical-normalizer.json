@@ -1,0 +1,7 @@
+{
+  "source": "docs/evidence/search-quality/asr-before.json",
+  "samples": 20,
+  "old_wer": 0.23923444976076555,
+  "new_primary_wer": 0.23923444976076555,
+  "note": "Scoring audit of stored hypotheses, no new ASR. Primary preserves numeric lexical differences; punctuation becomes separator and whitespace collapses."
+}

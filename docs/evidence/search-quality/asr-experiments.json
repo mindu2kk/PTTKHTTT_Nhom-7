@@ -1,0 +1,47 @@
+{
+  "measured_at": "2026-10-23T05:03:51.310577+00:00",
+  "selected": "original_decoder",
+  "reason": "No candidate improved both existing human-read and synthetic-shopping groups; experimental settings not deployed.",
+  "configurations": {
+    "long_prompt": {
+      "results": "asr-candidate.json",
+      "metrics": {
+        "synthetic_shopping": {
+          "before_wer": 0.8095238095238095,
+          "candidate_wer": 0.6904761904761905
+        },
+        "human_read": {
+          "before_wer": 0.23923444976076555,
+          "candidate_wer": 0.2727272727272727
+        }
+      }
+    },
+    "short_prompt": {
+      "results": "asr-short-candidate.json",
+      "metrics": {
+        "synthetic_shopping": {
+          "before_wer": 0.8095238095238095,
+          "candidate_wer": 0.7142857142857143
+        },
+        "human_read": {
+          "before_wer": 0.23923444976076555,
+          "candidate_wer": 0.2535885167464115
+        }
+      }
+    },
+    "beam5": {
+      "results": "asr-beam-candidate.json",
+      "metrics": {
+        "synthetic_shopping": {
+          "before_wer": 0.8095238095238095,
+          "candidate_wer": 1.619047619047619
+        },
+        "human_read": {
+          "before_wer": 0.23923444976076555,
+          "candidate_wer": 0.23444976076555024
+        }
+      }
+    }
+  },
+  "scope": "27 fixed audio files; not a human shopping/homophone acceptance benchmark; candidate timing not comparable to HTTP runtime."
+}

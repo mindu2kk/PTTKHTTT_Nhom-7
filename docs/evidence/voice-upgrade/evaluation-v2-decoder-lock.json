@@ -1,0 +1,18 @@
+{
+  "locked_at": "2026-10-23T13:42:27.654462+00:00",
+  "configuration_lock_sha256": "0f13b2fe78bead2ded4039a1377e19d161d38285e95b15a90c6fc00fd51e9361",
+  "shared_decoder_options": {
+    "language": "vi",
+    "beam_size": 3,
+    "best_of": 3,
+    "temperature": 0,
+    "condition_on_previous_text": false,
+    "vad_filter": false,
+    "max_new_tokens": 160,
+    "repetition_penalty": 1.1,
+    "no_repeat_ngram_size": 3
+  },
+  "baseline_without_timestamps": false,
+  "candidate_without_timestamps": true,
+  "scope": "Coordinator fixed all shared options before V2 inference; supplemental immutable record, original configuration lock remains unchanged."
+}

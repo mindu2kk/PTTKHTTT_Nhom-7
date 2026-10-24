@@ -1,0 +1,116 @@
+{
+  "platform": "Windows-11-10.0.26200-SP0",
+  "public_products": 3000,
+  "stored_products": 3005,
+  "source": "2950 clones of original CC0 fixture; not real merchant records",
+  "protocol": "native Windows API via HTTPX ASGITransport to actual Docker PostgreSQL; excludes TCP/HTTP server overhead",
+  "query_count": 204,
+  "qrels": "structured independent expected category/color/price oracles, not a human relevance study",
+  "runs": [
+    {
+      "concurrency": 1,
+      "success": 204,
+      "http_asgi_ms": {
+        "p50": 249.306,
+        "p90": 286.174,
+        "p95": 306.077,
+        "p99": 367.225
+      },
+      "service_ms": {
+        "p50": 238.994,
+        "p90": 276.115,
+        "p95": 295.163,
+        "p99": 351.653
+      },
+      "quality": {
+        "precision10": 1.0,
+        "recall10": 0.11349233833394098,
+        "ndcg10": 1.0,
+        "hard_filter_leaks": 0.0
+      }
+    },
+    {
+      "concurrency": 5,
+      "success": 204,
+      "http_asgi_ms": {
+        "p50": 390.391,
+        "p90": 548.618,
+        "p95": 603.14,
+        "p99": 684.953
+      },
+      "service_ms": {
+        "p50": 376.68,
+        "p90": 534.745,
+        "p95": 591.442,
+        "p99": 673.379
+      },
+      "quality": {
+        "precision10": 1.0,
+        "recall10": 0.11349233833394098,
+        "ndcg10": 1.0,
+        "hard_filter_leaks": 0.0
+      }
+    },
+    {
+      "concurrency": 10,
+      "success": 204,
+      "http_asgi_ms": {
+        "p50": 622.876,
+        "p90": 956.919,
+        "p95": 1065.353,
+        "p99": 1190.206
+      },
+      "service_ms": {
+        "p50": 589.457,
+        "p90": 944.806,
+        "p95": 1054.564,
+        "p99": 1181.29
+      },
+      "quality": {
+        "precision10": 1.0,
+        "recall10": 0.11349233833394098,
+        "ndcg10": 1.0,
+        "hard_filter_leaks": 0.0
+      }
+    }
+  ],
+  "grid_runs": [
+    {
+      "concurrency": 1,
+      "success": 100,
+      "http_asgi_ms": {
+        "p50": 255.252,
+        "p90": 341.254,
+        "p95": 372.937,
+        "p99": 483.662
+      }
+    },
+    {
+      "concurrency": 5,
+      "success": 100,
+      "http_asgi_ms": {
+        "p50": 336.563,
+        "p90": 372.511,
+        "p95": 386.611,
+        "p99": 422.425
+      }
+    },
+    {
+      "concurrency": 10,
+      "success": 100,
+      "http_asgi_ms": {
+        "p50": 519.946,
+        "p90": 656.285,
+        "p95": 750.811,
+        "p99": 930.273
+      }
+    }
+  ],
+  "failures": [],
+  "limitations": [
+    "Warm only; model inference excluded",
+    "No hybrid text embedding model",
+    "Reused images are scale fixtures, not image evaluation",
+    "Tiny repeated vocabulary is easier than a real catalog"
+  ]
+}

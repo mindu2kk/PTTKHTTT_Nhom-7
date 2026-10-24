@@ -1,0 +1,1108 @@
+{
+  "manifest": {
+    "source": "https://data.caltech.edu/records/mzrjq-6wc02",
+    "url": "https://data.caltech.edu/records/mzrjq-6wc02/files/caltech-101.zip?download=1",
+    "archive_md5": "3138e1922a9193bfa496528edbbc45d0",
+    "license": "CC-BY-4.0",
+    "authors": [
+      "Fei-Fei Li",
+      "Marco Andreetto",
+      "Marc Aurelio Ranzato",
+      "Pietro Perona"
+    ],
+    "use": "Academic private benchmark; no public store import",
+    "selection": "First 15 sorted files per chosen object class, first10 gallery/last5 query; exact bytes/IDs disjoint",
+    "samples": [
+      {
+        "id": "camera-image_0001",
+        "label": "camera",
+        "split": "gallery",
+        "archive_path": "101_ObjectCategories/camera/image_0001.jpg",
+        "sha256": "e5cbfef2298025638f11003e122a7b35ccfcefd00877a5037486fcb865a03042"
+      },
+      {
+        "id": "camera-image_0002",
+        "label": "camera",
+        "split": "gallery",
+        "archive_path": "101_ObjectCategories/camera/image_0002.jpg",
+        "sha256": "66f5d8a5cbcf626d7150343c8ac00415fdd1fd4257f1053b3b7eee67dc982180"
+      },
+      {
+        "id": "camera-image_0003",
+        "label": "camera",
+        "split": "gallery",
+        "archive_path": "101_ObjectCategories/camera/image_0003.jpg",
+        "sha256": "70a30a5cb631fb4db32eba464b81efc0d4655b7ee13c70c5a2275c1b52d6496a"
+      },
+      {
+        "id": "camera-image_0004",
+        "label": "camera",
+        "split": "gallery",
+        "archive_path": "101_ObjectCategories/camera/image_0004.jpg",
+        "sha256": "89f43c4ec9b2583cbc8c8defef1670f4a648cb6a6a1dc049d4cc7f234d02e669"
+      },
+      {
+        "id": "camera-image_0005",
+        "label": "camera",
+        "split": "gallery",
+        "archive_path": "101_ObjectCategories/camera/image_0005.jpg",
+        "sha256": "f3ba11400c0f6774dcd3930fd5665e38f0ca907e4e5feaf8c997499bb4421c31"
+      },
+      {
+        "id": "camera-image_0006",
+        "label": "camera",
+        "split": "gallery",
+        "archive_path": "101_ObjectCategories/camera/image_0006.jpg",
+        "sha256": "eaf1747d6e509f2d732477918b305e5196cd1d6a66257d364e46668a7d1466c1"
+      },
+      {
+        "id": "camera-image_0007",
+        "label": "camera",
+        "split": "gallery",
+        "archive_path": "101_ObjectCategories/camera/image_0007.jpg",
+        "sha256": "036460bed601d1f8999aefcc29d6c1b8ac65972583e7ff73756468535596d4d3"
+      },
+      {
+        "id": "camera-image_0008",
+        "label": "camera",
+        "split": "gallery",
+        "archive_path": "101_ObjectCategories/camera/image_0008.jpg",
+        "sha256": "ddd1d2da18995dea1056f6574372be0d63b714ec60b37b22f0d35061251c8b3b"
+      },
+      {
+        "id": "camera-image_0009",
+        "label": "camera",
+        "split": "gallery",
+        "archive_path": "101_ObjectCategories/camera/image_0009.jpg",
+        "sha256": "2d401b7aaa4aaccc5e8a6037a020e1c3b8283680ff1167fdac3c87d36d5b6aa6"
+      },
+      {
+        "id": "camera-image_0010",
+        "label": "camera",
+        "split": "gallery",
+        "archive_path": "101_ObjectCategories/camera/image_0010.jpg",
+        "sha256": "b997849c9229d2e9feee4ed746e5f5081c316351910f09a345dee704c648f7a4"
+      },
+      {
+        "id": "camera-image_0011",
+        "label": "camera",
+        "split": "query",
+        "archive_path": "101_ObjectCategories/camera/image_0011.jpg",
+        "sha256": "924addccd35975a07e6277eaab12e26cc14a9ac435a5e17625d8d4479bf07ae7"
+      },
+      {
+        "id": "camera-image_0012",
+        "label": "camera",
+        "split": "query",
+        "archive_path": "101_ObjectCategories/camera/image_0012.jpg",
+        "sha256": "226757b6bf0169a2bacdf515dc0eb0bb469c7fba6c5f3c0a24d6533cb4060cdb"
+      },
+      {
+        "id": "camera-image_0013",
+        "label": "camera",
+        "split": "query",
+        "archive_path": "101_ObjectCategories/camera/image_0013.jpg",
+        "sha256": "98b3ab73b43b025e68937e0af1625322f881b76948334b93906d172f783e6a52"
+      },
+      {
+        "id": "camera-image_0014",
+        "label": "camera",
+        "split": "query",
+        "archive_path": "101_ObjectCategories/camera/image_0014.jpg",
+        "sha256": "be1fee59ef18b7f9ea8e34585f488de84861f67de3bda943bc0de5001754d324"
+      },
+      {
+        "id": "camera-image_0015",
+        "label": "camera",
+        "split": "query",
+        "archive_path": "101_ObjectCategories/camera/image_0015.jpg",
+        "sha256": "d14ceb8b8524a0e306379ebe761a355bc4b9749bf0be2548db8b93c84a583823"
+      },
+      {
+        "id": "headphone-image_0001",
+        "label": "headphone",
+        "split": "gallery",
+        "archive_path": "101_ObjectCategories/headphone/image_0001.jpg",
+        "sha256": "d73a475438a996d4a3c6421677bf62c36f8e3cbf7f2f6bcfc08c3d0005c4551c"
+      },
+      {
+        "id": "headphone-image_0002",
+        "label": "headphone",
+        "split": "gallery",
+        "archive_path": "101_ObjectCategories/headphone/image_0002.jpg",
+        "sha256": "6b5085a4308f9930825d9652f1c70c0e3bdf67cbc24a274d2e41f91ad4cd4a1c"
+      },
+      {
+        "id": "headphone-image_0003",
+        "label": "headphone",
+        "split": "gallery",
+        "archive_path": "101_ObjectCategories/headphone/image_0003.jpg",
+        "sha256": "5d8ef7922c4c39bd84a46e278c91104c26e263d865b782d68a866f9eb1a228ea"
+      },
+      {
+        "id": "headphone-image_0004",
+        "label": "headphone",
+        "split": "gallery",
+        "archive_path": "101_ObjectCategories/headphone/image_0004.jpg",
+        "sha256": "473b4611fa1e4053ae9423e3fc808223841cc410edaf34b557a74db56be0d853"
+      },
+      {
+        "id": "headphone-image_0005",
+        "label": "headphone",
+        "split": "gallery",
+        "archive_path": "101_ObjectCategories/headphone/image_0005.jpg",
+        "sha256": "5bc045488741d2c82e38c111808312ea6128227a10209f4ae68ce4d914c67b8b"
+      },
+      {
+        "id": "headphone-image_0006",
+        "label": "headphone",
+        "split": "gallery",
+        "archive_path": "101_ObjectCategories/headphone/image_0006.jpg",
+        "sha256": "0b56392595e384fc81d40fbf1d8f05e6b603684f872dad5d6f086d4ecfd5bc95"
+      },
+      {
+        "id": "headphone-image_0007",
+        "label": "headphone",
+        "split": "gallery",
+        "archive_path": "101_ObjectCategories/headphone/image_0007.jpg",
+        "sha256": "4de7d0a591ec370430107bbc46ed5554fe4430208fe6d720af364bda1c0d4af4"
+      },
+      {
+        "id": "headphone-image_0008",
+        "label": "headphone",
+        "split": "gallery",
+        "archive_path": "101_ObjectCategories/headphone/image_0008.jpg",
+        "sha256": "7dc8089049f2d76462b8ee0261472b45cb6085e6d5a49e9d79eeebe7d5b25a42"
+      },
+      {
+        "id": "headphone-image_0009",
+        "label": "headphone",
+        "split": "gallery",
+        "archive_path": "101_ObjectCategories/headphone/image_0009.jpg",
+        "sha256": "333ffdab9970462c2899701a22759e8e29251ce20f8f6787fd5f6604d2a965d5"
+      },
+      {
+        "id": "headphone-image_0010",
+        "label": "headphone",
+        "split": "gallery",
+        "archive_path": "101_ObjectCategories/headphone/image_0010.jpg",
+        "sha256": "e8a5d3be6734d123370550883d6a2bd70147c08611eec0fc6de2a1a8f55259e3"
+      },
+      {
+        "id": "headphone-image_0011",
+        "label": "headphone",
+        "split": "query",
+        "archive_path": "101_ObjectCategories/headphone/image_0011.jpg",
+        "sha256": "e4b2a4343396c636f756f58bb5ff58f74b8b86db197e58a81d8cf7520bfad891"
+      },
+      {
+        "id": "headphone-image_0012",
+        "label": "headphone",
+        "split": "query",
+        "archive_path": "101_ObjectCategories/headphone/image_0012.jpg",
+        "sha256": "c22b958599b55b8dfa60901b84fa0125c0f4ef5258b3e113d13225b82ad9f13e"
+      },
+      {
+        "id": "headphone-image_0013",
+        "label": "headphone",
+        "split": "query",
+        "archive_path": "101_ObjectCategories/headphone/image_0013.jpg",
+        "sha256": "bc5c3d2b7e0bc8facad5e67017d0f025b471a288330d0bed7bae6ce96842a67b"
+      },
+      {
+        "id": "headphone-image_0014",
+        "label": "headphone",
+        "split": "query",
+        "archive_path": "101_ObjectCategories/headphone/image_0014.jpg",
+        "sha256": "7e2267cae55902167f5b4d595fe78ebeb627be98ce94ac88088343e7b2f07040"
+      },
+      {
+        "id": "headphone-image_0015",
+        "label": "headphone",
+        "split": "query",
+        "archive_path": "101_ObjectCategories/headphone/image_0015.jpg",
+        "sha256": "a223dc7b610348ab2836aaf99cfa4b92460e103b6b2949831107d70fbd1f1ebd"
+      },
+      {
+        "id": "laptop-image_0001",
+        "label": "laptop",
+        "split": "gallery",
+        "archive_path": "101_ObjectCategories/laptop/image_0001.jpg",
+        "sha256": "17bac0bd8704e8b195d8a593fc7f6e5b97a9747b42d316748ceaf8a3a5b49d42"
+      },
+      {
+        "id": "laptop-image_0002",
+        "label": "laptop",
+        "split": "gallery",
+        "archive_path": "101_ObjectCategories/laptop/image_0002.jpg",
+        "sha256": "f1e001568e0edc25b69bc3be1ba0318e8b6ce54761590cfac8f8779bdd5e3f60"
+      },
+      {
+        "id": "laptop-image_0003",
+        "label": "laptop",
+        "split": "gallery",
+        "archive_path": "101_ObjectCategories/laptop/image_0003.jpg",
+        "sha256": "65e3426200513571bd8967e39535270d0f0f9e08392af354223b102862c5171e"
+      },
+      {
+        "id": "laptop-image_0004",
+        "label": "laptop",
+        "split": "gallery",
+        "archive_path": "101_ObjectCategories/laptop/image_0004.jpg",
+        "sha256": "dd8884f7f4aab8dc055e278749bf5612fdf031cefb3085992c248e41ab6ce91a"
+      },
+      {
+        "id": "laptop-image_0005",
+        "label": "laptop",
+        "split": "gallery",
+        "archive_path": "101_ObjectCategories/laptop/image_0005.jpg",
+        "sha256": "78fd272345437d1322eedc52b749bc6588d1c5c4bcd419398666ad7e2ed649f0"
+      },
+      {
+        "id": "laptop-image_0006",
+        "label": "laptop",
+        "split": "gallery",
+        "archive_path": "101_ObjectCategories/laptop/image_0006.jpg",
+        "sha256": "889de209773bb6955863ec0fe4f54862f15c1d8506b15276673314983c8d45ff"
+      },
+      {
+        "id": "laptop-image_0007",
+        "label": "laptop",
+        "split": "gallery",
+        "archive_path": "101_ObjectCategories/laptop/image_0007.jpg",
+        "sha256": "353875cc3d9dbcd7d9a0010b15bfe38577dde688816ec39da601d9f929cfb86e"
+      },
+      {
+        "id": "laptop-image_0008",
+        "label": "laptop",
+        "split": "gallery",
+        "archive_path": "101_ObjectCategories/laptop/image_0008.jpg",
+        "sha256": "135716edbb11da52c4a7d1a25fb1b1462e7e242952eb385c608b67b34b4b7422"
+      },
+      {
+        "id": "laptop-image_0009",
+        "label": "laptop",
+        "split": "gallery",
+        "archive_path": "101_ObjectCategories/laptop/image_0009.jpg",
+        "sha256": "cf6f6d5afca26b2bc254da4eedf44fdd737d1226ed0c4f1e8c3be7ac542e3077"
+      },
+      {
+        "id": "laptop-image_0010",
+        "label": "laptop",
+        "split": "gallery",
+        "archive_path": "101_ObjectCategories/laptop/image_0010.jpg",
+        "sha256": "2446dc527af28231365e2686e40bb2fc7569b7b03842d2765d86cc50f46b777b"
+      },
+      {
+        "id": "laptop-image_0011",
+        "label": "laptop",
+        "split": "query",
+        "archive_path": "101_ObjectCategories/laptop/image_0011.jpg",
+        "sha256": "9cf97d9f472f95b85e2ffcbb65d39907ddd8c057792b604a96854088f5c62e3d"
+      },
+      {
+        "id": "laptop-image_0012",
+        "label": "laptop",
+        "split": "query",
+        "archive_path": "101_ObjectCategories/laptop/image_0012.jpg",
+        "sha256": "cf667e43dd1d42ca6990f27f8c0181c4dcbc7e2f95e6418f2851f01df2548e57"
+      },
+      {
+        "id": "laptop-image_0013",
+        "label": "laptop",
+        "split": "query",
+        "archive_path": "101_ObjectCategories/laptop/image_0013.jpg",
+        "sha256": "ad8e6a01c885de0638ade93f15344bbe9efae4606835adf3239462ee5e79f4c2"
+      },
+      {
+        "id": "laptop-image_0014",
+        "label": "laptop",
+        "split": "query",
+        "archive_path": "101_ObjectCategories/laptop/image_0014.jpg",
+        "sha256": "1a79b8fc5990989d0eccc6ad6ca049f47550aa856c06d28aec8f8170809239b5"
+      },
+      {
+        "id": "laptop-image_0015",
+        "label": "laptop",
+        "split": "query",
+        "archive_path": "101_ObjectCategories/laptop/image_0015.jpg",
+        "sha256": "1fd26ada5ac07710b7e3f4b5ed973772680ff4ce947fba318a9b55513deff1e2"
+      },
+      {
+        "id": "watch-image_0001",
+        "label": "watch",
+        "split": "gallery",
+        "archive_path": "101_ObjectCategories/watch/image_0001.jpg",
+        "sha256": "7aa0a96c4b5f4ec9c9d492dede07065e5bfd38d7d1a4efdbbdfd899677607167"
+      },
+      {
+        "id": "watch-image_0002",
+        "label": "watch",
+        "split": "gallery",
+        "archive_path": "101_ObjectCategories/watch/image_0002.jpg",
+        "sha256": "36217698bc25e4a1fb2bb53f3e8fc6a456cad96491bb8129c35a83f8f6bf3985"
+      },
+      {
+        "id": "watch-image_0003",
+        "label": "watch",
+        "split": "gallery",
+        "archive_path": "101_ObjectCategories/watch/image_0003.jpg",
+        "sha256": "63416ff9795ee8b2f4bf9b2b6d2bba5359ad5c07913d20d7fbe3e085887e9cc2"
+      },
+      {
+        "id": "watch-image_0004",
+        "label": "watch",
+        "split": "gallery",
+        "archive_path": "101_ObjectCategories/watch/image_0004.jpg",
+        "sha256": "3ff1f1f9ad34ca1e932cb5071d91c90d794cb44c8ed6d2454a06b696af274736"
+      },
+      {
+        "id": "watch-image_0005",
+        "label": "watch",
+        "split": "gallery",
+        "archive_path": "101_ObjectCategories/watch/image_0005.jpg",
+        "sha256": "2b971334d257ea764055c09cfc2b6e361b021ccd31f4c3f45b5428b12525d1be"
+      },
+      {
+        "id": "watch-image_0006",
+        "label": "watch",
+        "split": "gallery",
+        "archive_path": "101_ObjectCategories/watch/image_0006.jpg",
+        "sha256": "177dc69f2a89b0424fd6ecf1700b604b63035f05518aba38a8b3db5a96a8e99f"
+      },
+      {
+        "id": "watch-image_0007",
+        "label": "watch",
+        "split": "gallery",
+        "archive_path": "101_ObjectCategories/watch/image_0007.jpg",
+        "sha256": "dfc2abdbaa88fbce2bc31939d56b0d5d0dd6e498f15638815de0feda63cfd1ac"
+      },
+      {
+        "id": "watch-image_0008",
+        "label": "watch",
+        "split": "gallery",
+        "archive_path": "101_ObjectCategories/watch/image_0008.jpg",
+        "sha256": "7d9819015062c82ffdace9aebf8ac93a2481166884b9a8436a871b9e7b8e16f7"
+      },
+      {
+        "id": "watch-image_0009",
+        "label": "watch",
+        "split": "gallery",
+        "archive_path": "101_ObjectCategories/watch/image_0009.jpg",
+        "sha256": "d042bda52e036b0f5cebe59ab21bd7cf9491ac38e7702bddcc999da64b69e33c"
+      },
+      {
+        "id": "watch-image_0010",
+        "label": "watch",
+        "split": "gallery",
+        "archive_path": "101_ObjectCategories/watch/image_0010.jpg",
+        "sha256": "78dff1e6f72a364b5dc367a81544f635b67407c986fafc5be40fa7aaa31f6ab4"
+      },
+      {
+        "id": "watch-image_0011",
+        "label": "watch",
+        "split": "query",
+        "archive_path": "101_ObjectCategories/watch/image_0011.jpg",
+        "sha256": "8ad1dbf967cde7ae58a95862bcd6d2e0168a2932f9b9800ead0f2563947393ea"
+      },
+      {
+        "id": "watch-image_0012",
+        "label": "watch",
+        "split": "query",
+        "archive_path": "101_ObjectCategories/watch/image_0012.jpg",
+        "sha256": "db933f06591a59fd704fb328a003e80c7e565c2cae6694187c76928d4b6f2d00"
+      },
+      {
+        "id": "watch-image_0013",
+        "label": "watch",
+        "split": "query",
+        "archive_path": "101_ObjectCategories/watch/image_0013.jpg",
+        "sha256": "579a1077ed388286bacd617dc8ae772555693fa323aa02f4f8f8efddf7b5f839"
+      },
+      {
+        "id": "watch-image_0014",
+        "label": "watch",
+        "split": "query",
+        "archive_path": "101_ObjectCategories/watch/image_0014.jpg",
+        "sha256": "9d3ad423b093e1a3c445f82b1b0817677b1f3ee83df020fb8c7fec16a796bb82"
+      },
+      {
+        "id": "watch-image_0015",
+        "label": "watch",
+        "split": "query",
+        "archive_path": "101_ObjectCategories/watch/image_0015.jpg",
+        "sha256": "061731d999099b29d0293f60ed8bf3fdb1ffd66db2745bb09e54fe95bbf34fb1"
+      },
+      {
+        "id": "umbrella-image_0001",
+        "label": "umbrella",
+        "split": "gallery",
+        "archive_path": "101_ObjectCategories/umbrella/image_0001.jpg",
+        "sha256": "8c44679868e7ec0c783644e5ced299798ccdd20e6d1bf05f9c20bc4a01b184f3"
+      },
+      {
+        "id": "umbrella-image_0002",
+        "label": "umbrella",
+        "split": "gallery",
+        "archive_path": "101_ObjectCategories/umbrella/image_0002.jpg",
+        "sha256": "4f7c5208f11c224375e28f50e62e7d2685498c96ede4244f5daa25e44cf58c6d"
+      },
+      {
+        "id": "umbrella-image_0003",
+        "label": "umbrella",
+        "split": "gallery",
+        "archive_path": "101_ObjectCategories/umbrella/image_0003.jpg",
+        "sha256": "af5d3e988c147d5bcaf4965606617671b407aa48c6e1573be06245d2a84fcd9a"
+      },
+      {
+        "id": "umbrella-image_0004",
+        "label": "umbrella",
+        "split": "gallery",
+        "archive_path": "101_ObjectCategories/umbrella/image_0004.jpg",
+        "sha256": "dc941a8c576e239e46d071169e2dbf9268f994386e7555e07475c189db2b7f57"
+      },
+      {
+        "id": "umbrella-image_0005",
+        "label": "umbrella",
+        "split": "gallery",
+        "archive_path": "101_ObjectCategories/umbrella/image_0005.jpg",
+        "sha256": "4b4b0e266479e74edb17d41537ab0e76bb8bceb40c389b00b12e27cddfd11a09"
+      },
+      {
+        "id": "umbrella-image_0006",
+        "label": "umbrella",
+        "split": "gallery",
+        "archive_path": "101_ObjectCategories/umbrella/image_0006.jpg",
+        "sha256": "7be7ab817383a7c4af21340dde96dac3ef85551e1b96e178f9dfa21f32b00246"
+      },
+      {
+        "id": "umbrella-image_0007",
+        "label": "umbrella",
+        "split": "gallery",
+        "archive_path": "101_ObjectCategories/umbrella/image_0007.jpg",
+        "sha256": "2d96a1fd6bcd58cc57b813fda4113ac8ca8e4537425b6dccb278582202a7b3c8"
+      },
+      {
+        "id": "umbrella-image_0008",
+        "label": "umbrella",
+        "split": "gallery",
+        "archive_path": "101_ObjectCategories/umbrella/image_0008.jpg",
+        "sha256": "e894091fc1fc75ae82c877e17a06cbd02751713f80bdf1efc6e9a455c9fd2eff"
+      },
+      {
+        "id": "umbrella-image_0009",
+        "label": "umbrella",
+        "split": "gallery",
+        "archive_path": "101_ObjectCategories/umbrella/image_0009.jpg",
+        "sha256": "c53f8c3c72c777ef143e69ed2e082b6c827911936f24a4e98d304f0366ef239c"
+      },
+      {
+        "id": "umbrella-image_0010",
+        "label": "umbrella",
+        "split": "gallery",
+        "archive_path": "101_ObjectCategories/umbrella/image_0010.jpg",
+        "sha256": "cb8fa0314a20379fe336b5590d7c523a45359e486c8b23eaa73a6debe67abfed"
+      },
+      {
+        "id": "umbrella-image_0011",
+        "label": "umbrella",
+        "split": "query",
+        "archive_path": "101_ObjectCategories/umbrella/image_0011.jpg",
+        "sha256": "106253f8f95991d272190608be0fc6558388ff819f260f7319d94f219749da87"
+      },
+      {
+        "id": "umbrella-image_0012",
+        "label": "umbrella",
+        "split": "query",
+        "archive_path": "101_ObjectCategories/umbrella/image_0012.jpg",
+        "sha256": "d2ca57e9888d5800de0e179c9d62e6d1b7c16c186b9bbb7d22f32e28f8a473d1"
+      },
+      {
+        "id": "umbrella-image_0013",
+        "label": "umbrella",
+        "split": "query",
+        "archive_path": "101_ObjectCategories/umbrella/image_0013.jpg",
+        "sha256": "0bc4cc1444a916c33658c660434042455b4de2ccdc284f59bc57dc324547c30c"
+      },
+      {
+        "id": "umbrella-image_0014",
+        "label": "umbrella",
+        "split": "query",
+        "archive_path": "101_ObjectCategories/umbrella/image_0014.jpg",
+        "sha256": "48a700f283e508467adc1a64efd156f838d8267b5d436a78be430b1020842eaa"
+      },
+      {
+        "id": "umbrella-image_0015",
+        "label": "umbrella",
+        "split": "query",
+        "archive_path": "101_ObjectCategories/umbrella/image_0015.jpg",
+        "sha256": "8800f4339e228e7965187ea42e5515f225da941d4f72a1894d92491afb1e925f"
+      }
+    ]
+  },
+  "gallery": 50,
+  "held_out_queries": 25,
+  "qrels": "Original Caltech class labels; all10 gallery objects of same class relevant. Not same-SKU identity.",
+  "metrics": {
+    "hit1": 1.0,
+    "hit5": 1.0,
+    "hit10": 1.0,
+    "precision10": 0.872,
+    "recall10": 0.872,
+    "ndcg10": 0.9116
+  },
+  "uncached_encoder_p95_ms": 261.668,
+  "queries": [
+    {
+      "id": "camera-image_0011",
+      "label": "camera",
+      "top10": [
+        "camera-image_0003",
+        "camera-image_0001",
+        "camera-image_0007",
+        "camera-image_0002",
+        "camera-image_0004",
+        "camera-image_0006",
+        "watch-image_0008",
+        "camera-image_0009",
+        "camera-image_0010",
+        "laptop-image_0003"
+      ],
+      "hit1": 1,
+      "hit5": 1,
+      "hit10": 1,
+      "precision10": 0.8,
+      "recall10": 0.8,
+      "ndcg10": 0.8630152897016882
+    },
+    {
+      "id": "camera-image_0012",
+      "label": "camera",
+      "top10": [
+        "camera-image_0006",
+        "camera-image_0001",
+        "camera-image_0004",
+        "camera-image_0007",
+        "camera-image_0002",
+        "camera-image_0003",
+        "camera-image_0010",
+        "camera-image_0009",
+        "laptop-image_0006",
+        "laptop-image_0002"
+      ],
+      "hit1": 1,
+      "hit5": 1,
+      "hit10": 1,
+      "precision10": 0.8,
+      "recall10": 0.8,
+      "ndcg10": 0.8701249883466592
+    },
+    {
+      "id": "camera-image_0013",
+      "label": "camera",
+      "top10": [
+        "camera-image_0001",
+        "camera-image_0004",
+        "camera-image_0006",
+        "camera-image_0003",
+        "camera-image_0002",
+        "camera-image_0010",
+        "camera-image_0007",
+        "camera-image_0009",
+        "watch-image_0008",
+        "camera-image_0005"
+      ],
+      "hit1": 1,
+      "hit5": 1,
+      "hit10": 1,
+      "precision10": 0.9,
+      "recall10": 0.9,
+      "ndcg10": 0.933745776545611
+    },
+    {
+      "id": "camera-image_0014",
+      "label": "camera",
+      "top10": [
+        "camera-image_0002",
+        "camera-image_0001",
+        "camera-image_0006",
+        "camera-image_0007",
+        "camera-image_0004",
+        "camera-image_0003",
+        "camera-image_0010",
+        "watch-image_0008",
+        "laptop-image_0001",
+        "camera-image_0005"
+      ],
+      "hit1": 1,
+      "hit5": 1,
+      "hit10": 1,
+      "precision10": 0.8,
+      "recall10": 0.8,
+      "ndcg10": 0.8643145546088337
+    },
+    {
+      "id": "camera-image_0015",
+      "label": "camera",
+      "top10": [
+        "camera-image_0002",
+        "camera-image_0003",
+        "camera-image_0006",
+        "camera-image_0001",
+        "camera-image_0010",
+        "camera-image_0009",
+        "camera-image_0004",
+        "camera-image_0007",
+        "camera-image_0008",
+        "camera-image_0005"
+      ],
+      "hit1": 1,
+      "hit5": 1,
+      "hit10": 1,
+      "precision10": 1.0,
+      "recall10": 1.0,
+      "ndcg10": 1.0
+    },
+    {
+      "id": "headphone-image_0011",
+      "label": "headphone",
+      "top10": [
+        "headphone-image_0006",
+        "headphone-image_0001",
+        "headphone-image_0010",
+        "headphone-image_0003",
+        "headphone-image_0008",
+        "headphone-image_0009",
+        "headphone-image_0002",
+        "headphone-image_0004",
+        "watch-image_0008",
+        "watch-image_0004"
+      ],
+      "hit1": 1,
+      "hit5": 1,
+      "hit10": 1,
+      "precision10": 0.8,
+      "recall10": 0.8,
+      "ndcg10": 0.8701249883466592
+    },
+    {
+      "id": "headphone-image_0012",
+      "label": "headphone",
+      "top10": [
+        "headphone-image_0006",
+        "headphone-image_0010",
+        "headphone-image_0004",
+        "headphone-image_0001",
+        "headphone-image_0003",
+        "headphone-image_0008",
+        "headphone-image_0002",
+        "headphone-image_0007",
+        "headphone-image_0009",
+        "laptop-image_0003"
+      ],
+      "hit1": 1,
+      "hit5": 1,
+      "hit10": 1,
+      "precision10": 0.9,
+      "recall10": 0.9,
+      "ndcg10": 0.9363792118010481
+    },
+    {
+      "id": "headphone-image_0013",
+      "label": "headphone",
+      "top10": [
+        "headphone-image_0006",
+        "headphone-image_0003",
+        "watch-image_0008",
+        "watch-image_0007",
+        "headphone-image_0001",
+        "headphone-image_0009",
+        "headphone-image_0010",
+        "watch-image_0004",
+        "camera-image_0008",
+        "camera-image_0009"
+      ],
+      "hit1": 1,
+      "hit5": 1,
+      "hit10": 1,
+      "precision10": 0.5,
+      "recall10": 0.5,
+      "ndcg10": 0.5958595188912911
+    },
+    {
+      "id": "headphone-image_0014",
+      "label": "headphone",
+      "top10": [
+        "headphone-image_0004",
+        "headphone-image_0006",
+        "headphone-image_0008",
+        "headphone-image_0005",
+        "headphone-image_0001",
+        "headphone-image_0002",
+        "headphone-image_0003",
+        "headphone-image_0009",
+        "headphone-image_0010",
+        "headphone-image_0007"
+      ],
+      "hit1": 1,
+      "hit5": 1,
+      "hit10": 1,
+      "precision10": 1.0,
+      "recall10": 1.0,
+      "ndcg10": 1.0
+    },
+    {
+      "id": "headphone-image_0015",
+      "label": "headphone",
+      "top10": [
+        "headphone-image_0004",
+        "headphone-image_0010",
+        "headphone-image_0006",
+        "headphone-image_0009",
+        "headphone-image_0001",
+        "headphone-image_0003",
+        "headphone-image_0008",
+        "headphone-image_0002",
+        "laptop-image_0006",
+        "laptop-image_0001"
+      ],
+      "hit1": 1,
+      "hit5": 1,
+      "hit10": 1,
+      "precision10": 0.8,
+      "recall10": 0.8,
+      "ndcg10": 0.8701249883466592
+    },
+    {
+      "id": "laptop-image_0011",
+      "label": "laptop",
+      "top10": [
+        "laptop-image_0001",
+        "laptop-image_0004",
+        "laptop-image_0005",
+        "laptop-image_0006",
+        "laptop-image_0003",
+        "laptop-image_0002",
+        "laptop-image_0010",
+        "laptop-image_0008",
+        "laptop-image_0009",
+        "camera-image_0008"
+      ],
+      "hit1": 1,
+      "hit5": 1,
+      "hit10": 1,
+      "precision10": 0.9,
+      "recall10": 0.9,
+      "ndcg10": 0.9363792118010481
+    },
+    {
+      "id": "laptop-image_0012",
+      "label": "laptop",
+      "top10": [
+        "laptop-image_0006",
+        "laptop-image_0003",
+        "laptop-image_0001",
+        "laptop-image_0005",
+        "laptop-image_0010",
+        "laptop-image_0002",
+        "headphone-image_0004",
+        "laptop-image_0009",
+        "laptop-image_0004",
+        "camera-image_0007"
+      ],
+      "hit1": 1,
+      "hit5": 1,
+      "hit10": 1,
+      "precision10": 0.8,
+      "recall10": 0.8,
+      "ndcg10": 0.8630152897016882
+    },
+    {
+      "id": "laptop-image_0013",
+      "label": "laptop",
+      "top10": [
+        "laptop-image_0006",
+        "laptop-image_0003",
+        "laptop-image_0005",
+        "laptop-image_0008",
+        "laptop-image_0004",
+        "laptop-image_0002",
+        "laptop-image_0010",
+        "laptop-image_0001",
+        "laptop-image_0007",
+        "headphone-image_0010"
+      ],
+      "hit1": 1,
+      "hit5": 1,
+      "hit10": 1,
+      "precision10": 0.9,
+      "recall10": 0.9,
+      "ndcg10": 0.9363792118010481
+    },
+    {
+      "id": "laptop-image_0014",
+      "label": "laptop",
+      "top10": [
+        "laptop-image_0010",
+        "laptop-image_0001",
+        "laptop-image_0006",
+        "laptop-image_0008",
+        "laptop-image_0005",
+        "laptop-image_0002",
+        "laptop-image_0004",
+        "laptop-image_0003",
+        "laptop-image_0007",
+        "laptop-image_0009"
+      ],
+      "hit1": 1,
+      "hit5": 1,
+      "hit10": 1,
+      "precision10": 1.0,
+      "recall10": 1.0,
+      "ndcg10": 1.0
+    },
+    {
+      "id": "laptop-image_0015",
+      "label": "laptop",
+      "top10": [
+        "laptop-image_0005",
+        "laptop-image_0002",
+        "laptop-image_0008",
+        "laptop-image_0003",
+        "laptop-image_0010",
+        "laptop-image_0006",
+        "laptop-image_0001",
+        "laptop-image_0004",
+        "laptop-image_0007",
+        "laptop-image_0009"
+      ],
+      "hit1": 1,
+      "hit5": 1,
+      "hit10": 1,
+      "precision10": 1.0,
+      "recall10": 1.0,
+      "ndcg10": 1.0
+    },
+    {
+      "id": "watch-image_0011",
+      "label": "watch",
+      "top10": [
+        "watch-image_0002",
+        "watch-image_0006",
+        "watch-image_0003",
+        "watch-image_0004",
+        "watch-image_0010",
+        "watch-image_0005",
+        "watch-image_0007",
+        "laptop-image_0002",
+        "watch-image_0001",
+        "watch-image_0009"
+      ],
+      "hit1": 1,
+      "hit5": 1,
+      "hit10": 1,
+      "precision10": 0.9,
+      "recall10": 0.9,
+      "ndcg10": 0.9305687780632227
+    },
+    {
+      "id": "watch-image_0012",
+      "label": "watch",
+      "top10": [
+        "watch-image_0006",
+        "watch-image_0005",
+        "watch-image_0002",
+        "watch-image_0003",
+        "watch-image_0004",
+        "watch-image_0010",
+        "watch-image_0007",
+        "watch-image_0001",
+        "headphone-image_0006",
+        "watch-image_0008"
+      ],
+      "hit1": 1,
+      "hit5": 1,
+      "hit10": 1,
+      "precision10": 0.9,
+      "recall10": 0.9,
+      "ndcg10": 0.933745776545611
+    },
+    {
+      "id": "watch-image_0013",
+      "label": "watch",
+      "top10": [
+        "watch-image_0006",
+        "watch-image_0005",
+        "watch-image_0002",
+        "watch-image_0004",
+        "laptop-image_0002",
+        "watch-image_0007",
+        "watch-image_0003",
+        "watch-image_0010",
+        "watch-image_0009",
+        "watch-image_0008"
+      ],
+      "hit1": 1,
+      "hit5": 1,
+      "hit10": 1,
+      "precision10": 0.9,
+      "recall10": 0.9,
+      "ndcg10": 0.914856882358379
+    },
+    {
+      "id": "watch-image_0014",
+      "label": "watch",
+      "top10": [
+        "watch-image_0002",
+        "watch-image_0001",
+        "watch-image_0003",
+        "watch-image_0004",
+        "watch-image_0007",
+        "watch-image_0010",
+        "watch-image_0006",
+        "watch-image_0009",
+        "camera-image_0009",
+        "watch-image_0008"
+      ],
+      "hit1": 1,
+      "hit5": 1,
+      "hit10": 1,
+      "precision10": 0.9,
+      "recall10": 0.9,
+      "ndcg10": 0.933745776545611
+    },
+    {
+      "id": "watch-image_0015",
+      "label": "watch",
+      "top10": [
+        "watch-image_0006",
+        "watch-image_0003",
+        "watch-image_0002",
+        "watch-image_0004",
+        "watch-image_0007",
+        "watch-image_0010",
+        "watch-image_0005",
+        "watch-image_0001",
+        "watch-image_0009",
+        "watch-image_0008"
+      ],
+      "hit1": 1,
+      "hit5": 1,
+      "hit10": 1,
+      "precision10": 1.0,
+      "recall10": 1.0,
+      "ndcg10": 1.0
+    },
+    {
+      "id": "umbrella-image_0011",
+      "label": "umbrella",
+      "top10": [
+        "umbrella-image_0007",
+        "umbrella-image_0002",
+        "umbrella-image_0001",
+        "umbrella-image_0009",
+        "umbrella-image_0010",
+        "umbrella-image_0004",
+        "umbrella-image_0008",
+        "watch-image_0007",
+        "watch-image_0010",
+        "umbrella-image_0006"
+      ],
+      "hit1": 1,
+      "hit5": 1,
+      "hit10": 1,
+      "precision10": 0.8,
+      "recall10": 0.8,
+      "ndcg10": 0.8643145546088337
+    },
+    {
+      "id": "umbrella-image_0012",
+      "label": "umbrella",
+      "top10": [
+        "umbrella-image_0002",
+        "umbrella-image_0001",
+        "umbrella-image_0009",
+        "umbrella-image_0003",
+        "umbrella-image_0010",
+        "umbrella-image_0004",
+        "umbrella-image_0007",
+        "umbrella-image_0006",
+        "watch-image_0008",
+        "watch-image_0004"
+      ],
+      "hit1": 1,
+      "hit5": 1,
+      "hit10": 1,
+      "precision10": 0.8,
+      "recall10": 0.8,
+      "ndcg10": 0.8701249883466592
+    },
+    {
+      "id": "umbrella-image_0013",
+      "label": "umbrella",
+      "top10": [
+        "umbrella-image_0008",
+        "umbrella-image_0009",
+        "umbrella-image_0001",
+        "umbrella-image_0003",
+        "umbrella-image_0002",
+        "umbrella-image_0004",
+        "umbrella-image_0010",
+        "umbrella-image_0006",
+        "umbrella-image_0005",
+        "watch-image_0008"
+      ],
+      "hit1": 1,
+      "hit5": 1,
+      "hit10": 1,
+      "precision10": 0.9,
+      "recall10": 0.9,
+      "ndcg10": 0.9363792118010481
+    },
+    {
+      "id": "umbrella-image_0014",
+      "label": "umbrella",
+      "top10": [
+        "umbrella-image_0008",
+        "umbrella-image_0002",
+        "umbrella-image_0004",
+        "umbrella-image_0009",
+        "umbrella-image_0010",
+        "umbrella-image_0001",
+        "umbrella-image_0003",
+        "watch-image_0004",
+        "umbrella-image_0006",
+        "headphone-image_0003"
+      ],
+      "hit1": 1,
+      "hit5": 1,
+      "hit10": 1,
+      "precision10": 0.8,
+      "recall10": 0.8,
+      "ndcg10": 0.8669479898642709
+    },
+    {
+      "id": "umbrella-image_0015",
+      "label": "umbrella",
+      "top10": [
+        "umbrella-image_0002",
+        "umbrella-image_0009",
+        "umbrella-image_0001",
+        "umbrella-image_0010",
+        "umbrella-image_0004",
+        "umbrella-image_0007",
+        "umbrella-image_0006",
+        "umbrella-image_0003",
+        "umbrella-image_0008",
+        "umbrella-image_0005"
+      ],
+      "hit1": 1,
+      "hit5": 1,
+      "hit10": 1,
+      "precision10": 1.0,
+      "recall10": 1.0,
+      "ndcg10": 1.0
+    }
+  ],
+  "limitations": "Small natural object-image benchmark; not smartphone capture study, not fashion same-product retrieval, no camera-photo catalogue provenance claims."
+}

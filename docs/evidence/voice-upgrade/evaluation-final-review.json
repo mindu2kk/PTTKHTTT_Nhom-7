@@ -1,0 +1,276 @@
+{
+  "reviewed_at": "2026-10-23T13:49:48.634496+00:00",
+  "source_sha256": {
+    "evaluation-v2-base-fixed.json": "d69624c8f9fb88b905a8279b2adfbf9347de4639755430a8b781698308140de6",
+    "evaluation-v2-pho-text-int8.json": "fa62f232eb33b12c1a0351d7eca0af1ff1267003add7f3477e5cb092a50bc72f",
+    "evaluation-v2-paired.json": "c0607a27200dd107e88bdab7d70a5d4e7052859c80516823fa24b775e3dd010b",
+    "evaluation-base-fresh-fixed-heldout.json": "fbf68e5dc6e6852d281393a76f853119238da6cca07fae72ce16d31ca99aa78b",
+    "evaluation-pho-text-int8-heldout.json": "2a48447e5e1ce21b05f88742cfada73292fb3c8eca2beafb48de615d7ead64b3",
+    "evaluation-repeated-v1-paired.json": "929d052efb7c134795057f9dd3dd7201214aef9bf1bd12ed69eb63c2579a1fb4",
+    "evaluation-base-int8-development.json": "5a84043da6411f78f8c9921fa08400a70602dedb0ce5436a86900a2559712e73",
+    "evaluation-pho-text-int8-development.json": "c15e09ddbb52553374ff4c66e54fcc1a680a109e6a4a11302514c3c7fdd383e2",
+    "evaluation-v2-configuration-lock.json": "0f13b2fe78bead2ded4039a1377e19d161d38285e95b15a90c6fc00fd51e9361",
+    "evaluation-v2-decoder-lock.json": "c7f3e9645ab3cf565e22e6a5d87eacd5b2a7bf0647a7c17565fd54049535592e"
+  },
+  "selected_configuration": {
+    "asr_profile": "phowhisper-base",
+    "asr_without_timestamps": true
+  },
+  "shared_decoder_lock": {
+    "locked_at": "2026-10-23T13:42:27.654462+00:00",
+    "configuration_lock_sha256": "0f13b2fe78bead2ded4039a1377e19d161d38285e95b15a90c6fc00fd51e9361",
+    "shared_decoder_options": {
+      "language": "vi",
+      "beam_size": 3,
+      "best_of": 3,
+      "temperature": 0,
+      "condition_on_previous_text": false,
+      "vad_filter": false,
+      "max_new_tokens": 160,
+      "repetition_penalty": 1.1,
+      "no_repeat_ngram_size": 3
+    },
+    "baseline_without_timestamps": false,
+    "candidate_without_timestamps": true,
+    "scope": "Coordinator fixed all shared options before V2 inference; supplemental immutable record, original configuration lock remains unchanged."
+  },
+  "primary_v2": {
+    "scope": "New utterances,29VIVOS/19source speaker IDs, overlapping prior speakers; no new ViMD eligible",
+    "baseline": {
+      "samples": 29,
+      "speakers": 19,
+      "failed_samples": 0,
+      "wer": 0.3655913978494624,
+      "cer_including_spaces": 0.17552742616033756,
+      "utterance_exact_rate": 0.06896551724137931,
+      "wall_p50_ms": 1308.5888999921735,
+      "wall_p95_ms": 2369.5874999975786,
+      "observed_rss_peak_mib": 283.94,
+      "rss_scope": "worker RSS reported after each request; not sampled process peak",
+      "words": 279
+    },
+    "candidate": {
+      "samples": 29,
+      "speakers": 19,
+      "failed_samples": 0,
+      "wer": 0.07526881720430108,
+      "cer_including_spaces": 0.0379746835443038,
+      "utterance_exact_rate": 0.5517241379310345,
+      "wall_p50_ms": 1600.6902999943122,
+      "wall_p95_ms": 2207.6075000077253,
+      "observed_rss_peak_mib": 270.41,
+      "rss_scope": "worker RSS reported after each request; not sampled process peak",
+      "words": 279
+    },
+    "paired": {
+      "candidate_minus_baseline_wer": -0.2903225806451613,
+      "exact_improved_samples": 14,
+      "exact_regressed_samples": 0,
+      "fewer_errors_samples": 26,
+      "more_errors_samples": 0,
+      "speaker_cluster_bootstrap_95_percent_interval": [
+        -0.3673469387755102,
+        -0.24089635854341737
+      ],
+      "bootstrap_repeats": 2000,
+      "seed": 20261023,
+      "interpretation": "Negative favours candidate; read-speech corpus does not validate shopping or TC2"
+    },
+    "relative_wer_reduction": 0.7941176470588236,
+    "both_initial_requests": {
+      "baseline": {
+        "id": "vivos:VIVOSDEV05_155",
+        "wall_ms": 4330.597199994372,
+        "model_load_ms": 2949.539,
+        "rss_mib": 275.25,
+        "scope": "Repeated development warmup, not scored; process/OS cache coldness not forced"
+      },
+      "candidate": {
+        "id": "vivos:VIVOSDEV05_155",
+        "wall_ms": 4454.127400007565,
+        "model_load_ms": 3019.75,
+        "rss_mib": 267.34,
+        "scope": "Repeated development warmup, not scored; process/OS cache coldness not forced"
+      }
+    },
+    "asr_only_observed_rss_delta_mib": -13.529999999999973
+  },
+  "secondary_v1_repeated": {
+    "scope": "Reused original heldout after compatibility flag was selected; repeated validation, not a new blind test",
+    "baseline": {
+      "samples": 29,
+      "speakers": 29,
+      "failed_samples": 0,
+      "wer": 0.43783068783068785,
+      "cer_including_spaces": 0.24914569742155948,
+      "utterance_exact_rate": 0.0,
+      "wall_p50_ms": 4966.345,
+      "wall_p95_ms": 13415.229,
+      "observed_rss_peak_mib": 298.85,
+      "rss_scope": "worker RSS reported after each request; not sampled process peak",
+      "words": 756
+    },
+    "candidate": {
+      "samples": 29,
+      "speakers": 29,
+      "failed_samples": 0,
+      "wer": 0.2275132275132275,
+      "cer_including_spaces": 0.1475613544579062,
+      "utterance_exact_rate": 0.1724137931034483,
+      "wall_p50_ms": 2156.244,
+      "wall_p95_ms": 3293.13,
+      "observed_rss_peak_mib": 295.44,
+      "rss_scope": "worker RSS reported after each request; not sampled process peak",
+      "words": 756
+    },
+    "paired": {
+      "candidate_minus_baseline_wer": -0.21031746031746035,
+      "exact_improved_samples": 5,
+      "exact_regressed_samples": 0,
+      "fewer_errors_samples": 26,
+      "more_errors_samples": 1,
+      "speaker_cluster_bootstrap_95_percent_interval": [
+        -0.26492537313432835,
+        -0.1518987341772152
+      ],
+      "bootstrap_repeats": 2000,
+      "seed": 20261023,
+      "interpretation": "Negative favours candidate; read-speech corpus does not validate shopping or TC2"
+    },
+    "corpora": {
+      "vimd": {
+        "baseline": {
+          "samples": 20,
+          "speakers": 20,
+          "failed_samples": 0,
+          "wer": 0.45937961595273263,
+          "cer_including_spaces": 0.2655268667131891,
+          "utterance_exact_rate": 0.0,
+          "wall_p50_ms": 7481.1045,
+          "wall_p95_ms": 13415.229,
+          "observed_rss_peak_mib": 298.85,
+          "rss_scope": "worker RSS reported after each request; not sampled process peak",
+          "words": 677
+        },
+        "candidate": {
+          "samples": 20,
+          "speakers": 20,
+          "failed_samples": 0,
+          "wer": 0.24224519940915806,
+          "cer_including_spaces": 0.16050244242847173,
+          "utterance_exact_rate": 0.0,
+          "wall_p50_ms": 2285.1825,
+          "wall_p95_ms": 3293.13,
+          "observed_rss_peak_mib": 295.44,
+          "rss_scope": "worker RSS reported after each request; not sampled process peak",
+          "words": 677
+        }
+      },
+      "vivos": {
+        "baseline": {
+          "samples": 9,
+          "speakers": 9,
+          "failed_samples": 0,
+          "wer": 0.25316455696202533,
+          "cer_including_spaces": 0.11614730878186968,
+          "utterance_exact_rate": 0.0,
+          "wall_p50_ms": 2619.969,
+          "wall_p95_ms": 3542.767,
+          "observed_rss_peak_mib": 288.36,
+          "rss_scope": "worker RSS reported after each request; not sampled process peak",
+          "words": 79
+        },
+        "candidate": {
+          "samples": 9,
+          "speakers": 9,
+          "failed_samples": 0,
+          "wer": 0.10126582278481013,
+          "cer_including_spaces": 0.042492917847025496,
+          "utterance_exact_rate": 0.5555555555555556,
+          "wall_p50_ms": 1767.403,
+          "wall_p95_ms": 2186.226,
+          "observed_rss_peak_mib": 269.72,
+          "rss_scope": "worker RSS reported after each request; not sampled process peak",
+          "words": 79
+        }
+      }
+    },
+    "regressed_samples": [
+      {
+        "id": "vimd:70_0274",
+        "baseline_errors": 25,
+        "candidate_errors": 30,
+        "reference_words": 51
+      }
+    ]
+  },
+  "development_not_acceptance": {
+    "baseline": {
+      "vimd": {
+        "samples": 9,
+        "speakers": 8,
+        "failed_samples": 0,
+        "wer": 0.6196581196581197,
+        "cer_including_spaces": 0.37103174603174605,
+        "utterance_exact_rate": 0.0,
+        "wall_p50_ms": 3173.177,
+        "wall_p95_ms": 4666.194,
+        "observed_rss_peak_mib": 1245.38,
+        "rss_scope": "worker RSS reported after each request; not sampled process peak",
+        "words": 234
+      },
+      "vivos": {
+        "samples": 20,
+        "speakers": 10,
+        "failed_samples": 0,
+        "wer": 0.23923444976076555,
+        "cer_including_spaces": 0.12,
+        "utterance_exact_rate": 0.1,
+        "wall_p50_ms": 2094.0135,
+        "wall_p95_ms": 2900.915,
+        "observed_rss_peak_mib": 1244.66,
+        "rss_scope": "worker RSS reported after each request; not sampled process peak",
+        "words": 209
+      }
+    },
+    "candidate": {
+      "vimd": {
+        "samples": 9,
+        "speakers": 8,
+        "failed_samples": 0,
+        "wer": 0.37606837606837606,
+        "cer_including_spaces": 0.2261904761904762,
+        "utterance_exact_rate": 0.0,
+        "wall_p50_ms": 1597.927,
+        "wall_p95_ms": 2592.551,
+        "observed_rss_peak_mib": 286.81,
+        "rss_scope": "worker RSS reported after each request; not sampled process peak",
+        "words": 234
+      },
+      "vivos": {
+        "samples": 20,
+        "speakers": 10,
+        "failed_samples": 0,
+        "wer": 0.05263157894736842,
+        "cer_including_spaces": 0.025142857142857144,
+        "utterance_exact_rate": 0.6,
+        "wall_p50_ms": 1316.1695,
+        "wall_p95_ms": 1782.619,
+        "observed_rss_peak_mib": 275.47,
+        "rss_scope": "worker RSS reported after each request; not sampled process peak",
+        "words": 209
+      }
+    }
+  },
+  "observations": {
+    "primary_v2_wer_and_cer_lower": true,
+    "primary_v2_no_http_errors": true,
+    "secondary_each_corpus_wer_and_cer_lower": true
+  },
+  "limitations": [
+    "No shopping oracle, TC2, physical microphone/noise/mixed-English population validation; do not call all voice errors resolved.",
+    "V2 is utterance-disjoint, not speaker-independent; V1 repeated is already observed.",
+    "Post-response RSS is not process peak. V2 median wall time is higher for candidate; no universal speedup/SLA claim.",
+    "Configuration was fixed before V2; no new tuning on V2. Profile deployment remains coordinator decision."
+  ]
+}

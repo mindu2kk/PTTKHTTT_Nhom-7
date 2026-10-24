@@ -1,0 +1,9 @@
+All checks passed!
+84 files already formatted
+Success: no issues found in 35 source files
+No new upgrade operations detected.
+Separate test database ready (credentials hidden).
+........................................................................ [ 56%]
+.......................................................                  [100%]
+---- generated xml file: D:\PTTKHT WEB ecommerce\docs\evidence\pytest.xml -----
+127 passed in 49.43s

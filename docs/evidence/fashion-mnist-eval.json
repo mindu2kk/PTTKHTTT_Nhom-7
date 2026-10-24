@@ -1,0 +1,60 @@
+{
+  "manifest": {
+    "source": "https://github.com/zalandoresearch/fashion-mnist",
+    "license": "MIT",
+    "copyright": "Copyright 2017 Zalando SE",
+    "license_url": "https://raw.githubusercontent.com/zalandoresearch/fashion-mnist/master/LICENSE",
+    "purpose": "local research benchmark only; no merchant facts/price inferred",
+    "suitability": "28x28 grayscale product thumbnails; not smartphone photos; no color evaluation",
+    "files": [
+      {
+        "name": "train-images-idx3-ubyte.gz",
+        "md5": "8d4fb7e6c68d591d4c3dfef9ec88bf0d"
+      },
+      {
+        "name": "train-labels-idx1-ubyte.gz",
+        "md5": "25c81989df183df01b3e8a0aad5dffbe"
+      },
+      {
+        "name": "t10k-images-idx3-ubyte.gz",
+        "md5": "bef4ecab320f06d8554ea6380940ec79"
+      },
+      {
+        "name": "t10k-labels-idx1-ubyte.gz",
+        "md5": "bb300cfdad3c16e7a12a480ee83cd310"
+      }
+    ]
+  },
+  "gallery": 100,
+  "held_out_queries": 20,
+  "balanced_labels": 10,
+  "qrels": "Zalando class labels; relevant iff gallery/query share class; train/test IDs disjoint",
+  "metrics": {
+    "hit@1": 0.85,
+    "hit@5": 1.0,
+    "hit@10": 1.0,
+    "recall@1": 0.085,
+    "recall@5": 0.37,
+    "recall@10": 0.625
+  },
+  "ndcg@10": 0.6788,
+  "failure_examples": [
+    {
+      "id": "t10k-1",
+      "expected_label": 2,
+      "top1_label": 0
+    },
+    {
+      "id": "t10k-16",
+      "expected_label": 2,
+      "top1_label": 4
+    },
+    {
+      "id": "t10k-23",
+      "expected_label": 9,
+      "top1_label": 5
+    }
+  ],
+  "inference_p95_ms": 270.568,
+  "limits": "Thumbnail transfer benchmark, not end-to-end store retrieval or smartphone robustness; class labels do not identify the same product"
+}

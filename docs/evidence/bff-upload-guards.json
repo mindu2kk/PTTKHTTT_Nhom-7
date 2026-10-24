@@ -1,0 +1,31 @@
+{
+  "result": "passed",
+  "protocol": "Actual raw HTTP/1.1 against Docker Next BFF; unterminated chunked bodies, no API mocks",
+  "oversize": {
+    "path": "/cart/add",
+    "status": 413,
+    "elapsed_seconds": 0.023,
+    "finished_body": true
+  },
+  "invalid_guest_cart_shapes_quantities_duplicates": [
+    422,
+    422,
+    422,
+    422
+  ],
+  "valid_no_javascript_cart": 303,
+  "stalled": [
+    {
+      "path": "/api/v1/search/image",
+      "status": 408,
+      "elapsed_seconds": 15.009,
+      "finished_body": false
+    },
+    {
+      "path": "/cart/add",
+      "status": 408,
+      "elapsed_seconds": 15.013,
+      "finished_body": false
+    }
+  ]
+}

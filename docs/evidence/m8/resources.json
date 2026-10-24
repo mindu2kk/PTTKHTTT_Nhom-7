@@ -1,0 +1,49 @@
+{
+  "scope": "End-of-run container memory/CPU snapshot; not peak RSS or power benchmark",
+  "containers": [
+    {
+      "BlockIO": "0B / 0B",
+      "CPUPerc": "38.94%",
+      "Container": "f43d4229c51455ba5b89d4f12f98b01ee52adf8b7d2353de145a42d0f42844be",
+      "ID": "f43d4229c514",
+      "MemPerc": "0.99%",
+      "MemUsage": "77.42MiB / 7.621GiB",
+      "Name": "hoodoomart-api-1",
+      "NetIO": "110kB / 121kB",
+      "PIDs": "9"
+    },
+    {
+      "BlockIO": "0B / 0B",
+      "CPUPerc": "0.13%",
+      "Container": "9ec0b9a13d6da4fb1c05f4decff974ab6d952d8726e498d54de448b08d49b360",
+      "ID": "9ec0b9a13d6d",
+      "MemPerc": "1.31%",
+      "MemUsage": "102.6MiB / 7.621GiB",
+      "Name": "hoodoomart-web-1",
+      "NetIO": "9.96MB / 14.8MB",
+      "PIDs": "11"
+    },
+    {
+      "BlockIO": "90.8MB / 8.19kB",
+      "CPUPerc": "0.23%",
+      "Container": "4be01b3a7a49b39079f1b745b7b8dd336c9455617b269c294ee55023a0ff1987",
+      "ID": "4be01b3a7a49",
+      "MemPerc": "36.02%",
+      "MemUsage": "1.081GiB / 3GiB",
+      "Name": "hoodoomart-inference-1",
+      "NetIO": "26MB / 284kB",
+      "PIDs": "16"
+    },
+    {
+      "BlockIO": "86.3MB / 20.2MB",
+      "CPUPerc": "8.50%",
+      "Container": "0937a8503e519279d1d700ef452f95261793e01ef85876039d4d28bbbdce1fff",
+      "ID": "0937a8503e51",
+      "MemPerc": "0.97%",
+      "MemUsage": "75.75MiB / 7.621GiB",
+      "Name": "hoodoomart-postgres-1",
+      "NetIO": "12.2MB / 59.2MB",
+      "PIDs": "7"
+    }
+  ]
+}

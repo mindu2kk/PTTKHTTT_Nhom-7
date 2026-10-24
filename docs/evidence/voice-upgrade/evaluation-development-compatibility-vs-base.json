@@ -1,0 +1,79 @@
+{
+  "baseline": "base-int8",
+  "candidate": "pho-text-int8",
+  "split": "development",
+  "frozen_manifest_sha256": "3359fdba3972a190c1e063510a1258a8540f16ebe180cb520aab166540d870d9",
+  "primary_normalizer": "nfc-lower-punctuation-to-space-collapse-v1",
+  "baseline_summary": {
+    "samples": 29,
+    "speakers": 18,
+    "failed_samples": 0,
+    "wer": 0.4401805869074492,
+    "cer_including_spaces": 0.2543813064259161,
+    "utterance_exact_rate": 0.06896551724137931,
+    "wall_p50_ms": 2320.954,
+    "wall_p95_ms": 4271.952,
+    "observed_rss_peak_mib": 1245.38,
+    "rss_scope": "worker RSS reported after each request; not sampled process peak",
+    "words": 443
+  },
+  "candidate_summary": {
+    "samples": 29,
+    "speakers": 18,
+    "failed_samples": 0,
+    "wer": 0.2234762979683973,
+    "cer_including_spaces": 0.1327668613913967,
+    "utterance_exact_rate": 0.41379310344827586,
+    "wall_p50_ms": 1424.017,
+    "wall_p95_ms": 2050.907,
+    "observed_rss_peak_mib": 286.81,
+    "rss_scope": "worker RSS reported after each request; not sampled process peak",
+    "words": 443
+  },
+  "paired": {
+    "candidate_minus_baseline_wer": -0.21670428893905191,
+    "exact_improved_samples": 10,
+    "exact_regressed_samples": 0,
+    "fewer_errors_samples": 26,
+    "more_errors_samples": 1,
+    "speaker_cluster_bootstrap_95_percent_interval": [
+      -0.2897196261682243,
+      -0.14782608695652175
+    ],
+    "bootstrap_repeats": 2000,
+    "seed": 20261023,
+    "interpretation": "Negative favours candidate; read-speech corpus does not validate shopping or TC2"
+  },
+  "corpora": {
+    "vimd": {
+      "candidate_minus_baseline_wer": -0.2435897435897436,
+      "exact_improved_samples": 0,
+      "exact_regressed_samples": 0,
+      "fewer_errors_samples": 8,
+      "more_errors_samples": 1,
+      "speaker_cluster_bootstrap_95_percent_interval": [
+        -0.36909871244635195,
+        -0.11406844106463879
+      ],
+      "bootstrap_repeats": 2000,
+      "seed": 20261023,
+      "interpretation": "Negative favours candidate; read-speech corpus does not validate shopping or TC2"
+    },
+    "vivos": {
+      "candidate_minus_baseline_wer": -0.18660287081339713,
+      "exact_improved_samples": 10,
+      "exact_regressed_samples": 0,
+      "fewer_errors_samples": 18,
+      "more_errors_samples": 0,
+      "speaker_cluster_bootstrap_95_percent_interval": [
+        -0.24766355140186916,
+        -0.13366336633663367
+      ],
+      "bootstrap_repeats": 2000,
+      "seed": 20261023,
+      "interpretation": "Negative favours candidate; read-speech corpus does not validate shopping or TC2"
+    }
+  },
+  "regional_smoke": {},
+  "limitations": "No shopping/TC2 or physical microphone quality claim. No numeric-normalized intent metric: no labelled shopping corpus available. Initial warmup separate; requests serialized, no concurrency benchmark. Observed post-response RSS is not true process peak. Any failed sample scored as empty hypothesis."
+}

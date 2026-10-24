@@ -1,0 +1,10 @@
+{
+  "asset": "apps/web/public/images/campaign/hoodoomart-still-life-v1.png",
+  "sha256": "13cc355b92def7d3037dd0d2765eb5c96f37dfbde293f652c0cd303f9d125dde",
+  "width": 2179,
+  "height": 722,
+  "bytes": 2154201,
+  "generation_tool": "built-in image_gen",
+  "purpose": "Original decorative campaign illustration; not a catalog product image",
+  "prompt_document": "docs/HOME_CLEANUP.md"
+}

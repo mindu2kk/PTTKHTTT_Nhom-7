@@ -1,0 +1,9 @@
+{
+  "version": "2026-10-21-course-v2",
+  "source": "Manually authored demo correction from course slide page 53; not scraped",
+  "license": "CC0-1.0",
+  "updates": [
+    {"product_id": "bag-navy", "expected_original_vnd": 125000, "price_vnd": 99000},
+    {"product_id": "bag-beige", "expected_original_vnd": 145000, "price_vnd": 149000}
+  ]
+}

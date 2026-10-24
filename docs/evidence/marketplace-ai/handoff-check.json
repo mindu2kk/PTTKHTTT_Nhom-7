@@ -1,0 +1,12 @@
+{
+  "result": "passed",
+  "document_links": "valid",
+  "frontend_routes": [
+    "/",
+    "/assistant",
+    "/search/image",
+    "/search/voice"
+  ],
+  "chrome_new_groups": 8,
+  "chrome_regression_groups": 8
+}

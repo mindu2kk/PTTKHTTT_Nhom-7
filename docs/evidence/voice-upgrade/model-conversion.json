@@ -1,0 +1,50 @@
+{
+  "source": "vinai/PhoWhisper-base",
+  "source_revision": "7ebdb9e88f5cc5271fb88f4d642c82ff9388650e",
+  "source_weight_sha256": "910b9e8875497078efa83dc506ea7ee378e4e759a206ceecbf23e088aec9b9f8",
+  "license": "BSD-3-Clause",
+  "quantization": "int8",
+  "local_conversion": true,
+  "tool_versions": {
+    "ctranslate2": "4.8.3",
+    "transformers": "4.57.6",
+    "torch": "2.9.1+cpu"
+  },
+  "files": [
+    {
+      "file": "config.json",
+      "bytes": 2309,
+      "sha256": "56a6d8110d311f19c8f0471e562832c7527f146b567275bfca59fcf7c184da9a"
+    },
+    {
+      "file": "LICENSE",
+      "bytes": 1492,
+      "sha256": "6ba6977f0a21f70170fac152bb5d7ef9c136ee708007f49efb9a8729883b60cd"
+    },
+    {
+      "file": "model.bin",
+      "bytes": 76396677,
+      "sha256": "8b039b26e4e640942900d93f1094ee83a2d71c0245e398bc83b02494e868e588"
+    },
+    {
+      "file": "preprocessor_config.json",
+      "bytes": 339,
+      "sha256": "a6a76d28c93edb273669eb9e0b0636a2bddbb1272c3261e47b7ca6dfdbac1b8d"
+    },
+    {
+      "file": "README.md",
+      "bytes": 1021,
+      "sha256": "736bfe608f0cf60fd942fbf734b10e0df70659ab5b9504f8bf2e194365e0c0a1"
+    },
+    {
+      "file": "tokenizer.json",
+      "bytes": 2204003,
+      "sha256": "c218b12acbc2168cad951ae8a8c8d345df09dfa63b787214d4ac27762170fd7b"
+    },
+    {
+      "file": "vocabulary.json",
+      "bytes": 1068103,
+      "sha256": "5ad28279db5e546349708b9a74736e2c018737ac5a600f1048f1f26c99b85b47"
+    }
+  ]
+}

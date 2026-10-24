@@ -1,0 +1,85 @@
+.......................................FFFFF                             [100%]
+================================== FAILURES ===================================
+_ test_negated_price_direction_is_not_inverted[tai nghe kh\xf4ng d\u01b0\u1edbi n\u0103m tr\u0103m ngh\xecn-price_min-500000-gte] _
+
+phrase = 'tai nghe kh\xf4ng d\u01b0\u1edbi n\u0103m tr\u0103m ngh\xecn', key = 'price_min', value = 500000
+op = 'gte'
+
+    @pytest.mark.parametrize("phrase,key,value,op", [
+        ("tai nghe kh\xf4ng d\u01b0\u1edbi n\u0103m tr\u0103m ngh\xecn", "price_min", 500000, "gte"),
+        ("tai nghe \xedt nh\u1ea5t 200k", "price_min", 200000, "gte"),
+        ("tai nghe kh�ng tr�n 500k", "price_max", 500000, "lte"),
+    ])
+    def test_negated_price_direction_is_not_inverted(phrase, key, value, op):
+        constraints = {c.key: c for c in PARSER.parse(phrase).hard_filters}
+>       assert (constraints[key].value, constraints[key].operator) == (value, op)
+                ^^^^^^^^^^^^^^^^
+E       KeyError: 'price_min'
+
+apps\api\unit_tests\test_query_regressions.py:131: KeyError
+_ test_negated_price_direction_is_not_inverted[tai nghe \xedt nh\u1ea5t 200k-price_min-200000-gte] _
+
+phrase = 'tai nghe \xedt nh\u1ea5t 200k', key = 'price_min', value = 200000, op = 'gte'
+
+    @pytest.mark.parametrize("phrase,key,value,op", [
+        ("tai nghe kh\xf4ng d\u01b0\u1edbi n\u0103m tr\u0103m ngh\xecn", "price_min", 500000, "gte"),
+        ("tai nghe \xedt nh\u1ea5t 200k", "price_min", 200000, "gte"),
+        ("tai nghe kh�ng tr�n 500k", "price_max", 500000, "lte"),
+    ])
+    def test_negated_price_direction_is_not_inverted(phrase, key, value, op):
+        constraints = {c.key: c for c in PARSER.parse(phrase).hard_filters}
+>       assert (constraints[key].value, constraints[key].operator) == (value, op)
+                ^^^^^^^^^^^^^^^^
+E       KeyError: 'price_min'
+
+apps\api\unit_tests\test_query_regressions.py:131: KeyError
+_ test_negated_price_direction_is_not_inverted[tai nghe kh\xf4ng tr\xean 500k-price_max-500000-lte] _
+
+phrase = 'tai nghe kh�ng tr�n 500k', key = 'price_max', value = 500000
+op = 'lte'
+
+    @pytest.mark.parametrize("phrase,key,value,op", [
+        ("tai nghe kh\xf4ng d\u01b0\u1edbi n\u0103m tr\u0103m ngh\xecn", "price_min", 500000, "gte"),
+        ("tai nghe \xedt nh\u1ea5t 200k", "price_min", 200000, "gte"),
+        ("tai nghe kh�ng tr�n 500k", "price_max", 500000, "lte"),
+    ])
+    def test_negated_price_direction_is_not_inverted(phrase, key, value, op):
+        constraints = {c.key: c for c in PARSER.parse(phrase).hard_filters}
+>       assert (constraints[key].value, constraints[key].operator) == (value, op)
+                ^^^^^^^^^^^^^^^^
+E       KeyError: 'price_max'
+
+apps\api\unit_tests\test_query_regressions.py:131: KeyError
+_ test_spoken_price_range_keeps_both_boundaries[tai nghe t\u1eeb 200k \u0111\u1ebfn 500k] _
+
+phrase = 'tai nghe t\u1eeb 200k \u0111\u1ebfn 500k'
+
+    @pytest.mark.parametrize("phrase", ["tai nghe t\u1eeb 200k \u0111\u1ebfn 500k", "tai nghe t\u1eeb hai tr\u0103m ngh\xecn t\u1edbi n\u0103m tr\u0103m ngh\xecn"])
+    def test_spoken_price_range_keeps_both_boundaries(phrase):
+        constraints = {c.key: c for c in PARSER.parse(phrase).hard_filters}
+        assert (constraints["price_min"].value, constraints["price_min"].operator) == (200000, "gte")
+>       assert (constraints["price_max"].value, constraints["price_max"].operator) == (500000, "lte")
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+E       KeyError: 'price_max'
+
+apps\api\unit_tests\test_query_regressions.py:138: KeyError
+_ test_spoken_price_range_keeps_both_boundaries[tai nghe t\u1eeb hai tr\u0103m ngh\xecn t\u1edbi n\u0103m tr\u0103m ngh\xecn] _
+
+phrase = 'tai nghe t\u1eeb hai tr\u0103m ngh\xecn t\u1edbi n\u0103m tr\u0103m ngh\xecn'
+
+    @pytest.mark.parametrize("phrase", ["tai nghe t\u1eeb 200k \u0111\u1ebfn 500k", "tai nghe t\u1eeb hai tr\u0103m ngh\xecn t\u1edbi n\u0103m tr\u0103m ngh\xecn"])
+    def test_spoken_price_range_keeps_both_boundaries(phrase):
+        constraints = {c.key: c for c in PARSER.parse(phrase).hard_filters}
+        assert (constraints["price_min"].value, constraints["price_min"].operator) == (200000, "gte")
+>       assert (constraints["price_max"].value, constraints["price_max"].operator) == (500000, "lte")
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+E       KeyError: 'price_max'
+
+apps\api\unit_tests\test_query_regressions.py:138: KeyError
+=========================== short test summary info ===========================
+FAILED apps\api\unit_tests\test_query_regressions.py::test_negated_price_direction_is_not_inverted[tai nghe kh\xf4ng d\u01b0\u1edbi n\u0103m tr\u0103m ngh\xecn-price_min-500000-gte]
+FAILED apps\api\unit_tests\test_query_regressions.py::test_negated_price_direction_is_not_inverted[tai nghe \xedt nh\u1ea5t 200k-price_min-200000-gte]
+FAILED apps\api\unit_tests\test_query_regressions.py::test_negated_price_direction_is_not_inverted[tai nghe kh\xf4ng tr\xean 500k-price_max-500000-lte]
+FAILED apps\api\unit_tests\test_query_regressions.py::test_spoken_price_range_keeps_both_boundaries[tai nghe t\u1eeb 200k \u0111\u1ebfn 500k]
+FAILED apps\api\unit_tests\test_query_regressions.py::test_spoken_price_range_keeps_both_boundaries[tai nghe t\u1eeb hai tr\u0103m ngh\xecn t\u1edbi n\u0103m tr\u0103m ngh\xecn]
+5 failed, 39 passed in 0.44s

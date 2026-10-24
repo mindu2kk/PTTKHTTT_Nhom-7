@@ -1,0 +1,41 @@
+{
+  "result": "passed",
+  "elapsed_seconds": 55.011,
+  "results": [
+    {
+      "viewport": 360,
+      "home_and_keyboard_menu": "passed",
+      "overflow": false
+    },
+    {
+      "viewport": 390,
+      "home_and_keyboard_menu": "passed",
+      "overflow": false
+    },
+    {
+      "viewport": 768,
+      "home_and_keyboard_menu": "passed",
+      "overflow": false
+    },
+    {
+      "viewport": 1280,
+      "home_and_keyboard_menu": "passed",
+      "overflow": false
+    },
+    {
+      "viewport": 1440,
+      "home_and_keyboard_menu": "passed",
+      "overflow": false
+    },
+    {
+      "actual_visual_search_budget_context_compare_pagination_unknown_keyword": "passed"
+    },
+    {
+      "mobile_ai_no_overflow_and_voice_correction_handoff": "passed",
+      "scope": "Typed correction, not actual microphone/ASR acceptance"
+    },
+    {
+      "actual_registration_header_roles_logout_session": "passed"
+    }
+  ]
+}

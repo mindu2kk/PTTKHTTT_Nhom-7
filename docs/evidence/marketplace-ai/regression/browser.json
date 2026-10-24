@@ -1,0 +1,130 @@
+{
+  "result": "passed",
+  "results": [
+    {
+      "width": 360,
+      "home": "passed",
+      "suggestions_keyboard": "passed",
+      "filter_sort_pagination": "passed",
+      "overflow": false,
+      "page_errors": []
+    },
+    {
+      "width": 390,
+      "home": "passed",
+      "suggestions_keyboard": "passed",
+      "filter_sort_pagination": "passed",
+      "overflow": false,
+      "page_errors": []
+    },
+    {
+      "width": 768,
+      "home": "passed",
+      "suggestions_keyboard": "passed",
+      "filter_sort_pagination": "passed",
+      "overflow": false,
+      "page_errors": []
+    },
+    {
+      "width": 1280,
+      "home": "passed",
+      "suggestions_keyboard": "passed",
+      "filter_sort_pagination": "passed",
+      "overflow": false,
+      "page_errors": []
+    },
+    {
+      "width": 1440,
+      "home": "passed",
+      "suggestions_keyboard": "passed",
+      "filter_sort_pagination": "passed",
+      "overflow": false,
+      "page_errors": []
+    },
+    {
+      "gallery_zoom_cart_qty_remove_buy_now": "passed",
+      "real_registration_mock_checkout_owner_cancel": "passed",
+      "stock_restored": true,
+      "anonymous_order": 401,
+      "other_user_order": 404,
+      "cancelled_test_order": "HM8D17AD3ABBA143"
+    },
+    {
+      "editable_voice_common_search": "passed, typed correction only; not TC2 audio",
+      "real_image_upload_results_and_invalid_upload": "passed",
+      "empty_and_missing_product": "passed",
+      "page_errors": []
+    },
+    {
+      "management_real_catalog_explicit_read_only": "passed",
+      "temporary_test_role_revoked": true
+    }
+  ],
+  "measurements": [
+    {
+      "lcp": 616,
+      "cls": 0,
+      "events": [
+        {
+          "name": "keydown",
+          "duration": 24,
+          "id": 3097
+        }
+      ],
+      "width": 360,
+      "inp_candidate_ms": 24,
+      "scope": "Single local Chrome lab navigation and short real typing/focus journey; no throttling, not field INP"
+    },
+    {
+      "lcp": 472,
+      "cls": 0,
+      "events": [
+        {
+          "name": "keydown",
+          "duration": 16,
+          "id": 7605
+        }
+      ],
+      "width": 390,
+      "inp_candidate_ms": 16,
+      "scope": "Single local Chrome lab navigation and short real typing/focus journey; no throttling, not field INP"
+    },
+    {
+      "lcp": 424,
+      "cls": 0,
+      "events": [
+        {
+          "name": "keydown",
+          "duration": 16,
+          "id": 5975
+        }
+      ],
+      "width": 768,
+      "inp_candidate_ms": 16,
+      "scope": "Single local Chrome lab navigation and short real typing/focus journey; no throttling, not field INP"
+    },
+    {
+      "lcp": 436,
+      "cls": 0,
+      "events": [
+        {
+          "name": "keydown",
+          "duration": 16,
+          "id": 7478
+        }
+      ],
+      "width": 1280,
+      "inp_candidate_ms": 16,
+      "scope": "Single local Chrome lab navigation and short real typing/focus journey; no throttling, not field INP"
+    },
+    {
+      "lcp": 452,
+      "cls": 0,
+      "events": [],
+      "width": 1440,
+      "inp_candidate_ms": null,
+      "scope": "Single local Chrome lab navigation and short real typing/focus journey; no throttling, not field INP"
+    }
+  ],
+  "scope": "Actual Chrome/Docker/DB flows; typed voice correction is not actual TC2 ASR"
+}

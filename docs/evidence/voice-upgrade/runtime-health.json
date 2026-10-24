@@ -1,0 +1,13 @@
+{
+  "status": "ready",
+  "clip_files": true,
+  "asr_files": true,
+  "asr_profile": "phowhisper-base",
+  "asr_revision": "7ebdb9e88f5cc5271fb88f4d642c82ff9388650e",
+  "asr_without_timestamps": true,
+  "clip_loaded": true,
+  "asr_loaded": true,
+  "rss_mib": 1203.01,
+  "device": "cpu",
+  "capacity": 1
+}

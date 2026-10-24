@@ -1,0 +1,471 @@
+{
+  "measured_at": "2026-10-23T04:48:03.391704+00:00",
+  "stage": "before",
+  "groups": {
+    "synthetic_shopping": {
+      "samples": 7,
+      "http_errors": 0,
+      "wer": 0.8095238095238095,
+      "cer": 0.4583333333333333,
+      "mean_http_ms": 1131.54
+    },
+    "human_read": {
+      "samples": 20,
+      "http_errors": 0,
+      "wer": 0.23923444976076555,
+      "cer": 0.12,
+      "mean_http_ms": 1230.69995
+    }
+  },
+  "samples": [
+    {
+      "id": "VIVOSDEV05_155",
+      "group": "human_read",
+      "sha256": "5cb872c64c9c1b14426c76dd9d03b705f17d7ff5a4b1c6564d272c263822b1d7",
+      "reference": "nửa vòng trái đất hơn bảy năm",
+      "status": 200,
+      "hypothesis": "Nửa vòng trái đất hơn 7 năm.",
+      "word_errors": 1,
+      "words": 7,
+      "character_errors": 3,
+      "characters": 29,
+      "http_ms": 1034.235,
+      "warnings": [
+        "Kiểm tra và sửa bản ghi trước khi tìm sản phẩm."
+      ]
+    },
+    {
+      "id": "VIVOSDEV05_212",
+      "group": "human_read",
+      "sha256": "ce22fea7c2cdce9c3ee1787cf54609e74360d0dbe0b5edc6b8bcc1ed203c9440",
+      "reference": "bốn chiếc trống đại phèng la",
+      "status": 200,
+      "hypothesis": "4 chiếc trống đại phêng la.",
+      "word_errors": 2,
+      "words": 6,
+      "character_errors": 4,
+      "characters": 28,
+      "http_ms": 1152.832,
+      "warnings": [
+        "Kiểm tra và sửa bản ghi trước khi tìm sản phẩm.",
+        "Bản ghi có đoạn chưa chắc chắn. Hãy kiểm tra kỹ tên sản phẩm và mức giá."
+      ]
+    },
+    {
+      "id": "VIVOSDEV15_209",
+      "group": "human_read",
+      "sha256": "97b219fe1e28cebf7ee41ee452bc6c117d5c34a964b1ff7be319dff0e3ef8310",
+      "reference": "họ thích nghi với văn hóa công ty như thế nào",
+      "status": 200,
+      "hypothesis": "Họ thiên ghi với văn hóa công ty như thế nào?",
+      "word_errors": 2,
+      "words": 11,
+      "character_errors": 4,
+      "characters": 45,
+      "http_ms": 1080.135,
+      "warnings": [
+        "Kiểm tra và sửa bản ghi trước khi tìm sản phẩm.",
+        "Bản ghi có đoạn chưa chắc chắn. Hãy kiểm tra kỹ tên sản phẩm và mức giá."
+      ]
+    },
+    {
+      "id": "VIVOSDEV15_267",
+      "group": "human_read",
+      "sha256": "cf0a047860210556c664c7dcf634482b2a460d1e2651afa467b4b5054ee3747f",
+      "reference": "cuối cùng họ dẫn nhau về nhà với thúng làn không",
+      "status": 200,
+      "hypothesis": "Cuối cùng họ dẫn nhau về nhà với thúng Lan không?",
+      "word_errors": 1,
+      "words": 11,
+      "character_errors": 1,
+      "characters": 48,
+      "http_ms": 1104.97,
+      "warnings": [
+        "Kiểm tra và sửa bản ghi trước khi tìm sản phẩm."
+      ]
+    },
+    {
+      "id": "VIVOSDEV09_288",
+      "group": "human_read",
+      "sha256": "be9fdea1a01db2a2f068c8f008b4c93ee3f2f2d38f7d49bbb7dda20dee8ce9c4",
+      "reference": "chắc sắp tới thu xếp đi du lịch thôi",
+      "status": 200,
+      "hypothesis": "Chắc sắp tới thù xếp đi dụ lật thôi.",
+      "word_errors": 3,
+      "words": 9,
+      "character_errors": 5,
+      "characters": 36,
+      "http_ms": 1166.883,
+      "warnings": [
+        "Kiểm tra và sửa bản ghi trước khi tìm sản phẩm.",
+        "Bản ghi có đoạn chưa chắc chắn. Hãy kiểm tra kỹ tên sản phẩm và mức giá."
+      ]
+    },
+    {
+      "id": "VIVOSDEV09_077",
+      "group": "human_read",
+      "sha256": "c94f7ed2f6d1ca4dc62c92c5308d5f6ae4ab096b250fce3ac1b3ad897da94477",
+      "reference": "để có thể vận hành chúng được hiệu quả hơn",
+      "status": 200,
+      "hypothesis": "để có thể phần hành cho chúng được hiệu quả hơn.",
+      "word_errors": 2,
+      "words": 10,
+      "character_errors": 7,
+      "characters": 42,
+      "http_ms": 992.838,
+      "warnings": [
+        "Kiểm tra và sửa bản ghi trước khi tìm sản phẩm.",
+        "Bản ghi có đoạn chưa chắc chắn. Hãy kiểm tra kỹ tên sản phẩm và mức giá."
+      ]
+    },
+    {
+      "id": "VIVOSDEV17_090",
+      "group": "human_read",
+      "sha256": "bbd939581212f25313db0b1dbfae4e26eabad26f33593b634b60b19c65a979c2",
+      "reference": "bây giờ thì đáng được khen là thông minh chứ hả",
+      "status": 200,
+      "hypothesis": "Bây giờ thì đáng được khen là thông minh chứ hạ",
+      "word_errors": 1,
+      "words": 11,
+      "character_errors": 1,
+      "characters": 47,
+      "http_ms": 1199.823,
+      "warnings": [
+        "Kiểm tra và sửa bản ghi trước khi tìm sản phẩm.",
+        "Bản ghi có đoạn chưa chắc chắn. Hãy kiểm tra kỹ tên sản phẩm và mức giá."
+      ]
+    },
+    {
+      "id": "VIVOSDEV17_192",
+      "group": "human_read",
+      "sha256": "14c9a74a6e9c75000fcd8cb6516a1c4c95905d5550f20baf46ac768453fba2c2",
+      "reference": "đó cũng là sự tiếp xúc gần gũi nhất của bọn em",
+      "status": 200,
+      "hypothesis": "Đó cũng là sự tiếp xúc gần của nhất của bỏng em.",
+      "word_errors": 2,
+      "words": 12,
+      "character_errors": 5,
+      "characters": 46,
+      "http_ms": 1177.63,
+      "warnings": [
+        "Kiểm tra và sửa bản ghi trước khi tìm sản phẩm."
+      ]
+    },
+    {
+      "id": "VIVOSDEV13_225",
+      "group": "human_read",
+      "sha256": "7263a42b0b6cc122fb514f89b52ebb4aee2a2933c8e06bf9f3cf3ef2d9946994",
+      "reference": "hai loại văn này nên được coi trọng như nhau trong các kỳ thi",
+      "status": 200,
+      "hypothesis": "2 loại văn này nên được coi trọng như nhau trong các kỳ thị",
+      "word_errors": 2,
+      "words": 14,
+      "character_errors": 4,
+      "characters": 61,
+      "http_ms": 1116.747,
+      "warnings": [
+        "Kiểm tra và sửa bản ghi trước khi tìm sản phẩm."
+      ]
+    },
+    {
+      "id": "VIVOSDEV13_075",
+      "group": "human_read",
+      "sha256": "319e403988a8f398467eb1516c92976a5e2532e35341af115343dd515448e70a",
+      "reference": "bạn có thể tắt chương trình đó đi và thực hiện thao tác cuối cùng",
+      "status": 200,
+      "hypothesis": "Bạn có thể tác chung trình đó đi và thực hiện thao tác cuối cùng.",
+      "word_errors": 2,
+      "words": 15,
+      "character_errors": 4,
+      "characters": 65,
+      "http_ms": 1145.728,
+      "warnings": [
+        "Kiểm tra và sửa bản ghi trước khi tìm sản phẩm."
+      ]
+    },
+    {
+      "id": "VIVOSDEV12_076",
+      "group": "human_read",
+      "sha256": "7a8ff31ceaa529d6e1df84a92bc90a0604400438bd5b4eef7b0a85c13808b9fa",
+      "reference": "tớ đi kiếm nhà trọ rồi nhưng khó quá",
+      "status": 200,
+      "hypothesis": "Tớ đi kiếm nhà trò rồi nhưng khó quá.",
+      "word_errors": 1,
+      "words": 9,
+      "character_errors": 1,
+      "characters": 36,
+      "http_ms": 1034.22,
+      "warnings": [
+        "Kiểm tra và sửa bản ghi trước khi tìm sản phẩm."
+      ]
+    },
+    {
+      "id": "VIVOSDEV12_271",
+      "group": "human_read",
+      "sha256": "568d7e1300de7cf0e8dea21ffd9c627b02dda54fc2c55b86826241c2e846357e",
+      "reference": "bà con rang trí cành đào để chuẩn bị đón tết",
+      "status": 200,
+      "hypothesis": "Bà con tranh chí cần đạo để chuẩn bị đón tất.",
+      "word_errors": 5,
+      "words": 11,
+      "character_errors": 8,
+      "characters": 44,
+      "http_ms": 1101.403,
+      "warnings": [
+        "Kiểm tra và sửa bản ghi trước khi tìm sản phẩm."
+      ]
+    },
+    {
+      "id": "VIVOSDEV19_030",
+      "group": "human_read",
+      "sha256": "6ef86ea49c8087014476cb059d12fbbcf66473964c6688bcda057d69e4b1e8f1",
+      "reference": "phù sa bồi đắp ruộng vườn cho xóm làng trù phú",
+      "status": 200,
+      "hypothesis": "Phụ xe bỏ đắp rộng vườn cho sống loạn trữ phú.",
+      "word_errors": 7,
+      "words": 11,
+      "character_errors": 14,
+      "characters": 46,
+      "http_ms": 1557.14,
+      "warnings": [
+        "Kiểm tra và sửa bản ghi trước khi tìm sản phẩm.",
+        "Bản ghi có đoạn chưa chắc chắn. Hãy kiểm tra kỹ tên sản phẩm và mức giá."
+      ]
+    },
+    {
+      "id": "VIVOSDEV19_111",
+      "group": "human_read",
+      "sha256": "3f0cc0babfcad4ed28080b54cf09562a878360eeb287a5cc655cdf6977082f73",
+      "reference": "khuyết điểm lớn của chúng ta là chưa có dân chủ thật sự",
+      "status": 200,
+      "hypothesis": "Quyết điểm lớn của chúng ta lại chưa cá dăng chủ thật sự.",
+      "word_errors": 4,
+      "words": 13,
+      "character_errors": 7,
+      "characters": 55,
+      "http_ms": 1330.577,
+      "warnings": [
+        "Kiểm tra và sửa bản ghi trước khi tìm sản phẩm."
+      ]
+    },
+    {
+      "id": "VIVOSDEV02_R076",
+      "group": "human_read",
+      "sha256": "f7eb343ef784ab97906a066902d123cdd7212ef8246c613e70b349085445cfda",
+      "reference": "thay vì bốn giờ như trước đây",
+      "status": 200,
+      "hypothesis": "Thay về 4 giờ như chết đây",
+      "word_errors": 3,
+      "words": 7,
+      "character_errors": 9,
+      "characters": 29,
+      "http_ms": 1487.174,
+      "warnings": [
+        "Kiểm tra và sửa bản ghi trước khi tìm sản phẩm.",
+        "Bản ghi có đoạn chưa chắc chắn. Hãy kiểm tra kỹ tên sản phẩm và mức giá."
+      ]
+    },
+    {
+      "id": "VIVOSDEV02_R031",
+      "group": "human_read",
+      "sha256": "4dafd9b593227e80b2bd25ff37ce52c8c005c0e86c4f72ec8e53e3447dc891a8",
+      "reference": "muốn đẹp phải ghè làm sao cho các bó cơ chân nổi bật lên",
+      "status": 200,
+      "hypothesis": "Mốn đẹp phải về làm trào cho các bó cười trên nỗi bận lên.",
+      "word_errors": 7,
+      "words": 14,
+      "character_errors": 15,
+      "characters": 56,
+      "http_ms": 1824.899,
+      "warnings": [
+        "Kiểm tra và sửa bản ghi trước khi tìm sản phẩm.",
+        "Bản ghi có đoạn chưa chắc chắn. Hãy kiểm tra kỹ tên sản phẩm và mức giá."
+      ]
+    },
+    {
+      "id": "VIVOSDEV11_269",
+      "group": "human_read",
+      "sha256": "44cd5b8b89b811ffc5d1371667ddfa4165e6f3a8c18c53be16048369bb744839",
+      "reference": "chúng tôi yêu nhau được hai năm thì gia đình tôi xảy ra chuyện",
+      "status": 200,
+      "hypothesis": "Chúng tôi yêu nhau được 2 năm thị gia đình tôi sĩ ra chuyện",
+      "word_errors": 3,
+      "words": 14,
+      "character_errors": 7,
+      "characters": 62,
+      "http_ms": 1588.836,
+      "warnings": [
+        "Kiểm tra và sửa bản ghi trước khi tìm sản phẩm."
+      ]
+    },
+    {
+      "id": "VIVOSDEV11_298",
+      "group": "human_read",
+      "sha256": "89a8060c845cc52d6f5c62df21d6fa4af5005ac0533b2c7080f86f304c20a20d",
+      "reference": "chuẩn bị cho ngày khai trương cửa hàng đầu tiên",
+      "status": 200,
+      "hypothesis": "chuẩn bị cho ngày khai trương cửa hàng đầu tiên",
+      "word_errors": 0,
+      "words": 10,
+      "character_errors": 0,
+      "characters": 47,
+      "http_ms": 1211.152,
+      "warnings": [
+        "Kiểm tra và sửa bản ghi trước khi tìm sản phẩm."
+      ]
+    },
+    {
+      "id": "VIVOSDEV03_T009",
+      "group": "human_read",
+      "sha256": "d97a0457e08b661507fececd8a9d843678e6b0d2999ea1fd52662d81c534fd87",
+      "reference": "bác đang suy nghĩ gì thế",
+      "status": 200,
+      "hypothesis": "Quá đang sừng nghĩ gì thế",
+      "word_errors": 2,
+      "words": 6,
+      "character_errors": 6,
+      "characters": 24,
+      "http_ms": 1095.148,
+      "warnings": [
+        "Kiểm tra và sửa bản ghi trước khi tìm sản phẩm.",
+        "Bản ghi có đoạn chưa chắc chắn. Hãy kiểm tra kỹ tên sản phẩm và mức giá."
+      ]
+    },
+    {
+      "id": "VIVOSDEV03_T035",
+      "group": "human_read",
+      "sha256": "a7aa4800b717674a28641d15939a5a48fc11d92f4f84e4114289f4dde6e7a238",
+      "reference": "mẹ ơi có mua đồ cho con không",
+      "status": 200,
+      "hypothesis": "Mẹ ơi có mua đồ cho con không?",
+      "word_errors": 0,
+      "words": 8,
+      "character_errors": 0,
+      "characters": 29,
+      "http_ms": 1211.629,
+      "warnings": [
+        "Kiểm tra và sửa bản ghi trước khi tìm sản phẩm."
+      ]
+    },
+    {
+      "id": "course-tts",
+      "group": "synthetic_shopping",
+      "sha256": "f21fdd5e43ef9bd3c76c6d73c7f8e2cdd084b53b1c21c0e8297c621ed116087e",
+      "reference": "tôi muốn mua áo mùa đông",
+      "status": 200,
+      "hypothesis": "Tôi muốn mơ áu mơ",
+      "word_errors": 4,
+      "words": 6,
+      "character_errors": 10,
+      "characters": 24,
+      "http_ms": 1020.64,
+      "warnings": [
+        "Kiểm tra và sửa bản ghi trước khi tìm sản phẩm.",
+        "Bản ghi có đoạn chưa chắc chắn. Hãy kiểm tra kỹ tên sản phẩm và mức giá."
+      ]
+    },
+    {
+      "id": "synthetic-vi-135",
+      "group": "synthetic_shopping",
+      "sha256": "f21fdd5e43ef9bd3c76c6d73c7f8e2cdd084b53b1c21c0e8297c621ed116087e",
+      "reference": "tôi muốn mua áo mùa đông",
+      "status": 200,
+      "hypothesis": "Tôi muốn mơ áu mơ",
+      "word_errors": 4,
+      "words": 6,
+      "character_errors": 10,
+      "characters": 24,
+      "http_ms": 1034.936,
+      "warnings": [
+        "Kiểm tra và sửa bản ghi trước khi tìm sản phẩm.",
+        "Bản ghi có đoạn chưa chắc chắn. Hãy kiểm tra kỹ tên sản phẩm và mức giá."
+      ]
+    },
+    {
+      "id": "synthetic-vi-170",
+      "group": "synthetic_shopping",
+      "sha256": "13234b962366e091034bd403a92b8956d31faed00ed98fccddfec4e1e1bafca0",
+      "reference": "tôi muốn mua áo mùa đông",
+      "status": 200,
+      "hypothesis": "Tôi muốn bờ áu bấm",
+      "word_errors": 4,
+      "words": 6,
+      "character_errors": 12,
+      "characters": 24,
+      "http_ms": 1150.758,
+      "warnings": [
+        "Kiểm tra và sửa bản ghi trước khi tìm sản phẩm.",
+        "Bản ghi có đoạn chưa chắc chắn. Hãy kiểm tra kỹ tên sản phẩm và mức giá."
+      ]
+    },
+    {
+      "id": "synthetic-vi-vn-x-central-135",
+      "group": "synthetic_shopping",
+      "sha256": "1509bcee4d04787b806fe704ef48d5b2fbb28c0a0afa6158a87bffc12848da91",
+      "reference": "tôi muốn mua áo mùa đông",
+      "status": 200,
+      "hypothesis": "Tuy mất mơ ám mơ",
+      "word_errors": 6,
+      "words": 6,
+      "character_errors": 15,
+      "characters": 24,
+      "http_ms": 1244.98,
+      "warnings": [
+        "Kiểm tra và sửa bản ghi trước khi tìm sản phẩm.",
+        "Bản ghi có đoạn chưa chắc chắn. Hãy kiểm tra kỹ tên sản phẩm và mức giá."
+      ]
+    },
+    {
+      "id": "synthetic-vi-vn-x-central-170",
+      "group": "synthetic_shopping",
+      "sha256": "4f99d4b03bd65530749997c806cb9161f52d7e21d88f74f67d966dbae6d16ee5",
+      "reference": "tôi muốn mua áo mùa đông",
+      "status": 200,
+      "hypothesis": "Bộ mất mơ á mơ mơ",
+      "word_errors": 6,
+      "words": 6,
+      "character_errors": 15,
+      "characters": 24,
+      "http_ms": 1226.24,
+      "warnings": [
+        "Kiểm tra và sửa bản ghi trước khi tìm sản phẩm.",
+        "Bản ghi có đoạn chưa chắc chắn. Hãy kiểm tra kỹ tên sản phẩm và mức giá."
+      ]
+    },
+    {
+      "id": "synthetic-vi-vn-x-south-135",
+      "group": "synthetic_shopping",
+      "sha256": "49b789e46c801a001b69dabdfcf070a615c407243be0c645e19b8bc8470bc2f2",
+      "reference": "tôi muốn mua áo mùa đông",
+      "status": 200,
+      "hypothesis": "Tòi mượn mưa á, mưa tầm",
+      "word_errors": 6,
+      "words": 6,
+      "character_errors": 10,
+      "characters": 24,
+      "http_ms": 1154.788,
+      "warnings": [
+        "Kiểm tra và sửa bản ghi trước khi tìm sản phẩm.",
+        "Bản ghi có đoạn chưa chắc chắn. Hãy kiểm tra kỹ tên sản phẩm và mức giá."
+      ]
+    },
+    {
+      "id": "synthetic-vi-vn-x-south-170",
+      "group": "synthetic_shopping",
+      "sha256": "9ce1071b0b4b5493554c37a16af9c02aa29d63d706c2db8971633833785464ce",
+      "reference": "tôi muốn mua áo mùa đông",
+      "status": 200,
+      "hypothesis": "Tôi muốn mưa ám mưa tầng",
+      "word_errors": 4,
+      "words": 6,
+      "character_errors": 5,
+      "characters": 24,
+      "http_ms": 1088.438,
+      "warnings": [
+        "Kiểm tra và sửa bản ghi trước khi tìm sản phẩm.",
+        "Bản ghi có đoạn chưa chắc chắn. Hãy kiểm tra kỹ tên sản phẩm và mức giá."
+      ]
+    }
+  ],
+  "limitations": "VIVOS read speech CC-BY-NC-SA4.0 (Luong & Vu), not shopping; eSpeak shopping is synthetic, not TC2 or human shopping accuracy. No audio redistributed."
+}

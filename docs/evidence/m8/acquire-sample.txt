@@ -1,0 +1,34 @@
+Validated 1/12: abo-cda3825f07ab31c8907a
+Validated 2/12: abo-d4543dfba36f32037336
+Validated 3/12: abo-1366ca639c024f80a4bb
+Validated 4/12: abo-6810198213982dc40777
+Validated 5/12: abo-ae7356369a2c7e4dd3fc
+Validated 6/12: abo-285fe8e8101ec33231ec
+Validated 7/12: abo-07fe86c90424f80b4386
+Validated 8/12: abo-7a4d77b7fdf5f3b737dd
+Validated 9/12: abo-08c3abaa33e9e744db0b
+Validated 10/12: abo-8197d8250efdfbdd15dc
+Validated 11/12: abo-f4c26a80466f72bc1f78
+Validated 12/12: abo-9d23c63b64aebbceec0e
+{
+  "source": "amazon-berkeley-objects",
+  "revision": "listings_0-49304dd0edc3aa3d4cb19231927732fc",
+  "license": "CC-BY-4.0",
+  "metadata_sha256": "915263ef354d7a5d3503e899e610082f510c0011cccd5b4dc4f4c5efa86ef539",
+  "listing_sha256": "c5e7723f4a4afa3da4f35c497ab30ac0f8ee5b3e473ec0ffa897511e127e9324",
+  "rows_scanned": 9232,
+  "errors": [],
+  "category_distribution": {
+    "Giày nam": 3,
+    "Giày nữ": 3,
+    "Ốp điện thoại": 3,
+    "Ghế sofa": 1,
+    "Cốc": 2
+  },
+  "groups": {
+    "nam": 3,
+    "nu": 3,
+    "dien-tu": 3,
+    "gia-dung": 3
+  }
+}

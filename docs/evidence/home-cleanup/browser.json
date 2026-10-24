@@ -1,0 +1,70 @@
+{
+  "result": "passed",
+  "viewports": [
+    {
+      "width": 360,
+      "result": "passed",
+      "product_cards": 24,
+      "main_text_inputs": 0,
+      "horizontal_overflow": false,
+      "all_images_loaded": true,
+      "category_navigation": "passed",
+      "campaign": {
+        "src": "http://localhost:3000/_next/image?url=%2Fimages%2Fcampaign%2Fhoodoomart-still-life-v1.png&w=640&q=75",
+        "width": 360
+      }
+    },
+    {
+      "width": 390,
+      "result": "passed",
+      "product_cards": 24,
+      "main_text_inputs": 0,
+      "horizontal_overflow": false,
+      "all_images_loaded": true,
+      "category_navigation": "passed",
+      "campaign": {
+        "src": "http://localhost:3000/_next/image?url=%2Fimages%2Fcampaign%2Fhoodoomart-still-life-v1.png&w=640&q=75",
+        "width": 390
+      }
+    },
+    {
+      "width": 768,
+      "result": "passed",
+      "product_cards": 24,
+      "main_text_inputs": 0,
+      "horizontal_overflow": false,
+      "all_images_loaded": true,
+      "category_navigation": "passed",
+      "campaign": {
+        "src": "http://localhost:3000/_next/image?url=%2Fimages%2Fcampaign%2Fhoodoomart-still-life-v1.png&w=828&q=75",
+        "width": 768
+      }
+    },
+    {
+      "width": 1280,
+      "result": "passed",
+      "product_cards": 24,
+      "main_text_inputs": 0,
+      "horizontal_overflow": false,
+      "all_images_loaded": true,
+      "category_navigation": "passed",
+      "campaign": {
+        "src": "http://localhost:3000/_next/image?url=%2Fimages%2Fcampaign%2Fhoodoomart-still-life-v1.png&w=1920&q=75",
+        "width": 1240
+      }
+    },
+    {
+      "width": 1440,
+      "result": "passed",
+      "product_cards": 24,
+      "main_text_inputs": 0,
+      "horizontal_overflow": false,
+      "all_images_loaded": true,
+      "category_navigation": "passed",
+      "campaign": {
+        "src": "http://localhost:3000/_next/image?url=%2Fimages%2Fcampaign%2Fhoodoomart-still-life-v1.png&w=1920&q=75",
+        "width": 1240
+      }
+    }
+  ]
+}

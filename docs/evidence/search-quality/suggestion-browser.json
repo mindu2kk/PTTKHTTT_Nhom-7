@@ -1,0 +1,20 @@
+{
+  "result": "passed",
+  "scope": "Instrumented ASR response and fake Chrome microphone; real BFF/text retrieval; not acoustic accuracy proof",
+  "cases": [
+    {
+      "width": 390,
+      "original_preserved": true,
+      "warning_visible": true,
+      "confirmation_required": true,
+      "real_voice_text_retrieval": 200
+    },
+    {
+      "width": 1280,
+      "original_preserved": true,
+      "warning_visible": true,
+      "confirmation_required": true,
+      "real_voice_text_retrieval": 200
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "result": "passed",
+  "flows": [
+    "real CLIP upload",
+    "correct navy sweater first",
+    "real category and price filters",
+    "URL filters survive reload; raw image not retained",
+    "corrupt bytes rejected",
+    "360px no overflow"
+  ]
+}

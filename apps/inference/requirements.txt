@@ -1,0 +1,8 @@
+fastapi==0.156.8
+uvicorn==0.38.0
+pydantic==2.12.4
+open-clip-torch==3.3.0
+faster-whisper==1.2.1
+pillow==13.0.0
+python-multipart==0.0.20
+psutil==7.1.3

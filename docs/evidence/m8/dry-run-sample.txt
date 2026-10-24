@@ -1,0 +1,5 @@
+{
+  "dry_run": true,
+  "valid_records": 12,
+  "images": 23
+}

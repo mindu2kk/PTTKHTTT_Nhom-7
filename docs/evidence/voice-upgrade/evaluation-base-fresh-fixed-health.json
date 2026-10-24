@@ -1,0 +1,17 @@
+{
+  "measured_at": "2026-10-23T13:16:30.593237+00:00",
+  "phase": "near end of heldout benchmark; dedicated temporary worker",
+  "health": {
+    "status": "ready",
+    "clip_files": true,
+    "asr_files": true,
+    "asr_profile": "whisper-base",
+    "asr_revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+    "clip_loaded": false,
+    "asr_loaded": true,
+    "rss_mib": 297.64,
+    "device": "cpu",
+    "capacity": 1
+  },
+  "limitation": "Fresh ASR-only profile; timings observational on host, no speedup/SLA claim."
+}

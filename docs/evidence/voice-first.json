@@ -1,0 +1,19 @@
+{
+  "synthetic": "eSpeak NG vi, not human speech",
+  "reference": "tôi muốn mua áo mùa đông",
+  "http_ms": 1886.546,
+  "status": 200,
+  "response": {
+    "text": "Tôi muốn mơ áu mơ",
+    "language": "vi",
+    "duration_seconds": 2.112,
+    "recognizer": "faster-whisper base int8 CPU",
+    "model_revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+    "inference_ms": 1041.287,
+    "model_load_ms": 0.0,
+    "warnings": [
+      "Kiểm tra và sửa bản ghi trước khi tìm sản phẩm.",
+      "Bản ghi có đoạn chưa chắc chắn. Hãy kiểm tra kỹ tên sản phẩm và mức giá."
+    ]
+  }
+}

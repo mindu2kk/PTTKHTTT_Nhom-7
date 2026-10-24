@@ -1,0 +1,516 @@
+{
+  "version": 1,
+  "frozen_at": "2026-10-23T12:58:48.227304+00:00",
+  "selection": "Before any new ASR runs: all29 historical development clips, then first eligible1..12s original utterance per unseen speaker in stable parquet order;9 VIVOS and20 ViMD heldout speakers. No hypothesis used.",
+  "archives": {
+    "vivos": [
+      "data/private/vivos/test.parquet",
+      "c37e8fc3cf5c4e446960cfa032683d74f759b5146ac475a087e1e327b0cf5d89"
+    ],
+    "vimd": [
+      "data/private/vimd/test-00008.parquet",
+      "d617472eb2880ed1c74352381f3158cf77891694e6647f4c01dd547ce18107eb"
+    ]
+  },
+  "rights": {
+    "vivos": "Luong & Vu, CC-BY-NC-SA-4.0; private academic evaluation",
+    "vimd": "Nguyen Dinh et al., CC-BY-NC-ND-4.0; original bytes unmodified, private academic evaluation"
+  },
+  "limitations": "Read/broadcast speech, mostly South ViMD; not shopping, TC2, microphones/noise population validation. One clip per heldout speaker, not training holdout proof against upstream model training.",
+  "samples": [
+    {
+      "id": "vivos:VIVOSDEV05_155",
+      "corpus": "vivos",
+      "split": "development",
+      "speaker_id": "vivos:VIVOSDEV05",
+      "duration_seconds": 2.375,
+      "sha256": "5cb872c64c9c1b14426c76dd9d03b705f17d7ff5a4b1c6564d272c263822b1d7"
+    },
+    {
+      "id": "vivos:VIVOSDEV05_212",
+      "corpus": "vivos",
+      "split": "development",
+      "speaker_id": "vivos:VIVOSDEV05",
+      "duration_seconds": 2.625,
+      "sha256": "ce22fea7c2cdce9c3ee1787cf54609e74360d0dbe0b5edc6b8bcc1ed203c9440"
+    },
+    {
+      "id": "vivos:VIVOSDEV15_209",
+      "corpus": "vivos",
+      "split": "development",
+      "speaker_id": "vivos:VIVOSDEV15",
+      "duration_seconds": 3.186875,
+      "sha256": "97b219fe1e28cebf7ee41ee452bc6c117d5c34a964b1ff7be319dff0e3ef8310"
+    },
+    {
+      "id": "vivos:VIVOSDEV15_267",
+      "corpus": "vivos",
+      "split": "development",
+      "speaker_id": "vivos:VIVOSDEV15",
+      "duration_seconds": 3.499375,
+      "sha256": "cf0a047860210556c664c7dcf634482b2a460d1e2651afa467b4b5054ee3747f"
+    },
+    {
+      "id": "vivos:VIVOSDEV09_288",
+      "corpus": "vivos",
+      "split": "development",
+      "speaker_id": "vivos:VIVOSDEV09",
+      "duration_seconds": 3.125,
+      "sha256": "be9fdea1a01db2a2f068c8f008b4c93ee3f2f2d38f7d49bbb7dda20dee8ce9c4"
+    },
+    {
+      "id": "vivos:VIVOSDEV09_077",
+      "corpus": "vivos",
+      "split": "development",
+      "speaker_id": "vivos:VIVOSDEV09",
+      "duration_seconds": 2.84375,
+      "sha256": "c94f7ed2f6d1ca4dc62c92c5308d5f6ae4ab096b250fce3ac1b3ad897da94477"
+    },
+    {
+      "id": "vivos:VIVOSDEV17_090",
+      "corpus": "vivos",
+      "split": "development",
+      "speaker_id": "vivos:VIVOSDEV17",
+      "duration_seconds": 3.530625,
+      "sha256": "bbd939581212f25313db0b1dbfae4e26eabad26f33593b634b60b19c65a979c2"
+    },
+    {
+      "id": "vivos:VIVOSDEV17_192",
+      "corpus": "vivos",
+      "split": "development",
+      "speaker_id": "vivos:VIVOSDEV17",
+      "duration_seconds": 4.061875,
+      "sha256": "14c9a74a6e9c75000fcd8cb6516a1c4c95905d5550f20baf46ac768453fba2c2"
+    },
+    {
+      "id": "vivos:VIVOSDEV13_225",
+      "corpus": "vivos",
+      "split": "development",
+      "speaker_id": "vivos:VIVOSDEV13",
+      "duration_seconds": 3.686875,
+      "sha256": "7263a42b0b6cc122fb514f89b52ebb4aee2a2933c8e06bf9f3cf3ef2d9946994"
+    },
+    {
+      "id": "vivos:VIVOSDEV13_075",
+      "corpus": "vivos",
+      "split": "development",
+      "speaker_id": "vivos:VIVOSDEV13",
+      "duration_seconds": 4.374375,
+      "sha256": "319e403988a8f398467eb1516c92976a5e2532e35341af115343dd515448e70a"
+    },
+    {
+      "id": "vivos:VIVOSDEV12_076",
+      "corpus": "vivos",
+      "split": "development",
+      "speaker_id": "vivos:VIVOSDEV12",
+      "duration_seconds": 3.5625,
+      "sha256": "7a8ff31ceaa529d6e1df84a92bc90a0604400438bd5b4eef7b0a85c13808b9fa"
+    },
+    {
+      "id": "vivos:VIVOSDEV12_271",
+      "corpus": "vivos",
+      "split": "development",
+      "speaker_id": "vivos:VIVOSDEV12",
+      "duration_seconds": 3.96875,
+      "sha256": "568d7e1300de7cf0e8dea21ffd9c627b02dda54fc2c55b86826241c2e846357e"
+    },
+    {
+      "id": "vivos:VIVOSDEV19_030",
+      "corpus": "vivos",
+      "split": "development",
+      "speaker_id": "vivos:VIVOSDEV19",
+      "duration_seconds": 3.593125,
+      "sha256": "6ef86ea49c8087014476cb059d12fbbcf66473964c6688bcda057d69e4b1e8f1"
+    },
+    {
+      "id": "vivos:VIVOSDEV19_111",
+      "corpus": "vivos",
+      "split": "development",
+      "speaker_id": "vivos:VIVOSDEV19",
+      "duration_seconds": 4.436875,
+      "sha256": "3f0cc0babfcad4ed28080b54cf09562a878360eeb287a5cc655cdf6977082f73"
+    },
+    {
+      "id": "vivos:VIVOSDEV02_R076",
+      "corpus": "vivos",
+      "split": "development",
+      "speaker_id": "vivos:VIVOSDEV02",
+      "duration_seconds": 2.96875,
+      "sha256": "f7eb343ef784ab97906a066902d123cdd7212ef8246c613e70b349085445cfda"
+    },
+    {
+      "id": "vivos:VIVOSDEV02_R031",
+      "corpus": "vivos",
+      "split": "development",
+      "speaker_id": "vivos:VIVOSDEV02",
+      "duration_seconds": 5.375,
+      "sha256": "4dafd9b593227e80b2bd25ff37ce52c8c005c0e86c4f72ec8e53e3447dc891a8"
+    },
+    {
+      "id": "vivos:VIVOSDEV11_269",
+      "corpus": "vivos",
+      "split": "development",
+      "speaker_id": "vivos:VIVOSDEV11",
+      "duration_seconds": 4.65625,
+      "sha256": "44cd5b8b89b811ffc5d1371667ddfa4165e6f3a8c18c53be16048369bb744839"
+    },
+    {
+      "id": "vivos:VIVOSDEV11_298",
+      "corpus": "vivos",
+      "split": "development",
+      "speaker_id": "vivos:VIVOSDEV11",
+      "duration_seconds": 3.90625,
+      "sha256": "89a8060c845cc52d6f5c62df21d6fa4af5005ac0533b2c7080f86f304c20a20d"
+    },
+    {
+      "id": "vivos:VIVOSDEV03_T009",
+      "corpus": "vivos",
+      "split": "development",
+      "speaker_id": "vivos:VIVOSDEV03",
+      "duration_seconds": 1.90625,
+      "sha256": "d97a0457e08b661507fececd8a9d843678e6b0d2999ea1fd52662d81c534fd87"
+    },
+    {
+      "id": "vivos:VIVOSDEV03_T035",
+      "corpus": "vivos",
+      "split": "development",
+      "speaker_id": "vivos:VIVOSDEV03",
+      "duration_seconds": 2.3125,
+      "sha256": "a7aa4800b717674a28641d15939a5a48fc11d92f4f84e4114289f4dde6e7a238"
+    },
+    {
+      "id": "vimd:11_0307",
+      "corpus": "vimd",
+      "split": "development",
+      "speaker_id": "vimd:spk_11_0142",
+      "duration_seconds": 9.238979591836735,
+      "sha256": "ebc41f40fde9415300718e2fd323e0d325dcf7da08c8bad662b7a26f08cc8b7f"
+    },
+    {
+      "id": "vimd:11_0308",
+      "corpus": "vimd",
+      "split": "development",
+      "speaker_id": "vimd:spk_11_0143",
+      "duration_seconds": 7.3579818594104305,
+      "sha256": "90c6eea8def14af09912beca755c6e3f9c8b4a63a46ab7f2a961632b74ea166e"
+    },
+    {
+      "id": "vimd:11_0309",
+      "corpus": "vimd",
+      "split": "development",
+      "speaker_id": "vimd:spk_11_0143",
+      "duration_seconds": 3.650997732426304,
+      "sha256": "559537d573a600c8f9270fbc9cf78e5f4e661f05efef68216222567ad379ac44"
+    },
+    {
+      "id": "vimd:38_0303",
+      "corpus": "vimd",
+      "split": "development",
+      "speaker_id": "vimd:spk_38_0224",
+      "duration_seconds": 8.929,
+      "sha256": "9a846e094f90085fde56dabb24461689c4948828b64f11a412c54cecb5cc2b88"
+    },
+    {
+      "id": "vimd:43_0308",
+      "corpus": "vimd",
+      "split": "development",
+      "speaker_id": "vimd:spk_43_0235",
+      "duration_seconds": 7.785666666666667,
+      "sha256": "a063da47155bfaff35bbb2891cf3c306c1e60902bca4cf42c7b4e4695de1aa75"
+    },
+    {
+      "id": "vimd:43_0316",
+      "corpus": "vimd",
+      "split": "development",
+      "speaker_id": "vimd:spk_43_0240",
+      "duration_seconds": 6.705,
+      "sha256": "d9ca9fc79de074cd08c947f3c87e584c7a545c7736b68d5fa82b1238065201e2"
+    },
+    {
+      "id": "vimd:69_0260",
+      "corpus": "vimd",
+      "split": "development",
+      "speaker_id": "vimd:spk_69_0189",
+      "duration_seconds": 10.863990929705215,
+      "sha256": "d321fc633f8cfa17faa03a2b44d6c808632e732ff7fa1cb65553489edc0a3f51"
+    },
+    {
+      "id": "vimd:69_0280",
+      "corpus": "vimd",
+      "split": "development",
+      "speaker_id": "vimd:spk_69_0201",
+      "duration_seconds": 9.786984126984127,
+      "sha256": "bb27311790aa26e20ba3a2175fa06739363753a46eec41ae32d5c990e68577a2"
+    },
+    {
+      "id": "vimd:69_0295",
+      "corpus": "vimd",
+      "split": "development",
+      "speaker_id": "vimd:spk_69_0210",
+      "duration_seconds": 3.62,
+      "sha256": "66da6c1be6b3322d511ff8cfbcd0845efddecb0b4a61737badc8f50f84ef2db3"
+    },
+    {
+      "id": "vivos:VIVOSDEV18_259",
+      "corpus": "vivos",
+      "split": "heldout",
+      "speaker_id": "vivos:VIVOSDEV18",
+      "duration_seconds": 3.436875,
+      "sha256": "eedd7ec37d7e8f2a314acc1134d08b1c23d24e66852958ac5c5203e5ab82db07",
+      "region": null
+    },
+    {
+      "id": "vivos:VIVOSDEV06_021",
+      "corpus": "vivos",
+      "split": "heldout",
+      "speaker_id": "vivos:VIVOSDEV06",
+      "duration_seconds": 2.5625,
+      "sha256": "fa036cb46ea17f1207fe6f53581a614d38844688e43e187472731266d76498c7",
+      "region": null
+    },
+    {
+      "id": "vivos:VIVOSDEV16_048",
+      "corpus": "vivos",
+      "split": "heldout",
+      "speaker_id": "vivos:VIVOSDEV16",
+      "duration_seconds": 3.968125,
+      "sha256": "bea7009e51334adf1b164dc169f99e141e1c24c246d72a5348588a302ff0080f",
+      "region": null
+    },
+    {
+      "id": "vivos:VIVOSDEV08_163",
+      "corpus": "vivos",
+      "split": "heldout",
+      "speaker_id": "vivos:VIVOSDEV08",
+      "duration_seconds": 4.59375,
+      "sha256": "76474188fa2d6ee246decb717d9ee5fb6314e09f5f34dff1f39aa7ea96ccb1c9",
+      "region": null
+    },
+    {
+      "id": "vivos:VIVOSDEV10_194",
+      "corpus": "vivos",
+      "split": "heldout",
+      "speaker_id": "vivos:VIVOSDEV10",
+      "duration_seconds": 3.375,
+      "sha256": "03c28f9e00d94d604a8331d2242577ffde7c9bc6a59165134c72e259cdafed34",
+      "region": null
+    },
+    {
+      "id": "vivos:VIVOSDEV14_151",
+      "corpus": "vivos",
+      "split": "heldout",
+      "speaker_id": "vivos:VIVOSDEV14",
+      "duration_seconds": 3.093125,
+      "sha256": "2a42dcbc2e632018cc56b85d714adf50337b03eb9350cdfabf3aacb6f9b9cc3f",
+      "region": null
+    },
+    {
+      "id": "vivos:VIVOSDEV04_R051",
+      "corpus": "vivos",
+      "split": "heldout",
+      "speaker_id": "vivos:VIVOSDEV04",
+      "duration_seconds": 2.25,
+      "sha256": "9056c65cf40eabbff93abae7dfe5f93b89b2568a16edf760dcebb3e3cd0ef450",
+      "region": null
+    },
+    {
+      "id": "vivos:VIVOSDEV07_067",
+      "corpus": "vivos",
+      "split": "heldout",
+      "speaker_id": "vivos:VIVOSDEV07",
+      "duration_seconds": 3.375,
+      "sha256": "9d68309898553e9c85869b08ecd172d6dc446d4ea4df0e2ff16f15806a3048b0",
+      "region": null
+    },
+    {
+      "id": "vivos:VIVOSDEV01_R139",
+      "corpus": "vivos",
+      "split": "heldout",
+      "speaker_id": "vivos:VIVOSDEV01",
+      "duration_seconds": 3.1875,
+      "sha256": "2a8bf6d577edc0d1b5353ea10b25fa2914af5dbed61f7abe84d890015b9f379f",
+      "region": null
+    },
+    {
+      "id": "vimd:69_0302",
+      "corpus": "vimd",
+      "split": "heldout",
+      "speaker_id": "vimd:spk_69_0213",
+      "duration_seconds": 8.508004535147393,
+      "sha256": "8b9e25d5226c7ae777c22173586c2892dc04c59707285ec94d599d4b1d974b25",
+      "region": "South"
+    },
+    {
+      "id": "vimd:70_0247",
+      "corpus": "vimd",
+      "split": "heldout",
+      "speaker_id": "vimd:spk_70_0126",
+      "duration_seconds": 10.416303854875283,
+      "sha256": "3724ca3e6cb25a744f79b1e3779d133f098d16d935aedb00cd37d895b191031e",
+      "region": "South"
+    },
+    {
+      "id": "vimd:70_0274",
+      "corpus": "vimd",
+      "split": "heldout",
+      "speaker_id": "vimd:spk_70_0144",
+      "duration_seconds": 11.175011337868481,
+      "sha256": "ff281d6a959d9023f2cb6d01b2b91f2aa136c9a050b9b2b2d981777274c4bf63",
+      "region": "South"
+    },
+    {
+      "id": "vimd:70_0277",
+      "corpus": "vimd",
+      "split": "heldout",
+      "speaker_id": "vimd:spk_70_0145",
+      "duration_seconds": 11.585011337868481,
+      "sha256": "a674bedc050107957a79ae1382c0cbe2c0ce5d25c4e24c94c277391799cbb878",
+      "region": "South"
+    },
+    {
+      "id": "vimd:70_0278",
+      "corpus": "vimd",
+      "split": "heldout",
+      "speaker_id": "vimd:spk_70_0146",
+      "duration_seconds": 3.782199546485261,
+      "sha256": "3ffdf414e311de11715eef76fd5d229ab543c1d9a56bf395deaec8c674d0458b",
+      "region": "South"
+    },
+    {
+      "id": "vimd:70_0279",
+      "corpus": "vimd",
+      "split": "heldout",
+      "speaker_id": "vimd:spk_70_0147",
+      "duration_seconds": 8.872222222222222,
+      "sha256": "4a5beec3b956b2ea499a81476bfb153ec532113c810cda89a265675b3d1a8dab",
+      "region": "South"
+    },
+    {
+      "id": "vimd:70_0288",
+      "corpus": "vimd",
+      "split": "heldout",
+      "speaker_id": "vimd:spk_70_0152",
+      "duration_seconds": 10.375986394557824,
+      "sha256": "8c54e1600336f9f5143a10b10b666a020084dc2126600b066a31f571c69674e4",
+      "region": "South"
+    },
+    {
+      "id": "vimd:70_0295",
+      "corpus": "vimd",
+      "split": "heldout",
+      "speaker_id": "vimd:spk_70_0156",
+      "duration_seconds": 10.480997732426303,
+      "sha256": "cb84baf71f39276174395f69b8ea8d9d28f6b245df9bf570462b5bf0a90cae2d",
+      "region": "South"
+    },
+    {
+      "id": "vimd:70_0299",
+      "corpus": "vimd",
+      "split": "heldout",
+      "speaker_id": "vimd:spk_70_0158",
+      "duration_seconds": 11.170181405895692,
+      "sha256": "66e5e8c36d006098b622b223f75342c79ef00c66767ba36e4fb1cb88e23215eb",
+      "region": "South"
+    },
+    {
+      "id": "vimd:71_0268",
+      "corpus": "vimd",
+      "split": "heldout",
+      "speaker_id": "vimd:spk_71_0131",
+      "duration_seconds": 6.7070068027210885,
+      "sha256": "876e6354d8f2857afa349b35d759a79b65769b3df7fd2d123112fb8aafdc2a06",
+      "region": "South"
+    },
+    {
+      "id": "vimd:71_0279",
+      "corpus": "vimd",
+      "split": "heldout",
+      "speaker_id": "vimd:spk_71_0138",
+      "duration_seconds": 7.67,
+      "sha256": "a0d77d1545f1f800e14499bbbd2af25e47182b635ea5f208334981e1b2b28410",
+      "region": "South"
+    },
+    {
+      "id": "vimd:71_0288",
+      "corpus": "vimd",
+      "split": "heldout",
+      "speaker_id": "vimd:spk_71_0142",
+      "duration_seconds": 6.662993197278912,
+      "sha256": "f8c3bc8553386f29065888c645b121a87489d741804076481f6ff32b210b9ac4",
+      "region": "South"
+    },
+    {
+      "id": "vimd:72_0292",
+      "corpus": "vimd",
+      "split": "heldout",
+      "speaker_id": "vimd:spk_72_0256",
+      "duration_seconds": 7.6459863945578235,
+      "sha256": "1e6aa23279cd54318861c776c430c33fd84cd66f80f32b64e28678a3bb4a73b6",
+      "region": "South"
+    },
+    {
+      "id": "vimd:72_0296",
+      "corpus": "vimd",
+      "split": "heldout",
+      "speaker_id": "vimd:spk_72_0259",
+      "duration_seconds": 9.62,
+      "sha256": "25f26ea7cfcaa41c2f3551d26e2c2ae72d6874558b2b645bfb1e79fa46e94808",
+      "region": "South"
+    },
+    {
+      "id": "vimd:72_0298",
+      "corpus": "vimd",
+      "split": "heldout",
+      "speaker_id": "vimd:spk_72_0260",
+      "duration_seconds": 10.138004535147392,
+      "sha256": "325e441baccbb6401d4f97417d49902432ec681af6aa289458826c2003ee46a5",
+      "region": "South"
+    },
+    {
+      "id": "vimd:72_0304",
+      "corpus": "vimd",
+      "split": "heldout",
+      "speaker_id": "vimd:spk_72_0265",
+      "duration_seconds": 4.605986394557823,
+      "sha256": "9917f502c06313f9df56950250e9b6b4fd2fe2a761f99be14502a21d826263cf",
+      "region": "South"
+    },
+    {
+      "id": "vimd:72_0310",
+      "corpus": "vimd",
+      "split": "heldout",
+      "speaker_id": "vimd:spk_72_0269",
+      "duration_seconds": 6.160997732426304,
+      "sha256": "f3a74fd0711ee14a2ac267a9527af5a4eb7ce253e40adef38e9ee458c612d79c",
+      "region": "South"
+    },
+    {
+      "id": "vimd:72_0313",
+      "corpus": "vimd",
+      "split": "heldout",
+      "speaker_id": "vimd:spk_72_0271",
+      "duration_seconds": 11.716009070294785,
+      "sha256": "dd7c3d3788cc72dab259b00bc80aaf6d7e318b83462c7396eff25abafa31a188",
+      "region": "South"
+    },
+    {
+      "id": "vimd:72_0319",
+      "corpus": "vimd",
+      "split": "heldout",
+      "speaker_id": "vimd:spk_72_0277",
+      "duration_seconds": 8.58,
+      "sha256": "2f489cdd62c9e06dcb84fba8b43af393156dd19eea384870f362d9f7752f839c",
+      "region": "South"
+    },
+    {
+      "id": "vimd:73_0307",
+      "corpus": "vimd",
+      "split": "heldout",
+      "speaker_id": "vimd:spk_73_0186",
+      "duration_seconds": 11.864,
+      "sha256": "dc07f2c86f17979a9a7b9186978553f87cf6c7d76d7e83bb910bc3f7cb905744",
+      "region": "Central"
+    }
+  ],
+  "private_manifest_sha256": "3359fdba3972a190c1e063510a1258a8540f16ebe180cb520aab166540d870d9"
+}

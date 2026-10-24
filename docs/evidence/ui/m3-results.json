@@ -1,0 +1,9 @@
+{
+  "result": "passed",
+  "tests": [
+    "TC1 actual text flow",
+    "TC4 strict plus consent expansion",
+    "unrelated empty",
+    "order intent requires login"
+  ]
+}

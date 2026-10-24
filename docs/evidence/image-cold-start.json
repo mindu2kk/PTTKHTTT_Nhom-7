@@ -1,0 +1,15 @@
+{
+  "scope": "Restarted inference worker; uncached query through actual frontend BFF, lazy CPU model load",
+  "status": 200,
+  "http_ms": 46937.343,
+  "metadata": {
+    "sha256": "c9c7c61ab29bb02802761dc749a5a077be35e1d2c139f97fc730eb2c2f30f39b",
+    "width": 640,
+    "height": 640,
+    "model_revision": "1a25a446712ba5ee05982a381eed697ef9b435cf",
+    "model_name": "OpenCLIP ViT-B/32",
+    "cached": false,
+    "temporary_only": true
+  },
+  "top_product": "navy-sweater"
+}

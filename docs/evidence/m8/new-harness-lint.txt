@@ -1,0 +1,3 @@
+benchmarks\scripts\m8_browser.py:8:26: F401 [*] `urllib.parse.quote` imported but unused
+Found 1 error.
+[*] 1 fixable with the `--fix` option.

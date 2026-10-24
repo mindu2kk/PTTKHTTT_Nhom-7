@@ -1,0 +1,38 @@
+{
+  "result": "passed",
+  "scope": "Explicitly simulated browser SpeechRecognition API callbacks, not real recognition or model quality",
+  "flows": [
+    "no automatic pack download",
+    "explicit install",
+    "processLocally always true",
+    "no server ASR upload",
+    "permission error",
+    "cancel and ignore late result",
+    "15s watchdog if engine hangs",
+    "common voice pipeline after callback",
+    "unsupported fallback",
+    "360px no overflow"
+  ],
+  "provider_calls": {
+    "installs": 1,
+    "starts": [
+      {
+        "local": true,
+        "lang": "vi-VN"
+      },
+      {
+        "local": true,
+        "lang": "vi-VN"
+      },
+      {
+        "local": true,
+        "lang": "vi-VN"
+      },
+      {
+        "local": true,
+        "lang": "vi-VN"
+      }
+    ],
+    "aborts": 2
+  }
+}

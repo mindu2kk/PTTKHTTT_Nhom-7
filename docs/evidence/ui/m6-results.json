@@ -1,0 +1,17 @@
+{
+  "result": "passed",
+  "created_cancelled_demo_order": "HM2E2BE94515FE4E",
+  "flows": [
+    "real registration and HttpOnly session",
+    "real API checkout, fresh prices",
+    "owner universal order intent",
+    "anonymous denied order",
+    "cancel releases stock",
+    "history opt-in/search/delete",
+    "logout",
+    "canonical TC5 owner 20261005",
+    "real login and operator-scoped admin draft/publish/archive UI",
+    "360px no overflow"
+  ],
+  "page_errors": []
+}

@@ -1,0 +1,263 @@
+FFFFFFF......FFFFF..F................F....                               [100%]
+================================== FAILURES ===================================
+_ test_money_spoken_and_formatted_whole_vnd[n\u0103m tr\u0103m n\u0103m m\u01b0\u01a1i ngh\xecn-550000] _
+
+phrase = 'n\u0103m tr\u0103m n\u0103m m\u01b0\u01a1i ngh\xecn', expected = 550000
+
+    @pytest.mark.parametrize("phrase,expected", [
+        ("n\u0103m tr\u0103m n\u0103m m\u01b0\u01a1i ngh\xecn", 550000), ("n\u0103m tr\u0103m linh n\u0103m ngh\xecn", 505000),
+        ("hai m\u01b0\u01a1i l\u0103m ng\xe0n", 25000), ("m\u1ed9t tri\u1ec7u hai tr\u0103m ngh\xecn", 1200000),
+        ("hai tri\u1ec7u n\u0103m tr\u0103m n\u0103m m\u01b0\u01a1i ngh\xecn \u0111\u1ed3ng", 2550000),
+        ("m\u1ed9t t\u1ef7", 1000000000), ("500.000 \u0111\u1ed3ng", 500000),
+        ("1,5 tri\u1ec7u", 1500000), ("1.5tr", 1500000), ("500k", 500000),
+        ("hai ba ngh\xecn", None), ("n\u0103m tr\u0103m linh", None), ("m\xe8o", None),
+    ])
+    def test_money_spoken_and_formatted_whole_vnd(phrase, expected):
+>       assert amount(phrase) == expected
+E       AssertionError: assert None == 550000
+E        +  where None = amount('n\u0103m tr\u0103m n\u0103m m\u01b0\u01a1i ngh\xecn')
+
+apps\api\unit_tests\test_query_regressions.py:27: AssertionError
+_ test_money_spoken_and_formatted_whole_vnd[n\u0103m tr\u0103m linh n\u0103m ngh\xecn-505000] _
+
+phrase = 'n\u0103m tr\u0103m linh n\u0103m ngh\xecn', expected = 505000
+
+    @pytest.mark.parametrize("phrase,expected", [
+        ("n\u0103m tr\u0103m n\u0103m m\u01b0\u01a1i ngh\xecn", 550000), ("n\u0103m tr\u0103m linh n\u0103m ngh\xecn", 505000),
+        ("hai m\u01b0\u01a1i l\u0103m ng\xe0n", 25000), ("m\u1ed9t tri\u1ec7u hai tr\u0103m ngh\xecn", 1200000),
+        ("hai tri\u1ec7u n\u0103m tr\u0103m n\u0103m m\u01b0\u01a1i ngh\xecn \u0111\u1ed3ng", 2550000),
+        ("m\u1ed9t t\u1ef7", 1000000000), ("500.000 \u0111\u1ed3ng", 500000),
+        ("1,5 tri\u1ec7u", 1500000), ("1.5tr", 1500000), ("500k", 500000),
+        ("hai ba ngh\xecn", None), ("n\u0103m tr\u0103m linh", None), ("m\xe8o", None),
+    ])
+    def test_money_spoken_and_formatted_whole_vnd(phrase, expected):
+>       assert amount(phrase) == expected
+E       AssertionError: assert None == 505000
+E        +  where None = amount('n\u0103m tr\u0103m linh n\u0103m ngh\xecn')
+
+apps\api\unit_tests\test_query_regressions.py:27: AssertionError
+_ test_money_spoken_and_formatted_whole_vnd[hai m\u01b0\u01a1i l\u0103m ng\xe0n-25000] _
+
+phrase = 'hai m\u01b0\u01a1i l\u0103m ng\xe0n', expected = 25000
+
+    @pytest.mark.parametrize("phrase,expected", [
+        ("n\u0103m tr\u0103m n\u0103m m\u01b0\u01a1i ngh\xecn", 550000), ("n\u0103m tr\u0103m linh n\u0103m ngh\xecn", 505000),
+        ("hai m\u01b0\u01a1i l\u0103m ng\xe0n", 25000), ("m\u1ed9t tri\u1ec7u hai tr\u0103m ngh\xecn", 1200000),
+        ("hai tri\u1ec7u n\u0103m tr\u0103m n\u0103m m\u01b0\u01a1i ngh\xecn \u0111\u1ed3ng", 2550000),
+        ("m\u1ed9t t\u1ef7", 1000000000), ("500.000 \u0111\u1ed3ng", 500000),
+        ("1,5 tri\u1ec7u", 1500000), ("1.5tr", 1500000), ("500k", 500000),
+        ("hai ba ngh\xecn", None), ("n\u0103m tr\u0103m linh", None), ("m\xe8o", None),
+    ])
+    def test_money_spoken_and_formatted_whole_vnd(phrase, expected):
+>       assert amount(phrase) == expected
+E       AssertionError: assert None == 25000
+E        +  where None = amount('hai m\u01b0\u01a1i l\u0103m ng\xe0n')
+
+apps\api\unit_tests\test_query_regressions.py:27: AssertionError
+_ test_money_spoken_and_formatted_whole_vnd[m\u1ed9t tri\u1ec7u hai tr\u0103m ngh\xecn-1200000] _
+
+phrase = 'm\u1ed9t tri\u1ec7u hai tr\u0103m ngh\xecn', expected = 1200000
+
+    @pytest.mark.parametrize("phrase,expected", [
+        ("n\u0103m tr\u0103m n\u0103m m\u01b0\u01a1i ngh\xecn", 550000), ("n\u0103m tr\u0103m linh n\u0103m ngh\xecn", 505000),
+        ("hai m\u01b0\u01a1i l\u0103m ng\xe0n", 25000), ("m\u1ed9t tri\u1ec7u hai tr\u0103m ngh\xecn", 1200000),
+        ("hai tri\u1ec7u n\u0103m tr\u0103m n\u0103m m\u01b0\u01a1i ngh\xecn \u0111\u1ed3ng", 2550000),
+        ("m\u1ed9t t\u1ef7", 1000000000), ("500.000 \u0111\u1ed3ng", 500000),
+        ("1,5 tri\u1ec7u", 1500000), ("1.5tr", 1500000), ("500k", 500000),
+        ("hai ba ngh\xecn", None), ("n\u0103m tr\u0103m linh", None), ("m\xe8o", None),
+    ])
+    def test_money_spoken_and_formatted_whole_vnd(phrase, expected):
+>       assert amount(phrase) == expected
+E       AssertionError: assert None == 1200000
+E        +  where None = amount('m\u1ed9t tri\u1ec7u hai tr\u0103m ngh\xecn')
+
+apps\api\unit_tests\test_query_regressions.py:27: AssertionError
+_ test_money_spoken_and_formatted_whole_vnd[hai tri\u1ec7u n\u0103m tr\u0103m n\u0103m m\u01b0\u01a1i ngh\xecn \u0111\u1ed3ng-2550000] _
+
+phrase = 'hai tri\u1ec7u n\u0103m tr\u0103m n\u0103m m\u01b0\u01a1i ngh\xecn \u0111\u1ed3ng', expected = 2550000
+
+    @pytest.mark.parametrize("phrase,expected", [
+        ("n\u0103m tr\u0103m n\u0103m m\u01b0\u01a1i ngh\xecn", 550000), ("n\u0103m tr\u0103m linh n\u0103m ngh\xecn", 505000),
+        ("hai m\u01b0\u01a1i l\u0103m ng\xe0n", 25000), ("m\u1ed9t tri\u1ec7u hai tr\u0103m ngh\xecn", 1200000),
+        ("hai tri\u1ec7u n\u0103m tr\u0103m n\u0103m m\u01b0\u01a1i ngh\xecn \u0111\u1ed3ng", 2550000),
+        ("m\u1ed9t t\u1ef7", 1000000000), ("500.000 \u0111\u1ed3ng", 500000),
+        ("1,5 tri\u1ec7u", 1500000), ("1.5tr", 1500000), ("500k", 500000),
+        ("hai ba ngh\xecn", None), ("n\u0103m tr\u0103m linh", None), ("m\xe8o", None),
+    ])
+    def test_money_spoken_and_formatted_whole_vnd(phrase, expected):
+>       assert amount(phrase) == expected
+E       AssertionError: assert None == 2550000
+E        +  where None = amount('hai tri\u1ec7u n\u0103m tr\u0103m n\u0103m m\u01b0\u01a1i ngh\xecn \u0111\u1ed3ng')
+
+apps\api\unit_tests\test_query_regressions.py:27: AssertionError
+___ test_money_spoken_and_formatted_whole_vnd[m\u1ed9t t\u1ef7-1000000000] ____
+
+phrase = 'm\u1ed9t t\u1ef7', expected = 1000000000
+
+    @pytest.mark.parametrize("phrase,expected", [
+        ("n\u0103m tr\u0103m n\u0103m m\u01b0\u01a1i ngh\xecn", 550000), ("n\u0103m tr\u0103m linh n\u0103m ngh\xecn", 505000),
+        ("hai m\u01b0\u01a1i l\u0103m ng\xe0n", 25000), ("m\u1ed9t tri\u1ec7u hai tr\u0103m ngh\xecn", 1200000),
+        ("hai tri\u1ec7u n\u0103m tr\u0103m n\u0103m m\u01b0\u01a1i ngh\xecn \u0111\u1ed3ng", 2550000),
+        ("m\u1ed9t t\u1ef7", 1000000000), ("500.000 \u0111\u1ed3ng", 500000),
+        ("1,5 tri\u1ec7u", 1500000), ("1.5tr", 1500000), ("500k", 500000),
+        ("hai ba ngh\xecn", None), ("n\u0103m tr\u0103m linh", None), ("m\xe8o", None),
+    ])
+    def test_money_spoken_and_formatted_whole_vnd(phrase, expected):
+>       assert amount(phrase) == expected
+E       AssertionError: assert None == 1000000000
+E        +  where None = amount('m\u1ed9t t\u1ef7')
+
+apps\api\unit_tests\test_query_regressions.py:27: AssertionError
+__ test_money_spoken_and_formatted_whole_vnd[500.000 \u0111\u1ed3ng-500000] ___
+
+phrase = '500.000 \u0111\u1ed3ng', expected = 500000
+
+    @pytest.mark.parametrize("phrase,expected", [
+        ("n\u0103m tr\u0103m n\u0103m m\u01b0\u01a1i ngh\xecn", 550000), ("n\u0103m tr\u0103m linh n\u0103m ngh\xecn", 505000),
+        ("hai m\u01b0\u01a1i l\u0103m ng\xe0n", 25000), ("m\u1ed9t tri\u1ec7u hai tr\u0103m ngh\xecn", 1200000),
+        ("hai tri\u1ec7u n\u0103m tr\u0103m n\u0103m m\u01b0\u01a1i ngh\xecn \u0111\u1ed3ng", 2550000),
+        ("m\u1ed9t t\u1ef7", 1000000000), ("500.000 \u0111\u1ed3ng", 500000),
+        ("1,5 tri\u1ec7u", 1500000), ("1.5tr", 1500000), ("500k", 500000),
+        ("hai ba ngh\xecn", None), ("n\u0103m tr\u0103m linh", None), ("m\xe8o", None),
+    ])
+    def test_money_spoken_and_formatted_whole_vnd(phrase, expected):
+>       assert amount(phrase) == expected
+E       AssertionError: assert None == 500000
+E        +  where None = amount('500.000 \u0111\u1ed3ng')
+
+apps\api\unit_tests\test_query_regressions.py:27: AssertionError
+_ test_complete_money_phrase_is_not_silently_truncated[tai nghe d\u01b0\u1edbi n\u0103m tr\u0103m n\u0103m m\u01b0\u01a1i ngh\xecn-price_max-550000-lt] _
+
+phrase = 'tai nghe d\u01b0\u1edbi n\u0103m tr\u0103m n\u0103m m\u01b0\u01a1i ngh\xecn', key = 'price_max'
+value = 550000, operator = 'lt'
+
+    @pytest.mark.parametrize("phrase,key,value,operator", [
+        ("tai nghe d\u01b0\u1edbi n\u0103m tr\u0103m n\u0103m m\u01b0\u01a1i ngh\xecn", "price_max", 550000, "lt"),
+        ("tai nghe kh\xf4ng qu\xe1 m\u1ed9t tri\u1ec7u hai tr\u0103m ngh\xecn", "price_max", 1200000, "lte"),
+        ("gi\xe0y th\u1ec3 thao t\u1eeb hai tr\u0103m linh n\u0103m ngh\xecn", "price_min", 205000, "gte"),
+        ("tai nghe d\u01b0\u1edbi 500.000 \u0111\u1ed3ng", "price_max", 500000, "lt"),
+    ])
+    def test_complete_money_phrase_is_not_silently_truncated(phrase, key, value, operator):
+>       c = next(c for c in PARSER.parse(phrase, "voice").hard_filters if c.key == key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       StopIteration
+
+apps\api\unit_tests\test_query_regressions.py:37: StopIteration
+_ test_complete_money_phrase_is_not_silently_truncated[tai nghe kh\xf4ng qu\xe1 m\u1ed9t tri\u1ec7u hai tr\u0103m ngh\xecn-price_max-1200000-lte] _
+
+phrase = 'tai nghe kh\xf4ng qu\xe1 m\u1ed9t tri\u1ec7u hai tr\u0103m ngh\xecn', key = 'price_max'
+value = 1200000, operator = 'lte'
+
+    @pytest.mark.parametrize("phrase,key,value,operator", [
+        ("tai nghe d\u01b0\u1edbi n\u0103m tr\u0103m n\u0103m m\u01b0\u01a1i ngh\xecn", "price_max", 550000, "lt"),
+        ("tai nghe kh\xf4ng qu\xe1 m\u1ed9t tri\u1ec7u hai tr\u0103m ngh\xecn", "price_max", 1200000, "lte"),
+        ("gi\xe0y th\u1ec3 thao t\u1eeb hai tr\u0103m linh n\u0103m ngh\xecn", "price_min", 205000, "gte"),
+        ("tai nghe d\u01b0\u1edbi 500.000 \u0111\u1ed3ng", "price_max", 500000, "lt"),
+    ])
+    def test_complete_money_phrase_is_not_silently_truncated(phrase, key, value, operator):
+        c = next(c for c in PARSER.parse(phrase, "voice").hard_filters if c.key == key)
+>       assert (c.value, c.operator) == (value, operator)
+E       AssertionError: assert (1000000, 'lte') == (1200000, 'lte')
+E         
+E         At index 0 diff: 1000000 != 1200000
+E         Use -v to get more diff
+
+apps\api\unit_tests\test_query_regressions.py:38: AssertionError
+_ test_complete_money_phrase_is_not_silently_truncated[gi\xe0y th\u1ec3 thao t\u1eeb hai tr\u0103m linh n\u0103m ngh\xecn-price_min-205000-gte] _
+
+phrase = 'gi\xe0y th\u1ec3 thao t\u1eeb hai tr\u0103m linh n\u0103m ngh\xecn', key = 'price_min'
+value = 205000, operator = 'gte'
+
+    @pytest.mark.parametrize("phrase,key,value,operator", [
+        ("tai nghe d\u01b0\u1edbi n\u0103m tr\u0103m n\u0103m m\u01b0\u01a1i ngh\xecn", "price_max", 550000, "lt"),
+        ("tai nghe kh\xf4ng qu\xe1 m\u1ed9t tri\u1ec7u hai tr\u0103m ngh\xecn", "price_max", 1200000, "lte"),
+        ("gi\xe0y th\u1ec3 thao t\u1eeb hai tr\u0103m linh n\u0103m ngh\xecn", "price_min", 205000, "gte"),
+        ("tai nghe d\u01b0\u1edbi 500.000 \u0111\u1ed3ng", "price_max", 500000, "lt"),
+    ])
+    def test_complete_money_phrase_is_not_silently_truncated(phrase, key, value, operator):
+>       c = next(c for c in PARSER.parse(phrase, "voice").hard_filters if c.key == key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       StopIteration
+
+apps\api\unit_tests\test_query_regressions.py:37: StopIteration
+_ test_complete_money_phrase_is_not_silently_truncated[tai nghe d\u01b0\u1edbi 500.000 \u0111\u1ed3ng-price_max-500000-lt] _
+
+phrase = 'tai nghe d\u01b0\u1edbi 500.000 \u0111\u1ed3ng', key = 'price_max', value = 500000
+operator = 'lt'
+
+    @pytest.mark.parametrize("phrase,key,value,operator", [
+        ("tai nghe d\u01b0\u1edbi n\u0103m tr\u0103m n\u0103m m\u01b0\u01a1i ngh\xecn", "price_max", 550000, "lt"),
+        ("tai nghe kh\xf4ng qu\xe1 m\u1ed9t tri\u1ec7u hai tr\u0103m ngh\xecn", "price_max", 1200000, "lte"),
+        ("gi\xe0y th\u1ec3 thao t\u1eeb hai tr\u0103m linh n\u0103m ngh\xecn", "price_min", 205000, "gte"),
+        ("tai nghe d\u01b0\u1edbi 500.000 \u0111\u1ed3ng", "price_max", 500000, "lt"),
+    ])
+    def test_complete_money_phrase_is_not_silently_truncated(phrase, key, value, operator):
+        c = next(c for c in PARSER.parse(phrase, "voice").hard_filters if c.key == key)
+>       assert (c.value, c.operator) == (value, operator)
+E       AssertionError: assert (500, 'lt') == (500000, 'lt')
+E         
+E         At index 0 diff: 500 != 500000
+E         Use -v to get more diff
+
+apps\api\unit_tests\test_query_regressions.py:38: AssertionError
+_ test_accent_homographs_do_not_become_unspoken_attributes[t\xecm \u0111\xe8n b\xe0n-color] _
+
+phrase = 't\xecm \u0111\xe8n b\xe0n', forbidden = 'color'
+
+    @pytest.mark.parametrize("phrase,forbidden", [
+        ("t\xecm \u0111\xe8n b\xe0n", "color"), ("t\xecm b\xe0n b\u1eb1ng g\u1ed7", "color"),
+        ("t\xf4i \u0111\xe3 ch\u1ecdn tai nghe", "material"), ("t\xf4i \u0111\u1ebfn mua tai nghe", "color"),
+        ("cho t\xf4i xem \u0111\u1ed3 gia d\u1ee5ng", "color"), ("gi\xe0y cho b\xe9", "color"),
+        ("tai nghe kh\xf4ng d\xe2y", "material"), ("b\xe0n l\xe0m vi\u1ec7c", "gender"),
+    ])
+    def test_accent_homographs_do_not_become_unspoken_attributes(phrase, forbidden):
+>       assert not any(c.key == forbidden for c in PARSER.parse(phrase, "voice").hard_filters)
+E       assert not True
+E        +  where True = any(<generator object test_accent_homographs_do_not_become_unspoken_attributes.<locals>.<genexpr> at 0x000001F0BB82FED0>)
+
+apps\api\unit_tests\test_query_regressions.py:48: AssertionError
+_ test_accent_homographs_do_not_become_unspoken_attributes[t\xf4i \u0111\u1ebfn mua tai nghe-color] _
+
+phrase = 't\xf4i \u0111\u1ebfn mua tai nghe', forbidden = 'color'
+
+    @pytest.mark.parametrize("phrase,forbidden", [
+        ("t\xecm \u0111\xe8n b\xe0n", "color"), ("t\xecm b\xe0n b\u1eb1ng g\u1ed7", "color"),
+        ("t\xf4i \u0111\xe3 ch\u1ecdn tai nghe", "material"), ("t\xf4i \u0111\u1ebfn mua tai nghe", "color"),
+        ("cho t\xf4i xem \u0111\u1ed3 gia d\u1ee5ng", "color"), ("gi\xe0y cho b\xe9", "color"),
+        ("tai nghe kh\xf4ng d\xe2y", "material"), ("b\xe0n l\xe0m vi\u1ec7c", "gender"),
+    ])
+    def test_accent_homographs_do_not_become_unspoken_attributes(phrase, forbidden):
+>       assert not any(c.key == forbidden for c in PARSER.parse(phrase, "voice").hard_filters)
+E       assert not True
+E        +  where True = any(<generator object test_accent_homographs_do_not_become_unspoken_attributes.<locals>.<genexpr> at 0x000001F0BB82F440>)
+
+apps\api\unit_tests\test_query_regressions.py:48: AssertionError
+______ test_lexical_rank_discards_unrelated_product_and_keeps_stock_last ______
+
+    def test_lexical_rank_discards_unrelated_product_and_keeps_stock_last():
+        rows = [product("empty", quantity=0), product("wrong", "B\xe0n g\u1ed7"), product("available")]
+        result = RankingService().rank(QueryRepresentation("text", normalized_text="tai nghe"), rows)
+>       assert [r.product.id for r in result] == ["available", "empty"]
+E       AssertionError: assert ['available',...ong', 'empty'] == ['available', 'empty']
+E         
+E         At index 1 diff: 'wrong' != 'empty'
+E         Left contains one more item: 'empty'
+E         Use -v to get more diff
+
+apps\api\unit_tests\test_retrieval_contracts.py:39: AssertionError
+=========================== short test summary info ===========================
+FAILED apps\api\unit_tests\test_query_regressions.py::test_money_spoken_and_formatted_whole_vnd[n\u0103m tr\u0103m n\u0103m m\u01b0\u01a1i ngh\xecn-550000]
+FAILED apps\api\unit_tests\test_query_regressions.py::test_money_spoken_and_formatted_whole_vnd[n\u0103m tr\u0103m linh n\u0103m ngh\xecn-505000]
+FAILED apps\api\unit_tests\test_query_regressions.py::test_money_spoken_and_formatted_whole_vnd[hai m\u01b0\u01a1i l\u0103m ng\xe0n-25000]
+FAILED apps\api\unit_tests\test_query_regressions.py::test_money_spoken_and_formatted_whole_vnd[m\u1ed9t tri\u1ec7u hai tr\u0103m ngh\xecn-1200000]
+FAILED apps\api\unit_tests\test_query_regressions.py::test_money_spoken_and_formatted_whole_vnd[hai tri\u1ec7u n\u0103m tr\u0103m n\u0103m m\u01b0\u01a1i ngh\xecn \u0111\u1ed3ng-2550000]
+FAILED apps\api\unit_tests\test_query_regressions.py::test_money_spoken_and_formatted_whole_vnd[m\u1ed9t t\u1ef7-1000000000]
+FAILED apps\api\unit_tests\test_query_regressions.py::test_money_spoken_and_formatted_whole_vnd[500.000 \u0111\u1ed3ng-500000]
+FAILED apps\api\unit_tests\test_query_regressions.py::test_complete_money_phrase_is_not_silently_truncated[tai nghe d\u01b0\u1edbi n\u0103m tr\u0103m n\u0103m m\u01b0\u01a1i ngh\xecn-price_max-550000-lt]
+FAILED apps\api\unit_tests\test_query_regressions.py::test_complete_money_phrase_is_not_silently_truncated[tai nghe kh\xf4ng qu\xe1 m\u1ed9t tri\u1ec7u hai tr\u0103m ngh\xecn-price_max-1200000-lte]
+FAILED apps\api\unit_tests\test_query_regressions.py::test_complete_money_phrase_is_not_silently_truncated[gi\xe0y th\u1ec3 thao t\u1eeb hai tr\u0103m linh n\u0103m ngh\xecn-price_min-205000-gte]
+FAILED apps\api\unit_tests\test_query_regressions.py::test_complete_money_phrase_is_not_silently_truncated[tai nghe d\u01b0\u1edbi 500.000 \u0111\u1ed3ng-price_max-500000-lt]
+FAILED apps\api\unit_tests\test_query_regressions.py::test_accent_homographs_do_not_become_unspoken_attributes[t\xecm \u0111\xe8n b\xe0n-color]
+FAILED apps\api\unit_tests\test_query_regressions.py::test_accent_homographs_do_not_become_unspoken_attributes[t\xf4i \u0111\u1ebfn mua tai nghe-color]
+FAILED apps\api\unit_tests\test_retrieval_contracts.py::test_lexical_rank_discards_unrelated_product_and_keeps_stock_last
+14 failed, 28 passed in 0.47s

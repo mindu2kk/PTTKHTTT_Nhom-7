@@ -1,0 +1,116 @@
+{
+  "platform": "Windows-11-10.0.26200-SP0",
+  "public_products": 3000,
+  "stored_products": 3005,
+  "source": "2950 clones of original CC0 fixture; not real merchant records",
+  "protocol": "Windows HTTPX over real loopback TCP to isolated Docker API/Python3.12 + Docker PostgreSQL test DB",
+  "query_count": 204,
+  "qrels": "structured independent expected category/color/price oracles, not a human relevance study",
+  "runs": [
+    {
+      "concurrency": 1,
+      "success": 204,
+      "http_tcp_ms": {
+        "p50": 75.104,
+        "p90": 116.515,
+        "p95": 133.021,
+        "p99": 162.873
+      },
+      "service_ms": {
+        "p50": 60.21,
+        "p90": 98.027,
+        "p95": 109.468,
+        "p99": 137.518
+      },
+      "quality": {
+        "precision10": 1.0,
+        "recall10": 0.11349233833394098,
+        "ndcg10": 1.0,
+        "hard_filter_leaks": 0.0
+      }
+    },
+    {
+      "concurrency": 5,
+      "success": 204,
+      "http_tcp_ms": {
+        "p50": 113.917,
+        "p90": 165.686,
+        "p95": 218.071,
+        "p99": 273.861
+      },
+      "service_ms": {
+        "p50": 85.952,
+        "p90": 121.04,
+        "p95": 141.085,
+        "p99": 224.77
+      },
+      "quality": {
+        "precision10": 1.0,
+        "recall10": 0.11349233833394098,
+        "ndcg10": 1.0,
+        "hard_filter_leaks": 0.0
+      }
+    },
+    {
+      "concurrency": 10,
+      "success": 204,
+      "http_tcp_ms": {
+        "p50": 337.001,
+        "p90": 531.074,
+        "p95": 577.541,
+        "p99": 720.319
+      },
+      "service_ms": {
+        "p50": 217.509,
+        "p90": 355.62,
+        "p95": 381.111,
+        "p99": 538.639
+      },
+      "quality": {
+        "precision10": 1.0,
+        "recall10": 0.11349233833394098,
+        "ndcg10": 1.0,
+        "hard_filter_leaks": 0.0
+      }
+    }
+  ],
+  "grid_runs": [
+    {
+      "concurrency": 1,
+      "success": 100,
+      "http_tcp_ms": {
+        "p50": 85.507,
+        "p90": 143.804,
+        "p95": 157.563,
+        "p99": 214.872
+      }
+    },
+    {
+      "concurrency": 5,
+      "success": 100,
+      "http_tcp_ms": {
+        "p50": 197.514,
+        "p90": 263.629,
+        "p95": 280.441,
+        "p99": 324.002
+      }
+    },
+    {
+      "concurrency": 10,
+      "success": 100,
+      "http_tcp_ms": {
+        "p50": 245.19,
+        "p90": 421.588,
+        "p95": 435.314,
+        "p99": 496.21
+      }
+    }
+  ],
+  "failures": [],
+  "limitations": [
+    "Warm only; model inference excluded",
+    "No hybrid text embedding model",
+    "Reused images are scale fixtures, not image evaluation",
+    "Tiny repeated vocabulary is easier than a real catalog"
+  ]
+}

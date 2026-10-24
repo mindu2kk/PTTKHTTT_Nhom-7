@@ -1,0 +1,45 @@
+{
+  "measured_at": "2026-10-21T09:33:04.898372+00:00",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "processor": "Intel64 Family 6 Model 186 Stepping 3, GenuineIntel",
+  "logical_cpus": 8,
+  "client_python": "3.13.0",
+  "fixture": "2026-10-21-v1",
+  "stored_products": 55,
+  "visible_products": 50,
+  "endpoint": "GET /api/v1/products",
+  "first_probe_ms": 492.158,
+  "scope": "Client HTTP round-trip from Windows to Docker API, warm DB; not 3k/search/model SLO",
+  "runs": [
+    {
+      "concurrency": 1,
+      "count": 100,
+      "successes": 100,
+      "p50_ms": 76.773,
+      "p90_ms": 101.793,
+      "p95_ms": 112.312,
+      "p99_ms": 155.86,
+      "total_wall_ms": 8061.462
+    },
+    {
+      "concurrency": 5,
+      "count": 100,
+      "successes": 100,
+      "p50_ms": 140.273,
+      "p90_ms": 192.491,
+      "p95_ms": 328.872,
+      "p99_ms": 531.644,
+      "total_wall_ms": 3297.163
+    },
+    {
+      "concurrency": 10,
+      "count": 100,
+      "successes": 100,
+      "p50_ms": 171.717,
+      "p90_ms": 231.935,
+      "p95_ms": 303.541,
+      "p99_ms": 506.394,
+      "total_wall_ms": 1986.837
+    }
+  ]
+}

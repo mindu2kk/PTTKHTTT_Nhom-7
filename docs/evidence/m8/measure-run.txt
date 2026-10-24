@@ -1,0 +1,17 @@
+{
+  "catalog_products": 318,
+  "queries_measured": 20,
+  "warm_http": {
+    "p50_ms": 522.811,
+    "p90_ms": 933.163,
+    "p95_ms": 1257.503,
+    "p99_ms": 1284.521
+  },
+  "scope": "20 held-out original source-photo IDs/bytes, source same-product-ID qrels. Warmup is a different catalog photo and excluded. Not a smartphone/human shopping study.",
+  "recall": {
+    "1": 0.65,
+    "5": 0.85,
+    "10": 0.95
+  },
+  "ndcg_at_10": 0.7941038292828831
+}

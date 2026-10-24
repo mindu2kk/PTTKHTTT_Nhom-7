@@ -1,0 +1,88 @@
+{
+  "source": "eSpeak NG generated Vietnamese voices; synthetic, NOT human North/Central/South speech",
+  "reference": "tôi muốn mua áo mùa đông",
+  "runs": [
+    {
+      "voice": "vi",
+      "speed": 135,
+      "reference": "tôi muốn mua áo mùa đông",
+      "hypothesis": "Tôi muốn mơ áu mơ",
+      "wer": 0.6666666666666666,
+      "cer": 0.4166666666666667,
+      "duration_seconds": 2.112,
+      "inference_ms": 1870.881,
+      "model_load_ms": 0.0,
+      "winter_intent_correct": false,
+      "top_product": "bag-beige"
+    },
+    {
+      "voice": "vi",
+      "speed": 170,
+      "reference": "tôi muốn mua áo mùa đông",
+      "hypothesis": "Tôi muốn bờ áu bấm",
+      "wer": 0.6666666666666666,
+      "cer": 0.5,
+      "duration_seconds": 1.626,
+      "inference_ms": 1327.226,
+      "model_load_ms": 0.0,
+      "winter_intent_correct": false,
+      "top_product": null
+    },
+    {
+      "voice": "vi-vn-x-central",
+      "speed": 135,
+      "reference": "tôi muốn mua áo mùa đông",
+      "hypothesis": "Tuy mất mơ ám mơ",
+      "wer": 1.0,
+      "cer": 0.625,
+      "duration_seconds": 2.129,
+      "inference_ms": 1530.618,
+      "model_load_ms": 0.0,
+      "winter_intent_correct": false,
+      "top_product": "bag-beige"
+    },
+    {
+      "voice": "vi-vn-x-central",
+      "speed": 170,
+      "reference": "tôi muốn mua áo mùa đông",
+      "hypothesis": "Bộ mất mơ á mơ mơ",
+      "wer": 1.0,
+      "cer": 0.625,
+      "duration_seconds": 1.656,
+      "inference_ms": 2543.601,
+      "model_load_ms": 0.0,
+      "winter_intent_correct": false,
+      "top_product": "bag-beige"
+    },
+    {
+      "voice": "vi-vn-x-south",
+      "speed": 135,
+      "reference": "tôi muốn mua áo mùa đông",
+      "hypothesis": "Tòi mượn mưa á, mưa tầm",
+      "wer": 1.0,
+      "cer": 0.4166666666666667,
+      "duration_seconds": 2.098,
+      "inference_ms": 2983.399,
+      "model_load_ms": 0.0,
+      "winter_intent_correct": false,
+      "top_product": null
+    },
+    {
+      "voice": "vi-vn-x-south",
+      "speed": 170,
+      "reference": "tôi muốn mua áo mùa đông",
+      "hypothesis": "Tôi muốn mưa ám mưa tầng",
+      "wer": 0.6666666666666666,
+      "cer": 0.20833333333333334,
+      "duration_seconds": 1.623,
+      "inference_ms": 2378.889,
+      "model_load_ms": 0.0,
+      "winter_intent_correct": false,
+      "top_product": "sweater-10"
+    }
+  ],
+  "mean_wer": 0.8333333333333334,
+  "mean_cer": 0.46527777777777773,
+  "intent_accuracy": 0.0,
+  "limitations": "Six synthetic renderings of one sentence; insufficient for general ASR quality, human dialects, noise or mixed-language accuracy."
+}

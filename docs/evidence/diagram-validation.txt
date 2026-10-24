@@ -1,0 +1,10 @@
+2026-10-21
+Command: npx --yes --package=@mermaid-js/mermaid-cli@12.0.0 mmdc -i docs/diagrams/catalog-erd.mmd -o docs/diagrams/catalog-erd.svg -p artifacts/puppeteer.json -b white
+Browser: installed Google Chrome; no browser download requested.
+Result: exit 0, Generating single mermaid chart; docs/diagrams/catalog-erd.svg generated.
+Tooling note: npm reported CLI 12's Node >=22.13 engine requirement on the installed Node 22.12; rendering completed. App backend does not depend on this authoring tool.
+
+2026-10-21 final schema update:
+Re-rendered the 25-table catalog-erd.mmd using bundled Node 24, Mermaid CLI 12 and installed Chrome.
+Result: exit 0; Generating single mermaid chart. Current SVG generated at 19:25 local.
+Actual output retained in artifacts/final-diagram.log (ignored authoring log).

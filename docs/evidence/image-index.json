@@ -1,0 +1,12 @@
+{
+  "indexed": 50,
+  "model": "OpenCLIP ViT-B/32",
+  "revision": "1a25a446712ba5ee05982a381eed697ef9b435cf",
+  "dimension": 512,
+  "device": "cpu",
+  "gallery": "original CC0 SVG illustrations, rasterized offline",
+  "preprocess": "openclip default 224 center crop, RGB, model mean/std; source SVG raster scale .8",
+  "total_ms": 39824.113,
+  "first_model_load_ms": 20021.907,
+  "first_rss_mib": 976.59
+}

@@ -1,0 +1,639 @@
+{
+  "scope": "16 hand-authored finite-Vietnamese-concept prompts. Source-category proxy relevance, not independent human judgments or general Vietnamese understanding. Cache-equivalent prompts separated.",
+  "query_count": 16,
+  "uncached_count": 14,
+  "warm_uncached_p50_ms": 321.507,
+  "warm_uncached_p95_ms": 481.251,
+  "cached_count": 2,
+  "top1_category_match_rate": 0.5,
+  "mean_precision_at_5": 0.325,
+  "guards": {
+    "unknown": 422,
+    "order_intent": 422,
+    "invalid_range": 422,
+    "cross_origin_bff": 403
+  },
+  "results": [
+    {
+      "q": "chỗ ngồi",
+      "relevant_categories": [
+        "Ghế",
+        "Sofa"
+      ],
+      "status": 200,
+      "http_ms": 363.058,
+      "cached": false,
+      "media": {
+        "model_revision": "1a25a446712ba5ee05982a381eed697ef9b435cf",
+        "model_name": "OpenCLIP ViT-B/32",
+        "visual_prompt": "a product photo of chair",
+        "cached": false,
+        "temporary_only": true
+      },
+      "hard_filters": [],
+      "top5_categories": [
+        "Bàn",
+        "Ghế",
+        "Ghế",
+        "Ghế",
+        "Ghế"
+      ],
+      "top5_ids": [
+        "abo-0050b24a441bc1f887d6",
+        "abo-246acc6e8a2c98585748",
+        "abo-83f32913bc80c90b136a",
+        "abo-c2a51203b041504067bc",
+        "abo-d4c7304ebc05bc658b39"
+      ],
+      "top1_category_match": false,
+      "precision_at_5": 0.8
+    },
+    {
+      "q": "chỗ ngồi bọc vải",
+      "relevant_categories": [
+        "Ghế",
+        "Sofa"
+      ],
+      "status": 200,
+      "http_ms": 353.135,
+      "cached": false,
+      "media": {
+        "model_revision": "1a25a446712ba5ee05982a381eed697ef9b435cf",
+        "model_name": "OpenCLIP ViT-B/32",
+        "visual_prompt": "a product photo of fabric chair",
+        "cached": false,
+        "temporary_only": true
+      },
+      "hard_filters": [],
+      "top5_categories": [
+        "Ghế",
+        "Ghế",
+        "Ghế",
+        "Ghế",
+        "Bàn"
+      ],
+      "top5_ids": [
+        "abo-d4c7304ebc05bc658b39",
+        "abo-e66fd6e4d4326147e30c",
+        "abo-c2a51203b041504067bc",
+        "abo-e373f4a9f46df3fe8240",
+        "abo-0050b24a441bc1f887d6"
+      ],
+      "top1_category_match": true,
+      "precision_at_5": 0.8
+    },
+    {
+      "q": "chỗ ngồi tối giản",
+      "relevant_categories": [
+        "Ghế",
+        "Sofa"
+      ],
+      "status": 200,
+      "http_ms": 375.342,
+      "cached": false,
+      "media": {
+        "model_revision": "1a25a446712ba5ee05982a381eed697ef9b435cf",
+        "model_name": "OpenCLIP ViT-B/32",
+        "visual_prompt": "a product photo of minimalist chair",
+        "cached": false,
+        "temporary_only": true
+      },
+      "hard_filters": [],
+      "top5_categories": [
+        "Ghế",
+        "Ghế",
+        "Ghế",
+        "Ghế",
+        "Bàn"
+      ],
+      "top5_ids": [
+        "abo-d4c7304ebc05bc658b39",
+        "abo-e373f4a9f46df3fe8240",
+        "abo-e66fd6e4d4326147e30c",
+        "abo-f9e30ee895cc6d8483fc",
+        "abo-0050b24a441bc1f887d6"
+      ],
+      "top1_category_match": true,
+      "precision_at_5": 0.8
+    },
+    {
+      "q": "đồ chiếu sáng",
+      "relevant_categories": [
+        "Đèn bàn"
+      ],
+      "status": 200,
+      "http_ms": 314.863,
+      "cached": false,
+      "media": {
+        "model_revision": "1a25a446712ba5ee05982a381eed697ef9b435cf",
+        "model_name": "OpenCLIP ViT-B/32",
+        "visual_prompt": "a product photo of desk lamp",
+        "cached": false,
+        "temporary_only": true
+      },
+      "hard_filters": [
+        {
+          "key": "color",
+          "value": "đỏ",
+          "origin": "explicit_text",
+          "confidence": 1.0,
+          "operator": "eq"
+        }
+      ],
+      "top5_categories": [
+        "Ghế",
+        "Tai nghe",
+        "Giày nữ",
+        "Giày nữ",
+        "Giày nữ"
+      ],
+      "top5_ids": [
+        "abo-4a886d3cd3a48ff230d5",
+        "abo-1e09d879814e8ee2b46c",
+        "abo-de196de635ad3483174f",
+        "abo-0af1a045cd6669a8aa8b",
+        "abo-907ae4642ae874bae0ee"
+      ],
+      "top1_category_match": false,
+      "precision_at_5": 0.0
+    },
+    {
+      "q": "đồ chiếu sáng tối giản",
+      "relevant_categories": [
+        "Đèn bàn"
+      ],
+      "status": 200,
+      "http_ms": 233.335,
+      "cached": false,
+      "media": {
+        "model_revision": "1a25a446712ba5ee05982a381eed697ef9b435cf",
+        "model_name": "OpenCLIP ViT-B/32",
+        "visual_prompt": "a product photo of minimalist desk lamp",
+        "cached": false,
+        "temporary_only": true
+      },
+      "hard_filters": [
+        {
+          "key": "color",
+          "value": "đỏ",
+          "origin": "explicit_text",
+          "confidence": 1.0,
+          "operator": "eq"
+        }
+      ],
+      "top5_categories": [
+        "Ghế",
+        "Tai nghe",
+        "Giày nữ",
+        "Giày nữ",
+        "Giày nam"
+      ],
+      "top5_ids": [
+        "abo-4a886d3cd3a48ff230d5",
+        "abo-1e09d879814e8ee2b46c",
+        "abo-de196de635ad3483174f",
+        "abo-0af1a045cd6669a8aa8b",
+        "abo-c1bcc35562901d523cad"
+      ],
+      "top1_category_match": false,
+      "precision_at_5": 0.0
+    },
+    {
+      "q": "đồ chiếu sáng màu trắng",
+      "relevant_categories": [
+        "Đèn bàn"
+      ],
+      "status": 200,
+      "http_ms": 250.595,
+      "cached": false,
+      "media": {
+        "model_revision": "1a25a446712ba5ee05982a381eed697ef9b435cf",
+        "model_name": "OpenCLIP ViT-B/32",
+        "visual_prompt": "a product photo of white desk lamp",
+        "cached": false,
+        "temporary_only": true
+      },
+      "hard_filters": [
+        {
+          "key": "color",
+          "value": "trắng",
+          "origin": "explicit_text",
+          "confidence": 1.0,
+          "operator": "eq"
+        }
+      ],
+      "top5_categories": [
+        "Đèn bàn",
+        "Bộ sạc",
+        "Dụng cụ nhà bếp",
+        "Bộ sạc",
+        "Bộ sạc"
+      ],
+      "top5_ids": [
+        "abo-5201acf029973a073d28",
+        "abo-2d80ea05b3c739828545",
+        "abo-fc574b1967303776ae2a",
+        "abo-04958db907a8119dc868",
+        "abo-c6edb07cb2bd23b0cef2"
+      ],
+      "top1_category_match": true,
+      "precision_at_5": 0.2
+    },
+    {
+      "q": "đồ lót sàn",
+      "relevant_categories": [
+        "Thảm"
+      ],
+      "status": 200,
+      "http_ms": 263.317,
+      "cached": false,
+      "media": {
+        "model_revision": "1a25a446712ba5ee05982a381eed697ef9b435cf",
+        "model_name": "OpenCLIP ViT-B/32",
+        "visual_prompt": "a product photo of rug",
+        "cached": false,
+        "temporary_only": true
+      },
+      "hard_filters": [
+        {
+          "key": "color",
+          "value": "đỏ",
+          "origin": "explicit_text",
+          "confidence": 1.0,
+          "operator": "eq"
+        }
+      ],
+      "top5_categories": [
+        "Gối",
+        "Ghế",
+        "Giày nữ",
+        "Giày nữ",
+        "Tai nghe"
+      ],
+      "top5_ids": [
+        "abo-3e282d4b27b03bc34f14",
+        "abo-4a886d3cd3a48ff230d5",
+        "abo-dba192a4cfe1fc47d6fa",
+        "abo-de196de635ad3483174f",
+        "abo-1e09d879814e8ee2b46c"
+      ],
+      "top1_category_match": false,
+      "precision_at_5": 0.0
+    },
+    {
+      "q": "đồ lót sàn mềm",
+      "relevant_categories": [
+        "Thảm"
+      ],
+      "status": 200,
+      "http_ms": 83.8,
+      "cached": true,
+      "media": {
+        "model_revision": "1a25a446712ba5ee05982a381eed697ef9b435cf",
+        "model_name": "OpenCLIP ViT-B/32",
+        "visual_prompt": "a product photo of rug",
+        "cached": true,
+        "temporary_only": true
+      },
+      "hard_filters": [
+        {
+          "key": "color",
+          "value": "đỏ",
+          "origin": "explicit_text",
+          "confidence": 1.0,
+          "operator": "eq"
+        }
+      ],
+      "top5_categories": [
+        "Gối",
+        "Ghế",
+        "Giày nữ",
+        "Giày nữ",
+        "Tai nghe"
+      ],
+      "top5_ids": [
+        "abo-3e282d4b27b03bc34f14",
+        "abo-4a886d3cd3a48ff230d5",
+        "abo-dba192a4cfe1fc47d6fa",
+        "abo-de196de635ad3483174f",
+        "abo-1e09d879814e8ee2b46c"
+      ],
+      "top1_category_match": false,
+      "precision_at_5": 0.0
+    },
+    {
+      "q": "đồ lót sàn hình học",
+      "relevant_categories": [
+        "Thảm"
+      ],
+      "status": 200,
+      "http_ms": 74.803,
+      "cached": true,
+      "media": {
+        "model_revision": "1a25a446712ba5ee05982a381eed697ef9b435cf",
+        "model_name": "OpenCLIP ViT-B/32",
+        "visual_prompt": "a product photo of rug",
+        "cached": true,
+        "temporary_only": true
+      },
+      "hard_filters": [
+        {
+          "key": "color",
+          "value": "đỏ",
+          "origin": "explicit_text",
+          "confidence": 1.0,
+          "operator": "eq"
+        }
+      ],
+      "top5_categories": [
+        "Gối",
+        "Ghế",
+        "Giày nữ",
+        "Giày nữ",
+        "Tai nghe"
+      ],
+      "top5_ids": [
+        "abo-3e282d4b27b03bc34f14",
+        "abo-4a886d3cd3a48ff230d5",
+        "abo-dba192a4cfe1fc47d6fa",
+        "abo-de196de635ad3483174f",
+        "abo-1e09d879814e8ee2b46c"
+      ],
+      "top1_category_match": false,
+      "precision_at_5": 0.0
+    },
+    {
+      "q": "đồ tựa đầu",
+      "relevant_categories": [
+        "Gối"
+      ],
+      "status": 200,
+      "http_ms": 256.248,
+      "cached": false,
+      "media": {
+        "model_revision": "1a25a446712ba5ee05982a381eed697ef9b435cf",
+        "model_name": "OpenCLIP ViT-B/32",
+        "visual_prompt": "a product photo of pillow",
+        "cached": false,
+        "temporary_only": true
+      },
+      "hard_filters": [
+        {
+          "key": "color",
+          "value": "đỏ",
+          "origin": "explicit_text",
+          "confidence": 1.0,
+          "operator": "eq"
+        }
+      ],
+      "top5_categories": [
+        "Gối",
+        "Tai nghe",
+        "Ghế",
+        "Giày nam",
+        "Giày nam"
+      ],
+      "top5_ids": [
+        "abo-3e282d4b27b03bc34f14",
+        "abo-1e09d879814e8ee2b46c",
+        "abo-4a886d3cd3a48ff230d5",
+        "abo-c1bcc35562901d523cad",
+        "abo-488da09980f19a627b6c"
+      ],
+      "top1_category_match": true,
+      "precision_at_5": 0.2
+    },
+    {
+      "q": "đồ tựa đầu bọc vải",
+      "relevant_categories": [
+        "Gối"
+      ],
+      "status": 200,
+      "http_ms": 283.854,
+      "cached": false,
+      "media": {
+        "model_revision": "1a25a446712ba5ee05982a381eed697ef9b435cf",
+        "model_name": "OpenCLIP ViT-B/32",
+        "visual_prompt": "a product photo of fabric pillow",
+        "cached": false,
+        "temporary_only": true
+      },
+      "hard_filters": [
+        {
+          "key": "color",
+          "value": "đỏ",
+          "origin": "explicit_text",
+          "confidence": 1.0,
+          "operator": "eq"
+        }
+      ],
+      "top5_categories": [
+        "Gối",
+        "Tai nghe",
+        "Ghế",
+        "Giày nam",
+        "Giày nữ"
+      ],
+      "top5_ids": [
+        "abo-3e282d4b27b03bc34f14",
+        "abo-1e09d879814e8ee2b46c",
+        "abo-4a886d3cd3a48ff230d5",
+        "abo-488da09980f19a627b6c",
+        "abo-907ae4642ae874bae0ee"
+      ],
+      "top1_category_match": true,
+      "precision_at_5": 0.2
+    },
+    {
+      "q": "đồ tựa đầu tối giản",
+      "relevant_categories": [
+        "Gối"
+      ],
+      "status": 200,
+      "http_ms": 328.151,
+      "cached": false,
+      "media": {
+        "model_revision": "1a25a446712ba5ee05982a381eed697ef9b435cf",
+        "model_name": "OpenCLIP ViT-B/32",
+        "visual_prompt": "a product photo of minimalist pillow",
+        "cached": false,
+        "temporary_only": true
+      },
+      "hard_filters": [
+        {
+          "key": "color",
+          "value": "đỏ",
+          "origin": "explicit_text",
+          "confidence": 1.0,
+          "operator": "eq"
+        }
+      ],
+      "top5_categories": [
+        "Gối",
+        "Tai nghe",
+        "Ghế",
+        "Giày nam",
+        "Giày nữ"
+      ],
+      "top5_ids": [
+        "abo-3e282d4b27b03bc34f14",
+        "abo-1e09d879814e8ee2b46c",
+        "abo-4a886d3cd3a48ff230d5",
+        "abo-c1bcc35562901d523cad",
+        "abo-de196de635ad3483174f"
+      ],
+      "top1_category_match": true,
+      "precision_at_5": 0.2
+    },
+    {
+      "q": "vỏ bảo vệ điện thoại",
+      "relevant_categories": [
+        "Ốp lưng"
+      ],
+      "status": 200,
+      "http_ms": 602.208,
+      "cached": false,
+      "media": {
+        "model_revision": "1a25a446712ba5ee05982a381eed697ef9b435cf",
+        "model_name": "OpenCLIP ViT-B/32",
+        "visual_prompt": "a product photo of phone case",
+        "cached": false,
+        "temporary_only": true
+      },
+      "hard_filters": [],
+      "top5_categories": [
+        "Ốp điện thoại",
+        "Ốp điện thoại",
+        "Ốp điện thoại",
+        "Ốp điện thoại",
+        "Ốp điện thoại"
+      ],
+      "top5_ids": [
+        "abo-253d991f86a836b2ce74",
+        "abo-80b535ad9ba063838753",
+        "abo-a95d0f0ebb88d376bce9",
+        "abo-aa05a05b97767dc49bf0",
+        "abo-ca9617ea94f3a76b5017"
+      ],
+      "top1_category_match": false,
+      "precision_at_5": 0.0
+    },
+    {
+      "q": "vỏ bảo vệ điện thoại tối giản",
+      "relevant_categories": [
+        "Ốp lưng"
+      ],
+      "status": 200,
+      "http_ms": 416.12,
+      "cached": false,
+      "media": {
+        "model_revision": "1a25a446712ba5ee05982a381eed697ef9b435cf",
+        "model_name": "OpenCLIP ViT-B/32",
+        "visual_prompt": "a product photo of minimalist phone case",
+        "cached": false,
+        "temporary_only": true
+      },
+      "hard_filters": [],
+      "top5_categories": [
+        "Ốp điện thoại",
+        "Ốp điện thoại",
+        "Ốp điện thoại",
+        "Ốp điện thoại",
+        "Ốp điện thoại"
+      ],
+      "top5_ids": [
+        "abo-079890493c0f0b63ced5",
+        "abo-6db8e735a0e855774822",
+        "abo-a95d0f0ebb88d376bce9",
+        "abo-cffdf5d9963100147b06",
+        "abo-253d991f86a836b2ce74"
+      ],
+      "top1_category_match": false,
+      "precision_at_5": 0.0
+    },
+    {
+      "q": "đồ mang chân",
+      "relevant_categories": [
+        "Giày nam",
+        "Giày nữ"
+      ],
+      "status": 200,
+      "http_ms": 337.903,
+      "cached": false,
+      "media": {
+        "model_revision": "1a25a446712ba5ee05982a381eed697ef9b435cf",
+        "model_name": "OpenCLIP ViT-B/32",
+        "visual_prompt": "a product photo of shoes",
+        "cached": false,
+        "temporary_only": true
+      },
+      "hard_filters": [
+        {
+          "key": "color",
+          "value": "đỏ",
+          "origin": "explicit_text",
+          "confidence": 1.0,
+          "operator": "eq"
+        }
+      ],
+      "top5_categories": [
+        "Giày nam",
+        "Giày nữ",
+        "Giày nam",
+        "Giày nữ",
+        "Giày nữ"
+      ],
+      "top5_ids": [
+        "abo-c1bcc35562901d523cad",
+        "abo-dba192a4cfe1fc47d6fa",
+        "abo-488da09980f19a627b6c",
+        "abo-de196de635ad3483174f",
+        "abo-0af1a045cd6669a8aa8b"
+      ],
+      "top1_category_match": true,
+      "precision_at_5": 1.0
+    },
+    {
+      "q": "đồ mang chân thể thao",
+      "relevant_categories": [
+        "Giày nam",
+        "Giày nữ"
+      ],
+      "status": 200,
+      "http_ms": 281.768,
+      "cached": false,
+      "media": {
+        "model_revision": "1a25a446712ba5ee05982a381eed697ef9b435cf",
+        "model_name": "OpenCLIP ViT-B/32",
+        "visual_prompt": "a product photo of sporty shoes",
+        "cached": false,
+        "temporary_only": true
+      },
+      "hard_filters": [
+        {
+          "key": "color",
+          "value": "đỏ",
+          "origin": "explicit_text",
+          "confidence": 1.0,
+          "operator": "eq"
+        }
+      ],
+      "top5_categories": [
+        "Giày nam",
+        "Giày nữ",
+        "Giày nam",
+        "Giày nữ",
+        "Giày nữ"
+      ],
+      "top5_ids": [
+        "abo-c1bcc35562901d523cad",
+        "abo-0af1a045cd6669a8aa8b",
+        "abo-488da09980f19a627b6c",
+        "abo-dba192a4cfe1fc47d6fa",
+        "abo-de196de635ad3483174f"
+      ],
+      "top1_category_match": true,
+      "precision_at_5": 1.0
+    }
+  ]
+}

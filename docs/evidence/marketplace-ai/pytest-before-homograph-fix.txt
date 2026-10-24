@@ -1,0 +1,20 @@
+........................................................................ [ 41%]
+........................................................................ [ 82%]
+....................F.........                                           [100%]
+================================== FAILURES ===================================
+______ test_actual_red_stays_explicit[\u0111\u1ed3 m\xe0u \u0111\u1ecf] _______
+
+q = '\u0111\u1ed3 m\xe0u \u0111\u1ecf'
+
+    @pytest.mark.parametrize("q", ["m\xe0u \u0111\u1ecf", "mau do", "\u0111\u1ed3 m\xe0u \u0111\u1ecf"])
+    def test_actual_red_stays_explicit(q):
+        rep = RuleQueryParser([]).parse(q)
+>       assert any(c.key == "color" and c.value == "\u0111\u1ecf" for c in rep.hard_filters)
+E       assert False
+E        +  where False = any(<generator object test_actual_red_stays_explicit.<locals>.<genexpr> at 0x000002AE0FB2A740>)
+
+apps\api\tests\test_shopping_assistant.py:145: AssertionError
+- generated xml file: D:\PTTKHT WEB ecommerce\docs\evidence\marketplace-ai\pytest.xml -
+=========================== short test summary info ===========================
+FAILED apps\api\tests\test_shopping_assistant.py::test_actual_red_stays_explicit[\u0111\u1ed3 m\xe0u \u0111\u1ecf]
+1 failed, 173 passed in 69.08s (0:01:09)

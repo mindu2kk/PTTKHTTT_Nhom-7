@@ -1,0 +1,8 @@
+{
+  "result": "passed",
+  "capture": "Chrome fake audio device playing synthetic eSpeak WAV, not a physical microphone",
+  "pipeline": "actual MediaRecorder WebM -> bounded upload -> real local Whisper",
+  "cancel_releases_tracks": true,
+  "stop_releases_tracks": true,
+  "hypothesis": "Tôi muốn mưa ál mơ ứng Tôi muốn mua ál vơ ương"
+}

@@ -1,0 +1,16 @@
+{
+  "moved_unreferenced_derivatives_to_private": [
+    "abo-45e200f01e10940fb102-0-320.webp",
+    "abo-45e200f01e10940fb102-0.webp",
+    "abo-6810198213982dc40777-0-320.webp",
+    "abo-6810198213982dc40777-0.webp",
+    "abo-7f1849c7c09a28f5455a-0-320.webp",
+    "abo-7f1849c7c09a28f5455a-0.webp",
+    "abo-bfbe98267c7b8fa20579-0-320.webp",
+    "abo-bfbe98267c7b8fa20579-0.webp",
+    "abo-dfbd3691b2e0cbd5527b-0-320.webp",
+    "abo-dfbd3691b2e0cbd5527b-0.webp"
+  ],
+  "retained_referenced_files": 1248,
+  "scope": "Only M8-generated ABO derivatives outside final reviewed manifest; no deletes"
+}

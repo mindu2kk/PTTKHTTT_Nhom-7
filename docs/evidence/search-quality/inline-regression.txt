@@ -1,0 +1,1 @@
+Inline search passed: five viewport text flows, actual image/paste retrieval, permissions, actual recording/ASR, voice search and cleanup.

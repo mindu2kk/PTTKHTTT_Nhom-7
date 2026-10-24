@@ -1,0 +1,13 @@
+{
+  "encoded": 604,
+  "skipped_unchanged": 22,
+  "approved_images": 626,
+  "elapsed_ms": 267066.918,
+  "revision": "1a25a446712ba5ee05982a381eed697ef9b435cf",
+  "first_call": {
+    "model_load_ms": 29152.081,
+    "rss_mib": 987.91,
+    "inference_ms": 45723.7
+  },
+  "scope": "Offline index of all approved real_demo photos, primary and gallery; exact filtered vector retrieval aggregates by product"
+}

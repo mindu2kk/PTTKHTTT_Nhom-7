@@ -1,0 +1,429 @@
+{
+  "scope": "25 distinct licensed photo inputs, original 50-product main demo catalog, full HTTP validation/encode/SQL/vector/ranking/serialize; latency only, not relevance accuracy",
+  "source": "https://data.caltech.edu/records/mzrjq-6wc02",
+  "cache_control": "Run-specific two pixels differ per image so embedding cache is not reused; all cached=false. Model warmup excluded.",
+  "warmup": {
+    "id": "camera-image_0011",
+    "bytes": 70828,
+    "http_ms": 2389.555,
+    "service_ms": 314.07,
+    "stages_ms": {
+      "parse": 4.239,
+      "db_prefilter_lexical": 35.802,
+      "vector_search": 4.654,
+      "ranking": 0.6,
+      "input_validation": 24.904,
+      "image_embed": 228.314,
+      "image_encoder_http": 243.8,
+      "model_load": 0.0
+    }
+  },
+  "percentiles_ms": {
+    "p50": 273.275,
+    "p90": 421.748,
+    "p95": 429.857,
+    "p99": 565.016
+  },
+  "measurements": [
+    {
+      "id": "camera-image_0011",
+      "bytes": 70828,
+      "http_ms": 257.978,
+      "service_ms": 248.834,
+      "stages_ms": {
+        "parse": 5.635,
+        "db_prefilter_lexical": 30.343,
+        "vector_search": 5.851,
+        "ranking": 0.98,
+        "input_validation": 25.785,
+        "image_embed": 151.604,
+        "image_encoder_http": 180.163,
+        "model_load": 0.0
+      }
+    },
+    {
+      "id": "camera-image_0012",
+      "bytes": 87061,
+      "http_ms": 261.446,
+      "service_ms": 245.411,
+      "stages_ms": {
+        "parse": 4.812,
+        "db_prefilter_lexical": 30.458,
+        "vector_search": 26.132,
+        "ranking": 1.65,
+        "input_validation": 31.818,
+        "image_embed": 126.763,
+        "image_encoder_http": 150.427,
+        "model_load": 0.0
+      }
+    },
+    {
+      "id": "camera-image_0013",
+      "bytes": 80169,
+      "http_ms": 347.904,
+      "service_ms": 334.687,
+      "stages_ms": {
+        "parse": 5.671,
+        "db_prefilter_lexical": 69.321,
+        "vector_search": 5.97,
+        "ranking": 1.133,
+        "input_validation": 58.901,
+        "image_embed": 162.618,
+        "image_encoder_http": 193.469,
+        "model_load": 0.0
+      }
+    },
+    {
+      "id": "camera-image_0014",
+      "bytes": 86292,
+      "http_ms": 192.814,
+      "service_ms": 180.805,
+      "stages_ms": {
+        "parse": 4.396,
+        "db_prefilter_lexical": 26.106,
+        "vector_search": 3.32,
+        "ranking": 0.697,
+        "input_validation": 21.812,
+        "image_embed": 108.15,
+        "image_encoder_http": 124.417,
+        "model_load": 0.0
+      }
+    },
+    {
+      "id": "camera-image_0015",
+      "bytes": 93501,
+      "http_ms": 207.989,
+      "service_ms": 192.597,
+      "stages_ms": {
+        "parse": 3.935,
+        "db_prefilter_lexical": 38.362,
+        "vector_search": 4.011,
+        "ranking": 0.876,
+        "input_validation": 23.911,
+        "image_embed": 107.945,
+        "image_encoder_http": 121.427,
+        "model_load": 0.0
+      }
+    },
+    {
+      "id": "headphone-image_0011",
+      "bytes": 81339,
+      "http_ms": 208.813,
+      "service_ms": 200.214,
+      "stages_ms": {
+        "parse": 4.329,
+        "db_prefilter_lexical": 28.698,
+        "vector_search": 3.051,
+        "ranking": 0.633,
+        "input_validation": 28.428,
+        "image_embed": 118.441,
+        "image_encoder_http": 135.015,
+        "model_load": 0.0
+      }
+    },
+    {
+      "id": "headphone-image_0012",
+      "bytes": 71445,
+      "http_ms": 565.016,
+      "service_ms": 549.732,
+      "stages_ms": {
+        "parse": 13.491,
+        "db_prefilter_lexical": 105.456,
+        "vector_search": 7.715,
+        "ranking": 2.148,
+        "input_validation": 33.723,
+        "image_embed": 336.161,
+        "image_encoder_http": 387.018,
+        "model_load": 0.0
+      }
+    },
+    {
+      "id": "headphone-image_0013",
+      "bytes": 96741,
+      "http_ms": 305.517,
+      "service_ms": 297.206,
+      "stages_ms": {
+        "parse": 6.498,
+        "db_prefilter_lexical": 33.179,
+        "vector_search": 3.954,
+        "ranking": 0.623,
+        "input_validation": 39.875,
+        "image_embed": 170.682,
+        "image_encoder_http": 213.007,
+        "model_load": 0.0
+      }
+    },
+    {
+      "id": "headphone-image_0014",
+      "bytes": 48435,
+      "http_ms": 199.801,
+      "service_ms": 193.171,
+      "stages_ms": {
+        "parse": 3.825,
+        "db_prefilter_lexical": 27.508,
+        "vector_search": 3.327,
+        "ranking": 0.598,
+        "input_validation": 13.796,
+        "image_embed": 130.271,
+        "image_encoder_http": 144.054,
+        "model_load": 0.0
+      }
+    },
+    {
+      "id": "headphone-image_0015",
+      "bytes": 77510,
+      "http_ms": 199.329,
+      "service_ms": 190.571,
+      "stages_ms": {
+        "parse": 4.799,
+        "db_prefilter_lexical": 36.531,
+        "vector_search": 5.049,
+        "ranking": 0.765,
+        "input_validation": 14.661,
+        "image_embed": 110.761,
+        "image_encoder_http": 128.671,
+        "model_load": 0.0
+      }
+    },
+    {
+      "id": "laptop-image_0011",
+      "bytes": 55152,
+      "http_ms": 238.395,
+      "service_ms": 231.15,
+      "stages_ms": {
+        "parse": 5.414,
+        "db_prefilter_lexical": 31.836,
+        "vector_search": 3.025,
+        "ranking": 0.621,
+        "input_validation": 13.221,
+        "image_embed": 158.116,
+        "image_encoder_http": 176.971,
+        "model_load": 0.0
+      }
+    },
+    {
+      "id": "laptop-image_0012",
+      "bytes": 116471,
+      "http_ms": 277.321,
+      "service_ms": 265.083,
+      "stages_ms": {
+        "parse": 4.473,
+        "db_prefilter_lexical": 28.345,
+        "vector_search": 3.181,
+        "ranking": 0.672,
+        "input_validation": 24.396,
+        "image_embed": 187.727,
+        "image_encoder_http": 203.944,
+        "model_load": 0.0
+      }
+    },
+    {
+      "id": "laptop-image_0013",
+      "bytes": 89584,
+      "http_ms": 277.211,
+      "service_ms": 267.987,
+      "stages_ms": {
+        "parse": 3.894,
+        "db_prefilter_lexical": 26.946,
+        "vector_search": 3.094,
+        "ranking": 0.636,
+        "input_validation": 37.962,
+        "image_embed": 165.123,
+        "image_encoder_http": 195.395,
+        "model_load": 0.0
+      }
+    },
+    {
+      "id": "laptop-image_0014",
+      "bytes": 76336,
+      "http_ms": 234.659,
+      "service_ms": 217.492,
+      "stages_ms": {
+        "parse": 4.953,
+        "db_prefilter_lexical": 34.461,
+        "vector_search": 3.498,
+        "ranking": 0.766,
+        "input_validation": 39.199,
+        "image_embed": 108.783,
+        "image_encoder_http": 134.549,
+        "model_load": 0.0
+      }
+    },
+    {
+      "id": "laptop-image_0015",
+      "bytes": 96374,
+      "http_ms": 394.522,
+      "service_ms": 378.371,
+      "stages_ms": {
+        "parse": 7.937,
+        "db_prefilter_lexical": 42.743,
+        "vector_search": 5.619,
+        "ranking": 1.061,
+        "input_validation": 63.083,
+        "image_embed": 241.155,
+        "image_encoder_http": 257.848,
+        "model_load": 0.0
+      }
+    },
+    {
+      "id": "watch-image_0011",
+      "bytes": 110286,
+      "http_ms": 223.061,
+      "service_ms": 214.311,
+      "stages_ms": {
+        "parse": 4.817,
+        "db_prefilter_lexical": 31.193,
+        "vector_search": 3.669,
+        "ranking": 0.639,
+        "input_validation": 24.874,
+        "image_embed": 129.394,
+        "image_encoder_http": 149.047,
+        "model_load": 0.0
+      }
+    },
+    {
+      "id": "watch-image_0012",
+      "bytes": 85366,
+      "http_ms": 429.857,
+      "service_ms": 408.668,
+      "stages_ms": {
+        "parse": 6.872,
+        "db_prefilter_lexical": 37.512,
+        "vector_search": 4.631,
+        "ranking": 0.696,
+        "input_validation": 46.895,
+        "image_embed": 288.258,
+        "image_encoder_http": 311.996,
+        "model_load": 0.0
+      }
+    },
+    {
+      "id": "watch-image_0013",
+      "bytes": 60954,
+      "http_ms": 339.803,
+      "service_ms": 325.443,
+      "stages_ms": {
+        "parse": 6.479,
+        "db_prefilter_lexical": 47.081,
+        "vector_search": 5.465,
+        "ranking": 1.386,
+        "input_validation": 16.274,
+        "image_embed": 225.004,
+        "image_encoder_http": 248.615,
+        "model_load": 0.0
+      }
+    },
+    {
+      "id": "watch-image_0014",
+      "bytes": 111920,
+      "http_ms": 272.603,
+      "service_ms": 258.179,
+      "stages_ms": {
+        "parse": 4.048,
+        "db_prefilter_lexical": 30.929,
+        "vector_search": 3.813,
+        "ranking": 0.621,
+        "input_validation": 42.785,
+        "image_embed": 144.388,
+        "image_encoder_http": 175.922,
+        "model_load": 0.0
+      }
+    },
+    {
+      "id": "watch-image_0015",
+      "bytes": 108184,
+      "http_ms": 307.947,
+      "service_ms": 291.573,
+      "stages_ms": {
+        "parse": 5.632,
+        "db_prefilter_lexical": 39.996,
+        "vector_search": 4.125,
+        "ranking": 0.604,
+        "input_validation": 19.415,
+        "image_embed": 204.247,
+        "image_encoder_http": 221.736,
+        "model_load": 0.0
+      }
+    },
+    {
+      "id": "umbrella-image_0011",
+      "bytes": 50644,
+      "http_ms": 346.625,
+      "service_ms": 334.621,
+      "stages_ms": {
+        "parse": 6.148,
+        "db_prefilter_lexical": 52.283,
+        "vector_search": 4.56,
+        "ranking": 0.63,
+        "input_validation": 11.6,
+        "image_embed": 233.552,
+        "image_encoder_http": 259.329,
+        "model_load": 0.0
+      }
+    },
+    {
+      "id": "umbrella-image_0012",
+      "bytes": 87888,
+      "http_ms": 273.275,
+      "service_ms": 245.522,
+      "stages_ms": {
+        "parse": 4.419,
+        "db_prefilter_lexical": 42.704,
+        "vector_search": 5.866,
+        "ranking": 1.23,
+        "input_validation": 31.492,
+        "image_embed": 145.25,
+        "image_encoder_http": 159.525,
+        "model_load": 0.0
+      }
+    },
+    {
+      "id": "umbrella-image_0013",
+      "bytes": 139363,
+      "http_ms": 234.025,
+      "service_ms": 205.559,
+      "stages_ms": {
+        "parse": 3.869,
+        "db_prefilter_lexical": 27.041,
+        "vector_search": 3.344,
+        "ranking": 0.715,
+        "input_validation": 20.066,
+        "image_embed": 136.207,
+        "image_encoder_http": 150.46,
+        "model_load": 0.0
+      }
+    },
+    {
+      "id": "umbrella-image_0014",
+      "bytes": 94822,
+      "http_ms": 421.748,
+      "service_ms": 310.592,
+      "stages_ms": {
+        "parse": 5.175,
+        "db_prefilter_lexical": 49.631,
+        "vector_search": 8.058,
+        "ranking": 1.238,
+        "input_validation": 21.907,
+        "image_embed": 207.551,
+        "image_encoder_http": 224.47,
+        "model_load": 0.0
+      }
+    },
+    {
+      "id": "umbrella-image_0015",
+      "bytes": 70180,
+      "http_ms": 359.582,
+      "service_ms": 341.289,
+      "stages_ms": {
+        "parse": 6.368,
+        "db_prefilter_lexical": 56.835,
+        "vector_search": 5.228,
+        "ranking": 0.973,
+        "input_validation": 46.877,
+        "image_embed": 189.36,
+        "image_encoder_http": 224.926,
+        "model_load": 0.0
+      }
+    }
+  ]
+}

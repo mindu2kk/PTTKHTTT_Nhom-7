@@ -1,0 +1,18 @@
+{
+  "rows": 2,
+  "rejected": [
+    {
+      "product_id": "abo-204451f5f6bc0e73af7e",
+      "source_image_id": "61OnkGVhMWL",
+      "source_sha256": "f9b41eb58215d7e78309076573606e38591fe5b334c36b6d35adda9a4b930ba0",
+      "reason": "Primary image is AmazonBasics logo, not product photograph"
+    },
+    {
+      "product_id": "abo-5f5f9632db9020461673",
+      "source_image_id": "61kVdTXTJ4L",
+      "source_sha256": "a8f48a9e1ef51009fa541bb1248aa769d4445afb4ab6c0d6d812ec0661724c60",
+      "reason": "Primary image says Image Coming Soon"
+    }
+  ],
+  "action": "draft/pending; raw/DB links retained; derivatives moved to private quarantine"
+}

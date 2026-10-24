@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>HoodooMart · Thu mẫu tìm kiếm</title><link rel="stylesheet" href="/capture.css"></head>
+<body><main>
+<p class="eyebrow">HOODOOMART · KIỂM THỬ LOCAL</p>
+<h1>Thu mẫu tìm kiếm bằng giọng nói</h1>
+<p>Đọc câu hoặc diễn đạt cùng ý bằng lời tự nhiên. Mỗi bản ghi tối đa 12 giây. Không đọc thông tin cá nhân.</p>
+<label for="sample">Câu có đáp án đã khóa</label><select id="sample" disabled></select>
+<blockquote id="prompt">Đang tải bộ câu…</blockquote>
+<label class="consent"><input id="consent" type="checkbox"> Tôi đồng ý lưu bản ghi trên máy này để đánh giá tìm kiếm.</label>
+<div class="actions"><button id="start" disabled>Bắt đầu ghi âm</button><button id="stop" disabled>Dừng</button><button id="cancel" disabled>Hủy</button></div>
+<audio id="preview" controls hidden></audio>
+<div class="actions"><button id="save" disabled>Lưu bản ghi</button><button id="next" disabled>Câu tiếp theo</button></div>
+<p id="status" role="status" aria-live="polite">Chưa ghi âm.</p>
+<details><summary>Bản ghi được dùng thế nào?</summary><p>Chỉ lưu khi bạn bấm “Lưu bản ghi”. Tệp được giữ trong data/private/shopping-voice, không tải lên dịch vụ. Đóng trang sẽ hủy bản chưa lưu và nhả micro. Thu âm chưa đồng nghĩa đạt chất lượng 70%; công cụ chấm phải chạy riêng trên audio thật và đáp án đã khóa.</p></details>
+</main><script src="/capture.js" defer></script></body></html>

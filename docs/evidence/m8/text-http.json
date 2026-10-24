@@ -1,0 +1,6156 @@
+{
+  "catalog_products": 318,
+  "scope": "Actual Windows HTTPX -> TCP -> Docker API -> PostgreSQL; no synthetic product clones; structured oracle only",
+  "groups": [
+    {
+      "concurrency": 1,
+      "requests": 114,
+      "tcp": {
+        "p50_ms": 49.594,
+        "p90_ms": 73.821,
+        "p95_ms": 78.122,
+        "p99_ms": 85.161
+      },
+      "service": {
+        "p50_ms": 36.668,
+        "p90_ms": 57.563,
+        "p95_ms": 60.122,
+        "p99_ms": 65.9
+      },
+      "grid_tcp": {
+        "p50_ms": 37.54,
+        "p90_ms": 52.408,
+        "p95_ms": 60.624,
+        "p99_ms": 72.564
+      },
+      "precision_at_10": 0.6736842105263158,
+      "recall_at_10": 0.7960392478023046,
+      "ndcg_at_10": 1.0,
+      "category_leaks": 0,
+      "results": [
+        {
+          "q": "Giày nam",
+          "tcp_ms": 84.60320000040156,
+          "service_ms": 46.04,
+          "ids": [
+            "abo-00c514834bf1afb3aeb1",
+            "abo-0163e5b3f66c2cb986d1",
+            "abo-0446c46130dcf4cf986d",
+            "abo-0677e35cb13f616f4e89",
+            "abo-07664b5bdbfa4053fe23",
+            "abo-08c3abaa33e9e744db0b",
+            "abo-142df26114c9cb0f83fe",
+            "abo-167e24d686f1dd378300",
+            "abo-1a20a2d5b699155f63ae",
+            "abo-1c3c0d3210809f805d53"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.12048192771084337,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "giày nam",
+          "tcp_ms": 53.996399999959976,
+          "service_ms": 39.139,
+          "ids": [
+            "abo-00c514834bf1afb3aeb1",
+            "abo-0163e5b3f66c2cb986d1",
+            "abo-0446c46130dcf4cf986d",
+            "abo-0677e35cb13f616f4e89",
+            "abo-07664b5bdbfa4053fe23",
+            "abo-08c3abaa33e9e744db0b",
+            "abo-142df26114c9cb0f83fe",
+            "abo-167e24d686f1dd378300",
+            "abo-1a20a2d5b699155f63ae",
+            "abo-1c3c0d3210809f805d53"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.12048192771084337,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Giay nam",
+          "tcp_ms": 46.20299999987765,
+          "service_ms": 33.482,
+          "ids": [
+            "abo-00c514834bf1afb3aeb1",
+            "abo-0163e5b3f66c2cb986d1",
+            "abo-0446c46130dcf4cf986d",
+            "abo-0677e35cb13f616f4e89",
+            "abo-07664b5bdbfa4053fe23",
+            "abo-08c3abaa33e9e744db0b",
+            "abo-142df26114c9cb0f83fe",
+            "abo-167e24d686f1dd378300",
+            "abo-1a20a2d5b699155f63ae",
+            "abo-1c3c0d3210809f805d53"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.12048192771084337,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "tôi muốn mua Giày nam",
+          "tcp_ms": 55.32340000036129,
+          "service_ms": 39.858,
+          "ids": [
+            "abo-00c514834bf1afb3aeb1",
+            "abo-0163e5b3f66c2cb986d1",
+            "abo-0446c46130dcf4cf986d",
+            "abo-0677e35cb13f616f4e89",
+            "abo-07664b5bdbfa4053fe23",
+            "abo-08c3abaa33e9e744db0b",
+            "abo-142df26114c9cb0f83fe",
+            "abo-167e24d686f1dd378300",
+            "abo-1a20a2d5b699155f63ae",
+            "abo-1c3c0d3210809f805d53"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.12048192771084337,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Giày nam dưới 490001",
+          "tcp_ms": 73.48550000006071,
+          "service_ms": 58.178,
+          "ids": [
+            "abo-00c514834bf1afb3aeb1",
+            "abo-0163e5b3f66c2cb986d1",
+            "abo-0446c46130dcf4cf986d",
+            "abo-0677e35cb13f616f4e89",
+            "abo-07664b5bdbfa4053fe23",
+            "abo-08c3abaa33e9e744db0b",
+            "abo-142df26114c9cb0f83fe",
+            "abo-167e24d686f1dd378300",
+            "abo-1a20a2d5b699155f63ae",
+            "abo-1c3c0d3210809f805d53"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.12048192771084337,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Giày nam không quá 490000",
+          "tcp_ms": 57.55649999991874,
+          "service_ms": 44.226,
+          "ids": [
+            "abo-00c514834bf1afb3aeb1",
+            "abo-0163e5b3f66c2cb986d1",
+            "abo-0446c46130dcf4cf986d",
+            "abo-0677e35cb13f616f4e89",
+            "abo-07664b5bdbfa4053fe23",
+            "abo-08c3abaa33e9e744db0b",
+            "abo-142df26114c9cb0f83fe",
+            "abo-167e24d686f1dd378300",
+            "abo-1a20a2d5b699155f63ae",
+            "abo-1c3c0d3210809f805d53"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.12048192771084337,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Giày nữ",
+          "tcp_ms": 56.937399999696936,
+          "service_ms": 44.519,
+          "ids": [
+            "abo-0336da5827d1a560c8f5",
+            "abo-04122797f0a6587604cc",
+            "abo-068eb2ca7f3a164aa0fc",
+            "abo-0af1a045cd6669a8aa8b",
+            "abo-0fc59eb036b16e07f35b",
+            "abo-1986e4d84ac0385d830a",
+            "abo-1a8fe56172805dfc1267",
+            "abo-1c34c6d11449a5f46310",
+            "abo-1d8b2552166c1db8183f",
+            "abo-1e4cbb47690b763c2b9b"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.12048192771084337,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "giày nữ",
+          "tcp_ms": 59.872899999845686,
+          "service_ms": 47.07,
+          "ids": [
+            "abo-0336da5827d1a560c8f5",
+            "abo-04122797f0a6587604cc",
+            "abo-068eb2ca7f3a164aa0fc",
+            "abo-0af1a045cd6669a8aa8b",
+            "abo-0fc59eb036b16e07f35b",
+            "abo-1986e4d84ac0385d830a",
+            "abo-1a8fe56172805dfc1267",
+            "abo-1c34c6d11449a5f46310",
+            "abo-1d8b2552166c1db8183f",
+            "abo-1e4cbb47690b763c2b9b"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.12048192771084337,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Giay nu",
+          "tcp_ms": 50.98850000013044,
+          "service_ms": 38.942,
+          "ids": [
+            "abo-0336da5827d1a560c8f5",
+            "abo-04122797f0a6587604cc",
+            "abo-068eb2ca7f3a164aa0fc",
+            "abo-0af1a045cd6669a8aa8b",
+            "abo-0fc59eb036b16e07f35b",
+            "abo-1986e4d84ac0385d830a",
+            "abo-1a8fe56172805dfc1267",
+            "abo-1c34c6d11449a5f46310",
+            "abo-1d8b2552166c1db8183f",
+            "abo-1e4cbb47690b763c2b9b"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.12048192771084337,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "tôi muốn mua Giày nữ",
+          "tcp_ms": 52.494499999738764,
+          "service_ms": 39.277,
+          "ids": [
+            "abo-0336da5827d1a560c8f5",
+            "abo-04122797f0a6587604cc",
+            "abo-068eb2ca7f3a164aa0fc",
+            "abo-0af1a045cd6669a8aa8b",
+            "abo-0fc59eb036b16e07f35b",
+            "abo-1986e4d84ac0385d830a",
+            "abo-1a8fe56172805dfc1267",
+            "abo-1c34c6d11449a5f46310",
+            "abo-1d8b2552166c1db8183f",
+            "abo-1e4cbb47690b763c2b9b"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.12048192771084337,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Giày nữ dưới 490001",
+          "tcp_ms": 64.91910000022472,
+          "service_ms": 46.579,
+          "ids": [
+            "abo-0336da5827d1a560c8f5",
+            "abo-04122797f0a6587604cc",
+            "abo-068eb2ca7f3a164aa0fc",
+            "abo-0af1a045cd6669a8aa8b",
+            "abo-0fc59eb036b16e07f35b",
+            "abo-1986e4d84ac0385d830a",
+            "abo-1a8fe56172805dfc1267",
+            "abo-1c34c6d11449a5f46310",
+            "abo-1d8b2552166c1db8183f",
+            "abo-1e4cbb47690b763c2b9b"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.12048192771084337,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Giày nữ không quá 490000",
+          "tcp_ms": 73.96520000020246,
+          "service_ms": 57.802,
+          "ids": [
+            "abo-0336da5827d1a560c8f5",
+            "abo-04122797f0a6587604cc",
+            "abo-068eb2ca7f3a164aa0fc",
+            "abo-0af1a045cd6669a8aa8b",
+            "abo-0fc59eb036b16e07f35b",
+            "abo-1986e4d84ac0385d830a",
+            "abo-1a8fe56172805dfc1267",
+            "abo-1c34c6d11449a5f46310",
+            "abo-1d8b2552166c1db8183f",
+            "abo-1e4cbb47690b763c2b9b"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.12048192771084337,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Ốp điện thoại",
+          "tcp_ms": 75.0463999997919,
+          "service_ms": 62.216,
+          "ids": [
+            "abo-079890493c0f0b63ced5",
+            "abo-07fe86c90424f80b4386",
+            "abo-1366ca639c024f80a4bb",
+            "abo-253d991f86a836b2ce74",
+            "abo-31a61d412cc28c9b3e7e",
+            "abo-36c11d0b602ce2db673f",
+            "abo-6a6458026ca185179e39",
+            "abo-6db8e735a0e855774822",
+            "abo-7ce1fdab324ab8f4b67e",
+            "abo-80b535ad9ba063838753"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.3333333333333333,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "ốp điện thoại",
+          "tcp_ms": 54.647400000249036,
+          "service_ms": 42.504,
+          "ids": [
+            "abo-079890493c0f0b63ced5",
+            "abo-07fe86c90424f80b4386",
+            "abo-1366ca639c024f80a4bb",
+            "abo-253d991f86a836b2ce74",
+            "abo-31a61d412cc28c9b3e7e",
+            "abo-36c11d0b602ce2db673f",
+            "abo-6a6458026ca185179e39",
+            "abo-6db8e735a0e855774822",
+            "abo-7ce1fdab324ab8f4b67e",
+            "abo-80b535ad9ba063838753"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.3333333333333333,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Op dien thoai",
+          "tcp_ms": 46.633899999960704,
+          "service_ms": 33.565,
+          "ids": [
+            "abo-079890493c0f0b63ced5",
+            "abo-07fe86c90424f80b4386",
+            "abo-1366ca639c024f80a4bb",
+            "abo-253d991f86a836b2ce74",
+            "abo-31a61d412cc28c9b3e7e",
+            "abo-36c11d0b602ce2db673f",
+            "abo-6a6458026ca185179e39",
+            "abo-6db8e735a0e855774822",
+            "abo-7ce1fdab324ab8f4b67e",
+            "abo-80b535ad9ba063838753"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.3333333333333333,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "tôi muốn mua Ốp điện thoại",
+          "tcp_ms": 45.922000000246044,
+          "service_ms": 32.5,
+          "ids": [
+            "abo-079890493c0f0b63ced5",
+            "abo-07fe86c90424f80b4386",
+            "abo-1366ca639c024f80a4bb",
+            "abo-253d991f86a836b2ce74",
+            "abo-31a61d412cc28c9b3e7e",
+            "abo-36c11d0b602ce2db673f",
+            "abo-6a6458026ca185179e39",
+            "abo-6db8e735a0e855774822",
+            "abo-7ce1fdab324ab8f4b67e",
+            "abo-80b535ad9ba063838753"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.3333333333333333,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Ốp điện thoại dưới 99001",
+          "tcp_ms": 55.68270000003395,
+          "service_ms": 44.029,
+          "ids": [
+            "abo-079890493c0f0b63ced5",
+            "abo-07fe86c90424f80b4386",
+            "abo-1366ca639c024f80a4bb",
+            "abo-253d991f86a836b2ce74",
+            "abo-31a61d412cc28c9b3e7e",
+            "abo-36c11d0b602ce2db673f",
+            "abo-6a6458026ca185179e39",
+            "abo-6db8e735a0e855774822",
+            "abo-7ce1fdab324ab8f4b67e",
+            "abo-80b535ad9ba063838753"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.3333333333333333,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Ốp điện thoại không quá 99000",
+          "tcp_ms": 49.704900000051566,
+          "service_ms": 37.214,
+          "ids": [
+            "abo-079890493c0f0b63ced5",
+            "abo-07fe86c90424f80b4386",
+            "abo-1366ca639c024f80a4bb",
+            "abo-253d991f86a836b2ce74",
+            "abo-31a61d412cc28c9b3e7e",
+            "abo-36c11d0b602ce2db673f",
+            "abo-6a6458026ca185179e39",
+            "abo-6db8e735a0e855774822",
+            "abo-7ce1fdab324ab8f4b67e",
+            "abo-80b535ad9ba063838753"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.3333333333333333,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Cốc",
+          "tcp_ms": 48.83049999989453,
+          "service_ms": 36.868,
+          "ids": [
+            "abo-7a4d77b7fdf5f3b737dd",
+            "abo-9d23c63b64aebbceec0e",
+            "abo-d7318fc1f2f6331f544d",
+            "abo-dffe3008a16e36046923"
+          ],
+          "precision_at_10": 0.4,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "cốc",
+          "tcp_ms": 56.3692999999148,
+          "service_ms": 43.34,
+          "ids": [
+            "abo-7a4d77b7fdf5f3b737dd",
+            "abo-9d23c63b64aebbceec0e",
+            "abo-d7318fc1f2f6331f544d",
+            "abo-dffe3008a16e36046923"
+          ],
+          "precision_at_10": 0.4,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Coc",
+          "tcp_ms": 52.59410000007847,
+          "service_ms": 38.172,
+          "ids": [
+            "abo-7a4d77b7fdf5f3b737dd",
+            "abo-9d23c63b64aebbceec0e",
+            "abo-d7318fc1f2f6331f544d",
+            "abo-dffe3008a16e36046923"
+          ],
+          "precision_at_10": 0.4,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "tôi muốn mua Cốc",
+          "tcp_ms": 53.16390000007232,
+          "service_ms": 40.478,
+          "ids": [
+            "abo-7a4d77b7fdf5f3b737dd",
+            "abo-9d23c63b64aebbceec0e",
+            "abo-d7318fc1f2f6331f544d",
+            "abo-dffe3008a16e36046923"
+          ],
+          "precision_at_10": 0.4,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Cốc dưới 99001",
+          "tcp_ms": 41.399100000035105,
+          "service_ms": 29.068,
+          "ids": [
+            "abo-7a4d77b7fdf5f3b737dd",
+            "abo-9d23c63b64aebbceec0e",
+            "abo-d7318fc1f2f6331f544d",
+            "abo-dffe3008a16e36046923"
+          ],
+          "precision_at_10": 0.4,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Cốc không quá 99000",
+          "tcp_ms": 42.0205000000351,
+          "service_ms": 30.019,
+          "ids": [
+            "abo-7a4d77b7fdf5f3b737dd",
+            "abo-9d23c63b64aebbceec0e",
+            "abo-d7318fc1f2f6331f544d",
+            "abo-dffe3008a16e36046923"
+          ],
+          "precision_at_10": 0.4,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Bàn",
+          "tcp_ms": 50.69669999966209,
+          "service_ms": 38.836,
+          "ids": [
+            "abo-0050b24a441bc1f887d6",
+            "abo-665f02f8b5e623db10df",
+            "abo-72f7826672f1aec255cc",
+            "abo-76423c2cbe80cf98d520",
+            "abo-7813496f2370d9b47265",
+            "abo-9e8637d6f71bc11da060",
+            "abo-b15af54722d7f012fd11",
+            "abo-d361ab02f89d28ffe3c1",
+            "abo-d8d440296735660e30f6",
+            "abo-fd2b3ee5ef1a347552b2"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "bàn",
+          "tcp_ms": 58.96349999966333,
+          "service_ms": 44.234,
+          "ids": [
+            "abo-0050b24a441bc1f887d6",
+            "abo-665f02f8b5e623db10df",
+            "abo-72f7826672f1aec255cc",
+            "abo-76423c2cbe80cf98d520",
+            "abo-7813496f2370d9b47265",
+            "abo-9e8637d6f71bc11da060",
+            "abo-b15af54722d7f012fd11",
+            "abo-d361ab02f89d28ffe3c1",
+            "abo-d8d440296735660e30f6",
+            "abo-fd2b3ee5ef1a347552b2"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Ban",
+          "tcp_ms": 58.71109999998225,
+          "service_ms": 44.236,
+          "ids": [
+            "abo-0050b24a441bc1f887d6",
+            "abo-665f02f8b5e623db10df",
+            "abo-72f7826672f1aec255cc",
+            "abo-76423c2cbe80cf98d520",
+            "abo-7813496f2370d9b47265",
+            "abo-9e8637d6f71bc11da060",
+            "abo-b15af54722d7f012fd11",
+            "abo-d361ab02f89d28ffe3c1",
+            "abo-d8d440296735660e30f6",
+            "abo-fd2b3ee5ef1a347552b2"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "tôi muốn mua Bàn",
+          "tcp_ms": 59.293800000432384,
+          "service_ms": 43.783,
+          "ids": [
+            "abo-0050b24a441bc1f887d6",
+            "abo-665f02f8b5e623db10df",
+            "abo-72f7826672f1aec255cc",
+            "abo-76423c2cbe80cf98d520",
+            "abo-7813496f2370d9b47265",
+            "abo-9e8637d6f71bc11da060",
+            "abo-b15af54722d7f012fd11",
+            "abo-d361ab02f89d28ffe3c1",
+            "abo-d8d440296735660e30f6",
+            "abo-fd2b3ee5ef1a347552b2"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Bàn dưới 1290001",
+          "tcp_ms": 57.22439999999551,
+          "service_ms": 43.68,
+          "ids": [
+            "abo-0050b24a441bc1f887d6",
+            "abo-665f02f8b5e623db10df",
+            "abo-72f7826672f1aec255cc",
+            "abo-76423c2cbe80cf98d520",
+            "abo-7813496f2370d9b47265",
+            "abo-9e8637d6f71bc11da060",
+            "abo-b15af54722d7f012fd11",
+            "abo-d361ab02f89d28ffe3c1",
+            "abo-d8d440296735660e30f6",
+            "abo-fd2b3ee5ef1a347552b2"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Bàn không quá 1290000",
+          "tcp_ms": 44.53430000012304,
+          "service_ms": 33.277,
+          "ids": [
+            "abo-0050b24a441bc1f887d6",
+            "abo-665f02f8b5e623db10df",
+            "abo-72f7826672f1aec255cc",
+            "abo-76423c2cbe80cf98d520",
+            "abo-7813496f2370d9b47265",
+            "abo-9e8637d6f71bc11da060",
+            "abo-b15af54722d7f012fd11",
+            "abo-d361ab02f89d28ffe3c1",
+            "abo-d8d440296735660e30f6",
+            "abo-fd2b3ee5ef1a347552b2"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Ghế",
+          "tcp_ms": 48.119499999756954,
+          "service_ms": 30.749,
+          "ids": [
+            "abo-0d5824b35ffd3ce3a111",
+            "abo-246acc6e8a2c98585748",
+            "abo-40c2d590d020e8d14ae9",
+            "abo-431ff47790d0b98bec5c",
+            "abo-4a886d3cd3a48ff230d5",
+            "abo-81d98e5ba66d748bdb79",
+            "abo-83f32913bc80c90b136a",
+            "abo-9bcaa4fd8c5734434cbb",
+            "abo-9da7f75aa203d53c56a9",
+            "abo-ae80ba078bb8499eb3bc"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.5882352941176471,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "ghế",
+          "tcp_ms": 50.544300000183284,
+          "service_ms": 36.367,
+          "ids": [
+            "abo-0d5824b35ffd3ce3a111",
+            "abo-246acc6e8a2c98585748",
+            "abo-40c2d590d020e8d14ae9",
+            "abo-431ff47790d0b98bec5c",
+            "abo-4a886d3cd3a48ff230d5",
+            "abo-81d98e5ba66d748bdb79",
+            "abo-83f32913bc80c90b136a",
+            "abo-9bcaa4fd8c5734434cbb",
+            "abo-9da7f75aa203d53c56a9",
+            "abo-ae80ba078bb8499eb3bc"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.5882352941176471,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Ghe",
+          "tcp_ms": 44.17890000013358,
+          "service_ms": 32.135,
+          "ids": [
+            "abo-0d5824b35ffd3ce3a111",
+            "abo-246acc6e8a2c98585748",
+            "abo-40c2d590d020e8d14ae9",
+            "abo-431ff47790d0b98bec5c",
+            "abo-4a886d3cd3a48ff230d5",
+            "abo-81d98e5ba66d748bdb79",
+            "abo-83f32913bc80c90b136a",
+            "abo-9bcaa4fd8c5734434cbb",
+            "abo-9da7f75aa203d53c56a9",
+            "abo-ae80ba078bb8499eb3bc"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.5882352941176471,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "tôi muốn mua Ghế",
+          "tcp_ms": 41.84639999994033,
+          "service_ms": 28.922,
+          "ids": [
+            "abo-0d5824b35ffd3ce3a111",
+            "abo-246acc6e8a2c98585748",
+            "abo-40c2d590d020e8d14ae9",
+            "abo-431ff47790d0b98bec5c",
+            "abo-4a886d3cd3a48ff230d5",
+            "abo-81d98e5ba66d748bdb79",
+            "abo-83f32913bc80c90b136a",
+            "abo-9bcaa4fd8c5734434cbb",
+            "abo-9da7f75aa203d53c56a9",
+            "abo-ae80ba078bb8499eb3bc"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.5882352941176471,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Ghế dưới 990001",
+          "tcp_ms": 42.0377999998891,
+          "service_ms": 30.999,
+          "ids": [
+            "abo-0d5824b35ffd3ce3a111",
+            "abo-246acc6e8a2c98585748",
+            "abo-40c2d590d020e8d14ae9",
+            "abo-431ff47790d0b98bec5c",
+            "abo-4a886d3cd3a48ff230d5",
+            "abo-81d98e5ba66d748bdb79",
+            "abo-83f32913bc80c90b136a",
+            "abo-9bcaa4fd8c5734434cbb",
+            "abo-9da7f75aa203d53c56a9",
+            "abo-ae80ba078bb8499eb3bc"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.5882352941176471,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Ghế không quá 990000",
+          "tcp_ms": 39.16479999998046,
+          "service_ms": 28.714,
+          "ids": [
+            "abo-0d5824b35ffd3ce3a111",
+            "abo-246acc6e8a2c98585748",
+            "abo-40c2d590d020e8d14ae9",
+            "abo-431ff47790d0b98bec5c",
+            "abo-4a886d3cd3a48ff230d5",
+            "abo-81d98e5ba66d748bdb79",
+            "abo-83f32913bc80c90b136a",
+            "abo-9bcaa4fd8c5734434cbb",
+            "abo-9da7f75aa203d53c56a9",
+            "abo-ae80ba078bb8499eb3bc"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.5882352941176471,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Ghế sofa",
+          "tcp_ms": 44.05189999988579,
+          "service_ms": 33.346,
+          "ids": [
+            "abo-147a4fac1d8cae66f962",
+            "abo-388fce9c2482890f5f60",
+            "abo-433f953c6c84022f638e",
+            "abo-455b37279be1ab32f83e",
+            "abo-5d44522e315edd5f6025",
+            "abo-62f6ffd1672185a0d2e4",
+            "abo-72b7858939509bab0cae",
+            "abo-7a5ea4650a4b4eade2ac",
+            "abo-9cea1515f6f2913499e4",
+            "abo-a679629040ad15988c4f"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.7692307692307693,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "ghế sofa",
+          "tcp_ms": 69.06889999982013,
+          "service_ms": 56.39,
+          "ids": [
+            "abo-147a4fac1d8cae66f962",
+            "abo-388fce9c2482890f5f60",
+            "abo-433f953c6c84022f638e",
+            "abo-455b37279be1ab32f83e",
+            "abo-5d44522e315edd5f6025",
+            "abo-62f6ffd1672185a0d2e4",
+            "abo-72b7858939509bab0cae",
+            "abo-7a5ea4650a4b4eade2ac",
+            "abo-9cea1515f6f2913499e4",
+            "abo-a679629040ad15988c4f"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.7692307692307693,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Ghe sofa",
+          "tcp_ms": 56.77739999964615,
+          "service_ms": 40.186,
+          "ids": [
+            "abo-147a4fac1d8cae66f962",
+            "abo-388fce9c2482890f5f60",
+            "abo-433f953c6c84022f638e",
+            "abo-455b37279be1ab32f83e",
+            "abo-5d44522e315edd5f6025",
+            "abo-62f6ffd1672185a0d2e4",
+            "abo-72b7858939509bab0cae",
+            "abo-7a5ea4650a4b4eade2ac",
+            "abo-9cea1515f6f2913499e4",
+            "abo-a679629040ad15988c4f"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.7692307692307693,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "tôi muốn mua Ghế sofa",
+          "tcp_ms": 42.36490000039339,
+          "service_ms": 28.339,
+          "ids": [
+            "abo-147a4fac1d8cae66f962",
+            "abo-388fce9c2482890f5f60",
+            "abo-433f953c6c84022f638e",
+            "abo-455b37279be1ab32f83e",
+            "abo-5d44522e315edd5f6025",
+            "abo-62f6ffd1672185a0d2e4",
+            "abo-72b7858939509bab0cae",
+            "abo-7a5ea4650a4b4eade2ac",
+            "abo-9cea1515f6f2913499e4",
+            "abo-a679629040ad15988c4f"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.7692307692307693,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Ghế sofa dưới 2990001",
+          "tcp_ms": 53.59749999979613,
+          "service_ms": 39.357,
+          "ids": [
+            "abo-147a4fac1d8cae66f962",
+            "abo-388fce9c2482890f5f60",
+            "abo-433f953c6c84022f638e",
+            "abo-455b37279be1ab32f83e",
+            "abo-5d44522e315edd5f6025",
+            "abo-62f6ffd1672185a0d2e4",
+            "abo-72b7858939509bab0cae",
+            "abo-7a5ea4650a4b4eade2ac",
+            "abo-9cea1515f6f2913499e4",
+            "abo-a679629040ad15988c4f"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.7692307692307693,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Ghế sofa không quá 2990000",
+          "tcp_ms": 58.91079999992144,
+          "service_ms": 41.515,
+          "ids": [
+            "abo-147a4fac1d8cae66f962",
+            "abo-388fce9c2482890f5f60",
+            "abo-433f953c6c84022f638e",
+            "abo-455b37279be1ab32f83e",
+            "abo-5d44522e315edd5f6025",
+            "abo-62f6ffd1672185a0d2e4",
+            "abo-72b7858939509bab0cae",
+            "abo-7a5ea4650a4b4eade2ac",
+            "abo-9cea1515f6f2913499e4",
+            "abo-a679629040ad15988c4f"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.7692307692307693,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Thảm",
+          "tcp_ms": 53.67800000021816,
+          "service_ms": 39.466,
+          "ids": [
+            "abo-11db87231ce1570f7d92",
+            "abo-28883c07ad443fc141f7",
+            "abo-2f9cd2b1b85b96285299",
+            "abo-41bdd12740db39391e27",
+            "abo-733ebd1593d26e7dbc1f",
+            "abo-8bcc02d931f02ae00a7c",
+            "abo-95ca3356e346055634dc",
+            "abo-c7ed56c66ab021c053c3",
+            "abo-c821db60366b2b779e0f",
+            "abo-dff0396e22315f157bf0"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.6666666666666666,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "thảm",
+          "tcp_ms": 58.84060000016689,
+          "service_ms": 45.124,
+          "ids": [
+            "abo-11db87231ce1570f7d92",
+            "abo-28883c07ad443fc141f7",
+            "abo-2f9cd2b1b85b96285299",
+            "abo-41bdd12740db39391e27",
+            "abo-733ebd1593d26e7dbc1f",
+            "abo-8bcc02d931f02ae00a7c",
+            "abo-95ca3356e346055634dc",
+            "abo-c7ed56c66ab021c053c3",
+            "abo-c821db60366b2b779e0f",
+            "abo-dff0396e22315f157bf0"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.6666666666666666,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Tham",
+          "tcp_ms": 66.96289999990768,
+          "service_ms": 52.163,
+          "ids": [
+            "abo-11db87231ce1570f7d92",
+            "abo-28883c07ad443fc141f7",
+            "abo-2f9cd2b1b85b96285299",
+            "abo-41bdd12740db39391e27",
+            "abo-733ebd1593d26e7dbc1f",
+            "abo-8bcc02d931f02ae00a7c",
+            "abo-95ca3356e346055634dc",
+            "abo-c7ed56c66ab021c053c3",
+            "abo-c821db60366b2b779e0f",
+            "abo-dff0396e22315f157bf0"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.6666666666666666,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "tôi muốn mua Thảm",
+          "tcp_ms": 75.33499999999549,
+          "service_ms": 58.32,
+          "ids": [
+            "abo-11db87231ce1570f7d92",
+            "abo-28883c07ad443fc141f7",
+            "abo-2f9cd2b1b85b96285299",
+            "abo-41bdd12740db39391e27",
+            "abo-733ebd1593d26e7dbc1f",
+            "abo-8bcc02d931f02ae00a7c",
+            "abo-95ca3356e346055634dc",
+            "abo-c7ed56c66ab021c053c3",
+            "abo-c821db60366b2b779e0f",
+            "abo-dff0396e22315f157bf0"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.6666666666666666,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Thảm dưới 390001",
+          "tcp_ms": 76.6591999999946,
+          "service_ms": 57.685,
+          "ids": [
+            "abo-11db87231ce1570f7d92",
+            "abo-28883c07ad443fc141f7",
+            "abo-2f9cd2b1b85b96285299",
+            "abo-41bdd12740db39391e27",
+            "abo-733ebd1593d26e7dbc1f",
+            "abo-8bcc02d931f02ae00a7c",
+            "abo-95ca3356e346055634dc",
+            "abo-c7ed56c66ab021c053c3",
+            "abo-c821db60366b2b779e0f",
+            "abo-dff0396e22315f157bf0"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.6666666666666666,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Thảm không quá 390000",
+          "tcp_ms": 81.6251999999622,
+          "service_ms": 63.183,
+          "ids": [
+            "abo-11db87231ce1570f7d92",
+            "abo-28883c07ad443fc141f7",
+            "abo-2f9cd2b1b85b96285299",
+            "abo-41bdd12740db39391e27",
+            "abo-733ebd1593d26e7dbc1f",
+            "abo-8bcc02d931f02ae00a7c",
+            "abo-95ca3356e346055634dc",
+            "abo-c7ed56c66ab021c053c3",
+            "abo-c821db60366b2b779e0f",
+            "abo-dff0396e22315f157bf0"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.6666666666666666,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Dụng cụ nhà bếp",
+          "tcp_ms": 60.362199999872246,
+          "service_ms": 43.53,
+          "ids": [
+            "abo-4766510388b5ae04194f",
+            "abo-4e7c3ee9213849d33eb8",
+            "abo-62648adc901a986c3862",
+            "abo-9cc8a00e7a504ff979d9",
+            "abo-a98b79349e4d9340408a",
+            "abo-be279817f20f0bebc804",
+            "abo-fc574b1967303776ae2a",
+            "abo-fff065381205986c6e49"
+          ],
+          "precision_at_10": 0.8,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "dụng cụ nhà bếp",
+          "tcp_ms": 45.27070000040112,
+          "service_ms": 32.638,
+          "ids": [
+            "abo-4766510388b5ae04194f",
+            "abo-4e7c3ee9213849d33eb8",
+            "abo-62648adc901a986c3862",
+            "abo-9cc8a00e7a504ff979d9",
+            "abo-a98b79349e4d9340408a",
+            "abo-be279817f20f0bebc804",
+            "abo-fc574b1967303776ae2a",
+            "abo-fff065381205986c6e49"
+          ],
+          "precision_at_10": 0.8,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Dung cu nha bep",
+          "tcp_ms": 53.55639999970663,
+          "service_ms": 39.71,
+          "ids": [
+            "abo-4766510388b5ae04194f",
+            "abo-4e7c3ee9213849d33eb8",
+            "abo-62648adc901a986c3862",
+            "abo-9cc8a00e7a504ff979d9",
+            "abo-a98b79349e4d9340408a",
+            "abo-be279817f20f0bebc804",
+            "abo-fc574b1967303776ae2a",
+            "abo-fff065381205986c6e49"
+          ],
+          "precision_at_10": 0.8,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "tôi muốn mua Dụng cụ nhà bếp",
+          "tcp_ms": 55.149899999832996,
+          "service_ms": 40.981,
+          "ids": [
+            "abo-4766510388b5ae04194f",
+            "abo-4e7c3ee9213849d33eb8",
+            "abo-62648adc901a986c3862",
+            "abo-9cc8a00e7a504ff979d9",
+            "abo-a98b79349e4d9340408a",
+            "abo-be279817f20f0bebc804",
+            "abo-fc574b1967303776ae2a",
+            "abo-fff065381205986c6e49"
+          ],
+          "precision_at_10": 0.8,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Dụng cụ nhà bếp dưới 290001",
+          "tcp_ms": 47.81920000004902,
+          "service_ms": 35.684,
+          "ids": [
+            "abo-4766510388b5ae04194f",
+            "abo-4e7c3ee9213849d33eb8",
+            "abo-62648adc901a986c3862",
+            "abo-9cc8a00e7a504ff979d9",
+            "abo-a98b79349e4d9340408a",
+            "abo-be279817f20f0bebc804",
+            "abo-fc574b1967303776ae2a",
+            "abo-fff065381205986c6e49"
+          ],
+          "precision_at_10": 0.8,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Dụng cụ nhà bếp không quá 290000",
+          "tcp_ms": 44.415700000172365,
+          "service_ms": 31.078,
+          "ids": [
+            "abo-4766510388b5ae04194f",
+            "abo-4e7c3ee9213849d33eb8",
+            "abo-62648adc901a986c3862",
+            "abo-9cc8a00e7a504ff979d9",
+            "abo-a98b79349e4d9340408a",
+            "abo-be279817f20f0bebc804",
+            "abo-fc574b1967303776ae2a",
+            "abo-fff065381205986c6e49"
+          ],
+          "precision_at_10": 0.8,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Đèn bàn",
+          "tcp_ms": 49.262500000168075,
+          "service_ms": 36.206,
+          "ids": [
+            "abo-29b2c0eaed12423831bb",
+            "abo-5201acf029973a073d28",
+            "abo-56afbeae6a65d33efdeb",
+            "abo-5b010b857684a79cc925",
+            "abo-a667aeba660037ceec6b",
+            "abo-dad0db93f572d08bdac0",
+            "abo-fd95f8857918e340c9ee"
+          ],
+          "precision_at_10": 0.7,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "đèn bàn",
+          "tcp_ms": 44.86029999998209,
+          "service_ms": 32.38,
+          "ids": [
+            "abo-29b2c0eaed12423831bb",
+            "abo-5201acf029973a073d28",
+            "abo-56afbeae6a65d33efdeb",
+            "abo-5b010b857684a79cc925",
+            "abo-a667aeba660037ceec6b",
+            "abo-dad0db93f572d08bdac0",
+            "abo-fd95f8857918e340c9ee"
+          ],
+          "precision_at_10": 0.7,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Đen ban",
+          "tcp_ms": 39.81989999965663,
+          "service_ms": 29.152,
+          "ids": [
+            "abo-29b2c0eaed12423831bb",
+            "abo-5201acf029973a073d28",
+            "abo-56afbeae6a65d33efdeb",
+            "abo-5b010b857684a79cc925",
+            "abo-a667aeba660037ceec6b",
+            "abo-dad0db93f572d08bdac0",
+            "abo-fd95f8857918e340c9ee"
+          ],
+          "precision_at_10": 0.7,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "tôi muốn mua Đèn bàn",
+          "tcp_ms": 51.144099999874015,
+          "service_ms": 40.342,
+          "ids": [
+            "abo-29b2c0eaed12423831bb",
+            "abo-5201acf029973a073d28",
+            "abo-56afbeae6a65d33efdeb",
+            "abo-5b010b857684a79cc925",
+            "abo-a667aeba660037ceec6b",
+            "abo-dad0db93f572d08bdac0",
+            "abo-fd95f8857918e340c9ee"
+          ],
+          "precision_at_10": 0.7,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Đèn bàn dưới 490001",
+          "tcp_ms": 45.570499999939784,
+          "service_ms": 32.859,
+          "ids": [
+            "abo-29b2c0eaed12423831bb",
+            "abo-5201acf029973a073d28",
+            "abo-56afbeae6a65d33efdeb",
+            "abo-5b010b857684a79cc925",
+            "abo-a667aeba660037ceec6b",
+            "abo-dad0db93f572d08bdac0",
+            "abo-fd95f8857918e340c9ee"
+          ],
+          "precision_at_10": 0.7,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Đèn bàn không quá 490000",
+          "tcp_ms": 40.61540000020614,
+          "service_ms": 28.06,
+          "ids": [
+            "abo-29b2c0eaed12423831bb",
+            "abo-5201acf029973a073d28",
+            "abo-56afbeae6a65d33efdeb",
+            "abo-5b010b857684a79cc925",
+            "abo-a667aeba660037ceec6b",
+            "abo-dad0db93f572d08bdac0",
+            "abo-fd95f8857918e340c9ee"
+          ],
+          "precision_at_10": 0.7,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Gối",
+          "tcp_ms": 40.79860000001645,
+          "service_ms": 28.441,
+          "ids": [
+            "abo-09febd66bbbbb88a79f6",
+            "abo-3e282d4b27b03bc34f14",
+            "abo-4aca36398d6189640c66",
+            "abo-d6a12a926afe53585fb2",
+            "abo-dc3faf23e6400349c4c3"
+          ],
+          "precision_at_10": 0.5,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "gối",
+          "tcp_ms": 54.49689999977636,
+          "service_ms": 40.407,
+          "ids": [
+            "abo-09febd66bbbbb88a79f6",
+            "abo-3e282d4b27b03bc34f14",
+            "abo-4aca36398d6189640c66",
+            "abo-d6a12a926afe53585fb2",
+            "abo-dc3faf23e6400349c4c3"
+          ],
+          "precision_at_10": 0.5,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Goi",
+          "tcp_ms": 39.17030000002342,
+          "service_ms": 27.517,
+          "ids": [
+            "abo-09febd66bbbbb88a79f6",
+            "abo-3e282d4b27b03bc34f14",
+            "abo-4aca36398d6189640c66",
+            "abo-d6a12a926afe53585fb2",
+            "abo-dc3faf23e6400349c4c3"
+          ],
+          "precision_at_10": 0.5,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "tôi muốn mua Gối",
+          "tcp_ms": 138.39899999993577,
+          "service_ms": 128.216,
+          "ids": [
+            "abo-09febd66bbbbb88a79f6",
+            "abo-3e282d4b27b03bc34f14",
+            "abo-4aca36398d6189640c66",
+            "abo-d6a12a926afe53585fb2",
+            "abo-dc3faf23e6400349c4c3"
+          ],
+          "precision_at_10": 0.5,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Gối dưới 190001",
+          "tcp_ms": 41.91450000007535,
+          "service_ms": 30.664,
+          "ids": [
+            "abo-09febd66bbbbb88a79f6",
+            "abo-3e282d4b27b03bc34f14",
+            "abo-4aca36398d6189640c66",
+            "abo-d6a12a926afe53585fb2",
+            "abo-dc3faf23e6400349c4c3"
+          ],
+          "precision_at_10": 0.5,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Gối không quá 190000",
+          "tcp_ms": 40.44229999999516,
+          "service_ms": 29.429,
+          "ids": [
+            "abo-09febd66bbbbb88a79f6",
+            "abo-3e282d4b27b03bc34f14",
+            "abo-4aca36398d6189640c66",
+            "abo-d6a12a926afe53585fb2",
+            "abo-dc3faf23e6400349c4c3"
+          ],
+          "precision_at_10": 0.5,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Bộ sạc",
+          "tcp_ms": 49.195399999916845,
+          "service_ms": 37.274,
+          "ids": [
+            "abo-03f572f0fa28311ef35b",
+            "abo-04958db907a8119dc868",
+            "abo-165cf57eee99a1dbc12f",
+            "abo-2d80ea05b3c739828545",
+            "abo-308a823f49b2b5d58532",
+            "abo-34fad8eb7b8e4fe4cb1c",
+            "abo-63bdc68989121edbc466",
+            "abo-6e674a68d9046685e9eb",
+            "abo-791ca85aaaed94597566",
+            "abo-809bbfba5de9074bee66"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.5263157894736842,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "bộ sạc",
+          "tcp_ms": 43.86750000003303,
+          "service_ms": 31.931,
+          "ids": [
+            "abo-03f572f0fa28311ef35b",
+            "abo-04958db907a8119dc868",
+            "abo-165cf57eee99a1dbc12f",
+            "abo-2d80ea05b3c739828545",
+            "abo-308a823f49b2b5d58532",
+            "abo-34fad8eb7b8e4fe4cb1c",
+            "abo-63bdc68989121edbc466",
+            "abo-6e674a68d9046685e9eb",
+            "abo-791ca85aaaed94597566",
+            "abo-809bbfba5de9074bee66"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.5263157894736842,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Bo sac",
+          "tcp_ms": 39.14309999981924,
+          "service_ms": 28.933,
+          "ids": [
+            "abo-03f572f0fa28311ef35b",
+            "abo-04958db907a8119dc868",
+            "abo-165cf57eee99a1dbc12f",
+            "abo-2d80ea05b3c739828545",
+            "abo-308a823f49b2b5d58532",
+            "abo-34fad8eb7b8e4fe4cb1c",
+            "abo-63bdc68989121edbc466",
+            "abo-6e674a68d9046685e9eb",
+            "abo-791ca85aaaed94597566",
+            "abo-809bbfba5de9074bee66"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.5263157894736842,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "tôi muốn mua Bộ sạc",
+          "tcp_ms": 41.982499999903666,
+          "service_ms": 31.738,
+          "ids": [
+            "abo-03f572f0fa28311ef35b",
+            "abo-04958db907a8119dc868",
+            "abo-165cf57eee99a1dbc12f",
+            "abo-2d80ea05b3c739828545",
+            "abo-308a823f49b2b5d58532",
+            "abo-34fad8eb7b8e4fe4cb1c",
+            "abo-63bdc68989121edbc466",
+            "abo-6e674a68d9046685e9eb",
+            "abo-791ca85aaaed94597566",
+            "abo-809bbfba5de9074bee66"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.5263157894736842,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Bộ sạc dưới 190001",
+          "tcp_ms": 44.402699999864126,
+          "service_ms": 32.904,
+          "ids": [
+            "abo-03f572f0fa28311ef35b",
+            "abo-04958db907a8119dc868",
+            "abo-165cf57eee99a1dbc12f",
+            "abo-2d80ea05b3c739828545",
+            "abo-308a823f49b2b5d58532",
+            "abo-34fad8eb7b8e4fe4cb1c",
+            "abo-63bdc68989121edbc466",
+            "abo-6e674a68d9046685e9eb",
+            "abo-791ca85aaaed94597566",
+            "abo-809bbfba5de9074bee66"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.5263157894736842,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Bộ sạc không quá 190000",
+          "tcp_ms": 62.20939999957409,
+          "service_ms": 46.411,
+          "ids": [
+            "abo-03f572f0fa28311ef35b",
+            "abo-04958db907a8119dc868",
+            "abo-165cf57eee99a1dbc12f",
+            "abo-2d80ea05b3c739828545",
+            "abo-308a823f49b2b5d58532",
+            "abo-34fad8eb7b8e4fe4cb1c",
+            "abo-63bdc68989121edbc466",
+            "abo-6e674a68d9046685e9eb",
+            "abo-791ca85aaaed94597566",
+            "abo-809bbfba5de9074bee66"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.5263157894736842,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Loa",
+          "tcp_ms": 81.87189999989641,
+          "service_ms": 66.008,
+          "ids": [
+            "abo-05af7037d83fc2ad4427",
+            "abo-8a1e5a22a992a96c1092",
+            "abo-b3649dd5ee900fa8f148"
+          ],
+          "precision_at_10": 0.3,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "loa",
+          "tcp_ms": 40.406500000244705,
+          "service_ms": 29.184,
+          "ids": [
+            "abo-05af7037d83fc2ad4427",
+            "abo-8a1e5a22a992a96c1092",
+            "abo-b3649dd5ee900fa8f148"
+          ],
+          "precision_at_10": 0.3,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Loa",
+          "tcp_ms": 40.83809999974619,
+          "service_ms": 30.339,
+          "ids": [
+            "abo-05af7037d83fc2ad4427",
+            "abo-8a1e5a22a992a96c1092",
+            "abo-b3649dd5ee900fa8f148"
+          ],
+          "precision_at_10": 0.3,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "tôi muốn mua Loa",
+          "tcp_ms": 45.26170000008278,
+          "service_ms": 34.799,
+          "ids": [
+            "abo-05af7037d83fc2ad4427",
+            "abo-8a1e5a22a992a96c1092",
+            "abo-b3649dd5ee900fa8f148"
+          ],
+          "precision_at_10": 0.3,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Loa dưới 590001",
+          "tcp_ms": 47.62399999981426,
+          "service_ms": 34.379,
+          "ids": [
+            "abo-05af7037d83fc2ad4427",
+            "abo-8a1e5a22a992a96c1092",
+            "abo-b3649dd5ee900fa8f148"
+          ],
+          "precision_at_10": 0.3,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Loa không quá 590000",
+          "tcp_ms": 80.83860000033383,
+          "service_ms": 62.119,
+          "ids": [
+            "abo-05af7037d83fc2ad4427",
+            "abo-8a1e5a22a992a96c1092",
+            "abo-b3649dd5ee900fa8f148"
+          ],
+          "precision_at_10": 0.3,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Máy pha cà phê",
+          "tcp_ms": 57.8190999999606,
+          "service_ms": 43.373,
+          "ids": [
+            "abo-7fa32cd57279ee2db42b"
+          ],
+          "precision_at_10": 0.1,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "máy pha cà phê",
+          "tcp_ms": 46.35069999994812,
+          "service_ms": 34.622,
+          "ids": [
+            "abo-7fa32cd57279ee2db42b"
+          ],
+          "precision_at_10": 0.1,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "May pha ca phe",
+          "tcp_ms": 53.72010000019145,
+          "service_ms": 40.931,
+          "ids": [
+            "abo-7fa32cd57279ee2db42b"
+          ],
+          "precision_at_10": 0.1,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "tôi muốn mua Máy pha cà phê",
+          "tcp_ms": 58.123799999975745,
+          "service_ms": 46.248,
+          "ids": [
+            "abo-7fa32cd57279ee2db42b"
+          ],
+          "precision_at_10": 0.1,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Máy pha cà phê dưới 990001",
+          "tcp_ms": 49.49059999989913,
+          "service_ms": 36.467,
+          "ids": [
+            "abo-7fa32cd57279ee2db42b"
+          ],
+          "precision_at_10": 0.1,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Máy pha cà phê không quá 990000",
+          "tcp_ms": 41.90340000013748,
+          "service_ms": 29.396,
+          "ids": [
+            "abo-7fa32cd57279ee2db42b"
+          ],
+          "precision_at_10": 0.1,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Tai nghe",
+          "tcp_ms": 40.670500000032916,
+          "service_ms": 28.426,
+          "ids": [
+            "abo-06978c8969c816663d99",
+            "abo-1e09d879814e8ee2b46c",
+            "abo-4e94a70a51c79fa30dbb",
+            "abo-8d43cb92edcc87aec67d",
+            "abo-9e5c099a4e7ba7c0880a"
+          ],
+          "precision_at_10": 0.5,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "tai nghe",
+          "tcp_ms": 39.52320000007603,
+          "service_ms": 27.774,
+          "ids": [
+            "abo-06978c8969c816663d99",
+            "abo-1e09d879814e8ee2b46c",
+            "abo-4e94a70a51c79fa30dbb",
+            "abo-8d43cb92edcc87aec67d",
+            "abo-9e5c099a4e7ba7c0880a"
+          ],
+          "precision_at_10": 0.5,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Tai nghe",
+          "tcp_ms": 37.533799999891926,
+          "service_ms": 27.669,
+          "ids": [
+            "abo-06978c8969c816663d99",
+            "abo-1e09d879814e8ee2b46c",
+            "abo-4e94a70a51c79fa30dbb",
+            "abo-8d43cb92edcc87aec67d",
+            "abo-9e5c099a4e7ba7c0880a"
+          ],
+          "precision_at_10": 0.5,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "tôi muốn mua Tai nghe",
+          "tcp_ms": 39.16309999976875,
+          "service_ms": 28.979,
+          "ids": [
+            "abo-06978c8969c816663d99",
+            "abo-1e09d879814e8ee2b46c",
+            "abo-4e94a70a51c79fa30dbb",
+            "abo-8d43cb92edcc87aec67d",
+            "abo-9e5c099a4e7ba7c0880a"
+          ],
+          "precision_at_10": 0.5,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Tai nghe dưới 390001",
+          "tcp_ms": 44.782999999824824,
+          "service_ms": 33.508,
+          "ids": [
+            "abo-06978c8969c816663d99",
+            "abo-1e09d879814e8ee2b46c",
+            "abo-4e94a70a51c79fa30dbb",
+            "abo-8d43cb92edcc87aec67d",
+            "abo-9e5c099a4e7ba7c0880a"
+          ],
+          "precision_at_10": 0.5,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Tai nghe không quá 390000",
+          "tcp_ms": 85.24450000004435,
+          "service_ms": 65.181,
+          "ids": [
+            "abo-06978c8969c816663d99",
+            "abo-1e09d879814e8ee2b46c",
+            "abo-4e94a70a51c79fa30dbb",
+            "abo-8d43cb92edcc87aec67d",
+            "abo-9e5c099a4e7ba7c0880a"
+          ],
+          "precision_at_10": 0.5,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Phụ kiện máy tính",
+          "tcp_ms": 45.25359999979628,
+          "service_ms": 31.409,
+          "ids": [
+            "abo-796afe57f7911986cda9",
+            "abo-855469c076c754578595",
+            "abo-b33aa90f79cafbf46978",
+            "abo-c1b310b755388799a09d",
+            "abo-dd9675e9101bc1f2c176",
+            "abo-de348ed7ecf45e4dbcdf",
+            "abo-e7501cc482cb6980ac7a",
+            "abo-efd5663daa1a33862860",
+            "abo-f07fd3a0d2bcf0e78d90"
+          ],
+          "precision_at_10": 0.9,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "phụ kiện máy tính",
+          "tcp_ms": 50.71700000007695,
+          "service_ms": 38.041,
+          "ids": [
+            "abo-796afe57f7911986cda9",
+            "abo-855469c076c754578595",
+            "abo-b33aa90f79cafbf46978",
+            "abo-c1b310b755388799a09d",
+            "abo-dd9675e9101bc1f2c176",
+            "abo-de348ed7ecf45e4dbcdf",
+            "abo-e7501cc482cb6980ac7a",
+            "abo-efd5663daa1a33862860",
+            "abo-f07fd3a0d2bcf0e78d90"
+          ],
+          "precision_at_10": 0.9,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Phu kien may tinh",
+          "tcp_ms": 68.05009999970935,
+          "service_ms": 53.458,
+          "ids": [
+            "abo-796afe57f7911986cda9",
+            "abo-855469c076c754578595",
+            "abo-b33aa90f79cafbf46978",
+            "abo-c1b310b755388799a09d",
+            "abo-dd9675e9101bc1f2c176",
+            "abo-de348ed7ecf45e4dbcdf",
+            "abo-e7501cc482cb6980ac7a",
+            "abo-efd5663daa1a33862860",
+            "abo-f07fd3a0d2bcf0e78d90"
+          ],
+          "precision_at_10": 0.9,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "tôi muốn mua Phụ kiện máy tính",
+          "tcp_ms": 71.09420000006139,
+          "service_ms": 54.062,
+          "ids": [
+            "abo-796afe57f7911986cda9",
+            "abo-855469c076c754578595",
+            "abo-b33aa90f79cafbf46978",
+            "abo-c1b310b755388799a09d",
+            "abo-dd9675e9101bc1f2c176",
+            "abo-de348ed7ecf45e4dbcdf",
+            "abo-e7501cc482cb6980ac7a",
+            "abo-efd5663daa1a33862860",
+            "abo-f07fd3a0d2bcf0e78d90"
+          ],
+          "precision_at_10": 0.9,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Phụ kiện máy tính dưới 190001",
+          "tcp_ms": 74.52980000016396,
+          "service_ms": 58.993,
+          "ids": [
+            "abo-796afe57f7911986cda9",
+            "abo-855469c076c754578595",
+            "abo-b33aa90f79cafbf46978",
+            "abo-c1b310b755388799a09d",
+            "abo-dd9675e9101bc1f2c176",
+            "abo-de348ed7ecf45e4dbcdf",
+            "abo-e7501cc482cb6980ac7a",
+            "abo-efd5663daa1a33862860",
+            "abo-f07fd3a0d2bcf0e78d90"
+          ],
+          "precision_at_10": 0.9,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Phụ kiện máy tính không quá 190000",
+          "tcp_ms": 51.87479999995048,
+          "service_ms": 35.407,
+          "ids": [
+            "abo-796afe57f7911986cda9",
+            "abo-855469c076c754578595",
+            "abo-b33aa90f79cafbf46978",
+            "abo-c1b310b755388799a09d",
+            "abo-dd9675e9101bc1f2c176",
+            "abo-de348ed7ecf45e4dbcdf",
+            "abo-e7501cc482cb6980ac7a",
+            "abo-efd5663daa1a33862860",
+            "abo-f07fd3a0d2bcf0e78d90"
+          ],
+          "precision_at_10": 0.9,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Bàn phím",
+          "tcp_ms": 43.016699999952834,
+          "service_ms": 30.469,
+          "ids": [
+            "abo-079a59cdeda01c2e1ec7",
+            "abo-16eeaf6d65d2fd99bc28",
+            "abo-65a3b7bf84adadd2fe8c",
+            "abo-de415f38d5e33beeb3fd"
+          ],
+          "precision_at_10": 0.4,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "bàn phím",
+          "tcp_ms": 53.717799999958515,
+          "service_ms": 40.748,
+          "ids": [
+            "abo-079a59cdeda01c2e1ec7",
+            "abo-16eeaf6d65d2fd99bc28",
+            "abo-65a3b7bf84adadd2fe8c",
+            "abo-de415f38d5e33beeb3fd"
+          ],
+          "precision_at_10": 0.4,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Ban phim",
+          "tcp_ms": 47.76899999978923,
+          "service_ms": 36.075,
+          "ids": [
+            "abo-079a59cdeda01c2e1ec7",
+            "abo-16eeaf6d65d2fd99bc28",
+            "abo-65a3b7bf84adadd2fe8c",
+            "abo-de415f38d5e33beeb3fd"
+          ],
+          "precision_at_10": 0.4,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "tôi muốn mua Bàn phím",
+          "tcp_ms": 39.047799999934796,
+          "service_ms": 28.947,
+          "ids": [
+            "abo-079a59cdeda01c2e1ec7",
+            "abo-16eeaf6d65d2fd99bc28",
+            "abo-65a3b7bf84adadd2fe8c",
+            "abo-de415f38d5e33beeb3fd"
+          ],
+          "precision_at_10": 0.4,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Bàn phím dưới 290001",
+          "tcp_ms": 49.69789999995555,
+          "service_ms": 37.9,
+          "ids": [
+            "abo-079a59cdeda01c2e1ec7",
+            "abo-16eeaf6d65d2fd99bc28",
+            "abo-65a3b7bf84adadd2fe8c",
+            "abo-de415f38d5e33beeb3fd"
+          ],
+          "precision_at_10": 0.4,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Bàn phím không quá 290000",
+          "tcp_ms": 73.97459999992861,
+          "service_ms": 59.047,
+          "ids": [
+            "abo-079a59cdeda01c2e1ec7",
+            "abo-16eeaf6d65d2fd99bc28",
+            "abo-65a3b7bf84adadd2fe8c",
+            "abo-de415f38d5e33beeb3fd"
+          ],
+          "precision_at_10": 0.4,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Chảo",
+          "tcp_ms": 50.75850000002902,
+          "service_ms": 37.028,
+          "ids": [
+            "abo-e2d591829520f3276004"
+          ],
+          "precision_at_10": 0.1,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "chảo",
+          "tcp_ms": 41.447799999787094,
+          "service_ms": 28.972,
+          "ids": [
+            "abo-e2d591829520f3276004"
+          ],
+          "precision_at_10": 0.1,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Chao",
+          "tcp_ms": 38.20350000023609,
+          "service_ms": 27.815,
+          "ids": [
+            "abo-e2d591829520f3276004"
+          ],
+          "precision_at_10": 0.1,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "tôi muốn mua Chảo",
+          "tcp_ms": 43.64199999963603,
+          "service_ms": 32.609,
+          "ids": [
+            "abo-e2d591829520f3276004"
+          ],
+          "precision_at_10": 0.1,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Chảo dưới 390001",
+          "tcp_ms": 44.740400000137015,
+          "service_ms": 33.03,
+          "ids": [
+            "abo-e2d591829520f3276004"
+          ],
+          "precision_at_10": 0.1,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Chảo không quá 390000",
+          "tcp_ms": 38.602800000262505,
+          "service_ms": 26.886,
+          "ids": [
+            "abo-e2d591829520f3276004"
+          ],
+          "precision_at_10": 0.1,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Chuột máy tính",
+          "tcp_ms": 39.310200000272744,
+          "service_ms": 28.229,
+          "ids": [
+            "abo-c3a4256016bbc783a098"
+          ],
+          "precision_at_10": 0.1,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "chuột máy tính",
+          "tcp_ms": 44.787600000290695,
+          "service_ms": 33.931,
+          "ids": [
+            "abo-c3a4256016bbc783a098"
+          ],
+          "precision_at_10": 0.1,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Chuot may tinh",
+          "tcp_ms": 70.16639999983454,
+          "service_ms": 57.277,
+          "ids": [
+            "abo-c3a4256016bbc783a098"
+          ],
+          "precision_at_10": 0.1,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "tôi muốn mua Chuột máy tính",
+          "tcp_ms": 45.691700000134006,
+          "service_ms": 32.224,
+          "ids": [
+            "abo-c3a4256016bbc783a098"
+          ],
+          "precision_at_10": 0.1,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Chuột máy tính dưới 190001",
+          "tcp_ms": 36.47410000030504,
+          "service_ms": 25.541,
+          "ids": [
+            "abo-c3a4256016bbc783a098"
+          ],
+          "precision_at_10": 0.1,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Chuột máy tính không quá 190000",
+          "tcp_ms": 35.769300000083604,
+          "service_ms": 24.562,
+          "ids": [
+            "abo-c3a4256016bbc783a098"
+          ],
+          "precision_at_10": 0.1,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        }
+      ]
+    },
+    {
+      "concurrency": 5,
+      "requests": 114,
+      "tcp": {
+        "p50_ms": 77.235,
+        "p90_ms": 111.665,
+        "p95_ms": 150.379,
+        "p99_ms": 190.886
+      },
+      "service": {
+        "p50_ms": 52.094,
+        "p90_ms": 75.971,
+        "p95_ms": 96.857,
+        "p99_ms": 113.618
+      },
+      "grid_tcp": {
+        "p50_ms": 61.073,
+        "p90_ms": 82.642,
+        "p95_ms": 108.001,
+        "p99_ms": 122.883
+      },
+      "precision_at_10": 0.6736842105263158,
+      "recall_at_10": 0.7960392478023046,
+      "ndcg_at_10": 1.0,
+      "category_leaks": 0,
+      "results": [
+        {
+          "q": "Giày nam",
+          "tcp_ms": 119.41549999983181,
+          "service_ms": 87.251,
+          "ids": [
+            "abo-00c514834bf1afb3aeb1",
+            "abo-0163e5b3f66c2cb986d1",
+            "abo-0446c46130dcf4cf986d",
+            "abo-0677e35cb13f616f4e89",
+            "abo-07664b5bdbfa4053fe23",
+            "abo-08c3abaa33e9e744db0b",
+            "abo-142df26114c9cb0f83fe",
+            "abo-167e24d686f1dd378300",
+            "abo-1a20a2d5b699155f63ae",
+            "abo-1c3c0d3210809f805d53"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.12048192771084337,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "giày nam",
+          "tcp_ms": 148.79400000017995,
+          "service_ms": 66.993,
+          "ids": [
+            "abo-00c514834bf1afb3aeb1",
+            "abo-0163e5b3f66c2cb986d1",
+            "abo-0446c46130dcf4cf986d",
+            "abo-0677e35cb13f616f4e89",
+            "abo-07664b5bdbfa4053fe23",
+            "abo-08c3abaa33e9e744db0b",
+            "abo-142df26114c9cb0f83fe",
+            "abo-167e24d686f1dd378300",
+            "abo-1a20a2d5b699155f63ae",
+            "abo-1c3c0d3210809f805d53"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.12048192771084337,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "tôi muốn mua Giày nam",
+          "tcp_ms": 185.1698000000397,
+          "service_ms": 94.049,
+          "ids": [
+            "abo-00c514834bf1afb3aeb1",
+            "abo-0163e5b3f66c2cb986d1",
+            "abo-0446c46130dcf4cf986d",
+            "abo-0677e35cb13f616f4e89",
+            "abo-07664b5bdbfa4053fe23",
+            "abo-08c3abaa33e9e744db0b",
+            "abo-142df26114c9cb0f83fe",
+            "abo-167e24d686f1dd378300",
+            "abo-1a20a2d5b699155f63ae",
+            "abo-1c3c0d3210809f805d53"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.12048192771084337,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Giày nam dưới 490001",
+          "tcp_ms": 191.7396000003464,
+          "service_ms": 102.953,
+          "ids": [
+            "abo-00c514834bf1afb3aeb1",
+            "abo-0163e5b3f66c2cb986d1",
+            "abo-0446c46130dcf4cf986d",
+            "abo-0677e35cb13f616f4e89",
+            "abo-07664b5bdbfa4053fe23",
+            "abo-08c3abaa33e9e744db0b",
+            "abo-142df26114c9cb0f83fe",
+            "abo-167e24d686f1dd378300",
+            "abo-1a20a2d5b699155f63ae",
+            "abo-1c3c0d3210809f805d53"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.12048192771084337,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Giay nam",
+          "tcp_ms": 199.61640000019543,
+          "service_ms": 102.071,
+          "ids": [
+            "abo-00c514834bf1afb3aeb1",
+            "abo-0163e5b3f66c2cb986d1",
+            "abo-0446c46130dcf4cf986d",
+            "abo-0677e35cb13f616f4e89",
+            "abo-07664b5bdbfa4053fe23",
+            "abo-08c3abaa33e9e744db0b",
+            "abo-142df26114c9cb0f83fe",
+            "abo-167e24d686f1dd378300",
+            "abo-1a20a2d5b699155f63ae",
+            "abo-1c3c0d3210809f805d53"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.12048192771084337,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Giày nam không quá 490000",
+          "tcp_ms": 97.04270000020188,
+          "service_ms": 56.674,
+          "ids": [
+            "abo-00c514834bf1afb3aeb1",
+            "abo-0163e5b3f66c2cb986d1",
+            "abo-0446c46130dcf4cf986d",
+            "abo-0677e35cb13f616f4e89",
+            "abo-07664b5bdbfa4053fe23",
+            "abo-08c3abaa33e9e744db0b",
+            "abo-142df26114c9cb0f83fe",
+            "abo-167e24d686f1dd378300",
+            "abo-1a20a2d5b699155f63ae",
+            "abo-1c3c0d3210809f805d53"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.12048192771084337,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Giày nữ",
+          "tcp_ms": 74.67289999976856,
+          "service_ms": 46.672,
+          "ids": [
+            "abo-0336da5827d1a560c8f5",
+            "abo-04122797f0a6587604cc",
+            "abo-068eb2ca7f3a164aa0fc",
+            "abo-0af1a045cd6669a8aa8b",
+            "abo-0fc59eb036b16e07f35b",
+            "abo-1986e4d84ac0385d830a",
+            "abo-1a8fe56172805dfc1267",
+            "abo-1c34c6d11449a5f46310",
+            "abo-1d8b2552166c1db8183f",
+            "abo-1e4cbb47690b763c2b9b"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.12048192771084337,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "giày nữ",
+          "tcp_ms": 79.67400000006819,
+          "service_ms": 40.034,
+          "ids": [
+            "abo-0336da5827d1a560c8f5",
+            "abo-04122797f0a6587604cc",
+            "abo-068eb2ca7f3a164aa0fc",
+            "abo-0af1a045cd6669a8aa8b",
+            "abo-0fc59eb036b16e07f35b",
+            "abo-1986e4d84ac0385d830a",
+            "abo-1a8fe56172805dfc1267",
+            "abo-1c34c6d11449a5f46310",
+            "abo-1d8b2552166c1db8183f",
+            "abo-1e4cbb47690b763c2b9b"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.12048192771084337,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Giay nu",
+          "tcp_ms": 80.32279999997627,
+          "service_ms": 53.519,
+          "ids": [
+            "abo-0336da5827d1a560c8f5",
+            "abo-04122797f0a6587604cc",
+            "abo-068eb2ca7f3a164aa0fc",
+            "abo-0af1a045cd6669a8aa8b",
+            "abo-0fc59eb036b16e07f35b",
+            "abo-1986e4d84ac0385d830a",
+            "abo-1a8fe56172805dfc1267",
+            "abo-1c34c6d11449a5f46310",
+            "abo-1d8b2552166c1db8183f",
+            "abo-1e4cbb47690b763c2b9b"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.12048192771084337,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Giày nữ dưới 490001",
+          "tcp_ms": 100.04029999981867,
+          "service_ms": 56.665,
+          "ids": [
+            "abo-0336da5827d1a560c8f5",
+            "abo-04122797f0a6587604cc",
+            "abo-068eb2ca7f3a164aa0fc",
+            "abo-0af1a045cd6669a8aa8b",
+            "abo-0fc59eb036b16e07f35b",
+            "abo-1986e4d84ac0385d830a",
+            "abo-1a8fe56172805dfc1267",
+            "abo-1c34c6d11449a5f46310",
+            "abo-1d8b2552166c1db8183f",
+            "abo-1e4cbb47690b763c2b9b"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.12048192771084337,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Giày nữ không quá 490000",
+          "tcp_ms": 97.56400000014764,
+          "service_ms": 58.578,
+          "ids": [
+            "abo-0336da5827d1a560c8f5",
+            "abo-04122797f0a6587604cc",
+            "abo-068eb2ca7f3a164aa0fc",
+            "abo-0af1a045cd6669a8aa8b",
+            "abo-0fc59eb036b16e07f35b",
+            "abo-1986e4d84ac0385d830a",
+            "abo-1a8fe56172805dfc1267",
+            "abo-1c34c6d11449a5f46310",
+            "abo-1d8b2552166c1db8183f",
+            "abo-1e4cbb47690b763c2b9b"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.12048192771084337,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "tôi muốn mua Giày nữ",
+          "tcp_ms": 122.37709999999424,
+          "service_ms": 60.934,
+          "ids": [
+            "abo-0336da5827d1a560c8f5",
+            "abo-04122797f0a6587604cc",
+            "abo-068eb2ca7f3a164aa0fc",
+            "abo-0af1a045cd6669a8aa8b",
+            "abo-0fc59eb036b16e07f35b",
+            "abo-1986e4d84ac0385d830a",
+            "abo-1a8fe56172805dfc1267",
+            "abo-1c34c6d11449a5f46310",
+            "abo-1d8b2552166c1db8183f",
+            "abo-1e4cbb47690b763c2b9b"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.12048192771084337,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Ốp điện thoại",
+          "tcp_ms": 70.35589999986769,
+          "service_ms": 47.872,
+          "ids": [
+            "abo-079890493c0f0b63ced5",
+            "abo-07fe86c90424f80b4386",
+            "abo-1366ca639c024f80a4bb",
+            "abo-253d991f86a836b2ce74",
+            "abo-31a61d412cc28c9b3e7e",
+            "abo-36c11d0b602ce2db673f",
+            "abo-6a6458026ca185179e39",
+            "abo-6db8e735a0e855774822",
+            "abo-7ce1fdab324ab8f4b67e",
+            "abo-80b535ad9ba063838753"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.3333333333333333,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "ốp điện thoại",
+          "tcp_ms": 67.52099999994243,
+          "service_ms": 50.382,
+          "ids": [
+            "abo-079890493c0f0b63ced5",
+            "abo-07fe86c90424f80b4386",
+            "abo-1366ca639c024f80a4bb",
+            "abo-253d991f86a836b2ce74",
+            "abo-31a61d412cc28c9b3e7e",
+            "abo-36c11d0b602ce2db673f",
+            "abo-6a6458026ca185179e39",
+            "abo-6db8e735a0e855774822",
+            "abo-7ce1fdab324ab8f4b67e",
+            "abo-80b535ad9ba063838753"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.3333333333333333,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Op dien thoai",
+          "tcp_ms": 77.52970000001369,
+          "service_ms": 48.513,
+          "ids": [
+            "abo-079890493c0f0b63ced5",
+            "abo-07fe86c90424f80b4386",
+            "abo-1366ca639c024f80a4bb",
+            "abo-253d991f86a836b2ce74",
+            "abo-31a61d412cc28c9b3e7e",
+            "abo-36c11d0b602ce2db673f",
+            "abo-6a6458026ca185179e39",
+            "abo-6db8e735a0e855774822",
+            "abo-7ce1fdab324ab8f4b67e",
+            "abo-80b535ad9ba063838753"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.3333333333333333,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Ốp điện thoại không quá 99000",
+          "tcp_ms": 62.35930000002554,
+          "service_ms": 44.01,
+          "ids": [
+            "abo-079890493c0f0b63ced5",
+            "abo-07fe86c90424f80b4386",
+            "abo-1366ca639c024f80a4bb",
+            "abo-253d991f86a836b2ce74",
+            "abo-31a61d412cc28c9b3e7e",
+            "abo-36c11d0b602ce2db673f",
+            "abo-6a6458026ca185179e39",
+            "abo-6db8e735a0e855774822",
+            "abo-7ce1fdab324ab8f4b67e",
+            "abo-80b535ad9ba063838753"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.3333333333333333,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Ốp điện thoại dưới 99001",
+          "tcp_ms": 84.1577999999572,
+          "service_ms": 56.052,
+          "ids": [
+            "abo-079890493c0f0b63ced5",
+            "abo-07fe86c90424f80b4386",
+            "abo-1366ca639c024f80a4bb",
+            "abo-253d991f86a836b2ce74",
+            "abo-31a61d412cc28c9b3e7e",
+            "abo-36c11d0b602ce2db673f",
+            "abo-6a6458026ca185179e39",
+            "abo-6db8e735a0e855774822",
+            "abo-7ce1fdab324ab8f4b67e",
+            "abo-80b535ad9ba063838753"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.3333333333333333,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "tôi muốn mua Ốp điện thoại",
+          "tcp_ms": 102.63650000024427,
+          "service_ms": 65.062,
+          "ids": [
+            "abo-079890493c0f0b63ced5",
+            "abo-07fe86c90424f80b4386",
+            "abo-1366ca639c024f80a4bb",
+            "abo-253d991f86a836b2ce74",
+            "abo-31a61d412cc28c9b3e7e",
+            "abo-36c11d0b602ce2db673f",
+            "abo-6a6458026ca185179e39",
+            "abo-6db8e735a0e855774822",
+            "abo-7ce1fdab324ab8f4b67e",
+            "abo-80b535ad9ba063838753"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.3333333333333333,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Cốc",
+          "tcp_ms": 83.90550000012809,
+          "service_ms": 62.406,
+          "ids": [
+            "abo-7a4d77b7fdf5f3b737dd",
+            "abo-9d23c63b64aebbceec0e",
+            "abo-d7318fc1f2f6331f544d",
+            "abo-dffe3008a16e36046923"
+          ],
+          "precision_at_10": 0.4,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "cốc",
+          "tcp_ms": 61.33909999971365,
+          "service_ms": 40.346,
+          "ids": [
+            "abo-7a4d77b7fdf5f3b737dd",
+            "abo-9d23c63b64aebbceec0e",
+            "abo-d7318fc1f2f6331f544d",
+            "abo-dffe3008a16e36046923"
+          ],
+          "precision_at_10": 0.4,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "tôi muốn mua Cốc",
+          "tcp_ms": 76.68999999987136,
+          "service_ms": 52.152,
+          "ids": [
+            "abo-7a4d77b7fdf5f3b737dd",
+            "abo-9d23c63b64aebbceec0e",
+            "abo-d7318fc1f2f6331f544d",
+            "abo-dffe3008a16e36046923"
+          ],
+          "precision_at_10": 0.4,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Cốc dưới 99001",
+          "tcp_ms": 70.34720000001471,
+          "service_ms": 43.582,
+          "ids": [
+            "abo-7a4d77b7fdf5f3b737dd",
+            "abo-9d23c63b64aebbceec0e",
+            "abo-d7318fc1f2f6331f544d",
+            "abo-dffe3008a16e36046923"
+          ],
+          "precision_at_10": 0.4,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Coc",
+          "tcp_ms": 93.35339999961434,
+          "service_ms": 58.388,
+          "ids": [
+            "abo-7a4d77b7fdf5f3b737dd",
+            "abo-9d23c63b64aebbceec0e",
+            "abo-d7318fc1f2f6331f544d",
+            "abo-dffe3008a16e36046923"
+          ],
+          "precision_at_10": 0.4,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Cốc không quá 99000",
+          "tcp_ms": 76.98209999989558,
+          "service_ms": 52.003,
+          "ids": [
+            "abo-7a4d77b7fdf5f3b737dd",
+            "abo-9d23c63b64aebbceec0e",
+            "abo-d7318fc1f2f6331f544d",
+            "abo-dffe3008a16e36046923"
+          ],
+          "precision_at_10": 0.4,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Bàn",
+          "tcp_ms": 77.07550000031915,
+          "service_ms": 52.036,
+          "ids": [
+            "abo-0050b24a441bc1f887d6",
+            "abo-665f02f8b5e623db10df",
+            "abo-72f7826672f1aec255cc",
+            "abo-76423c2cbe80cf98d520",
+            "abo-7813496f2370d9b47265",
+            "abo-9e8637d6f71bc11da060",
+            "abo-b15af54722d7f012fd11",
+            "abo-d361ab02f89d28ffe3c1",
+            "abo-d8d440296735660e30f6",
+            "abo-fd2b3ee5ef1a347552b2"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "bàn",
+          "tcp_ms": 76.82399999976042,
+          "service_ms": 48.997,
+          "ids": [
+            "abo-0050b24a441bc1f887d6",
+            "abo-665f02f8b5e623db10df",
+            "abo-72f7826672f1aec255cc",
+            "abo-76423c2cbe80cf98d520",
+            "abo-7813496f2370d9b47265",
+            "abo-9e8637d6f71bc11da060",
+            "abo-b15af54722d7f012fd11",
+            "abo-d361ab02f89d28ffe3c1",
+            "abo-d8d440296735660e30f6",
+            "abo-fd2b3ee5ef1a347552b2"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Ban",
+          "tcp_ms": 83.9005999996516,
+          "service_ms": 63.563,
+          "ids": [
+            "abo-0050b24a441bc1f887d6",
+            "abo-665f02f8b5e623db10df",
+            "abo-72f7826672f1aec255cc",
+            "abo-76423c2cbe80cf98d520",
+            "abo-7813496f2370d9b47265",
+            "abo-9e8637d6f71bc11da060",
+            "abo-b15af54722d7f012fd11",
+            "abo-d361ab02f89d28ffe3c1",
+            "abo-d8d440296735660e30f6",
+            "abo-fd2b3ee5ef1a347552b2"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "tôi muốn mua Bàn",
+          "tcp_ms": 97.2234999999273,
+          "service_ms": 62.809,
+          "ids": [
+            "abo-0050b24a441bc1f887d6",
+            "abo-665f02f8b5e623db10df",
+            "abo-72f7826672f1aec255cc",
+            "abo-76423c2cbe80cf98d520",
+            "abo-7813496f2370d9b47265",
+            "abo-9e8637d6f71bc11da060",
+            "abo-b15af54722d7f012fd11",
+            "abo-d361ab02f89d28ffe3c1",
+            "abo-d8d440296735660e30f6",
+            "abo-fd2b3ee5ef1a347552b2"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Bàn dưới 1290001",
+          "tcp_ms": 93.03229999977702,
+          "service_ms": 67.2,
+          "ids": [
+            "abo-0050b24a441bc1f887d6",
+            "abo-665f02f8b5e623db10df",
+            "abo-72f7826672f1aec255cc",
+            "abo-76423c2cbe80cf98d520",
+            "abo-7813496f2370d9b47265",
+            "abo-9e8637d6f71bc11da060",
+            "abo-b15af54722d7f012fd11",
+            "abo-d361ab02f89d28ffe3c1",
+            "abo-d8d440296735660e30f6",
+            "abo-fd2b3ee5ef1a347552b2"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Bàn không quá 1290000",
+          "tcp_ms": 86.05179999995016,
+          "service_ms": 51.883,
+          "ids": [
+            "abo-0050b24a441bc1f887d6",
+            "abo-665f02f8b5e623db10df",
+            "abo-72f7826672f1aec255cc",
+            "abo-76423c2cbe80cf98d520",
+            "abo-7813496f2370d9b47265",
+            "abo-9e8637d6f71bc11da060",
+            "abo-b15af54722d7f012fd11",
+            "abo-d361ab02f89d28ffe3c1",
+            "abo-d8d440296735660e30f6",
+            "abo-fd2b3ee5ef1a347552b2"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Ghế",
+          "tcp_ms": 70.29000000011365,
+          "service_ms": 44.523,
+          "ids": [
+            "abo-0d5824b35ffd3ce3a111",
+            "abo-246acc6e8a2c98585748",
+            "abo-40c2d590d020e8d14ae9",
+            "abo-431ff47790d0b98bec5c",
+            "abo-4a886d3cd3a48ff230d5",
+            "abo-81d98e5ba66d748bdb79",
+            "abo-83f32913bc80c90b136a",
+            "abo-9bcaa4fd8c5734434cbb",
+            "abo-9da7f75aa203d53c56a9",
+            "abo-ae80ba078bb8499eb3bc"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.5882352941176471,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "ghế",
+          "tcp_ms": 64.60030000016559,
+          "service_ms": 43.467,
+          "ids": [
+            "abo-0d5824b35ffd3ce3a111",
+            "abo-246acc6e8a2c98585748",
+            "abo-40c2d590d020e8d14ae9",
+            "abo-431ff47790d0b98bec5c",
+            "abo-4a886d3cd3a48ff230d5",
+            "abo-81d98e5ba66d748bdb79",
+            "abo-83f32913bc80c90b136a",
+            "abo-9bcaa4fd8c5734434cbb",
+            "abo-9da7f75aa203d53c56a9",
+            "abo-ae80ba078bb8499eb3bc"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.5882352941176471,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Ghe",
+          "tcp_ms": 65.00139999980092,
+          "service_ms": 42.416,
+          "ids": [
+            "abo-0d5824b35ffd3ce3a111",
+            "abo-246acc6e8a2c98585748",
+            "abo-40c2d590d020e8d14ae9",
+            "abo-431ff47790d0b98bec5c",
+            "abo-4a886d3cd3a48ff230d5",
+            "abo-81d98e5ba66d748bdb79",
+            "abo-83f32913bc80c90b136a",
+            "abo-9bcaa4fd8c5734434cbb",
+            "abo-9da7f75aa203d53c56a9",
+            "abo-ae80ba078bb8499eb3bc"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.5882352941176471,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "tôi muốn mua Ghế",
+          "tcp_ms": 67.98819999994521,
+          "service_ms": 49.1,
+          "ids": [
+            "abo-0d5824b35ffd3ce3a111",
+            "abo-246acc6e8a2c98585748",
+            "abo-40c2d590d020e8d14ae9",
+            "abo-431ff47790d0b98bec5c",
+            "abo-4a886d3cd3a48ff230d5",
+            "abo-81d98e5ba66d748bdb79",
+            "abo-83f32913bc80c90b136a",
+            "abo-9bcaa4fd8c5734434cbb",
+            "abo-9da7f75aa203d53c56a9",
+            "abo-ae80ba078bb8499eb3bc"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.5882352941176471,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Ghế dưới 990001",
+          "tcp_ms": 70.4331999995702,
+          "service_ms": 45.089,
+          "ids": [
+            "abo-0d5824b35ffd3ce3a111",
+            "abo-246acc6e8a2c98585748",
+            "abo-40c2d590d020e8d14ae9",
+            "abo-431ff47790d0b98bec5c",
+            "abo-4a886d3cd3a48ff230d5",
+            "abo-81d98e5ba66d748bdb79",
+            "abo-83f32913bc80c90b136a",
+            "abo-9bcaa4fd8c5734434cbb",
+            "abo-9da7f75aa203d53c56a9",
+            "abo-ae80ba078bb8499eb3bc"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.5882352941176471,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Ghế không quá 990000",
+          "tcp_ms": 67.21460000017032,
+          "service_ms": 49.513,
+          "ids": [
+            "abo-0d5824b35ffd3ce3a111",
+            "abo-246acc6e8a2c98585748",
+            "abo-40c2d590d020e8d14ae9",
+            "abo-431ff47790d0b98bec5c",
+            "abo-4a886d3cd3a48ff230d5",
+            "abo-81d98e5ba66d748bdb79",
+            "abo-83f32913bc80c90b136a",
+            "abo-9bcaa4fd8c5734434cbb",
+            "abo-9da7f75aa203d53c56a9",
+            "abo-ae80ba078bb8499eb3bc"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.5882352941176471,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Ghế sofa",
+          "tcp_ms": 66.87809999993988,
+          "service_ms": 47.141,
+          "ids": [
+            "abo-147a4fac1d8cae66f962",
+            "abo-388fce9c2482890f5f60",
+            "abo-433f953c6c84022f638e",
+            "abo-455b37279be1ab32f83e",
+            "abo-5d44522e315edd5f6025",
+            "abo-62f6ffd1672185a0d2e4",
+            "abo-72b7858939509bab0cae",
+            "abo-7a5ea4650a4b4eade2ac",
+            "abo-9cea1515f6f2913499e4",
+            "abo-a679629040ad15988c4f"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.7692307692307693,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "ghế sofa",
+          "tcp_ms": 68.71019999971395,
+          "service_ms": 48.687,
+          "ids": [
+            "abo-147a4fac1d8cae66f962",
+            "abo-388fce9c2482890f5f60",
+            "abo-433f953c6c84022f638e",
+            "abo-455b37279be1ab32f83e",
+            "abo-5d44522e315edd5f6025",
+            "abo-62f6ffd1672185a0d2e4",
+            "abo-72b7858939509bab0cae",
+            "abo-7a5ea4650a4b4eade2ac",
+            "abo-9cea1515f6f2913499e4",
+            "abo-a679629040ad15988c4f"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.7692307692307693,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Ghe sofa",
+          "tcp_ms": 80.08699999982127,
+          "service_ms": 53.432,
+          "ids": [
+            "abo-147a4fac1d8cae66f962",
+            "abo-388fce9c2482890f5f60",
+            "abo-433f953c6c84022f638e",
+            "abo-455b37279be1ab32f83e",
+            "abo-5d44522e315edd5f6025",
+            "abo-62f6ffd1672185a0d2e4",
+            "abo-72b7858939509bab0cae",
+            "abo-7a5ea4650a4b4eade2ac",
+            "abo-9cea1515f6f2913499e4",
+            "abo-a679629040ad15988c4f"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.7692307692307693,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "tôi muốn mua Ghế sofa",
+          "tcp_ms": 74.90850000021965,
+          "service_ms": 56.567,
+          "ids": [
+            "abo-147a4fac1d8cae66f962",
+            "abo-388fce9c2482890f5f60",
+            "abo-433f953c6c84022f638e",
+            "abo-455b37279be1ab32f83e",
+            "abo-5d44522e315edd5f6025",
+            "abo-62f6ffd1672185a0d2e4",
+            "abo-72b7858939509bab0cae",
+            "abo-7a5ea4650a4b4eade2ac",
+            "abo-9cea1515f6f2913499e4",
+            "abo-a679629040ad15988c4f"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.7692307692307693,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Ghế sofa dưới 2990001",
+          "tcp_ms": 80.3726000003735,
+          "service_ms": 61.809,
+          "ids": [
+            "abo-147a4fac1d8cae66f962",
+            "abo-388fce9c2482890f5f60",
+            "abo-433f953c6c84022f638e",
+            "abo-455b37279be1ab32f83e",
+            "abo-5d44522e315edd5f6025",
+            "abo-62f6ffd1672185a0d2e4",
+            "abo-72b7858939509bab0cae",
+            "abo-7a5ea4650a4b4eade2ac",
+            "abo-9cea1515f6f2913499e4",
+            "abo-a679629040ad15988c4f"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.7692307692307693,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Ghế sofa không quá 2990000",
+          "tcp_ms": 88.15499999991516,
+          "service_ms": 53.581,
+          "ids": [
+            "abo-147a4fac1d8cae66f962",
+            "abo-388fce9c2482890f5f60",
+            "abo-433f953c6c84022f638e",
+            "abo-455b37279be1ab32f83e",
+            "abo-5d44522e315edd5f6025",
+            "abo-62f6ffd1672185a0d2e4",
+            "abo-72b7858939509bab0cae",
+            "abo-7a5ea4650a4b4eade2ac",
+            "abo-9cea1515f6f2913499e4",
+            "abo-a679629040ad15988c4f"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.7692307692307693,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Thảm",
+          "tcp_ms": 78.19220000010318,
+          "service_ms": 53.467,
+          "ids": [
+            "abo-11db87231ce1570f7d92",
+            "abo-28883c07ad443fc141f7",
+            "abo-2f9cd2b1b85b96285299",
+            "abo-41bdd12740db39391e27",
+            "abo-733ebd1593d26e7dbc1f",
+            "abo-8bcc02d931f02ae00a7c",
+            "abo-95ca3356e346055634dc",
+            "abo-c7ed56c66ab021c053c3",
+            "abo-c821db60366b2b779e0f",
+            "abo-dff0396e22315f157bf0"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.6666666666666666,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Tham",
+          "tcp_ms": 62.942000000020926,
+          "service_ms": 49.612,
+          "ids": [
+            "abo-11db87231ce1570f7d92",
+            "abo-28883c07ad443fc141f7",
+            "abo-2f9cd2b1b85b96285299",
+            "abo-41bdd12740db39391e27",
+            "abo-733ebd1593d26e7dbc1f",
+            "abo-8bcc02d931f02ae00a7c",
+            "abo-95ca3356e346055634dc",
+            "abo-c7ed56c66ab021c053c3",
+            "abo-c821db60366b2b779e0f",
+            "abo-dff0396e22315f157bf0"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.6666666666666666,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "thảm",
+          "tcp_ms": 83.59389999986888,
+          "service_ms": 54.705,
+          "ids": [
+            "abo-11db87231ce1570f7d92",
+            "abo-28883c07ad443fc141f7",
+            "abo-2f9cd2b1b85b96285299",
+            "abo-41bdd12740db39391e27",
+            "abo-733ebd1593d26e7dbc1f",
+            "abo-8bcc02d931f02ae00a7c",
+            "abo-95ca3356e346055634dc",
+            "abo-c7ed56c66ab021c053c3",
+            "abo-c821db60366b2b779e0f",
+            "abo-dff0396e22315f157bf0"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.6666666666666666,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "tôi muốn mua Thảm",
+          "tcp_ms": 84.50619999985065,
+          "service_ms": 60.71,
+          "ids": [
+            "abo-11db87231ce1570f7d92",
+            "abo-28883c07ad443fc141f7",
+            "abo-2f9cd2b1b85b96285299",
+            "abo-41bdd12740db39391e27",
+            "abo-733ebd1593d26e7dbc1f",
+            "abo-8bcc02d931f02ae00a7c",
+            "abo-95ca3356e346055634dc",
+            "abo-c7ed56c66ab021c053c3",
+            "abo-c821db60366b2b779e0f",
+            "abo-dff0396e22315f157bf0"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.6666666666666666,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Thảm dưới 390001",
+          "tcp_ms": 88.97830000023532,
+          "service_ms": 60.17,
+          "ids": [
+            "abo-11db87231ce1570f7d92",
+            "abo-28883c07ad443fc141f7",
+            "abo-2f9cd2b1b85b96285299",
+            "abo-41bdd12740db39391e27",
+            "abo-733ebd1593d26e7dbc1f",
+            "abo-8bcc02d931f02ae00a7c",
+            "abo-95ca3356e346055634dc",
+            "abo-c7ed56c66ab021c053c3",
+            "abo-c821db60366b2b779e0f",
+            "abo-dff0396e22315f157bf0"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.6666666666666666,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Thảm không quá 390000",
+          "tcp_ms": 89.40940000002229,
+          "service_ms": 66.547,
+          "ids": [
+            "abo-11db87231ce1570f7d92",
+            "abo-28883c07ad443fc141f7",
+            "abo-2f9cd2b1b85b96285299",
+            "abo-41bdd12740db39391e27",
+            "abo-733ebd1593d26e7dbc1f",
+            "abo-8bcc02d931f02ae00a7c",
+            "abo-95ca3356e346055634dc",
+            "abo-c7ed56c66ab021c053c3",
+            "abo-c821db60366b2b779e0f",
+            "abo-dff0396e22315f157bf0"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.6666666666666666,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Dụng cụ nhà bếp",
+          "tcp_ms": 93.51169999990816,
+          "service_ms": 65.231,
+          "ids": [
+            "abo-4766510388b5ae04194f",
+            "abo-4e7c3ee9213849d33eb8",
+            "abo-62648adc901a986c3862",
+            "abo-9cc8a00e7a504ff979d9",
+            "abo-a98b79349e4d9340408a",
+            "abo-be279817f20f0bebc804",
+            "abo-fc574b1967303776ae2a",
+            "abo-fff065381205986c6e49"
+          ],
+          "precision_at_10": 0.8,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "dụng cụ nhà bếp",
+          "tcp_ms": 92.41709999969316,
+          "service_ms": 59.346,
+          "ids": [
+            "abo-4766510388b5ae04194f",
+            "abo-4e7c3ee9213849d33eb8",
+            "abo-62648adc901a986c3862",
+            "abo-9cc8a00e7a504ff979d9",
+            "abo-a98b79349e4d9340408a",
+            "abo-be279817f20f0bebc804",
+            "abo-fc574b1967303776ae2a",
+            "abo-fff065381205986c6e49"
+          ],
+          "precision_at_10": 0.8,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Dung cu nha bep",
+          "tcp_ms": 77.39459999993414,
+          "service_ms": 48.698,
+          "ids": [
+            "abo-4766510388b5ae04194f",
+            "abo-4e7c3ee9213849d33eb8",
+            "abo-62648adc901a986c3862",
+            "abo-9cc8a00e7a504ff979d9",
+            "abo-a98b79349e4d9340408a",
+            "abo-be279817f20f0bebc804",
+            "abo-fc574b1967303776ae2a",
+            "abo-fff065381205986c6e49"
+          ],
+          "precision_at_10": 0.8,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "tôi muốn mua Dụng cụ nhà bếp",
+          "tcp_ms": 69.05320000032589,
+          "service_ms": 51.297,
+          "ids": [
+            "abo-4766510388b5ae04194f",
+            "abo-4e7c3ee9213849d33eb8",
+            "abo-62648adc901a986c3862",
+            "abo-9cc8a00e7a504ff979d9",
+            "abo-a98b79349e4d9340408a",
+            "abo-be279817f20f0bebc804",
+            "abo-fc574b1967303776ae2a",
+            "abo-fff065381205986c6e49"
+          ],
+          "precision_at_10": 0.8,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Dụng cụ nhà bếp dưới 290001",
+          "tcp_ms": 71.46250000005239,
+          "service_ms": 48.579,
+          "ids": [
+            "abo-4766510388b5ae04194f",
+            "abo-4e7c3ee9213849d33eb8",
+            "abo-62648adc901a986c3862",
+            "abo-9cc8a00e7a504ff979d9",
+            "abo-a98b79349e4d9340408a",
+            "abo-be279817f20f0bebc804",
+            "abo-fc574b1967303776ae2a",
+            "abo-fff065381205986c6e49"
+          ],
+          "precision_at_10": 0.8,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Dụng cụ nhà bếp không quá 290000",
+          "tcp_ms": 75.21399999995992,
+          "service_ms": 47.473,
+          "ids": [
+            "abo-4766510388b5ae04194f",
+            "abo-4e7c3ee9213849d33eb8",
+            "abo-62648adc901a986c3862",
+            "abo-9cc8a00e7a504ff979d9",
+            "abo-a98b79349e4d9340408a",
+            "abo-be279817f20f0bebc804",
+            "abo-fc574b1967303776ae2a",
+            "abo-fff065381205986c6e49"
+          ],
+          "precision_at_10": 0.8,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Đèn bàn",
+          "tcp_ms": 80.327699999998,
+          "service_ms": 61.125,
+          "ids": [
+            "abo-29b2c0eaed12423831bb",
+            "abo-5201acf029973a073d28",
+            "abo-56afbeae6a65d33efdeb",
+            "abo-5b010b857684a79cc925",
+            "abo-a667aeba660037ceec6b",
+            "abo-dad0db93f572d08bdac0",
+            "abo-fd95f8857918e340c9ee"
+          ],
+          "precision_at_10": 0.7,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "đèn bàn",
+          "tcp_ms": 81.98829999992086,
+          "service_ms": 58.992,
+          "ids": [
+            "abo-29b2c0eaed12423831bb",
+            "abo-5201acf029973a073d28",
+            "abo-56afbeae6a65d33efdeb",
+            "abo-5b010b857684a79cc925",
+            "abo-a667aeba660037ceec6b",
+            "abo-dad0db93f572d08bdac0",
+            "abo-fd95f8857918e340c9ee"
+          ],
+          "precision_at_10": 0.7,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Đen ban",
+          "tcp_ms": 80.95090000006167,
+          "service_ms": 62.785,
+          "ids": [
+            "abo-29b2c0eaed12423831bb",
+            "abo-5201acf029973a073d28",
+            "abo-56afbeae6a65d33efdeb",
+            "abo-5b010b857684a79cc925",
+            "abo-a667aeba660037ceec6b",
+            "abo-dad0db93f572d08bdac0",
+            "abo-fd95f8857918e340c9ee"
+          ],
+          "precision_at_10": 0.7,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "tôi muốn mua Đèn bàn",
+          "tcp_ms": 92.19830000029106,
+          "service_ms": 63.539,
+          "ids": [
+            "abo-29b2c0eaed12423831bb",
+            "abo-5201acf029973a073d28",
+            "abo-56afbeae6a65d33efdeb",
+            "abo-5b010b857684a79cc925",
+            "abo-a667aeba660037ceec6b",
+            "abo-dad0db93f572d08bdac0",
+            "abo-fd95f8857918e340c9ee"
+          ],
+          "precision_at_10": 0.7,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Đèn bàn dưới 490001",
+          "tcp_ms": 84.63460000029954,
+          "service_ms": 56.469,
+          "ids": [
+            "abo-29b2c0eaed12423831bb",
+            "abo-5201acf029973a073d28",
+            "abo-56afbeae6a65d33efdeb",
+            "abo-5b010b857684a79cc925",
+            "abo-a667aeba660037ceec6b",
+            "abo-dad0db93f572d08bdac0",
+            "abo-fd95f8857918e340c9ee"
+          ],
+          "precision_at_10": 0.7,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Đèn bàn không quá 490000",
+          "tcp_ms": 85.8272999998917,
+          "service_ms": 64.684,
+          "ids": [
+            "abo-29b2c0eaed12423831bb",
+            "abo-5201acf029973a073d28",
+            "abo-56afbeae6a65d33efdeb",
+            "abo-5b010b857684a79cc925",
+            "abo-a667aeba660037ceec6b",
+            "abo-dad0db93f572d08bdac0",
+            "abo-fd95f8857918e340c9ee"
+          ],
+          "precision_at_10": 0.7,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Gối",
+          "tcp_ms": 97.76629999987563,
+          "service_ms": 61.589,
+          "ids": [
+            "abo-09febd66bbbbb88a79f6",
+            "abo-3e282d4b27b03bc34f14",
+            "abo-4aca36398d6189640c66",
+            "abo-d6a12a926afe53585fb2",
+            "abo-dc3faf23e6400349c4c3"
+          ],
+          "precision_at_10": 0.5,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "gối",
+          "tcp_ms": 93.47559999969235,
+          "service_ms": 60.851,
+          "ids": [
+            "abo-09febd66bbbbb88a79f6",
+            "abo-3e282d4b27b03bc34f14",
+            "abo-4aca36398d6189640c66",
+            "abo-d6a12a926afe53585fb2",
+            "abo-dc3faf23e6400349c4c3"
+          ],
+          "precision_at_10": 0.5,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Goi",
+          "tcp_ms": 77.95489999989513,
+          "service_ms": 57.0,
+          "ids": [
+            "abo-09febd66bbbbb88a79f6",
+            "abo-3e282d4b27b03bc34f14",
+            "abo-4aca36398d6189640c66",
+            "abo-d6a12a926afe53585fb2",
+            "abo-dc3faf23e6400349c4c3"
+          ],
+          "precision_at_10": 0.5,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "tôi muốn mua Gối",
+          "tcp_ms": 90.24989999988975,
+          "service_ms": 63.799,
+          "ids": [
+            "abo-09febd66bbbbb88a79f6",
+            "abo-3e282d4b27b03bc34f14",
+            "abo-4aca36398d6189640c66",
+            "abo-d6a12a926afe53585fb2",
+            "abo-dc3faf23e6400349c4c3"
+          ],
+          "precision_at_10": 0.5,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Gối dưới 190001",
+          "tcp_ms": 80.78589999968244,
+          "service_ms": 56.008,
+          "ids": [
+            "abo-09febd66bbbbb88a79f6",
+            "abo-3e282d4b27b03bc34f14",
+            "abo-4aca36398d6189640c66",
+            "abo-d6a12a926afe53585fb2",
+            "abo-dc3faf23e6400349c4c3"
+          ],
+          "precision_at_10": 0.5,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Gối không quá 190000",
+          "tcp_ms": 62.63349999971979,
+          "service_ms": 40.976,
+          "ids": [
+            "abo-09febd66bbbbb88a79f6",
+            "abo-3e282d4b27b03bc34f14",
+            "abo-4aca36398d6189640c66",
+            "abo-d6a12a926afe53585fb2",
+            "abo-dc3faf23e6400349c4c3"
+          ],
+          "precision_at_10": 0.5,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Bộ sạc",
+          "tcp_ms": 63.34339999966687,
+          "service_ms": 47.189,
+          "ids": [
+            "abo-03f572f0fa28311ef35b",
+            "abo-04958db907a8119dc868",
+            "abo-165cf57eee99a1dbc12f",
+            "abo-2d80ea05b3c739828545",
+            "abo-308a823f49b2b5d58532",
+            "abo-34fad8eb7b8e4fe4cb1c",
+            "abo-63bdc68989121edbc466",
+            "abo-6e674a68d9046685e9eb",
+            "abo-791ca85aaaed94597566",
+            "abo-809bbfba5de9074bee66"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.5263157894736842,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "bộ sạc",
+          "tcp_ms": 80.13080000000627,
+          "service_ms": 46.683,
+          "ids": [
+            "abo-03f572f0fa28311ef35b",
+            "abo-04958db907a8119dc868",
+            "abo-165cf57eee99a1dbc12f",
+            "abo-2d80ea05b3c739828545",
+            "abo-308a823f49b2b5d58532",
+            "abo-34fad8eb7b8e4fe4cb1c",
+            "abo-63bdc68989121edbc466",
+            "abo-6e674a68d9046685e9eb",
+            "abo-791ca85aaaed94597566",
+            "abo-809bbfba5de9074bee66"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.5263157894736842,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "tôi muốn mua Bộ sạc",
+          "tcp_ms": 139.64949999990495,
+          "service_ms": 105.048,
+          "ids": [
+            "abo-03f572f0fa28311ef35b",
+            "abo-04958db907a8119dc868",
+            "abo-165cf57eee99a1dbc12f",
+            "abo-2d80ea05b3c739828545",
+            "abo-308a823f49b2b5d58532",
+            "abo-34fad8eb7b8e4fe4cb1c",
+            "abo-63bdc68989121edbc466",
+            "abo-6e674a68d9046685e9eb",
+            "abo-791ca85aaaed94597566",
+            "abo-809bbfba5de9074bee66"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.5263157894736842,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Bo sac",
+          "tcp_ms": 153.32300000000032,
+          "service_ms": 109.747,
+          "ids": [
+            "abo-03f572f0fa28311ef35b",
+            "abo-04958db907a8119dc868",
+            "abo-165cf57eee99a1dbc12f",
+            "abo-2d80ea05b3c739828545",
+            "abo-308a823f49b2b5d58532",
+            "abo-34fad8eb7b8e4fe4cb1c",
+            "abo-63bdc68989121edbc466",
+            "abo-6e674a68d9046685e9eb",
+            "abo-791ca85aaaed94597566",
+            "abo-809bbfba5de9074bee66"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.5263157894736842,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Bộ sạc dưới 190001",
+          "tcp_ms": 148.28069999975924,
+          "service_ms": 114.196,
+          "ids": [
+            "abo-03f572f0fa28311ef35b",
+            "abo-04958db907a8119dc868",
+            "abo-165cf57eee99a1dbc12f",
+            "abo-2d80ea05b3c739828545",
+            "abo-308a823f49b2b5d58532",
+            "abo-34fad8eb7b8e4fe4cb1c",
+            "abo-63bdc68989121edbc466",
+            "abo-6e674a68d9046685e9eb",
+            "abo-791ca85aaaed94597566",
+            "abo-809bbfba5de9074bee66"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.5263157894736842,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Bộ sạc không quá 190000",
+          "tcp_ms": 163.26289999960863,
+          "service_ms": 130.494,
+          "ids": [
+            "abo-03f572f0fa28311ef35b",
+            "abo-04958db907a8119dc868",
+            "abo-165cf57eee99a1dbc12f",
+            "abo-2d80ea05b3c739828545",
+            "abo-308a823f49b2b5d58532",
+            "abo-34fad8eb7b8e4fe4cb1c",
+            "abo-63bdc68989121edbc466",
+            "abo-6e674a68d9046685e9eb",
+            "abo-791ca85aaaed94597566",
+            "abo-809bbfba5de9074bee66"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.5263157894736842,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Loa",
+          "tcp_ms": 178.13350000005812,
+          "service_ms": 86.784,
+          "ids": [
+            "abo-05af7037d83fc2ad4427",
+            "abo-8a1e5a22a992a96c1092",
+            "abo-b3649dd5ee900fa8f148"
+          ],
+          "precision_at_10": 0.3,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "loa",
+          "tcp_ms": 111.28259999986767,
+          "service_ms": 81.203,
+          "ids": [
+            "abo-05af7037d83fc2ad4427",
+            "abo-8a1e5a22a992a96c1092",
+            "abo-b3649dd5ee900fa8f148"
+          ],
+          "precision_at_10": 0.3,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Loa",
+          "tcp_ms": 111.82909999979529,
+          "service_ms": 82.12,
+          "ids": [
+            "abo-05af7037d83fc2ad4427",
+            "abo-8a1e5a22a992a96c1092",
+            "abo-b3649dd5ee900fa8f148"
+          ],
+          "precision_at_10": 0.3,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "tôi muốn mua Loa",
+          "tcp_ms": 110.05919999979596,
+          "service_ms": 79.192,
+          "ids": [
+            "abo-05af7037d83fc2ad4427",
+            "abo-8a1e5a22a992a96c1092",
+            "abo-b3649dd5ee900fa8f148"
+          ],
+          "precision_at_10": 0.3,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Loa dưới 590001",
+          "tcp_ms": 94.3145999999615,
+          "service_ms": 54.194,
+          "ids": [
+            "abo-05af7037d83fc2ad4427",
+            "abo-8a1e5a22a992a96c1092",
+            "abo-b3649dd5ee900fa8f148"
+          ],
+          "precision_at_10": 0.3,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Loa không quá 590000",
+          "tcp_ms": 71.62779999998747,
+          "service_ms": 48.655,
+          "ids": [
+            "abo-05af7037d83fc2ad4427",
+            "abo-8a1e5a22a992a96c1092",
+            "abo-b3649dd5ee900fa8f148"
+          ],
+          "precision_at_10": 0.3,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Máy pha cà phê",
+          "tcp_ms": 63.1428000001506,
+          "service_ms": 41.867,
+          "ids": [
+            "abo-7fa32cd57279ee2db42b"
+          ],
+          "precision_at_10": 0.1,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "máy pha cà phê",
+          "tcp_ms": 66.61669999994047,
+          "service_ms": 44.783,
+          "ids": [
+            "abo-7fa32cd57279ee2db42b"
+          ],
+          "precision_at_10": 0.1,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "tôi muốn mua Máy pha cà phê",
+          "tcp_ms": 68.52699999990364,
+          "service_ms": 47.325,
+          "ids": [
+            "abo-7fa32cd57279ee2db42b"
+          ],
+          "precision_at_10": 0.1,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "May pha ca phe",
+          "tcp_ms": 82.49529999966398,
+          "service_ms": 47.502,
+          "ids": [
+            "abo-7fa32cd57279ee2db42b"
+          ],
+          "precision_at_10": 0.1,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Máy pha cà phê dưới 990001",
+          "tcp_ms": 66.7316999997638,
+          "service_ms": 42.456,
+          "ids": [
+            "abo-7fa32cd57279ee2db42b"
+          ],
+          "precision_at_10": 0.1,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Máy pha cà phê không quá 990000",
+          "tcp_ms": 52.60249999992084,
+          "service_ms": 37.079,
+          "ids": [
+            "abo-7fa32cd57279ee2db42b"
+          ],
+          "precision_at_10": 0.1,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Tai nghe",
+          "tcp_ms": 69.24720000006346,
+          "service_ms": 44.892,
+          "ids": [
+            "abo-06978c8969c816663d99",
+            "abo-1e09d879814e8ee2b46c",
+            "abo-4e94a70a51c79fa30dbb",
+            "abo-8d43cb92edcc87aec67d",
+            "abo-9e5c099a4e7ba7c0880a"
+          ],
+          "precision_at_10": 0.5,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "tai nghe",
+          "tcp_ms": 70.28119999995397,
+          "service_ms": 49.169,
+          "ids": [
+            "abo-06978c8969c816663d99",
+            "abo-1e09d879814e8ee2b46c",
+            "abo-4e94a70a51c79fa30dbb",
+            "abo-8d43cb92edcc87aec67d",
+            "abo-9e5c099a4e7ba7c0880a"
+          ],
+          "precision_at_10": 0.5,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Tai nghe",
+          "tcp_ms": 78.81399999996574,
+          "service_ms": 55.296,
+          "ids": [
+            "abo-06978c8969c816663d99",
+            "abo-1e09d879814e8ee2b46c",
+            "abo-4e94a70a51c79fa30dbb",
+            "abo-8d43cb92edcc87aec67d",
+            "abo-9e5c099a4e7ba7c0880a"
+          ],
+          "precision_at_10": 0.5,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "tôi muốn mua Tai nghe",
+          "tcp_ms": 87.94440000019677,
+          "service_ms": 68.454,
+          "ids": [
+            "abo-06978c8969c816663d99",
+            "abo-1e09d879814e8ee2b46c",
+            "abo-4e94a70a51c79fa30dbb",
+            "abo-8d43cb92edcc87aec67d",
+            "abo-9e5c099a4e7ba7c0880a"
+          ],
+          "precision_at_10": 0.5,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Tai nghe dưới 390001",
+          "tcp_ms": 86.13979999972798,
+          "service_ms": 58.514,
+          "ids": [
+            "abo-06978c8969c816663d99",
+            "abo-1e09d879814e8ee2b46c",
+            "abo-4e94a70a51c79fa30dbb",
+            "abo-8d43cb92edcc87aec67d",
+            "abo-9e5c099a4e7ba7c0880a"
+          ],
+          "precision_at_10": 0.5,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Tai nghe không quá 390000",
+          "tcp_ms": 74.85069999984262,
+          "service_ms": 57.642,
+          "ids": [
+            "abo-06978c8969c816663d99",
+            "abo-1e09d879814e8ee2b46c",
+            "abo-4e94a70a51c79fa30dbb",
+            "abo-8d43cb92edcc87aec67d",
+            "abo-9e5c099a4e7ba7c0880a"
+          ],
+          "precision_at_10": 0.5,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Phụ kiện máy tính",
+          "tcp_ms": 68.95070000018677,
+          "service_ms": 44.009,
+          "ids": [
+            "abo-796afe57f7911986cda9",
+            "abo-855469c076c754578595",
+            "abo-b33aa90f79cafbf46978",
+            "abo-c1b310b755388799a09d",
+            "abo-dd9675e9101bc1f2c176",
+            "abo-de348ed7ecf45e4dbcdf",
+            "abo-e7501cc482cb6980ac7a",
+            "abo-efd5663daa1a33862860",
+            "abo-f07fd3a0d2bcf0e78d90"
+          ],
+          "precision_at_10": 0.9,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "phụ kiện máy tính",
+          "tcp_ms": 65.3360999999677,
+          "service_ms": 41.074,
+          "ids": [
+            "abo-796afe57f7911986cda9",
+            "abo-855469c076c754578595",
+            "abo-b33aa90f79cafbf46978",
+            "abo-c1b310b755388799a09d",
+            "abo-dd9675e9101bc1f2c176",
+            "abo-de348ed7ecf45e4dbcdf",
+            "abo-e7501cc482cb6980ac7a",
+            "abo-efd5663daa1a33862860",
+            "abo-f07fd3a0d2bcf0e78d90"
+          ],
+          "precision_at_10": 0.9,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Phu kien may tinh",
+          "tcp_ms": 75.78169999987949,
+          "service_ms": 42.276,
+          "ids": [
+            "abo-796afe57f7911986cda9",
+            "abo-855469c076c754578595",
+            "abo-b33aa90f79cafbf46978",
+            "abo-c1b310b755388799a09d",
+            "abo-dd9675e9101bc1f2c176",
+            "abo-de348ed7ecf45e4dbcdf",
+            "abo-e7501cc482cb6980ac7a",
+            "abo-efd5663daa1a33862860",
+            "abo-f07fd3a0d2bcf0e78d90"
+          ],
+          "precision_at_10": 0.9,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "tôi muốn mua Phụ kiện máy tính",
+          "tcp_ms": 75.26079999979629,
+          "service_ms": 51.641,
+          "ids": [
+            "abo-796afe57f7911986cda9",
+            "abo-855469c076c754578595",
+            "abo-b33aa90f79cafbf46978",
+            "abo-c1b310b755388799a09d",
+            "abo-dd9675e9101bc1f2c176",
+            "abo-de348ed7ecf45e4dbcdf",
+            "abo-e7501cc482cb6980ac7a",
+            "abo-efd5663daa1a33862860",
+            "abo-f07fd3a0d2bcf0e78d90"
+          ],
+          "precision_at_10": 0.9,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Phụ kiện máy tính dưới 190001",
+          "tcp_ms": 75.6293999997979,
+          "service_ms": 46.747,
+          "ids": [
+            "abo-796afe57f7911986cda9",
+            "abo-855469c076c754578595",
+            "abo-b33aa90f79cafbf46978",
+            "abo-c1b310b755388799a09d",
+            "abo-dd9675e9101bc1f2c176",
+            "abo-de348ed7ecf45e4dbcdf",
+            "abo-e7501cc482cb6980ac7a",
+            "abo-efd5663daa1a33862860",
+            "abo-f07fd3a0d2bcf0e78d90"
+          ],
+          "precision_at_10": 0.9,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Phụ kiện máy tính không quá 190000",
+          "tcp_ms": 66.6071999999076,
+          "service_ms": 48.756,
+          "ids": [
+            "abo-796afe57f7911986cda9",
+            "abo-855469c076c754578595",
+            "abo-b33aa90f79cafbf46978",
+            "abo-c1b310b755388799a09d",
+            "abo-dd9675e9101bc1f2c176",
+            "abo-de348ed7ecf45e4dbcdf",
+            "abo-e7501cc482cb6980ac7a",
+            "abo-efd5663daa1a33862860",
+            "abo-f07fd3a0d2bcf0e78d90"
+          ],
+          "precision_at_10": 0.9,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Bàn phím",
+          "tcp_ms": 74.88699999976234,
+          "service_ms": 53.162,
+          "ids": [
+            "abo-079a59cdeda01c2e1ec7",
+            "abo-16eeaf6d65d2fd99bc28",
+            "abo-65a3b7bf84adadd2fe8c",
+            "abo-de415f38d5e33beeb3fd"
+          ],
+          "precision_at_10": 0.4,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "bàn phím",
+          "tcp_ms": 72.47430000006716,
+          "service_ms": 52.811,
+          "ids": [
+            "abo-079a59cdeda01c2e1ec7",
+            "abo-16eeaf6d65d2fd99bc28",
+            "abo-65a3b7bf84adadd2fe8c",
+            "abo-de415f38d5e33beeb3fd"
+          ],
+          "precision_at_10": 0.4,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Ban phim",
+          "tcp_ms": 66.46559999990131,
+          "service_ms": 46.566,
+          "ids": [
+            "abo-079a59cdeda01c2e1ec7",
+            "abo-16eeaf6d65d2fd99bc28",
+            "abo-65a3b7bf84adadd2fe8c",
+            "abo-de415f38d5e33beeb3fd"
+          ],
+          "precision_at_10": 0.4,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "tôi muốn mua Bàn phím",
+          "tcp_ms": 67.65899999982139,
+          "service_ms": 45.235,
+          "ids": [
+            "abo-079a59cdeda01c2e1ec7",
+            "abo-16eeaf6d65d2fd99bc28",
+            "abo-65a3b7bf84adadd2fe8c",
+            "abo-de415f38d5e33beeb3fd"
+          ],
+          "precision_at_10": 0.4,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Bàn phím dưới 290001",
+          "tcp_ms": 67.10099999963859,
+          "service_ms": 43.706,
+          "ids": [
+            "abo-079a59cdeda01c2e1ec7",
+            "abo-16eeaf6d65d2fd99bc28",
+            "abo-65a3b7bf84adadd2fe8c",
+            "abo-de415f38d5e33beeb3fd"
+          ],
+          "precision_at_10": 0.4,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Bàn phím không quá 290000",
+          "tcp_ms": 71.29100000020117,
+          "service_ms": 54.355,
+          "ids": [
+            "abo-079a59cdeda01c2e1ec7",
+            "abo-16eeaf6d65d2fd99bc28",
+            "abo-65a3b7bf84adadd2fe8c",
+            "abo-de415f38d5e33beeb3fd"
+          ],
+          "precision_at_10": 0.4,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "chảo",
+          "tcp_ms": 63.59360000033121,
+          "service_ms": 43.136,
+          "ids": [
+            "abo-e2d591829520f3276004"
+          ],
+          "precision_at_10": 0.1,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Chảo",
+          "tcp_ms": 73.82390000020678,
+          "service_ms": 44.475,
+          "ids": [
+            "abo-e2d591829520f3276004"
+          ],
+          "precision_at_10": 0.1,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Chao",
+          "tcp_ms": 70.34909999993033,
+          "service_ms": 45.763,
+          "ids": [
+            "abo-e2d591829520f3276004"
+          ],
+          "precision_at_10": 0.1,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "tôi muốn mua Chảo",
+          "tcp_ms": 71.73150000016904,
+          "service_ms": 46.035,
+          "ids": [
+            "abo-e2d591829520f3276004"
+          ],
+          "precision_at_10": 0.1,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Chảo dưới 390001",
+          "tcp_ms": 65.7338000000891,
+          "service_ms": 39.935,
+          "ids": [
+            "abo-e2d591829520f3276004"
+          ],
+          "precision_at_10": 0.1,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Chảo không quá 390000",
+          "tcp_ms": 68.67749999992157,
+          "service_ms": 43.108,
+          "ids": [
+            "abo-e2d591829520f3276004"
+          ],
+          "precision_at_10": 0.1,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Chuột máy tính",
+          "tcp_ms": 69.84839999995529,
+          "service_ms": 43.599,
+          "ids": [
+            "abo-c3a4256016bbc783a098"
+          ],
+          "precision_at_10": 0.1,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "chuột máy tính",
+          "tcp_ms": 80.69950000026438,
+          "service_ms": 52.888,
+          "ids": [
+            "abo-c3a4256016bbc783a098"
+          ],
+          "precision_at_10": 0.1,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Chuot may tinh",
+          "tcp_ms": 76.10319999957937,
+          "service_ms": 51.43,
+          "ids": [
+            "abo-c3a4256016bbc783a098"
+          ],
+          "precision_at_10": 0.1,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "tôi muốn mua Chuột máy tính",
+          "tcp_ms": 73.83009999966816,
+          "service_ms": 46.962,
+          "ids": [
+            "abo-c3a4256016bbc783a098"
+          ],
+          "precision_at_10": 0.1,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Chuột máy tính dưới 190001",
+          "tcp_ms": 62.05880000015895,
+          "service_ms": 38.58,
+          "ids": [
+            "abo-c3a4256016bbc783a098"
+          ],
+          "precision_at_10": 0.1,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Chuột máy tính không quá 190000",
+          "tcp_ms": 65.92229999978372,
+          "service_ms": 45.079,
+          "ids": [
+            "abo-c3a4256016bbc783a098"
+          ],
+          "precision_at_10": 0.1,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        }
+      ]
+    },
+    {
+      "concurrency": 10,
+      "requests": 114,
+      "tcp": {
+        "p50_ms": 166.802,
+        "p90_ms": 223.902,
+        "p95_ms": 260.417,
+        "p99_ms": 392.443
+      },
+      "service": {
+        "p50_ms": 102.311,
+        "p90_ms": 149.549,
+        "p95_ms": 168.522,
+        "p99_ms": 235.582
+      },
+      "grid_tcp": {
+        "p50_ms": 132.396,
+        "p90_ms": 206.811,
+        "p95_ms": 316.136,
+        "p99_ms": 348.52
+      },
+      "precision_at_10": 0.6736842105263158,
+      "recall_at_10": 0.7960392478023046,
+      "ndcg_at_10": 1.0,
+      "category_leaks": 0,
+      "results": [
+        {
+          "q": "Giày nam",
+          "tcp_ms": 121.43179999975473,
+          "service_ms": 46.793,
+          "ids": [
+            "abo-00c514834bf1afb3aeb1",
+            "abo-0163e5b3f66c2cb986d1",
+            "abo-0446c46130dcf4cf986d",
+            "abo-0677e35cb13f616f4e89",
+            "abo-07664b5bdbfa4053fe23",
+            "abo-08c3abaa33e9e744db0b",
+            "abo-142df26114c9cb0f83fe",
+            "abo-167e24d686f1dd378300",
+            "abo-1a20a2d5b699155f63ae",
+            "abo-1c3c0d3210809f805d53"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.12048192771084337,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "giày nam",
+          "tcp_ms": 126.60409999989497,
+          "service_ms": 46.937,
+          "ids": [
+            "abo-00c514834bf1afb3aeb1",
+            "abo-0163e5b3f66c2cb986d1",
+            "abo-0446c46130dcf4cf986d",
+            "abo-0677e35cb13f616f4e89",
+            "abo-07664b5bdbfa4053fe23",
+            "abo-08c3abaa33e9e744db0b",
+            "abo-142df26114c9cb0f83fe",
+            "abo-167e24d686f1dd378300",
+            "abo-1a20a2d5b699155f63ae",
+            "abo-1c3c0d3210809f805d53"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.12048192771084337,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Giày nam dưới 490001",
+          "tcp_ms": 140.55400000006557,
+          "service_ms": 72.341,
+          "ids": [
+            "abo-00c514834bf1afb3aeb1",
+            "abo-0163e5b3f66c2cb986d1",
+            "abo-0446c46130dcf4cf986d",
+            "abo-0677e35cb13f616f4e89",
+            "abo-07664b5bdbfa4053fe23",
+            "abo-08c3abaa33e9e744db0b",
+            "abo-142df26114c9cb0f83fe",
+            "abo-167e24d686f1dd378300",
+            "abo-1a20a2d5b699155f63ae",
+            "abo-1c3c0d3210809f805d53"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.12048192771084337,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "giày nữ",
+          "tcp_ms": 166.65269999975862,
+          "service_ms": 81.962,
+          "ids": [
+            "abo-0336da5827d1a560c8f5",
+            "abo-04122797f0a6587604cc",
+            "abo-068eb2ca7f3a164aa0fc",
+            "abo-0af1a045cd6669a8aa8b",
+            "abo-0fc59eb036b16e07f35b",
+            "abo-1986e4d84ac0385d830a",
+            "abo-1a8fe56172805dfc1267",
+            "abo-1c34c6d11449a5f46310",
+            "abo-1d8b2552166c1db8183f",
+            "abo-1e4cbb47690b763c2b9b"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.12048192771084337,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "tôi muốn mua Giày nam",
+          "tcp_ms": 225.6892999998854,
+          "service_ms": 126.133,
+          "ids": [
+            "abo-00c514834bf1afb3aeb1",
+            "abo-0163e5b3f66c2cb986d1",
+            "abo-0446c46130dcf4cf986d",
+            "abo-0677e35cb13f616f4e89",
+            "abo-07664b5bdbfa4053fe23",
+            "abo-08c3abaa33e9e744db0b",
+            "abo-142df26114c9cb0f83fe",
+            "abo-167e24d686f1dd378300",
+            "abo-1a20a2d5b699155f63ae",
+            "abo-1c3c0d3210809f805d53"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.12048192771084337,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Giày nữ dưới 490001",
+          "tcp_ms": 169.60530000005747,
+          "service_ms": 114.818,
+          "ids": [
+            "abo-0336da5827d1a560c8f5",
+            "abo-04122797f0a6587604cc",
+            "abo-068eb2ca7f3a164aa0fc",
+            "abo-0af1a045cd6669a8aa8b",
+            "abo-0fc59eb036b16e07f35b",
+            "abo-1986e4d84ac0385d830a",
+            "abo-1a8fe56172805dfc1267",
+            "abo-1c34c6d11449a5f46310",
+            "abo-1d8b2552166c1db8183f",
+            "abo-1e4cbb47690b763c2b9b"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.12048192771084337,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Giay nam",
+          "tcp_ms": 294.1539000003104,
+          "service_ms": 113.283,
+          "ids": [
+            "abo-00c514834bf1afb3aeb1",
+            "abo-0163e5b3f66c2cb986d1",
+            "abo-0446c46130dcf4cf986d",
+            "abo-0677e35cb13f616f4e89",
+            "abo-07664b5bdbfa4053fe23",
+            "abo-08c3abaa33e9e744db0b",
+            "abo-142df26114c9cb0f83fe",
+            "abo-167e24d686f1dd378300",
+            "abo-1a20a2d5b699155f63ae",
+            "abo-1c3c0d3210809f805d53"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.12048192771084337,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Giày nữ",
+          "tcp_ms": 313.36190000001807,
+          "service_ms": 155.15,
+          "ids": [
+            "abo-0336da5827d1a560c8f5",
+            "abo-04122797f0a6587604cc",
+            "abo-068eb2ca7f3a164aa0fc",
+            "abo-0af1a045cd6669a8aa8b",
+            "abo-0fc59eb036b16e07f35b",
+            "abo-1986e4d84ac0385d830a",
+            "abo-1a8fe56172805dfc1267",
+            "abo-1c34c6d11449a5f46310",
+            "abo-1d8b2552166c1db8183f",
+            "abo-1e4cbb47690b763c2b9b"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.12048192771084337,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "ốp điện thoại",
+          "tcp_ms": 176.75229999986186,
+          "service_ms": 119.7,
+          "ids": [
+            "abo-079890493c0f0b63ced5",
+            "abo-07fe86c90424f80b4386",
+            "abo-1366ca639c024f80a4bb",
+            "abo-253d991f86a836b2ce74",
+            "abo-31a61d412cc28c9b3e7e",
+            "abo-36c11d0b602ce2db673f",
+            "abo-6a6458026ca185179e39",
+            "abo-6db8e735a0e855774822",
+            "abo-7ce1fdab324ab8f4b67e",
+            "abo-80b535ad9ba063838753"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.3333333333333333,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Giày nữ không quá 490000",
+          "tcp_ms": 247.49229999997624,
+          "service_ms": 205.833,
+          "ids": [
+            "abo-0336da5827d1a560c8f5",
+            "abo-04122797f0a6587604cc",
+            "abo-068eb2ca7f3a164aa0fc",
+            "abo-0af1a045cd6669a8aa8b",
+            "abo-0fc59eb036b16e07f35b",
+            "abo-1986e4d84ac0385d830a",
+            "abo-1a8fe56172805dfc1267",
+            "abo-1c34c6d11449a5f46310",
+            "abo-1d8b2552166c1db8183f",
+            "abo-1e4cbb47690b763c2b9b"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.12048192771084337,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Giày nam không quá 490000",
+          "tcp_ms": 372.02979999983654,
+          "service_ms": 216.458,
+          "ids": [
+            "abo-00c514834bf1afb3aeb1",
+            "abo-0163e5b3f66c2cb986d1",
+            "abo-0446c46130dcf4cf986d",
+            "abo-0677e35cb13f616f4e89",
+            "abo-07664b5bdbfa4053fe23",
+            "abo-08c3abaa33e9e744db0b",
+            "abo-142df26114c9cb0f83fe",
+            "abo-167e24d686f1dd378300",
+            "abo-1a20a2d5b699155f63ae",
+            "abo-1c3c0d3210809f805d53"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.12048192771084337,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "tôi muốn mua Giày nữ",
+          "tcp_ms": 395.4936000000089,
+          "service_ms": 238.364,
+          "ids": [
+            "abo-0336da5827d1a560c8f5",
+            "abo-04122797f0a6587604cc",
+            "abo-068eb2ca7f3a164aa0fc",
+            "abo-0af1a045cd6669a8aa8b",
+            "abo-0fc59eb036b16e07f35b",
+            "abo-1986e4d84ac0385d830a",
+            "abo-1a8fe56172805dfc1267",
+            "abo-1c34c6d11449a5f46310",
+            "abo-1d8b2552166c1db8183f",
+            "abo-1e4cbb47690b763c2b9b"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.12048192771084337,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Giay nu",
+          "tcp_ms": 407.98080000013215,
+          "service_ms": 244.779,
+          "ids": [
+            "abo-0336da5827d1a560c8f5",
+            "abo-04122797f0a6587604cc",
+            "abo-068eb2ca7f3a164aa0fc",
+            "abo-0af1a045cd6669a8aa8b",
+            "abo-0fc59eb036b16e07f35b",
+            "abo-1986e4d84ac0385d830a",
+            "abo-1a8fe56172805dfc1267",
+            "abo-1c34c6d11449a5f46310",
+            "abo-1d8b2552166c1db8183f",
+            "abo-1e4cbb47690b763c2b9b"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.12048192771084337,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Ốp điện thoại",
+          "tcp_ms": 284.41890000021885,
+          "service_ms": 216.964,
+          "ids": [
+            "abo-079890493c0f0b63ced5",
+            "abo-07fe86c90424f80b4386",
+            "abo-1366ca639c024f80a4bb",
+            "abo-253d991f86a836b2ce74",
+            "abo-31a61d412cc28c9b3e7e",
+            "abo-36c11d0b602ce2db673f",
+            "abo-6a6458026ca185179e39",
+            "abo-6db8e735a0e855774822",
+            "abo-7ce1fdab324ab8f4b67e",
+            "abo-80b535ad9ba063838753"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.3333333333333333,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Op dien thoai",
+          "tcp_ms": 214.26719999999477,
+          "service_ms": 149.109,
+          "ids": [
+            "abo-079890493c0f0b63ced5",
+            "abo-07fe86c90424f80b4386",
+            "abo-1366ca639c024f80a4bb",
+            "abo-253d991f86a836b2ce74",
+            "abo-31a61d412cc28c9b3e7e",
+            "abo-36c11d0b602ce2db673f",
+            "abo-6a6458026ca185179e39",
+            "abo-6db8e735a0e855774822",
+            "abo-7ce1fdab324ab8f4b67e",
+            "abo-80b535ad9ba063838753"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.3333333333333333,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "tôi muốn mua Ốp điện thoại",
+          "tcp_ms": 165.43840000031196,
+          "service_ms": 88.285,
+          "ids": [
+            "abo-079890493c0f0b63ced5",
+            "abo-07fe86c90424f80b4386",
+            "abo-1366ca639c024f80a4bb",
+            "abo-253d991f86a836b2ce74",
+            "abo-31a61d412cc28c9b3e7e",
+            "abo-36c11d0b602ce2db673f",
+            "abo-6a6458026ca185179e39",
+            "abo-6db8e735a0e855774822",
+            "abo-7ce1fdab324ab8f4b67e",
+            "abo-80b535ad9ba063838753"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.3333333333333333,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Ốp điện thoại dưới 99001",
+          "tcp_ms": 243.78920000026483,
+          "service_ms": 175.185,
+          "ids": [
+            "abo-079890493c0f0b63ced5",
+            "abo-07fe86c90424f80b4386",
+            "abo-1366ca639c024f80a4bb",
+            "abo-253d991f86a836b2ce74",
+            "abo-31a61d412cc28c9b3e7e",
+            "abo-36c11d0b602ce2db673f",
+            "abo-6a6458026ca185179e39",
+            "abo-6db8e735a0e855774822",
+            "abo-7ce1fdab324ab8f4b67e",
+            "abo-80b535ad9ba063838753"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.3333333333333333,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Ốp điện thoại không quá 99000",
+          "tcp_ms": 218.0570999998963,
+          "service_ms": 163.033,
+          "ids": [
+            "abo-079890493c0f0b63ced5",
+            "abo-07fe86c90424f80b4386",
+            "abo-1366ca639c024f80a4bb",
+            "abo-253d991f86a836b2ce74",
+            "abo-31a61d412cc28c9b3e7e",
+            "abo-36c11d0b602ce2db673f",
+            "abo-6a6458026ca185179e39",
+            "abo-6db8e735a0e855774822",
+            "abo-7ce1fdab324ab8f4b67e",
+            "abo-80b535ad9ba063838753"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.3333333333333333,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Cốc",
+          "tcp_ms": 216.97130000029574,
+          "service_ms": 133.972,
+          "ids": [
+            "abo-7a4d77b7fdf5f3b737dd",
+            "abo-9d23c63b64aebbceec0e",
+            "abo-d7318fc1f2f6331f544d",
+            "abo-dffe3008a16e36046923"
+          ],
+          "precision_at_10": 0.4,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Coc",
+          "tcp_ms": 208.14990000008038,
+          "service_ms": 147.816,
+          "ids": [
+            "abo-7a4d77b7fdf5f3b737dd",
+            "abo-9d23c63b64aebbceec0e",
+            "abo-d7318fc1f2f6331f544d",
+            "abo-dffe3008a16e36046923"
+          ],
+          "precision_at_10": 0.4,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "cốc",
+          "tcp_ms": 224.55009999976028,
+          "service_ms": 149.951,
+          "ids": [
+            "abo-7a4d77b7fdf5f3b737dd",
+            "abo-9d23c63b64aebbceec0e",
+            "abo-d7318fc1f2f6331f544d",
+            "abo-dffe3008a16e36046923"
+          ],
+          "precision_at_10": 0.4,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Cốc không quá 99000",
+          "tcp_ms": 174.33789999995497,
+          "service_ms": 71.687,
+          "ids": [
+            "abo-7a4d77b7fdf5f3b737dd",
+            "abo-9d23c63b64aebbceec0e",
+            "abo-d7318fc1f2f6331f544d",
+            "abo-dffe3008a16e36046923"
+          ],
+          "precision_at_10": 0.4,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "bàn",
+          "tcp_ms": 180.73439999989205,
+          "service_ms": 80.404,
+          "ids": [
+            "abo-0050b24a441bc1f887d6",
+            "abo-665f02f8b5e623db10df",
+            "abo-72f7826672f1aec255cc",
+            "abo-76423c2cbe80cf98d520",
+            "abo-7813496f2370d9b47265",
+            "abo-9e8637d6f71bc11da060",
+            "abo-b15af54722d7f012fd11",
+            "abo-d361ab02f89d28ffe3c1",
+            "abo-d8d440296735660e30f6",
+            "abo-fd2b3ee5ef1a347552b2"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Cốc dưới 99001",
+          "tcp_ms": 208.59100000006947,
+          "service_ms": 83.866,
+          "ids": [
+            "abo-7a4d77b7fdf5f3b737dd",
+            "abo-9d23c63b64aebbceec0e",
+            "abo-d7318fc1f2f6331f544d",
+            "abo-dffe3008a16e36046923"
+          ],
+          "precision_at_10": 0.4,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "tôi muốn mua Cốc",
+          "tcp_ms": 229.59559999981138,
+          "service_ms": 93.077,
+          "ids": [
+            "abo-7a4d77b7fdf5f3b737dd",
+            "abo-9d23c63b64aebbceec0e",
+            "abo-d7318fc1f2f6331f544d",
+            "abo-dffe3008a16e36046923"
+          ],
+          "precision_at_10": 0.4,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Bàn",
+          "tcp_ms": 215.56680000003325,
+          "service_ms": 111.931,
+          "ids": [
+            "abo-0050b24a441bc1f887d6",
+            "abo-665f02f8b5e623db10df",
+            "abo-72f7826672f1aec255cc",
+            "abo-76423c2cbe80cf98d520",
+            "abo-7813496f2370d9b47265",
+            "abo-9e8637d6f71bc11da060",
+            "abo-b15af54722d7f012fd11",
+            "abo-d361ab02f89d28ffe3c1",
+            "abo-d8d440296735660e30f6",
+            "abo-fd2b3ee5ef1a347552b2"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Ban",
+          "tcp_ms": 171.10200000024633,
+          "service_ms": 105.945,
+          "ids": [
+            "abo-0050b24a441bc1f887d6",
+            "abo-665f02f8b5e623db10df",
+            "abo-72f7826672f1aec255cc",
+            "abo-76423c2cbe80cf98d520",
+            "abo-7813496f2370d9b47265",
+            "abo-9e8637d6f71bc11da060",
+            "abo-b15af54722d7f012fd11",
+            "abo-d361ab02f89d28ffe3c1",
+            "abo-d8d440296735660e30f6",
+            "abo-fd2b3ee5ef1a347552b2"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "tôi muốn mua Bàn",
+          "tcp_ms": 174.07839999987118,
+          "service_ms": 98.622,
+          "ids": [
+            "abo-0050b24a441bc1f887d6",
+            "abo-665f02f8b5e623db10df",
+            "abo-72f7826672f1aec255cc",
+            "abo-76423c2cbe80cf98d520",
+            "abo-7813496f2370d9b47265",
+            "abo-9e8637d6f71bc11da060",
+            "abo-b15af54722d7f012fd11",
+            "abo-d361ab02f89d28ffe3c1",
+            "abo-d8d440296735660e30f6",
+            "abo-fd2b3ee5ef1a347552b2"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Bàn dưới 1290001",
+          "tcp_ms": 153.26839999988806,
+          "service_ms": 110.995,
+          "ids": [
+            "abo-0050b24a441bc1f887d6",
+            "abo-665f02f8b5e623db10df",
+            "abo-72f7826672f1aec255cc",
+            "abo-76423c2cbe80cf98d520",
+            "abo-7813496f2370d9b47265",
+            "abo-9e8637d6f71bc11da060",
+            "abo-b15af54722d7f012fd11",
+            "abo-d361ab02f89d28ffe3c1",
+            "abo-d8d440296735660e30f6",
+            "abo-fd2b3ee5ef1a347552b2"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Bàn không quá 1290000",
+          "tcp_ms": 180.13440000004266,
+          "service_ms": 116.812,
+          "ids": [
+            "abo-0050b24a441bc1f887d6",
+            "abo-665f02f8b5e623db10df",
+            "abo-72f7826672f1aec255cc",
+            "abo-76423c2cbe80cf98d520",
+            "abo-7813496f2370d9b47265",
+            "abo-9e8637d6f71bc11da060",
+            "abo-b15af54722d7f012fd11",
+            "abo-d361ab02f89d28ffe3c1",
+            "abo-d8d440296735660e30f6",
+            "abo-fd2b3ee5ef1a347552b2"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Ghế",
+          "tcp_ms": 180.70360000001529,
+          "service_ms": 130.232,
+          "ids": [
+            "abo-0d5824b35ffd3ce3a111",
+            "abo-246acc6e8a2c98585748",
+            "abo-40c2d590d020e8d14ae9",
+            "abo-431ff47790d0b98bec5c",
+            "abo-4a886d3cd3a48ff230d5",
+            "abo-81d98e5ba66d748bdb79",
+            "abo-83f32913bc80c90b136a",
+            "abo-9bcaa4fd8c5734434cbb",
+            "abo-9da7f75aa203d53c56a9",
+            "abo-ae80ba078bb8499eb3bc"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.5882352941176471,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "ghế",
+          "tcp_ms": 175.11789999980465,
+          "service_ms": 116.146,
+          "ids": [
+            "abo-0d5824b35ffd3ce3a111",
+            "abo-246acc6e8a2c98585748",
+            "abo-40c2d590d020e8d14ae9",
+            "abo-431ff47790d0b98bec5c",
+            "abo-4a886d3cd3a48ff230d5",
+            "abo-81d98e5ba66d748bdb79",
+            "abo-83f32913bc80c90b136a",
+            "abo-9bcaa4fd8c5734434cbb",
+            "abo-9da7f75aa203d53c56a9",
+            "abo-ae80ba078bb8499eb3bc"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.5882352941176471,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Ghe",
+          "tcp_ms": 178.37460000009742,
+          "service_ms": 112.651,
+          "ids": [
+            "abo-0d5824b35ffd3ce3a111",
+            "abo-246acc6e8a2c98585748",
+            "abo-40c2d590d020e8d14ae9",
+            "abo-431ff47790d0b98bec5c",
+            "abo-4a886d3cd3a48ff230d5",
+            "abo-81d98e5ba66d748bdb79",
+            "abo-83f32913bc80c90b136a",
+            "abo-9bcaa4fd8c5734434cbb",
+            "abo-9da7f75aa203d53c56a9",
+            "abo-ae80ba078bb8499eb3bc"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.5882352941176471,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "tôi muốn mua Ghế",
+          "tcp_ms": 181.30209999981162,
+          "service_ms": 111.002,
+          "ids": [
+            "abo-0d5824b35ffd3ce3a111",
+            "abo-246acc6e8a2c98585748",
+            "abo-40c2d590d020e8d14ae9",
+            "abo-431ff47790d0b98bec5c",
+            "abo-4a886d3cd3a48ff230d5",
+            "abo-81d98e5ba66d748bdb79",
+            "abo-83f32913bc80c90b136a",
+            "abo-9bcaa4fd8c5734434cbb",
+            "abo-9da7f75aa203d53c56a9",
+            "abo-ae80ba078bb8499eb3bc"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.5882352941176471,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Ghế dưới 990001",
+          "tcp_ms": 186.83390000023792,
+          "service_ms": 118.467,
+          "ids": [
+            "abo-0d5824b35ffd3ce3a111",
+            "abo-246acc6e8a2c98585748",
+            "abo-40c2d590d020e8d14ae9",
+            "abo-431ff47790d0b98bec5c",
+            "abo-4a886d3cd3a48ff230d5",
+            "abo-81d98e5ba66d748bdb79",
+            "abo-83f32913bc80c90b136a",
+            "abo-9bcaa4fd8c5734434cbb",
+            "abo-9da7f75aa203d53c56a9",
+            "abo-ae80ba078bb8499eb3bc"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.5882352941176471,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Ghế không quá 990000",
+          "tcp_ms": 185.6686000000991,
+          "service_ms": 119.759,
+          "ids": [
+            "abo-0d5824b35ffd3ce3a111",
+            "abo-246acc6e8a2c98585748",
+            "abo-40c2d590d020e8d14ae9",
+            "abo-431ff47790d0b98bec5c",
+            "abo-4a886d3cd3a48ff230d5",
+            "abo-81d98e5ba66d748bdb79",
+            "abo-83f32913bc80c90b136a",
+            "abo-9bcaa4fd8c5734434cbb",
+            "abo-9da7f75aa203d53c56a9",
+            "abo-ae80ba078bb8499eb3bc"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.5882352941176471,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Ghế sofa",
+          "tcp_ms": 183.91790000032415,
+          "service_ms": 101.829,
+          "ids": [
+            "abo-147a4fac1d8cae66f962",
+            "abo-388fce9c2482890f5f60",
+            "abo-433f953c6c84022f638e",
+            "abo-455b37279be1ab32f83e",
+            "abo-5d44522e315edd5f6025",
+            "abo-62f6ffd1672185a0d2e4",
+            "abo-72b7858939509bab0cae",
+            "abo-7a5ea4650a4b4eade2ac",
+            "abo-9cea1515f6f2913499e4",
+            "abo-a679629040ad15988c4f"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.7692307692307693,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Ghe sofa",
+          "tcp_ms": 170.2264999998988,
+          "service_ms": 97.228,
+          "ids": [
+            "abo-147a4fac1d8cae66f962",
+            "abo-388fce9c2482890f5f60",
+            "abo-433f953c6c84022f638e",
+            "abo-455b37279be1ab32f83e",
+            "abo-5d44522e315edd5f6025",
+            "abo-62f6ffd1672185a0d2e4",
+            "abo-72b7858939509bab0cae",
+            "abo-7a5ea4650a4b4eade2ac",
+            "abo-9cea1515f6f2913499e4",
+            "abo-a679629040ad15988c4f"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.7692307692307693,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "ghế sofa",
+          "tcp_ms": 190.23710000010396,
+          "service_ms": 103.795,
+          "ids": [
+            "abo-147a4fac1d8cae66f962",
+            "abo-388fce9c2482890f5f60",
+            "abo-433f953c6c84022f638e",
+            "abo-455b37279be1ab32f83e",
+            "abo-5d44522e315edd5f6025",
+            "abo-62f6ffd1672185a0d2e4",
+            "abo-72b7858939509bab0cae",
+            "abo-7a5ea4650a4b4eade2ac",
+            "abo-9cea1515f6f2913499e4",
+            "abo-a679629040ad15988c4f"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.7692307692307693,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "tôi muốn mua Ghế sofa",
+          "tcp_ms": 159.96519999998782,
+          "service_ms": 108.675,
+          "ids": [
+            "abo-147a4fac1d8cae66f962",
+            "abo-388fce9c2482890f5f60",
+            "abo-433f953c6c84022f638e",
+            "abo-455b37279be1ab32f83e",
+            "abo-5d44522e315edd5f6025",
+            "abo-62f6ffd1672185a0d2e4",
+            "abo-72b7858939509bab0cae",
+            "abo-7a5ea4650a4b4eade2ac",
+            "abo-9cea1515f6f2913499e4",
+            "abo-a679629040ad15988c4f"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.7692307692307693,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Ghế sofa dưới 2990001",
+          "tcp_ms": 159.27419999979975,
+          "service_ms": 105.117,
+          "ids": [
+            "abo-147a4fac1d8cae66f962",
+            "abo-388fce9c2482890f5f60",
+            "abo-433f953c6c84022f638e",
+            "abo-455b37279be1ab32f83e",
+            "abo-5d44522e315edd5f6025",
+            "abo-62f6ffd1672185a0d2e4",
+            "abo-72b7858939509bab0cae",
+            "abo-7a5ea4650a4b4eade2ac",
+            "abo-9cea1515f6f2913499e4",
+            "abo-a679629040ad15988c4f"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.7692307692307693,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Ghế sofa không quá 2990000",
+          "tcp_ms": 166.951500000323,
+          "service_ms": 109.658,
+          "ids": [
+            "abo-147a4fac1d8cae66f962",
+            "abo-388fce9c2482890f5f60",
+            "abo-433f953c6c84022f638e",
+            "abo-455b37279be1ab32f83e",
+            "abo-5d44522e315edd5f6025",
+            "abo-62f6ffd1672185a0d2e4",
+            "abo-72b7858939509bab0cae",
+            "abo-7a5ea4650a4b4eade2ac",
+            "abo-9cea1515f6f2913499e4",
+            "abo-a679629040ad15988c4f"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.7692307692307693,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Thảm",
+          "tcp_ms": 145.354899999802,
+          "service_ms": 81.754,
+          "ids": [
+            "abo-11db87231ce1570f7d92",
+            "abo-28883c07ad443fc141f7",
+            "abo-2f9cd2b1b85b96285299",
+            "abo-41bdd12740db39391e27",
+            "abo-733ebd1593d26e7dbc1f",
+            "abo-8bcc02d931f02ae00a7c",
+            "abo-95ca3356e346055634dc",
+            "abo-c7ed56c66ab021c053c3",
+            "abo-c821db60366b2b779e0f",
+            "abo-dff0396e22315f157bf0"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.6666666666666666,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "thảm",
+          "tcp_ms": 145.1305999999022,
+          "service_ms": 86.07,
+          "ids": [
+            "abo-11db87231ce1570f7d92",
+            "abo-28883c07ad443fc141f7",
+            "abo-2f9cd2b1b85b96285299",
+            "abo-41bdd12740db39391e27",
+            "abo-733ebd1593d26e7dbc1f",
+            "abo-8bcc02d931f02ae00a7c",
+            "abo-95ca3356e346055634dc",
+            "abo-c7ed56c66ab021c053c3",
+            "abo-c821db60366b2b779e0f",
+            "abo-dff0396e22315f157bf0"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.6666666666666666,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Tham",
+          "tcp_ms": 162.36049999997704,
+          "service_ms": 87.241,
+          "ids": [
+            "abo-11db87231ce1570f7d92",
+            "abo-28883c07ad443fc141f7",
+            "abo-2f9cd2b1b85b96285299",
+            "abo-41bdd12740db39391e27",
+            "abo-733ebd1593d26e7dbc1f",
+            "abo-8bcc02d931f02ae00a7c",
+            "abo-95ca3356e346055634dc",
+            "abo-c7ed56c66ab021c053c3",
+            "abo-c821db60366b2b779e0f",
+            "abo-dff0396e22315f157bf0"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.6666666666666666,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "tôi muốn mua Thảm",
+          "tcp_ms": 163.50610000017696,
+          "service_ms": 99.797,
+          "ids": [
+            "abo-11db87231ce1570f7d92",
+            "abo-28883c07ad443fc141f7",
+            "abo-2f9cd2b1b85b96285299",
+            "abo-41bdd12740db39391e27",
+            "abo-733ebd1593d26e7dbc1f",
+            "abo-8bcc02d931f02ae00a7c",
+            "abo-95ca3356e346055634dc",
+            "abo-c7ed56c66ab021c053c3",
+            "abo-c821db60366b2b779e0f",
+            "abo-dff0396e22315f157bf0"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.6666666666666666,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Thảm dưới 390001",
+          "tcp_ms": 141.85059999999794,
+          "service_ms": 83.332,
+          "ids": [
+            "abo-11db87231ce1570f7d92",
+            "abo-28883c07ad443fc141f7",
+            "abo-2f9cd2b1b85b96285299",
+            "abo-41bdd12740db39391e27",
+            "abo-733ebd1593d26e7dbc1f",
+            "abo-8bcc02d931f02ae00a7c",
+            "abo-95ca3356e346055634dc",
+            "abo-c7ed56c66ab021c053c3",
+            "abo-c821db60366b2b779e0f",
+            "abo-dff0396e22315f157bf0"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.6666666666666666,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Thảm không quá 390000",
+          "tcp_ms": 143.35120000032475,
+          "service_ms": 87.184,
+          "ids": [
+            "abo-11db87231ce1570f7d92",
+            "abo-28883c07ad443fc141f7",
+            "abo-2f9cd2b1b85b96285299",
+            "abo-41bdd12740db39391e27",
+            "abo-733ebd1593d26e7dbc1f",
+            "abo-8bcc02d931f02ae00a7c",
+            "abo-95ca3356e346055634dc",
+            "abo-c7ed56c66ab021c053c3",
+            "abo-c821db60366b2b779e0f",
+            "abo-dff0396e22315f157bf0"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.6666666666666666,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Dụng cụ nhà bếp",
+          "tcp_ms": 148.8533000001553,
+          "service_ms": 91.087,
+          "ids": [
+            "abo-4766510388b5ae04194f",
+            "abo-4e7c3ee9213849d33eb8",
+            "abo-62648adc901a986c3862",
+            "abo-9cc8a00e7a504ff979d9",
+            "abo-a98b79349e4d9340408a",
+            "abo-be279817f20f0bebc804",
+            "abo-fc574b1967303776ae2a",
+            "abo-fff065381205986c6e49"
+          ],
+          "precision_at_10": 0.8,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "dụng cụ nhà bếp",
+          "tcp_ms": 147.0406000003095,
+          "service_ms": 102.902,
+          "ids": [
+            "abo-4766510388b5ae04194f",
+            "abo-4e7c3ee9213849d33eb8",
+            "abo-62648adc901a986c3862",
+            "abo-9cc8a00e7a504ff979d9",
+            "abo-a98b79349e4d9340408a",
+            "abo-be279817f20f0bebc804",
+            "abo-fc574b1967303776ae2a",
+            "abo-fff065381205986c6e49"
+          ],
+          "precision_at_10": 0.8,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Dung cu nha bep",
+          "tcp_ms": 148.69240000007267,
+          "service_ms": 106.159,
+          "ids": [
+            "abo-4766510388b5ae04194f",
+            "abo-4e7c3ee9213849d33eb8",
+            "abo-62648adc901a986c3862",
+            "abo-9cc8a00e7a504ff979d9",
+            "abo-a98b79349e4d9340408a",
+            "abo-be279817f20f0bebc804",
+            "abo-fc574b1967303776ae2a",
+            "abo-fff065381205986c6e49"
+          ],
+          "precision_at_10": 0.8,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "tôi muốn mua Dụng cụ nhà bếp",
+          "tcp_ms": 155.2915999996003,
+          "service_ms": 96.85,
+          "ids": [
+            "abo-4766510388b5ae04194f",
+            "abo-4e7c3ee9213849d33eb8",
+            "abo-62648adc901a986c3862",
+            "abo-9cc8a00e7a504ff979d9",
+            "abo-a98b79349e4d9340408a",
+            "abo-be279817f20f0bebc804",
+            "abo-fc574b1967303776ae2a",
+            "abo-fff065381205986c6e49"
+          ],
+          "precision_at_10": 0.8,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Dụng cụ nhà bếp dưới 290001",
+          "tcp_ms": 153.1969000002391,
+          "service_ms": 79.007,
+          "ids": [
+            "abo-4766510388b5ae04194f",
+            "abo-4e7c3ee9213849d33eb8",
+            "abo-62648adc901a986c3862",
+            "abo-9cc8a00e7a504ff979d9",
+            "abo-a98b79349e4d9340408a",
+            "abo-be279817f20f0bebc804",
+            "abo-fc574b1967303776ae2a",
+            "abo-fff065381205986c6e49"
+          ],
+          "precision_at_10": 0.8,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Dụng cụ nhà bếp không quá 290000",
+          "tcp_ms": 152.91160000015225,
+          "service_ms": 81.517,
+          "ids": [
+            "abo-4766510388b5ae04194f",
+            "abo-4e7c3ee9213849d33eb8",
+            "abo-62648adc901a986c3862",
+            "abo-9cc8a00e7a504ff979d9",
+            "abo-a98b79349e4d9340408a",
+            "abo-be279817f20f0bebc804",
+            "abo-fc574b1967303776ae2a",
+            "abo-fff065381205986c6e49"
+          ],
+          "precision_at_10": 0.8,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Đèn bàn",
+          "tcp_ms": 147.56460000035077,
+          "service_ms": 91.66,
+          "ids": [
+            "abo-29b2c0eaed12423831bb",
+            "abo-5201acf029973a073d28",
+            "abo-56afbeae6a65d33efdeb",
+            "abo-5b010b857684a79cc925",
+            "abo-a667aeba660037ceec6b",
+            "abo-dad0db93f572d08bdac0",
+            "abo-fd95f8857918e340c9ee"
+          ],
+          "precision_at_10": 0.7,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "đèn bàn",
+          "tcp_ms": 145.59009999993577,
+          "service_ms": 95.309,
+          "ids": [
+            "abo-29b2c0eaed12423831bb",
+            "abo-5201acf029973a073d28",
+            "abo-56afbeae6a65d33efdeb",
+            "abo-5b010b857684a79cc925",
+            "abo-a667aeba660037ceec6b",
+            "abo-dad0db93f572d08bdac0",
+            "abo-fd95f8857918e340c9ee"
+          ],
+          "precision_at_10": 0.7,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Đen ban",
+          "tcp_ms": 134.81289999981527,
+          "service_ms": 86.042,
+          "ids": [
+            "abo-29b2c0eaed12423831bb",
+            "abo-5201acf029973a073d28",
+            "abo-56afbeae6a65d33efdeb",
+            "abo-5b010b857684a79cc925",
+            "abo-a667aeba660037ceec6b",
+            "abo-dad0db93f572d08bdac0",
+            "abo-fd95f8857918e340c9ee"
+          ],
+          "precision_at_10": 0.7,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "tôi muốn mua Đèn bàn",
+          "tcp_ms": 133.36249999974825,
+          "service_ms": 76.261,
+          "ids": [
+            "abo-29b2c0eaed12423831bb",
+            "abo-5201acf029973a073d28",
+            "abo-56afbeae6a65d33efdeb",
+            "abo-5b010b857684a79cc925",
+            "abo-a667aeba660037ceec6b",
+            "abo-dad0db93f572d08bdac0",
+            "abo-fd95f8857918e340c9ee"
+          ],
+          "precision_at_10": 0.7,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Đèn bàn dưới 490001",
+          "tcp_ms": 134.68059999968318,
+          "service_ms": 82.073,
+          "ids": [
+            "abo-29b2c0eaed12423831bb",
+            "abo-5201acf029973a073d28",
+            "abo-56afbeae6a65d33efdeb",
+            "abo-5b010b857684a79cc925",
+            "abo-a667aeba660037ceec6b",
+            "abo-dad0db93f572d08bdac0",
+            "abo-fd95f8857918e340c9ee"
+          ],
+          "precision_at_10": 0.7,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Đèn bàn không quá 490000",
+          "tcp_ms": 143.18679999996675,
+          "service_ms": 99.036,
+          "ids": [
+            "abo-29b2c0eaed12423831bb",
+            "abo-5201acf029973a073d28",
+            "abo-56afbeae6a65d33efdeb",
+            "abo-5b010b857684a79cc925",
+            "abo-a667aeba660037ceec6b",
+            "abo-dad0db93f572d08bdac0",
+            "abo-fd95f8857918e340c9ee"
+          ],
+          "precision_at_10": 0.7,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Gối",
+          "tcp_ms": 145.4830999996375,
+          "service_ms": 97.142,
+          "ids": [
+            "abo-09febd66bbbbb88a79f6",
+            "abo-3e282d4b27b03bc34f14",
+            "abo-4aca36398d6189640c66",
+            "abo-d6a12a926afe53585fb2",
+            "abo-dc3faf23e6400349c4c3"
+          ],
+          "precision_at_10": 0.5,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "gối",
+          "tcp_ms": 148.45960000002378,
+          "service_ms": 84.902,
+          "ids": [
+            "abo-09febd66bbbbb88a79f6",
+            "abo-3e282d4b27b03bc34f14",
+            "abo-4aca36398d6189640c66",
+            "abo-d6a12a926afe53585fb2",
+            "abo-dc3faf23e6400349c4c3"
+          ],
+          "precision_at_10": 0.5,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Goi",
+          "tcp_ms": 149.46939999981623,
+          "service_ms": 86.902,
+          "ids": [
+            "abo-09febd66bbbbb88a79f6",
+            "abo-3e282d4b27b03bc34f14",
+            "abo-4aca36398d6189640c66",
+            "abo-d6a12a926afe53585fb2",
+            "abo-dc3faf23e6400349c4c3"
+          ],
+          "precision_at_10": 0.5,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "tôi muốn mua Gối",
+          "tcp_ms": 147.1150000002126,
+          "service_ms": 90.258,
+          "ids": [
+            "abo-09febd66bbbbb88a79f6",
+            "abo-3e282d4b27b03bc34f14",
+            "abo-4aca36398d6189640c66",
+            "abo-d6a12a926afe53585fb2",
+            "abo-dc3faf23e6400349c4c3"
+          ],
+          "precision_at_10": 0.5,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Gối dưới 190001",
+          "tcp_ms": 144.6313999999802,
+          "service_ms": 94.924,
+          "ids": [
+            "abo-09febd66bbbbb88a79f6",
+            "abo-3e282d4b27b03bc34f14",
+            "abo-4aca36398d6189640c66",
+            "abo-d6a12a926afe53585fb2",
+            "abo-dc3faf23e6400349c4c3"
+          ],
+          "precision_at_10": 0.5,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Gối không quá 190000",
+          "tcp_ms": 151.2203000002046,
+          "service_ms": 113.377,
+          "ids": [
+            "abo-09febd66bbbbb88a79f6",
+            "abo-3e282d4b27b03bc34f14",
+            "abo-4aca36398d6189640c66",
+            "abo-d6a12a926afe53585fb2",
+            "abo-dc3faf23e6400349c4c3"
+          ],
+          "precision_at_10": 0.5,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Bộ sạc",
+          "tcp_ms": 165.99679999990258,
+          "service_ms": 104.711,
+          "ids": [
+            "abo-03f572f0fa28311ef35b",
+            "abo-04958db907a8119dc868",
+            "abo-165cf57eee99a1dbc12f",
+            "abo-2d80ea05b3c739828545",
+            "abo-308a823f49b2b5d58532",
+            "abo-34fad8eb7b8e4fe4cb1c",
+            "abo-63bdc68989121edbc466",
+            "abo-6e674a68d9046685e9eb",
+            "abo-791ca85aaaed94597566",
+            "abo-809bbfba5de9074bee66"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.5263157894736842,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "bộ sạc",
+          "tcp_ms": 165.3364000003421,
+          "service_ms": 87.66,
+          "ids": [
+            "abo-03f572f0fa28311ef35b",
+            "abo-04958db907a8119dc868",
+            "abo-165cf57eee99a1dbc12f",
+            "abo-2d80ea05b3c739828545",
+            "abo-308a823f49b2b5d58532",
+            "abo-34fad8eb7b8e4fe4cb1c",
+            "abo-63bdc68989121edbc466",
+            "abo-6e674a68d9046685e9eb",
+            "abo-791ca85aaaed94597566",
+            "abo-809bbfba5de9074bee66"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.5263157894736842,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Bo sac",
+          "tcp_ms": 162.92029999976876,
+          "service_ms": 91.096,
+          "ids": [
+            "abo-03f572f0fa28311ef35b",
+            "abo-04958db907a8119dc868",
+            "abo-165cf57eee99a1dbc12f",
+            "abo-2d80ea05b3c739828545",
+            "abo-308a823f49b2b5d58532",
+            "abo-34fad8eb7b8e4fe4cb1c",
+            "abo-63bdc68989121edbc466",
+            "abo-6e674a68d9046685e9eb",
+            "abo-791ca85aaaed94597566",
+            "abo-809bbfba5de9074bee66"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.5263157894736842,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "tôi muốn mua Bộ sạc",
+          "tcp_ms": 175.23540000001958,
+          "service_ms": 120.159,
+          "ids": [
+            "abo-03f572f0fa28311ef35b",
+            "abo-04958db907a8119dc868",
+            "abo-165cf57eee99a1dbc12f",
+            "abo-2d80ea05b3c739828545",
+            "abo-308a823f49b2b5d58532",
+            "abo-34fad8eb7b8e4fe4cb1c",
+            "abo-63bdc68989121edbc466",
+            "abo-6e674a68d9046685e9eb",
+            "abo-791ca85aaaed94597566",
+            "abo-809bbfba5de9074bee66"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.5263157894736842,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Bộ sạc dưới 190001",
+          "tcp_ms": 172.94099999980972,
+          "service_ms": 119.169,
+          "ids": [
+            "abo-03f572f0fa28311ef35b",
+            "abo-04958db907a8119dc868",
+            "abo-165cf57eee99a1dbc12f",
+            "abo-2d80ea05b3c739828545",
+            "abo-308a823f49b2b5d58532",
+            "abo-34fad8eb7b8e4fe4cb1c",
+            "abo-63bdc68989121edbc466",
+            "abo-6e674a68d9046685e9eb",
+            "abo-791ca85aaaed94597566",
+            "abo-809bbfba5de9074bee66"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.5263157894736842,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Bộ sạc không quá 190000",
+          "tcp_ms": 155.3497999998399,
+          "service_ms": 92.163,
+          "ids": [
+            "abo-03f572f0fa28311ef35b",
+            "abo-04958db907a8119dc868",
+            "abo-165cf57eee99a1dbc12f",
+            "abo-2d80ea05b3c739828545",
+            "abo-308a823f49b2b5d58532",
+            "abo-34fad8eb7b8e4fe4cb1c",
+            "abo-63bdc68989121edbc466",
+            "abo-6e674a68d9046685e9eb",
+            "abo-791ca85aaaed94597566",
+            "abo-809bbfba5de9074bee66"
+          ],
+          "precision_at_10": 1.0,
+          "recall_at_10": 0.5263157894736842,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Loa",
+          "tcp_ms": 170.45729999972536,
+          "service_ms": 98.871,
+          "ids": [
+            "abo-05af7037d83fc2ad4427",
+            "abo-8a1e5a22a992a96c1092",
+            "abo-b3649dd5ee900fa8f148"
+          ],
+          "precision_at_10": 0.3,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Loa",
+          "tcp_ms": 164.19360000008965,
+          "service_ms": 97.921,
+          "ids": [
+            "abo-05af7037d83fc2ad4427",
+            "abo-8a1e5a22a992a96c1092",
+            "abo-b3649dd5ee900fa8f148"
+          ],
+          "precision_at_10": 0.3,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "loa",
+          "tcp_ms": 186.99800000013056,
+          "service_ms": 105.75,
+          "ids": [
+            "abo-05af7037d83fc2ad4427",
+            "abo-8a1e5a22a992a96c1092",
+            "abo-b3649dd5ee900fa8f148"
+          ],
+          "precision_at_10": 0.3,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "tôi muốn mua Loa",
+          "tcp_ms": 177.83129999997982,
+          "service_ms": 116.238,
+          "ids": [
+            "abo-05af7037d83fc2ad4427",
+            "abo-8a1e5a22a992a96c1092",
+            "abo-b3649dd5ee900fa8f148"
+          ],
+          "precision_at_10": 0.3,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Loa dưới 590001",
+          "tcp_ms": 184.14209999991726,
+          "service_ms": 110.266,
+          "ids": [
+            "abo-05af7037d83fc2ad4427",
+            "abo-8a1e5a22a992a96c1092",
+            "abo-b3649dd5ee900fa8f148"
+          ],
+          "precision_at_10": 0.3,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Loa không quá 590000",
+          "tcp_ms": 191.3101000000097,
+          "service_ms": 109.233,
+          "ids": [
+            "abo-05af7037d83fc2ad4427",
+            "abo-8a1e5a22a992a96c1092",
+            "abo-b3649dd5ee900fa8f148"
+          ],
+          "precision_at_10": 0.3,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Máy pha cà phê",
+          "tcp_ms": 193.70340000023134,
+          "service_ms": 125.15,
+          "ids": [
+            "abo-7fa32cd57279ee2db42b"
+          ],
+          "precision_at_10": 0.1,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "máy pha cà phê",
+          "tcp_ms": 200.84959999985585,
+          "service_ms": 139.487,
+          "ids": [
+            "abo-7fa32cd57279ee2db42b"
+          ],
+          "precision_at_10": 0.1,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "May pha ca phe",
+          "tcp_ms": 201.97619999999006,
+          "service_ms": 135.592,
+          "ids": [
+            "abo-7fa32cd57279ee2db42b"
+          ],
+          "precision_at_10": 0.1,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "tôi muốn mua Máy pha cà phê",
+          "tcp_ms": 202.4330000003829,
+          "service_ms": 132.437,
+          "ids": [
+            "abo-7fa32cd57279ee2db42b"
+          ],
+          "precision_at_10": 0.1,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Máy pha cà phê dưới 990001",
+          "tcp_ms": 194.66830000010305,
+          "service_ms": 120.882,
+          "ids": [
+            "abo-7fa32cd57279ee2db42b"
+          ],
+          "precision_at_10": 0.1,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Máy pha cà phê không quá 990000",
+          "tcp_ms": 216.65119999988747,
+          "service_ms": 138.905,
+          "ids": [
+            "abo-7fa32cd57279ee2db42b"
+          ],
+          "precision_at_10": 0.1,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "tai nghe",
+          "tcp_ms": 199.4764999999461,
+          "service_ms": 132.759,
+          "ids": [
+            "abo-06978c8969c816663d99",
+            "abo-1e09d879814e8ee2b46c",
+            "abo-4e94a70a51c79fa30dbb",
+            "abo-8d43cb92edcc87aec67d",
+            "abo-9e5c099a4e7ba7c0880a"
+          ],
+          "precision_at_10": 0.5,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Tai nghe",
+          "tcp_ms": 222.39089999993666,
+          "service_ms": 141.745,
+          "ids": [
+            "abo-06978c8969c816663d99",
+            "abo-1e09d879814e8ee2b46c",
+            "abo-4e94a70a51c79fa30dbb",
+            "abo-8d43cb92edcc87aec67d",
+            "abo-9e5c099a4e7ba7c0880a"
+          ],
+          "precision_at_10": 0.5,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Tai nghe",
+          "tcp_ms": 176.61039999984496,
+          "service_ms": 94.988,
+          "ids": [
+            "abo-06978c8969c816663d99",
+            "abo-1e09d879814e8ee2b46c",
+            "abo-4e94a70a51c79fa30dbb",
+            "abo-8d43cb92edcc87aec67d",
+            "abo-9e5c099a4e7ba7c0880a"
+          ],
+          "precision_at_10": 0.5,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "tôi muốn mua Tai nghe",
+          "tcp_ms": 191.40740000011647,
+          "service_ms": 102.794,
+          "ids": [
+            "abo-06978c8969c816663d99",
+            "abo-1e09d879814e8ee2b46c",
+            "abo-4e94a70a51c79fa30dbb",
+            "abo-8d43cb92edcc87aec67d",
+            "abo-9e5c099a4e7ba7c0880a"
+          ],
+          "precision_at_10": 0.5,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Tai nghe dưới 390001",
+          "tcp_ms": 189.01920000007522,
+          "service_ms": 105.732,
+          "ids": [
+            "abo-06978c8969c816663d99",
+            "abo-1e09d879814e8ee2b46c",
+            "abo-4e94a70a51c79fa30dbb",
+            "abo-8d43cb92edcc87aec67d",
+            "abo-9e5c099a4e7ba7c0880a"
+          ],
+          "precision_at_10": 0.5,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Tai nghe không quá 390000",
+          "tcp_ms": 150.46650000022055,
+          "service_ms": 85.423,
+          "ids": [
+            "abo-06978c8969c816663d99",
+            "abo-1e09d879814e8ee2b46c",
+            "abo-4e94a70a51c79fa30dbb",
+            "abo-8d43cb92edcc87aec67d",
+            "abo-9e5c099a4e7ba7c0880a"
+          ],
+          "precision_at_10": 0.5,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Phụ kiện máy tính",
+          "tcp_ms": 148.93369999981587,
+          "service_ms": 89.912,
+          "ids": [
+            "abo-796afe57f7911986cda9",
+            "abo-855469c076c754578595",
+            "abo-b33aa90f79cafbf46978",
+            "abo-c1b310b755388799a09d",
+            "abo-dd9675e9101bc1f2c176",
+            "abo-de348ed7ecf45e4dbcdf",
+            "abo-e7501cc482cb6980ac7a",
+            "abo-efd5663daa1a33862860",
+            "abo-f07fd3a0d2bcf0e78d90"
+          ],
+          "precision_at_10": 0.9,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "phụ kiện máy tính",
+          "tcp_ms": 144.8881999999685,
+          "service_ms": 77.556,
+          "ids": [
+            "abo-796afe57f7911986cda9",
+            "abo-855469c076c754578595",
+            "abo-b33aa90f79cafbf46978",
+            "abo-c1b310b755388799a09d",
+            "abo-dd9675e9101bc1f2c176",
+            "abo-de348ed7ecf45e4dbcdf",
+            "abo-e7501cc482cb6980ac7a",
+            "abo-efd5663daa1a33862860",
+            "abo-f07fd3a0d2bcf0e78d90"
+          ],
+          "precision_at_10": 0.9,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Phu kien may tinh",
+          "tcp_ms": 162.10969999974623,
+          "service_ms": 103.275,
+          "ids": [
+            "abo-796afe57f7911986cda9",
+            "abo-855469c076c754578595",
+            "abo-b33aa90f79cafbf46978",
+            "abo-c1b310b755388799a09d",
+            "abo-dd9675e9101bc1f2c176",
+            "abo-de348ed7ecf45e4dbcdf",
+            "abo-e7501cc482cb6980ac7a",
+            "abo-efd5663daa1a33862860",
+            "abo-f07fd3a0d2bcf0e78d90"
+          ],
+          "precision_at_10": 0.9,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "tôi muốn mua Phụ kiện máy tính",
+          "tcp_ms": 153.38119999978517,
+          "service_ms": 84.385,
+          "ids": [
+            "abo-796afe57f7911986cda9",
+            "abo-855469c076c754578595",
+            "abo-b33aa90f79cafbf46978",
+            "abo-c1b310b755388799a09d",
+            "abo-dd9675e9101bc1f2c176",
+            "abo-de348ed7ecf45e4dbcdf",
+            "abo-e7501cc482cb6980ac7a",
+            "abo-efd5663daa1a33862860",
+            "abo-f07fd3a0d2bcf0e78d90"
+          ],
+          "precision_at_10": 0.9,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Phụ kiện máy tính không quá 190000",
+          "tcp_ms": 148.85050000020783,
+          "service_ms": 84.725,
+          "ids": [
+            "abo-796afe57f7911986cda9",
+            "abo-855469c076c754578595",
+            "abo-b33aa90f79cafbf46978",
+            "abo-c1b310b755388799a09d",
+            "abo-dd9675e9101bc1f2c176",
+            "abo-de348ed7ecf45e4dbcdf",
+            "abo-e7501cc482cb6980ac7a",
+            "abo-efd5663daa1a33862860",
+            "abo-f07fd3a0d2bcf0e78d90"
+          ],
+          "precision_at_10": 0.9,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Bàn phím",
+          "tcp_ms": 141.60690000016984,
+          "service_ms": 82.657,
+          "ids": [
+            "abo-079a59cdeda01c2e1ec7",
+            "abo-16eeaf6d65d2fd99bc28",
+            "abo-65a3b7bf84adadd2fe8c",
+            "abo-de415f38d5e33beeb3fd"
+          ],
+          "precision_at_10": 0.4,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Phụ kiện máy tính dưới 190001",
+          "tcp_ms": 162.36280000020997,
+          "service_ms": 85.614,
+          "ids": [
+            "abo-796afe57f7911986cda9",
+            "abo-855469c076c754578595",
+            "abo-b33aa90f79cafbf46978",
+            "abo-c1b310b755388799a09d",
+            "abo-dd9675e9101bc1f2c176",
+            "abo-de348ed7ecf45e4dbcdf",
+            "abo-e7501cc482cb6980ac7a",
+            "abo-efd5663daa1a33862860",
+            "abo-f07fd3a0d2bcf0e78d90"
+          ],
+          "precision_at_10": 0.9,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "bàn phím",
+          "tcp_ms": 141.74139999977342,
+          "service_ms": 83.55,
+          "ids": [
+            "abo-079a59cdeda01c2e1ec7",
+            "abo-16eeaf6d65d2fd99bc28",
+            "abo-65a3b7bf84adadd2fe8c",
+            "abo-de415f38d5e33beeb3fd"
+          ],
+          "precision_at_10": 0.4,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Ban phim",
+          "tcp_ms": 139.1975999999886,
+          "service_ms": 86.739,
+          "ids": [
+            "abo-079a59cdeda01c2e1ec7",
+            "abo-16eeaf6d65d2fd99bc28",
+            "abo-65a3b7bf84adadd2fe8c",
+            "abo-de415f38d5e33beeb3fd"
+          ],
+          "precision_at_10": 0.4,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "tôi muốn mua Bàn phím",
+          "tcp_ms": 144.00819999991654,
+          "service_ms": 89.08,
+          "ids": [
+            "abo-079a59cdeda01c2e1ec7",
+            "abo-16eeaf6d65d2fd99bc28",
+            "abo-65a3b7bf84adadd2fe8c",
+            "abo-de415f38d5e33beeb3fd"
+          ],
+          "precision_at_10": 0.4,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Bàn phím dưới 290001",
+          "tcp_ms": 146.9414000002871,
+          "service_ms": 89.604,
+          "ids": [
+            "abo-079a59cdeda01c2e1ec7",
+            "abo-16eeaf6d65d2fd99bc28",
+            "abo-65a3b7bf84adadd2fe8c",
+            "abo-de415f38d5e33beeb3fd"
+          ],
+          "precision_at_10": 0.4,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Bàn phím không quá 290000",
+          "tcp_ms": 145.50019999978758,
+          "service_ms": 95.027,
+          "ids": [
+            "abo-079a59cdeda01c2e1ec7",
+            "abo-16eeaf6d65d2fd99bc28",
+            "abo-65a3b7bf84adadd2fe8c",
+            "abo-de415f38d5e33beeb3fd"
+          ],
+          "precision_at_10": 0.4,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Chảo",
+          "tcp_ms": 151.38200000001234,
+          "service_ms": 103.655,
+          "ids": [
+            "abo-e2d591829520f3276004"
+          ],
+          "precision_at_10": 0.1,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "chảo",
+          "tcp_ms": 144.05030000034458,
+          "service_ms": 83.493,
+          "ids": [
+            "abo-e2d591829520f3276004"
+          ],
+          "precision_at_10": 0.1,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Chao",
+          "tcp_ms": 141.85360000010405,
+          "service_ms": 85.845,
+          "ids": [
+            "abo-e2d591829520f3276004"
+          ],
+          "precision_at_10": 0.1,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Chảo dưới 390001",
+          "tcp_ms": 149.2236999997658,
+          "service_ms": 90.769,
+          "ids": [
+            "abo-e2d591829520f3276004"
+          ],
+          "precision_at_10": 0.1,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "tôi muốn mua Chảo",
+          "tcp_ms": 157.288900000367,
+          "service_ms": 92.172,
+          "ids": [
+            "abo-e2d591829520f3276004"
+          ],
+          "precision_at_10": 0.1,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Chảo không quá 390000",
+          "tcp_ms": 136.1108000000968,
+          "service_ms": 94.284,
+          "ids": [
+            "abo-e2d591829520f3276004"
+          ],
+          "precision_at_10": 0.1,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Chuột máy tính",
+          "tcp_ms": 136.61069999989195,
+          "service_ms": 99.266,
+          "ids": [
+            "abo-c3a4256016bbc783a098"
+          ],
+          "precision_at_10": 0.1,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Chuot may tinh",
+          "tcp_ms": 208.72319999989486,
+          "service_ms": 144.255,
+          "ids": [
+            "abo-c3a4256016bbc783a098"
+          ],
+          "precision_at_10": 0.1,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "chuột máy tính",
+          "tcp_ms": 228.7317999998777,
+          "service_ms": 164.935,
+          "ids": [
+            "abo-c3a4256016bbc783a098"
+          ],
+          "precision_at_10": 0.1,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "tôi muốn mua Chuột máy tính",
+          "tcp_ms": 213.1227999998373,
+          "service_ms": 149.738,
+          "ids": [
+            "abo-c3a4256016bbc783a098"
+          ],
+          "precision_at_10": 0.1,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Chuột máy tính dưới 190001",
+          "tcp_ms": 190.016900000046,
+          "service_ms": 151.669,
+          "ids": [
+            "abo-c3a4256016bbc783a098"
+          ],
+          "precision_at_10": 0.1,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        },
+        {
+          "q": "Chuột máy tính không quá 190000",
+          "tcp_ms": 170.3930999997283,
+          "service_ms": 121.567,
+          "ids": [
+            "abo-c3a4256016bbc783a098"
+          ],
+          "precision_at_10": 0.1,
+          "recall_at_10": 1.0,
+          "ndcg_at_10": 1.0,
+          "category_leaks": 0
+        }
+      ]
+    }
+  ]
+}

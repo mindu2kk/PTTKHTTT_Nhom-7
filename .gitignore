@@ -1,0 +1,27 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.env
+.env.*
+!.env.example
+node_modules/
+.next/
+artifacts/
+!artifacts/.gitkeep
+data/private/
+data/catalog/images/
+models/
+*.egg-info/
+*.log
+*.tsbuildinfo
+*.pem
+*.key
+*.pfx
+.DS_Store
+
+# Local course reference copies; source documentation remains in the repository.
+/Copy of *Slide.pdf
+/docs/reference/*.pdf

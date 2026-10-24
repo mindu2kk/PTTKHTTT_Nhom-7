@@ -1,0 +1,1 @@
+error while interpolating services.postgres.environment.POSTGRES_USER: required variable POSTGRES_USER is missing a value: Run scripts/setup.ps1 first

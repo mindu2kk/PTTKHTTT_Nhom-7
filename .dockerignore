@@ -1,0 +1,14 @@
+.git
+.env
+.venv
+node_modules
+**/node_modules
+**/.next
+**/.env.local
+artifacts
+data/private
+data/catalog/images
+docs/evidence
+models
+**/__pycache__
+**/.pytest_cache

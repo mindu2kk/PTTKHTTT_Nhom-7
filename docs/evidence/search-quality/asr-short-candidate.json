@@ -1,0 +1,137 @@
+[
+  {
+    "id": "VIVOSDEV05_155",
+    "text": "Nửa vòng trái đất hơn 7 năm.",
+    "inference_ms": 1091.6294679991552
+  },
+  {
+    "id": "VIVOSDEV05_212",
+    "text": "Bốn chiếc trống đại phêng la.",
+    "inference_ms": 949.635169999965
+  },
+  {
+    "id": "VIVOSDEV15_209",
+    "text": "Họt thiên ghi với văn hóa công ty như thế nào?",
+    "inference_ms": 1004.9892660008481
+  },
+  {
+    "id": "VIVOSDEV15_267",
+    "text": "Cuối cùng họ dẫn nhau về nhà với thúng Lan không?",
+    "inference_ms": 1122.972496001239
+  },
+  {
+    "id": "VIVOSDEV09_288",
+    "text": "Chắc sắp tới thú xếp đi dù lật thòi.",
+    "inference_ms": 1359.8220059993764
+  },
+  {
+    "id": "VIVOSDEV09_077",
+    "text": "Để có thể phần hành cho chúng được hiệu quả hơn.",
+    "inference_ms": 1344.8082419999992
+  },
+  {
+    "id": "VIVOSDEV17_090",
+    "text": "Bây giờ, thì đáng được khen là thông minh trước hạ.",
+    "inference_ms": 1235.398275000989
+  },
+  {
+    "id": "VIVOSDEV17_192",
+    "text": "Đó cũng là sự tiếp xúc gần của nhất của bỏng em.",
+    "inference_ms": 1100.3134370002954
+  },
+  {
+    "id": "VIVOSDEV13_225",
+    "text": "2 loại văn này nên được coi trọng như nhau trong các kỳ thịt thị.",
+    "inference_ms": 1170.229206998556
+  },
+  {
+    "id": "VIVOSDEV13_075",
+    "text": "Bạn có thể tác chương trình đó đi và thực hiện thao tác cuối cùng.",
+    "inference_ms": 1214.6417029998702
+  },
+  {
+    "id": "VIVOSDEV12_076",
+    "text": "Tớ đi kiếm nhà trở rồi, nhưng khó quá.",
+    "inference_ms": 994.3934500006435
+  },
+  {
+    "id": "VIVOSDEV12_271",
+    "text": "Bà con tranh chí cần đạo để chuẩn bị đón tất.",
+    "inference_ms": 1113.5517510010686
+  },
+  {
+    "id": "VIVOSDEV19_030",
+    "text": "Phụ xe bỏ đắp rộng vườn cho sống lạng trữ phú.",
+    "inference_ms": 1181.7834749999747
+  },
+  {
+    "id": "VIVOSDEV19_111",
+    "text": "Quyết điểm lớn của chúng ta lại chưa cá giang chủ, thật sự.",
+    "inference_ms": 971.8764709996321
+  },
+  {
+    "id": "VIVOSDEV02_R076",
+    "text": "Thay về 4 giờ như chết đây.",
+    "inference_ms": 1101.960814999984
+  },
+  {
+    "id": "VIVOSDEV02_R031",
+    "text": "Môn đẹp phải ghê làm chào cho các bó cười trên nỗi bận lên.",
+    "inference_ms": 1122.7623299982952
+  },
+  {
+    "id": "VIVOSDEV11_269",
+    "text": "Chúng tôi yêu nhau được 2 năm thị gia đình tôi sĩ ra chuyện.",
+    "inference_ms": 1086.673152000003
+  },
+  {
+    "id": "VIVOSDEV11_298",
+    "text": "Chúng bị cho ngày khai trương cửa hàng đầu tiên.",
+    "inference_ms": 1067.763996001304
+  },
+  {
+    "id": "VIVOSDEV03_T009",
+    "text": "Quá đang xứng nghĩ gì thế?",
+    "inference_ms": 919.9924810000084
+  },
+  {
+    "id": "VIVOSDEV03_T035",
+    "text": "Mẹ ơi, có mua đồ cho con không?",
+    "inference_ms": 920.7739480007149
+  },
+  {
+    "id": "course-tts",
+    "text": "Tôi muốn mưa áo mơm.",
+    "inference_ms": 1020.3158099993743
+  },
+  {
+    "id": "synthetic-vi-135",
+    "text": "Tôi muốn mưa áo mơm.",
+    "inference_ms": 868.2093909992545
+  },
+  {
+    "id": "synthetic-vi-170",
+    "text": "Tôi muốn bờ áo bấm.",
+    "inference_ms": 980.0751429993397
+  },
+  {
+    "id": "synthetic-vi-vn-x-central-135",
+    "text": "Mua mơ, áo, mơ mơ...",
+    "inference_ms": 911.7277180012024
+  },
+  {
+    "id": "synthetic-vi-vn-x-central-170",
+    "text": "B",
+    "inference_ms": 899.5518280007673
+  },
+  {
+    "id": "synthetic-vi-vn-x-south-135",
+    "text": "Tòi mượn mưa á, mưa tầm.",
+    "inference_ms": 1190.0714140010678
+  },
+  {
+    "id": "synthetic-vi-vn-x-south-170",
+    "text": "Tôi muốn mưa ám mưa tầng.",
+    "inference_ms": 1085.2606169992214
+  }
+]

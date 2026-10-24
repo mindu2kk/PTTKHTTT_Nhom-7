@@ -1,0 +1,15 @@
+{
+  "locked_at": "2026-10-23T13:41:59.092645+00:00",
+  "v2_private_manifest_sha256": "a2784e85197e34d4185d7b8d424147e9ed2d04774f3e9891753ada5ac37b94cc",
+  "development_evidence": "docs/evidence/voice-upgrade/evaluation-pho-text-int8-development.json",
+  "development_evidence_sha256": "c15e09ddbb52553374ff4c66e54fcc1a680a109e6a4a11302514c3c7fdd383e2",
+  "baseline": {
+    "asr_profile": "whisper-base",
+    "asr_without_timestamps": false
+  },
+  "candidate": {
+    "asr_profile": "phowhisper-base",
+    "asr_without_timestamps": true
+  },
+  "decision_scope": "Configuration selected from publisher compatibility and development before V2 is decoded. V1 heldout already opened; V2 is new utterances, with overlapping speakers."
+}

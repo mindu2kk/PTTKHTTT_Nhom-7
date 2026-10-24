@@ -1,0 +1,54 @@
+{
+  "split": "development",
+  "baseline": "base-int8",
+  "frozen_manifest_sha256": "3359fdba3972a190c1e063510a1258a8540f16ebe180cb520aab166540d870d9",
+  "auxiliary_existing_region_metadata_sha256": "bc27fd9f568b554ea9082cd1f2a9805ff0674bc9f80cd5c178073ae64cd146ba",
+  "regions": {
+    "Central": {
+      "baseline": {
+        "samples": 3,
+        "speakers": 3,
+        "failed_samples": 0,
+        "wer": 0.625,
+        "cer_including_spaces": 0.37283236994219654,
+        "utterance_exact_rate": 0.0,
+        "wall_p50_ms": 3157.211,
+        "wall_p95_ms": 3173.177,
+        "observed_rss_peak_mib": 1245.38,
+        "rss_scope": "worker RSS reported after each request; not sampled process peak",
+        "words": 80
+      }
+    },
+    "North": {
+      "baseline": {
+        "samples": 3,
+        "speakers": 2,
+        "failed_samples": 0,
+        "wer": 0.5070422535211268,
+        "cer_including_spaces": 0.2757475083056478,
+        "utterance_exact_rate": 0.0,
+        "wall_p50_ms": 3174.218,
+        "wall_p95_ms": 3733.956,
+        "observed_rss_peak_mib": 1245.29,
+        "rss_scope": "worker RSS reported after each request; not sampled process peak",
+        "words": 71
+      }
+    },
+    "South": {
+      "baseline": {
+        "samples": 3,
+        "speakers": 3,
+        "failed_samples": 0,
+        "wer": 0.7108433734939759,
+        "cer_including_spaces": 0.4487534626038781,
+        "utterance_exact_rate": 0.0,
+        "wall_p50_ms": 4271.952,
+        "wall_p95_ms": 4666.194,
+        "observed_rss_peak_mib": 1243.99,
+        "rss_scope": "worker RSS reported after each request; not sampled process peak",
+        "words": 83
+      }
+    }
+  },
+  "limitations": "Three historical clips per source region; development smoke, not an independent regional quality gate. Joins labels only; primary frozen manifest remains unchanged."
+}

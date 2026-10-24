@@ -1,0 +1,16 @@
+{
+  "measured_at": "2026-10-22T02:52:31.839052+00:00",
+  "scope": "Final Docker images, cold inference worker, actual BFF and UI; ASR requires transcript correction",
+  "checks": [
+    {
+      "check": "e2e_image",
+      "exit_code": 0,
+      "seconds": 71.248
+    },
+    {
+      "check": "e2e_voice",
+      "exit_code": 0,
+      "seconds": 17.077
+    }
+  ]
+}

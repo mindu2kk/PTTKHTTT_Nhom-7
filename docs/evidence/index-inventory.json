@@ -1,0 +1,1 @@
+{"mode": "plan_only", "products": 56, "extensions": ["plpgsql", "vector", "pg_trgm", "unaccent"], "lexical_index": "Rule/lexical active; normalized shadow; no extra GIN/ANN index", "image_embeddings": {"rows": 50, "build_command": "scripts/index_images.py"}, "text_embeddings": "optional; not built", "voice": "Local Whisper adapter implemented; model/health verified separately"}

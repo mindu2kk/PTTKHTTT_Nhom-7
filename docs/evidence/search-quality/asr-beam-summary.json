@@ -1,0 +1,10 @@
+{
+  "synthetic_shopping": {
+    "before_wer": 0.8095238095238095,
+    "candidate_wer": 1.619047619047619
+  },
+  "human_read": {
+    "before_wer": 0.23923444976076555,
+    "candidate_wer": 0.23444976076555024
+  }
+}

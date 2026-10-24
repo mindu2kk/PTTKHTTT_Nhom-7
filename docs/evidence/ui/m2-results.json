@@ -1,0 +1,15 @@
+{
+  "result": "passed",
+  "journeys": [
+    "server-driven catalog",
+    "10 filtered sweaters",
+    "detail",
+    "add cart",
+    "quantity",
+    "cookie persistence",
+    "remove",
+    "360/768/1440 layout",
+    "real 404"
+  ],
+  "page_errors": []
+}

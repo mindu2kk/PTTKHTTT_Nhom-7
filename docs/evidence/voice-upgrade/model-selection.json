@@ -1,0 +1,10 @@
+{
+  "selected_at": "2026-10-23T13:50:27.805628+00:00",
+  "profile": "phowhisper-base",
+  "without_timestamps": true,
+  "source_revision": "7ebdb9e88f5cc5271fb88f4d642c82ff9388650e",
+  "v2_gate": "WER/CER improved; no errors; config locked before unseen utterance decoding",
+  "repeated_v1_gate": "WER/CER improved in both corpora",
+  "configuration_lock_sha256": "0f13b2fe78bead2ded4039a1377e19d161d38285e95b15a90c6fc00fd51e9361",
+  "rollback": "Set ASR_MODEL_PROFILE=whisper-base and recreate inference; old weights preserved"
+}

@@ -1,0 +1,1 @@
+"""HoodooMart modular monolith."""

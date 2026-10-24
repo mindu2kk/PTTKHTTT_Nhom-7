@@ -1,0 +1,6754 @@
+{
+  "version": 1,
+  "frozen_at": "2026-10-24T00:57:48.926645+00:00",
+  "case_count": 100,
+  "scope": "Original manually authored positive shopping TEXT oracle. Not100 people, not audio, not independent human relevance ratings. Product ID sets derive only from hand-labelled category/color/brand/gender/money constraints on reviewed metadata, never parser/API ranking.",
+  "catalog_source": {
+    "path": "data/private/m8/validated.json",
+    "sha256": "2fd8f84bf6fac24c1c2d614fc46064f11e37fa084bae770981f27da87d938a69",
+    "source_id": "amazon-berkeley-objects",
+    "license": "CC-BY-4.0",
+    "live_public_verification_required": true,
+    "price_scope": "integer VND, demo prices; not Amazon market offers"
+  },
+  "catalog_snapshot": [
+    {
+      "id": "abo-cda3825f07ab31c8907a",
+      "name_vi": "Giày nam Stanton — FK/YT1893/BRW",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "nâu",
+      "gender": "nam",
+      "brand": "Stanton"
+    },
+    {
+      "id": "abo-d4543dfba36f32037336",
+      "name_vi": "Giày nữ The Fix — 880071Havana Tan",
+      "category_id": "abo-giay-nu",
+      "category_name": "Giày nữ",
+      "price_vnd": 490000,
+      "color": "nâu nhạt",
+      "gender": "nữ",
+      "brand": "The Fix"
+    },
+    {
+      "id": "abo-1366ca639c024f80a4bb",
+      "name_vi": "Ốp điện thoại Amazon Brand - Solimo — Mi Redmi Go",
+      "category_id": "abo-op-dien-thoai",
+      "category_name": "Ốp điện thoại",
+      "price_vnd": 99000,
+      "color": "Multicolor",
+      "gender": null,
+      "brand": "Amazon Brand - Solimo"
+    },
+    {
+      "id": "abo-7a4d77b7fdf5f3b737dd",
+      "name_vi": "Cốc AmazonBasics — Q2366",
+      "category_id": "abo-coc",
+      "category_name": "Cốc",
+      "price_vnd": 99000,
+      "color": "Clear",
+      "gender": null,
+      "brand": "AmazonBasics"
+    },
+    {
+      "id": "abo-ae7356369a2c7e4dd3fc",
+      "name_vi": "Giày nam 206 Collective — AM0003ABlack",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "đen",
+      "gender": "nam",
+      "brand": "206 Collective"
+    },
+    {
+      "id": "abo-285fe8e8101ec33231ec",
+      "name_vi": "Giày nữ The Fix — 880053Taupe",
+      "category_id": "abo-giay-nu",
+      "category_name": "Giày nữ",
+      "price_vnd": 490000,
+      "color": "Taupe",
+      "gender": "nữ",
+      "brand": "The Fix"
+    },
+    {
+      "id": "abo-07fe86c90424f80b4386",
+      "name_vi": "Ốp điện thoại Amazon Brand - Solimo — Xiaomi Redmi Y2",
+      "category_id": "abo-op-dien-thoai",
+      "category_name": "Ốp điện thoại",
+      "price_vnd": 99000,
+      "color": "multi-colored",
+      "gender": null,
+      "brand": "Amazon Brand - Solimo"
+    },
+    {
+      "id": "abo-9d23c63b64aebbceec0e",
+      "name_vi": "Cốc AmazonBasics — Q2356",
+      "category_id": "abo-coc",
+      "category_name": "Cốc",
+      "price_vnd": 99000,
+      "color": "Clear",
+      "gender": null,
+      "brand": "AmazonBasics"
+    },
+    {
+      "id": "abo-08c3abaa33e9e744db0b",
+      "name_vi": "Giày nam Amazon Brand - Symbol — B07WG3V91C",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "nâu nhạt",
+      "gender": "nam",
+      "brand": "Amazon Brand - Symbol"
+    },
+    {
+      "id": "abo-8197d8250efdfbdd15dc",
+      "name_vi": "Giày nữ find. — Felix-1w1-112",
+      "category_id": "abo-giay-nu",
+      "category_name": "Giày nữ",
+      "price_vnd": 490000,
+      "color": "xanh than",
+      "gender": "nữ",
+      "brand": "find."
+    },
+    {
+      "id": "abo-f4c26a80466f72bc1f78",
+      "name_vi": "Ốp điện thoại Amazon Brand - Solimo — Vivo Y81i",
+      "category_id": "abo-op-dien-thoai",
+      "category_name": "Ốp điện thoại",
+      "price_vnd": 99000,
+      "color": "Multicolor",
+      "gender": null,
+      "brand": "Amazon Brand - Solimo"
+    },
+    {
+      "id": "abo-0050b24a441bc1f887d6",
+      "name_vi": "Bàn Rivet — CT-355C",
+      "category_id": "abo-ban",
+      "category_name": "Bàn",
+      "price_vnd": 1290000,
+      "color": "nâu",
+      "gender": null,
+      "brand": "Rivet"
+    },
+    {
+      "id": "abo-aebec200a1e7bf68378b",
+      "name_vi": "Giày nam Amazon Brand - Symbol — AZ-WS-126B",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "đen",
+      "gender": "nam",
+      "brand": "Amazon Brand - Symbol"
+    },
+    {
+      "id": "abo-281f7ec5af7255d5e6ba",
+      "name_vi": "Giày nữ  — Manny",
+      "category_id": "abo-giay-nu",
+      "category_name": "Giày nữ",
+      "price_vnd": 490000,
+      "color": "Chưa có thông tin",
+      "gender": "nữ",
+      "brand": null
+    },
+    {
+      "id": "abo-ca9617ea94f3a76b5017",
+      "name_vi": "Ốp điện thoại Amazon Brand - Solimo — Karbonn Aura Power 4G Plus",
+      "category_id": "abo-op-dien-thoai",
+      "category_name": "Ốp điện thoại",
+      "price_vnd": 99000,
+      "color": "Multicolor",
+      "gender": null,
+      "brand": "Amazon Brand - Solimo"
+    },
+    {
+      "id": "abo-0d5824b35ffd3ce3a111",
+      "name_vi": "Ghế AmazonBasics — 7985-4",
+      "category_id": "abo-ghe",
+      "category_name": "Ghế",
+      "price_vnd": 990000,
+      "color": "xanh dương",
+      "gender": null,
+      "brand": "AmazonBasics"
+    },
+    {
+      "id": "abo-1c74f1be3fc372c664b3",
+      "name_vi": "Giày nam Bourge — Reef-65",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "xám",
+      "gender": "nam",
+      "brand": "Bourge"
+    },
+    {
+      "id": "abo-de196de635ad3483174f",
+      "name_vi": "Giày nữ find. — PRASE-S-2B-6 Court",
+      "category_id": "abo-giay-nu",
+      "category_name": "Giày nữ",
+      "price_vnd": 490000,
+      "color": "đỏ",
+      "gender": "nữ",
+      "brand": "find."
+    },
+    {
+      "id": "abo-80b535ad9ba063838753",
+      "name_vi": "Ốp điện thoại Amazon Brand - Solimo — Samsung Galaxy A70s",
+      "category_id": "abo-op-dien-thoai",
+      "category_name": "Ốp điện thoại",
+      "price_vnd": 99000,
+      "color": "Multicolor",
+      "gender": null,
+      "brand": "Amazon Brand - Solimo"
+    },
+    {
+      "id": "abo-7a5ea4650a4b4eade2ac",
+      "name_vi": "Ghế sofa Rivet — Masen_F2060-30-S_Ink",
+      "category_id": "abo-sofa",
+      "category_name": "Ghế sofa",
+      "price_vnd": 2990000,
+      "color": "xanh than",
+      "gender": null,
+      "brand": "Rivet"
+    },
+    {
+      "id": "abo-ec2fe12d9213d36bbf9a",
+      "name_vi": "Giày nam Burwood — BW 397",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "đen",
+      "gender": "nam",
+      "brand": "Burwood"
+    },
+    {
+      "id": "abo-d17e9554c2823ba58ef7",
+      "name_vi": "Giày nữ The Fix — 880075Matte Silver Mirror",
+      "category_id": "abo-giay-nu",
+      "category_name": "Giày nữ",
+      "price_vnd": 490000,
+      "color": "Matte Silver Mirror",
+      "gender": "nữ",
+      "brand": "The Fix"
+    },
+    {
+      "id": "abo-c4e9f733e146b2e08582",
+      "name_vi": "Ốp điện thoại Amazon Brand - Solimo — Motorola Moto G4 Plus",
+      "category_id": "abo-op-dien-thoai",
+      "category_name": "Ốp điện thoại",
+      "price_vnd": 99000,
+      "color": "Others",
+      "gender": null,
+      "brand": "Amazon Brand - Solimo"
+    },
+    {
+      "id": "abo-c2a51203b041504067bc",
+      "name_vi": "Ghế Ravenna Home — 329-7864-48-P",
+      "category_id": "abo-ghe",
+      "category_name": "Ghế",
+      "price_vnd": 990000,
+      "color": "Chưa có thông tin",
+      "gender": null,
+      "brand": "Ravenna Home"
+    },
+    {
+      "id": "abo-ae00d9fca9f92d6cc150",
+      "name_vi": "Bốt nam find. — Albert",
+      "category_id": "abo-giay-nam",
+      "category_name": "Bốt nam",
+      "price_vnd": 490000,
+      "color": "đen",
+      "gender": "nam",
+      "brand": "find."
+    },
+    {
+      "id": "abo-83287d58c9b9bd74e186",
+      "name_vi": "Giày nữ Amazon Essentials — Shelly",
+      "category_id": "abo-giay-nu",
+      "category_name": "Giày nữ",
+      "price_vnd": 490000,
+      "color": "Chưa có thông tin",
+      "gender": "nữ",
+      "brand": "Amazon Essentials"
+    },
+    {
+      "id": "abo-81c1fe955bf6e990a631",
+      "name_vi": "Ốp điện thoại Amazon Brand - Solimo — Samsung Galaxy M10",
+      "category_id": "abo-op-dien-thoai",
+      "category_name": "Ốp điện thoại",
+      "price_vnd": 99000,
+      "color": "multi-colored",
+      "gender": null,
+      "brand": "Amazon Brand - Solimo"
+    },
+    {
+      "id": "abo-e66fd6e4d4326147e30c",
+      "name_vi": "Ghế  — Homesick",
+      "category_id": "abo-ghe",
+      "category_name": "Ghế",
+      "price_vnd": 990000,
+      "color": "Chưa có thông tin",
+      "gender": null,
+      "brand": null
+    },
+    {
+      "id": "abo-0446c46130dcf4cf986d",
+      "name_vi": "Giày nam Amazon Brand - Symbol — AZ-WS-120A",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "nâu",
+      "gender": "nam",
+      "brand": "Amazon Brand - Symbol"
+    },
+    {
+      "id": "abo-4c9a4220ce76c98b87a9",
+      "name_vi": "Sandal nữ 206 Collective — Siri",
+      "category_id": "abo-giay-nu",
+      "category_name": "Sandal nữ",
+      "price_vnd": 490000,
+      "color": "đen",
+      "gender": "nữ",
+      "brand": "206 Collective"
+    },
+    {
+      "id": "abo-c70c3d53b2bd64edf073",
+      "name_vi": "Ốp điện thoại Amazon Brand - Solimo — Samsung Galaxy M40",
+      "category_id": "abo-op-dien-thoai",
+      "category_name": "Ốp điện thoại",
+      "price_vnd": 99000,
+      "color": "Multicolor",
+      "gender": null,
+      "brand": "Amazon Brand - Solimo"
+    },
+    {
+      "id": "abo-72f7826672f1aec255cc",
+      "name_vi": "Bàn Ravenna Home — B180426-2-G",
+      "category_id": "abo-ban",
+      "category_name": "Bàn",
+      "price_vnd": 1290000,
+      "color": "xám",
+      "gender": null,
+      "brand": "Ravenna Home"
+    },
+    {
+      "id": "abo-0163e5b3f66c2cb986d1",
+      "name_vi": "Giày nam Amazon Brand - Symbol — B07WG3VF1J",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "nâu",
+      "gender": "nam",
+      "brand": "Amazon Brand - Symbol"
+    },
+    {
+      "id": "abo-38a327f6e0402f979c1a",
+      "name_vi": "Giày nữ find. — Leather",
+      "category_id": "abo-giay-nu",
+      "category_name": "Giày nữ",
+      "price_vnd": 490000,
+      "color": "nâu",
+      "gender": "nữ",
+      "brand": "find."
+    },
+    {
+      "id": "abo-aa3d61458dcb8f9d3293",
+      "name_vi": "Ốp điện thoại Amazon Brand - Solimo — Huawei Honor 5c",
+      "category_id": "abo-op-dien-thoai",
+      "category_name": "Ốp điện thoại",
+      "price_vnd": 99000,
+      "color": "Others",
+      "gender": null,
+      "brand": "Amazon Brand - Solimo"
+    },
+    {
+      "id": "abo-f9bea1ab7fd2ce53993f",
+      "name_vi": "Thảm Rivet — I97I8056MLT000C00",
+      "category_id": "abo-tham",
+      "category_name": "Thảm",
+      "price_vnd": 390000,
+      "color": "xanh dương",
+      "gender": null,
+      "brand": "Rivet"
+    },
+    {
+      "id": "abo-2d8abebfb96796f14af2",
+      "name_vi": "Giày nam Stanton — FK/YT1893/BLK",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "đen",
+      "gender": "nam",
+      "brand": "Stanton"
+    },
+    {
+      "id": "abo-f88aea80ad3759cc7a21",
+      "name_vi": "Giày nữ  — Driver 2",
+      "category_id": "abo-giay-nu",
+      "category_name": "Giày nữ",
+      "price_vnd": 490000,
+      "color": "Chưa có thông tin",
+      "gender": "nữ",
+      "brand": null
+    },
+    {
+      "id": "abo-aa05a05b97767dc49bf0",
+      "name_vi": "Ốp điện thoại Amazon Brand - Solimo — Mi Redmi Y3",
+      "category_id": "abo-op-dien-thoai",
+      "category_name": "Ốp điện thoại",
+      "price_vnd": 99000,
+      "color": "Multicolor",
+      "gender": null,
+      "brand": "Amazon Brand - Solimo"
+    },
+    {
+      "id": "abo-147a4fac1d8cae66f962",
+      "name_vi": "Ghế sofa ROSSINI — CANOVA.V314.L25.1820 GRIGIO TOPO",
+      "category_id": "abo-sofa",
+      "category_name": "Ghế sofa",
+      "price_vnd": 2990000,
+      "color": "xám",
+      "gender": null,
+      "brand": "ROSSINI"
+    },
+    {
+      "id": "abo-6313e245ec41408c3cb4",
+      "name_vi": "Giày nam Amazon Brand - Arthur Harvey — Az-st-004a",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "đen",
+      "gender": "nam",
+      "brand": "Amazon Brand - Arthur Harvey"
+    },
+    {
+      "id": "abo-0fc59eb036b16e07f35b",
+      "name_vi": "Bốt nữ find. — Kitten Heel Point Toe Animal",
+      "category_id": "abo-giay-nu",
+      "category_name": "Bốt nữ",
+      "price_vnd": 490000,
+      "color": "nâu",
+      "gender": "nữ",
+      "brand": "find."
+    },
+    {
+      "id": "abo-cd81906901784db2dfc0",
+      "name_vi": "Ốp điện thoại Amazon Brand - Solimo — Xiaomi Redmi Note 5",
+      "category_id": "abo-op-dien-thoai",
+      "category_name": "Ốp điện thoại",
+      "price_vnd": 99000,
+      "color": "multi-colored",
+      "gender": null,
+      "brand": "Amazon Brand - Solimo"
+    },
+    {
+      "id": "abo-dffe3008a16e36046923",
+      "name_vi": "Cốc AmazonBasics — PLACC16-3",
+      "category_id": "abo-coc",
+      "category_name": "Cốc",
+      "price_vnd": 99000,
+      "color": "Chưa có thông tin",
+      "gender": null,
+      "brand": "AmazonBasics"
+    },
+    {
+      "id": "abo-fef7d982456ff59eeeef",
+      "name_vi": "Giày nam find. — Suede",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "Chưa có thông tin",
+      "gender": "nam",
+      "brand": "find."
+    },
+    {
+      "id": "abo-576a7f8f26b7918582bb",
+      "name_vi": "Sandal nữ The Fix — Mischa Block Heel Ankle Wrap Sandal with Bows",
+      "category_id": "abo-giay-nu",
+      "category_name": "Sandal nữ",
+      "price_vnd": 490000,
+      "color": "Dove Suede",
+      "gender": "nữ",
+      "brand": "The Fix"
+    },
+    {
+      "id": "abo-9a22357ddecbf71a9c76",
+      "name_vi": "Ốp điện thoại Amazon Brand - Solimo — Motorola Moto E 2nd Generation",
+      "category_id": "abo-op-dien-thoai",
+      "category_name": "Ốp điện thoại",
+      "price_vnd": 99000,
+      "color": "Others",
+      "gender": null,
+      "brand": "Amazon Brand - Solimo"
+    },
+    {
+      "id": "abo-4766510388b5ae04194f",
+      "name_vi": "Dụng cụ nhà bếp Amazon Brand - Solimo — B07MRDS4TG",
+      "category_id": "abo-dung-cu-bep",
+      "category_name": "Dụng cụ nhà bếp",
+      "price_vnd": 290000,
+      "color": "copper",
+      "gender": null,
+      "brand": "Amazon Brand - Solimo"
+    },
+    {
+      "id": "abo-0677e35cb13f616f4e89",
+      "name_vi": "Giày nam Amazon Brand - Symbol — B079TYGKB9",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "xám",
+      "gender": "nam",
+      "brand": "Amazon Brand - Symbol"
+    },
+    {
+      "id": "abo-9426b5b0bb96951a8e9c",
+      "name_vi": "Giày nữ find. — #_SHANA-1A-58",
+      "category_id": "abo-giay-nu",
+      "category_name": "Giày nữ",
+      "price_vnd": 490000,
+      "color": "be",
+      "gender": "nữ",
+      "brand": "find."
+    },
+    {
+      "id": "abo-f3968a461b1efa86ad0b",
+      "name_vi": "Ốp điện thoại Amazon Brand - Solimo — Vivo Y51L",
+      "category_id": "abo-op-dien-thoai",
+      "category_name": "Ốp điện thoại",
+      "price_vnd": 99000,
+      "color": "Others",
+      "gender": null,
+      "brand": "Amazon Brand - Solimo"
+    },
+    {
+      "id": "abo-e47f5226f75c50abebdc",
+      "name_vi": "Thảm Stone & Beam — 200RZBD28B-406",
+      "category_id": "abo-tham",
+      "category_name": "Thảm",
+      "price_vnd": 390000,
+      "color": "xám",
+      "gender": null,
+      "brand": "Stone & Beam"
+    },
+    {
+      "id": "abo-53b37a833bee572b4374",
+      "name_vi": "Giày nam 206 Collective — Barnes Suede Casual Oxford",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "xám",
+      "gender": "nam",
+      "brand": "206 Collective"
+    },
+    {
+      "id": "abo-8adef3a5b1a189086549",
+      "name_vi": "Giày nữ Flavia — FKT/FB-03FK/BLK",
+      "category_id": "abo-giay-nu",
+      "category_name": "Giày nữ",
+      "price_vnd": 490000,
+      "color": "đen",
+      "gender": "nữ",
+      "brand": "Flavia"
+    },
+    {
+      "id": "abo-a9feed4b014bbab0ad66",
+      "name_vi": "Ốp điện thoại Amazon Brand - Solimo — Oppo F5",
+      "category_id": "abo-op-dien-thoai",
+      "category_name": "Ốp điện thoại",
+      "price_vnd": 99000,
+      "color": "Others",
+      "gender": null,
+      "brand": "Amazon Brand - Solimo"
+    },
+    {
+      "id": "abo-be279817f20f0bebc804",
+      "name_vi": "Dụng cụ nhà bếp UMI — B07FS68L6N",
+      "category_id": "abo-dung-cu-bep",
+      "category_name": "Dụng cụ nhà bếp",
+      "price_vnd": 290000,
+      "color": "Chưa có thông tin",
+      "gender": null,
+      "brand": "UMI"
+    },
+    {
+      "id": "abo-882e28e7d5b4b046c02f",
+      "name_vi": "Giày nam Amazon Brand - Symbol — B07DMX3TVH",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "Chưa có thông tin",
+      "gender": "nam",
+      "brand": "Amazon Brand - Symbol"
+    },
+    {
+      "id": "abo-a076ecb8b1b0728d5a45",
+      "name_vi": "Giày nữ Amazon Brand - Symbol — SYM-WS-005",
+      "category_id": "abo-giay-nu",
+      "category_name": "Giày nữ",
+      "price_vnd": 490000,
+      "color": "nâu",
+      "gender": "nữ",
+      "brand": "Amazon Brand - Symbol"
+    },
+    {
+      "id": "abo-6a6458026ca185179e39",
+      "name_vi": "Ốp điện thoại Amazon Brand - Solimo — Samsung Galaxy M21",
+      "category_id": "abo-op-dien-thoai",
+      "category_name": "Ốp điện thoại",
+      "price_vnd": 99000,
+      "color": "Multicolor",
+      "gender": null,
+      "brand": "Amazon Brand - Solimo"
+    },
+    {
+      "id": "abo-9bcaa4fd8c5734434cbb",
+      "name_vi": "Ghế AmazonBasics — B083H3WMT3",
+      "category_id": "abo-ghe",
+      "category_name": "Ghế",
+      "price_vnd": 990000,
+      "color": "nâu",
+      "gender": null,
+      "brand": "AmazonBasics"
+    },
+    {
+      "id": "abo-74ab6824f167fe7c09e9",
+      "name_vi": "Giày nam Amazon Brand - Symbol — AZ-YS-187 C",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "trắng",
+      "gender": "nam",
+      "brand": "Amazon Brand - Symbol"
+    },
+    {
+      "id": "abo-742606b6fe67b6caad5a",
+      "name_vi": "Sandal nữ find. — #_JUDD-S-1A-1",
+      "category_id": "abo-giay-nu",
+      "category_name": "Sandal nữ",
+      "price_vnd": 490000,
+      "color": "Chưa có thông tin",
+      "gender": "nữ",
+      "brand": "find."
+    },
+    {
+      "id": "abo-eb96996703a890788bf0",
+      "name_vi": "Ốp điện thoại Amazon Brand - Solimo — Nokia 7.1",
+      "category_id": "abo-op-dien-thoai",
+      "category_name": "Ốp điện thoại",
+      "price_vnd": 99000,
+      "color": "Others",
+      "gender": null,
+      "brand": "Amazon Brand - Solimo"
+    },
+    {
+      "id": "abo-29b2c0eaed12423831bb",
+      "name_vi": "Đèn bàn Stone & Beam — ALT0316031",
+      "category_id": "abo-den-ban",
+      "category_name": "Đèn bàn",
+      "price_vnd": 490000,
+      "color": "Polished Nickel",
+      "gender": null,
+      "brand": "Stone & Beam"
+    },
+    {
+      "id": "abo-8a681042e93aeb9ea029",
+      "name_vi": "Sandal nam find. — Chorley",
+      "category_id": "abo-giay-nam",
+      "category_name": "Sandal nam",
+      "price_vnd": 490000,
+      "color": "Chưa có thông tin",
+      "gender": "nam",
+      "brand": "find."
+    },
+    {
+      "id": "abo-8b90552e1e2639c94f46",
+      "name_vi": "Giày nữ  — Dalia",
+      "category_id": "abo-giay-nu",
+      "category_name": "Giày nữ",
+      "price_vnd": 490000,
+      "color": "Chưa có thông tin",
+      "gender": "nữ",
+      "brand": null
+    },
+    {
+      "id": "abo-8e32dcc578aa66ed2998",
+      "name_vi": "Ốp điện thoại Amazon Brand - Solimo — Xiaomi Redmi 1S",
+      "category_id": "abo-op-dien-thoai",
+      "category_name": "Ốp điện thoại",
+      "price_vnd": 99000,
+      "color": "Others",
+      "gender": null,
+      "brand": "Amazon Brand - Solimo"
+    },
+    {
+      "id": "abo-41bdd12740db39391e27",
+      "name_vi": "Thảm Rivet — RZBD62A-2808",
+      "category_id": "abo-tham",
+      "category_name": "Thảm",
+      "price_vnd": 390000,
+      "color": "Charcoal",
+      "gender": null,
+      "brand": "Rivet"
+    },
+    {
+      "id": "abo-637e3c8301d9403b9c6b",
+      "name_vi": "Giày nam Amazon Brand - Symactive — B07T79J89G",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "Chưa có thông tin",
+      "gender": "nam",
+      "brand": "Amazon Brand - Symactive"
+    },
+    {
+      "id": "abo-0af1a045cd6669a8aa8b",
+      "name_vi": "Giày nữ find. — V0338",
+      "category_id": "abo-giay-nu",
+      "category_name": "Giày nữ",
+      "price_vnd": 490000,
+      "color": "đỏ",
+      "gender": "nữ",
+      "brand": "find."
+    },
+    {
+      "id": "abo-cffdf5d9963100147b06",
+      "name_vi": "Ốp điện thoại Amazon Brand - Solimo — Xiaomi Redmi 8A",
+      "category_id": "abo-op-dien-thoai",
+      "category_name": "Ốp điện thoại",
+      "price_vnd": 99000,
+      "color": "multi-colored",
+      "gender": null,
+      "brand": "Amazon Brand - Solimo"
+    },
+    {
+      "id": "abo-fff065381205986c6e49",
+      "name_vi": "Dụng cụ nhà bếp AmazonBasics — TT6381/TT5779/FF1449-BR",
+      "category_id": "abo-dung-cu-bep",
+      "category_name": "Dụng cụ nhà bếp",
+      "price_vnd": 290000,
+      "color": "trắng",
+      "gender": null,
+      "brand": "AmazonBasics"
+    },
+    {
+      "id": "abo-1c657d65eddedc65b431",
+      "name_vi": "Giày nam find. — Suede",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "nâu",
+      "gender": "nam",
+      "brand": "find."
+    },
+    {
+      "id": "abo-0336da5827d1a560c8f5",
+      "name_vi": "Giày nữ Sixth & Love — 12345465646",
+      "category_id": "abo-giay-nu",
+      "category_name": "Giày nữ",
+      "price_vnd": 490000,
+      "color": "Wine",
+      "gender": "nữ",
+      "brand": "Sixth & Love"
+    },
+    {
+      "id": "abo-9c808b43bfa428f15db0",
+      "name_vi": "Ốp điện thoại Amazon Brand - Solimo — Nokia 6.1 Plus",
+      "category_id": "abo-op-dien-thoai",
+      "category_name": "Ốp điện thoại",
+      "price_vnd": 99000,
+      "color": "Others",
+      "gender": null,
+      "brand": "Amazon Brand - Solimo"
+    },
+    {
+      "id": "abo-c821db60366b2b779e0f",
+      "name_vi": "Thảm Rivet — WDN01OATML3'9\"X5'9\" _99446004918",
+      "category_id": "abo-tham",
+      "category_name": "Thảm",
+      "price_vnd": 390000,
+      "color": "Oatmeal",
+      "gender": null,
+      "brand": "Rivet"
+    },
+    {
+      "id": "abo-85bd9f176813f88bc66a",
+      "name_vi": "Giày nam Amazon Brand - Symbol — AZ-WS-115B",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "Chưa có thông tin",
+      "gender": "nam",
+      "brand": "Amazon Brand - Symbol"
+    },
+    {
+      "id": "abo-34778f88982f6851deaa",
+      "name_vi": "Giày nữ find. — 10311a",
+      "category_id": "abo-giay-nu",
+      "category_name": "Giày nữ",
+      "price_vnd": 490000,
+      "color": "xanh lá",
+      "gender": "nữ",
+      "brand": "find."
+    },
+    {
+      "id": "abo-a95d0f0ebb88d376bce9",
+      "name_vi": "Ốp điện thoại Amazon Brand - Solimo — Apple iPhone XR",
+      "category_id": "abo-op-dien-thoai",
+      "category_name": "Ốp điện thoại",
+      "price_vnd": 99000,
+      "color": "multi-colored",
+      "gender": null,
+      "brand": "Amazon Brand - Solimo"
+    },
+    {
+      "id": "abo-4aca36398d6189640c66",
+      "name_vi": "Gối Stone & Beam — 111660",
+      "category_id": "abo-goi",
+      "category_name": "Gối",
+      "price_vnd": 190000,
+      "color": "Sunshine",
+      "gender": null,
+      "brand": "Stone & Beam"
+    },
+    {
+      "id": "abo-1d4e81c2673d0557b216",
+      "name_vi": "Giày nam Amazon Brand - Symactive — SYM-YS-009B",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "đen",
+      "gender": "nam",
+      "brand": "Amazon Brand - Symactive"
+    },
+    {
+      "id": "abo-04122797f0a6587604cc",
+      "name_vi": "Giày nữ find. — Simple Leather",
+      "category_id": "abo-giay-nu",
+      "category_name": "Giày nữ",
+      "price_vnd": 490000,
+      "color": "nâu nhạt",
+      "gender": "nữ",
+      "brand": "find."
+    },
+    {
+      "id": "abo-253d991f86a836b2ce74",
+      "name_vi": "Ốp điện thoại Amazon Brand - Solimo — Huawei Honor 7A",
+      "category_id": "abo-op-dien-thoai",
+      "category_name": "Ốp điện thoại",
+      "price_vnd": 99000,
+      "color": "Multicolor",
+      "gender": null,
+      "brand": "Amazon Brand - Solimo"
+    },
+    {
+      "id": "abo-dff0396e22315f157bf0",
+      "name_vi": "Thảm Rivet — WDN01BRICK9'6\"X 13' _99446014184",
+      "category_id": "abo-tham",
+      "category_name": "Thảm",
+      "price_vnd": 390000,
+      "color": "Brick",
+      "gender": null,
+      "brand": "Rivet"
+    },
+    {
+      "id": "abo-28cbb1d314b6758a11c5",
+      "name_vi": "Giày nam Amazon Brand - Symbol — AZ-YS-196 A",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "xanh than",
+      "gender": "nam",
+      "brand": "Amazon Brand - Symbol"
+    },
+    {
+      "id": "abo-ae45fd432c519431ef4f",
+      "name_vi": "Sandal nữ find. — T98ar7005s",
+      "category_id": "abo-giay-nu",
+      "category_name": "Sandal nữ",
+      "price_vnd": 490000,
+      "color": "nâu",
+      "gender": "nữ",
+      "brand": "find."
+    },
+    {
+      "id": "abo-6db8e735a0e855774822",
+      "name_vi": "Ốp điện thoại Amazon Brand - Solimo — Coolpad Note 5",
+      "category_id": "abo-op-dien-thoai",
+      "category_name": "Ốp điện thoại",
+      "price_vnd": 99000,
+      "color": "multi-colored",
+      "gender": null,
+      "brand": "Amazon Brand - Solimo"
+    },
+    {
+      "id": "abo-9da7f75aa203d53c56a9",
+      "name_vi": "Ghế Ravenna Home — 320-DS-C133-710-1",
+      "category_id": "abo-ghe",
+      "category_name": "Ghế",
+      "price_vnd": 990000,
+      "color": "Merlot",
+      "gender": null,
+      "brand": "Ravenna Home"
+    },
+    {
+      "id": "abo-488da09980f19a627b6c",
+      "name_vi": "Giày nam Amazon Brand - Symbol — AZ-YS-190 B",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "đỏ",
+      "gender": "nam",
+      "brand": "Amazon Brand - Symbol"
+    },
+    {
+      "id": "abo-4252fa202a343516bd60",
+      "name_vi": "Giày nữ find. — 119AL3502",
+      "category_id": "abo-giay-nu",
+      "category_name": "Giày nữ",
+      "price_vnd": 490000,
+      "color": "Chưa có thông tin",
+      "gender": "nữ",
+      "brand": "find."
+    },
+    {
+      "id": "abo-7ce1fdab324ab8f4b67e",
+      "name_vi": "Ốp điện thoại Amazon Brand - Solimo — Vivo Y69",
+      "category_id": "abo-op-dien-thoai",
+      "category_name": "Ốp điện thoại",
+      "price_vnd": 99000,
+      "color": "Others",
+      "gender": null,
+      "brand": "Amazon Brand - Solimo"
+    },
+    {
+      "id": "abo-fd95f8857918e340c9ee",
+      "name_vi": "Đèn bàn Rivet — 21632-003",
+      "category_id": "abo-den-ban",
+      "category_name": "Đèn bàn",
+      "price_vnd": 490000,
+      "color": "hồng",
+      "gender": null,
+      "brand": "Rivet"
+    },
+    {
+      "id": "abo-ea9881376a2a9a50fadf",
+      "name_vi": "Giày nam find. — Leather",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "Chưa có thông tin",
+      "gender": "nam",
+      "brand": "find."
+    },
+    {
+      "id": "abo-ce79db2f9b111bc69418",
+      "name_vi": "Giày nữ find. — N-7413sleek",
+      "category_id": "abo-giay-nu",
+      "category_name": "Giày nữ",
+      "price_vnd": 490000,
+      "color": "Chưa có thông tin",
+      "gender": "nữ",
+      "brand": "find."
+    },
+    {
+      "id": "abo-a98b79349e4d9340408a",
+      "name_vi": "Dụng cụ nhà bếp Mr Bar B Q — 02713X",
+      "category_id": "abo-dung-cu-bep",
+      "category_name": "Dụng cụ nhà bếp",
+      "price_vnd": 290000,
+      "color": "Stainless Steel",
+      "gender": null,
+      "brand": "Mr Bar B Q"
+    },
+    {
+      "id": "abo-8a8e48db8a59e66c679a",
+      "name_vi": "Giày nam  — Aaron01",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "Chưa có thông tin",
+      "gender": "nam",
+      "brand": null
+    },
+    {
+      "id": "abo-a05c843b9e096192e782",
+      "name_vi": "Sandal nữ find. — #_JUDD-S-1A-1",
+      "category_id": "abo-giay-nu",
+      "category_name": "Sandal nữ",
+      "price_vnd": 490000,
+      "color": "Chưa có thông tin",
+      "gender": "nữ",
+      "brand": "find."
+    },
+    {
+      "id": "abo-a2b3f5e7e827d3220b35",
+      "name_vi": "Ốp điện thoại Amazon Brand - Solimo — HTC One M8",
+      "category_id": "abo-op-dien-thoai",
+      "category_name": "Ốp điện thoại",
+      "price_vnd": 99000,
+      "color": "Others",
+      "gender": null,
+      "brand": "Amazon Brand - Solimo"
+    },
+    {
+      "id": "abo-72b7858939509bab0cae",
+      "name_vi": "Ghế sofa Stone & Beam — KF.1031-3S-M2836",
+      "category_id": "abo-sofa",
+      "category_name": "Ghế sofa",
+      "price_vnd": 2990000,
+      "color": "xám",
+      "gender": null,
+      "brand": "Stone & Beam"
+    },
+    {
+      "id": "abo-c1bcc35562901d523cad",
+      "name_vi": "Giày nam Bourge — Vega Pearl-5",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "đỏ",
+      "gender": "nam",
+      "brand": "Bourge"
+    },
+    {
+      "id": "abo-7bcf4120e062486573a0",
+      "name_vi": "Giày nữ Truth & Fable — 124014",
+      "category_id": "abo-giay-nu",
+      "category_name": "Giày nữ",
+      "price_vnd": 490000,
+      "color": "đen",
+      "gender": "nữ",
+      "brand": "Truth & Fable"
+    },
+    {
+      "id": "abo-dc283827e8880735fde7",
+      "name_vi": "Ốp điện thoại Amazon Brand - Solimo — Samsung Z2",
+      "category_id": "abo-op-dien-thoai",
+      "category_name": "Ốp điện thoại",
+      "price_vnd": 99000,
+      "color": "Others",
+      "gender": null,
+      "brand": "Amazon Brand - Solimo"
+    },
+    {
+      "id": "abo-d6a12a926afe53585fb2",
+      "name_vi": "Gối Stone & Beam — 111683",
+      "category_id": "abo-goi",
+      "category_name": "Gối",
+      "price_vnd": 190000,
+      "color": "Dark Gold",
+      "gender": null,
+      "brand": "Stone & Beam"
+    },
+    {
+      "id": "abo-167e24d686f1dd378300",
+      "name_vi": "Giày nam Amazon Brand - Symbol — AZ-OM-69A",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "đen",
+      "gender": "nam",
+      "brand": "Amazon Brand - Symbol"
+    },
+    {
+      "id": "abo-ad435bca2713763bccf1",
+      "name_vi": "Giày nữ Flavia — FL/231/BLK",
+      "category_id": "abo-giay-nu",
+      "category_name": "Giày nữ",
+      "price_vnd": 490000,
+      "color": "đen",
+      "gender": "nữ",
+      "brand": "Flavia"
+    },
+    {
+      "id": "abo-31a61d412cc28c9b3e7e",
+      "name_vi": "Ốp điện thoại Amazon Brand - Solimo — Xiaomi Redmi Y1 Lite",
+      "category_id": "abo-op-dien-thoai",
+      "category_name": "Ốp điện thoại",
+      "price_vnd": 99000,
+      "color": "Others",
+      "gender": null,
+      "brand": "Amazon Brand - Solimo"
+    },
+    {
+      "id": "abo-e5234db2f90dadefbdeb",
+      "name_vi": "Thảm Stone & Beam — RVDALRVD01SILVER060090",
+      "category_id": "abo-tham",
+      "category_name": "Thảm",
+      "price_vnd": 390000,
+      "color": "Chestnut",
+      "gender": null,
+      "brand": "Stone & Beam"
+    },
+    {
+      "id": "abo-fa03f1d20768675ab656",
+      "name_vi": "Giày nam Solefit — SLFT-0086",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "đen",
+      "gender": "nam",
+      "brand": "Solefit"
+    },
+    {
+      "id": "abo-32374ba0d89126ad1a4b",
+      "name_vi": "Sandal nữ Amazon Essentials — Sal",
+      "category_id": "abo-giay-nu",
+      "category_name": "Sandal nữ",
+      "price_vnd": 490000,
+      "color": "trắng",
+      "gender": "nữ",
+      "brand": "Amazon Essentials"
+    },
+    {
+      "id": "abo-36c11d0b602ce2db673f",
+      "name_vi": "Ốp điện thoại Amazon Brand - Solimo — Lenovo A6600",
+      "category_id": "abo-op-dien-thoai",
+      "category_name": "Ốp điện thoại",
+      "price_vnd": 99000,
+      "color": "Others",
+      "gender": null,
+      "brand": "Amazon Brand - Solimo"
+    },
+    {
+      "id": "abo-11db87231ce1570f7d92",
+      "name_vi": "Thảm Amazon Basics — Amazon Basics Rug",
+      "category_id": "abo-tham",
+      "category_name": "Thảm",
+      "price_vnd": 390000,
+      "color": "be",
+      "gender": null,
+      "brand": "Amazon Basics"
+    },
+    {
+      "id": "abo-e2d4af803b10dafc015c",
+      "name_vi": "Giày nam Amazon Brand - Symbol — AZ-SY-408",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "trắng",
+      "gender": "nam",
+      "brand": "Amazon Brand - Symbol"
+    },
+    {
+      "id": "abo-1e4cbb47690b763c2b9b",
+      "name_vi": "Giày nữ 206 Collective — AW0004APearlized Champagne",
+      "category_id": "abo-giay-nu",
+      "category_name": "Giày nữ",
+      "price_vnd": 490000,
+      "color": "Gold Metallic Leather",
+      "gender": "nữ",
+      "brand": "206 Collective"
+    },
+    {
+      "id": "abo-bb49f1b245319ced34fb",
+      "name_vi": "Ốp điện thoại Amazon Brand - Solimo — Asus Zenfone Max Pro M1 ZB601KL",
+      "category_id": "abo-op-dien-thoai",
+      "category_name": "Ốp điện thoại",
+      "price_vnd": 99000,
+      "color": "Others",
+      "gender": null,
+      "brand": "Amazon Brand - Solimo"
+    },
+    {
+      "id": "abo-62648adc901a986c3862",
+      "name_vi": "Dụng cụ nhà bếp AmazonBasics — SX-5PC",
+      "category_id": "abo-dung-cu-bep",
+      "category_name": "Dụng cụ nhà bếp",
+      "price_vnd": 290000,
+      "color": "Chưa có thông tin",
+      "gender": null,
+      "brand": "AmazonBasics"
+    },
+    {
+      "id": "abo-d7bb8a4c654d8dfe9211",
+      "name_vi": "Bốt nam find. — Eli",
+      "category_id": "abo-giay-nam",
+      "category_name": "Bốt nam",
+      "price_vnd": 490000,
+      "color": "đen",
+      "gender": "nam",
+      "brand": "find."
+    },
+    {
+      "id": "abo-ba11e255205999e6cb33",
+      "name_vi": "Giày nữ  — Listilla",
+      "category_id": "abo-giay-nu",
+      "category_name": "Giày nữ",
+      "price_vnd": 490000,
+      "color": "Chưa có thông tin",
+      "gender": "nữ",
+      "brand": null
+    },
+    {
+      "id": "abo-079890493c0f0b63ced5",
+      "name_vi": "Ốp điện thoại Amazon Brand - Solimo — Xiaomi Redmi 8A",
+      "category_id": "abo-op-dien-thoai",
+      "category_name": "Ốp điện thoại",
+      "price_vnd": 99000,
+      "color": "multi-colored",
+      "gender": null,
+      "brand": "Amazon Brand - Solimo"
+    },
+    {
+      "id": "abo-c7ed56c66ab021c053c3",
+      "name_vi": "Thảm Rivet — I55I8040IVYBLUF00",
+      "category_id": "abo-tham",
+      "category_name": "Thảm",
+      "price_vnd": 390000,
+      "color": "xanh dương",
+      "gender": null,
+      "brand": "Rivet"
+    },
+    {
+      "id": "abo-57b172e45f60dd4d5e34",
+      "name_vi": "Giày nam 206 Collective — AM0017ABrown",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "nâu",
+      "gender": "nam",
+      "brand": "206 Collective"
+    },
+    {
+      "id": "abo-fb2d6ee24664e3cca28c",
+      "name_vi": "Giày nữ find. — Soft Leather",
+      "category_id": "abo-giay-nu",
+      "category_name": "Giày nữ",
+      "price_vnd": 490000,
+      "color": "hồng",
+      "gender": "nữ",
+      "brand": "find."
+    },
+    {
+      "id": "abo-fdaab111ec4a369bc91b",
+      "name_vi": "Ốp điện thoại Amazon Brand - Solimo — LG Stylus 3",
+      "category_id": "abo-op-dien-thoai",
+      "category_name": "Ốp điện thoại",
+      "price_vnd": 99000,
+      "color": "Others",
+      "gender": null,
+      "brand": "Amazon Brand - Solimo"
+    },
+    {
+      "id": "abo-abb9dea924a3f717e3c6",
+      "name_vi": "Ghế sofa Rivet — 3660QA-03",
+      "category_id": "abo-sofa",
+      "category_name": "Ghế sofa",
+      "price_vnd": 2990000,
+      "color": "Steel",
+      "gender": null,
+      "brand": "Rivet"
+    },
+    {
+      "id": "abo-ef2d756463739e0e10b8",
+      "name_vi": "Giày nam Amazon Brand - Symbol — B075Z31P98",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "nâu nhạt",
+      "gender": "nam",
+      "brand": "Amazon Brand - Symbol"
+    },
+    {
+      "id": "abo-c2d277b41a6b9acd130f",
+      "name_vi": "Giày nữ 206 Collective — Mercer Dress Pump",
+      "category_id": "abo-giay-nu",
+      "category_name": "Giày nữ",
+      "price_vnd": 490000,
+      "color": "Nude Patent Leather",
+      "gender": "nữ",
+      "brand": "206 Collective"
+    },
+    {
+      "id": "abo-308a823f49b2b5d58532",
+      "name_vi": "Bộ sạc AmazonBasics — PD98U-4UTGA",
+      "category_id": "abo-bo-sac",
+      "category_name": "Bộ sạc",
+      "price_vnd": 190000,
+      "color": "đen",
+      "gender": null,
+      "brand": "AmazonBasics"
+    },
+    {
+      "id": "abo-b17798f4fbfc3995b34b",
+      "name_vi": "Ghế sofa Alkove — CANOVA.V214.L25.1822 CORDA",
+      "category_id": "abo-sofa",
+      "category_name": "Ghế sofa",
+      "price_vnd": 2990000,
+      "color": "Ecru",
+      "gender": null,
+      "brand": "Alkove"
+    },
+    {
+      "id": "abo-1a20a2d5b699155f63ae",
+      "name_vi": "Giày nam Amazon Brand - Symbol — AZ-YS-391A",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "đen",
+      "gender": "nam",
+      "brand": "Amazon Brand - Symbol"
+    },
+    {
+      "id": "abo-74b3869bb10cb38794aa",
+      "name_vi": "Giày nữ The Fix — Veronica Platform Peep Toe Pump",
+      "category_id": "abo-giay-nu",
+      "category_name": "Giày nữ",
+      "price_vnd": 490000,
+      "color": "đen",
+      "gender": "nữ",
+      "brand": "The Fix"
+    },
+    {
+      "id": "abo-791ca85aaaed94597566",
+      "name_vi": "Bộ sạc AmazonBasics — UTC6061UK-BK",
+      "category_id": "abo-bo-sac",
+      "category_name": "Bộ sạc",
+      "price_vnd": 190000,
+      "color": "đen",
+      "gender": null,
+      "brand": "AmazonBasics"
+    },
+    {
+      "id": "abo-e373f4a9f46df3fe8240",
+      "name_vi": "Ghế Stone & Beam — AS-377-MidJade",
+      "category_id": "abo-ghe",
+      "category_name": "Ghế",
+      "price_vnd": 990000,
+      "color": "Shell",
+      "gender": null,
+      "brand": "Stone & Beam"
+    },
+    {
+      "id": "abo-00c514834bf1afb3aeb1",
+      "name_vi": "Giày nam Amazon Brand - Symbol — B07NQQV2YC",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "Chưa có thông tin",
+      "gender": "nam",
+      "brand": "Amazon Brand - Symbol"
+    },
+    {
+      "id": "abo-c8a9cb1d865e332105a7",
+      "name_vi": "Giày nữ find. — T99AL7008",
+      "category_id": "abo-giay-nu",
+      "category_name": "Giày nữ",
+      "price_vnd": 490000,
+      "color": "đen",
+      "gender": "nữ",
+      "brand": "find."
+    },
+    {
+      "id": "abo-2d80ea05b3c739828545",
+      "name_vi": "Bộ sạc AmazonBasics — CLA-2U5480_white",
+      "category_id": "abo-bo-sac",
+      "category_name": "Bộ sạc",
+      "price_vnd": 190000,
+      "color": "trắng",
+      "gender": null,
+      "brand": "AmazonBasics"
+    },
+    {
+      "id": "abo-733ebd1593d26e7dbc1f",
+      "name_vi": "Thảm Stone & Beam — LINDNLND03TEAL063087",
+      "category_id": "abo-tham",
+      "category_name": "Thảm",
+      "price_vnd": 390000,
+      "color": "Teal",
+      "gender": null,
+      "brand": "Stone & Beam"
+    },
+    {
+      "id": "abo-33b1180c3262f72c924d",
+      "name_vi": "Giày nam Klepe — WD18-47/BLK",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "đen",
+      "gender": "nam",
+      "brand": "Klepe"
+    },
+    {
+      "id": "abo-476d12bfc54e0bf1f0a6",
+      "name_vi": "Giày nữ 206 Collective — Leona Loafer",
+      "category_id": "abo-giay-nu",
+      "category_name": "Giày nữ",
+      "price_vnd": 490000,
+      "color": "Burgundy Suede",
+      "gender": "nữ",
+      "brand": "206 Collective"
+    },
+    {
+      "id": "abo-8a1e5a22a992a96c1092",
+      "name_vi": "Loa  — WP926BLACK",
+      "category_id": "abo-loa",
+      "category_name": "Loa",
+      "price_vnd": 590000,
+      "color": "đen",
+      "gender": null,
+      "brand": null
+    },
+    {
+      "id": "abo-7fa32cd57279ee2db42b",
+      "name_vi": "Máy pha cà phê Amazon Brand - Solimo — SOL_KA_102",
+      "category_id": "abo-may-pha-ca-phe",
+      "category_name": "Máy pha cà phê",
+      "price_vnd": 990000,
+      "color": "đen",
+      "gender": null,
+      "brand": "Amazon Brand - Solimo"
+    },
+    {
+      "id": "abo-e7cd4b6015d94890c72f",
+      "name_vi": "Giày nam find. — Maximum",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "Rot Dark Burgundy",
+      "gender": "nam",
+      "brand": "find."
+    },
+    {
+      "id": "abo-8e3d8fd779413b555f89",
+      "name_vi": "Giày nữ find. — Sana-1w3-045",
+      "category_id": "abo-giay-nu",
+      "category_name": "Giày nữ",
+      "price_vnd": 490000,
+      "color": "Chưa có thông tin",
+      "gender": "nữ",
+      "brand": "find."
+    },
+    {
+      "id": "abo-8d43cb92edcc87aec67d",
+      "name_vi": "Tai nghe AmazonBasics — 17E12-GR",
+      "category_id": "abo-tai-nghe",
+      "category_name": "Tai nghe",
+      "price_vnd": 390000,
+      "color": "xanh lá",
+      "gender": null,
+      "brand": "AmazonBasics"
+    },
+    {
+      "id": "abo-455b37279be1ab32f83e",
+      "name_vi": "Ghế sofa Stone & Beam — 2675-S-Grey",
+      "category_id": "abo-sofa",
+      "category_name": "Ghế sofa",
+      "price_vnd": 2990000,
+      "color": "xám",
+      "gender": null,
+      "brand": "Stone & Beam"
+    },
+    {
+      "id": "abo-76bb9bcc7b7014242b7f",
+      "name_vi": "Giày nam Amazon Brand - Symbol — AZ-IK-0013B",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "xanh than",
+      "gender": "nam",
+      "brand": "Amazon Brand - Symbol"
+    },
+    {
+      "id": "abo-e371658dbb5b00ba2976",
+      "name_vi": "Giày nữ find. — AMZ201",
+      "category_id": "abo-giay-nu",
+      "category_name": "Giày nữ",
+      "price_vnd": 490000,
+      "color": "hồng",
+      "gender": "nữ",
+      "brand": "find."
+    },
+    {
+      "id": "abo-9e5c099a4e7ba7c0880a",
+      "name_vi": "Tai nghe AmazonBasics — HP01 V2 Premium",
+      "category_id": "abo-tai-nghe",
+      "category_name": "Tai nghe",
+      "price_vnd": 390000,
+      "color": "đen",
+      "gender": null,
+      "brand": "AmazonBasics"
+    },
+    {
+      "id": "abo-4e7c3ee9213849d33eb8",
+      "name_vi": "Dụng cụ nhà bếp Amazon Brand - Solimo — B07PBBW455",
+      "category_id": "abo-dung-cu-bep",
+      "category_name": "Dụng cụ nhà bếp",
+      "price_vnd": 290000,
+      "color": "Silver",
+      "gender": null,
+      "brand": "Amazon Brand - Solimo"
+    },
+    {
+      "id": "abo-2048635769b96eeb7db1",
+      "name_vi": "Giày nam Chadstone — Ch 122",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "đen",
+      "gender": "nam",
+      "brand": "Chadstone"
+    },
+    {
+      "id": "abo-1d8b2552166c1db8183f",
+      "name_vi": "Sandal nữ The Fix — Gia Colorblock Platform Sandal with Ankle Strap",
+      "category_id": "abo-giay-nu",
+      "category_name": "Sandal nữ",
+      "price_vnd": 490000,
+      "color": "Prosecco/Gold Multi",
+      "gender": "nữ",
+      "brand": "The Fix"
+    },
+    {
+      "id": "abo-e7501cc482cb6980ac7a",
+      "name_vi": "Phụ kiện máy tính AmazonBasics — K4R-US",
+      "category_id": "abo-phu-kien-may-tinh",
+      "category_name": "Phụ kiện máy tính",
+      "price_vnd": 190000,
+      "color": "đen",
+      "gender": null,
+      "brand": "AmazonBasics"
+    },
+    {
+      "id": "abo-b9e6a63210c73625bc80",
+      "name_vi": "Ghế Strathwood by Amazon.com — DE113013",
+      "category_id": "abo-ghe",
+      "category_name": "Ghế",
+      "price_vnd": 990000,
+      "color": "Chưa có thông tin",
+      "gender": null,
+      "brand": "Strathwood by Amazon.com"
+    },
+    {
+      "id": "abo-56668b47b51e8f6d53b3",
+      "name_vi": "Giày nam find. — Suede Casual Desert",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "Chưa có thông tin",
+      "gender": "nam",
+      "brand": "find."
+    },
+    {
+      "id": "abo-fc1e2d0a1bb9b5530b25",
+      "name_vi": "Giày nữ The Fix — 880153",
+      "category_id": "abo-giay-nu",
+      "category_name": "Giày nữ",
+      "price_vnd": 490000,
+      "color": "Blush Champagne Satin",
+      "gender": "nữ",
+      "brand": "The Fix"
+    },
+    {
+      "id": "abo-b3649dd5ee900fa8f148",
+      "name_vi": "Loa AmazonBasics — WP912BLACK",
+      "category_id": "abo-loa",
+      "category_name": "Loa",
+      "price_vnd": 590000,
+      "color": "đen",
+      "gender": null,
+      "brand": "AmazonBasics"
+    },
+    {
+      "id": "abo-b15af54722d7f012fd11",
+      "name_vi": "Bàn Amazon Brand - Solimo — Sol_Mer_65",
+      "category_id": "abo-ban",
+      "category_name": "Bàn",
+      "price_vnd": 1290000,
+      "color": "nâu",
+      "gender": null,
+      "brand": "Amazon Brand - Solimo"
+    },
+    {
+      "id": "abo-1f7771f220d03d56ea93",
+      "name_vi": "Giày nam Amazon Brand - Symactive — SYM-SS-036A",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "xám",
+      "gender": "nam",
+      "brand": "Amazon Brand - Symactive"
+    },
+    {
+      "id": "abo-7caddbf710750c0c068b",
+      "name_vi": "Giày nữ  — Wedge Leather Espadrille",
+      "category_id": "abo-giay-nu",
+      "category_name": "Giày nữ",
+      "price_vnd": 490000,
+      "color": "Chưa có thông tin",
+      "gender": "nữ",
+      "brand": null
+    },
+    {
+      "id": "abo-079a59cdeda01c2e1ec7",
+      "name_vi": "Bàn phím AmazonBasics — B08HKSWD64",
+      "category_id": "abo-ban-phim",
+      "category_name": "Bàn phím",
+      "price_vnd": 290000,
+      "color": "đen",
+      "gender": null,
+      "brand": "AmazonBasics"
+    },
+    {
+      "id": "abo-a679629040ad15988c4f",
+      "name_vi": "Ghế sofa Stone & Beam — K10200ES",
+      "category_id": "abo-sofa",
+      "category_name": "Ghế sofa",
+      "price_vnd": 2990000,
+      "color": "xám",
+      "gender": null,
+      "brand": "Stone & Beam"
+    },
+    {
+      "id": "abo-1c3c0d3210809f805d53",
+      "name_vi": "Giày nam Amazon Brand - Symbol — AZ-SH-01C",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "xanh dương",
+      "gender": "nam",
+      "brand": "Amazon Brand - Symbol"
+    },
+    {
+      "id": "abo-66bcaaf906efcbd6bbc5",
+      "name_vi": "Sandal nữ find. — Lace-s-2-46",
+      "category_id": "abo-giay-nu",
+      "category_name": "Sandal nữ",
+      "price_vnd": 490000,
+      "color": "xanh dương",
+      "gender": "nữ",
+      "brand": "find."
+    },
+    {
+      "id": "abo-06978c8969c816663d99",
+      "name_vi": "Tai nghe AmazonBasics — HL-006334",
+      "category_id": "abo-tai-nghe",
+      "category_name": "Tai nghe",
+      "price_vnd": 390000,
+      "color": "đen",
+      "gender": null,
+      "brand": "AmazonBasics"
+    },
+    {
+      "id": "abo-9e8637d6f71bc11da060",
+      "name_vi": "Bàn Rivet — F10842XAM",
+      "category_id": "abo-ban",
+      "category_name": "Bàn",
+      "price_vnd": 1290000,
+      "color": "Chưa có thông tin",
+      "gender": null,
+      "brand": "Rivet"
+    },
+    {
+      "id": "abo-7ae9ec887afca81636e8",
+      "name_vi": "Giày nam Amazon Brand - Arthur Harvey — AZ-ST-50",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "nâu nhạt",
+      "gender": "nam",
+      "brand": "Amazon Brand - Arthur Harvey"
+    },
+    {
+      "id": "abo-907ae4642ae874bae0ee",
+      "name_vi": "Giày nữ find. — 123957",
+      "category_id": "abo-giay-nu",
+      "category_name": "Giày nữ",
+      "price_vnd": 490000,
+      "color": "đỏ",
+      "gender": "nữ",
+      "brand": "find."
+    },
+    {
+      "id": "abo-9a52a7179953ea1ce79c",
+      "name_vi": "Bộ chuyển đổi AmazonBasics — PBH-20639-cr",
+      "category_id": "abo-bo-sac",
+      "category_name": "Bộ chuyển đổi",
+      "price_vnd": 190000,
+      "color": "Chưa có thông tin",
+      "gender": null,
+      "brand": "AmazonBasics"
+    },
+    {
+      "id": "abo-28883c07ad443fc141f7",
+      "name_vi": "Thảm Stone & Beam — BRDLYBRD01NATURAL060084",
+      "category_id": "abo-tham",
+      "category_name": "Thảm",
+      "price_vnd": 390000,
+      "color": "Natural",
+      "gender": null,
+      "brand": "Stone & Beam"
+    },
+    {
+      "id": "abo-4670d5d847db38fb8d87",
+      "name_vi": "Giày nam find. — Finnick",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "Chưa có thông tin",
+      "gender": "nam",
+      "brand": "find."
+    },
+    {
+      "id": "abo-db4a00d9c32985ed5731",
+      "name_vi": "Bốt nữ The Fix — Giana Open Toe Bootie With Pearl Buckle",
+      "category_id": "abo-giay-nu",
+      "category_name": "Bốt nữ",
+      "price_vnd": 490000,
+      "color": "trắng",
+      "gender": "nữ",
+      "brand": "The Fix"
+    },
+    {
+      "id": "abo-8b02eab78d3be3c275f3",
+      "name_vi": "Bộ chuyển đổi AmazonBasics — L6LUD009-CS-R-cr",
+      "category_id": "abo-bo-sac",
+      "category_name": "Bộ chuyển đổi",
+      "price_vnd": 190000,
+      "color": "đen",
+      "gender": null,
+      "brand": "AmazonBasics"
+    },
+    {
+      "id": "abo-76423c2cbe80cf98d520",
+      "name_vi": "Bàn Alkove — N357008/OIL",
+      "category_id": "abo-ban",
+      "category_name": "Bàn",
+      "price_vnd": 1290000,
+      "color": "Wild Oak",
+      "gender": null,
+      "brand": "Alkove"
+    },
+    {
+      "id": "abo-300e7e51231c2acc7fdf",
+      "name_vi": "Giày nam Nubeno — 5603",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "đen",
+      "gender": "nam",
+      "brand": "Nubeno"
+    },
+    {
+      "id": "abo-3aedc0e930390aa55333",
+      "name_vi": "Bốt nữ find. — AMZ196",
+      "category_id": "abo-giay-nu",
+      "category_name": "Bốt nữ",
+      "price_vnd": 490000,
+      "color": "Chưa có thông tin",
+      "gender": "nữ",
+      "brand": "find."
+    },
+    {
+      "id": "abo-8a525093e904013f3a90",
+      "name_vi": "Bộ sạc AmazonBasics — MW-SAS-001",
+      "category_id": "abo-bo-sac",
+      "category_name": "Bộ sạc",
+      "price_vnd": 190000,
+      "color": "đen",
+      "gender": null,
+      "brand": "AmazonBasics"
+    },
+    {
+      "id": "abo-388fce9c2482890f5f60",
+      "name_vi": "Ghế sofa  — Bouncing",
+      "category_id": "abo-sofa",
+      "category_name": "Ghế sofa",
+      "price_vnd": 2990000,
+      "color": "Chưa có thông tin",
+      "gender": null,
+      "brand": null
+    },
+    {
+      "id": "abo-e10696e5180faec36a06",
+      "name_vi": "Giày nam Amazon Brand - Symbol — B07VP49PWD",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "đen",
+      "gender": "nam",
+      "brand": "Amazon Brand - Symbol"
+    },
+    {
+      "id": "abo-d2090f16649d37b8d4b5",
+      "name_vi": "Giày nữ Solefit — SLFT-0066",
+      "category_id": "abo-giay-nu",
+      "category_name": "Giày nữ",
+      "price_vnd": 490000,
+      "color": "đen",
+      "gender": "nữ",
+      "brand": "Solefit"
+    },
+    {
+      "id": "abo-65a3b7bf84adadd2fe8c",
+      "name_vi": "Bàn phím AmazonBasics — K4N-IT",
+      "category_id": "abo-ban-phim",
+      "category_name": "Bàn phím",
+      "price_vnd": 290000,
+      "color": "đen",
+      "gender": null,
+      "brand": "AmazonBasics"
+    },
+    {
+      "id": "abo-e2d591829520f3276004",
+      "name_vi": "Chảo Amazon Brand - Solimo — SOLHA001",
+      "category_id": "abo-chao",
+      "category_name": "Chảo",
+      "price_vnd": 390000,
+      "color": "đen",
+      "gender": null,
+      "brand": "Amazon Brand - Solimo"
+    },
+    {
+      "id": "abo-9d7adf5bef12078f11e2",
+      "name_vi": "Giày nam find. — Moccasin",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "Braun (Chocolate/ Gum)",
+      "gender": "nam",
+      "brand": "find."
+    },
+    {
+      "id": "abo-9640d3593b024c73f67c",
+      "name_vi": "Giày nữ 206 Collective — Coyle Round Toe Block Heel Pump - High",
+      "category_id": "abo-giay-nu",
+      "category_name": "Giày nữ",
+      "price_vnd": 490000,
+      "color": "Blush Suede",
+      "gender": "nữ",
+      "brand": "206 Collective"
+    },
+    {
+      "id": "abo-1e09d879814e8ee2b46c",
+      "name_vi": "Tai nghe AmazonBasics — ABGS003",
+      "category_id": "abo-tai-nghe",
+      "category_name": "Tai nghe",
+      "price_vnd": 390000,
+      "color": "đỏ",
+      "gender": null,
+      "brand": "AmazonBasics"
+    },
+    {
+      "id": "abo-f9e30ee895cc6d8483fc",
+      "name_vi": "Ghế Pinzon by Amazon — BEN18-CRL",
+      "category_id": "abo-ghe",
+      "category_name": "Ghế",
+      "price_vnd": 990000,
+      "color": "Cream",
+      "gender": null,
+      "brand": "Pinzon by Amazon"
+    },
+    {
+      "id": "abo-4f60541a02aaef0511ac",
+      "name_vi": "Giày nam Amazon Brand - Symbol — AZ-YS-200 B",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "Orange",
+      "gender": "nam",
+      "brand": "Amazon Brand - Symbol"
+    },
+    {
+      "id": "abo-5d6116981294a2788d7d",
+      "name_vi": "Giày nữ 206 Collective — Mercer Dress Pump",
+      "category_id": "abo-giay-nu",
+      "category_name": "Giày nữ",
+      "price_vnd": 490000,
+      "color": "Nude Leather",
+      "gender": "nữ",
+      "brand": "206 Collective"
+    },
+    {
+      "id": "abo-809bbfba5de9074bee66",
+      "name_vi": "Bộ sạc AmazonBasics — PD36U-2TNB",
+      "category_id": "abo-bo-sac",
+      "category_name": "Bộ sạc",
+      "price_vnd": 190000,
+      "color": "đen",
+      "gender": null,
+      "brand": "AmazonBasics"
+    },
+    {
+      "id": "abo-09febd66bbbbb88a79f6",
+      "name_vi": "Gối Ravenna Home — E13S",
+      "category_id": "abo-goi",
+      "category_name": "Gối",
+      "price_vnd": 190000,
+      "color": "nâu nhạt",
+      "gender": null,
+      "brand": "Ravenna Home"
+    },
+    {
+      "id": "abo-cfddd3bb61d9adc77fb6",
+      "name_vi": "Giày nam  — Abbott Leather",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "Chưa có thông tin",
+      "gender": "nam",
+      "brand": null
+    },
+    {
+      "id": "abo-4640fe8c83f13132b814",
+      "name_vi": "Giày nữ Amazon Brand - Symbol — AZ-WSY-09",
+      "category_id": "abo-giay-nu",
+      "category_name": "Giày nữ",
+      "price_vnd": 490000,
+      "color": "trắng",
+      "gender": "nữ",
+      "brand": "Amazon Brand - Symbol"
+    },
+    {
+      "id": "abo-05af7037d83fc2ad4427",
+      "name_vi": "Loa AmazonBasics — F720UK",
+      "category_id": "abo-loa",
+      "category_name": "Loa",
+      "price_vnd": 590000,
+      "color": "đen",
+      "gender": null,
+      "brand": "AmazonBasics"
+    },
+    {
+      "id": "abo-7813496f2370d9b47265",
+      "name_vi": "Bàn Ravenna Home — AMZPL206",
+      "category_id": "abo-ban",
+      "category_name": "Bàn",
+      "price_vnd": 1290000,
+      "color": "Chưa có thông tin",
+      "gender": null,
+      "brand": "Ravenna Home"
+    },
+    {
+      "id": "abo-604db45ff3cbdd9a1810",
+      "name_vi": "Giày nam Bourge — Vega-2",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "trắng",
+      "gender": "nam",
+      "brand": "Bourge"
+    },
+    {
+      "id": "abo-8771a666f262434572c4",
+      "name_vi": "Sandal nữ  — 880349",
+      "category_id": "abo-giay-nu",
+      "category_name": "Sandal nữ",
+      "price_vnd": 490000,
+      "color": "Chưa có thông tin",
+      "gender": "nữ",
+      "brand": null
+    },
+    {
+      "id": "abo-d411c990131775aca658",
+      "name_vi": "Bộ sạc AmazonBasics — AZDS013",
+      "category_id": "abo-bo-sac",
+      "category_name": "Bộ sạc",
+      "price_vnd": 190000,
+      "color": "đen",
+      "gender": null,
+      "brand": "AmazonBasics"
+    },
+    {
+      "id": "abo-9cea1515f6f2913499e4",
+      "name_vi": "Ghế sofa Stone & Beam — K2700S",
+      "category_id": "abo-sofa",
+      "category_name": "Ghế sofa",
+      "price_vnd": 2990000,
+      "color": "Haze",
+      "gender": null,
+      "brand": "Stone & Beam"
+    },
+    {
+      "id": "abo-5c86b55699a175966118",
+      "name_vi": "Giày nam Amazon Brand - Symbol — B079VTSB1G",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "Chưa có thông tin",
+      "gender": "nam",
+      "brand": "Amazon Brand - Symbol"
+    },
+    {
+      "id": "abo-6aa3f543ea8c9851daf7",
+      "name_vi": "Sandal nữ  — Spano Women's Casual Thong With Ankle Strap Sandal",
+      "category_id": "abo-giay-nu",
+      "category_name": "Sandal nữ",
+      "price_vnd": 490000,
+      "color": "Chưa có thông tin",
+      "gender": "nữ",
+      "brand": null
+    },
+    {
+      "id": "abo-796afe57f7911986cda9",
+      "name_vi": "Phụ kiện máy tính AmazonBasics — HL-007263",
+      "category_id": "abo-phu-kien-may-tinh",
+      "category_name": "Phụ kiện máy tính",
+      "price_vnd": 190000,
+      "color": "đen",
+      "gender": null,
+      "brand": "AmazonBasics"
+    },
+    {
+      "id": "abo-fd2b3ee5ef1a347552b2",
+      "name_vi": "Bàn Ravenna Home — RH-CT002-AG",
+      "category_id": "abo-ban",
+      "category_name": "Bàn",
+      "price_vnd": 1290000,
+      "color": "xám",
+      "gender": null,
+      "brand": "Ravenna Home"
+    },
+    {
+      "id": "abo-95afc9196508165173e4",
+      "name_vi": "Giày nam Amazon Brand - Symactive — SYM-SS-026C",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "xanh than",
+      "gender": "nam",
+      "brand": "Amazon Brand - Symactive"
+    },
+    {
+      "id": "abo-824283092ca6515b316a",
+      "name_vi": "Giày nữ find. — Leather",
+      "category_id": "abo-giay-nu",
+      "category_name": "Giày nữ",
+      "price_vnd": 490000,
+      "color": "hồng",
+      "gender": "nữ",
+      "brand": "find."
+    },
+    {
+      "id": "abo-16eeaf6d65d2fd99bc28",
+      "name_vi": "Bàn phím AmazonBasics — B08HJRHBK1",
+      "category_id": "abo-ban-phim",
+      "category_name": "Bàn phím",
+      "price_vnd": 290000,
+      "color": "đen",
+      "gender": null,
+      "brand": "AmazonBasics"
+    },
+    {
+      "id": "abo-665f02f8b5e623db10df",
+      "name_vi": "Bàn Strathwood — 652A",
+      "category_id": "abo-ban",
+      "category_name": "Bàn",
+      "price_vnd": 1290000,
+      "color": "Chưa có thông tin",
+      "gender": null,
+      "brand": "Strathwood"
+    },
+    {
+      "id": "abo-9eb05df628c8bc7a44e2",
+      "name_vi": "Giày nam Klepe — BX031/NVY",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "xanh than",
+      "gender": "nam",
+      "brand": "Klepe"
+    },
+    {
+      "id": "abo-7378f62e1bcb0ce4e2e9",
+      "name_vi": "Giày nữ CARE OF by PUMA — Leather Platform Court",
+      "category_id": "abo-giay-nu",
+      "category_name": "Giày nữ",
+      "price_vnd": 490000,
+      "color": "be",
+      "gender": "nữ",
+      "brand": "CARE OF by PUMA"
+    },
+    {
+      "id": "abo-de348ed7ecf45e4dbcdf",
+      "name_vi": "Phụ kiện máy tính AmazonBasics — PC011",
+      "category_id": "abo-phu-kien-may-tinh",
+      "category_name": "Phụ kiện máy tính",
+      "price_vnd": 190000,
+      "color": "đen",
+      "gender": null,
+      "brand": "AmazonBasics"
+    },
+    {
+      "id": "abo-431ff47790d0b98bec5c",
+      "name_vi": "Ghế Rivet — Y1555-B-1105",
+      "category_id": "abo-ghe",
+      "category_name": "Ghế",
+      "price_vnd": 990000,
+      "color": "Ivory",
+      "gender": null,
+      "brand": "Rivet"
+    },
+    {
+      "id": "abo-c733bd05b0dff4704e54",
+      "name_vi": "Giày nam Amazon Brand - Symbol — AZ-KY-335A",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "xanh than",
+      "gender": "nam",
+      "brand": "Amazon Brand - Symbol"
+    },
+    {
+      "id": "abo-518aa5b5a5ab457f7247",
+      "name_vi": "Sandal nữ find. — #_Shana-10j41",
+      "category_id": "abo-giay-nu",
+      "category_name": "Sandal nữ",
+      "price_vnd": 490000,
+      "color": "xanh lá",
+      "gender": "nữ",
+      "brand": "find."
+    },
+    {
+      "id": "abo-de415f38d5e33beeb3fd",
+      "name_vi": "Bàn phím AmazonBasics — KT-1081 AZERTY",
+      "category_id": "abo-ban-phim",
+      "category_name": "Bàn phím",
+      "price_vnd": 290000,
+      "color": "Chưa có thông tin",
+      "gender": null,
+      "brand": "AmazonBasics"
+    },
+    {
+      "id": "abo-5201acf029973a073d28",
+      "name_vi": "Đèn bàn Ravenna Home — 21957-002",
+      "category_id": "abo-den-ban",
+      "category_name": "Đèn bàn",
+      "price_vnd": 490000,
+      "color": "trắng",
+      "gender": null,
+      "brand": "Ravenna Home"
+    },
+    {
+      "id": "abo-edf27f94fc9f78daaebb",
+      "name_vi": "Giày nam Amazon Brand - Symbol — B075ZTLHRW",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "đen",
+      "gender": "nam",
+      "brand": "Amazon Brand - Symbol"
+    },
+    {
+      "id": "abo-6e922ed25781b6cc60d4",
+      "name_vi": "Giày nữ The Fix — 880054Black",
+      "category_id": "abo-giay-nu",
+      "category_name": "Giày nữ",
+      "price_vnd": 490000,
+      "color": "đen",
+      "gender": "nữ",
+      "brand": "The Fix"
+    },
+    {
+      "id": "abo-dd9675e9101bc1f2c176",
+      "name_vi": "Phụ kiện máy tính  — AKC-06BL",
+      "category_id": "abo-phu-kien-may-tinh",
+      "category_name": "Phụ kiện máy tính",
+      "price_vnd": 190000,
+      "color": "Chưa có thông tin",
+      "gender": null,
+      "brand": null
+    },
+    {
+      "id": "abo-62f6ffd1672185a0d2e4",
+      "name_vi": "Ghế sofa Strathwood by Amazon.com — 5950-20",
+      "category_id": "abo-sofa",
+      "category_name": "Ghế sofa",
+      "price_vnd": 2990000,
+      "color": "Mahogony",
+      "gender": null,
+      "brand": "Strathwood by Amazon.com"
+    },
+    {
+      "id": "abo-4f695752f62139be067d",
+      "name_vi": "Bốt nam  — Chukka",
+      "category_id": "abo-giay-nam",
+      "category_name": "Bốt nam",
+      "price_vnd": 490000,
+      "color": "Chưa có thông tin",
+      "gender": "nam",
+      "brand": null
+    },
+    {
+      "id": "abo-a539ecf5f219beb8f228",
+      "name_vi": "Giày nữ find. — Two Band Sparkly",
+      "category_id": "abo-giay-nu",
+      "category_name": "Giày nữ",
+      "price_vnd": 490000,
+      "color": "Chưa có thông tin",
+      "gender": "nữ",
+      "brand": "find."
+    },
+    {
+      "id": "abo-9a1c78604b7ad5ba7221",
+      "name_vi": "Bộ chuyển đổi AmazonBasics — H-VL",
+      "category_id": "abo-bo-sac",
+      "category_name": "Bộ chuyển đổi",
+      "price_vnd": 190000,
+      "color": "Chưa có thông tin",
+      "gender": null,
+      "brand": "AmazonBasics"
+    },
+    {
+      "id": "abo-9cc8a00e7a504ff979d9",
+      "name_vi": "Dụng cụ nhà bếp AmazonBasics — AB-2000WH",
+      "category_id": "abo-dung-cu-bep",
+      "category_name": "Dụng cụ nhà bếp",
+      "price_vnd": 290000,
+      "color": "Chưa có thông tin",
+      "gender": null,
+      "brand": "AmazonBasics"
+    },
+    {
+      "id": "abo-ec51bcea8e12310c7c62",
+      "name_vi": "Giày nam Amazon Brand - Symbol — B075YY6WS7",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "nâu",
+      "gender": "nam",
+      "brand": "Amazon Brand - Symbol"
+    },
+    {
+      "id": "abo-b0d12ebd21ef4c90cf24",
+      "name_vi": "Giày nữ Amazon Essentials — Knit Ballet Flat",
+      "category_id": "abo-giay-nu",
+      "category_name": "Giày nữ",
+      "price_vnd": 490000,
+      "color": "đen",
+      "gender": "nữ",
+      "brand": "Amazon Essentials"
+    },
+    {
+      "id": "abo-6e674a68d9046685e9eb",
+      "name_vi": "Bộ chuyển đổi AMAZONBASICS — 1501742-01",
+      "category_id": "abo-bo-sac",
+      "category_name": "Bộ chuyển đổi",
+      "price_vnd": 190000,
+      "color": "Chưa có thông tin",
+      "gender": null,
+      "brand": "AMAZONBASICS"
+    },
+    {
+      "id": "abo-d4c7304ebc05bc658b39",
+      "name_vi": "Ghế Movian — 0000083644",
+      "category_id": "abo-ghe",
+      "category_name": "Ghế",
+      "price_vnd": 990000,
+      "color": "xám",
+      "gender": null,
+      "brand": "Movian"
+    },
+    {
+      "id": "abo-8ed771f8abb0b3a4beeb",
+      "name_vi": "Giày nam Amazon Brand - Symbol — AZ-SH-03G",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "Charcoal",
+      "gender": "nam",
+      "brand": "Amazon Brand - Symbol"
+    },
+    {
+      "id": "abo-1c34c6d11449a5f46310",
+      "name_vi": "Giày nữ The Fix — Felicia Slingback Kitten Heel Pump with Pearls",
+      "category_id": "abo-giay-nu",
+      "category_name": "Giày nữ",
+      "price_vnd": 490000,
+      "color": "Sorbet Crushed Velvet",
+      "gender": "nữ",
+      "brand": "The Fix"
+    },
+    {
+      "id": "abo-4e94a70a51c79fa30dbb",
+      "name_vi": "Tai nghe AmazonBasics — EB01PK",
+      "category_id": "abo-tai-nghe",
+      "category_name": "Tai nghe",
+      "price_vnd": 390000,
+      "color": "hồng",
+      "gender": null,
+      "brand": "AmazonBasics"
+    },
+    {
+      "id": "abo-433f953c6c84022f638e",
+      "name_vi": "Ghế sofa Rivet — L59600RLSECT",
+      "category_id": "abo-sofa",
+      "category_name": "Ghế sofa",
+      "price_vnd": 2990000,
+      "color": "Saddle",
+      "gender": null,
+      "brand": "Rivet"
+    },
+    {
+      "id": "abo-40f9cc99f24a50f68b87",
+      "name_vi": "Giày nam Amazon Brand - Symbol — AZ-KY-326A",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "đen",
+      "gender": "nam",
+      "brand": "Amazon Brand - Symbol"
+    },
+    {
+      "id": "abo-cfd897569894fe5ed605",
+      "name_vi": "Bốt nữ find. — Flat Knee Length Leather",
+      "category_id": "abo-giay-nu",
+      "category_name": "Bốt nữ",
+      "price_vnd": 490000,
+      "color": "nâu",
+      "gender": "nữ",
+      "brand": "find."
+    },
+    {
+      "id": "abo-63bdc68989121edbc466",
+      "name_vi": "Bộ chuyển đổi  — HDMI-DVI 変換ケーブル",
+      "category_id": "abo-bo-sac",
+      "category_name": "Bộ chuyển đổi",
+      "price_vnd": 190000,
+      "color": "blk",
+      "gender": null,
+      "brand": null
+    },
+    {
+      "id": "abo-ae80ba078bb8499eb3bc",
+      "name_vi": "Ghế Stone & Beam — 51308HLRC-03",
+      "category_id": "abo-ghe",
+      "category_name": "Ghế",
+      "price_vnd": 990000,
+      "color": "Stone",
+      "gender": null,
+      "brand": "Stone & Beam"
+    },
+    {
+      "id": "abo-142df26114c9cb0f83fe",
+      "name_vi": "Giày nam Fusefit — Sapphire",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "xanh than",
+      "gender": "nam",
+      "brand": "Fusefit"
+    },
+    {
+      "id": "abo-4753acc0233793dc2d35",
+      "name_vi": "Sandal nữ 206 Collective — Cameron Flat Thong Sandal",
+      "category_id": "abo-giay-nu",
+      "category_name": "Sandal nữ",
+      "price_vnd": 490000,
+      "color": "Silver Leather",
+      "gender": "nữ",
+      "brand": "206 Collective"
+    },
+    {
+      "id": "abo-c6edb07cb2bd23b0cef2",
+      "name_vi": "Bộ sạc AmazonBasics — UTC2421UK-WH",
+      "category_id": "abo-bo-sac",
+      "category_name": "Bộ sạc",
+      "price_vnd": 190000,
+      "color": "trắng",
+      "gender": null,
+      "brand": "AmazonBasics"
+    },
+    {
+      "id": "abo-83f32913bc80c90b136a",
+      "name_vi": "Ghế Rivet — 51349",
+      "category_id": "abo-ghe",
+      "category_name": "Ghế",
+      "price_vnd": 990000,
+      "color": "xanh lá",
+      "gender": null,
+      "brand": "Rivet"
+    },
+    {
+      "id": "abo-4d961c09ced655681f41",
+      "name_vi": "Bốt nam find. — Um1359",
+      "category_id": "abo-giay-nam",
+      "category_name": "Bốt nam",
+      "price_vnd": 490000,
+      "color": "nâu",
+      "gender": "nam",
+      "brand": "find."
+    },
+    {
+      "id": "abo-6595b57250af31343d11",
+      "name_vi": "Giày nữ find. — Grays",
+      "category_id": "abo-giay-nu",
+      "category_name": "Giày nữ",
+      "price_vnd": 490000,
+      "color": "Chưa có thông tin",
+      "gender": "nữ",
+      "brand": "find."
+    },
+    {
+      "id": "abo-be659fb03f1b70089752",
+      "name_vi": "Bộ sạc AmazonBasics — TYTC3011USPD-BLK",
+      "category_id": "abo-bo-sac",
+      "category_name": "Bộ sạc",
+      "price_vnd": 190000,
+      "color": "đen",
+      "gender": null,
+      "brand": "AmazonBasics"
+    },
+    {
+      "id": "abo-a667aeba660037ceec6b",
+      "name_vi": "Đèn bàn Ravenna Home — 20041-003",
+      "category_id": "abo-den-ban",
+      "category_name": "Đèn bàn",
+      "price_vnd": 490000,
+      "color": "Dark Bronze",
+      "gender": null,
+      "brand": "Ravenna Home"
+    },
+    {
+      "id": "abo-54245f9e76f618fb54ef",
+      "name_vi": "Giày nam Amazon Brand - Symbol — AZ-WS-114A",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "đen",
+      "gender": "nam",
+      "brand": "Amazon Brand - Symbol"
+    },
+    {
+      "id": "abo-4320f0b31edcc2513bd5",
+      "name_vi": "Giày nữ find. — Boot",
+      "category_id": "abo-giay-nu",
+      "category_name": "Giày nữ",
+      "price_vnd": 490000,
+      "color": "xanh lá",
+      "gender": "nữ",
+      "brand": "find."
+    },
+    {
+      "id": "abo-855469c076c754578595",
+      "name_vi": "Phụ kiện máy tính AmazonBasics — B07VTSPZ6Z",
+      "category_id": "abo-phu-kien-may-tinh",
+      "category_name": "Phụ kiện máy tính",
+      "price_vnd": 190000,
+      "color": "đen",
+      "gender": null,
+      "brand": "AmazonBasics"
+    },
+    {
+      "id": "abo-5b010b857684a79cc925",
+      "name_vi": "Đèn bàn Rivet — MH103137",
+      "category_id": "abo-den-ban",
+      "category_name": "Đèn bàn",
+      "price_vnd": 490000,
+      "color": "Paint+plating",
+      "gender": null,
+      "brand": "Rivet"
+    },
+    {
+      "id": "abo-4d7264df4f0b4b8d6562",
+      "name_vi": "Giày nam Centrino — 6101-02",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "nâu",
+      "gender": "nam",
+      "brand": "Centrino"
+    },
+    {
+      "id": "abo-a76b60f5328781704d89",
+      "name_vi": "Giày nữ The Fix — 880076Tribal Green",
+      "category_id": "abo-giay-nu",
+      "category_name": "Giày nữ",
+      "price_vnd": 490000,
+      "color": "xanh lá",
+      "gender": "nữ",
+      "brand": "The Fix"
+    },
+    {
+      "id": "abo-c3a4256016bbc783a098",
+      "name_vi": "Chuột máy tính AmazonBasics — B08HMBBPTJ",
+      "category_id": "abo-chuot",
+      "category_name": "Chuột máy tính",
+      "price_vnd": 190000,
+      "color": "Purple",
+      "gender": null,
+      "brand": "AmazonBasics"
+    },
+    {
+      "id": "abo-dc3faf23e6400349c4c3",
+      "name_vi": "Gối Amazon Basics — AMZKSCS-001B",
+      "category_id": "abo-goi",
+      "category_name": "Gối",
+      "price_vnd": 190000,
+      "color": "xanh dương",
+      "gender": null,
+      "brand": "Amazon Basics"
+    },
+    {
+      "id": "abo-a834c74af604e48b14ca",
+      "name_vi": "Giày nam Amazon Brand - Symbol — AZ-KY-109A",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "xanh than",
+      "gender": "nam",
+      "brand": "Amazon Brand - Symbol"
+    },
+    {
+      "id": "abo-49eaf6913e6e238d69cf",
+      "name_vi": "Giày nữ Flavia — FL/232/TAN",
+      "category_id": "abo-giay-nu",
+      "category_name": "Giày nữ",
+      "price_vnd": 490000,
+      "color": "nâu nhạt",
+      "gender": "nữ",
+      "brand": "Flavia"
+    },
+    {
+      "id": "abo-04958db907a8119dc868",
+      "name_vi": "Bộ chuyển đổi AmazonBasics — L6LAD001-CS-R",
+      "category_id": "abo-bo-sac",
+      "category_name": "Bộ chuyển đổi",
+      "price_vnd": 190000,
+      "color": "trắng",
+      "gender": null,
+      "brand": "AmazonBasics"
+    },
+    {
+      "id": "abo-8bcc02d931f02ae00a7c",
+      "name_vi": "Thảm Rivet — I67I3130GRYDGYP18",
+      "category_id": "abo-tham",
+      "category_name": "Thảm",
+      "price_vnd": 390000,
+      "color": "Chưa có thông tin",
+      "gender": null,
+      "brand": "Rivet"
+    },
+    {
+      "id": "abo-31d65daf9f640647addc",
+      "name_vi": "Giày nam Amazon Brand - Symbol — AZ-YS-198 A",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "xanh dương",
+      "gender": "nam",
+      "brand": "Amazon Brand - Symbol"
+    },
+    {
+      "id": "abo-de394b6a8c15561a8128",
+      "name_vi": "Giày nữ find. — V1534",
+      "category_id": "abo-giay-nu",
+      "category_name": "Giày nữ",
+      "price_vnd": 490000,
+      "color": "trắng",
+      "gender": "nữ",
+      "brand": "find."
+    },
+    {
+      "id": "abo-c1b310b755388799a09d",
+      "name_vi": "Phụ kiện máy tính AmazonBasics — B086SGTW55",
+      "category_id": "abo-phu-kien-may-tinh",
+      "category_name": "Phụ kiện máy tính",
+      "price_vnd": 190000,
+      "color": "Chưa có thông tin",
+      "gender": null,
+      "brand": "AmazonBasics"
+    },
+    {
+      "id": "abo-e020476d58f1a1bea5f0",
+      "name_vi": "Thảm Rivet — I55I8040GRYTPEE10",
+      "category_id": "abo-tham",
+      "category_name": "Thảm",
+      "price_vnd": 390000,
+      "color": "xanh dương",
+      "gender": null,
+      "brand": "Rivet"
+    },
+    {
+      "id": "abo-3d31fac067af3eba7a84",
+      "name_vi": "Giày nam 206 Collective — Union Slide Slipper",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "đen",
+      "gender": "nam",
+      "brand": "206 Collective"
+    },
+    {
+      "id": "abo-75a1a89023c26fc0fb32",
+      "name_vi": "Bốt nữ find. — Avacado-1w4",
+      "category_id": "abo-giay-nu",
+      "category_name": "Bốt nữ",
+      "price_vnd": 490000,
+      "color": "Chưa có thông tin",
+      "gender": "nữ",
+      "brand": "find."
+    },
+    {
+      "id": "abo-34fad8eb7b8e4fe4cb1c",
+      "name_vi": "Bộ chuyển đổi AmazonBasics — SDI-HDMI",
+      "category_id": "abo-bo-sac",
+      "category_name": "Bộ chuyển đổi",
+      "price_vnd": 190000,
+      "color": "Chưa có thông tin",
+      "gender": null,
+      "brand": "AmazonBasics"
+    },
+    {
+      "id": "abo-246acc6e8a2c98585748",
+      "name_vi": "Ghế Rivet — Swivel Office Chair",
+      "category_id": "abo-ghe",
+      "category_name": "Ghế",
+      "price_vnd": 990000,
+      "color": "xám",
+      "gender": null,
+      "brand": "Rivet"
+    },
+    {
+      "id": "abo-2f1a1878f66f13c15023",
+      "name_vi": "Giày nam Amazon Brand - Symbol — AZ-YS-49A",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "đen",
+      "gender": "nam",
+      "brand": "Amazon Brand - Symbol"
+    },
+    {
+      "id": "abo-5171f32caae0cfe5d95d",
+      "name_vi": "Giày nữ Flavia — FK/WQ009/BLK",
+      "category_id": "abo-giay-nu",
+      "category_name": "Giày nữ",
+      "price_vnd": 490000,
+      "color": "đen",
+      "gender": "nữ",
+      "brand": "Flavia"
+    },
+    {
+      "id": "abo-efd5663daa1a33862860",
+      "name_vi": "Phụ kiện máy tính AmazonBasics — H7GUU-PA1-MaParent",
+      "category_id": "abo-phu-kien-may-tinh",
+      "category_name": "Phụ kiện máy tính",
+      "price_vnd": 190000,
+      "color": "Chưa có thông tin",
+      "gender": null,
+      "brand": "AmazonBasics"
+    },
+    {
+      "id": "abo-d361ab02f89d28ffe3c1",
+      "name_vi": "Bàn Ravenna Home — AMZ19P2-001D",
+      "category_id": "abo-ban",
+      "category_name": "Bàn",
+      "price_vnd": 1290000,
+      "color": "trắng",
+      "gender": null,
+      "brand": "Ravenna Home"
+    },
+    {
+      "id": "abo-706177f5a914fc2809c5",
+      "name_vi": "Giày nam Amazon Brand - Symbol — AZ-SH-03F",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "xanh than",
+      "gender": "nam",
+      "brand": "Amazon Brand - Symbol"
+    },
+    {
+      "id": "abo-7fb4d07ad15b762f4156",
+      "name_vi": "Giày nữ CARE OF by PUMA — 372888",
+      "category_id": "abo-giay-nu",
+      "category_name": "Giày nữ",
+      "price_vnd": 490000,
+      "color": "Chưa có thông tin",
+      "gender": "nữ",
+      "brand": "CARE OF by PUMA"
+    },
+    {
+      "id": "abo-f1755c7e1cdd95bd6213",
+      "name_vi": "Bộ chuyển đổi amazonbasics — HL-007254",
+      "category_id": "abo-bo-sac",
+      "category_name": "Bộ chuyển đổi",
+      "price_vnd": 190000,
+      "color": "trắng",
+      "gender": null,
+      "brand": "amazonbasics"
+    },
+    {
+      "id": "abo-fc574b1967303776ae2a",
+      "name_vi": "Dụng cụ nhà bếp Amazon Brand - Solimo — SOLWHI2019001",
+      "category_id": "abo-dung-cu-bep",
+      "category_name": "Dụng cụ nhà bếp",
+      "price_vnd": 290000,
+      "color": "trắng",
+      "gender": null,
+      "brand": "Amazon Brand - Solimo"
+    },
+    {
+      "id": "abo-56b1f59905c1244bffa8",
+      "name_vi": "Giày nam CARE OF by PUMA — 372886",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "be",
+      "gender": "nam",
+      "brand": "CARE OF by PUMA"
+    },
+    {
+      "id": "abo-d9210b1f32839e3f6983",
+      "name_vi": "Giày nữ find. — Alma",
+      "category_id": "abo-giay-nu",
+      "category_name": "Giày nữ",
+      "price_vnd": 490000,
+      "color": "trắng",
+      "gender": "nữ",
+      "brand": "find."
+    },
+    {
+      "id": "abo-03f572f0fa28311ef35b",
+      "name_vi": "Bộ chuyển đổi UMI — B07D52SHTY",
+      "category_id": "abo-bo-sac",
+      "category_name": "Bộ chuyển đổi",
+      "price_vnd": 190000,
+      "color": "đen",
+      "gender": null,
+      "brand": "UMI"
+    },
+    {
+      "id": "abo-d8d440296735660e30f6",
+      "name_vi": "Bàn Ravenna Home — AMZ19P2-005C",
+      "category_id": "abo-ban",
+      "category_name": "Bàn",
+      "price_vnd": 1290000,
+      "color": "xám",
+      "gender": null,
+      "brand": "Ravenna Home"
+    },
+    {
+      "id": "abo-c9211d229c64c5c630a2",
+      "name_vi": "Giày nam Amazon Brand - Symbol — AZ-YS-189 A",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "xanh than",
+      "gender": "nam",
+      "brand": "Amazon Brand - Symbol"
+    },
+    {
+      "id": "abo-e9d84a8f2551e0716668",
+      "name_vi": "Giày nữ The Fix — Emilia Double Bow Point Toe Flat",
+      "category_id": "abo-giay-nu",
+      "category_name": "Giày nữ",
+      "price_vnd": 490000,
+      "color": "Camel Suede",
+      "gender": "nữ",
+      "brand": "The Fix"
+    },
+    {
+      "id": "abo-c2044a7a0d9f1e864d89",
+      "name_vi": "Bộ sạc AmazonBasics — CLA-2U5480_black10",
+      "category_id": "abo-bo-sac",
+      "category_name": "Bộ sạc",
+      "price_vnd": 190000,
+      "color": "đen",
+      "gender": null,
+      "brand": "AmazonBasics"
+    },
+    {
+      "id": "abo-e8052c1b73c821c8cb61",
+      "name_vi": "Thảm Stone & Beam — 200KKCB16A-406",
+      "category_id": "abo-tham",
+      "category_name": "Thảm",
+      "price_vnd": 390000,
+      "color": "Chưa có thông tin",
+      "gender": null,
+      "brand": "Stone & Beam"
+    },
+    {
+      "id": "abo-a94f92ba00f1c73c43ed",
+      "name_vi": "Giày nam Amazon Brand - Symbol — AZ-WS-272B",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "Olive",
+      "gender": "nam",
+      "brand": "Amazon Brand - Symbol"
+    },
+    {
+      "id": "abo-cfe16205f1761e9d3c00",
+      "name_vi": "Giày nữ 206 Collective — AW0003BBurgundy",
+      "category_id": "abo-giay-nu",
+      "category_name": "Giày nữ",
+      "price_vnd": 490000,
+      "color": "Burgundy Suede",
+      "gender": "nữ",
+      "brand": "206 Collective"
+    },
+    {
+      "id": "abo-b33aa90f79cafbf46978",
+      "name_vi": "Phụ kiện máy tính AmazonBasics — K001880",
+      "category_id": "abo-phu-kien-may-tinh",
+      "category_name": "Phụ kiện máy tính",
+      "price_vnd": 190000,
+      "color": "Silver",
+      "gender": null,
+      "brand": "AmazonBasics"
+    },
+    {
+      "id": "abo-5d44522e315edd5f6025",
+      "name_vi": "Ghế sofa Rivet — AS-7038-2S-Carame",
+      "category_id": "abo-sofa",
+      "category_name": "Ghế sofa",
+      "price_vnd": 2990000,
+      "color": "Caramel",
+      "gender": null,
+      "brand": "Rivet"
+    },
+    {
+      "id": "abo-bfa39b625c30ab2de57a",
+      "name_vi": "Giày nam Amazon Brand - Symbol — Az-ws-263a",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "xám",
+      "gender": "nam",
+      "brand": "Amazon Brand - Symbol"
+    },
+    {
+      "id": "abo-ccef396ddd1311dcaf81",
+      "name_vi": "Bốt nữ find. — Um1527",
+      "category_id": "abo-giay-nu",
+      "category_name": "Bốt nữ",
+      "price_vnd": 490000,
+      "color": "nâu",
+      "gender": "nữ",
+      "brand": "find."
+    },
+    {
+      "id": "abo-f07fd3a0d2bcf0e78d90",
+      "name_vi": "Phụ kiện máy tính AmazonBasics — L6LLA006-CS-R",
+      "category_id": "abo-phu-kien-may-tinh",
+      "category_name": "Phụ kiện máy tính",
+      "price_vnd": 190000,
+      "color": "đen",
+      "gender": null,
+      "brand": "AmazonBasics"
+    },
+    {
+      "id": "abo-dad0db93f572d08bdac0",
+      "name_vi": "Đèn bàn Ravenna Home — 21199-001",
+      "category_id": "abo-den-ban",
+      "category_name": "Đèn bàn",
+      "price_vnd": 490000,
+      "color": "Brushed Steel",
+      "gender": null,
+      "brand": "Ravenna Home"
+    },
+    {
+      "id": "abo-bc51c3f83379086dd476",
+      "name_vi": "Giày nam Amazon Brand - Symbol — B0791XYDVY",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "Chưa có thông tin",
+      "gender": "nam",
+      "brand": "Amazon Brand - Symbol"
+    },
+    {
+      "id": "abo-beea0140eb23a5e1fdc5",
+      "name_vi": "Bốt nữ  — 36985",
+      "category_id": "abo-giay-nu",
+      "category_name": "Bốt nữ",
+      "price_vnd": 490000,
+      "color": "Chưa có thông tin",
+      "gender": "nữ",
+      "brand": null
+    },
+    {
+      "id": "abo-165cf57eee99a1dbc12f",
+      "name_vi": "Bộ sạc AmazonBasics — UTC4041UK-WH",
+      "category_id": "abo-bo-sac",
+      "category_name": "Bộ sạc",
+      "price_vnd": 190000,
+      "color": "trắng",
+      "gender": null,
+      "brand": "AmazonBasics"
+    },
+    {
+      "id": "abo-4bc438b2a870a45d9dd7",
+      "name_vi": "Giày nam Amazon Brand - Symbol — AZ-YS-403",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "đen",
+      "gender": "nam",
+      "brand": "Amazon Brand - Symbol"
+    },
+    {
+      "id": "abo-473c0cc1cc0cc2a13667",
+      "name_vi": "Sandal nữ find. — Strappy Round Heel Leather",
+      "category_id": "abo-giay-nu",
+      "category_name": "Sandal nữ",
+      "price_vnd": 490000,
+      "color": "xanh dương",
+      "gender": "nữ",
+      "brand": "find."
+    },
+    {
+      "id": "abo-2f9cd2b1b85b96285299",
+      "name_vi": "Thảm Stone & Beam — KELSYKLS01AQUA0960120",
+      "category_id": "abo-tham",
+      "category_name": "Thảm",
+      "price_vnd": 390000,
+      "color": "Aqua",
+      "gender": null,
+      "brand": "Stone & Beam"
+    },
+    {
+      "id": "abo-6eefafd6857cf30505cd",
+      "name_vi": "Giày nam find. — Amz29/01",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "đen",
+      "gender": "nam",
+      "brand": "find."
+    },
+    {
+      "id": "abo-2b12f749394178d4d30d",
+      "name_vi": "Giày nữ find. — #_Loafer-052",
+      "category_id": "abo-giay-nu",
+      "category_name": "Giày nữ",
+      "price_vnd": 490000,
+      "color": "nâu",
+      "gender": "nữ",
+      "brand": "find."
+    },
+    {
+      "id": "abo-81d98e5ba66d748bdb79",
+      "name_vi": "Ghế Stone & Beam — 81608HLRC",
+      "category_id": "abo-ghe",
+      "category_name": "Ghế",
+      "price_vnd": 990000,
+      "color": "Khaki",
+      "gender": null,
+      "brand": "Stone & Beam"
+    },
+    {
+      "id": "abo-712e09257565e9fa89e8",
+      "name_vi": "Giày nam Chadstone — Ch 105",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "nâu",
+      "gender": "nam",
+      "brand": "Chadstone"
+    },
+    {
+      "id": "abo-1986e4d84ac0385d830a",
+      "name_vi": "Giày nữ find. — #_Innis-s-11",
+      "category_id": "abo-giay-nu",
+      "category_name": "Giày nữ",
+      "price_vnd": 490000,
+      "color": "Multicolour Metallic Multi",
+      "gender": "nữ",
+      "brand": "find."
+    },
+    {
+      "id": "abo-40c2d590d020e8d14ae9",
+      "name_vi": "Ghế Strathwood by Amazon.com — LD5037-1",
+      "category_id": "abo-ghe",
+      "category_name": "Ghế",
+      "price_vnd": 990000,
+      "color": "Chưa có thông tin",
+      "gender": null,
+      "brand": "Strathwood by Amazon.com"
+    },
+    {
+      "id": "abo-f2e9cda50d8b30e3436f",
+      "name_vi": "Giày nam Franklin & Freeman — 12345465646",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "Chocolate",
+      "gender": "nam",
+      "brand": "Franklin & Freeman"
+    },
+    {
+      "id": "abo-95ba6100d8ac3eacf087",
+      "name_vi": "Giày nữ Flavia — FL/205/NUD",
+      "category_id": "abo-giay-nu",
+      "category_name": "Giày nữ",
+      "price_vnd": 490000,
+      "color": "Nude",
+      "gender": "nữ",
+      "brand": "Flavia"
+    },
+    {
+      "id": "abo-ae53f14fab30103d096c",
+      "name_vi": "Ghế sofa Amazon Brand - Solimo — AZ0113",
+      "category_id": "abo-sofa",
+      "category_name": "Ghế sofa",
+      "price_vnd": 2990000,
+      "color": "nâu",
+      "gender": null,
+      "brand": "Amazon Brand - Solimo"
+    },
+    {
+      "id": "abo-45f7fd107e27fe381eed",
+      "name_vi": "Giày nam Amazon Brand - Symbol — AZ-KY-208C",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "xanh than",
+      "gender": "nam",
+      "brand": "Amazon Brand - Symbol"
+    },
+    {
+      "id": "abo-4eb6f9a9069dd46ff21c",
+      "name_vi": "Giày nữ find. — AMZ122",
+      "category_id": "abo-giay-nu",
+      "category_name": "Giày nữ",
+      "price_vnd": 490000,
+      "color": "nâu",
+      "gender": "nữ",
+      "brand": "find."
+    },
+    {
+      "id": "abo-4a886d3cd3a48ff230d5",
+      "name_vi": "Ghế UMI — .",
+      "category_id": "abo-ghe",
+      "category_name": "Ghế",
+      "price_vnd": 990000,
+      "color": "đỏ",
+      "gender": null,
+      "brand": "UMI"
+    },
+    {
+      "id": "abo-a67135565e41117a62ab",
+      "name_vi": "Giày nam Amazon Brand - Symactive — B07T7QH65F",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "Chưa có thông tin",
+      "gender": "nam",
+      "brand": "Amazon Brand - Symactive"
+    },
+    {
+      "id": "abo-1a8fe56172805dfc1267",
+      "name_vi": "Sandal nữ 206 Collective — Eve Stiletto Heel Dress Sandal - Low",
+      "category_id": "abo-giay-nu",
+      "category_name": "Sandal nữ",
+      "price_vnd": 490000,
+      "color": "Silver Mirror Leather",
+      "gender": "nữ",
+      "brand": "206 Collective"
+    },
+    {
+      "id": "abo-f0b84f4021267fd53e0a",
+      "name_vi": "Ghế Stone & Beam — K97300SWVL",
+      "category_id": "abo-ghe",
+      "category_name": "Ghế",
+      "price_vnd": 990000,
+      "color": "xanh dương",
+      "gender": null,
+      "brand": "Stone & Beam"
+    },
+    {
+      "id": "abo-976b9dc80a451d0eee3b",
+      "name_vi": "Giày nam Amazon Brand - Symbol — AZ-YS-185 A",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "xanh than",
+      "gender": "nam",
+      "brand": "Amazon Brand - Symbol"
+    },
+    {
+      "id": "abo-96627f03521acb018124",
+      "name_vi": "Giày nữ Flavia — FL161/GRY",
+      "category_id": "abo-giay-nu",
+      "category_name": "Giày nữ",
+      "price_vnd": 490000,
+      "color": "xám",
+      "gender": "nữ",
+      "brand": "Flavia"
+    },
+    {
+      "id": "abo-56afbeae6a65d33efdeb",
+      "name_vi": "Đèn bàn Ravenna Home — 20465-002",
+      "category_id": "abo-den-ban",
+      "category_name": "Đèn bàn",
+      "price_vnd": 490000,
+      "color": "Silver",
+      "gender": null,
+      "brand": "Ravenna Home"
+    },
+    {
+      "id": "abo-07664b5bdbfa4053fe23",
+      "name_vi": "Giày nam Amazon Brand - Symbol — AZ-KY-104C",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "Bordeaux",
+      "gender": "nam",
+      "brand": "Amazon Brand - Symbol"
+    },
+    {
+      "id": "abo-068eb2ca7f3a164aa0fc",
+      "name_vi": "Giày nữ Bourge — Gallery-19",
+      "category_id": "abo-giay-nu",
+      "category_name": "Giày nữ",
+      "price_vnd": 490000,
+      "color": "xanh than",
+      "gender": "nữ",
+      "brand": "Bourge"
+    },
+    {
+      "id": "abo-d7318fc1f2f6331f544d",
+      "name_vi": "Cốc Amazon Brand - Solimo — B07GL8GHLH",
+      "category_id": "abo-coc",
+      "category_name": "Cốc",
+      "price_vnd": 99000,
+      "color": "xanh dương",
+      "gender": null,
+      "brand": "Amazon Brand - Solimo"
+    },
+    {
+      "id": "abo-bfb4dfe154c249267d01",
+      "name_vi": "Giày nam Amazon Brand - Symbol — AZ-KY-301C",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "Chưa có thông tin",
+      "gender": "nam",
+      "brand": "Amazon Brand - Symbol"
+    },
+    {
+      "id": "abo-38a9aef17d3aed7440a5",
+      "name_vi": "Sandal nữ find. — Open Toe Sandals",
+      "category_id": "abo-giay-nu",
+      "category_name": "Sandal nữ",
+      "price_vnd": 490000,
+      "color": "nâu",
+      "gender": "nữ",
+      "brand": "find."
+    },
+    {
+      "id": "abo-95ca3356e346055634dc",
+      "name_vi": "Thảm Rivet — I55I8039LGN000C00",
+      "category_id": "abo-tham",
+      "category_name": "Thảm",
+      "price_vnd": 390000,
+      "color": "xanh lá",
+      "gender": null,
+      "brand": "Rivet"
+    },
+    {
+      "id": "abo-fa8445a22a82ec5c297d",
+      "name_vi": "Giày nam Amazon Brand - Symbol — AZ-WS-119B",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "đen",
+      "gender": "nam",
+      "brand": "Amazon Brand - Symbol"
+    },
+    {
+      "id": "abo-dba192a4cfe1fc47d6fa",
+      "name_vi": "Giày nữ Truth & Fable — 124014",
+      "category_id": "abo-giay-nu",
+      "category_name": "Giày nữ",
+      "price_vnd": 490000,
+      "color": "đỏ",
+      "gender": "nữ",
+      "brand": "Truth & Fable"
+    },
+    {
+      "id": "abo-3e282d4b27b03bc34f14",
+      "name_vi": "Gối Amazon Basics — AMZFSCP-001RS",
+      "category_id": "abo-goi",
+      "category_name": "Gối",
+      "price_vnd": 190000,
+      "color": "đỏ",
+      "gender": null,
+      "brand": "Amazon Basics"
+    },
+    {
+      "id": "abo-43d64a94c0f5c80fbe77",
+      "name_vi": "Giày nam Amazon Brand - Symbol — B07QDB9V9X",
+      "category_id": "abo-giay-nam",
+      "category_name": "Giày nam",
+      "price_vnd": 490000,
+      "color": "đen",
+      "gender": "nam",
+      "brand": "Amazon Brand - Symbol"
+    },
+    {
+      "id": "abo-296986af3dfa21b92bfb",
+      "name_vi": "Giày nữ find. — CONNIE-S2C1-Court",
+      "category_id": "abo-giay-nu",
+      "category_name": "Giày nữ",
+      "price_vnd": 490000,
+      "color": "hồng",
+      "gender": "nữ",
+      "brand": "find."
+    }
+  ],
+  "cases": [
+    {
+      "id": "SV001",
+      "query": "Tôi muốn mua tai nghe",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-tai-nghe",
+          "operator": "eq"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-06978c8969c816663d99",
+        "abo-1e09d879814e8ee2b46c",
+        "abo-4e94a70a51c79fa30dbb",
+        "abo-8d43cb92edcc87aec67d",
+        "abo-9e5c099a4e7ba7c0880a"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV002",
+      "query": "Tìm cho tôi tai nghe dưới năm trăm nghìn",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-tai-nghe",
+          "operator": "eq"
+        },
+        {
+          "key": "price_max",
+          "value": 500000,
+          "operator": "lt"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-06978c8969c816663d99",
+        "abo-1e09d879814e8ee2b46c",
+        "abo-4e94a70a51c79fa30dbb",
+        "abo-8d43cb92edcc87aec67d",
+        "abo-9e5c099a4e7ba7c0880a"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV003",
+      "query": "Có tai nghe nào tối đa bốn trăm nghìn không",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-tai-nghe",
+          "operator": "eq"
+        },
+        {
+          "key": "price_max",
+          "value": 400000,
+          "operator": "lte"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-06978c8969c816663d99",
+        "abo-1e09d879814e8ee2b46c",
+        "abo-4e94a70a51c79fa30dbb",
+        "abo-8d43cb92edcc87aec67d",
+        "abo-9e5c099a4e7ba7c0880a"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV004",
+      "query": "Cho tôi xem tai nghe màu đen",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-tai-nghe",
+          "operator": "eq"
+        },
+        {
+          "key": "color",
+          "value": "đen",
+          "operator": "eq"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-06978c8969c816663d99",
+        "abo-9e5c099a4e7ba7c0880a"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV005",
+      "query": "Tôi tìm tai nghe đỏ dưới bốn trăm nghìn",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-tai-nghe",
+          "operator": "eq"
+        },
+        {
+          "key": "color",
+          "value": "đỏ",
+          "operator": "eq"
+        },
+        {
+          "key": "price_max",
+          "value": 400000,
+          "operator": "lt"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-1e09d879814e8ee2b46c"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV006",
+      "query": "Tai nghe màu xanh lá có không bạn",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-tai-nghe",
+          "operator": "eq"
+        },
+        {
+          "key": "color",
+          "value": "xanh lá",
+          "operator": "eq"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-8d43cb92edcc87aec67d"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV007",
+      "query": "Mình cần một tai nghe hồng",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-tai-nghe",
+          "operator": "eq"
+        },
+        {
+          "key": "color",
+          "value": "hồng",
+          "operator": "eq"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-4e94a70a51c79fa30dbb"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV008",
+      "query": "Tai nghe giá từ ba trăm nghìn đến bốn trăm nghìn",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-tai-nghe",
+          "operator": "eq"
+        },
+        {
+          "key": "price_min",
+          "value": 300000,
+          "operator": "gte"
+        },
+        {
+          "key": "price_max",
+          "value": 400000,
+          "operator": "lte"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-06978c8969c816663d99",
+        "abo-1e09d879814e8ee2b46c",
+        "abo-4e94a70a51c79fa30dbb",
+        "abo-8d43cb92edcc87aec67d",
+        "abo-9e5c099a4e7ba7c0880a"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV009",
+      "query": "Tôi xem tai nghe không dưới ba trăm nghìn",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-tai-nghe",
+          "operator": "eq"
+        },
+        {
+          "key": "price_min",
+          "value": 300000,
+          "operator": "gte"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-06978c8969c816663d99",
+        "abo-1e09d879814e8ee2b46c",
+        "abo-4e94a70a51c79fa30dbb",
+        "abo-8d43cb92edcc87aec67d",
+        "abo-9e5c099a4e7ba7c0880a"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV010",
+      "query": "Tìm tai nghe AmazonBasics cho tôi",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-tai-nghe",
+          "operator": "eq"
+        },
+        {
+          "key": "brand",
+          "value": "AmazonBasics",
+          "operator": "eq"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-06978c8969c816663d99",
+        "abo-1e09d879814e8ee2b46c",
+        "abo-4e94a70a51c79fa30dbb",
+        "abo-8d43cb92edcc87aec67d",
+        "abo-9e5c099a4e7ba7c0880a"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV011",
+      "query": "Tìm loa dưới sáu trăm nghìn",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-loa",
+          "operator": "eq"
+        },
+        {
+          "key": "price_max",
+          "value": 600000,
+          "operator": "lt"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-05af7037d83fc2ad4427",
+        "abo-8a1e5a22a992a96c1092",
+        "abo-b3649dd5ee900fa8f148"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV012",
+      "query": "Tôi muốn mua loa màu đen",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-loa",
+          "operator": "eq"
+        },
+        {
+          "key": "color",
+          "value": "đen",
+          "operator": "eq"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-05af7037d83fc2ad4427",
+        "abo-8a1e5a22a992a96c1092",
+        "abo-b3649dd5ee900fa8f148"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV013",
+      "query": "Có loa nào không quá sáu trăm nghìn",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-loa",
+          "operator": "eq"
+        },
+        {
+          "key": "price_max",
+          "value": 600000,
+          "operator": "lte"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-05af7037d83fc2ad4427",
+        "abo-8a1e5a22a992a96c1092",
+        "abo-b3649dd5ee900fa8f148"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV014",
+      "query": "Cho xem loa trên năm trăm nghìn",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-loa",
+          "operator": "eq"
+        },
+        {
+          "key": "price_min",
+          "value": 500000,
+          "operator": "gt"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-05af7037d83fc2ad4427",
+        "abo-8a1e5a22a992a96c1092",
+        "abo-b3649dd5ee900fa8f148"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV015",
+      "query": "Tôi cần loa AmazonBasics",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-loa",
+          "operator": "eq"
+        },
+        {
+          "key": "brand",
+          "value": "AmazonBasics",
+          "operator": "eq"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-05af7037d83fc2ad4427",
+        "abo-b3649dd5ee900fa8f148"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV016",
+      "query": "Mình muốn tìm bàn phím",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-ban-phim",
+          "operator": "eq"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-079a59cdeda01c2e1ec7",
+        "abo-16eeaf6d65d2fd99bc28",
+        "abo-65a3b7bf84adadd2fe8c",
+        "abo-de415f38d5e33beeb3fd"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV017",
+      "query": "Bàn phím màu đen nhé",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-ban-phim",
+          "operator": "eq"
+        },
+        {
+          "key": "color",
+          "value": "đen",
+          "operator": "eq"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-079a59cdeda01c2e1ec7",
+        "abo-16eeaf6d65d2fd99bc28",
+        "abo-65a3b7bf84adadd2fe8c"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV018",
+      "query": "Cho tôi bàn phím dưới ba trăm nghìn",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-ban-phim",
+          "operator": "eq"
+        },
+        {
+          "key": "price_max",
+          "value": 300000,
+          "operator": "lt"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-079a59cdeda01c2e1ec7",
+        "abo-16eeaf6d65d2fd99bc28",
+        "abo-65a3b7bf84adadd2fe8c",
+        "abo-de415f38d5e33beeb3fd"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV019",
+      "query": "Bàn phím từ hai trăm nghìn đến ba trăm nghìn",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-ban-phim",
+          "operator": "eq"
+        },
+        {
+          "key": "price_min",
+          "value": 200000,
+          "operator": "gte"
+        },
+        {
+          "key": "price_max",
+          "value": 300000,
+          "operator": "lte"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-079a59cdeda01c2e1ec7",
+        "abo-16eeaf6d65d2fd99bc28",
+        "abo-65a3b7bf84adadd2fe8c",
+        "abo-de415f38d5e33beeb3fd"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV020",
+      "query": "Tìm bàn phím AmazonBasics",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-ban-phim",
+          "operator": "eq"
+        },
+        {
+          "key": "brand",
+          "value": "AmazonBasics",
+          "operator": "eq"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-079a59cdeda01c2e1ec7",
+        "abo-16eeaf6d65d2fd99bc28",
+        "abo-65a3b7bf84adadd2fe8c",
+        "abo-de415f38d5e33beeb3fd"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV021",
+      "query": "Tôi cần bộ sạc dưới hai trăm nghìn",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-bo-sac",
+          "operator": "eq"
+        },
+        {
+          "key": "price_max",
+          "value": 200000,
+          "operator": "lt"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-03f572f0fa28311ef35b",
+        "abo-04958db907a8119dc868",
+        "abo-165cf57eee99a1dbc12f",
+        "abo-2d80ea05b3c739828545",
+        "abo-308a823f49b2b5d58532",
+        "abo-34fad8eb7b8e4fe4cb1c",
+        "abo-63bdc68989121edbc466",
+        "abo-6e674a68d9046685e9eb",
+        "abo-791ca85aaaed94597566",
+        "abo-809bbfba5de9074bee66",
+        "abo-8a525093e904013f3a90",
+        "abo-8b02eab78d3be3c275f3",
+        "abo-9a1c78604b7ad5ba7221",
+        "abo-9a52a7179953ea1ce79c",
+        "abo-be659fb03f1b70089752",
+        "abo-c2044a7a0d9f1e864d89",
+        "abo-c6edb07cb2bd23b0cef2",
+        "abo-d411c990131775aca658",
+        "abo-f1755c7e1cdd95bd6213"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV022",
+      "query": "Cho xem bộ sạc màu đen",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-bo-sac",
+          "operator": "eq"
+        },
+        {
+          "key": "color",
+          "value": "đen",
+          "operator": "eq"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-03f572f0fa28311ef35b",
+        "abo-308a823f49b2b5d58532",
+        "abo-791ca85aaaed94597566",
+        "abo-809bbfba5de9074bee66",
+        "abo-8a525093e904013f3a90",
+        "abo-8b02eab78d3be3c275f3",
+        "abo-be659fb03f1b70089752",
+        "abo-c2044a7a0d9f1e864d89",
+        "abo-d411c990131775aca658"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV023",
+      "query": "Mình tìm bộ sạc trắng",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-bo-sac",
+          "operator": "eq"
+        },
+        {
+          "key": "color",
+          "value": "trắng",
+          "operator": "eq"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-04958db907a8119dc868",
+        "abo-165cf57eee99a1dbc12f",
+        "abo-2d80ea05b3c739828545",
+        "abo-c6edb07cb2bd23b0cef2",
+        "abo-f1755c7e1cdd95bd6213"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV024",
+      "query": "Bộ sạc không dưới một trăm nghìn",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-bo-sac",
+          "operator": "eq"
+        },
+        {
+          "key": "price_min",
+          "value": 100000,
+          "operator": "gte"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-03f572f0fa28311ef35b",
+        "abo-04958db907a8119dc868",
+        "abo-165cf57eee99a1dbc12f",
+        "abo-2d80ea05b3c739828545",
+        "abo-308a823f49b2b5d58532",
+        "abo-34fad8eb7b8e4fe4cb1c",
+        "abo-63bdc68989121edbc466",
+        "abo-6e674a68d9046685e9eb",
+        "abo-791ca85aaaed94597566",
+        "abo-809bbfba5de9074bee66",
+        "abo-8a525093e904013f3a90",
+        "abo-8b02eab78d3be3c275f3",
+        "abo-9a1c78604b7ad5ba7221",
+        "abo-9a52a7179953ea1ce79c",
+        "abo-be659fb03f1b70089752",
+        "abo-c2044a7a0d9f1e864d89",
+        "abo-c6edb07cb2bd23b0cef2",
+        "abo-d411c990131775aca658",
+        "abo-f1755c7e1cdd95bd6213"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV025",
+      "query": "Bộ sạc từ một trăm nghìn đến hai trăm nghìn",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-bo-sac",
+          "operator": "eq"
+        },
+        {
+          "key": "price_min",
+          "value": 100000,
+          "operator": "gte"
+        },
+        {
+          "key": "price_max",
+          "value": 200000,
+          "operator": "lte"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-03f572f0fa28311ef35b",
+        "abo-04958db907a8119dc868",
+        "abo-165cf57eee99a1dbc12f",
+        "abo-2d80ea05b3c739828545",
+        "abo-308a823f49b2b5d58532",
+        "abo-34fad8eb7b8e4fe4cb1c",
+        "abo-63bdc68989121edbc466",
+        "abo-6e674a68d9046685e9eb",
+        "abo-791ca85aaaed94597566",
+        "abo-809bbfba5de9074bee66",
+        "abo-8a525093e904013f3a90",
+        "abo-8b02eab78d3be3c275f3",
+        "abo-9a1c78604b7ad5ba7221",
+        "abo-9a52a7179953ea1ce79c",
+        "abo-be659fb03f1b70089752",
+        "abo-c2044a7a0d9f1e864d89",
+        "abo-c6edb07cb2bd23b0cef2",
+        "abo-d411c990131775aca658",
+        "abo-f1755c7e1cdd95bd6213"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV026",
+      "query": "Tôi muốn mua chuột máy tính",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-chuot",
+          "operator": "eq"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-c3a4256016bbc783a098"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV027",
+      "query": "Tìm chuột máy tính dưới hai trăm nghìn",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-chuot",
+          "operator": "eq"
+        },
+        {
+          "key": "price_max",
+          "value": 200000,
+          "operator": "lt"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-c3a4256016bbc783a098"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV028",
+      "query": "Cho xem phụ kiện máy tính màu đen",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-phu-kien-may-tinh",
+          "operator": "eq"
+        },
+        {
+          "key": "color",
+          "value": "đen",
+          "operator": "eq"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-796afe57f7911986cda9",
+        "abo-855469c076c754578595",
+        "abo-de348ed7ecf45e4dbcdf",
+        "abo-e7501cc482cb6980ac7a",
+        "abo-f07fd3a0d2bcf0e78d90"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV029",
+      "query": "Tôi cần ốp điện thoại dưới một trăm nghìn",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-op-dien-thoai",
+          "operator": "eq"
+        },
+        {
+          "key": "price_max",
+          "value": 100000,
+          "operator": "lt"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-079890493c0f0b63ced5",
+        "abo-07fe86c90424f80b4386",
+        "abo-1366ca639c024f80a4bb",
+        "abo-253d991f86a836b2ce74",
+        "abo-31a61d412cc28c9b3e7e",
+        "abo-36c11d0b602ce2db673f",
+        "abo-6a6458026ca185179e39",
+        "abo-6db8e735a0e855774822",
+        "abo-7ce1fdab324ab8f4b67e",
+        "abo-80b535ad9ba063838753",
+        "abo-81c1fe955bf6e990a631",
+        "abo-8e32dcc578aa66ed2998",
+        "abo-9a22357ddecbf71a9c76",
+        "abo-9c808b43bfa428f15db0",
+        "abo-a2b3f5e7e827d3220b35",
+        "abo-a95d0f0ebb88d376bce9",
+        "abo-a9feed4b014bbab0ad66",
+        "abo-aa05a05b97767dc49bf0",
+        "abo-aa3d61458dcb8f9d3293",
+        "abo-bb49f1b245319ced34fb",
+        "abo-c4e9f733e146b2e08582",
+        "abo-c70c3d53b2bd64edf073",
+        "abo-ca9617ea94f3a76b5017",
+        "abo-cd81906901784db2dfc0",
+        "abo-cffdf5d9963100147b06",
+        "abo-dc283827e8880735fde7",
+        "abo-eb96996703a890788bf0",
+        "abo-f3968a461b1efa86ad0b",
+        "abo-f4c26a80466f72bc1f78",
+        "abo-fdaab111ec4a369bc91b"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV030",
+      "query": "Ốp điện thoại không quá một trăm năm mươi nghìn",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-op-dien-thoai",
+          "operator": "eq"
+        },
+        {
+          "key": "price_max",
+          "value": 150000,
+          "operator": "lte"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-079890493c0f0b63ced5",
+        "abo-07fe86c90424f80b4386",
+        "abo-1366ca639c024f80a4bb",
+        "abo-253d991f86a836b2ce74",
+        "abo-31a61d412cc28c9b3e7e",
+        "abo-36c11d0b602ce2db673f",
+        "abo-6a6458026ca185179e39",
+        "abo-6db8e735a0e855774822",
+        "abo-7ce1fdab324ab8f4b67e",
+        "abo-80b535ad9ba063838753",
+        "abo-81c1fe955bf6e990a631",
+        "abo-8e32dcc578aa66ed2998",
+        "abo-9a22357ddecbf71a9c76",
+        "abo-9c808b43bfa428f15db0",
+        "abo-a2b3f5e7e827d3220b35",
+        "abo-a95d0f0ebb88d376bce9",
+        "abo-a9feed4b014bbab0ad66",
+        "abo-aa05a05b97767dc49bf0",
+        "abo-aa3d61458dcb8f9d3293",
+        "abo-bb49f1b245319ced34fb",
+        "abo-c4e9f733e146b2e08582",
+        "abo-c70c3d53b2bd64edf073",
+        "abo-ca9617ea94f3a76b5017",
+        "abo-cd81906901784db2dfc0",
+        "abo-cffdf5d9963100147b06",
+        "abo-dc283827e8880735fde7",
+        "abo-eb96996703a890788bf0",
+        "abo-f3968a461b1efa86ad0b",
+        "abo-f4c26a80466f72bc1f78",
+        "abo-fdaab111ec4a369bc91b"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV031",
+      "query": "Tôi tìm giày nam",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-giay-nam",
+          "operator": "eq"
+        },
+        {
+          "key": "gender",
+          "value": "nam",
+          "operator": "eq"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-00c514834bf1afb3aeb1",
+        "abo-0163e5b3f66c2cb986d1",
+        "abo-0446c46130dcf4cf986d",
+        "abo-0677e35cb13f616f4e89",
+        "abo-07664b5bdbfa4053fe23",
+        "abo-08c3abaa33e9e744db0b",
+        "abo-142df26114c9cb0f83fe",
+        "abo-167e24d686f1dd378300",
+        "abo-1a20a2d5b699155f63ae",
+        "abo-1c3c0d3210809f805d53",
+        "abo-1c657d65eddedc65b431",
+        "abo-1c74f1be3fc372c664b3",
+        "abo-1d4e81c2673d0557b216",
+        "abo-1f7771f220d03d56ea93",
+        "abo-2048635769b96eeb7db1",
+        "abo-28cbb1d314b6758a11c5",
+        "abo-2d8abebfb96796f14af2",
+        "abo-2f1a1878f66f13c15023",
+        "abo-300e7e51231c2acc7fdf",
+        "abo-31d65daf9f640647addc",
+        "abo-33b1180c3262f72c924d",
+        "abo-3d31fac067af3eba7a84",
+        "abo-40f9cc99f24a50f68b87",
+        "abo-43d64a94c0f5c80fbe77",
+        "abo-45f7fd107e27fe381eed",
+        "abo-4670d5d847db38fb8d87",
+        "abo-488da09980f19a627b6c",
+        "abo-4bc438b2a870a45d9dd7",
+        "abo-4d7264df4f0b4b8d6562",
+        "abo-4d961c09ced655681f41",
+        "abo-4f60541a02aaef0511ac",
+        "abo-4f695752f62139be067d",
+        "abo-53b37a833bee572b4374",
+        "abo-54245f9e76f618fb54ef",
+        "abo-56668b47b51e8f6d53b3",
+        "abo-56b1f59905c1244bffa8",
+        "abo-57b172e45f60dd4d5e34",
+        "abo-5c86b55699a175966118",
+        "abo-604db45ff3cbdd9a1810",
+        "abo-6313e245ec41408c3cb4",
+        "abo-637e3c8301d9403b9c6b",
+        "abo-6eefafd6857cf30505cd",
+        "abo-706177f5a914fc2809c5",
+        "abo-712e09257565e9fa89e8",
+        "abo-74ab6824f167fe7c09e9",
+        "abo-76bb9bcc7b7014242b7f",
+        "abo-7ae9ec887afca81636e8",
+        "abo-85bd9f176813f88bc66a",
+        "abo-882e28e7d5b4b046c02f",
+        "abo-8a681042e93aeb9ea029",
+        "abo-8a8e48db8a59e66c679a",
+        "abo-8ed771f8abb0b3a4beeb",
+        "abo-95afc9196508165173e4",
+        "abo-976b9dc80a451d0eee3b",
+        "abo-9d7adf5bef12078f11e2",
+        "abo-9eb05df628c8bc7a44e2",
+        "abo-a67135565e41117a62ab",
+        "abo-a834c74af604e48b14ca",
+        "abo-a94f92ba00f1c73c43ed",
+        "abo-ae00d9fca9f92d6cc150",
+        "abo-ae7356369a2c7e4dd3fc",
+        "abo-aebec200a1e7bf68378b",
+        "abo-bc51c3f83379086dd476",
+        "abo-bfa39b625c30ab2de57a",
+        "abo-bfb4dfe154c249267d01",
+        "abo-c1bcc35562901d523cad",
+        "abo-c733bd05b0dff4704e54",
+        "abo-c9211d229c64c5c630a2",
+        "abo-cda3825f07ab31c8907a",
+        "abo-cfddd3bb61d9adc77fb6",
+        "abo-d7bb8a4c654d8dfe9211",
+        "abo-e10696e5180faec36a06",
+        "abo-e2d4af803b10dafc015c",
+        "abo-e7cd4b6015d94890c72f",
+        "abo-ea9881376a2a9a50fadf",
+        "abo-ec2fe12d9213d36bbf9a",
+        "abo-ec51bcea8e12310c7c62",
+        "abo-edf27f94fc9f78daaebb",
+        "abo-ef2d756463739e0e10b8",
+        "abo-f2e9cda50d8b30e3436f",
+        "abo-fa03f1d20768675ab656",
+        "abo-fa8445a22a82ec5c297d",
+        "abo-fef7d982456ff59eeeef"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV032",
+      "query": "Cho tôi giày nam màu đen",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-giay-nam",
+          "operator": "eq"
+        },
+        {
+          "key": "gender",
+          "value": "nam",
+          "operator": "eq"
+        },
+        {
+          "key": "color",
+          "value": "đen",
+          "operator": "eq"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-167e24d686f1dd378300",
+        "abo-1a20a2d5b699155f63ae",
+        "abo-1d4e81c2673d0557b216",
+        "abo-2048635769b96eeb7db1",
+        "abo-2d8abebfb96796f14af2",
+        "abo-2f1a1878f66f13c15023",
+        "abo-300e7e51231c2acc7fdf",
+        "abo-33b1180c3262f72c924d",
+        "abo-3d31fac067af3eba7a84",
+        "abo-40f9cc99f24a50f68b87",
+        "abo-43d64a94c0f5c80fbe77",
+        "abo-4bc438b2a870a45d9dd7",
+        "abo-54245f9e76f618fb54ef",
+        "abo-6313e245ec41408c3cb4",
+        "abo-6eefafd6857cf30505cd",
+        "abo-ae00d9fca9f92d6cc150",
+        "abo-ae7356369a2c7e4dd3fc",
+        "abo-aebec200a1e7bf68378b",
+        "abo-d7bb8a4c654d8dfe9211",
+        "abo-e10696e5180faec36a06",
+        "abo-ec2fe12d9213d36bbf9a",
+        "abo-edf27f94fc9f78daaebb",
+        "abo-fa03f1d20768675ab656",
+        "abo-fa8445a22a82ec5c297d"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV033",
+      "query": "Giày nam màu nâu có không",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-giay-nam",
+          "operator": "eq"
+        },
+        {
+          "key": "gender",
+          "value": "nam",
+          "operator": "eq"
+        },
+        {
+          "key": "color",
+          "value": "nâu",
+          "operator": "eq"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-0163e5b3f66c2cb986d1",
+        "abo-0446c46130dcf4cf986d",
+        "abo-1c657d65eddedc65b431",
+        "abo-4d7264df4f0b4b8d6562",
+        "abo-4d961c09ced655681f41",
+        "abo-57b172e45f60dd4d5e34",
+        "abo-712e09257565e9fa89e8",
+        "abo-cda3825f07ab31c8907a",
+        "abo-ec51bcea8e12310c7c62"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV034",
+      "query": "Mình cần giày nam trắng",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-giay-nam",
+          "operator": "eq"
+        },
+        {
+          "key": "gender",
+          "value": "nam",
+          "operator": "eq"
+        },
+        {
+          "key": "color",
+          "value": "trắng",
+          "operator": "eq"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-604db45ff3cbdd9a1810",
+        "abo-74ab6824f167fe7c09e9",
+        "abo-e2d4af803b10dafc015c"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV035",
+      "query": "Tôi muốn giày nam màu đỏ",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-giay-nam",
+          "operator": "eq"
+        },
+        {
+          "key": "gender",
+          "value": "nam",
+          "operator": "eq"
+        },
+        {
+          "key": "color",
+          "value": "đỏ",
+          "operator": "eq"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-488da09980f19a627b6c",
+        "abo-c1bcc35562901d523cad"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV036",
+      "query": "Cho xem giày nam xanh than",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-giay-nam",
+          "operator": "eq"
+        },
+        {
+          "key": "gender",
+          "value": "nam",
+          "operator": "eq"
+        },
+        {
+          "key": "color",
+          "value": "xanh than",
+          "operator": "eq"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-142df26114c9cb0f83fe",
+        "abo-28cbb1d314b6758a11c5",
+        "abo-45f7fd107e27fe381eed",
+        "abo-706177f5a914fc2809c5",
+        "abo-76bb9bcc7b7014242b7f",
+        "abo-95afc9196508165173e4",
+        "abo-976b9dc80a451d0eee3b",
+        "abo-9eb05df628c8bc7a44e2",
+        "abo-a834c74af604e48b14ca",
+        "abo-c733bd05b0dff4704e54",
+        "abo-c9211d229c64c5c630a2"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV037",
+      "query": "Tìm giày nam dưới năm trăm nghìn",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-giay-nam",
+          "operator": "eq"
+        },
+        {
+          "key": "gender",
+          "value": "nam",
+          "operator": "eq"
+        },
+        {
+          "key": "price_max",
+          "value": 500000,
+          "operator": "lt"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-00c514834bf1afb3aeb1",
+        "abo-0163e5b3f66c2cb986d1",
+        "abo-0446c46130dcf4cf986d",
+        "abo-0677e35cb13f616f4e89",
+        "abo-07664b5bdbfa4053fe23",
+        "abo-08c3abaa33e9e744db0b",
+        "abo-142df26114c9cb0f83fe",
+        "abo-167e24d686f1dd378300",
+        "abo-1a20a2d5b699155f63ae",
+        "abo-1c3c0d3210809f805d53",
+        "abo-1c657d65eddedc65b431",
+        "abo-1c74f1be3fc372c664b3",
+        "abo-1d4e81c2673d0557b216",
+        "abo-1f7771f220d03d56ea93",
+        "abo-2048635769b96eeb7db1",
+        "abo-28cbb1d314b6758a11c5",
+        "abo-2d8abebfb96796f14af2",
+        "abo-2f1a1878f66f13c15023",
+        "abo-300e7e51231c2acc7fdf",
+        "abo-31d65daf9f640647addc",
+        "abo-33b1180c3262f72c924d",
+        "abo-3d31fac067af3eba7a84",
+        "abo-40f9cc99f24a50f68b87",
+        "abo-43d64a94c0f5c80fbe77",
+        "abo-45f7fd107e27fe381eed",
+        "abo-4670d5d847db38fb8d87",
+        "abo-488da09980f19a627b6c",
+        "abo-4bc438b2a870a45d9dd7",
+        "abo-4d7264df4f0b4b8d6562",
+        "abo-4d961c09ced655681f41",
+        "abo-4f60541a02aaef0511ac",
+        "abo-4f695752f62139be067d",
+        "abo-53b37a833bee572b4374",
+        "abo-54245f9e76f618fb54ef",
+        "abo-56668b47b51e8f6d53b3",
+        "abo-56b1f59905c1244bffa8",
+        "abo-57b172e45f60dd4d5e34",
+        "abo-5c86b55699a175966118",
+        "abo-604db45ff3cbdd9a1810",
+        "abo-6313e245ec41408c3cb4",
+        "abo-637e3c8301d9403b9c6b",
+        "abo-6eefafd6857cf30505cd",
+        "abo-706177f5a914fc2809c5",
+        "abo-712e09257565e9fa89e8",
+        "abo-74ab6824f167fe7c09e9",
+        "abo-76bb9bcc7b7014242b7f",
+        "abo-7ae9ec887afca81636e8",
+        "abo-85bd9f176813f88bc66a",
+        "abo-882e28e7d5b4b046c02f",
+        "abo-8a681042e93aeb9ea029",
+        "abo-8a8e48db8a59e66c679a",
+        "abo-8ed771f8abb0b3a4beeb",
+        "abo-95afc9196508165173e4",
+        "abo-976b9dc80a451d0eee3b",
+        "abo-9d7adf5bef12078f11e2",
+        "abo-9eb05df628c8bc7a44e2",
+        "abo-a67135565e41117a62ab",
+        "abo-a834c74af604e48b14ca",
+        "abo-a94f92ba00f1c73c43ed",
+        "abo-ae00d9fca9f92d6cc150",
+        "abo-ae7356369a2c7e4dd3fc",
+        "abo-aebec200a1e7bf68378b",
+        "abo-bc51c3f83379086dd476",
+        "abo-bfa39b625c30ab2de57a",
+        "abo-bfb4dfe154c249267d01",
+        "abo-c1bcc35562901d523cad",
+        "abo-c733bd05b0dff4704e54",
+        "abo-c9211d229c64c5c630a2",
+        "abo-cda3825f07ab31c8907a",
+        "abo-cfddd3bb61d9adc77fb6",
+        "abo-d7bb8a4c654d8dfe9211",
+        "abo-e10696e5180faec36a06",
+        "abo-e2d4af803b10dafc015c",
+        "abo-e7cd4b6015d94890c72f",
+        "abo-ea9881376a2a9a50fadf",
+        "abo-ec2fe12d9213d36bbf9a",
+        "abo-ec51bcea8e12310c7c62",
+        "abo-edf27f94fc9f78daaebb",
+        "abo-ef2d756463739e0e10b8",
+        "abo-f2e9cda50d8b30e3436f",
+        "abo-fa03f1d20768675ab656",
+        "abo-fa8445a22a82ec5c297d",
+        "abo-fef7d982456ff59eeeef"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV038",
+      "query": "Giày nam từ bốn trăm nghìn đến năm trăm nghìn",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-giay-nam",
+          "operator": "eq"
+        },
+        {
+          "key": "gender",
+          "value": "nam",
+          "operator": "eq"
+        },
+        {
+          "key": "price_min",
+          "value": 400000,
+          "operator": "gte"
+        },
+        {
+          "key": "price_max",
+          "value": 500000,
+          "operator": "lte"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-00c514834bf1afb3aeb1",
+        "abo-0163e5b3f66c2cb986d1",
+        "abo-0446c46130dcf4cf986d",
+        "abo-0677e35cb13f616f4e89",
+        "abo-07664b5bdbfa4053fe23",
+        "abo-08c3abaa33e9e744db0b",
+        "abo-142df26114c9cb0f83fe",
+        "abo-167e24d686f1dd378300",
+        "abo-1a20a2d5b699155f63ae",
+        "abo-1c3c0d3210809f805d53",
+        "abo-1c657d65eddedc65b431",
+        "abo-1c74f1be3fc372c664b3",
+        "abo-1d4e81c2673d0557b216",
+        "abo-1f7771f220d03d56ea93",
+        "abo-2048635769b96eeb7db1",
+        "abo-28cbb1d314b6758a11c5",
+        "abo-2d8abebfb96796f14af2",
+        "abo-2f1a1878f66f13c15023",
+        "abo-300e7e51231c2acc7fdf",
+        "abo-31d65daf9f640647addc",
+        "abo-33b1180c3262f72c924d",
+        "abo-3d31fac067af3eba7a84",
+        "abo-40f9cc99f24a50f68b87",
+        "abo-43d64a94c0f5c80fbe77",
+        "abo-45f7fd107e27fe381eed",
+        "abo-4670d5d847db38fb8d87",
+        "abo-488da09980f19a627b6c",
+        "abo-4bc438b2a870a45d9dd7",
+        "abo-4d7264df4f0b4b8d6562",
+        "abo-4d961c09ced655681f41",
+        "abo-4f60541a02aaef0511ac",
+        "abo-4f695752f62139be067d",
+        "abo-53b37a833bee572b4374",
+        "abo-54245f9e76f618fb54ef",
+        "abo-56668b47b51e8f6d53b3",
+        "abo-56b1f59905c1244bffa8",
+        "abo-57b172e45f60dd4d5e34",
+        "abo-5c86b55699a175966118",
+        "abo-604db45ff3cbdd9a1810",
+        "abo-6313e245ec41408c3cb4",
+        "abo-637e3c8301d9403b9c6b",
+        "abo-6eefafd6857cf30505cd",
+        "abo-706177f5a914fc2809c5",
+        "abo-712e09257565e9fa89e8",
+        "abo-74ab6824f167fe7c09e9",
+        "abo-76bb9bcc7b7014242b7f",
+        "abo-7ae9ec887afca81636e8",
+        "abo-85bd9f176813f88bc66a",
+        "abo-882e28e7d5b4b046c02f",
+        "abo-8a681042e93aeb9ea029",
+        "abo-8a8e48db8a59e66c679a",
+        "abo-8ed771f8abb0b3a4beeb",
+        "abo-95afc9196508165173e4",
+        "abo-976b9dc80a451d0eee3b",
+        "abo-9d7adf5bef12078f11e2",
+        "abo-9eb05df628c8bc7a44e2",
+        "abo-a67135565e41117a62ab",
+        "abo-a834c74af604e48b14ca",
+        "abo-a94f92ba00f1c73c43ed",
+        "abo-ae00d9fca9f92d6cc150",
+        "abo-ae7356369a2c7e4dd3fc",
+        "abo-aebec200a1e7bf68378b",
+        "abo-bc51c3f83379086dd476",
+        "abo-bfa39b625c30ab2de57a",
+        "abo-bfb4dfe154c249267d01",
+        "abo-c1bcc35562901d523cad",
+        "abo-c733bd05b0dff4704e54",
+        "abo-c9211d229c64c5c630a2",
+        "abo-cda3825f07ab31c8907a",
+        "abo-cfddd3bb61d9adc77fb6",
+        "abo-d7bb8a4c654d8dfe9211",
+        "abo-e10696e5180faec36a06",
+        "abo-e2d4af803b10dafc015c",
+        "abo-e7cd4b6015d94890c72f",
+        "abo-ea9881376a2a9a50fadf",
+        "abo-ec2fe12d9213d36bbf9a",
+        "abo-ec51bcea8e12310c7c62",
+        "abo-edf27f94fc9f78daaebb",
+        "abo-ef2d756463739e0e10b8",
+        "abo-f2e9cda50d8b30e3436f",
+        "abo-fa03f1d20768675ab656",
+        "abo-fa8445a22a82ec5c297d",
+        "abo-fef7d982456ff59eeeef"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV039",
+      "query": "Mình cần giày nam không trên năm trăm nghìn",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-giay-nam",
+          "operator": "eq"
+        },
+        {
+          "key": "gender",
+          "value": "nam",
+          "operator": "eq"
+        },
+        {
+          "key": "price_max",
+          "value": 500000,
+          "operator": "lte"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-00c514834bf1afb3aeb1",
+        "abo-0163e5b3f66c2cb986d1",
+        "abo-0446c46130dcf4cf986d",
+        "abo-0677e35cb13f616f4e89",
+        "abo-07664b5bdbfa4053fe23",
+        "abo-08c3abaa33e9e744db0b",
+        "abo-142df26114c9cb0f83fe",
+        "abo-167e24d686f1dd378300",
+        "abo-1a20a2d5b699155f63ae",
+        "abo-1c3c0d3210809f805d53",
+        "abo-1c657d65eddedc65b431",
+        "abo-1c74f1be3fc372c664b3",
+        "abo-1d4e81c2673d0557b216",
+        "abo-1f7771f220d03d56ea93",
+        "abo-2048635769b96eeb7db1",
+        "abo-28cbb1d314b6758a11c5",
+        "abo-2d8abebfb96796f14af2",
+        "abo-2f1a1878f66f13c15023",
+        "abo-300e7e51231c2acc7fdf",
+        "abo-31d65daf9f640647addc",
+        "abo-33b1180c3262f72c924d",
+        "abo-3d31fac067af3eba7a84",
+        "abo-40f9cc99f24a50f68b87",
+        "abo-43d64a94c0f5c80fbe77",
+        "abo-45f7fd107e27fe381eed",
+        "abo-4670d5d847db38fb8d87",
+        "abo-488da09980f19a627b6c",
+        "abo-4bc438b2a870a45d9dd7",
+        "abo-4d7264df4f0b4b8d6562",
+        "abo-4d961c09ced655681f41",
+        "abo-4f60541a02aaef0511ac",
+        "abo-4f695752f62139be067d",
+        "abo-53b37a833bee572b4374",
+        "abo-54245f9e76f618fb54ef",
+        "abo-56668b47b51e8f6d53b3",
+        "abo-56b1f59905c1244bffa8",
+        "abo-57b172e45f60dd4d5e34",
+        "abo-5c86b55699a175966118",
+        "abo-604db45ff3cbdd9a1810",
+        "abo-6313e245ec41408c3cb4",
+        "abo-637e3c8301d9403b9c6b",
+        "abo-6eefafd6857cf30505cd",
+        "abo-706177f5a914fc2809c5",
+        "abo-712e09257565e9fa89e8",
+        "abo-74ab6824f167fe7c09e9",
+        "abo-76bb9bcc7b7014242b7f",
+        "abo-7ae9ec887afca81636e8",
+        "abo-85bd9f176813f88bc66a",
+        "abo-882e28e7d5b4b046c02f",
+        "abo-8a681042e93aeb9ea029",
+        "abo-8a8e48db8a59e66c679a",
+        "abo-8ed771f8abb0b3a4beeb",
+        "abo-95afc9196508165173e4",
+        "abo-976b9dc80a451d0eee3b",
+        "abo-9d7adf5bef12078f11e2",
+        "abo-9eb05df628c8bc7a44e2",
+        "abo-a67135565e41117a62ab",
+        "abo-a834c74af604e48b14ca",
+        "abo-a94f92ba00f1c73c43ed",
+        "abo-ae00d9fca9f92d6cc150",
+        "abo-ae7356369a2c7e4dd3fc",
+        "abo-aebec200a1e7bf68378b",
+        "abo-bc51c3f83379086dd476",
+        "abo-bfa39b625c30ab2de57a",
+        "abo-bfb4dfe154c249267d01",
+        "abo-c1bcc35562901d523cad",
+        "abo-c733bd05b0dff4704e54",
+        "abo-c9211d229c64c5c630a2",
+        "abo-cda3825f07ab31c8907a",
+        "abo-cfddd3bb61d9adc77fb6",
+        "abo-d7bb8a4c654d8dfe9211",
+        "abo-e10696e5180faec36a06",
+        "abo-e2d4af803b10dafc015c",
+        "abo-e7cd4b6015d94890c72f",
+        "abo-ea9881376a2a9a50fadf",
+        "abo-ec2fe12d9213d36bbf9a",
+        "abo-ec51bcea8e12310c7c62",
+        "abo-edf27f94fc9f78daaebb",
+        "abo-ef2d756463739e0e10b8",
+        "abo-f2e9cda50d8b30e3436f",
+        "abo-fa03f1d20768675ab656",
+        "abo-fa8445a22a82ec5c297d",
+        "abo-fef7d982456ff59eeeef"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV040",
+      "query": "Tìm giày nam Stanton dưới sáu trăm nghìn",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-giay-nam",
+          "operator": "eq"
+        },
+        {
+          "key": "gender",
+          "value": "nam",
+          "operator": "eq"
+        },
+        {
+          "key": "brand",
+          "value": "Stanton",
+          "operator": "eq"
+        },
+        {
+          "key": "price_max",
+          "value": 600000,
+          "operator": "lt"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-2d8abebfb96796f14af2",
+        "abo-cda3825f07ab31c8907a"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV041",
+      "query": "Tôi muốn mua giày nữ",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-giay-nu",
+          "operator": "eq"
+        },
+        {
+          "key": "gender",
+          "value": "nữ",
+          "operator": "eq"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-0336da5827d1a560c8f5",
+        "abo-04122797f0a6587604cc",
+        "abo-068eb2ca7f3a164aa0fc",
+        "abo-0af1a045cd6669a8aa8b",
+        "abo-0fc59eb036b16e07f35b",
+        "abo-1986e4d84ac0385d830a",
+        "abo-1a8fe56172805dfc1267",
+        "abo-1c34c6d11449a5f46310",
+        "abo-1d8b2552166c1db8183f",
+        "abo-1e4cbb47690b763c2b9b",
+        "abo-281f7ec5af7255d5e6ba",
+        "abo-285fe8e8101ec33231ec",
+        "abo-296986af3dfa21b92bfb",
+        "abo-2b12f749394178d4d30d",
+        "abo-32374ba0d89126ad1a4b",
+        "abo-34778f88982f6851deaa",
+        "abo-38a327f6e0402f979c1a",
+        "abo-38a9aef17d3aed7440a5",
+        "abo-3aedc0e930390aa55333",
+        "abo-4252fa202a343516bd60",
+        "abo-4320f0b31edcc2513bd5",
+        "abo-4640fe8c83f13132b814",
+        "abo-473c0cc1cc0cc2a13667",
+        "abo-4753acc0233793dc2d35",
+        "abo-476d12bfc54e0bf1f0a6",
+        "abo-49eaf6913e6e238d69cf",
+        "abo-4c9a4220ce76c98b87a9",
+        "abo-4eb6f9a9069dd46ff21c",
+        "abo-5171f32caae0cfe5d95d",
+        "abo-518aa5b5a5ab457f7247",
+        "abo-576a7f8f26b7918582bb",
+        "abo-5d6116981294a2788d7d",
+        "abo-6595b57250af31343d11",
+        "abo-66bcaaf906efcbd6bbc5",
+        "abo-6aa3f543ea8c9851daf7",
+        "abo-6e922ed25781b6cc60d4",
+        "abo-7378f62e1bcb0ce4e2e9",
+        "abo-742606b6fe67b6caad5a",
+        "abo-74b3869bb10cb38794aa",
+        "abo-75a1a89023c26fc0fb32",
+        "abo-7bcf4120e062486573a0",
+        "abo-7caddbf710750c0c068b",
+        "abo-7fb4d07ad15b762f4156",
+        "abo-8197d8250efdfbdd15dc",
+        "abo-824283092ca6515b316a",
+        "abo-83287d58c9b9bd74e186",
+        "abo-8771a666f262434572c4",
+        "abo-8adef3a5b1a189086549",
+        "abo-8b90552e1e2639c94f46",
+        "abo-8e3d8fd779413b555f89",
+        "abo-907ae4642ae874bae0ee",
+        "abo-9426b5b0bb96951a8e9c",
+        "abo-95ba6100d8ac3eacf087",
+        "abo-9640d3593b024c73f67c",
+        "abo-96627f03521acb018124",
+        "abo-a05c843b9e096192e782",
+        "abo-a076ecb8b1b0728d5a45",
+        "abo-a539ecf5f219beb8f228",
+        "abo-a76b60f5328781704d89",
+        "abo-ad435bca2713763bccf1",
+        "abo-ae45fd432c519431ef4f",
+        "abo-b0d12ebd21ef4c90cf24",
+        "abo-ba11e255205999e6cb33",
+        "abo-beea0140eb23a5e1fdc5",
+        "abo-c2d277b41a6b9acd130f",
+        "abo-c8a9cb1d865e332105a7",
+        "abo-ccef396ddd1311dcaf81",
+        "abo-ce79db2f9b111bc69418",
+        "abo-cfd897569894fe5ed605",
+        "abo-cfe16205f1761e9d3c00",
+        "abo-d17e9554c2823ba58ef7",
+        "abo-d2090f16649d37b8d4b5",
+        "abo-d4543dfba36f32037336",
+        "abo-d9210b1f32839e3f6983",
+        "abo-db4a00d9c32985ed5731",
+        "abo-dba192a4cfe1fc47d6fa",
+        "abo-de196de635ad3483174f",
+        "abo-de394b6a8c15561a8128",
+        "abo-e371658dbb5b00ba2976",
+        "abo-e9d84a8f2551e0716668",
+        "abo-f88aea80ad3759cc7a21",
+        "abo-fb2d6ee24664e3cca28c",
+        "abo-fc1e2d0a1bb9b5530b25"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV042",
+      "query": "Cho xem giày nữ đen",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-giay-nu",
+          "operator": "eq"
+        },
+        {
+          "key": "gender",
+          "value": "nữ",
+          "operator": "eq"
+        },
+        {
+          "key": "color",
+          "value": "đen",
+          "operator": "eq"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-4c9a4220ce76c98b87a9",
+        "abo-5171f32caae0cfe5d95d",
+        "abo-6e922ed25781b6cc60d4",
+        "abo-74b3869bb10cb38794aa",
+        "abo-7bcf4120e062486573a0",
+        "abo-8adef3a5b1a189086549",
+        "abo-ad435bca2713763bccf1",
+        "abo-b0d12ebd21ef4c90cf24",
+        "abo-c8a9cb1d865e332105a7",
+        "abo-d2090f16649d37b8d4b5"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV043",
+      "query": "Tôi cần giày nữ màu nâu",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-giay-nu",
+          "operator": "eq"
+        },
+        {
+          "key": "gender",
+          "value": "nữ",
+          "operator": "eq"
+        },
+        {
+          "key": "color",
+          "value": "nâu",
+          "operator": "eq"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-0fc59eb036b16e07f35b",
+        "abo-2b12f749394178d4d30d",
+        "abo-38a327f6e0402f979c1a",
+        "abo-38a9aef17d3aed7440a5",
+        "abo-4eb6f9a9069dd46ff21c",
+        "abo-a076ecb8b1b0728d5a45",
+        "abo-ae45fd432c519431ef4f",
+        "abo-ccef396ddd1311dcaf81",
+        "abo-cfd897569894fe5ed605"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV044",
+      "query": "Tìm giày nữ trắng giúp mình",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-giay-nu",
+          "operator": "eq"
+        },
+        {
+          "key": "gender",
+          "value": "nữ",
+          "operator": "eq"
+        },
+        {
+          "key": "color",
+          "value": "trắng",
+          "operator": "eq"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-32374ba0d89126ad1a4b",
+        "abo-4640fe8c83f13132b814",
+        "abo-d9210b1f32839e3f6983",
+        "abo-db4a00d9c32985ed5731",
+        "abo-de394b6a8c15561a8128"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV045",
+      "query": "Giày nữ hồng có mẫu nào",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-giay-nu",
+          "operator": "eq"
+        },
+        {
+          "key": "gender",
+          "value": "nữ",
+          "operator": "eq"
+        },
+        {
+          "key": "color",
+          "value": "hồng",
+          "operator": "eq"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-296986af3dfa21b92bfb",
+        "abo-824283092ca6515b316a",
+        "abo-e371658dbb5b00ba2976",
+        "abo-fb2d6ee24664e3cca28c"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV046",
+      "query": "Mình tìm giày nữ xanh lá",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-giay-nu",
+          "operator": "eq"
+        },
+        {
+          "key": "gender",
+          "value": "nữ",
+          "operator": "eq"
+        },
+        {
+          "key": "color",
+          "value": "xanh lá",
+          "operator": "eq"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-34778f88982f6851deaa",
+        "abo-4320f0b31edcc2513bd5",
+        "abo-518aa5b5a5ab457f7247",
+        "abo-a76b60f5328781704d89"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV047",
+      "query": "Cho xem giày nữ dưới năm trăm nghìn",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-giay-nu",
+          "operator": "eq"
+        },
+        {
+          "key": "gender",
+          "value": "nữ",
+          "operator": "eq"
+        },
+        {
+          "key": "price_max",
+          "value": 500000,
+          "operator": "lt"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-0336da5827d1a560c8f5",
+        "abo-04122797f0a6587604cc",
+        "abo-068eb2ca7f3a164aa0fc",
+        "abo-0af1a045cd6669a8aa8b",
+        "abo-0fc59eb036b16e07f35b",
+        "abo-1986e4d84ac0385d830a",
+        "abo-1a8fe56172805dfc1267",
+        "abo-1c34c6d11449a5f46310",
+        "abo-1d8b2552166c1db8183f",
+        "abo-1e4cbb47690b763c2b9b",
+        "abo-281f7ec5af7255d5e6ba",
+        "abo-285fe8e8101ec33231ec",
+        "abo-296986af3dfa21b92bfb",
+        "abo-2b12f749394178d4d30d",
+        "abo-32374ba0d89126ad1a4b",
+        "abo-34778f88982f6851deaa",
+        "abo-38a327f6e0402f979c1a",
+        "abo-38a9aef17d3aed7440a5",
+        "abo-3aedc0e930390aa55333",
+        "abo-4252fa202a343516bd60",
+        "abo-4320f0b31edcc2513bd5",
+        "abo-4640fe8c83f13132b814",
+        "abo-473c0cc1cc0cc2a13667",
+        "abo-4753acc0233793dc2d35",
+        "abo-476d12bfc54e0bf1f0a6",
+        "abo-49eaf6913e6e238d69cf",
+        "abo-4c9a4220ce76c98b87a9",
+        "abo-4eb6f9a9069dd46ff21c",
+        "abo-5171f32caae0cfe5d95d",
+        "abo-518aa5b5a5ab457f7247",
+        "abo-576a7f8f26b7918582bb",
+        "abo-5d6116981294a2788d7d",
+        "abo-6595b57250af31343d11",
+        "abo-66bcaaf906efcbd6bbc5",
+        "abo-6aa3f543ea8c9851daf7",
+        "abo-6e922ed25781b6cc60d4",
+        "abo-7378f62e1bcb0ce4e2e9",
+        "abo-742606b6fe67b6caad5a",
+        "abo-74b3869bb10cb38794aa",
+        "abo-75a1a89023c26fc0fb32",
+        "abo-7bcf4120e062486573a0",
+        "abo-7caddbf710750c0c068b",
+        "abo-7fb4d07ad15b762f4156",
+        "abo-8197d8250efdfbdd15dc",
+        "abo-824283092ca6515b316a",
+        "abo-83287d58c9b9bd74e186",
+        "abo-8771a666f262434572c4",
+        "abo-8adef3a5b1a189086549",
+        "abo-8b90552e1e2639c94f46",
+        "abo-8e3d8fd779413b555f89",
+        "abo-907ae4642ae874bae0ee",
+        "abo-9426b5b0bb96951a8e9c",
+        "abo-95ba6100d8ac3eacf087",
+        "abo-9640d3593b024c73f67c",
+        "abo-96627f03521acb018124",
+        "abo-a05c843b9e096192e782",
+        "abo-a076ecb8b1b0728d5a45",
+        "abo-a539ecf5f219beb8f228",
+        "abo-a76b60f5328781704d89",
+        "abo-ad435bca2713763bccf1",
+        "abo-ae45fd432c519431ef4f",
+        "abo-b0d12ebd21ef4c90cf24",
+        "abo-ba11e255205999e6cb33",
+        "abo-beea0140eb23a5e1fdc5",
+        "abo-c2d277b41a6b9acd130f",
+        "abo-c8a9cb1d865e332105a7",
+        "abo-ccef396ddd1311dcaf81",
+        "abo-ce79db2f9b111bc69418",
+        "abo-cfd897569894fe5ed605",
+        "abo-cfe16205f1761e9d3c00",
+        "abo-d17e9554c2823ba58ef7",
+        "abo-d2090f16649d37b8d4b5",
+        "abo-d4543dfba36f32037336",
+        "abo-d9210b1f32839e3f6983",
+        "abo-db4a00d9c32985ed5731",
+        "abo-dba192a4cfe1fc47d6fa",
+        "abo-de196de635ad3483174f",
+        "abo-de394b6a8c15561a8128",
+        "abo-e371658dbb5b00ba2976",
+        "abo-e9d84a8f2551e0716668",
+        "abo-f88aea80ad3759cc7a21",
+        "abo-fb2d6ee24664e3cca28c",
+        "abo-fc1e2d0a1bb9b5530b25"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV048",
+      "query": "Giày nữ từ bốn trăm nghìn đến năm trăm nghìn",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-giay-nu",
+          "operator": "eq"
+        },
+        {
+          "key": "gender",
+          "value": "nữ",
+          "operator": "eq"
+        },
+        {
+          "key": "price_min",
+          "value": 400000,
+          "operator": "gte"
+        },
+        {
+          "key": "price_max",
+          "value": 500000,
+          "operator": "lte"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-0336da5827d1a560c8f5",
+        "abo-04122797f0a6587604cc",
+        "abo-068eb2ca7f3a164aa0fc",
+        "abo-0af1a045cd6669a8aa8b",
+        "abo-0fc59eb036b16e07f35b",
+        "abo-1986e4d84ac0385d830a",
+        "abo-1a8fe56172805dfc1267",
+        "abo-1c34c6d11449a5f46310",
+        "abo-1d8b2552166c1db8183f",
+        "abo-1e4cbb47690b763c2b9b",
+        "abo-281f7ec5af7255d5e6ba",
+        "abo-285fe8e8101ec33231ec",
+        "abo-296986af3dfa21b92bfb",
+        "abo-2b12f749394178d4d30d",
+        "abo-32374ba0d89126ad1a4b",
+        "abo-34778f88982f6851deaa",
+        "abo-38a327f6e0402f979c1a",
+        "abo-38a9aef17d3aed7440a5",
+        "abo-3aedc0e930390aa55333",
+        "abo-4252fa202a343516bd60",
+        "abo-4320f0b31edcc2513bd5",
+        "abo-4640fe8c83f13132b814",
+        "abo-473c0cc1cc0cc2a13667",
+        "abo-4753acc0233793dc2d35",
+        "abo-476d12bfc54e0bf1f0a6",
+        "abo-49eaf6913e6e238d69cf",
+        "abo-4c9a4220ce76c98b87a9",
+        "abo-4eb6f9a9069dd46ff21c",
+        "abo-5171f32caae0cfe5d95d",
+        "abo-518aa5b5a5ab457f7247",
+        "abo-576a7f8f26b7918582bb",
+        "abo-5d6116981294a2788d7d",
+        "abo-6595b57250af31343d11",
+        "abo-66bcaaf906efcbd6bbc5",
+        "abo-6aa3f543ea8c9851daf7",
+        "abo-6e922ed25781b6cc60d4",
+        "abo-7378f62e1bcb0ce4e2e9",
+        "abo-742606b6fe67b6caad5a",
+        "abo-74b3869bb10cb38794aa",
+        "abo-75a1a89023c26fc0fb32",
+        "abo-7bcf4120e062486573a0",
+        "abo-7caddbf710750c0c068b",
+        "abo-7fb4d07ad15b762f4156",
+        "abo-8197d8250efdfbdd15dc",
+        "abo-824283092ca6515b316a",
+        "abo-83287d58c9b9bd74e186",
+        "abo-8771a666f262434572c4",
+        "abo-8adef3a5b1a189086549",
+        "abo-8b90552e1e2639c94f46",
+        "abo-8e3d8fd779413b555f89",
+        "abo-907ae4642ae874bae0ee",
+        "abo-9426b5b0bb96951a8e9c",
+        "abo-95ba6100d8ac3eacf087",
+        "abo-9640d3593b024c73f67c",
+        "abo-96627f03521acb018124",
+        "abo-a05c843b9e096192e782",
+        "abo-a076ecb8b1b0728d5a45",
+        "abo-a539ecf5f219beb8f228",
+        "abo-a76b60f5328781704d89",
+        "abo-ad435bca2713763bccf1",
+        "abo-ae45fd432c519431ef4f",
+        "abo-b0d12ebd21ef4c90cf24",
+        "abo-ba11e255205999e6cb33",
+        "abo-beea0140eb23a5e1fdc5",
+        "abo-c2d277b41a6b9acd130f",
+        "abo-c8a9cb1d865e332105a7",
+        "abo-ccef396ddd1311dcaf81",
+        "abo-ce79db2f9b111bc69418",
+        "abo-cfd897569894fe5ed605",
+        "abo-cfe16205f1761e9d3c00",
+        "abo-d17e9554c2823ba58ef7",
+        "abo-d2090f16649d37b8d4b5",
+        "abo-d4543dfba36f32037336",
+        "abo-d9210b1f32839e3f6983",
+        "abo-db4a00d9c32985ed5731",
+        "abo-dba192a4cfe1fc47d6fa",
+        "abo-de196de635ad3483174f",
+        "abo-de394b6a8c15561a8128",
+        "abo-e371658dbb5b00ba2976",
+        "abo-e9d84a8f2551e0716668",
+        "abo-f88aea80ad3759cc7a21",
+        "abo-fb2d6ee24664e3cca28c",
+        "abo-fc1e2d0a1bb9b5530b25"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV049",
+      "query": "Tôi muốn giày nữ không quá năm trăm nghìn",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-giay-nu",
+          "operator": "eq"
+        },
+        {
+          "key": "gender",
+          "value": "nữ",
+          "operator": "eq"
+        },
+        {
+          "key": "price_max",
+          "value": 500000,
+          "operator": "lte"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-0336da5827d1a560c8f5",
+        "abo-04122797f0a6587604cc",
+        "abo-068eb2ca7f3a164aa0fc",
+        "abo-0af1a045cd6669a8aa8b",
+        "abo-0fc59eb036b16e07f35b",
+        "abo-1986e4d84ac0385d830a",
+        "abo-1a8fe56172805dfc1267",
+        "abo-1c34c6d11449a5f46310",
+        "abo-1d8b2552166c1db8183f",
+        "abo-1e4cbb47690b763c2b9b",
+        "abo-281f7ec5af7255d5e6ba",
+        "abo-285fe8e8101ec33231ec",
+        "abo-296986af3dfa21b92bfb",
+        "abo-2b12f749394178d4d30d",
+        "abo-32374ba0d89126ad1a4b",
+        "abo-34778f88982f6851deaa",
+        "abo-38a327f6e0402f979c1a",
+        "abo-38a9aef17d3aed7440a5",
+        "abo-3aedc0e930390aa55333",
+        "abo-4252fa202a343516bd60",
+        "abo-4320f0b31edcc2513bd5",
+        "abo-4640fe8c83f13132b814",
+        "abo-473c0cc1cc0cc2a13667",
+        "abo-4753acc0233793dc2d35",
+        "abo-476d12bfc54e0bf1f0a6",
+        "abo-49eaf6913e6e238d69cf",
+        "abo-4c9a4220ce76c98b87a9",
+        "abo-4eb6f9a9069dd46ff21c",
+        "abo-5171f32caae0cfe5d95d",
+        "abo-518aa5b5a5ab457f7247",
+        "abo-576a7f8f26b7918582bb",
+        "abo-5d6116981294a2788d7d",
+        "abo-6595b57250af31343d11",
+        "abo-66bcaaf906efcbd6bbc5",
+        "abo-6aa3f543ea8c9851daf7",
+        "abo-6e922ed25781b6cc60d4",
+        "abo-7378f62e1bcb0ce4e2e9",
+        "abo-742606b6fe67b6caad5a",
+        "abo-74b3869bb10cb38794aa",
+        "abo-75a1a89023c26fc0fb32",
+        "abo-7bcf4120e062486573a0",
+        "abo-7caddbf710750c0c068b",
+        "abo-7fb4d07ad15b762f4156",
+        "abo-8197d8250efdfbdd15dc",
+        "abo-824283092ca6515b316a",
+        "abo-83287d58c9b9bd74e186",
+        "abo-8771a666f262434572c4",
+        "abo-8adef3a5b1a189086549",
+        "abo-8b90552e1e2639c94f46",
+        "abo-8e3d8fd779413b555f89",
+        "abo-907ae4642ae874bae0ee",
+        "abo-9426b5b0bb96951a8e9c",
+        "abo-95ba6100d8ac3eacf087",
+        "abo-9640d3593b024c73f67c",
+        "abo-96627f03521acb018124",
+        "abo-a05c843b9e096192e782",
+        "abo-a076ecb8b1b0728d5a45",
+        "abo-a539ecf5f219beb8f228",
+        "abo-a76b60f5328781704d89",
+        "abo-ad435bca2713763bccf1",
+        "abo-ae45fd432c519431ef4f",
+        "abo-b0d12ebd21ef4c90cf24",
+        "abo-ba11e255205999e6cb33",
+        "abo-beea0140eb23a5e1fdc5",
+        "abo-c2d277b41a6b9acd130f",
+        "abo-c8a9cb1d865e332105a7",
+        "abo-ccef396ddd1311dcaf81",
+        "abo-ce79db2f9b111bc69418",
+        "abo-cfd897569894fe5ed605",
+        "abo-cfe16205f1761e9d3c00",
+        "abo-d17e9554c2823ba58ef7",
+        "abo-d2090f16649d37b8d4b5",
+        "abo-d4543dfba36f32037336",
+        "abo-d9210b1f32839e3f6983",
+        "abo-db4a00d9c32985ed5731",
+        "abo-dba192a4cfe1fc47d6fa",
+        "abo-de196de635ad3483174f",
+        "abo-de394b6a8c15561a8128",
+        "abo-e371658dbb5b00ba2976",
+        "abo-e9d84a8f2551e0716668",
+        "abo-f88aea80ad3759cc7a21",
+        "abo-fb2d6ee24664e3cca28c",
+        "abo-fc1e2d0a1bb9b5530b25"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV050",
+      "query": "Tìm giày nữ Amazon Essentials",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-giay-nu",
+          "operator": "eq"
+        },
+        {
+          "key": "gender",
+          "value": "nữ",
+          "operator": "eq"
+        },
+        {
+          "key": "brand",
+          "value": "Amazon Essentials",
+          "operator": "eq"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-32374ba0d89126ad1a4b",
+        "abo-83287d58c9b9bd74e186",
+        "abo-b0d12ebd21ef4c90cf24"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV051",
+      "query": "Tôi muốn mua ghế",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-ghe",
+          "operator": "eq"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-0d5824b35ffd3ce3a111",
+        "abo-246acc6e8a2c98585748",
+        "abo-40c2d590d020e8d14ae9",
+        "abo-431ff47790d0b98bec5c",
+        "abo-4a886d3cd3a48ff230d5",
+        "abo-81d98e5ba66d748bdb79",
+        "abo-83f32913bc80c90b136a",
+        "abo-9bcaa4fd8c5734434cbb",
+        "abo-9da7f75aa203d53c56a9",
+        "abo-ae80ba078bb8499eb3bc",
+        "abo-b9e6a63210c73625bc80",
+        "abo-c2a51203b041504067bc",
+        "abo-d4c7304ebc05bc658b39",
+        "abo-e373f4a9f46df3fe8240",
+        "abo-e66fd6e4d4326147e30c",
+        "abo-f0b84f4021267fd53e0a",
+        "abo-f9e30ee895cc6d8483fc"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV052",
+      "query": "Tìm cho tôi ghế dưới một triệu",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-ghe",
+          "operator": "eq"
+        },
+        {
+          "key": "price_max",
+          "value": 1000000,
+          "operator": "lt"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-0d5824b35ffd3ce3a111",
+        "abo-246acc6e8a2c98585748",
+        "abo-40c2d590d020e8d14ae9",
+        "abo-431ff47790d0b98bec5c",
+        "abo-4a886d3cd3a48ff230d5",
+        "abo-81d98e5ba66d748bdb79",
+        "abo-83f32913bc80c90b136a",
+        "abo-9bcaa4fd8c5734434cbb",
+        "abo-9da7f75aa203d53c56a9",
+        "abo-ae80ba078bb8499eb3bc",
+        "abo-b9e6a63210c73625bc80",
+        "abo-c2a51203b041504067bc",
+        "abo-d4c7304ebc05bc658b39",
+        "abo-e373f4a9f46df3fe8240",
+        "abo-e66fd6e4d4326147e30c",
+        "abo-f0b84f4021267fd53e0a",
+        "abo-f9e30ee895cc6d8483fc"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV053",
+      "query": "Cho xem ghế màu xanh dương",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-ghe",
+          "operator": "eq"
+        },
+        {
+          "key": "color",
+          "value": "xanh dương",
+          "operator": "eq"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-0d5824b35ffd3ce3a111",
+        "abo-f0b84f4021267fd53e0a"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV054",
+      "query": "Mình cần ghế nâu",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-ghe",
+          "operator": "eq"
+        },
+        {
+          "key": "color",
+          "value": "nâu",
+          "operator": "eq"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-9bcaa4fd8c5734434cbb"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV055",
+      "query": "Tìm ghế Rivet",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-ghe",
+          "operator": "eq"
+        },
+        {
+          "key": "brand",
+          "value": "Rivet",
+          "operator": "eq"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-246acc6e8a2c98585748",
+        "abo-431ff47790d0b98bec5c",
+        "abo-83f32913bc80c90b136a"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV056",
+      "query": "Tôi muốn bàn dưới một triệu rưỡi",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-ban",
+          "operator": "eq"
+        },
+        {
+          "key": "price_max",
+          "value": 1500000,
+          "operator": "lt"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-0050b24a441bc1f887d6",
+        "abo-665f02f8b5e623db10df",
+        "abo-72f7826672f1aec255cc",
+        "abo-76423c2cbe80cf98d520",
+        "abo-7813496f2370d9b47265",
+        "abo-9e8637d6f71bc11da060",
+        "abo-b15af54722d7f012fd11",
+        "abo-d361ab02f89d28ffe3c1",
+        "abo-d8d440296735660e30f6",
+        "abo-fd2b3ee5ef1a347552b2"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV057",
+      "query": "Cho tôi xem bàn trắng",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-ban",
+          "operator": "eq"
+        },
+        {
+          "key": "color",
+          "value": "trắng",
+          "operator": "eq"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-d361ab02f89d28ffe3c1"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV058",
+      "query": "Mình tìm bàn màu xám",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-ban",
+          "operator": "eq"
+        },
+        {
+          "key": "color",
+          "value": "xám",
+          "operator": "eq"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-72f7826672f1aec255cc",
+        "abo-d8d440296735660e30f6",
+        "abo-fd2b3ee5ef1a347552b2"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV059",
+      "query": "Bàn màu nâu có không",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-ban",
+          "operator": "eq"
+        },
+        {
+          "key": "color",
+          "value": "nâu",
+          "operator": "eq"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-0050b24a441bc1f887d6",
+        "abo-b15af54722d7f012fd11"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV060",
+      "query": "Cho xem bàn Rivet",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-ban",
+          "operator": "eq"
+        },
+        {
+          "key": "brand",
+          "value": "Rivet",
+          "operator": "eq"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-0050b24a441bc1f887d6",
+        "abo-9e8637d6f71bc11da060"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV061",
+      "query": "Tìm ghế sofa dưới ba triệu",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-sofa",
+          "operator": "eq"
+        },
+        {
+          "key": "price_max",
+          "value": 3000000,
+          "operator": "lt"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-147a4fac1d8cae66f962",
+        "abo-388fce9c2482890f5f60",
+        "abo-433f953c6c84022f638e",
+        "abo-455b37279be1ab32f83e",
+        "abo-5d44522e315edd5f6025",
+        "abo-62f6ffd1672185a0d2e4",
+        "abo-72b7858939509bab0cae",
+        "abo-7a5ea4650a4b4eade2ac",
+        "abo-9cea1515f6f2913499e4",
+        "abo-a679629040ad15988c4f",
+        "abo-abb9dea924a3f717e3c6",
+        "abo-ae53f14fab30103d096c",
+        "abo-b17798f4fbfc3995b34b"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV062",
+      "query": "Tôi muốn ghế sofa màu xám",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-sofa",
+          "operator": "eq"
+        },
+        {
+          "key": "color",
+          "value": "xám",
+          "operator": "eq"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-147a4fac1d8cae66f962",
+        "abo-455b37279be1ab32f83e",
+        "abo-72b7858939509bab0cae",
+        "abo-a679629040ad15988c4f"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV063",
+      "query": "Cho xem ghế sofa xanh than",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-sofa",
+          "operator": "eq"
+        },
+        {
+          "key": "color",
+          "value": "xanh than",
+          "operator": "eq"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-7a5ea4650a4b4eade2ac"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV064",
+      "query": "Mình cần ghế sofa nâu",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-sofa",
+          "operator": "eq"
+        },
+        {
+          "key": "color",
+          "value": "nâu",
+          "operator": "eq"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-ae53f14fab30103d096c"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV065",
+      "query": "Ghế sofa không quá ba triệu năm trăm nghìn",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-sofa",
+          "operator": "eq"
+        },
+        {
+          "key": "price_max",
+          "value": 3500000,
+          "operator": "lte"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-147a4fac1d8cae66f962",
+        "abo-388fce9c2482890f5f60",
+        "abo-433f953c6c84022f638e",
+        "abo-455b37279be1ab32f83e",
+        "abo-5d44522e315edd5f6025",
+        "abo-62f6ffd1672185a0d2e4",
+        "abo-72b7858939509bab0cae",
+        "abo-7a5ea4650a4b4eade2ac",
+        "abo-9cea1515f6f2913499e4",
+        "abo-a679629040ad15988c4f",
+        "abo-abb9dea924a3f717e3c6",
+        "abo-ae53f14fab30103d096c",
+        "abo-b17798f4fbfc3995b34b"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV066",
+      "query": "Tôi cần thảm",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-tham",
+          "operator": "eq"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-11db87231ce1570f7d92",
+        "abo-28883c07ad443fc141f7",
+        "abo-2f9cd2b1b85b96285299",
+        "abo-41bdd12740db39391e27",
+        "abo-733ebd1593d26e7dbc1f",
+        "abo-8bcc02d931f02ae00a7c",
+        "abo-95ca3356e346055634dc",
+        "abo-c7ed56c66ab021c053c3",
+        "abo-c821db60366b2b779e0f",
+        "abo-dff0396e22315f157bf0",
+        "abo-e020476d58f1a1bea5f0",
+        "abo-e47f5226f75c50abebdc",
+        "abo-e5234db2f90dadefbdeb",
+        "abo-e8052c1b73c821c8cb61",
+        "abo-f9bea1ab7fd2ce53993f"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV067",
+      "query": "Tìm thảm màu xám",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-tham",
+          "operator": "eq"
+        },
+        {
+          "key": "color",
+          "value": "xám",
+          "operator": "eq"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-e47f5226f75c50abebdc"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV068",
+      "query": "Cho tôi thảm màu be dưới bốn trăm nghìn",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-tham",
+          "operator": "eq"
+        },
+        {
+          "key": "color",
+          "value": "be",
+          "operator": "eq"
+        },
+        {
+          "key": "price_max",
+          "value": 400000,
+          "operator": "lt"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-11db87231ce1570f7d92"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV069",
+      "query": "Mình muốn thảm xanh dương",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-tham",
+          "operator": "eq"
+        },
+        {
+          "key": "color",
+          "value": "xanh dương",
+          "operator": "eq"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-c7ed56c66ab021c053c3",
+        "abo-e020476d58f1a1bea5f0",
+        "abo-f9bea1ab7fd2ce53993f"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV070",
+      "query": "Cho xem thảm xanh lá",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-tham",
+          "operator": "eq"
+        },
+        {
+          "key": "color",
+          "value": "xanh lá",
+          "operator": "eq"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-95ca3356e346055634dc"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV071",
+      "query": "Tôi muốn mua đèn bàn",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-den-ban",
+          "operator": "eq"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-29b2c0eaed12423831bb",
+        "abo-5201acf029973a073d28",
+        "abo-56afbeae6a65d33efdeb",
+        "abo-5b010b857684a79cc925",
+        "abo-a667aeba660037ceec6b",
+        "abo-dad0db93f572d08bdac0",
+        "abo-fd95f8857918e340c9ee"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV072",
+      "query": "Tìm đèn bàn dưới năm trăm nghìn",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-den-ban",
+          "operator": "eq"
+        },
+        {
+          "key": "price_max",
+          "value": 500000,
+          "operator": "lt"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-29b2c0eaed12423831bb",
+        "abo-5201acf029973a073d28",
+        "abo-56afbeae6a65d33efdeb",
+        "abo-5b010b857684a79cc925",
+        "abo-a667aeba660037ceec6b",
+        "abo-dad0db93f572d08bdac0",
+        "abo-fd95f8857918e340c9ee"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV073",
+      "query": "Cho xem đèn bàn trắng",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-den-ban",
+          "operator": "eq"
+        },
+        {
+          "key": "color",
+          "value": "trắng",
+          "operator": "eq"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-5201acf029973a073d28"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV074",
+      "query": "Mình tìm đèn bàn màu hồng",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-den-ban",
+          "operator": "eq"
+        },
+        {
+          "key": "color",
+          "value": "hồng",
+          "operator": "eq"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-fd95f8857918e340c9ee"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV075",
+      "query": "Tôi cần đèn bàn Stone & Beam",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-den-ban",
+          "operator": "eq"
+        },
+        {
+          "key": "brand",
+          "value": "Stone & Beam",
+          "operator": "eq"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-29b2c0eaed12423831bb"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV076",
+      "query": "Tôi cần mua gối",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-goi",
+          "operator": "eq"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-09febd66bbbbb88a79f6",
+        "abo-3e282d4b27b03bc34f14",
+        "abo-4aca36398d6189640c66",
+        "abo-d6a12a926afe53585fb2",
+        "abo-dc3faf23e6400349c4c3"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV077",
+      "query": "Cho xem gối dưới hai trăm nghìn",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-goi",
+          "operator": "eq"
+        },
+        {
+          "key": "price_max",
+          "value": 200000,
+          "operator": "lt"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-09febd66bbbbb88a79f6",
+        "abo-3e282d4b27b03bc34f14",
+        "abo-4aca36398d6189640c66",
+        "abo-d6a12a926afe53585fb2",
+        "abo-dc3faf23e6400349c4c3"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV078",
+      "query": "Mình muốn gối màu đỏ",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-goi",
+          "operator": "eq"
+        },
+        {
+          "key": "color",
+          "value": "đỏ",
+          "operator": "eq"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-3e282d4b27b03bc34f14"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV079",
+      "query": "Tìm gối xanh dương",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-goi",
+          "operator": "eq"
+        },
+        {
+          "key": "color",
+          "value": "xanh dương",
+          "operator": "eq"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-dc3faf23e6400349c4c3"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV080",
+      "query": "Gối từ một trăm nghìn đến hai trăm nghìn",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-goi",
+          "operator": "eq"
+        },
+        {
+          "key": "price_min",
+          "value": 100000,
+          "operator": "gte"
+        },
+        {
+          "key": "price_max",
+          "value": 200000,
+          "operator": "lte"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-09febd66bbbbb88a79f6",
+        "abo-3e282d4b27b03bc34f14",
+        "abo-4aca36398d6189640c66",
+        "abo-d6a12a926afe53585fb2",
+        "abo-dc3faf23e6400349c4c3"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV081",
+      "query": "Tôi muốn mua cốc",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-coc",
+          "operator": "eq"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-7a4d77b7fdf5f3b737dd",
+        "abo-9d23c63b64aebbceec0e",
+        "abo-d7318fc1f2f6331f544d",
+        "abo-dffe3008a16e36046923"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV082",
+      "query": "Cho xem cốc xanh dương",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-coc",
+          "operator": "eq"
+        },
+        {
+          "key": "color",
+          "value": "xanh dương",
+          "operator": "eq"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-d7318fc1f2f6331f544d"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV083",
+      "query": "Tìm cốc dưới một trăm nghìn",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-coc",
+          "operator": "eq"
+        },
+        {
+          "key": "price_max",
+          "value": 100000,
+          "operator": "lt"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-7a4d77b7fdf5f3b737dd",
+        "abo-9d23c63b64aebbceec0e",
+        "abo-d7318fc1f2f6331f544d",
+        "abo-dffe3008a16e36046923"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV084",
+      "query": "Tôi cần cốc AmazonBasics",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-coc",
+          "operator": "eq"
+        },
+        {
+          "key": "brand",
+          "value": "AmazonBasics",
+          "operator": "eq"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-7a4d77b7fdf5f3b737dd",
+        "abo-9d23c63b64aebbceec0e",
+        "abo-dffe3008a16e36046923"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV085",
+      "query": "Cốc từ năm mươi nghìn đến một trăm nghìn",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-coc",
+          "operator": "eq"
+        },
+        {
+          "key": "price_min",
+          "value": 50000,
+          "operator": "gte"
+        },
+        {
+          "key": "price_max",
+          "value": 100000,
+          "operator": "lte"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-7a4d77b7fdf5f3b737dd",
+        "abo-9d23c63b64aebbceec0e",
+        "abo-d7318fc1f2f6331f544d",
+        "abo-dffe3008a16e36046923"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV086",
+      "query": "Tôi muốn mua chảo",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-chao",
+          "operator": "eq"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-e2d591829520f3276004"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV087",
+      "query": "Tìm chảo màu đen",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-chao",
+          "operator": "eq"
+        },
+        {
+          "key": "color",
+          "value": "đen",
+          "operator": "eq"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-e2d591829520f3276004"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV088",
+      "query": "Cho xem chảo dưới bốn trăm nghìn",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-chao",
+          "operator": "eq"
+        },
+        {
+          "key": "price_max",
+          "value": 400000,
+          "operator": "lt"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-e2d591829520f3276004"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV089",
+      "query": "Mình cần chảo không trên bốn trăm nghìn",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-chao",
+          "operator": "eq"
+        },
+        {
+          "key": "price_max",
+          "value": 400000,
+          "operator": "lte"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-e2d591829520f3276004"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV090",
+      "query": "Chảo từ ba trăm nghìn đến bốn trăm nghìn",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-chao",
+          "operator": "eq"
+        },
+        {
+          "key": "price_min",
+          "value": 300000,
+          "operator": "gte"
+        },
+        {
+          "key": "price_max",
+          "value": 400000,
+          "operator": "lte"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-e2d591829520f3276004"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV091",
+      "query": "Tôi cần dụng cụ nhà bếp",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-dung-cu-bep",
+          "operator": "eq"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-4766510388b5ae04194f",
+        "abo-4e7c3ee9213849d33eb8",
+        "abo-62648adc901a986c3862",
+        "abo-9cc8a00e7a504ff979d9",
+        "abo-a98b79349e4d9340408a",
+        "abo-be279817f20f0bebc804",
+        "abo-fc574b1967303776ae2a",
+        "abo-fff065381205986c6e49"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV092",
+      "query": "Cho xem dụng cụ nhà bếp màu trắng",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-dung-cu-bep",
+          "operator": "eq"
+        },
+        {
+          "key": "color",
+          "value": "trắng",
+          "operator": "eq"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-fc574b1967303776ae2a",
+        "abo-fff065381205986c6e49"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV093",
+      "query": "Tìm dụng cụ nhà bếp dưới ba trăm nghìn",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-dung-cu-bep",
+          "operator": "eq"
+        },
+        {
+          "key": "price_max",
+          "value": 300000,
+          "operator": "lt"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-4766510388b5ae04194f",
+        "abo-4e7c3ee9213849d33eb8",
+        "abo-62648adc901a986c3862",
+        "abo-9cc8a00e7a504ff979d9",
+        "abo-a98b79349e4d9340408a",
+        "abo-be279817f20f0bebc804",
+        "abo-fc574b1967303776ae2a",
+        "abo-fff065381205986c6e49"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV094",
+      "query": "Dụng cụ nhà bếp không dưới hai trăm nghìn",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-dung-cu-bep",
+          "operator": "eq"
+        },
+        {
+          "key": "price_min",
+          "value": 200000,
+          "operator": "gte"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-4766510388b5ae04194f",
+        "abo-4e7c3ee9213849d33eb8",
+        "abo-62648adc901a986c3862",
+        "abo-9cc8a00e7a504ff979d9",
+        "abo-a98b79349e4d9340408a",
+        "abo-be279817f20f0bebc804",
+        "abo-fc574b1967303776ae2a",
+        "abo-fff065381205986c6e49"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV095",
+      "query": "Tôi muốn dụng cụ nhà bếp UMI",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-dung-cu-bep",
+          "operator": "eq"
+        },
+        {
+          "key": "brand",
+          "value": "UMI",
+          "operator": "eq"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-be279817f20f0bebc804"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV096",
+      "query": "Tôi cần máy pha cà phê",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-may-pha-ca-phe",
+          "operator": "eq"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-7fa32cd57279ee2db42b"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV097",
+      "query": "Cho xem máy pha cà phê màu đen",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-may-pha-ca-phe",
+          "operator": "eq"
+        },
+        {
+          "key": "color",
+          "value": "đen",
+          "operator": "eq"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-7fa32cd57279ee2db42b"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV098",
+      "query": "Tìm máy pha cà phê dưới một triệu",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-may-pha-ca-phe",
+          "operator": "eq"
+        },
+        {
+          "key": "price_max",
+          "value": 1000000,
+          "operator": "lt"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-7fa32cd57279ee2db42b"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV099",
+      "query": "Máy pha cà phê từ chín trăm nghìn đến một triệu",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-may-pha-ca-phe",
+          "operator": "eq"
+        },
+        {
+          "key": "price_min",
+          "value": 900000,
+          "operator": "gte"
+        },
+        {
+          "key": "price_max",
+          "value": 1000000,
+          "operator": "lte"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-7fa32cd57279ee2db42b"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    },
+    {
+      "id": "SV100",
+      "query": "Tôi muốn máy pha cà phê Amazon Brand - Solimo",
+      "expected_intent": "products",
+      "slots": [
+        {
+          "key": "category",
+          "value": "abo-may-pha-ca-phe",
+          "operator": "eq"
+        },
+        {
+          "key": "brand",
+          "value": "Amazon Brand - Solimo",
+          "operator": "eq"
+        }
+      ],
+      "ui_filters": {},
+      "acceptable_product_ids": [
+        "abo-7fa32cd57279ee2db42b"
+      ],
+      "audio": null,
+      "source_kind": "authored_text",
+      "annotation_status": "author_specified_from_reviewed_metadata_not_parser_output"
+    }
+  ],
+  "gate": {
+    "target_semantic_product_success_rate": 0.7,
+    "top_k": 5,
+    "hard_constraint_violations_allowed": 0,
+    "real_audio_status": "pending_no_domain_audio",
+    "allow_text_score_to_pass_real_voice_gate": false
+  }
+}

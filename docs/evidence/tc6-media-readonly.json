@@ -1,0 +1,61 @@
+{
+  "result": "passed",
+  "tables": [
+    "products",
+    "product_variants",
+    "seller_offers",
+    "inventory",
+    "carts",
+    "cart_items",
+    "orders",
+    "order_items",
+    "mock_payments",
+    "stock_reservations",
+    "shipments"
+  ],
+  "before": {
+    "products": "2e2a79bd41a8cf1dc94e48811a6ea099633fe702439488111adbc19ca9136319",
+    "product_variants": "324668a36900de3d339cbe5c762d3bf6e75928549e135083ae007601d28f7576",
+    "seller_offers": "ede203933be7b99fe93217ab2bdf2f8d05bdf70cbbf079565caeace29be9d438",
+    "inventory": "ed78420152e49564b375bbbd99b63bf55258d300313ef322b1d0ae8a420aa3a6",
+    "carts": "9d0951f8bdac68394a2c796a1119d0d636229fea667ab2b03028c3be7cb99e05",
+    "cart_items": "42187edfa8771d61aa8717e6b8c4c79c3fca2e373482add9d91206364f692aae",
+    "orders": "e6243712e8fa0f21254c6705458d3698c3de620f77e987d524d5d0f068996a21",
+    "order_items": "5075e2df10cf451c4d3940b70fe4772f775351819dc9fceb806355cdebcd819d",
+    "mock_payments": "db3f4179f68150cfff342570d0cbb4d431e2b5f33c20d04f4058c2c57ded90c2",
+    "stock_reservations": "7be293c79a08c163213cd89ec0a361656ee122fbd935e9b070bdbbe652feffd3",
+    "shipments": "25e6c2cda6399687009c63d7e1097fbd06855d38f2eaf76dd71a91f9b10e7cb6"
+  },
+  "after": {
+    "products": "2e2a79bd41a8cf1dc94e48811a6ea099633fe702439488111adbc19ca9136319",
+    "product_variants": "324668a36900de3d339cbe5c762d3bf6e75928549e135083ae007601d28f7576",
+    "seller_offers": "ede203933be7b99fe93217ab2bdf2f8d05bdf70cbbf079565caeace29be9d438",
+    "inventory": "ed78420152e49564b375bbbd99b63bf55258d300313ef322b1d0ae8a420aa3a6",
+    "carts": "9d0951f8bdac68394a2c796a1119d0d636229fea667ab2b03028c3be7cb99e05",
+    "cart_items": "42187edfa8771d61aa8717e6b8c4c79c3fca2e373482add9d91206364f692aae",
+    "orders": "e6243712e8fa0f21254c6705458d3698c3de620f77e987d524d5d0f068996a21",
+    "order_items": "5075e2df10cf451c4d3940b70fe4772f775351819dc9fceb806355cdebcd819d",
+    "mock_payments": "db3f4179f68150cfff342570d0cbb4d431e2b5f33c20d04f4058c2c57ded90c2",
+    "stock_reservations": "7be293c79a08c163213cd89ec0a361656ee122fbd935e9b070bdbbe652feffd3",
+    "shipments": "25e6c2cda6399687009c63d7e1097fbd06855d38f2eaf76dd71a91f9b10e7cb6"
+  },
+  "actual_requests": [
+    {
+      "modality": "text",
+      "status": 200
+    },
+    {
+      "modality": "voice",
+      "status": 200
+    },
+    {
+      "modality": "image",
+      "status": 200
+    },
+    {
+      "modality": "voice",
+      "status": 200
+    }
+  ],
+  "owned_order_readonly": "separate real PostgreSQL integration test test_tc5_owner_and_tc6_read_only"
+}

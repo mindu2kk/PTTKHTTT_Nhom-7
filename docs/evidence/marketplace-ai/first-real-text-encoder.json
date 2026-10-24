@@ -1,0 +1,242 @@
+{
+  "status": 200,
+  "http_ms": 20449.52,
+  "response": {
+    "search_type": "products",
+    "query": {
+      "modality": "text",
+      "raw_text": "đèn bàn tối giản",
+      "normalized_text": "den ban toi gian",
+      "hard_filters": [
+        {
+          "key": "category",
+          "value": "abo-den-ban",
+          "origin": "explicit_text",
+          "confidence": 1.0,
+          "operator": "eq"
+        }
+      ],
+      "soft_preferences": [
+        {
+          "key": "style",
+          "value": "toi gian",
+          "origin": "explicit_text",
+          "confidence": 0.7,
+          "operator": "eq"
+        }
+      ],
+      "relaxed_filters": []
+    },
+    "items": [
+      {
+        "product": {
+          "id": "abo-fd95f8857918e340c9ee",
+          "slug": "abo-fd95f8857918e340c9ee",
+          "name_vi": "Đèn bàn Rivet — 21632-003",
+          "description_vi": "Đèn bàn trong bộ dữ liệu Amazon Berkeley Objects. Ảnh chụp và tên gốc liên kết theo mã B07HKDSM1J. Màu theo nguồn: hồng. Giá và hạn mức đặt thử của HoodooMart được mô phỏng riêng; không phải chào bán hay tồn kho Amazon.",
+          "category_id": "abo-den-ban",
+          "category_name": "Đèn bàn",
+          "price_vnd": 490000,
+          "available_quantity": 5,
+          "image_url": "/media/catalog/abo-fd95f8857918e340c9ee-0.webp",
+          "image_alt": "Đèn bàn Rivet — 21632-003 — ảnh ABO 418eXzxGlSL",
+          "color": "hồng",
+          "material": "Chưa có thông tin",
+          "size": "Phiên bản nguồn",
+          "gender": null,
+          "verification_status": "verified",
+          "price_kind": "demo",
+          "source_id": "amazon-berkeley-objects",
+          "rights_status": "approved",
+          "data_profile": "real_demo",
+          "season": null,
+          "data_notice": "Sản phẩm và ảnh thật từ ABO · Giá và hạn mức đặt thử mô phỏng",
+          "brand": "Rivet",
+          "original_name": "Amazon Brand – Rivet Dome-Shaped Table Lamp, Aster Modern, with Bulb, 21\"H, Tan/Light Pink",
+          "images": []
+        },
+        "rank": 1,
+        "score": 0.4948,
+        "explanation": "Mức tương tự giữa mô tả và ảnh; không phải xác suất đúng"
+      },
+      {
+        "product": {
+          "id": "abo-5b010b857684a79cc925",
+          "slug": "abo-5b010b857684a79cc925",
+          "name_vi": "Đèn bàn Rivet — MH103137",
+          "description_vi": "Đèn bàn trong bộ dữ liệu Amazon Berkeley Objects. Ảnh chụp và tên gốc liên kết theo mã B07B4Z9PWF. Màu theo nguồn: Paint+plating. Giá và hạn mức đặt thử của HoodooMart được mô phỏng riêng; không phải chào bán hay tồn kho Amazon.",
+          "category_id": "abo-den-ban",
+          "category_name": "Đèn bàn",
+          "price_vnd": 490000,
+          "available_quantity": 5,
+          "image_url": "/media/catalog/abo-5b010b857684a79cc925-0.webp",
+          "image_alt": "Đèn bàn Rivet — MH103137 — ảnh ABO 71aF4fftphL",
+          "color": "Paint+plating",
+          "material": "Chưa có thông tin",
+          "size": "Phiên bản nguồn",
+          "gender": null,
+          "verification_status": "verified",
+          "price_kind": "demo",
+          "source_id": "amazon-berkeley-objects",
+          "rights_status": "approved",
+          "data_profile": "real_demo",
+          "season": null,
+          "data_notice": "Sản phẩm và ảnh thật từ ABO · Giá và hạn mức đặt thử mô phỏng",
+          "brand": "Rivet",
+          "original_name": "Stone & Beam MH103137 - Rivet Cylinder Lamp - Table, 14\" x 14\" x 22\", Paint+Plating",
+          "images": []
+        },
+        "rank": 2,
+        "score": 0.4888,
+        "explanation": "Mức tương tự giữa mô tả và ảnh; không phải xác suất đúng"
+      },
+      {
+        "product": {
+          "id": "abo-dad0db93f572d08bdac0",
+          "slug": "abo-dad0db93f572d08bdac0",
+          "name_vi": "Đèn bàn Ravenna Home — 21199-001",
+          "description_vi": "Đèn bàn trong bộ dữ liệu Amazon Berkeley Objects. Ảnh chụp và tên gốc liên kết theo mã B07DBDV3FH. Màu theo nguồn: Brushed Steel. Giá và hạn mức đặt thử của HoodooMart được mô phỏng riêng; không phải chào bán hay tồn kho Amazon.",
+          "category_id": "abo-den-ban",
+          "category_name": "Đèn bàn",
+          "price_vnd": 490000,
+          "available_quantity": 5,
+          "image_url": "/media/catalog/abo-dad0db93f572d08bdac0-0.webp",
+          "image_alt": "Đèn bàn Ravenna Home — 21199-001 — ảnh ABO 41YZdSq2qBL",
+          "color": "Brushed Steel",
+          "material": "Chưa có thông tin",
+          "size": "Phiên bản nguồn",
+          "gender": null,
+          "verification_status": "verified",
+          "price_kind": "demo",
+          "source_id": "amazon-berkeley-objects",
+          "rights_status": "approved",
+          "data_profile": "real_demo",
+          "season": null,
+          "data_notice": "Sản phẩm và ảnh thật từ ABO · Giá và hạn mức đặt thử mô phỏng",
+          "brand": "Ravenna Home",
+          "original_name": "Amazon Brand – Ravenna Home Swing Arm Living Room Floor Lamp With LED Light Bulb - 58 Inches, Brushed Steel",
+          "images": []
+        },
+        "rank": 3,
+        "score": 0.4857,
+        "explanation": "Mức tương tự giữa mô tả và ảnh; không phải xác suất đúng"
+      },
+      {
+        "product": {
+          "id": "abo-29b2c0eaed12423831bb",
+          "slug": "abo-29b2c0eaed12423831bb",
+          "name_vi": "Đèn bàn Stone & Beam — ALT0316031",
+          "description_vi": "Đèn bàn trong bộ dữ liệu Amazon Berkeley Objects. Ảnh chụp và tên gốc liên kết theo mã B073P3NK7T. Màu theo nguồn: Polished Nickel. Giá và hạn mức đặt thử của HoodooMart được mô phỏng riêng; không phải chào bán hay tồn kho Amazon.",
+          "category_id": "abo-den-ban",
+          "category_name": "Đèn bàn",
+          "price_vnd": 490000,
+          "available_quantity": 5,
+          "image_url": "/media/catalog/abo-29b2c0eaed12423831bb-0.webp",
+          "image_alt": "Đèn bàn Stone & Beam — ALT0316031 — ảnh ABO 81oTHF1PcUL",
+          "color": "Polished Nickel",
+          "material": "Metal+Crystal+Fabric",
+          "size": "Phiên bản nguồn",
+          "gender": null,
+          "verification_status": "verified",
+          "price_kind": "demo",
+          "source_id": "amazon-berkeley-objects",
+          "rights_status": "approved",
+          "data_profile": "real_demo",
+          "season": null,
+          "data_notice": "Sản phẩm và ảnh thật từ ABO · Giá và hạn mức đặt thử mô phỏng",
+          "brand": "Stone & Beam",
+          "original_name": "Amazon Brand – Stone & Beam Modern Crystal Glass Rectangle Table Desk Lamp With Bulb And White Shade - 18 x 12 x 12 Inches",
+          "images": []
+        },
+        "rank": 4,
+        "score": 0.4795,
+        "explanation": "Mức tương tự giữa mô tả và ảnh; không phải xác suất đúng"
+      },
+      {
+        "product": {
+          "id": "abo-56afbeae6a65d33efdeb",
+          "slug": "abo-56afbeae6a65d33efdeb",
+          "name_vi": "Đèn bàn Ravenna Home — 20465-002",
+          "description_vi": "Đèn bàn trong bộ dữ liệu Amazon Berkeley Objects. Ảnh chụp và tên gốc liên kết theo mã B07MBFDJQ3. Màu theo nguồn: Silver. Giá và hạn mức đặt thử của HoodooMart được mô phỏng riêng; không phải chào bán hay tồn kho Amazon.",
+          "category_id": "abo-den-ban",
+          "category_name": "Đèn bàn",
+          "price_vnd": 490000,
+          "available_quantity": 5,
+          "image_url": "/media/catalog/abo-56afbeae6a65d33efdeb-0.webp",
+          "image_alt": "Đèn bàn Ravenna Home — 20465-002 — ảnh ABO 51nyDMjCmHL",
+          "color": "Silver",
+          "material": "Chưa có thông tin",
+          "size": "Phiên bản nguồn",
+          "gender": null,
+          "verification_status": "verified",
+          "price_kind": "demo",
+          "source_id": "amazon-berkeley-objects",
+          "rights_status": "approved",
+          "data_profile": "real_demo",
+          "season": null,
+          "data_notice": "Sản phẩm và ảnh thật từ ABO · Giá và hạn mức đặt thử mô phỏng",
+          "brand": "Ravenna Home",
+          "original_name": "Amazon Brand – Ravenna Home Textured Ceramic Base Table Lamp with LED Light Bulb, 18\"H, Silver - 20465-002",
+          "images": []
+        },
+        "rank": 5,
+        "score": 0.4785,
+        "explanation": "Mức tương tự giữa mô tả và ảnh; không phải xác suất đúng"
+      },
+      {
+        "product": {
+          "id": "abo-5201acf029973a073d28",
+          "slug": "abo-5201acf029973a073d28",
+          "name_vi": "Đèn bàn Ravenna Home — 21957-002",
+          "description_vi": "Đèn bàn trong bộ dữ liệu Amazon Berkeley Objects. Ảnh chụp và tên gốc liên kết theo mã B07MBFD87N. Màu theo nguồn: trắng. Giá và hạn mức đặt thử của HoodooMart được mô phỏng riêng; không phải chào bán hay tồn kho Amazon.",
+          "category_id": "abo-den-ban",
+          "category_name": "Đèn bàn",
+          "price_vnd": 490000,
+          "available_quantity": 5,
+          "image_url": "/media/catalog/abo-5201acf029973a073d28-0.webp",
+          "image_alt": "Đèn bàn Ravenna Home — 21957-002 — ảnh ABO 41nC8ZY-1SL",
+          "color": "trắng",
+          "material": "Chưa có thông tin",
+          "size": "Phiên bản nguồn",
+          "gender": null,
+          "verification_status": "verified",
+          "price_kind": "demo",
+          "source_id": "amazon-berkeley-objects",
+          "rights_status": "approved",
+          "data_profile": "real_demo",
+          "season": null,
+          "data_notice": "Sản phẩm và ảnh thật từ ABO · Giá và hạn mức đặt thử mô phỏng",
+          "brand": "Ravenna Home",
+          "original_name": "Amazon Brand – Ravenna Home Faux Wood Table Lamp, Bulb Included, 18\"H, White",
+          "images": []
+        },
+        "rank": 6,
+        "score": 0.4759,
+        "explanation": "Mức tương tự giữa mô tả và ảnh; không phải xác suất đúng"
+      }
+    ],
+    "total": 7,
+    "page": 1,
+    "page_size": 6,
+    "latency_ms": 17771.677,
+    "stages_ms": {
+      "parse": 48.897,
+      "db_prefilter_lexical": 94.575,
+      "vector_search": 19.352,
+      "ranking": 0.248,
+      "text_embed": 17525.806,
+      "model_load": 10135.493
+    },
+    "engine": "OpenCLIP ViT-B/32 text → ảnh, CPU cục bộ",
+    "notices": [
+      "Mô tả Việt dùng bộ từ vựng hữu hạn, không dùng chatbot sinh nội dung. Giá và hạn mức đặt thử được mô phỏng; hãy kiểm tra thuộc tính ở trang chi tiết."
+    ],
+    "media": {
+      "model_revision": "1a25a446712ba5ee05982a381eed697ef9b435cf",
+      "model_name": "OpenCLIP ViT-B/32",
+      "visual_prompt": "a product photo of minimalist desk lamp",
+      "cached": false,
+      "temporary_only": true
+    }
+  }
+}

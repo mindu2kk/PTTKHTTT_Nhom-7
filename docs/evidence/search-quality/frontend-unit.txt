@@ -1,0 +1,32 @@
+(node:12200) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///D:/PTTKHT%20WEB%20ecommerce/apps/web/src/lib/search-input.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\D:\PTTKHT WEB ecommerce\apps\web\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ allows image/jpeg at exact size limit (1.6363ms)
+✔ allows image/png at exact size limit (0.1458ms)
+✔ allows image/webp at exact size limit (0.0996ms)
+✔ rejects image envelope image/png/0 (0.4255ms)
+✔ rejects image envelope image/png/5242881 (0.1169ms)
+✔ rejects image envelope image/svg+xml/100 (0.1216ms)
+✔ rejects image envelope text/html/100 (0.106ms)
+✔ does not inherit invalid budget -1 (0.2129ms)
+✔ does not inherit invalid budget 1e6 (0.2376ms)
+✔ does not inherit invalid budget Infinity (0.2906ms)
+✔ does not inherit invalid budget 1000000000001 (0.2121ms)
+✔ does not inherit invalid budget 100k (0.1236ms)
+✔ does not inherit invalid budget  (0.0853ms)
+✔ does not inherit invalid budget 3.5 (0.0742ms)
+✔ inherits whole VND budget 0 (0.3612ms)
+✔ inherits whole VND budget 500000 (0.2355ms)
+✔ inherits whole VND budget 1000000000000 (0.1226ms)
+✔ clipboard accepts actual image bytes, not clipboard text/URL (1.3601ms)
+✔ clipboard skips an unavailable image and finds next real image (0.2674ms)
+✔ plain text clipboard remains normal text input (0.0933ms)
+ℹ tests 20
+ℹ suites 0
+ℹ pass 20
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 284.373

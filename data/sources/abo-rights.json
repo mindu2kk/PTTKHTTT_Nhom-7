@@ -1,0 +1,18 @@
+{
+  "source": "amazon-berkeley-objects",
+  "status": "approved",
+  "revision": "listings_0-49304dd0edc3aa3d4cb19231927732fc",
+  "license": "CC-BY-4.0",
+  "checked_at": "2026-10-22",
+  "evidence": [
+    "https://registry.opendata.aws/amazon-berkeley-objects/",
+    "https://amazon-berkeley-objects.s3.amazonaws.com/README.md",
+    "https://amazon-berkeley-objects.s3.amazonaws.com/images/README.md",
+    "https://amazon-berkeley-objects.s3.amazonaws.com/LICENSE-CC-BY-4.0.txt"
+  ],
+  "attribution": "Data and images: Amazon.com. Dataset: Matthieu Guillaumin, Thomas Dideriksen, Kenan Deng, Himanshu Arora, Jasmine Collins and Jitendra Malik.",
+  "allowed_use": "Display and adapt dataset records and catalog photographs with attribution/license/modification notice. No endorsement or trademark rights inferred.",
+  "modifications": "Selected subset; Vietnamese category-based descriptions, local EXIF-free WebP thumbnails. Original names and source IDs retained. Prices and trial capacity are separate simulations.",
+  "image_metadata_sha256": "915263ef354d7a5d3503e899e610082f510c0011cccd5b4dc4f4c5efa86ef539",
+  "listing_sha256": "c5e7723f4a4afa3da4f35c497ab30ac0f8ee5b3e473ec0ffa897511e127e9324"
+}

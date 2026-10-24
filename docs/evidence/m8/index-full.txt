@@ -1,0 +1,37 @@
+Encoded 25; skipped 0
+Encoded 50; skipped 6
+Encoded 75; skipped 6
+Encoded 100; skipped 8
+Encoded 125; skipped 8
+Encoded 150; skipped 8
+Encoded 175; skipped 8
+Encoded 200; skipped 8
+Encoded 225; skipped 8
+Encoded 250; skipped 8
+Encoded 275; skipped 8
+Encoded 300; skipped 12
+Encoded 325; skipped 12
+Encoded 350; skipped 12
+Encoded 375; skipped 14
+Encoded 400; skipped 14
+Encoded 425; skipped 16
+Encoded 450; skipped 16
+Encoded 475; skipped 16
+Encoded 500; skipped 20
+Encoded 525; skipped 20
+Encoded 550; skipped 20
+Encoded 575; skipped 20
+Encoded 600; skipped 22
+{
+  "encoded": 604,
+  "skipped_unchanged": 22,
+  "approved_images": 626,
+  "elapsed_ms": 267066.918,
+  "revision": "1a25a446712ba5ee05982a381eed697ef9b435cf",
+  "first_call": {
+    "model_load_ms": 29152.081,
+    "rss_mib": 987.91,
+    "inference_ms": 45723.7
+  },
+  "scope": "Offline index of all approved real_demo photos, primary and gallery; exact filtered vector retrieval aggregates by product"
+}

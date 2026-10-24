@@ -1,0 +1,83 @@
+{
+  "platform": "Windows-11-10.0.26200-SP0",
+  "public_products": 3000,
+  "stored_products": 3005,
+  "source": "2950 clones of original CC0 fixture; not real merchant records",
+  "protocol": "native Windows API via HTTPX ASGITransport to actual Docker PostgreSQL; excludes TCP/HTTP server overhead",
+  "query_count": 204,
+  "qrels": "structured independent expected category/color/price oracles, not a human relevance study",
+  "runs": [
+    {
+      "concurrency": 1,
+      "success": 204,
+      "http_asgi_ms": {
+        "p50": 259.171,
+        "p90": 552.512,
+        "p95": 588.738,
+        "p99": 760.62
+      },
+      "service_ms": {
+        "p50": 247.51,
+        "p90": 542.856,
+        "p95": 570.738,
+        "p99": 729.231
+      },
+      "quality": {
+        "precision10": 0.8137254901960784,
+        "recall10": 0.09236007456174058,
+        "ndcg10": 0.8137254901960784,
+        "hard_filter_leaks": 0.0
+      }
+    },
+    {
+      "concurrency": 5,
+      "success": 204,
+      "http_asgi_ms": {
+        "p50": 333.634,
+        "p90": 491.317,
+        "p95": 524.921,
+        "p99": 560.404
+      },
+      "service_ms": {
+        "p50": 304.32,
+        "p90": 458.213,
+        "p95": 499.193,
+        "p99": 536.648
+      },
+      "quality": {
+        "precision10": 0.8137254901960784,
+        "recall10": 0.09236007456174058,
+        "ndcg10": 0.8137254901960784,
+        "hard_filter_leaks": 0.0
+      }
+    },
+    {
+      "concurrency": 10,
+      "success": 204,
+      "http_asgi_ms": {
+        "p50": 481.884,
+        "p90": 809.884,
+        "p95": 950.027,
+        "p99": 1076.047
+      },
+      "service_ms": {
+        "p50": 435.88,
+        "p90": 752.847,
+        "p95": 847.394,
+        "p99": 1039.242
+      },
+      "quality": {
+        "precision10": 0.8137254901960784,
+        "recall10": 0.09236007456174058,
+        "ndcg10": 0.8137254901960784,
+        "hard_filter_leaks": 0.0
+      }
+    }
+  ],
+  "limitations": [
+    "Warm only; model inference excluded",
+    "No hybrid text embedding model",
+    "Reused images are scale fixtures, not image evaluation",
+    "Tiny repeated vocabulary is easier than a real catalog"
+  ]
+}

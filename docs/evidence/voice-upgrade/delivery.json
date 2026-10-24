@@ -1,0 +1,29 @@
+{
+  "verified_at": "2026-10-23T14:01:50.197020+00:00",
+  "selected_profile": "phowhisper-base",
+  "without_timestamps": true,
+  "api_unit": 157,
+  "api_integration": 187,
+  "inference_unit": 20,
+  "evaluation_unit": 20,
+  "browser": "passed",
+  "runtime": {
+    "status": "ready",
+    "clip_files": true,
+    "asr_files": true,
+    "asr_profile": "phowhisper-base",
+    "asr_revision": "7ebdb9e88f5cc5271fb88f4d642c82ff9388650e",
+    "asr_without_timestamps": true,
+    "clip_loaded": true,
+    "asr_loaded": true,
+    "rss_mib": 1203.01,
+    "device": "cpu",
+    "capacity": 1
+  },
+  "ephemeral_eval_container_removed": true,
+  "limitations": [
+    "V2 utterance-disjoint, not speaker-independent",
+    "Read/broadcast corpora, not physical microphone or TC2 shopping proof",
+    "Model errors remain; reviewed suggestions do not rewrite transcript"
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "source": "https://huggingface.co/datasets/nguyendv02/ViMD_Dataset",
+  "paper": "https://aclanthology.org/2024.emnlp-main.426/",
+  "authors": [
+    "Nguyen Dinh",
+    "Thanh Dang",
+    "Luan Thanh Nguyen",
+    "Kiet Nguyen"
+  ],
+  "license": "CC-BY-NC-ND-4.0",
+  "scope": "Academic private evaluation; delivered WAV bytes retained unchanged, no cutting/reencoding/audio redistribution",
+  "selection": "First 3 fitting 1..15s/2MB per source region, text3..35 words; API windows0/700, original test shard00008 for South",
+  "groups": {
+    "North": {
+      "samples": 3,
+      "wer": 0.5070422535211268,
+      "cer": 0.2757475083056478,
+      "max_http_ms": 6972.203
+    },
+    "Central": {
+      "samples": 3,
+      "wer": 0.625,
+      "cer": 0.37283236994219654,
+      "max_http_ms": 1759.738
+    },
+    "South": {
+      "samples": 3,
+      "wer": 0.7108433734939759,
+      "cer": 0.4487534626038781,
+      "max_http_ms": 2177.706
+    }
+  },
+  "results": [
+    {
+      "id": "11_0307",
+      "region": "North",
+      "speaker_id": "spk_11_0142",
+      "duration_seconds": 9.238979591836735,
+      "sha256": "ebc41f40fde9415300718e2fd323e0d325dcf7da08c8bad662b7a26f08cc8b7f",
+      "status": 200,
+      "words": 32,
+      "word_errors": 18,
+      "characters": 146,
+      "character_errors": 41,
+      "http_ms": 6972.203,
+      "inference_ms": 4335.516
+    },
+    {
+      "id": "11_0308",
+      "region": "North",
+      "speaker_id": "spk_11_0143",
+      "duration_seconds": 7.3579818594104305,
+      "sha256": "90c6eea8def14af09912beca755c6e3f9c8b4a63a46ab7f2a961632b74ea166e",
+      "status": 200,
+      "words": 27,
+      "word_errors": 12,
+      "characters": 108,
+      "character_errors": 28,
+      "http_ms": 1724.079,
+      "inference_ms": 1570.395
+    },
+    {
+      "id": "11_0309",
+      "region": "North",
+      "speaker_id": "spk_11_0143",
+      "duration_seconds": 3.650997732426304,
+      "sha256": "559537d573a600c8f9270fbc9cf78e5f4e661f05efef68216222567ad379ac44",
+      "status": 200,
+      "words": 12,
+      "word_errors": 6,
+      "characters": 47,
+      "character_errors": 14,
+      "http_ms": 1407.83,
+      "inference_ms": 1306.976
+    },
+    {
+      "id": "38_0303",
+      "region": "Central",
+      "speaker_id": "spk_38_0224",
+      "duration_seconds": 8.929,
+      "sha256": "9a846e094f90085fde56dabb24461689c4948828b64f11a412c54cecb5cc2b88",
+      "status": 200,
+      "words": 18,
+      "word_errors": 7,
+      "characters": 71,
+      "character_errors": 17,
+      "http_ms": 1249.6,
+      "inference_ms": 1149.335
+    },
+    {
+      "id": "43_0308",
+      "region": "Central",
+      "speaker_id": "spk_43_0235",
+      "duration_seconds": 7.785666666666667,
+      "sha256": "a063da47155bfaff35bbb2891cf3c306c1e60902bca4cf42c7b4e4695de1aa75",
+      "status": 200,
+      "words": 33,
+      "word_errors": 22,
+      "characters": 139,
+      "character_errors": 47,
+      "http_ms": 1759.738,
+      "inference_ms": 1640.917
+    },
+    {
+      "id": "43_0316",
+      "region": "Central",
+      "speaker_id": "spk_43_0240",
+      "duration_seconds": 6.705,
+      "sha256": "d9ca9fc79de074cd08c947f3c87e584c7a545c7736b68d5fa82b1238065201e2",
+      "status": 200,
+      "words": 29,
+      "word_errors": 21,
+      "characters": 136,
+      "character_errors": 65,
+      "http_ms": 1624.178,
+      "inference_ms": 1554.927
+    },
+    {
+      "id": "69_0260",
+      "region": "South",
+      "speaker_id": "spk_69_0189",
+      "duration_seconds": 10.863990929705215,
+      "sha256": "d321fc633f8cfa17faa03a2b44d6c808632e732ff7fa1cb65553489edc0a3f51",
+      "status": 200,
+      "words": 34,
+      "word_errors": 28,
+      "characters": 159,
+      "character_errors": 80,
+      "http_ms": 2177.706,
+      "inference_ms": 2019.482
+    },
+    {
+      "id": "69_0280",
+      "region": "South",
+      "speaker_id": "spk_69_0201",
+      "duration_seconds": 9.786984126984127,
+      "sha256": "bb27311790aa26e20ba3a2175fa06739363753a46eec41ae32d5c990e68577a2",
+      "status": 200,
+      "words": 33,
+      "word_errors": 17,
+      "characters": 136,
+      "character_errors": 47,
+      "http_ms": 1722.894,
+      "inference_ms": 1583.085
+    },
+    {
+      "id": "69_0295",
+      "region": "South",
+      "speaker_id": "spk_69_0210",
+      "duration_seconds": 3.62,
+      "sha256": "66da6c1be6b3322d511ff8cfbcd0845efddecb0b4a61737badc8f50f84ef2db3",
+      "status": 200,
+      "words": 16,
+      "word_errors": 14,
+      "characters": 66,
+      "character_errors": 35,
+      "http_ms": 1791.577,
+      "inference_ms": 1728.162
+    }
+  ],
+  "limitations": "3 clips per region, broadcaster/read speech; source-provided labels, not representative of population, shopping or TC2 utterance. No source audio/transcript redistributed."
+}

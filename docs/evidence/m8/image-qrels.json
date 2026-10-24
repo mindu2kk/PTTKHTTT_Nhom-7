@@ -1,0 +1,186 @@
+{
+  "source": "ABO CC-BY-4.0",
+  "scope": "20 different source-photo IDs and original byte hashes, never indexed in gallery; same source product ID is the relevance label, no human population study",
+  "queries": [
+    {
+      "product_id": "abo-cda3825f07ab31c8907a",
+      "group": "nam",
+      "category": "abo-giay-nam",
+      "source_image_id": "71BXaQXTrnL",
+      "source_url": "https://amazon-berkeley-objects.s3.amazonaws.com/images/original/32/32cef3b1.jpg",
+      "path": "heldout\\32\\32cef3b1.jpg",
+      "sha256": "031e6d54048c147180a6082dd9b593fae5da2eeed1d6166b9c957367c53a6ae8"
+    },
+    {
+      "product_id": "abo-d4543dfba36f32037336",
+      "group": "nu",
+      "category": "abo-giay-nu",
+      "source_image_id": "718uEco1DAL",
+      "source_url": "https://amazon-berkeley-objects.s3.amazonaws.com/images/original/d8/d85bc915.jpg",
+      "path": "heldout\\d8\\d85bc915.jpg",
+      "sha256": "c57c2d3d1e29ff4924ffde64200a50fa7529258c10cd73efd03669a36a083cce"
+    },
+    {
+      "product_id": "abo-7a4d77b7fdf5f3b737dd",
+      "group": "gia-dung",
+      "category": "abo-coc",
+      "source_image_id": "51fzW5BNdVL",
+      "source_url": "https://amazon-berkeley-objects.s3.amazonaws.com/images/original/2d/2da4a5ac.jpg",
+      "path": "heldout\\2d\\2da4a5ac.jpg",
+      "sha256": "39966608371b6c5cac2a642c1980af5cd51c60171ff1cdcd6b110d158907d3a5"
+    },
+    {
+      "product_id": "abo-ae7356369a2c7e4dd3fc",
+      "group": "nam",
+      "category": "abo-giay-nam",
+      "source_image_id": "61tpoUgSP2L",
+      "source_url": "https://amazon-berkeley-objects.s3.amazonaws.com/images/original/49/49b68a69.jpg",
+      "path": "heldout\\49\\49b68a69.jpg",
+      "sha256": "645ca1f5ea67d5f2eb37166f9f25b8811f6c487065cf22c8bfb36b0d753b37ac"
+    },
+    {
+      "product_id": "abo-285fe8e8101ec33231ec",
+      "group": "nu",
+      "category": "abo-giay-nu",
+      "source_image_id": "716vL8cWNNL",
+      "source_url": "https://amazon-berkeley-objects.s3.amazonaws.com/images/original/ec/ecb157f8.jpg",
+      "path": "heldout\\ec\\ecb157f8.jpg",
+      "sha256": "6b11d6936edbe21d00850fb4a924fc836241192f6c1e506a3f4f4b64c4f88f15"
+    },
+    {
+      "product_id": "abo-9d23c63b64aebbceec0e",
+      "group": "gia-dung",
+      "category": "abo-coc",
+      "source_image_id": "713Exge07zL",
+      "source_url": "https://amazon-berkeley-objects.s3.amazonaws.com/images/original/c5/c5eb46e6.jpg",
+      "path": "heldout\\c5\\c5eb46e6.jpg",
+      "sha256": "40e335bf296494afbd63df63c442e0fc56859e6235ee47e01cd531e651aa4ac1"
+    },
+    {
+      "product_id": "abo-08c3abaa33e9e744db0b",
+      "group": "nam",
+      "category": "abo-giay-nam",
+      "source_image_id": "71N8gua4IkL",
+      "source_url": "https://amazon-berkeley-objects.s3.amazonaws.com/images/original/18/1890184b.jpg",
+      "path": "heldout\\18\\1890184b.jpg",
+      "sha256": "842b4612d17b66d451d4aca13b804074536374ada39f24f039fe53f2fa54498e"
+    },
+    {
+      "product_id": "abo-8197d8250efdfbdd15dc",
+      "group": "nu",
+      "category": "abo-giay-nu",
+      "source_image_id": "71Su2+Y7b7L",
+      "source_url": "https://amazon-berkeley-objects.s3.amazonaws.com/images/original/a1/a152d161.jpg",
+      "path": "heldout\\a1\\a152d161.jpg",
+      "sha256": "2eb1d97179f2dc8591c7f1b1a33865002c3f5615d415865d3c8c1f5517b02fb7"
+    },
+    {
+      "product_id": "abo-0050b24a441bc1f887d6",
+      "group": "gia-dung",
+      "category": "abo-ban",
+      "source_image_id": "91A-nCul3fL",
+      "source_url": "https://amazon-berkeley-objects.s3.amazonaws.com/images/original/69/694d4c3c.jpg",
+      "path": "heldout\\69\\694d4c3c.jpg",
+      "sha256": "881b6ffe7e294e0f7a65d9c571e9611121c18c9ff8bcc7227dfdce3e703d1fae"
+    },
+    {
+      "product_id": "abo-aebec200a1e7bf68378b",
+      "group": "nam",
+      "category": "abo-giay-nam",
+      "source_image_id": "81eqfbhKglL",
+      "source_url": "https://amazon-berkeley-objects.s3.amazonaws.com/images/original/10/10e31419.jpg",
+      "path": "heldout\\10\\10e31419.jpg",
+      "sha256": "6aa839aa00475d4fb39120263aba586d7a49db493d8c5a43e654f0f9c91e29ac"
+    },
+    {
+      "product_id": "abo-281f7ec5af7255d5e6ba",
+      "group": "nu",
+      "category": "abo-giay-nu",
+      "source_image_id": "61qXoMZjStL",
+      "source_url": "https://amazon-berkeley-objects.s3.amazonaws.com/images/original/31/31895a8d.jpg",
+      "path": "heldout\\31\\31895a8d.jpg",
+      "sha256": "1e5ec90e449de044499af45a7786da62017dc3cccaf6886b784b944a315fa72b"
+    },
+    {
+      "product_id": "abo-0d5824b35ffd3ce3a111",
+      "group": "gia-dung",
+      "category": "abo-ghe",
+      "source_image_id": "71G+u16bPnL",
+      "source_url": "https://amazon-berkeley-objects.s3.amazonaws.com/images/original/d8/d8ba1ec0.jpg",
+      "path": "heldout\\d8\\d8ba1ec0.jpg",
+      "sha256": "f8cfc5365cd6e899f987cfbf69d2cf7b0671737613d8babe73785514e04ea5f7"
+    },
+    {
+      "product_id": "abo-1c74f1be3fc372c664b3",
+      "group": "nam",
+      "category": "abo-giay-nam",
+      "source_image_id": "81fEQyNRYyL",
+      "source_url": "https://amazon-berkeley-objects.s3.amazonaws.com/images/original/84/845aa39b.jpg",
+      "path": "heldout\\84\\845aa39b.jpg",
+      "sha256": "45bed92ec639adaf3c09f3cdd89ed7a1a1c3d4e1406d05c96b47ee6ad76ea2c2"
+    },
+    {
+      "product_id": "abo-de196de635ad3483174f",
+      "group": "nu",
+      "category": "abo-giay-nu",
+      "source_image_id": "81zRs01hwNL",
+      "source_url": "https://amazon-berkeley-objects.s3.amazonaws.com/images/original/03/03b408c4.jpg",
+      "path": "heldout\\03\\03b408c4.jpg",
+      "sha256": "ce99d28c8e79266fb2e90470c5e73d6ffb0c175414aa0813c0d83633a1965ca1"
+    },
+    {
+      "product_id": "abo-7a5ea4650a4b4eade2ac",
+      "group": "gia-dung",
+      "category": "abo-sofa",
+      "source_image_id": "A1P3tPyy2nL",
+      "source_url": "https://amazon-berkeley-objects.s3.amazonaws.com/images/original/e1/e18a71e6.jpg",
+      "path": "heldout\\e1\\e18a71e6.jpg",
+      "sha256": "348872bdbca0f1c01338c7151f26c628d9f607a9f8f7c06335c038d874190c4a"
+    },
+    {
+      "product_id": "abo-308a823f49b2b5d58532",
+      "group": "dien-tu",
+      "category": "abo-bo-sac",
+      "source_image_id": "71I2L+7jq3L",
+      "source_url": "https://amazon-berkeley-objects.s3.amazonaws.com/images/original/e6/e67efb48.jpg",
+      "path": "heldout\\e6\\e67efb48.jpg",
+      "sha256": "444f3346cc581a902381fdececa1f905adfa7b5310038dd6895239788443f3ce"
+    },
+    {
+      "product_id": "abo-791ca85aaaed94597566",
+      "group": "dien-tu",
+      "category": "abo-bo-sac",
+      "source_image_id": "51pw5BHw9SL",
+      "source_url": "https://amazon-berkeley-objects.s3.amazonaws.com/images/original/02/02093020.jpg",
+      "path": "heldout\\02\\02093020.jpg",
+      "sha256": "71fb4b2206995609d562e3b68763ba1095fd51d6152e23e3764d608de884e949"
+    },
+    {
+      "product_id": "abo-2d80ea05b3c739828545",
+      "group": "dien-tu",
+      "category": "abo-bo-sac",
+      "source_image_id": "511nfcRw5VL",
+      "source_url": "https://amazon-berkeley-objects.s3.amazonaws.com/images/original/72/72f19971.jpg",
+      "path": "heldout\\72\\72f19971.jpg",
+      "sha256": "bd0ff3417452084301ba5a69b5105f6065df295c185551481db2f98abc891dca"
+    },
+    {
+      "product_id": "abo-8a1e5a22a992a96c1092",
+      "group": "dien-tu",
+      "category": "abo-loa",
+      "source_image_id": "617QmywB2SL",
+      "source_url": "https://amazon-berkeley-objects.s3.amazonaws.com/images/original/3e/3e70ad61.jpg",
+      "path": "heldout\\3e\\3e70ad61.jpg",
+      "sha256": "0b7c3776ab5840fff13a0b85737f7c775b2b75192f099551b15689daca73a145"
+    },
+    {
+      "product_id": "abo-8d43cb92edcc87aec67d",
+      "group": "dien-tu",
+      "category": "abo-tai-nghe",
+      "source_image_id": "41WTDDY9EjL",
+      "source_url": "https://amazon-berkeley-objects.s3.amazonaws.com/images/original/7a/7a2e541a.jpg",
+      "path": "heldout\\7a\\7a2e541a.jpg",
+      "sha256": "ce346c1042ec9ee9caf0afb1283f971867c252f1c1096062b6e6cd190cc2049d"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "measured_at": "2026-10-23T13:03:14.282069+00:00",
+  "phase": "during baseline heldout run",
+  "health": {
+    "status": "ready",
+    "clip_files": true,
+    "asr_files": true,
+    "clip_loaded": true,
+    "asr_loaded": true,
+    "rss_mib": 1273.25,
+    "device": "cpu",
+    "capacity": 1
+  },
+  "limitation": "CLIP and ASR both loaded before baseline; RSS not isolated ASR. No process-cold latency claim."
+}

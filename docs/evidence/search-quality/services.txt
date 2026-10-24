@@ -1,0 +1,5 @@
+NAME                     IMAGE                                                                                                  COMMAND                  SERVICE     CREATED         STATUS                   PORTS
+hoodoomart-api-1         hoodoomart-api                                                                                         "uvicorn app.main:ap…"   api         4 minutes ago   Up 4 minutes (healthy)   127.0.0.1:8000->8000/tcp
+hoodoomart-inference-1   hoodoomart-inference                                                                                   "uvicorn main:app --…"   inference   3 hours ago     Up 3 hours (healthy)     127.0.0.1:19090->9000/tcp
+hoodoomart-postgres-1    pgvector/pgvector:0.8.2-pg17@sha256:feb68f4f15446397d8cac7f4fe48fe4586de83160d1fc48b46283312d1a33966   "docker-entrypoint.s…"   postgres    44 hours ago    Up 21 hours (healthy)    127.0.0.1:55432->5432/tcp
+hoodoomart-web-1         hoodoomart-web                                                                                         "docker-entrypoint.s…"   web         4 minutes ago   Up 3 minutes (healthy)   127.0.0.1:3000->3000/tcp

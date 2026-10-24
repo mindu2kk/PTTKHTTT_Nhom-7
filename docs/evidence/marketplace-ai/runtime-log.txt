@@ -1,0 +1,20 @@
+{
+  "sample_id": "VIVOSDEV05_155",
+  "source": "VIVOS, Luong & Vu, CC-BY-NC-SA-4.0, private academic test only",
+  "duration_seconds": 2.375,
+  "sha256": "5cb872c64c9c1b14426c76dd9d03b705f17d7ff5a4b1c6564d272c263822b1d7",
+  "asr_http_ms": 3720.502,
+  "recognizer": "faster-whisper base int8 CPU",
+  "inference_ms": 1641.214,
+  "model_load_ms": 0.0,
+  "wer": 0.14285714285714285,
+  "scope": "One real human nonshopping clip; confirms actual local ASR adapter. Not TC2 or a quality benchmark; no transcript/audio redistributed",
+  "guards": {
+    "corrupt_image": 422,
+    "corrupt_audio": 422,
+    "invalid_cart_cookie": 422,
+    "valid_nojs_cart": 303,
+    "actual_transcript_shared_voice_pipeline": 200
+  }
+}
+{"scope": "16 hand-authored finite-Vietnamese-concept prompts. Source-category proxy relevance, not independent human judgments or general Vietnamese understanding. Cache-equivalent prompts separated.", "query_count": 16, "uncached_count": 14, "warm_uncached_p50_ms": 219.197, "warm_uncached_p95_ms": 377.895, "cached_count": 2, "top1_category_match_rate": 1.0, "mean_precision_at_5": 0.85, "guards": {"unknown": 422, "order_intent": 422, "invalid_range": 422, "cross_origin_bff": 403}}

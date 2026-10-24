@@ -1,0 +1,16 @@
+{
+  "measured_at": "2026-10-22T03:48:42.5537748+00:00",
+  "project": "hoodoomart-clean",
+  "ready": "ready",
+  "public_products": 50,
+  "categories": 49,
+  "seed_runs": 2,
+  "result": "passed",
+  "ports": {
+    "web": "1597",
+    "postgres": "1594",
+    "inference": "1596",
+    "api": "1595"
+  },
+  "scope": "Fresh isolated DB/API/web/inference, migrations, repeat seed/revision, real BFF CSRF registration/checkout/cancel"
+}

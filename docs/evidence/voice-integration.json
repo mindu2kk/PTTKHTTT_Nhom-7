@@ -1,0 +1,88 @@
+{
+  "speech_source": "eSpeak NG vi synthetic, no human or regional claim",
+  "reference": "tôi muốn mua áo mùa đông",
+  "hypothesis": "tôi muốn mơ áu mơ",
+  "wer": 0.6666666666666666,
+  "cer": 0.4166666666666667,
+  "runs": [
+    {
+      "http_ms": 1185.2405000245199,
+      "text": "Tôi muốn mơ áu mơ",
+      "language": "vi",
+      "duration_seconds": 2.112,
+      "recognizer": "faster-whisper base int8 CPU",
+      "model_revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+      "inference_ms": 1120.444,
+      "model_load_ms": 0.0,
+      "warnings": [
+        "Kiểm tra và sửa bản ghi trước khi tìm sản phẩm.",
+        "Bản ghi có đoạn chưa chắc chắn. Hãy kiểm tra kỹ tên sản phẩm và mức giá."
+      ]
+    },
+    {
+      "http_ms": 1041.0660000052303,
+      "text": "Tôi muốn mơ áu mơ",
+      "language": "vi",
+      "duration_seconds": 2.112,
+      "recognizer": "faster-whisper base int8 CPU",
+      "model_revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+      "inference_ms": 1012.915,
+      "model_load_ms": 0.0,
+      "warnings": [
+        "Kiểm tra và sửa bản ghi trước khi tìm sản phẩm.",
+        "Bản ghi có đoạn chưa chắc chắn. Hãy kiểm tra kỹ tên sản phẩm và mức giá."
+      ]
+    },
+    {
+      "http_ms": 1228.0237000086345,
+      "text": "Tôi muốn mơ áu mơ",
+      "language": "vi",
+      "duration_seconds": 2.112,
+      "recognizer": "faster-whisper base int8 CPU",
+      "model_revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+      "inference_ms": 1182.053,
+      "model_load_ms": 0.0,
+      "warnings": [
+        "Kiểm tra và sửa bản ghi trước khi tìm sản phẩm.",
+        "Bản ghi có đoạn chưa chắc chắn. Hãy kiểm tra kỹ tên sản phẩm và mức giá."
+      ]
+    },
+    {
+      "http_ms": 1097.3968000034802,
+      "text": "Tôi muốn mơ áu mơ",
+      "language": "vi",
+      "duration_seconds": 2.112,
+      "recognizer": "faster-whisper base int8 CPU",
+      "model_revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+      "inference_ms": 1069.592,
+      "model_load_ms": 0.0,
+      "warnings": [
+        "Kiểm tra và sửa bản ghi trước khi tìm sản phẩm.",
+        "Bản ghi có đoạn chưa chắc chắn. Hãy kiểm tra kỹ tên sản phẩm và mức giá."
+      ]
+    },
+    {
+      "http_ms": 1064.814599987585,
+      "text": "Tôi muốn mơ áu mơ",
+      "language": "vi",
+      "duration_seconds": 2.112,
+      "recognizer": "faster-whisper base int8 CPU",
+      "model_revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+      "inference_ms": 1018.486,
+      "model_load_ms": 0.0,
+      "warnings": [
+        "Kiểm tra và sửa bản ghi trước khi tìm sản phẩm.",
+        "Bản ghi có đoạn chưa chắc chắn. Hãy kiểm tra kỹ tên sản phẩm và mức giá."
+      ]
+    }
+  ],
+  "negative_statuses": {
+    "silence": 422,
+    "too_long": 422,
+    "corrupt": 422,
+    "unsupported": 422
+  },
+  "warm_http_median_ms": 1081.1056999955326,
+  "edited_query_top": "catalog-07",
+  "limitation": "TC2 transcript is inaccurate on this synthetic sample. User correction works; human accent acceptance remains unproven."
+}

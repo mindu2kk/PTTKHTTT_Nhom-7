@@ -1,0 +1,1 @@
+{"worker_main_sha256": "ec7cf5a2c9922155374528d835fb3fccf20fa429a635944767ca9fd2843f0c83", "faster_whisper_version": "1.2.1", "decoder_calls": [{"language": "'vi'", "beam_size": "3", "best_of": "3", "temperature": "0", "condition_on_previous_text": "False", "vad_filter": "False", "max_new_tokens": "160", "repetition_penalty": "1.1", "no_repeat_ngram_size": "3"}]}

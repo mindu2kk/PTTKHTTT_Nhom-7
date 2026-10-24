@@ -1,0 +1,25 @@
+test_legacy_base_does_not_require_optional_model (test_asr_profiles.ManifestTests.test_legacy_base_does_not_require_optional_model) ... ok
+test_malformed_manifest_fails (test_asr_profiles.ManifestTests.test_malformed_manifest_fails) ... ok
+test_missing_manifest_fails (test_asr_profiles.ManifestTests.test_missing_manifest_fails) ... ok
+test_model_digest_tamper_same_length_fails (test_asr_profiles.ManifestTests.test_model_digest_tamper_same_length_fails) ... ok
+test_model_missing_fails (test_asr_profiles.ManifestTests.test_model_missing_fails) ... ok
+test_path_traversal_and_duplicate_records_fail (test_asr_profiles.ManifestTests.test_path_traversal_and_duplicate_records_fail) ... ok
+test_revision_source_and_quantization_cannot_be_substituted (test_asr_profiles.ManifestTests.test_revision_source_and_quantization_cannot_be_substituted) ... ok
+test_unlisted_files_fail (test_asr_profiles.ManifestTests.test_unlisted_files_fail) ... ok
+test_verified_manifest_is_required_before_load (test_asr_profiles.ManifestTests.test_verified_manifest_is_required_before_load) ... ok
+test_default_keeps_approved_base (test_asr_profiles.ProfileTests.test_default_keeps_approved_base) ... ok
+test_optional_profile_reports_correct_revision (test_asr_profiles.ProfileTests.test_optional_profile_reports_correct_revision) ... ok
+test_remote_name_and_arbitrary_path_are_rejected (test_asr_profiles.ProfileTests.test_remote_name_and_arbitrary_path_are_rejected) ... ok
+test_timestamp_mode_matches_each_profiles_inference_contract (test_asr_profiles.ProfileTests.test_timestamp_mode_matches_each_profiles_inference_contract) ... ok
+test_16k_is_not_resampled_or_normalized (test_audio_decode.DecodeTests.test_16k_is_not_resampled_or_normalized) ... ok
+test_boundary_15_seconds_48k_includes_flushed_tail (test_audio_decode.DecodeTests.test_boundary_15_seconds_48k_includes_flushed_tail) ... ok
+test_corrupt_audio_is_rejected (test_audio_decode.DecodeTests.test_corrupt_audio_is_rejected) ... ok
+test_resampler_flush_keeps_all_48k_samples (test_audio_decode.DecodeTests.test_resampler_flush_keeps_all_48k_samples) ... ok
+test_short_audio_is_rejected_without_model (test_audio_decode.DecodeTests.test_short_audio_is_rejected_without_model) ... ok
+test_silence_is_rejected_without_model (test_audio_decode.DecodeTests.test_silence_is_rejected_without_model) ... ok
+test_stereo_to_mono_and_44100_resampling (test_audio_decode.DecodeTests.test_stereo_to_mono_and_44100_resampling) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.299s
+
+OK

@@ -1,0 +1,57 @@
+{
+  "result": "passed",
+  "viewports": [
+    {
+      "width": 360,
+      "same_page_text": "passed",
+      "overflow": false,
+      "microphone_on_load": 0
+    },
+    {
+      "width": 390,
+      "same_page_text": "passed",
+      "overflow": false,
+      "microphone_on_load": 0
+    },
+    {
+      "width": 768,
+      "same_page_text": "passed",
+      "overflow": false,
+      "microphone_on_load": 0
+    },
+    {
+      "width": 1280,
+      "same_page_text": "passed",
+      "overflow": false,
+      "microphone_on_load": 0
+    },
+    {
+      "width": 1440,
+      "same_page_text": "passed",
+      "overflow": false,
+      "microphone_on_load": 0
+    }
+  ],
+  "journeys": [
+    {
+      "pagination_empty_order_auth_same_url": "passed"
+    },
+    {
+      "upload_actual_clip_paste_event_delete_blob_cleanup_invalid_files": "passed",
+      "paste_scope": "Browser ClipboardEvent injected by harness with real bytes; not OS clipboard automation",
+      "image_vector_cached": true
+    },
+    {
+      "instrumented_denied_and_late_grant_ignored_tracks_stopped": "passed"
+    },
+    {
+      "actual_record_stop_whisper_correct_voice_search_scope_cleanup_spa_navigation": "passed",
+      "capture": "Chrome fake microphone playing VIVOS human WAV; not a physical microphone or TC2",
+      "sample_id": "VIVOSDEV05_155",
+      "asr_recognizer": "faster-whisper base int8 CPU",
+      "transcript_length": 43,
+      "transcript_sha256": "7694767696ef4352816d83e82fe803e9bc90d4b788afba115cf0cb0916cab49a",
+      "source_audio_not_redistributed": true
+    }
+  ]
+}

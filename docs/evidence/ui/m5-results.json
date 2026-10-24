@@ -1,0 +1,13 @@
+{
+  "result": "passed",
+  "actual_asr_hypothesis": "Tôi muốn mơ áu mơ",
+  "speech_source": "synthetic eSpeak NG, recognition inaccurate; explicitly edited by test",
+  "flows": [
+    "real offline ASR upload",
+    "editable transcript routes to common voice search",
+    "winter preference/puffer first after correction",
+    "permission denial fallback",
+    "503 UI fallback (intercepted response simulation)",
+    "360px no overflow"
+  ]
+}

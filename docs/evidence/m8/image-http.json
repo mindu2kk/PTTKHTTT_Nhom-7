@@ -1,0 +1,819 @@
+{
+  "catalog_products": 318,
+  "queries_measured": 20,
+  "warm_http": {
+    "p50_ms": 522.811,
+    "p90_ms": 933.163,
+    "p95_ms": 1257.503,
+    "p99_ms": 1284.521
+  },
+  "scope": "20 held-out original source-photo IDs/bytes, source same-product-ID qrels. Warmup is a different catalog photo and excluded. Not a smartphone/human shopping study.",
+  "recall": {
+    "1": 0.65,
+    "5": 0.85,
+    "10": 0.95
+  },
+  "ndcg_at_10": 0.7941038292828831,
+  "results": [
+    {
+      "product_id": "abo-cda3825f07ab31c8907a",
+      "group": "nam",
+      "category": "abo-giay-nam",
+      "source_image_id": "71BXaQXTrnL",
+      "source_url": "https://amazon-berkeley-objects.s3.amazonaws.com/images/original/32/32cef3b1.jpg",
+      "sha256": "031e6d54048c147180a6082dd9b593fae5da2eeed1d6166b9c957367c53a6ae8",
+      "tcp_ms": 697.238,
+      "top10": [
+        "abo-cda3825f07ab31c8907a",
+        "abo-4d7264df4f0b4b8d6562",
+        "abo-07664b5bdbfa4053fe23",
+        "abo-712e09257565e9fa89e8",
+        "abo-2048635769b96eeb7db1",
+        "abo-e7cd4b6015d94890c72f",
+        "abo-300e7e51231c2acc7fdf",
+        "abo-a834c74af604e48b14ca",
+        "abo-2d8abebfb96796f14af2",
+        "abo-4eb6f9a9069dd46ff21c"
+      ],
+      "media": {
+        "sha256": "41accbd190d156861dc8cba2557775e712ac958d39324624c0b338d50c6955d9",
+        "width": 2000,
+        "height": 2000,
+        "model_revision": "1a25a446712ba5ee05982a381eed697ef9b435cf",
+        "model_name": "OpenCLIP ViT-B/32",
+        "cached": false,
+        "temporary_only": true
+      },
+      "stages_ms": {
+        "parse": 5.44,
+        "db_prefilter_lexical": 26.965,
+        "vector_search": 11.174,
+        "ranking": 4.458,
+        "input_validation": 432.41,
+        "image_embed": 176.184,
+        "image_encoder_http": 192.474,
+        "model_load": 0.0
+      }
+    },
+    {
+      "product_id": "abo-d4543dfba36f32037336",
+      "group": "nu",
+      "category": "abo-giay-nu",
+      "source_image_id": "718uEco1DAL",
+      "source_url": "https://amazon-berkeley-objects.s3.amazonaws.com/images/original/d8/d85bc915.jpg",
+      "sha256": "c57c2d3d1e29ff4924ffde64200a50fa7529258c10cd73efd03669a36a083cce",
+      "tcp_ms": 562.547,
+      "top10": [
+        "abo-d4543dfba36f32037336",
+        "abo-281f7ec5af7255d5e6ba",
+        "abo-476d12bfc54e0bf1f0a6",
+        "abo-285fe8e8101ec33231ec",
+        "abo-95ba6100d8ac3eacf087",
+        "abo-ae7356369a2c7e4dd3fc",
+        "abo-2b12f749394178d4d30d",
+        "abo-3d31fac067af3eba7a84",
+        "abo-a05c843b9e096192e782",
+        "abo-e9d84a8f2551e0716668"
+      ],
+      "media": {
+        "sha256": "a0a3f0c6c84e071771560e8b97f1cd5ded35916a39a548efa8cb53d6ffa0133d",
+        "width": 2061,
+        "height": 759,
+        "model_revision": "1a25a446712ba5ee05982a381eed697ef9b435cf",
+        "model_name": "OpenCLIP ViT-B/32",
+        "cached": false,
+        "temporary_only": true
+      },
+      "stages_ms": {
+        "parse": 7.289,
+        "db_prefilter_lexical": 28.761,
+        "vector_search": 10.832,
+        "ranking": 4.169,
+        "input_validation": 267.966,
+        "image_embed": 190.376,
+        "image_encoder_http": 205.223,
+        "model_load": 0.0
+      }
+    },
+    {
+      "product_id": "abo-7a4d77b7fdf5f3b737dd",
+      "group": "gia-dung",
+      "category": "abo-coc",
+      "source_image_id": "51fzW5BNdVL",
+      "source_url": "https://amazon-berkeley-objects.s3.amazonaws.com/images/original/2d/2da4a5ac.jpg",
+      "sha256": "39966608371b6c5cac2a642c1980af5cd51c60171ff1cdcd6b110d158907d3a5",
+      "tcp_ms": 295.748,
+      "top10": [
+        "abo-9d23c63b64aebbceec0e",
+        "abo-7a4d77b7fdf5f3b737dd",
+        "abo-dffe3008a16e36046923",
+        "abo-388fce9c2482890f5f60",
+        "abo-7fa32cd57279ee2db42b",
+        "abo-246acc6e8a2c98585748",
+        "abo-d7318fc1f2f6331f544d",
+        "abo-fff065381205986c6e49",
+        "abo-1a8fe56172805dfc1267",
+        "abo-32374ba0d89126ad1a4b"
+      ],
+      "media": {
+        "sha256": "b2f43502946d5ee387f3e3ce830f2dd6fa2f50f3be1874e7a29d886fcb36c01b",
+        "width": 1050,
+        "height": 1012,
+        "model_revision": "1a25a446712ba5ee05982a381eed697ef9b435cf",
+        "model_name": "OpenCLIP ViT-B/32",
+        "cached": false,
+        "temporary_only": true
+      },
+      "stages_ms": {
+        "parse": 6.324,
+        "db_prefilter_lexical": 31.359,
+        "vector_search": 11.923,
+        "ranking": 5.065,
+        "input_validation": 73.098,
+        "image_embed": 140.088,
+        "image_encoder_http": 152.058,
+        "model_load": 0.0
+      }
+    },
+    {
+      "product_id": "abo-ae7356369a2c7e4dd3fc",
+      "group": "nam",
+      "category": "abo-giay-nam",
+      "source_image_id": "61tpoUgSP2L",
+      "source_url": "https://amazon-berkeley-objects.s3.amazonaws.com/images/original/49/49b68a69.jpg",
+      "sha256": "645ca1f5ea67d5f2eb37166f9f25b8811f6c487065cf22c8bfb36b0d753b37ac",
+      "tcp_ms": 510.353,
+      "top10": [
+        "abo-ae7356369a2c7e4dd3fc",
+        "abo-3d31fac067af3eba7a84",
+        "abo-476d12bfc54e0bf1f0a6",
+        "abo-6313e245ec41408c3cb4",
+        "abo-f2e9cda50d8b30e3436f",
+        "abo-2d8abebfb96796f14af2",
+        "abo-e10696e5180faec36a06",
+        "abo-fef7d982456ff59eeeef",
+        "abo-0336da5827d1a560c8f5",
+        "abo-45f7fd107e27fe381eed"
+      ],
+      "media": {
+        "sha256": "a9a42f3f351d1282ed4f09021c016d95c5d7b84b5a51caad3742542d2dfa57ad",
+        "width": 1129,
+        "height": 1302,
+        "model_revision": "1a25a446712ba5ee05982a381eed697ef9b435cf",
+        "model_name": "OpenCLIP ViT-B/32",
+        "cached": false,
+        "temporary_only": true
+      },
+      "stages_ms": {
+        "parse": 4.855,
+        "db_prefilter_lexical": 28.676,
+        "vector_search": 9.677,
+        "ranking": 4.238,
+        "input_validation": 260.038,
+        "image_embed": 168.21,
+        "image_encoder_http": 183.693,
+        "model_load": 0.0
+      }
+    },
+    {
+      "product_id": "abo-285fe8e8101ec33231ec",
+      "group": "nu",
+      "category": "abo-giay-nu",
+      "source_image_id": "716vL8cWNNL",
+      "source_url": "https://amazon-berkeley-objects.s3.amazonaws.com/images/original/ec/ecb157f8.jpg",
+      "sha256": "6b11d6936edbe21d00850fb4a924fc836241192f6c1e506a3f4f4b64c4f88f15",
+      "tcp_ms": 570.566,
+      "top10": [
+        "abo-285fe8e8101ec33231ec",
+        "abo-96627f03521acb018124",
+        "abo-1e4cbb47690b763c2b9b",
+        "abo-32374ba0d89126ad1a4b",
+        "abo-fc1e2d0a1bb9b5530b25",
+        "abo-281f7ec5af7255d5e6ba",
+        "abo-f2e9cda50d8b30e3436f",
+        "abo-1a8fe56172805dfc1267",
+        "abo-85bd9f176813f88bc66a",
+        "abo-95ba6100d8ac3eacf087"
+      ],
+      "media": {
+        "sha256": "39b0712c6081c5f0912c37011ac01a174b853ba1cf15086f2d8ba108d7035e71",
+        "width": 2022,
+        "height": 772,
+        "model_revision": "1a25a446712ba5ee05982a381eed697ef9b435cf",
+        "model_name": "OpenCLIP ViT-B/32",
+        "cached": false,
+        "temporary_only": true
+      },
+      "stages_ms": {
+        "parse": 6.813,
+        "db_prefilter_lexical": 35.108,
+        "vector_search": 12.905,
+        "ranking": 7.734,
+        "input_validation": 286.576,
+        "image_embed": 183.423,
+        "image_encoder_http": 198.8,
+        "model_load": 0.0
+      }
+    },
+    {
+      "product_id": "abo-9d23c63b64aebbceec0e",
+      "group": "gia-dung",
+      "category": "abo-coc",
+      "source_image_id": "713Exge07zL",
+      "source_url": "https://amazon-berkeley-objects.s3.amazonaws.com/images/original/c5/c5eb46e6.jpg",
+      "sha256": "40e335bf296494afbd63df63c442e0fc56859e6235ee47e01cd531e651aa4ac1",
+      "tcp_ms": 465.626,
+      "top10": [
+        "abo-7a4d77b7fdf5f3b737dd",
+        "abo-9d23c63b64aebbceec0e",
+        "abo-dffe3008a16e36046923",
+        "abo-d7318fc1f2f6331f544d",
+        "abo-431ff47790d0b98bec5c",
+        "abo-4766510388b5ae04194f",
+        "abo-5201acf029973a073d28",
+        "abo-29b2c0eaed12423831bb",
+        "abo-56afbeae6a65d33efdeb",
+        "abo-5b010b857684a79cc925"
+      ],
+      "media": {
+        "sha256": "c4a0ff0235dc347cf3be5ab27e80317d788e652835aa63287d1e4bdd5936b82a",
+        "width": 2560,
+        "height": 1606,
+        "model_revision": "1a25a446712ba5ee05982a381eed697ef9b435cf",
+        "model_name": "OpenCLIP ViT-B/32",
+        "cached": false,
+        "temporary_only": true
+      },
+      "stages_ms": {
+        "parse": 4.945,
+        "db_prefilter_lexical": 26.071,
+        "vector_search": 8.45,
+        "ranking": 4.481,
+        "input_validation": 246.476,
+        "image_embed": 140.609,
+        "image_encoder_http": 155.725,
+        "model_load": 0.0
+      }
+    },
+    {
+      "product_id": "abo-08c3abaa33e9e744db0b",
+      "group": "nam",
+      "category": "abo-giay-nam",
+      "source_image_id": "71N8gua4IkL",
+      "source_url": "https://amazon-berkeley-objects.s3.amazonaws.com/images/original/18/1890184b.jpg",
+      "sha256": "842b4612d17b66d451d4aca13b804074536374ada39f24f039fe53f2fa54498e",
+      "tcp_ms": 487.985,
+      "top10": [
+        "abo-08c3abaa33e9e744db0b",
+        "abo-0163e5b3f66c2cb986d1",
+        "abo-ef2d756463739e0e10b8",
+        "abo-40f9cc99f24a50f68b87",
+        "abo-8a8e48db8a59e66c679a",
+        "abo-cfddd3bb61d9adc77fb6",
+        "abo-2b12f749394178d4d30d",
+        "abo-824283092ca6515b316a",
+        "abo-85bd9f176813f88bc66a",
+        "abo-bfa39b625c30ab2de57a"
+      ],
+      "media": {
+        "sha256": "bddee8cdd3ff01337463785ff95d56c4385febbe9a0a76529b6f5ab94b393516",
+        "width": 2560,
+        "height": 997,
+        "model_revision": "1a25a446712ba5ee05982a381eed697ef9b435cf",
+        "model_name": "OpenCLIP ViT-B/32",
+        "cached": false,
+        "temporary_only": true
+      },
+      "stages_ms": {
+        "parse": 5.797,
+        "db_prefilter_lexical": 30.667,
+        "vector_search": 8.189,
+        "ranking": 6.53,
+        "input_validation": 226.778,
+        "image_embed": 170.045,
+        "image_encoder_http": 182.56,
+        "model_load": 0.0
+      }
+    },
+    {
+      "product_id": "abo-8197d8250efdfbdd15dc",
+      "group": "nu",
+      "category": "abo-giay-nu",
+      "source_image_id": "71Su2+Y7b7L",
+      "source_url": "https://amazon-berkeley-objects.s3.amazonaws.com/images/original/a1/a152d161.jpg",
+      "sha256": "2eb1d97179f2dc8591c7f1b1a33865002c3f5615d415865d3c8c1f5517b02fb7",
+      "tcp_ms": 429.695,
+      "top10": [
+        "abo-8197d8250efdfbdd15dc",
+        "abo-38a327f6e0402f979c1a",
+        "abo-edf27f94fc9f78daaebb",
+        "abo-167e24d686f1dd378300",
+        "abo-54245f9e76f618fb54ef",
+        "abo-6eefafd6857cf30505cd",
+        "abo-a834c74af604e48b14ca",
+        "abo-a94f92ba00f1c73c43ed",
+        "abo-bfa39b625c30ab2de57a",
+        "abo-40f9cc99f24a50f68b87"
+      ],
+      "media": {
+        "sha256": "be26cd5f5deab4b1d78cfd7230503f0040223257b6a67b8819ac9ae4f6fcc319",
+        "width": 1970,
+        "height": 2560,
+        "model_revision": "1a25a446712ba5ee05982a381eed697ef9b435cf",
+        "model_name": "OpenCLIP ViT-B/32",
+        "cached": false,
+        "temporary_only": true
+      },
+      "stages_ms": {
+        "parse": 5.403,
+        "db_prefilter_lexical": 27.973,
+        "vector_search": 8.379,
+        "ranking": 5.133,
+        "input_validation": 225.38,
+        "image_embed": 124.651,
+        "image_encoder_http": 138.43,
+        "model_load": 0.0
+      }
+    },
+    {
+      "product_id": "abo-0050b24a441bc1f887d6",
+      "group": "gia-dung",
+      "category": "abo-ban",
+      "source_image_id": "91A-nCul3fL",
+      "source_url": "https://amazon-berkeley-objects.s3.amazonaws.com/images/original/69/694d4c3c.jpg",
+      "sha256": "881b6ffe7e294e0f7a65d9c571e9611121c18c9ff8bcc7227dfdce3e703d1fae",
+      "tcp_ms": 1255.725,
+      "top10": [
+        "abo-0050b24a441bc1f887d6",
+        "abo-dff0396e22315f157bf0",
+        "abo-11db87231ce1570f7d92",
+        "abo-431ff47790d0b98bec5c",
+        "abo-9e8637d6f71bc11da060",
+        "abo-e373f4a9f46df3fe8240",
+        "abo-72f7826672f1aec255cc",
+        "abo-abb9dea924a3f717e3c6",
+        "abo-e5234db2f90dadefbdeb",
+        "abo-2f9cd2b1b85b96285299"
+      ],
+      "media": {
+        "sha256": "3bc78263d4739d027dbd0cf2616f7a30cc5d88549fe04868639d2f9fa5ecd352",
+        "width": 2560,
+        "height": 2560,
+        "model_revision": "1a25a446712ba5ee05982a381eed697ef9b435cf",
+        "model_name": "OpenCLIP ViT-B/32",
+        "cached": false,
+        "temporary_only": true
+      },
+      "stages_ms": {
+        "parse": 6.584,
+        "db_prefilter_lexical": 28.611,
+        "vector_search": 8.362,
+        "ranking": 6.678,
+        "input_validation": 939.031,
+        "image_embed": 184.519,
+        "image_encoder_http": 200.691,
+        "model_load": 0.0
+      }
+    },
+    {
+      "product_id": "abo-aebec200a1e7bf68378b",
+      "group": "nam",
+      "category": "abo-giay-nam",
+      "source_image_id": "81eqfbhKglL",
+      "source_url": "https://amazon-berkeley-objects.s3.amazonaws.com/images/original/10/10e31419.jpg",
+      "sha256": "6aa839aa00475d4fb39120263aba586d7a49db493d8c5a43e654f0f9c91e29ac",
+      "tcp_ms": 836.916,
+      "top10": [
+        "abo-aebec200a1e7bf68378b",
+        "abo-54245f9e76f618fb54ef",
+        "abo-cda3825f07ab31c8907a",
+        "abo-edf27f94fc9f78daaebb",
+        "abo-fa8445a22a82ec5c297d",
+        "abo-167e24d686f1dd378300",
+        "abo-5171f32caae0cfe5d95d",
+        "abo-6eefafd6857cf30505cd",
+        "abo-8b90552e1e2639c94f46",
+        "abo-ea9881376a2a9a50fadf"
+      ],
+      "media": {
+        "sha256": "5a4f9645dffe93237f0efd008b64661a41c5c8fbd7c8b30edcfd43f92a4ef6be",
+        "width": 2560,
+        "height": 2560,
+        "model_revision": "1a25a446712ba5ee05982a381eed697ef9b435cf",
+        "model_name": "OpenCLIP ViT-B/32",
+        "cached": false,
+        "temporary_only": true
+      },
+      "stages_ms": {
+        "parse": 8.514,
+        "db_prefilter_lexical": 41.341,
+        "vector_search": 13.539,
+        "ranking": 5.334,
+        "input_validation": 517.734,
+        "image_embed": 206.097,
+        "image_encoder_http": 226.979,
+        "model_load": 0.0
+      }
+    },
+    {
+      "product_id": "abo-281f7ec5af7255d5e6ba",
+      "group": "nu",
+      "category": "abo-giay-nu",
+      "source_image_id": "61qXoMZjStL",
+      "source_url": "https://amazon-berkeley-objects.s3.amazonaws.com/images/original/31/31895a8d.jpg",
+      "sha256": "1e5ec90e449de044499af45a7786da62017dc3cccaf6886b784b944a315fa72b",
+      "tcp_ms": 535.269,
+      "top10": [
+        "abo-281f7ec5af7255d5e6ba",
+        "abo-476d12bfc54e0bf1f0a6",
+        "abo-ae7356369a2c7e4dd3fc",
+        "abo-d4543dfba36f32037336",
+        "abo-e9d84a8f2551e0716668",
+        "abo-2b12f749394178d4d30d",
+        "abo-4eb6f9a9069dd46ff21c",
+        "abo-cfe16205f1761e9d3c00",
+        "abo-fb2d6ee24664e3cca28c",
+        "abo-9640d3593b024c73f67c"
+      ],
+      "media": {
+        "sha256": "80925dd2df935f621371bfbf947b010b80201f246b5dd38e9bdf0933d0627379",
+        "width": 2201,
+        "height": 889,
+        "model_revision": "1a25a446712ba5ee05982a381eed697ef9b435cf",
+        "model_name": "OpenCLIP ViT-B/32",
+        "cached": false,
+        "temporary_only": true
+      },
+      "stages_ms": {
+        "parse": 5.363,
+        "db_prefilter_lexical": 30.59,
+        "vector_search": 10.332,
+        "ranking": 4.315,
+        "input_validation": 259.699,
+        "image_embed": 190.414,
+        "image_encoder_http": 207.326,
+        "model_load": 0.0
+      }
+    },
+    {
+      "product_id": "abo-0d5824b35ffd3ce3a111",
+      "group": "gia-dung",
+      "category": "abo-ghe",
+      "source_image_id": "71G+u16bPnL",
+      "source_url": "https://amazon-berkeley-objects.s3.amazonaws.com/images/original/d8/d8ba1ec0.jpg",
+      "sha256": "f8cfc5365cd6e899f987cfbf69d2cf7b0671737613d8babe73785514e04ea5f7",
+      "tcp_ms": 494.719,
+      "top10": [
+        "abo-0d5824b35ffd3ce3a111",
+        "abo-9bcaa4fd8c5734434cbb",
+        "abo-ae80ba078bb8499eb3bc",
+        "abo-81d98e5ba66d748bdb79",
+        "abo-c2a51203b041504067bc",
+        "abo-09febd66bbbbb88a79f6",
+        "abo-147a4fac1d8cae66f962",
+        "abo-b17798f4fbfc3995b34b",
+        "abo-dc3faf23e6400349c4c3",
+        "abo-72b7858939509bab0cae"
+      ],
+      "media": {
+        "sha256": "482189a35ffdf86bc25803991eb5d38fc52d1a4d2b76f07845bcde6b3b5e8f45",
+        "width": 2560,
+        "height": 2006,
+        "model_revision": "1a25a446712ba5ee05982a381eed697ef9b435cf",
+        "model_name": "OpenCLIP ViT-B/32",
+        "cached": false,
+        "temporary_only": true
+      },
+      "stages_ms": {
+        "parse": 5.416,
+        "db_prefilter_lexical": 29.297,
+        "vector_search": 9.474,
+        "ranking": 5.142,
+        "input_validation": 264.035,
+        "image_embed": 136.469,
+        "image_encoder_http": 150.136,
+        "model_load": 0.0
+      }
+    },
+    {
+      "product_id": "abo-1c74f1be3fc372c664b3",
+      "group": "nam",
+      "category": "abo-giay-nam",
+      "source_image_id": "81fEQyNRYyL",
+      "source_url": "https://amazon-berkeley-objects.s3.amazonaws.com/images/original/84/845aa39b.jpg",
+      "sha256": "45bed92ec639adaf3c09f3cdd89ed7a1a1c3d4e1406d05c96b47ee6ad76ea2c2",
+      "tcp_ms": 897.323,
+      "top10": [
+        "abo-1c74f1be3fc372c664b3",
+        "abo-c1bcc35562901d523cad",
+        "abo-1d4e81c2673d0557b216",
+        "abo-8adef3a5b1a189086549",
+        "abo-1a20a2d5b699155f63ae",
+        "abo-2f1a1878f66f13c15023",
+        "abo-142df26114c9cb0f83fe",
+        "abo-1f7771f220d03d56ea93",
+        "abo-637e3c8301d9403b9c6b",
+        "abo-95afc9196508165173e4"
+      ],
+      "media": {
+        "sha256": "0bdb1412914df55adaeec6a282e634639e39f47bd0d13625126f2d445137afc3",
+        "width": 2000,
+        "height": 2000,
+        "model_revision": "1a25a446712ba5ee05982a381eed697ef9b435cf",
+        "model_name": "OpenCLIP ViT-B/32",
+        "cached": false,
+        "temporary_only": true
+      },
+      "stages_ms": {
+        "parse": 5.989,
+        "db_prefilter_lexical": 29.97,
+        "vector_search": 10.264,
+        "ranking": 5.287,
+        "input_validation": 564.475,
+        "image_embed": 222.096,
+        "image_encoder_http": 244.649,
+        "model_load": 0.0
+      }
+    },
+    {
+      "product_id": "abo-de196de635ad3483174f",
+      "group": "nu",
+      "category": "abo-giay-nu",
+      "source_image_id": "81zRs01hwNL",
+      "source_url": "https://amazon-berkeley-objects.s3.amazonaws.com/images/original/03/03b408c4.jpg",
+      "sha256": "ce99d28c8e79266fb2e90470c5e73d6ffb0c175414aa0813c0d83633a1965ca1",
+      "tcp_ms": 649.449,
+      "top10": [
+        "abo-296986af3dfa21b92bfb",
+        "abo-c8a9cb1d865e332105a7",
+        "abo-de196de635ad3483174f",
+        "abo-7bcf4120e062486573a0",
+        "abo-ce79db2f9b111bc69418",
+        "abo-fb2d6ee24664e3cca28c",
+        "abo-3aedc0e930390aa55333",
+        "abo-824283092ca6515b316a",
+        "abo-473c0cc1cc0cc2a13667",
+        "abo-9426b5b0bb96951a8e9c"
+      ],
+      "media": {
+        "sha256": "f738b468b95ab76357817c70fb8524c6077ea722267e823ef4935e67cd017c5d",
+        "width": 1970,
+        "height": 2560,
+        "model_revision": "1a25a446712ba5ee05982a381eed697ef9b435cf",
+        "model_name": "OpenCLIP ViT-B/32",
+        "cached": false,
+        "temporary_only": true
+      },
+      "stages_ms": {
+        "parse": 5.089,
+        "db_prefilter_lexical": 26.302,
+        "vector_search": 8.636,
+        "ranking": 4.251,
+        "input_validation": 401.445,
+        "image_embed": 163.013,
+        "image_encoder_http": 180.36,
+        "model_load": 0.0
+      }
+    },
+    {
+      "product_id": "abo-7a5ea4650a4b4eade2ac",
+      "group": "gia-dung",
+      "category": "abo-sofa",
+      "source_image_id": "A1P3tPyy2nL",
+      "source_url": "https://amazon-berkeley-objects.s3.amazonaws.com/images/original/e1/e18a71e6.jpg",
+      "sha256": "348872bdbca0f1c01338c7151f26c628d9f607a9f8f7c06335c038d874190c4a",
+      "tcp_ms": 1291.276,
+      "top10": [
+        "abo-dc3faf23e6400349c4c3",
+        "abo-e47f5226f75c50abebdc",
+        "abo-09febd66bbbbb88a79f6",
+        "abo-41bdd12740db39391e27",
+        "abo-ae53f14fab30103d096c",
+        "abo-7a5ea4650a4b4eade2ac",
+        "abo-246acc6e8a2c98585748",
+        "abo-28883c07ad443fc141f7",
+        "abo-455b37279be1ab32f83e",
+        "abo-4aca36398d6189640c66"
+      ],
+      "media": {
+        "sha256": "77b6abd206c01811d2ad1b6da7401a81a66882ae3abe70db39db87a96442e281",
+        "width": 2560,
+        "height": 2560,
+        "model_revision": "1a25a446712ba5ee05982a381eed697ef9b435cf",
+        "model_name": "OpenCLIP ViT-B/32",
+        "cached": false,
+        "temporary_only": true
+      },
+      "stages_ms": {
+        "parse": 5.441,
+        "db_prefilter_lexical": 27.376,
+        "vector_search": 9.666,
+        "ranking": 4.197,
+        "input_validation": 964.401,
+        "image_embed": 187.677,
+        "image_encoder_http": 204.459,
+        "model_load": 0.0
+      }
+    },
+    {
+      "product_id": "abo-308a823f49b2b5d58532",
+      "group": "dien-tu",
+      "category": "abo-bo-sac",
+      "source_image_id": "71I2L+7jq3L",
+      "source_url": "https://amazon-berkeley-objects.s3.amazonaws.com/images/original/e6/e67efb48.jpg",
+      "sha256": "444f3346cc581a902381fdececa1f905adfa7b5310038dd6895239788443f3ce",
+      "tcp_ms": 700.432,
+      "top10": [
+        "abo-c6edb07cb2bd23b0cef2",
+        "abo-6e674a68d9046685e9eb",
+        "abo-04958db907a8119dc868",
+        "abo-8b02eab78d3be3c275f3",
+        "abo-8a525093e904013f3a90",
+        "abo-809bbfba5de9074bee66",
+        "abo-308a823f49b2b5d58532",
+        "abo-2d80ea05b3c739828545",
+        "abo-791ca85aaaed94597566",
+        "abo-855469c076c754578595"
+      ],
+      "media": {
+        "sha256": "b9c991ace233c24c60d8eed90b235076b4384db9abcdb907110d655b5fb68d23",
+        "width": 1902,
+        "height": 1902,
+        "model_revision": "1a25a446712ba5ee05982a381eed697ef9b435cf",
+        "model_name": "OpenCLIP ViT-B/32",
+        "cached": false,
+        "temporary_only": true
+      },
+      "stages_ms": {
+        "parse": 5.507,
+        "db_prefilter_lexical": 26.089,
+        "vector_search": 9.56,
+        "ranking": 4.234,
+        "input_validation": 461.753,
+        "image_embed": 158.217,
+        "image_encoder_http": 171.831,
+        "model_load": 0.0
+      }
+    },
+    {
+      "product_id": "abo-791ca85aaaed94597566",
+      "group": "dien-tu",
+      "category": "abo-bo-sac",
+      "source_image_id": "51pw5BHw9SL",
+      "source_url": "https://amazon-berkeley-objects.s3.amazonaws.com/images/original/02/02093020.jpg",
+      "sha256": "71fb4b2206995609d562e3b68763ba1095fd51d6152e23e3764d608de884e949",
+      "tcp_ms": 330.377,
+      "top10": [
+        "abo-791ca85aaaed94597566",
+        "abo-809bbfba5de9074bee66",
+        "abo-308a823f49b2b5d58532",
+        "abo-855469c076c754578595",
+        "abo-be659fb03f1b70089752",
+        "abo-34fad8eb7b8e4fe4cb1c",
+        "abo-8a1e5a22a992a96c1092",
+        "abo-9a1c78604b7ad5ba7221",
+        "abo-6e674a68d9046685e9eb",
+        "abo-8b02eab78d3be3c275f3"
+      ],
+      "media": {
+        "sha256": "a56bb04cd3c11b310c453cb3f9c645a5cd8492f3d1b9d6e9a44636abf3e8ec07",
+        "width": 1128,
+        "height": 1128,
+        "model_revision": "1a25a446712ba5ee05982a381eed697ef9b435cf",
+        "model_name": "OpenCLIP ViT-B/32",
+        "cached": false,
+        "temporary_only": true
+      },
+      "stages_ms": {
+        "parse": 5.193,
+        "db_prefilter_lexical": 25.894,
+        "vector_search": 8.63,
+        "ranking": 4.664,
+        "input_validation": 137.865,
+        "image_embed": 117.549,
+        "image_encoder_http": 130.184,
+        "model_load": 0.0
+      }
+    },
+    {
+      "product_id": "abo-2d80ea05b3c739828545",
+      "group": "dien-tu",
+      "category": "abo-bo-sac",
+      "source_image_id": "511nfcRw5VL",
+      "source_url": "https://amazon-berkeley-objects.s3.amazonaws.com/images/original/72/72f19971.jpg",
+      "sha256": "bd0ff3417452084301ba5a69b5105f6065df295c185551481db2f98abc891dca",
+      "tcp_ms": 312.042,
+      "top10": [
+        "abo-2d80ea05b3c739828545",
+        "abo-c2044a7a0d9f1e864d89",
+        "abo-04958db907a8119dc868",
+        "abo-165cf57eee99a1dbc12f",
+        "abo-855469c076c754578595",
+        "abo-c6edb07cb2bd23b0cef2",
+        "abo-9a52a7179953ea1ce79c",
+        "abo-9cc8a00e7a504ff979d9",
+        "abo-308a823f49b2b5d58532",
+        "abo-65a3b7bf84adadd2fe8c"
+      ],
+      "media": {
+        "sha256": "26cb5239eedee89597c961663b1756a64a2f5f3f7ca9e9e883494c953b9ad92e",
+        "width": 1000,
+        "height": 1000,
+        "model_revision": "1a25a446712ba5ee05982a381eed697ef9b435cf",
+        "model_name": "OpenCLIP ViT-B/32",
+        "cached": false,
+        "temporary_only": true
+      },
+      "stages_ms": {
+        "parse": 5.094,
+        "db_prefilter_lexical": 25.806,
+        "vector_search": 8.582,
+        "ranking": 4.421,
+        "input_validation": 118.93,
+        "image_embed": 117.653,
+        "image_encoder_http": 130.612,
+        "model_load": 0.0
+      }
+    },
+    {
+      "product_id": "abo-8a1e5a22a992a96c1092",
+      "group": "dien-tu",
+      "category": "abo-loa",
+      "source_image_id": "617QmywB2SL",
+      "source_url": "https://amazon-berkeley-objects.s3.amazonaws.com/images/original/3e/3e70ad61.jpg",
+      "sha256": "0b7c3776ab5840fff13a0b85737f7c775b2b75192f099551b15689daca73a145",
+      "tcp_ms": 351.455,
+      "top10": [
+        "abo-b3649dd5ee900fa8f148",
+        "abo-efd5663daa1a33862860",
+        "abo-04958db907a8119dc868",
+        "abo-63bdc68989121edbc466",
+        "abo-de348ed7ecf45e4dbcdf",
+        "abo-f1755c7e1cdd95bd6213",
+        "abo-8a525093e904013f3a90",
+        "abo-8b02eab78d3be3c275f3",
+        "abo-9a52a7179953ea1ce79c",
+        "abo-16eeaf6d65d2fd99bc28"
+      ],
+      "media": {
+        "sha256": "b5c8754190729303f73aacb93a79b845275c18546d30b284cc230843ad48841c",
+        "width": 1510,
+        "height": 1510,
+        "model_revision": "1a25a446712ba5ee05982a381eed697ef9b435cf",
+        "model_name": "OpenCLIP ViT-B/32",
+        "cached": false,
+        "temporary_only": true
+      },
+      "stages_ms": {
+        "parse": 5.337,
+        "db_prefilter_lexical": 27.374,
+        "vector_search": 9.405,
+        "ranking": 4.381,
+        "input_validation": 145.453,
+        "image_embed": 125.139,
+        "image_encoder_http": 139.006,
+        "model_load": 0.0
+      }
+    },
+    {
+      "product_id": "abo-8d43cb92edcc87aec67d",
+      "group": "dien-tu",
+      "category": "abo-tai-nghe",
+      "source_image_id": "41WTDDY9EjL",
+      "source_url": "https://amazon-berkeley-objects.s3.amazonaws.com/images/original/7a/7a2e541a.jpg",
+      "sha256": "ce346c1042ec9ee9caf0afb1283f971867c252f1c1096062b6e6cd190cc2049d",
+      "tcp_ms": 202.705,
+      "top10": [
+        "abo-1e09d879814e8ee2b46c",
+        "abo-4c9a4220ce76c98b87a9",
+        "abo-4e94a70a51c79fa30dbb",
+        "abo-8d43cb92edcc87aec67d",
+        "abo-5201acf029973a073d28",
+        "abo-c2044a7a0d9f1e864d89",
+        "abo-2d80ea05b3c739828545",
+        "abo-4f60541a02aaef0511ac",
+        "abo-dc3faf23e6400349c4c3",
+        "abo-4e7c3ee9213849d33eb8"
+      ],
+      "media": {
+        "sha256": "16c746a2c8c453d0be875c8963e720c7efb29a0089b3ba1f91ea722f59dfd55c",
+        "width": 1222,
+        "height": 138,
+        "model_revision": "1a25a446712ba5ee05982a381eed697ef9b435cf",
+        "model_name": "OpenCLIP ViT-B/32",
+        "cached": false,
+        "temporary_only": true
+      },
+      "stages_ms": {
+        "parse": 5.622,
+        "db_prefilter_lexical": 26.257,
+        "vector_search": 9.735,
+        "ranking": 4.192,
+        "input_validation": 30.933,
+        "image_embed": 96.058,
+        "image_encoder_http": 107.609,
+        "model_load": 0.0
+      }
+    }
+  ]
+}
