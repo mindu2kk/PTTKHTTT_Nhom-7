@@ -8,6 +8,11 @@ from fastapi import HTTPException
 
 SAMPLE_RATE = 16000
 MAX_SAMPLES = 15 * SAMPLE_RATE
+MIN_AUDIO_SAMPLES = SAMPLE_RATE // 10
+ENERGY_WINDOW_SAMPLES = SAMPLE_RATE // 10
+SILENCE_ENERGY_THRESHOLD = 1e-8
+TARGET_PEAK_AMPLITUDE = 0.1
+MAX_AMPLIFICATION = 20.0
 FORMATS = {"wav", "ogg", "matroska,webm", "mov,mp4,m4a,3gp,3g2,mj2"}
 
 
@@ -48,6 +53,19 @@ def decode_audio(raw: bytes) -> np.ndarray:
         raise
     except Exception as error:
         raise HTTPException(422, "Tệp âm thanh bị hỏng hoặc không đọc được.") from error
-    if len(audio) < 1600 or float(np.mean(audio**2)) < 1e-6:
-        raise HTTPException(422, "Không nghe rõ lời nói. Hãy ghi lại gần micro hơn.")
+    if len(audio) < MIN_AUDIO_SAMPLES:
+        raise HTTPException(422, "Bản ghi quá ngắn. Hãy nói rồi mới dừng ghi.")
+    # Check 100 ms windows so pauses do not drown out a quiet, short query.
+    padding = (-len(audio)) % ENERGY_WINDOW_SAMPLES
+    windows = np.pad(audio, (0, padding)).reshape(-1, ENERGY_WINDOW_SAMPLES)
+    loudest_window_energy = float(np.max(np.mean(windows**2, axis=1)))
+    if loudest_window_energy < SILENCE_ENERGY_THRESHOLD:
+        raise HTTPException(
+            422,
+            "Bản ghi không có tín hiệu âm thanh đủ rõ. Hãy chọn đúng micro, "
+            "kiểm tra micro có bị tắt và thử ghi lại.",
+        )
+    peak = float(np.max(np.abs(audio)))
+    if peak < TARGET_PEAK_AMPLITUDE:
+        audio *= min(MAX_AMPLIFICATION, TARGET_PEAK_AMPLITUDE / peak)
     return audio

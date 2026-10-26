@@ -6,8 +6,8 @@ export default function VoicePage() {
       <AiNavigation active="voice" />
       <h1>Tìm bằng giọng nói</h1>
       <p className="lead">
-        Nhận giọng tiếng Việt trên thiết bị khi trình duyệt hỗ trợ, hoặc dùng
-        Whisper cục bộ. Kiểm tra câu đã nhận trước khi tìm sản phẩm.
+        Nhận giọng tiếng Việt ngay trên máy. Kiểm tra hoặc sửa lại câu đã nhận
+        trước khi bấm tìm sản phẩm.
       </p>
       <VoiceSearch />
     </div>

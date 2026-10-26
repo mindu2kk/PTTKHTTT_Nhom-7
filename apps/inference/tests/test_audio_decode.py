@@ -62,6 +62,22 @@ class DecodeTests(unittest.TestCase):
             decode_audio(wav(duration=0.09))
         self.assertEqual(caught.exception.status_code, 422)
 
+    def test_quiet_query_with_long_pause_is_accepted_and_amplified(self):
+        raw = wav(duration=12)
+        pcm = np.frombuffer(raw[44:], dtype="<i2").copy()
+        pcm[:8000] = (pcm[:8000] / 500).astype("<i2")
+        pcm[8000:] = 0
+        audio = decode_audio(raw[:44] + pcm.tobytes())
+        self.assertGreater(float(np.max(np.abs(audio))), 0.01)
+        self.assertEqual(len(audio), 12 * 16000)
+        self.assertTrue(np.all(audio[8000:] == 0))
+
+    def test_near_silent_quantization_noise_is_not_amplified(self):
+        raw = wav()
+        noise = np.resize(np.array([-1, 1], dtype="<i2"), 16000)
+        with self.assertRaises(HTTPException):
+            decode_audio(raw[:44] + noise.tobytes())
+
 
 if __name__ == "__main__":
     unittest.main()

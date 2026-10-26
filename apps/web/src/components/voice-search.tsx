@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { api } from "@/lib/api";
 import { OnDeviceSpeech } from "@/components/on-device-speech";
+import { MicrophoneInput } from "@/components/microphone-input";
 type Transcript = {
   text: string;
   duration_seconds: number;
@@ -16,6 +17,8 @@ export function VoiceSearch() {
   const [micPending, setMicPending] = useState(false);
   const alive = useRef(true);
   const [seconds, setSeconds] = useState(0);
+  const [microphone, setMicrophone] = useState("");
+  const [activeStream, setActiveStream] = useState<MediaStream | null>(null);
   const [file, setFile] = useState<File>();
   const [preview, setPreview] = useState("");
   const [text, setText] = useState("");
@@ -30,6 +33,7 @@ export function VoiceSearch() {
   function release() {
     stream.current?.getTracks().forEach((t) => t.stop());
     stream.current = null;
+    setActiveStream(null);
     if (timer.current) clearInterval(timer.current);
     timer.current = null;
   }
@@ -87,7 +91,13 @@ export function VoiceSearch() {
     try {
       setMicPending(true);
       const media = await navigator.mediaDevices.getUserMedia({
-        audio: true,
+        audio: {
+          ...(microphone ? { deviceId: { exact: microphone } } : {}),
+          channelCount: 1,
+          autoGainControl: true,
+          echoCancellation: true,
+          noiseSuppression: true,
+        },
         video: false,
       });
       if (!alive.current) {
@@ -95,6 +105,7 @@ export function VoiceSearch() {
         return;
       }
       stream.current = media;
+      setActiveStream(media);
       const mime = [
         "audio/webm;codecs=opus",
         "audio/ogg;codecs=opus",
@@ -186,6 +197,12 @@ export function VoiceSearch() {
         cục bộ, cần nhiều tài nguyên hơn; hãy kiểm tra bản chép lời.
       </p>
       <div className="media-actions">
+        <MicrophoneInput
+          stream={recording ? activeStream : null}
+          deviceId={microphone}
+          onChange={setMicrophone}
+          disabled={recording || busy || micPending || deviceActive}
+        />
         <Button
           onClick={recording ? stop : start}
           disabled={busy || micPending || deviceActive}

@@ -24,6 +24,8 @@ import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import { ProductCard } from "@/components/product-card";
 import { OrderCard } from "@/components/order-card";
+import { MicrophoneInput } from "@/components/microphone-input";
+import { ImageTopK } from "@/components/image-top-k";
 import {
   clipboardImage,
   imageInputError,
@@ -40,6 +42,7 @@ type Snapshot = {
   file?: File;
   category: string;
   budget: string;
+  topK?: number;
 };
 
 export function SearchToolButton({
@@ -79,10 +82,13 @@ function SearchSession({ categories }: { categories: Category[] }) {
   const [mode, setMode] = useState<Snapshot["mode"]>("text");
   const [phase, setPhase] = useState<Phase>("idle");
   const [seconds, setSeconds] = useState(0);
+  const [microphone, setMicrophone] = useState("");
+  const [activeStream, setActiveStream] = useState<MediaStream | null>(null);
   const [preview, setPreview] = useState("");
   const [fileName, setFileName] = useState("");
   const [category, setCategory] = useState("");
   const [budget, setBudget] = useState("");
+  const [topK, setTopK] = useState("10");
   const [error, setError] = useState("");
   const [authError, setAuthError] = useState(false);
   const [notice, setNotice] = useState("");
@@ -105,6 +111,7 @@ function SearchSession({ categories }: { categories: Category[] }) {
     timer.current = null;
     stream.current?.getTracks().forEach((track) => track.stop());
     stream.current = null;
+    setActiveStream(null);
   }, []);
   const invalidate = useCallback(() => {
     epoch.current += 1;
@@ -172,6 +179,7 @@ function SearchSession({ categories }: { categories: Category[] }) {
         const body = new FormData();
         body.set("image", snapshot.file);
         body.set("text", snapshot.query.trim());
+        body.set("top_k", String(snapshot.topK ?? 10));
         for (const [key, value] of Object.entries(filters))
           body.set(key, String(value));
         response = await api<Products>("/search/image", {
@@ -269,6 +277,7 @@ function SearchSession({ categories }: { categories: Category[] }) {
     try {
       const tracks = await navigator.mediaDevices.getUserMedia({
         audio: {
+          ...(microphone ? { deviceId: { exact: microphone } } : {}),
           channelCount: 1,
           echoCancellation: true,
           noiseSuppression: true,
@@ -281,6 +290,7 @@ function SearchSession({ categories }: { categories: Category[] }) {
         return;
       }
       stream.current = tracks;
+      setActiveStream(tracks);
       const mimeType = [
         "audio/webm;codecs=opus",
         "audio/ogg;codecs=opus",
@@ -376,7 +386,7 @@ function SearchSession({ categories }: { categories: Category[] }) {
         );
       }
     }
-  }, [invalidate, release, updateQuery]);
+  }, [invalidate, release, updateQuery, microphone]);
 
   useEffect(() => {
     const launch = (event: Event) => {
@@ -467,7 +477,14 @@ function SearchSession({ categories }: { categories: Category[] }) {
           className="unified-search-controls"
           onSubmit={(event) => {
             event.preventDefault();
-            void find({ query, mode, file: image.current, category, budget });
+            void find({
+              query,
+              mode,
+              file: image.current,
+              category,
+              budget,
+              topK: Number(topK),
+            });
           }}
         >
           <div className="unified-query-row">
@@ -582,6 +599,9 @@ function SearchSession({ categories }: { categories: Category[] }) {
               )}
             </div>
           )}
+          {mode === "image" && (
+            <ImageTopK value={topK} onChange={setTopK} disabled={busy} />
+          )}
           <details className="inline-search-filters">
             <summary>
               Bộ lọc
@@ -625,6 +645,14 @@ function SearchSession({ categories }: { categories: Category[] }) {
           </details>
         </form>
         <div className="inline-search-status">
+          {mode === "voice" && (
+            <MicrophoneInput
+              stream={phase === "recording" ? activeStream : null}
+              deviceId={microphone}
+              onChange={setMicrophone}
+              disabled={busy}
+            />
+          )}
           {phase === "permission" && <p role="status">Đang chờ quyền micro…</p>}
           {phase === "recording" && (
             <>

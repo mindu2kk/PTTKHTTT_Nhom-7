@@ -52,5 +52,6 @@ class ImageSearchService:
                 "model_name": "OpenCLIP ViT-B/32",
                 "cached": encoded.cached,
                 "temporary_only": True,
+                **({"top_k": options.top_k} if options.top_k is not None else {}),
             },
         )

@@ -189,8 +189,9 @@ class RankingService:
         # Preference can reorder close lexical matches, never override visual relevance bands.
         scored.sort(
             key=lambda p: (
-                p[0].available_quantity <= 0,
+                p[0].available_quantity <= 0 if image_scores is None else False,
                 -round(p[1], vector_precision) if image_scores is not None else -round(p[1], 6),
+                p[0].available_quantity <= 0 if image_scores is not None else False,
                 -p[2],
                 p[0].id,
             )
@@ -243,7 +244,10 @@ class SearchOrchestrator:
                 scores = await image_lookup(tuple(p.id for p in candidates))
             vector_finished = perf_counter()
             ranked = self.ranking.rank(
-                rep, candidates, scores, vector_precision=6 if not use_lexical_filter else 2
+                rep,
+                candidates,
+                scores,
+                vector_precision=6 if modality == "image" or not use_lexical_filter else 2,
             )
             retrieval_ms += (retrieved - stage) * 1000
             vector_ms += (vector_finished - retrieved) * 1000
@@ -286,6 +290,8 @@ class SearchOrchestrator:
                 )
             )
             ranked = [replace(row, rank=i) for i, row in enumerate(ranked, 1)]
+        if options.top_k is not None:
+            ranked = ranked[: options.top_k]
         finished = perf_counter()
         start = (options.page - 1) * options.page_size
         if len(candidates) == 1000:

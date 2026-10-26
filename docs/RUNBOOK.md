@@ -19,15 +19,26 @@ Seed additive, raw drift bị từ chối; course-v2 lặp an toàn nhưng sẽ 
 
 ## Trọng số và chỉ mục ảnh
 
-Đã có consent cho OpenCLIP≈605MB + Whisper base≈145MB; CPU libraries/container tải thêm, tổng vài GB đĩa. Trọng số pinned repo/revision/SHA256/MIT ở `docs/evidence/model-manifest.json`. Chỉ chạy download khi đã đồng ý; setup/compose không tự tải model. Máy hiện tại đã có weights.
+Máy hiện tại đã có OpenCLIP≈605MB và PhoWhisper int8, tải sau consent riêng cho
+từng model. OpenCLIP pinned repo/revision/SHA256/MIT ở `docs/evidence/model-manifest.json`;
+PhoWhisper xem `LOCAL_VOICE_SETUP.md`. Chỉ chạy download khi đã đồng ý;
+setup/compose không tự tải model.
 
 ```powershell
-.\.venv\Scripts\python.exe scripts/download_models.py
-.\.venv\Scripts\python.exe scripts/index_images.py
+.\.venv\Scripts\python.exe scripts/download_models.py --only clip --consent
+$env:PYTHONPATH = 'apps/api'
+.\.venv\Scripts\python.exe scripts/index_real_images.py
 Invoke-RestMethod http://localhost:19090/health
 ```
 
 Index chạy offline cho products published/rights-safe, kiểm source image hash, dùng đúng CLIP revision. Sau admin publish mới, chạy index lại. Không encode toàn gallery trong mỗi query. Models mount read-only; lazy load lúc request đầu. Health phân biệt file có và model đã load; thiếu model vẫn dùng text, media trả503/fallback. Không thay weights cùng tên rồi giả metadata revision cũ.
+
+`index_real_images.py` dùng DATA_PROFILE trong `.env`, lấy cả ảnh bìa/ảnh phụ
+của catalog công khai, gồm URL Postimages đã duyệt. Bỏ qua vector không đổi;
+không theo redirect hoặc URL tùy ý. Nếu hash nguồn thay đổi thì dừng để duyệt
+lại, không âm thầm sửa provenance. Báo cáo hiện tại ở `artifacts/local-image-index*.json`.
+Máy hiện tại dùng env Python `artifacts/backend-check-env/Scripts/python.exe`
+vì `.venv` chưa đủ dependency. Tìm ảnh đã kiểm tra: [LOCAL_IMAGE_SEARCH](LOCAL_IMAGE_SEARCH.md).
 
 ## Tài khoản, vai trò và đơn mẫu
 

@@ -1,5 +1,41 @@
 # Kế hoạch và trạng thái M0–M8
 
+## Top-K tìm ảnh — 2026-10-26
+
+Đã thêm Top-K1–100 cho cả hai UI ảnh và API, giới hạn trước phân trang.
+504 backend tests, lint/type/build và Chrome thật đạt; không thay gate chất
+lượng model. Phạm vi/lệnh/evidence tại [IMAGE_TOP_K](IMAGE_TOP_K.md).
+
+## Dọn code media — 2026-10-26
+
+Đã refactor phần media vừa thay đổi, tái dùng validator/encoder và gom checksum;
+giữ cổng quyền/giới hạn upload. 48 backend/script tests +22 worker tests và
+lint/build/replay/Chrome đạt; không đổi gate milestone. Chi tiết:
+[MEDIA_CODE_CLEANUP](MEDIA_CODE_CLEANUP.md).
+
+## Bật tìm ảnh cho catalog Hoodoo — 2026-10-26
+
+Đã tải OpenCLIP sau consent, index20 ảnh của catalog hiện tại và kiểm replay
+không encode trùng. Hỗ trợ URL gallery đã duyệt bằng public catalog gate.
+41 tests + Ruff và Chrome model thật đạt; không đổi gate benchmark M4/M8.
+Sau thêm/đổi ảnh cần reindex. Chi tiết: [LOCAL_IMAGE_SEARCH](LOCAL_IMAGE_SEARCH.md).
+
+## Sửa bản ghi nhỏ và kiểm tra micro — 2026-10-26
+
+Đã sửa cổng âm lượng trước ASR, thêm chọn micro/mức âm cho hai giao diện voice.
+22 worker tests, 20 frontend tests, lint/build và Chrome model thật đạt;
+web/inference healthy. Micro vật lý chưa kiểm. Không thay trạng thái các gate
+milestone từ kết quả này. Evidence: [LOCAL_VOICE_SETUP](LOCAL_VOICE_SETUP.md).
+
+## Bật lại voice cục bộ trên máy hiện tại — 2026-10-26
+
+Người dùng đã hủy Google API, chọn thư viện cục bộ và đồng ý tải một model.
+Đã tải/checksum/chuyển PhoWhisper-base int8 bằng converter sẵn có, bật profile
+phowhisper-base và giữ LOCAL_ONLY=true. Model load thật; 137 tests liên quan +20
+worker tests và Chrome MediaRecorder→ASR→sửa tay→tìm đạt. Audio kiểm tra là eSpeak
+qua micro Chrome mô phỏng, chưa kiểm micro vật lý. Không tải CLIP/model khác.
+Lệnh, evidence và giới hạn: [LOCAL_VOICE_SETUP](LOCAL_VOICE_SETUP.md).
+
 ## Quản trị sản phẩm và nhiều URL ảnh — 2026-10-26
 
 Admin trong real_demo đã thêm/sửa/xuất bản/ẩn được sản phẩm; chỉnh kho theo size.

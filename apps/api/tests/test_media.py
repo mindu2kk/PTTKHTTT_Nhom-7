@@ -78,3 +78,21 @@ async def test_real_sql_exact_vector_prefilter_and_hash_version():
         assert await index.search(query, "test-revision", ("sweater-02",)) == {}
         await session.rollback()
     await engine.dispose()
+
+
+@pytest.mark.parametrize("top_k", ["0", "-1", "101", "2.5", "abc"])
+async def test_image_top_k_rejects_invalid_values_before_inference(client, monkeypatch, top_k):
+    from unittest.mock import AsyncMock
+
+    from app.core import dependencies
+
+    encoder = AsyncMock()
+    monkeypatch.setattr(dependencies, "image_encoder", encoder)
+    response = await client.post(
+        "/api/v1/search/image",
+        files={"image": ("query.png", png(), "image/png")},
+        data={"top_k": top_k},
+        headers={"Origin": "http://localhost:3000"},
+    )
+    assert response.status_code == 422, response.text
+    encoder.encode.assert_not_awaited()

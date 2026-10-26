@@ -537,6 +537,8 @@ export interface components {
              * @default 12
              */
             page_size: number;
+            /** Top K */
+            top_k?: number | null;
         };
         /** Body_search_voice_api_v1_search_voice_post */
         Body_search_voice_api_v1_search_voice_post: {

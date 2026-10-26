@@ -20,7 +20,7 @@ def validate_image_url(url: str) -> None:
         raise ValueError("Hãy dùng URL ảnh trực tiếp HTTPS từ i.postimg.cc, tối đa 2048 ký tự.")
 
 
-async def inspect_image(url: str) -> dict[str, Any]:
+async def fetch_image(url: str) -> bytes:
     validate_image_url(url)
     content = bytearray()
     # Fixed allowlisted host, no redirects/proxy, bounded bytes; no filesystem cache.
@@ -39,6 +39,11 @@ async def inspect_image(url: str) -> dict[str, Any]:
                 content.extend(chunk)
                 if len(content) > 5 * 1024 * 1024:
                     raise ValueError("Ảnh vượt quá 5 MB.")
+    return bytes(content)
+
+
+async def inspect_image(url: str) -> dict[str, Any]:
+    content = await fetch_image(url)
     with Image.open(io.BytesIO(content)) as photo:
         width, height = photo.size
         if photo.format not in {"JPEG", "PNG", "WEBP"} or not 256 <= width * height <= 12000000:

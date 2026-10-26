@@ -753,6 +753,17 @@
   height: auto;
   transform: translate(-50%, -50%);
 }
+.footer-grid .footer-logo {
+  position: relative;
+  display: block;
+  width: 112px;
+  height: 32px;
+  overflow: hidden;
+}
+.footer-logo img {
+  filter: invert(1);
+  mix-blend-mode: multiply;
+}
 @media (max-width: 768px) {
   .masthead .brand-logo {
     width: 180px;

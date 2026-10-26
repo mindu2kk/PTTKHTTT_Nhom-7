@@ -30,6 +30,7 @@ async def search_image(
     color: Annotated[str | None, Form(max_length=40)] = None,
     page: Annotated[int, Form(ge=1, le=1000)] = 1,
     page_size: Annotated[int, Form(ge=1, le=24)] = 12,
+    top_k: Annotated[int | None, Form(ge=1, le=100)] = None,
 ) -> SearchResponse:
     try:
         if price_min is not None and price_max is not None and price_min > price_max:
@@ -47,6 +48,7 @@ async def search_image(
                 color=color,
                 page=page,
                 page_size=page_size,
+                top_k=top_k,
             ),
         )
         response = SearchResponse.model_validate(result)

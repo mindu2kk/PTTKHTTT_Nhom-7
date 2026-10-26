@@ -15,6 +15,7 @@ import {
 import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert";
 import { ProductCard } from "@/components/product-card";
 import { Skeleton } from "@/components/ui/skeleton";
+import { ImageTopK } from "@/components/image-top-k";
 type Result = components["schemas"]["SearchResponse"];
 export function ImageSearch({
   categories,
@@ -28,6 +29,7 @@ export function ImageSearch({
   const [result, setResult] = useState<Result>();
   const [error, setError] = useState("");
   const [busy, setBusy] = useState(false);
+  const [topK, setTopK] = useState(initial.top_k || "10");
   const form = useRef<HTMLFormElement>(null);
   const picker = useRef<HTMLInputElement>(null);
   const controller = useRef<AbortController | null>(null);
@@ -84,7 +86,13 @@ export function ImageSearch({
       if (!abort.signal.aborted) {
         setResult(response);
         const query = new URLSearchParams();
-        for (const key of ["category", "price_min", "price_max", "text"])
+        for (const key of [
+          "category",
+          "price_min",
+          "price_max",
+          "text",
+          "top_k",
+        ])
           if (data.get(key)) query.set(key, String(data.get(key)));
         query.set("page", String(page));
         history.replaceState(null, "", `/search/image?${query}`);
@@ -184,6 +192,7 @@ export function ImageSearch({
               defaultValue={initial.price_max}
             />
           </Field>
+          <ImageTopK value={topK} onChange={setTopK} disabled={busy} />
           <Button type="submit" disabled={busy || !file}>
             {busy ? "Đang so sánh ảnh…" : "Tìm sản phẩm tương tự"}
           </Button>

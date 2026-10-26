@@ -120,6 +120,29 @@ async def test_invalid_image_never_reaches_encoder_or_index():
     index.search.assert_not_awaited()
 
 
+@pytest.mark.parametrize(
+    "top_k,page,expected",
+    [(1, 1, ["3"]), (2, 1, ["3", "2"]), (3, 2, ["1"]), (10, 2, ["1", "0"]), (3, 3, [])],
+)
+async def test_image_top_k_caps_total_before_pagination_and_keeps_nearest_first(
+    top_k, page, expected
+):
+    products = [product(str(i), quantity=0 if i == 3 else 1) for i in range(5)]
+    repository = AsyncMock()
+    repository.categories.return_value = []
+    repository.list_products.return_value = (products, len(products))
+    # Small similarity differences must survive ranking; private/unindexed products stay out.
+    scores = {str(i): 0.8 + i / 10000 for i in range(4)}
+    result = await SearchOrchestrator(repository).search(
+        "",
+        "image",
+        SearchOptions(top_k=top_k, page=page, page_size=2),
+        image_scores={**scores, "private": 1.0},
+    )
+    assert result.total == min(top_k, len(scores))
+    assert [row.product.id for row in result.items] == expected
+
+
 def test_visual_ranking_uses_similarity_before_lexical_name():
     rows = [product("low", "Tai nghe"), replace(product("high"), name_vi="Bàn")]
     result = RankingService().rank(QueryRepresentation("image"), rows, {"low": 0.2, "high": 0.9})

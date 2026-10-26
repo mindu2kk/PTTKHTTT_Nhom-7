@@ -39,6 +39,7 @@ class SearchOptions:
     page_size: int = 12
     sort: Literal["relevance", "price_asc", "price_desc"] = "relevance"
     allow_relax: tuple[str, ...] = ()
+    top_k: int | None = None
 
 
 @dataclass(frozen=True)

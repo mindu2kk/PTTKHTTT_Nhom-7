@@ -1,5 +1,48 @@
 # Tiến độ hiện tại
 
+## Top-K tìm ảnh — 2026-10-26
+
+Hai giao diện tìm ảnh có K1–100, mặc định10. API giới hạn tổng kết quả trước
+phân trang, ảnh xếp theo similarity trước tồn kho, giữ các cổng catalog/quyền.
+504 tests backend, Ruff/mypy45 files/ESLint/build đạt; Chrome thật kiểm K1/3/15/
+100, phân trang không vượt K và mobile đạt. API/web đã cập nhật, healthy.
+Chi tiết/giới hạn: [IMAGE_TOP_K](IMAGE_TOP_K.md).
+
+## Dọn code media — 2026-10-26
+
+Indexer dùng chung validator/encoder, tách các bước đọc/chuẩn bị/index với tên
+và kiểu rõ; đóng engine khi lỗi. Downloader gom checksum và chọn model trực
+tiếp. Đặt tên ngưỡng audio/meter, giữ giá trị. 48 backend/script tests +22
+worker tests, Ruff/ESLint/build và Chrome voice/image thật đạt; replay skip20.
+Phạm vi/evidence: [MEDIA_CODE_CLEANUP](MEDIA_CODE_CLEANUP.md).
+
+## Bật tìm ảnh cho catalog Hoodoo — 2026-10-26
+
+Sau đồng ý tải model, đã tải/kiểm hash OpenCLIP pinned, worker CPU load thật.
+Indexer dùng public catalog gate theo profile, gồm ảnh URL Postimages và gallery,
+thay giới hạn ABO cũ. Encode20 ảnh/19 sản phẩm real_demo; chạy lặp skip20/encode0.
+41 tests liên quan (hoodoomart_test), Ruff và Chrome upload→model thật đạt:
+cùng ảnh gile trả đúng sản phẩm đầu, ảnh hỏng422. Chưa benchmark ảnh khác góc;
+ảnh mới cần chạy lại index. Lệnh/evidence: [LOCAL_IMAGE_SEARCH](LOCAL_IMAGE_SEARCH.md).
+
+## Sửa bản ghi nhỏ và kiểm tra micro — 2026-10-26
+
+Thay cổng năng lượng toàn bản ghi bằng cửa sổ 100 ms, tăng âm có giới hạn;
+im lặng/nhiễu lượng tử vẫn bị chặn. Cả hai giao diện voice có chọn micro,
+thanh mức âm và nhắc kiểm tra tắt tiếng khi không có tín hiệu. 22 worker tests,
+20 frontend tests, Ruff/ESLint/build đạt; Chrome kiểm im lặng/chọn thiết bị/nhả
+micro/tìm chữ và WebM→model thật→sửa câu→tìm đạt. Chưa thử micro vật lý.
+Web/inference đã rebuild và healthy. Chi tiết: [LOCAL_VOICE_SETUP](LOCAL_VOICE_SETUP.md).
+
+## Bật lại voice cục bộ trên máy hiện tại — 2026-10-26
+
+Người dùng đã hủy Google API, chọn thư viện cục bộ và đồng ý tải một model.
+Đã tải/checksum/chuyển PhoWhisper-base int8 bằng converter sẵn có, bật profile
+phowhisper-base và giữ LOCAL_ONLY=true. Model load thật; 137 tests liên quan +20
+worker tests và Chrome MediaRecorder→ASR→sửa tay→tìm đạt. Audio kiểm tra là eSpeak
+qua micro Chrome mô phỏng, chưa kiểm micro vật lý. Không tải CLIP/model khác.
+Lệnh, evidence và giới hạn: [LOCAL_VOICE_SETUP](LOCAL_VOICE_SETUP.md).
+
 ## Quản trị sản phẩm và nhiều URL ảnh — 2026-10-26
 
 Admin trong real_demo đã thêm/sửa/xuất bản/ẩn được sản phẩm; chỉnh kho theo size.

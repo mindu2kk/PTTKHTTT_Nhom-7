@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { SiteHeader } from "@/components/site-header";
 import { serverApi } from "@/lib/server-api";
 import type { Category } from "@/lib/api";
@@ -42,8 +43,14 @@ export default async function RootLayout({
         <footer>
           <div className="wrap footer-grid">
             <div>
-              <Link className="brand" href="/">
-                Hoodoo
+              <Link className="brand brand-logo footer-logo" href="/">
+                <Image
+                  src="/images/brand/hoodoo-white-on-black.png"
+                  alt="Hoodoo"
+                  width={2048}
+                  height={768}
+                  sizes="148px"
+                />
               </Link>
               <p>Tìm theo cách của bạn.</p>
             </div>

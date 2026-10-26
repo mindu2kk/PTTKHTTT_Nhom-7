@@ -1777,6 +1777,19 @@
             "minimum": 1.0,
             "title": "Page Size",
             "default": 12
+          },
+          "top_k": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "maximum": 100.0,
+                "minimum": 1.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Top K"
           }
         },
         "type": "object",
