@@ -1,12 +1,15 @@
 from typing import Annotated
 
-from fastapi import APIRouter, Depends, File, Form, HTTPException, UploadFile
+from fastapi import APIRouter, BackgroundTasks, Depends, File, Form, HTTPException, UploadFile
 from pydantic import BaseModel, ConfigDict, Field
 
-from app.api.v1.search import SearchResponse
+from app.api.v1.commerce import optional_actor
+from app.api.v1.search import SearchResponse, remember_safely
+from app.application.commerce import CommerceService
 from app.application.image_search import ImageSearchService
 from app.application.speech import SpeechService
-from app.core.dependencies import image_service, speech_service
+from app.core.dependencies import commerce_service, image_service, speech_service
+from app.domain.commerce import Actor
 from app.domain.media import MediaError
 from app.domain.search import SearchOptions
 
@@ -16,6 +19,9 @@ router = APIRouter(prefix="/api/v1/search", tags=["Đa phương thức"])
 @router.post("/image", response_model=SearchResponse)
 async def search_image(
     service: Annotated[ImageSearchService, Depends(image_service)],
+    actor: Annotated[Actor | None, Depends(optional_actor)],
+    commerce: Annotated[CommerceService, Depends(commerce_service)],
+    tasks: BackgroundTasks,
     image: Annotated[UploadFile, File()],
     text: Annotated[str, Form(max_length=300)] = "",
     category: Annotated[str | None, Form(max_length=100)] = None,
@@ -43,7 +49,10 @@ async def search_image(
                 page_size=page_size,
             ),
         )
-        return SearchResponse.model_validate(result)
+        response = SearchResponse.model_validate(result)
+        if actor:
+            tasks.add_task(remember_safely, commerce, actor, result)
+        return response
     except MediaError as error:
         raise HTTPException(error.status, error.message) from error
     finally:

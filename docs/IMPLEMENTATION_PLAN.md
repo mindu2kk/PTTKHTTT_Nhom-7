@@ -1,5 +1,69 @@
 # Kế hoạch và trạng thái M0–M8
 
+## Quản trị sản phẩm và nhiều URL ảnh — 2026-10-26
+
+Admin trong real_demo đã thêm/sửa/xuất bản/ẩn được sản phẩm; chỉnh kho theo size.
+Ảnh nhập bằng nhiều URL Postimages, mỗi dòng một ảnh, ảnh đầu làm ảnh bìa;
+kiểm quyền/host/MIME/bytes/pixels, preview và lưu thứ tự gallery qua migration0009.
+Đã cấp role admin cho tài khoản người dùng chỉ định, giữ mật khẩu.
+480 backend tests +20 frontend tests, Ruff/mypy/ESLint/build và Chrome thực tế đạt.
+Có backup, không reset dữ liệu; QA tạm đã dọn. Hướng dẫn/phạm vi/lệnh/rollback:
+[ADMIN_PRODUCTS](ADMIN_PRODUCTS.md).
+
+## Chọn size theo sơ đồ VPP — 2026-10-26
+
+Đã áp dụng Alembic `0008_product_sizes`, thêm kho theo S/M/L/XL/XXL/F;
+giỏ và chi tiết đơn liên kết product_size, giữ/nhả/trừ kho theo size.
+UI chi tiết/giỏ/đơn và fallback không JavaScript đã cập nhật.
+Giữ nguyên sản phẩm, giỏ, đơn và tổng kho cũ; backup trước migration.
+463 backend tests (266 unit +197 integration), 20 frontend tests, Ruff/mypy,
+ESLint, production/Docker build và Chrome desktop/mobile đạt.
+Bốn dịch vụ healthy; phạm vi phân bổ demo/đơn lịch sử/rollback tại
+[PRODUCT_SIZES](PRODUCT_SIZES.md).
+
+## Nhập DataShopping đầy đủ — 2026-10-26
+
+Đã thêm18 sản phẩm Rhodi, tái sử dụng1; public catalog19 sản phẩm/19 ảnh URL trực tiếp.
+Kho thiếu được cấp demo ngẫu nhiên5–20 theo người dùng; bản ghi cũ on_hand8/reserved1 giữ nguyên.
+Size/màu nhiều giá trị giữ đầy đủ trong JSON options, chưa tách SKU/kho theo biến thể.
+19 tests import/rollback đạt, mypy42files/build đạt; Chrome19 ảnh/phân trang/mobile đạt.
+Backup, lệnh, phạm vi tại [SHOPPING_BULK_IMPORT](SHOPPING_BULK_IMPORT.md).
+
+## Banner ảnh trượt trang chủ — 2026-10-26
+
+Đã thay banner cũ bằng3 ảnh người dùng cung cấp trong `Pictures/fashionImage/main-image`,
+copy nguyên bản vào `apps/web/public/images/campaign/menswear/`, giữ watermark/credit.
+Chữ/nút HTML tiếng Việt trên nền tối, ảnh bên phải desktop và phía trên mobile;
+trước/sau/dots/keyboard/swipe, tự chuyển6s, tạm dừng khi hover/focus/tabẩn hoặc người dùng thao tác.
+Tôn trọng prefers-reduced-motion (không tự chạy/không transition); inactive slides inert.
+Docker frontend build/TypeScript đạt; `artifacts/verify_home_carousel.py` qua Chrome ở1440/768/390/360px,
+kiểm3 ảnh tải được, autoplay/manual pause/wrap/dots/keyboard/CTA/swipe mô phỏng/reduced motion,
+không tràn ngang. Đã xem ảnh desktop/mobile tại `artifacts/campaign-*.png`.
+Lượt harness đầu thiếu TouchInit.identifier, đã sửa mô phỏng và chạy lại đạt; không phải lỗi UI.
+Trang sources cập nhật nguồn ảnh banner. Không thay database, catalog hay pipeline AI.
+
+## Mẫu Rhodi dùng URL ảnh trực tiếp — 2026-10-26
+
+Đã nhập một bản ghi đã được người dùng xác nhận quyền: `rhodi-p11847`, profile real_demo.
+Ảnh Postimages render trực tiếp200/640x800 trên catalog/detail/zoom/mobile; không lưu ảnh vào project.
+264 unit +62 integration liên quan đạt; Ruff/mypy/build đạt. DB host chuyển sang15432 vì55432 bị Windows loại trừ.
+Nguồn Rhodi riêng, không gán ABO; chi tiết tại [SHOP_SAMPLE_PREVIEW](SHOP_SAMPLE_PREVIEW.md).
+
+## Danh mục thời trang nam — 2026-10-26
+
+Đã áp dụng migration `0007_menswear_categories`: 1 gốc, 3 nhóm, 19 mục lá theo ảnh người dùng.
+Chỉ hiển thị cây mới; 49 mục cũ và 55 sản phẩm được giữ, chưa gán lại/chưa nhập sản phẩm mới.
+Đồng bộ menu/filter/search và kiểm tra quản lý; 248 unit + 193 integration đạt, Ruff/mypy/build/Alembic check đạt.
+Backup, ID danh mục, rollback và giới hạn tại [MENSWEAR_CATEGORIES](MENSWEAR_CATEGORIES.md).
+
+## Đối chiếu backend với thiết kế — 2026-10-25
+
+Đã sửa ranh giới router/application, điều kiện fallback sau ranking, ưu tiên brand/giá,
+history đa phương thức và kiểm tra tồn kho giỏ theo [BACKEND_DESIGN_ALIGNMENT](BACKEND_DESIGN_ALIGNMENT.md).
+Revision mã mới là `0006_search_trace`; chưa áp dụng vào DB chính. Phần M8 bên dưới là
+trạng thái lịch sử ở revision `0005_real_catalog`. Phạm vi semantic tổng quát/payment thật
+và TC2 chưa được nghiệm thu thêm trong đợt này.
+
 ## Nâng cấp ASR qua agent — 2026-10-23
 
 Đã thực hiện [VOICE_UPGRADE_PLAN](VOICE_UPGRADE_PLAN.md): PhoWhisper-base có đồng ý riêng, conversion int8/integrity/local-only, sửa timestamp compatibility, frozen protocol V1/V2, public-catalog suggestions và rollout sau gate. V2 WER36,56%→7,53%; kiểm phần mềm/Chrome đạt. [VOICE_UPGRADE_REPORT](VOICE_UPGRADE_REPORT.md) giữ rõ các split, timing/RAM, hồi quy và TC2 còn mở.

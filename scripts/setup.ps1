@@ -3,8 +3,10 @@ $taskRoot = Split-Path -Parent $PSScriptRoot
 Set-Location -LiteralPath $taskRoot
 if (-not (Test-Path -LiteralPath '.env')) {
     $taskBytes = [byte[]]::new(24)
-    [System.Security.Cryptography.RandomNumberGenerator]::Fill($taskBytes)
-    $taskPassword = [Convert]::ToHexString($taskBytes).ToLowerInvariant()
+    $rng = [System.Security.Cryptography.RandomNumberGenerator]::Create()
+    $rng.GetBytes($taskBytes)
+    $rng.Dispose()
+    $taskPassword = ($taskBytes | ForEach-Object { $_.ToString('x2') }) -join ''
     $taskEnv = (Get-Content -LiteralPath '.env.example' -Raw).Replace('replace_with_generated_local_password', $taskPassword)
     [System.IO.File]::WriteAllText((Join-Path $taskRoot '.env'), $taskEnv)
     Write-Output 'Created local .env with generated database password (not displayed).'

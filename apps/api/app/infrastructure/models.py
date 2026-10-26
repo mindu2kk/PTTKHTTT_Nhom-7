@@ -9,6 +9,7 @@ from sqlalchemy import (
     Boolean,
     CheckConstraint,
     DateTime,
+    Float,
     ForeignKey,
     ForeignKeyConstraint,
     Index,
@@ -68,6 +69,7 @@ class CategoryRow(Base):
     name_vi: Mapped[str] = mapped_column(String(200))
     level: Mapped[int] = mapped_column(Integer)
     sort_order: Mapped[int] = mapped_column(Integer)
+    is_active: Mapped[bool] = mapped_column(Boolean, server_default="false")
     __table_args__ = (
         CheckConstraint("level >= 0", name="ck_categories_level"),
         CheckConstraint("parent_id IS NULL OR parent_id <> id"),
@@ -147,8 +149,10 @@ class ProductImage(Base):
     license_status: Mapped[str] = mapped_column(String(30))
     is_primary: Mapped[bool] = mapped_column(Boolean)
     alt_vi: Mapped[str] = mapped_column(String(250))
+    sort_order: Mapped[int] = mapped_column(Integer, server_default="0")
     __table_args__ = (
         CheckConstraint("width > 0 AND height > 0"),
+        CheckConstraint("sort_order >= 0", name="ck_product_images_sort_order"),
         Index(
             "uq_product_primary_image",
             "product_id",
@@ -200,6 +204,23 @@ class Inventory(Base):
     __table_args__ = (CheckConstraint("on_hand >= 0 AND reserved >= 0 AND reserved <= on_hand"),)
 
 
+class ProductSize(Base):
+    __tablename__ = "product_sizes"
+    id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    product_id: Mapped[str] = mapped_column(ForeignKey("products.id", ondelete="CASCADE"))
+    size: Mapped[str] = mapped_column(String(3))
+    stock_quantity: Mapped[int] = mapped_column(Integer)
+    reserved: Mapped[int] = mapped_column(Integer, server_default="0")
+    __table_args__ = (
+        UniqueConstraint("product_id", "size", name="uq_product_sizes_product_size"),
+        UniqueConstraint("id", "product_id", name="uq_product_sizes_identity"),
+        CheckConstraint("size IN ('S','M','L','XL','XXL','F')", name="ck_product_sizes_size"),
+        CheckConstraint(
+            "stock_quantity >= reserved AND reserved >= 0", name="ck_product_sizes_stock"
+        ),
+    )
+
+
 class User(Base):
     __tablename__ = "users"
     id: Mapped[str] = mapped_column(String(80), primary_key=True)
@@ -235,7 +256,16 @@ class OrderItem(Base):
     name_snapshot: Mapped[str] = mapped_column(String(250))
     unit_price_vnd: Mapped[int] = mapped_column(BigInteger)
     quantity: Mapped[int] = mapped_column(Integer)
-    __table_args__ = (CheckConstraint("unit_price_vnd > 0 AND quantity > 0"),)
+    product_size_id: Mapped[int | None] = mapped_column(Integer)
+    size_snapshot: Mapped[str | None] = mapped_column(String(3))
+    __table_args__ = (
+        CheckConstraint("unit_price_vnd > 0 AND quantity > 0"),
+        ForeignKeyConstraint(
+            ["product_size_id", "product_id"],
+            ["product_sizes.id", "product_sizes.product_id"],
+            name="fk_order_items_product_size",
+        ),
+    )
 
 
 class ImageEmbedding(Base):
@@ -284,15 +314,24 @@ class CartItem(Base):
     user_id: Mapped[str] = mapped_column(
         ForeignKey("carts.user_id", ondelete="CASCADE"), primary_key=True
     )
-    product_id: Mapped[str] = mapped_column(ForeignKey("products.id"), primary_key=True)
+    product_id: Mapped[str] = mapped_column(ForeignKey("products.id"))
+    product_size_id: Mapped[int] = mapped_column(Integer, primary_key=True)
     quantity: Mapped[int] = mapped_column(Integer)
-    __table_args__ = (CheckConstraint("quantity BETWEEN 1 AND 99"),)
+    __table_args__ = (
+        CheckConstraint("quantity BETWEEN 1 AND 99"),
+        ForeignKeyConstraint(
+            ["product_size_id", "product_id"],
+            ["product_sizes.id", "product_sizes.product_id"],
+            name="fk_cart_items_product_size",
+        ),
+    )
 
 
 class StockReservation(Base):
     __tablename__ = "stock_reservations"
     order_id: Mapped[str] = mapped_column(ForeignKey("orders.id"), primary_key=True)
     offer_id: Mapped[str] = mapped_column(ForeignKey("seller_offers.id"), primary_key=True)
+    product_size_id: Mapped[int] = mapped_column(ForeignKey("product_sizes.id"), primary_key=True)
     quantity: Mapped[int] = mapped_column(Integer)
     status: Mapped[str] = mapped_column(String(20))
     __table_args__ = (
@@ -325,6 +364,8 @@ class SearchQuery(Base):
     user_id: Mapped[str] = mapped_column(ForeignKey("users.id", ondelete="CASCADE"), index=True)
     raw_text: Mapped[str] = mapped_column(String(300))
     modality: Mapped[str] = mapped_column(String(20))
+    normalized_text: Mapped[str | None] = mapped_column(String(300))
+    encoder_version: Mapped[str | None] = mapped_column(String(80))
     created_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), server_default=func.now(), index=True
     )
@@ -337,3 +378,28 @@ class SearchResultRow(Base):
     )
     product_id: Mapped[str] = mapped_column(ForeignKey("products.id"), primary_key=True)
     rank: Mapped[int] = mapped_column(Integer)
+    final_score: Mapped[float | None] = mapped_column(Float)
+    relevance_score: Mapped[float | None] = mapped_column(Float)
+    preference_score: Mapped[float | None] = mapped_column(Float)
+    explanation: Mapped[str | None] = mapped_column(String(1000))
+
+
+class SearchFilterRow(Base):
+    __tablename__ = "search_filters"
+    id: Mapped[str] = mapped_column(String(80), primary_key=True)
+    query_id: Mapped[str] = mapped_column(
+        ForeignKey("search_queries.id", ondelete="CASCADE"), index=True
+    )
+    kind: Mapped[str] = mapped_column(String(20))
+    position: Mapped[int] = mapped_column(Integer)
+    key: Mapped[str] = mapped_column(String(40))
+    value: Mapped[str | int] = mapped_column(JSONB)
+    origin: Mapped[str] = mapped_column(String(20))
+    operator: Mapped[str] = mapped_column(String(10))
+    confidence: Mapped[float] = mapped_column(Float)
+    __table_args__ = (
+        CheckConstraint("kind IN ('hard','soft','relaxed')"),
+        CheckConstraint("origin IN ('ui_selected','explicit_text','inferred')"),
+        CheckConstraint("position >= 0 AND confidence BETWEEN 0 AND 1"),
+        UniqueConstraint("query_id", "kind", "position", name="uq_search_filter_position"),
+    )

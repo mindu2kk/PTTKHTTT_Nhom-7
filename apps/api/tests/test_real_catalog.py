@@ -13,6 +13,7 @@ from app.infrastructure.catalog import SqlCatalogRepository
 from app.infrastructure.database import engine, session_factory
 from app.infrastructure.media import CLIP_REVISION
 from app.infrastructure.models import (
+    CategoryRow,
     DataSource,
     ImageEmbedding,
     ProductImage,
@@ -155,6 +156,12 @@ async def test_real_import_idempotency_mapping_and_rights(sample):
                 second = await load_catalog(session, manifest, directory)
                 assert first["created"] == 1 and second["created"] == 0 and second["reused"] == 1
                 await session.flush()
+                # This historical M8 fixture is explicitly enabled only in this test.
+                await session.execute(
+                    update(CategoryRow)
+                    .where(CategoryRow.id == record["category_id"])
+                    .values(is_active=True)
+                )
                 repository = SqlCatalogRepository(session, "real_demo")
                 product = await repository.get_product(record["id"])
                 assert (
@@ -167,7 +174,7 @@ async def test_real_import_idempotency_mapping_and_rights(sample):
                     CatalogFilter(category="dien-tu", available=True)
                 )
                 assert total == 1 and products[0].id == record["id"]
-                assert (await repository.categories())[0].id == "dien-tu"
+                assert record["category_id"] in {c.id for c in await repository.categories()}
                 # Unchanged source import must preserve operator price edits.
                 await session.execute(
                     update(SellerOffer)
@@ -263,12 +270,12 @@ async def test_gallery_vectors_aggregate_and_reject_revoked_photo(sample):
 
 
 @pytest.mark.parametrize("action", ["create", "publish", "update", "archive", "import"])
-async def test_real_catalog_management_is_explicitly_read_only(action):
+async def test_real_catalog_management_remains_read_only_for_sellers(action):
     from app.domain.commerce import Actor, BusinessError
     from app.infrastructure.commerce import SqlCommerceStore
 
     store = SqlCommerceStore(session_factory, "real_demo")
-    actor = Actor("fixture-customer", "fixture-customer@example.invalid", ("admin",), False)
+    actor = Actor("fixture-customer", "fixture-customer@example.invalid", ("seller",), False)
     with pytest.raises(BusinessError) as error:
         await store.manage(actor, action, {"id": "sweater-01"})
     assert error.value.status == 409
@@ -281,7 +288,7 @@ async def test_management_profile_isolation():
     actor = Actor("fixture-customer", "fixture-customer@example.invalid", ("admin",), False)
     try:
         result = await SqlCommerceStore(session_factory, "real_demo").manage(actor, "list", {})
-        assert result["read_only"] is True and result["items"] == []
+        assert result["read_only"] is False and result["items"] == []
         photos = await SqlCommerceStore(session_factory, "real_demo").manage(actor, "images", {})
         assert photos["items"] == []
     finally:

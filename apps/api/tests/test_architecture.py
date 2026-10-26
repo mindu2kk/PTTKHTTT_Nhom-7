@@ -25,6 +25,8 @@ def test_layer_import_boundaries():
                     else []
                 )
                 assert not any(name.startswith(prefixes) for name in names), file
+                if layer == "api" and isinstance(node, ast.Attribute):
+                    assert node.attr not in {"store", "_store", "repository"}, file
 
 
 def test_local_only_cannot_enable_remote_inference():

@@ -27,6 +27,7 @@ export function CheckoutForm({ products }: { products: Product[] }) {
         const body = {
           items: readCart().map((line) => ({
             product_id: line.id,
+            product_size_id: line.product_size_id,
             quantity: line.quantity,
             expected_price_vnd:
               products.find((p) => p.id === line.id)?.price_vnd || 0,
@@ -44,6 +45,8 @@ export function CheckoutForm({ products }: { products: Product[] }) {
           payloadRef.current = serialized;
         }
         try {
+          if (body.items.some((line) => !line.product_size_id))
+            throw new Error("Hãy chọn size cho từng sản phẩm trong giỏ hàng.");
           const checked = addressSchema.safeParse(body.address);
           if (!checked.success)
             throw new Error(checked.error.issues[0].message);

@@ -56,7 +56,7 @@ async def database_ready() -> bool:
     async with session_factory() as session:
         # Readiness must prove the expected schema revision, not only an open TCP port.
         revision = await session.scalar(text("SELECT version_num FROM alembic_version"))
-        return bool(revision == "0005_real_catalog")
+        return bool(revision == "0009_product_image_order")
 
 
 async def search_service() -> AsyncIterator[SearchOrchestrator]:

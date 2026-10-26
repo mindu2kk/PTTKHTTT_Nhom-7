@@ -552,6 +552,8 @@ export interface components {
         CartLine: {
             /** Product Id */
             product_id: string;
+            /** Product Size Id */
+            product_size_id?: number | null;
             /** Quantity */
             quantity: number;
         };
@@ -586,6 +588,8 @@ export interface components {
         CheckoutLine: {
             /** Product Id */
             product_id: string;
+            /** Product Size Id */
+            product_size_id?: number | null;
             /** Quantity */
             quantity: number;
             /** Expected Price Vnd */
@@ -676,6 +680,10 @@ export interface components {
         };
         /** DraftBody */
         DraftBody: {
+            /** Sizes */
+            sizes?: components["schemas"]["SizeStock"][] | null;
+            /** Stock */
+            stock: number;
             /** Name */
             name: string;
             /** Description */
@@ -683,17 +691,26 @@ export interface components {
             /** Category Id */
             category_id: string;
             /** Image Id */
-            image_id: string;
+            image_id?: string | null;
+            /** Image Url */
+            image_url?: string | null;
+            /** Image Urls */
+            image_urls?: string[] | null;
+            /**
+             * Image Rights Confirmed
+             * @default false
+             */
+            image_rights_confirmed: boolean;
             /** Price Vnd */
             price_vnd: number;
-            /** Stock */
-            stock: number;
             /** Color */
             color: string;
             /** Material */
             material: string;
             /** Size */
             size: string;
+            /** Brand */
+            brand?: string | null;
             /**
              * Original Data Confirmed
              * @constant
@@ -717,15 +734,44 @@ export interface components {
         };
         /** OfferBody */
         OfferBody: {
-            /** Price Vnd */
-            price_vnd: number;
+            /** Sizes */
+            sizes?: components["schemas"]["SizeStock"][] | null;
             /** Stock */
             stock: number;
+            /** Price Vnd */
+            price_vnd: number;
+            /** Name */
+            name?: string | null;
+            /** Description */
+            description?: string | null;
+            /** Category Id */
+            category_id?: string | null;
+            /** Image Id */
+            image_id?: string | null;
+            /** Image Url */
+            image_url?: string | null;
+            /** Image Urls */
+            image_urls?: string[] | null;
+            /**
+             * Image Rights Confirmed
+             * @default false
+             */
+            image_rights_confirmed: boolean;
+            /** Color */
+            color?: string | null;
+            /** Material */
+            material?: string | null;
+            /** Brand */
+            brand?: string | null;
         };
         /** OrderLineResponse */
         OrderLineResponse: {
             /** Product Id */
             product_id: string;
+            /** Product Size Id */
+            product_size_id?: number | null;
+            /** Size */
+            size?: string | null;
             /** Name */
             name: string;
             /** Unit Price Vnd */
@@ -837,6 +883,13 @@ export interface components {
             images: {
                 [key: string]: string | number;
             }[];
+            /**
+             * Sizes
+             * @default []
+             */
+            sizes: {
+                [key: string]: string | number;
+            }[];
         };
         /** QueryResponse */
         QueryResponse: {
@@ -937,6 +990,16 @@ export interface components {
             media?: {
                 [key: string]: string | number | boolean;
             } | null;
+        };
+        /** SizeStock */
+        SizeStock: {
+            /**
+             * Size
+             * @enum {string}
+             */
+            size: "S" | "M" | "L" | "XL" | "XXL" | "F";
+            /** Stock */
+            stock: number;
         };
         /** StatusBody */
         StatusBody: {

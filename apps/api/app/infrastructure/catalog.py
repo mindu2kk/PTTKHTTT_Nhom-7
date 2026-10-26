@@ -12,6 +12,7 @@ from app.infrastructure.models import (
     ProductAttribute,
     ProductImage,
     ProductRow,
+    ProductSize,
     ProductSource,
     ProductVariant,
     SellerOffer,
@@ -26,29 +27,11 @@ class SqlCatalogRepository:
     async def categories(self) -> list[Category]:
         rows = (
             await self.session.scalars(
-                select(CategoryRow).order_by(
-                    CategoryRow.level, CategoryRow.sort_order, CategoryRow.id
-                )
+                select(CategoryRow)
+                .where(CategoryRow.is_active.is_(True))
+                .order_by(CategoryRow.level, CategoryRow.sort_order, CategoryRow.id)
             )
         ).all()
-        if self.profile == "real_demo":
-            selected = set(
-                (
-                    await self.session.scalars(
-                        select(ProductRow.category_id).where(
-                            ProductRow.data_profile == "real_demo",
-                            ProductRow.publication_status == "published",
-                        )
-                    )
-                ).all()
-            )
-            parents = {r.id: r.parent_id for r in rows}
-            for category in list(selected):
-                parent = parents.get(category)
-                while parent is not None:
-                    selected.add(parent)
-                    parent = parents.get(parent)
-            rows = [r for r in rows if r.id in selected]
         return [Category(r.id, r.parent_id, r.slug, r.name_vi, r.level, r.sort_order) for r in rows]
 
     async def _products(
@@ -68,7 +51,10 @@ class SqlCatalogRepository:
         source = (
             select(
                 ProductSource.product_id,
-                func.min(DataSource.id).label("source_id"),
+                func.coalesce(
+                    func.min(DataSource.id).filter(DataSource.id.like("operator-public-%")),
+                    func.min(DataSource.id),
+                ).label("source_id"),
                 func.min(DataSource.rights_status).label("rights_status"),
             )
             .join(DataSource, DataSource.id == ProductSource.source_id)
@@ -133,6 +119,7 @@ class SqlCatalogRepository:
             .outerjoin(material, material.c.product_id == ProductRow.id)
             .outerjoin(season, season.c.product_id == ProductRow.id)
             .where(
+                CategoryRow.is_active.is_(True),
                 ProductRow.publication_status == "published",
                 ProductRow.verification_status == "verified",
                 ProductRow.data_profile == self.profile,
@@ -173,7 +160,11 @@ class SqlCatalogRepository:
         if filters.brand:
             query = query.where(ProductRow.brand_id == filters.brand)
         if filters.size:
-            query = query.where(ProductVariant.size == filters.size)
+            query = query.where(
+                ProductRow.id.in_(
+                    select(ProductSize.product_id).where(ProductSize.size == filters.size)
+                )
+            )
         if filters.available:
             query = query.where(Inventory.on_hand > Inventory.reserved)
         total = int(
@@ -227,6 +218,15 @@ class SqlCatalogRepository:
             )
             for key in ["color", "material", "gender", "size"]
         }
+        result["size"] = sorted(
+            (
+                await self.session.scalars(
+                    select(ProductSize.size)
+                    .where(ProductSize.product_id.in_([p.id for p in products]))
+                    .distinct()
+                )
+            ).all()
+        )
         result["brand"] = sorted(b for b in brands if b)
         return result
 
@@ -243,11 +243,28 @@ class SqlCatalogRepository:
                     ProductImage.license_status
                     == ("demo" if self.profile == "demo_seed" else "approved"),
                 )
-                .order_by(ProductImage.is_primary.desc(), ProductImage.id)
+                .order_by(ProductImage.is_primary.desc(), ProductImage.sort_order, ProductImage.id)
+            )
+        ).all()
+        sizes = (
+            await self.session.scalars(
+                select(ProductSize)
+                .where(ProductSize.product_id == product.id)
+                .order_by(ProductSize.id)
             )
         ).all()
         return replace(
             product,
+            sizes=tuple(
+                {
+                    "id": size.id,
+                    "size": size.size,
+                    "available_quantity": min(
+                        size.stock_quantity - size.reserved, product.available_quantity
+                    ),
+                }
+                for size in sizes
+            ),
             images=tuple(
                 {
                     "url": image.storage_key,

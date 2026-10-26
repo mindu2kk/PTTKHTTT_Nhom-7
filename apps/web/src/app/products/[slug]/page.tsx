@@ -71,37 +71,10 @@ export default async function Detail({
         <section>
           <p className="category-name">{product.category_name}</p>
           <h1>{product.name_vi}</h1>
+          <p className="fine-print">
+            Mã sản phẩm: {product.id.replace(/^rhodi-/, "hoodoo-")}
+          </p>
           <p className="detail-price">{money(product.price_vnd)}</p>
-          <p className="demo-note">{product.data_notice}</p>
-          {product.original_name && (
-            <p className="original-name">Tên nguồn: {product.original_name}</p>
-          )}
-          <p>{product.description_vi}</p>
-          <dl className="attributes">
-            <div>
-              <dt>Màu sắc</dt>
-              <dd>{product.color}</dd>
-            </div>
-            <div>
-              <dt>Chất liệu</dt>
-              <dd>{product.material}</dd>
-            </div>
-            <div>
-              <dt>Thương hiệu</dt>
-              <dd>{product.brand || "Chưa có thông tin"}</dd>
-            </div>
-            <div>
-              <dt>
-                {product.data_profile === "real_demo"
-                  ? "Hạn mức đặt thử"
-                  : "Còn hàng"}
-              </dt>
-              <dd>
-                {product.available_quantity} sản phẩm
-                {product.data_profile === "real_demo" ? " (mô phỏng)" : ""}
-              </dd>
-            </div>
-          </dl>
           <AddToCart product={product} />
           <p className="fine-print">
             Giá và tồn kho được kiểm tra lại khi đặt hàng. Đơn hàng trong bản

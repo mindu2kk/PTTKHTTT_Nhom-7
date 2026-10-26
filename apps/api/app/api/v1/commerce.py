@@ -113,6 +113,7 @@ async def me(actor: Owner) -> AccountResponse:
 
 class CartLine(StrictModel):
     product_id: str = Field(min_length=1, max_length=80)
+    product_size_id: int | None = Field(None, gt=0)
     quantity: int = Field(ge=1, le=99)
 
 
@@ -121,19 +122,19 @@ class CartBody(StrictModel):
 
     @model_validator(mode="after")
     def unique(self) -> "CartBody":
-        if len({x.product_id for x in self.items}) != len(self.items):
-            raise ValueError("duplicate product")
+        if len({(x.product_id, x.product_size_id) for x in self.items}) != len(self.items):
+            raise ValueError("Sản phẩm và size bị trùng.")
         return self
 
 
 @router.get("/cart")
 async def cart_get(actor: Owner, service: Service) -> dict[str, Any]:
-    return await service.store.cart(actor, None)
+    return await service.cart(actor, None)
 
 
 @router.put("/cart")
 async def cart_put(body: CartBody, actor: Owner, service: Service) -> dict[str, Any]:
-    return await service.store.cart(actor, [x.model_dump() for x in body.items])
+    return await service.cart(actor, [x.model_dump() for x in body.items])
 
 
 class CheckoutLine(CartLine):
@@ -153,13 +154,15 @@ class CheckoutBody(StrictModel):
 
     @model_validator(mode="after")
     def unique(self) -> "CheckoutBody":
-        if len({x.product_id for x in self.items}) != len(self.items):
-            raise ValueError("duplicate product")
+        if len({(x.product_id, x.product_size_id) for x in self.items}) != len(self.items):
+            raise ValueError("Sản phẩm và size bị trùng.")
         return self
 
 
 class OrderLineResponse(BaseModel):
     product_id: str
+    product_size_id: int | None = None
+    size: str | None = None
     name: str
     unit_price_vnd: int
     quantity: int
@@ -187,12 +190,12 @@ async def checkout(
         str, Header(min_length=16, max_length=80, pattern=r"^[a-zA-Z0-9_-]+$")
     ],
 ) -> dict[str, Any]:
-    return await service.store.checkout(actor, idempotency_key, body.model_dump())
+    return await service.checkout(actor, idempotency_key, body.model_dump())
 
 
 @router.get("/orders", response_model=list[OrderResponse])
 async def orders(actor: Owner, service: Service) -> list[dict[str, Any]]:
-    return await service.store.orders(actor)
+    return await service.orders(actor)
 
 
 @router.get("/orders/{code}", response_model=OrderResponse)
@@ -206,7 +209,7 @@ class StatusBody(StrictModel):
 
 @router.patch("/orders/{code}", response_model=OrderResponse)
 async def transition(code: str, body: StatusBody, actor: Owner, service: Service) -> dict[str, Any]:
-    return await service.store.transition(actor, code, body.status)
+    return await service.transition(actor, code, body.status)
 
 
 class HistoryBody(StrictModel):
@@ -215,37 +218,102 @@ class HistoryBody(StrictModel):
 
 @router.get("/history")
 async def history(actor: Owner, service: Service) -> list[dict[str, Any]]:
-    return await service.store.history(actor, "list")
+    return await service.history(actor, "list")
 
 
 @router.patch("/history")
 async def history_setting(body: HistoryBody, actor: Owner, service: Service) -> dict[str, bool]:
-    await service.store.history(actor, "enable" if body.enabled else "disable")
+    await service.history(actor, "enable" if body.enabled else "disable")
     return {"enabled": body.enabled}
 
 
 @router.delete("/history")
 async def history_delete(actor: Owner, service: Service) -> dict[str, bool]:
-    await service.store.history(actor, "delete")
+    await service.history(actor, "delete")
     return {"ok": True}
 
 
-class DraftBody(StrictModel):
+class SizeStock(StrictModel):
+    size: Literal["S", "M", "L", "XL", "XXL", "F"]
+    stock: int = Field(ge=0, le=1000000)
+
+
+class StockFields(StrictModel):
+    sizes: list[SizeStock] | None = Field(None, min_length=1, max_length=6)
+    stock: int = Field(ge=0, le=1000000)
+
+    @model_validator(mode="after")
+    def valid_sizes(self) -> "StockFields":
+        urls = getattr(self, "image_urls", None)
+        if urls and len(set(urls)) != len(urls):
+            raise ValueError("Danh sách URL ảnh bị trùng.")
+        if self.sizes is not None:
+            if len({s.size for s in self.sizes}) != len(self.sizes):
+                raise ValueError("Danh sách size bị trùng.")
+            if sum(s.stock for s in self.sizes) != self.stock:
+                raise ValueError("Tổng tồn kho phải bằng tổng các size.")
+        return self
+
+
+class DraftBody(StockFields):
     name: str = Field(min_length=3, max_length=250)
     description: str = Field(min_length=10, max_length=3000)
     category_id: str = Field(min_length=1, max_length=80)
-    image_id: str = Field(min_length=1, max_length=100)
+    image_id: str | None = Field(None, min_length=1, max_length=100)
+    image_url: str | None = Field(None, min_length=1, max_length=2048)
+    image_urls: list[Annotated[str, Field(min_length=1, max_length=2048)]] | None = Field(
+        None, min_length=1, max_length=10
+    )
+    image_rights_confirmed: bool = False
     price_vnd: int = Field(gt=0, le=10**12)
     stock: int = Field(ge=0, le=1000000)
     color: str = Field(min_length=1, max_length=40)
     material: str = Field(min_length=1, max_length=100)
     size: str = Field(min_length=1, max_length=30)
+    brand: str | None = Field(None, max_length=80)
     original_data_confirmed: Literal[True]
 
+    @model_validator(mode="after")
+    def image_choice(self) -> "DraftBody":
+        if sum(bool(value) for value in (self.image_id, self.image_url, self.image_urls)) != 1:
+            raise ValueError("Hãy nhập một URL ảnh hoặc chọn một ảnh đã duyệt.")
+        if (self.image_url or self.image_urls) and not self.image_rights_confirmed:
+            raise ValueError("Cần xác nhận quyền sử dụng ảnh.")
+        return self
 
-class OfferBody(StrictModel):
+
+class OfferBody(StockFields):
     price_vnd: int = Field(gt=0, le=10**12)
-    stock: int = Field(ge=0, le=1000000)
+    name: str | None = Field(None, min_length=3, max_length=250)
+    description: str | None = Field(None, min_length=10, max_length=3000)
+    category_id: str | None = Field(None, min_length=1, max_length=80)
+    image_id: str | None = Field(None, min_length=1, max_length=100)
+    image_url: str | None = Field(None, min_length=1, max_length=2048)
+    image_urls: list[Annotated[str, Field(min_length=1, max_length=2048)]] | None = Field(
+        None, min_length=1, max_length=10
+    )
+    image_rights_confirmed: bool = False
+    color: str | None = Field(None, min_length=1, max_length=40)
+    material: str | None = Field(None, min_length=1, max_length=100)
+    brand: str | None = Field(None, max_length=80)
+
+    @model_validator(mode="after")
+    def no_null_details(self) -> "OfferBody":
+        if sum(bool(value) for value in (self.image_id, self.image_url, self.image_urls)) > 1:
+            raise ValueError("Chỉ nhập danh sách URL ảnh hoặc một mã ảnh.")
+        for name in (
+            "name",
+            "description",
+            "category_id",
+            "image_id",
+            "image_url",
+            "image_urls",
+            "color",
+            "material",
+        ):
+            if name in self.model_fields_set and getattr(self, name) is None:
+                raise ValueError("Thông tin sản phẩm không được để trống.")
+        return self
 
 
 class ImportBody(StrictModel):
@@ -254,36 +322,36 @@ class ImportBody(StrictModel):
 
 @router.post("/manage/imports/preview")
 async def preview_import(body: ImportBody, actor: Owner, service: Service) -> dict[str, Any]:
-    return await service.store.manage(actor, "preview_import", body.model_dump())
+    return await service.manage(actor, "preview_import", body.model_dump())
 
 
 @router.post("/manage/imports", status_code=201)
 async def commit_import(body: ImportBody, actor: Owner, service: Service) -> dict[str, Any]:
-    return await service.store.manage(actor, "import", body.model_dump())
+    return await service.manage(actor, "import", body.model_dump())
 
 
 @router.get("/manage/products")
 async def managed(actor: Owner, service: Service) -> dict[str, Any]:
-    return await service.store.manage(actor, "list", {})
+    return await service.manage(actor, "list", {})
 
 
 @router.get("/manage/images")
 async def managed_images(actor: Owner, service: Service) -> dict[str, Any]:
-    return await service.store.manage(actor, "images", {})
+    return await service.manage(actor, "images", {})
 
 
 @router.post("/manage/products", status_code=201)
 async def create_draft(body: DraftBody, actor: Owner, service: Service) -> dict[str, Any]:
-    return await service.store.manage(actor, "create", body.model_dump())
+    return await service.manage(actor, "create", body.model_dump())
 
 
 @router.patch("/manage/products/{pid}")
 async def update_offer(pid: str, body: OfferBody, actor: Owner, service: Service) -> dict[str, Any]:
-    return await service.store.manage(actor, "update", {"id": pid, **body.model_dump()})
+    return await service.manage(actor, "update", {"id": pid, **body.model_dump(exclude_unset=True)})
 
 
 @router.post("/manage/products/{pid}/{action}")
 async def review(
     pid: str, action: Literal["publish", "archive"], actor: Owner, service: Service
 ) -> dict[str, Any]:
-    return await service.store.manage(actor, action, {"id": pid})
+    return await service.manage(actor, action, {"id": pid})

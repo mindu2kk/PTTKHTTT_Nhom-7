@@ -107,6 +107,13 @@ async def request_context(
             60
             if request.url.path
             in {"/api/v1/search/image", "/api/v1/search/voice", "/api/v1/search/describe"}
+            or (
+                request.method in {"POST", "PATCH"}
+                and (
+                    request.url.path.startswith("/api/v1/manage/products")
+                    or request.url.path == "/api/v1/manage/imports"
+                )
+            )
             else 5
         ):
             response = await call_next(request)
@@ -134,11 +141,16 @@ async def request_context(
 
 
 @app.exception_handler(RequestValidationError)
-async def validation_error(_: Request, exc: RequestValidationError) -> JSONResponse:
+async def validation_error(request: Request, exc: RequestValidationError) -> JSONResponse:
     return JSONResponse(
         status_code=422,
         content={
-            "detail": "Thông tin không hợp lệ. Vui lòng kiểm tra bộ lọc và khoảng giá.",
+            "detail": (
+                "Thông tin sản phẩm chưa hợp lệ. "
+                "Hãy kiểm tra URL ảnh, các trường bắt buộc và tồn kho."
+                if request.url.path.startswith("/api/v1/manage/")
+                else "Thông tin không hợp lệ. Vui lòng kiểm tra bộ lọc và khoảng giá."
+            ),
             "fields": [".".join(str(part) for part in err["loc"]) for err in exc.errors()],
         },
     )

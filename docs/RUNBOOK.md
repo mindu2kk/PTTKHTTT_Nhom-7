@@ -134,3 +134,24 @@ docker compose --env-file .env -f infra/docker-compose.yml stop
 DB fail: xem migrate/ready và secret khớp volume, không xóa volume. 503 model: kiểm file/manifest/worker health; 429 đợi worker rảnh; text vẫn là fallback. Port conflict: kiểm process sở hữu và `netsh interface ipv4 show excludedportrange protocol=tcp` trước khi đổi. Cổng clean3001 bị Windows loại trừ trong lần chạy2026-10-22; script nay chọn động và đã chạy lại. Không bật native web và Docker web cùng3000.
 
 Schema main không down/base tự động; downgrade có thể bị chặn để bảo vệ dữ liệu deep category/shared image key. Backup trước sửa schema; backup/restore production chưa được nghiệm thu. Public TLS, Secure cookies, migration/API role separation và host/origin khác cần cấu hình/kiểm thử mới, không mở host0.0.0.0 từ bản local rồi gọi production-ready.
+
+Mã backend từ 2026-10-25 yêu cầu revision `0006_search_trace` để readiness đạt.
+Migration thêm metadata lịch sử opt-in; không cần seed lại. Backup trước khi upgrade;
+downgrade về `0005_real_catalog` làm mất các cột/bảng metadata mới. Xem
+[đối chiếu thiết kế và bằng chứng kiểm thử](BACKEND_DESIGN_ALIGNMENT.md).
+
+
+## Danh mục hiện tại — 2026-10-26
+
+Head hiện tại là `0007_menswear_categories`; các ghi chú 0006 ở trên là lịch sử.
+Catalog chỉ hiển thị cây thời trang nam mới (23 nút, 19 mục lá); danh mục cũ vẫn giữ nhưng tắt.
+Không seed/import lại dữ liệu cũ để thay thế catalog mới. ID lá, backup và hướng dẫn rollback có guard tại
+[MENSWEAR_CATEGORIES](MENSWEAR_CATEGORIES.md). Chưa có sản phẩm thời trang mới được nhập.
+
+
+## Cập nhật máy hiện tại — 2026-10-26
+
+PostgreSQL host dùng localhost:15432 (.env), thay55432 vì Windows đang loại trừ cổng cũ.
+DATABASE_URL/TEST_DATABASE_URL đã đồng bộ; DB và password không đổi. DATA_PROFILE=real_demo,
+catalog có một mẫu Rhodi đã duyệt với ảnh URL trực tiếp. Lệnh docker compose phải có --env-file .env.
+Xem [SHOP_SAMPLE_PREVIEW](SHOP_SAMPLE_PREVIEW.md) cho import, nguồn, backup và bằng chứng render.

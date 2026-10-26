@@ -4,6 +4,7 @@ import secrets
 from typing import Any
 
 from app.domain.commerce import Actor, BusinessError, CommerceStore, Passwords
+from app.domain.search import SearchRecord
 
 
 def digest(token: str) -> str:
@@ -42,3 +43,32 @@ class CommerceService:
         if not rows:
             raise BusinessError(404, "Không tìm thấy đơn hàng của bạn.")
         return rows[0]
+
+    async def cart(self, actor: Actor, lines: list[dict[str, Any]] | None) -> dict[str, Any]:
+        return await self.store.cart(actor, lines)
+
+    async def checkout(self, actor: Actor, key: str, payload: dict[str, Any]) -> dict[str, Any]:
+        return await self.store.checkout(actor, key, payload)
+
+    async def orders(self, actor: Actor) -> list[dict[str, Any]]:
+        return await self.store.orders(actor)
+
+    async def transition(self, actor: Actor, code: str, status: str) -> dict[str, Any]:
+        if status not in {"CANCELLED", "PACKING", "SHIPPED", "DELIVERED"}:
+            raise BusinessError(422, "Trạng thái đơn hàng không hợp lệ.")
+        if status != "CANCELLED" and "admin" not in actor.roles:
+            raise BusinessError(403, "Bạn không có quyền cập nhật trạng thái này.")
+        return await self.store.transition(actor, code, status)
+
+    async def history(self, actor: Actor, action: str) -> list[dict[str, Any]]:
+        if action not in {"list", "enable", "disable", "delete"}:
+            raise BusinessError(422, "Thao tác lịch sử không hợp lệ.")
+        return await self.store.history(actor, action)
+
+    async def remember(self, actor: Actor, record: SearchRecord) -> None:
+        await self.store.remember(actor, record)
+
+    async def manage(self, actor: Actor, action: str, payload: dict[str, Any]) -> dict[str, Any]:
+        if not {"admin", "seller"}.intersection(actor.roles):
+            raise BusinessError(403, "Bạn không có quyền quản lý sản phẩm.")
+        return await self.store.manage(actor, action, payload)

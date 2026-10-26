@@ -7,6 +7,7 @@ import pytest
 from httpx import ASGITransport, AsyncClient
 from sqlalchemy import delete, select, text, update
 
+from app.domain.search import QueryRepresentation, SearchRecord
 from app.infrastructure.database import engine, session_factory
 from app.infrastructure.models import (
     CartItem,
@@ -20,9 +21,12 @@ from app.infrastructure.models import (
     ProductAttribute,
     ProductImage,
     ProductRow,
+    ProductSize,
     ProductSource,
     ProductVariant,
+    SearchFilterRow,
     SearchQuery,
+    SearchResultRow,
     SellerOffer,
     SellerProfile,
     SessionRow,
@@ -60,6 +64,10 @@ async def cleanup():
             (r.offer_id, r.on_hand, r.reserved, r.version)
             for r in (await s.scalars(select(Inventory))).all()
         ]
+        size_snapshot = [
+            (r.id, r.stock_quantity, r.reserved)
+            for r in (await s.scalars(select(ProductSize))).all()
+        ]
     yield
     async with session_factory.begin() as s:
         ids = list(
@@ -88,13 +96,28 @@ async def cleanup():
                 )
             ).all()
         )
+        url_sources = list(
+            (
+                await s.scalars(
+                    select(ProductSource.source_id).where(
+                        ProductSource.product_id.in_(products),
+                        ProductSource.source_id.like("url-image-%"),
+                    )
+                )
+            ).all()
+        )
         offers = select(SellerOffer.id).where(SellerOffer.product_id.in_(products))
         await s.execute(delete(Inventory).where(Inventory.offer_id.in_(offers)))
         await s.execute(delete(SellerOffer).where(SellerOffer.product_id.in_(products)))
         for model in [ProductSource, ProductAttribute, ProductImage, ProductVariant]:
             await s.execute(delete(model).where(model.product_id.in_(products)))
         await s.execute(delete(ProductRow).where(ProductRow.id.in_(products)))
-        sources = ["operator-" + i for i in ids]
+        sources = [prefix + i for i in ids for prefix in ("operator-", "operator-public-")]
+        for source_id in set(url_sources):
+            if not await s.scalar(
+                select(ProductSource.product_id).where(ProductSource.source_id == source_id)
+            ):
+                sources.append(source_id)
         await s.execute(delete(SourceProduct).where(SourceProduct.source_id.in_(sources)))
         await s.execute(delete(ImportBatch).where(ImportBatch.source_id.in_(sources)))
         await s.execute(delete(DataSource).where(DataSource.id.in_(sources)))
@@ -104,6 +127,15 @@ async def cleanup():
                 update(Inventory)
                 .where(Inventory.offer_id == offer)
                 .values(on_hand=on_hand, reserved=reserved, version=version)
+            )
+        await s.execute(
+            delete(ProductSize).where(ProductSize.id.not_in([r[0] for r in size_snapshot]))
+        )
+        for size_id, stock, held in size_snapshot:
+            await s.execute(
+                update(ProductSize)
+                .where(ProductSize.id == size_id)
+                .values(stock_quantity=stock, reserved=held)
             )
     await engine.dispose()
 
@@ -456,8 +488,8 @@ async def test_history_bound_retention_and_expired_session():
         service = commerce_service()
         actor = await service.identify(c.cookies["hm_session"])
         await asyncio.gather(
-            service.store.remember(actor, "áo len", "text", ["sweater-01"]),
-            service.store.history(actor, "disable"),
+            service.remember(actor, SearchRecord(QueryRepresentation("text", "áo len"), ())),
+            service.history(actor, "disable"),
         )
         assert (await c.get("/api/v1/history")).json() == []
         await commerce_service().store.maintenance()
@@ -469,5 +501,146 @@ async def test_history_bound_retention_and_expired_session():
                 .values(expires_at=datetime.now(UTC) - timedelta(seconds=1))
             )
         assert (await c.get("/api/v1/auth/me")).status_code == 401
+    finally:
+        await c.aclose()
+
+
+async def test_cart_rejects_excess_stock_without_losing_existing_cart():
+    c, _ = await member()
+    try:
+        valid = {"items": [{"product_id": "sweater-01", "quantity": 1}]}
+        assert (await c.put("/api/v1/cart", json=valid)).status_code == 200
+        before = (await c.get("/api/v1/cart")).json()
+        async with session_factory.begin() as s:
+            await s.execute(
+                update(Inventory)
+                .where(Inventory.offer_id == "offer-sweater-01")
+                .values(on_hand=1, reserved=0)
+            )
+        invalid = {"items": [{"product_id": "sweater-01", "quantity": 2}]}
+        assert (await c.put("/api/v1/cart", json=invalid)).status_code == 409
+        after = (await c.get("/api/v1/cart")).json()
+        assert [(i["product_id"], i["quantity"]) for i in after["items"]] == [
+            (i["product_id"], i["quantity"]) for i in before["items"]
+        ]
+    finally:
+        await c.aclose()
+
+
+async def test_search_trace_records_displayed_page_and_cascades_on_disable():
+    c, _ = await member()
+    other, _ = await member()
+    try:
+        await c.patch("/api/v1/history", json={"enabled": True})
+        response = await c.post(
+            "/api/v1/search/text",
+            json={
+                "q": "áo len nam màu đen",
+                "modality": "voice",
+                "page": 2,
+                "page_size": 2,
+                "price_max": 500000,
+            },
+        )
+        assert response.status_code == 200, response.text
+        outcome = response.json()
+        row = (await c.get("/api/v1/history")).json()[0]
+        assert row["modality"] == "voice"
+        assert row["normalized_text"] == outcome["query"]["normalized_text"]
+        assert [(r["product_id"], r["rank"]) for r in row["results"]] == [
+            (r["product"]["id"], r["rank"]) for r in outcome["items"]
+        ]
+        assert row["results"][0]["rank"] == 3
+        assert any(f["key"] == "price_max" and f["origin"] == "ui_selected" for f in row["filters"])
+        assert (await other.get("/api/v1/history")).json() == []
+        await c.patch("/api/v1/history", json={"enabled": False})
+        async with session_factory() as s:
+            assert await s.get(SearchQuery, row["id"]) is None
+            assert not (
+                await s.scalars(
+                    select(SearchFilterRow).where(SearchFilterRow.query_id == row["id"])
+                )
+            ).all()
+            assert not (
+                await s.scalars(
+                    select(SearchResultRow).where(SearchResultRow.query_id == row["id"])
+                )
+            ).all()
+    finally:
+        await c.aclose()
+        await other.aclose()
+
+
+async def test_image_trace_opt_in_encoder_version_and_invalid_upload(monkeypatch):
+    from unittest.mock import AsyncMock
+
+    from app.core import dependencies
+    from app.domain.media import EncodedImage
+    from app.infrastructure.models import ImageEmbedding
+    from tests.test_media import png
+
+    revision = "trace-test-encoder"
+    encoder = AsyncMock()
+    encoder.encode.return_value = EncodedImage((1.0,) + (0.0,) * 511, revision, 1.0, 0.0)
+    monkeypatch.setattr(dependencies, "image_encoder", encoder)
+    c, _ = await member()
+    try:
+        async with session_factory.begin() as s:
+            image = await s.get(ProductImage, "image-sweater-01")
+            s.add(
+                ImageEmbedding(
+                    image_id=image.id,
+                    model_name="OpenCLIP ViT-B/32",
+                    model_revision=revision,
+                    content_hash=image.sha256,
+                    embedding=[1.0] + [0.0] * 511,
+                )
+            )
+
+        async def search_image():
+            return await c.post(
+                "/api/v1/search/image",
+                files={"image": ("private-file-name.png", png(), "image/png")},
+                data={"category": "ao-len-nam"},
+            )
+
+        assert (await search_image()).status_code == 200
+        assert (await c.get("/api/v1/history")).json() == []
+        await c.patch("/api/v1/history", json={"enabled": True})
+        response = await search_image()
+        assert response.status_code == 200, response.text
+        rows = (await c.get("/api/v1/history")).json()
+        assert len(rows) == 1
+        assert rows[0]["modality"] == "image" and rows[0]["encoder_version"] == revision
+        assert rows[0]["results"][0]["product_id"] == "sweater-01"
+        assert rows[0]["results"][0]["relevance_score"] == 1.0
+        assert "private-file-name" not in json.dumps(rows)
+        bad = await c.post(
+            "/api/v1/search/image", files={"image": ("bad.png", b"invalid", "image/png")}
+        )
+        assert bad.status_code == 422
+        assert (await c.get("/api/v1/history")).json() == rows
+    finally:
+        await c.aclose()
+        async with session_factory.begin() as s:
+            await s.execute(delete(ImageEmbedding).where(ImageEmbedding.model_revision == revision))
+
+
+async def test_describe_keyword_retains_voice_modality_and_history():
+    c, _ = await member()
+    try:
+        await c.patch("/api/v1/history", json={"enabled": True})
+        response = await c.post(
+            "/api/v1/search/describe",
+            json={
+                "q": "áo len",
+                "mode": "keyword",
+                "modality": "voice",
+            },
+        )
+        assert response.status_code == 200, response.text
+        assert response.json()["query"]["modality"] == "voice"
+        rows = (await c.get("/api/v1/history")).json()
+        assert len(rows) == 1 and rows[0]["modality"] == "voice"
     finally:
         await c.aclose()

@@ -23,9 +23,15 @@ export function OrderCard({
         {new Date(order.created_at).toLocaleDateString("vi-VN")}
       </p>
       {order.items.map((line) => (
-        <div className="order-item" key={line.product_id}>
+        <div
+          className="order-item"
+          key={`${line.product_id}-${line.product_size_id ?? "legacy"}`}
+        >
           <span>
-            {line.name} × {line.quantity}
+            {line.name}
+            {line.size
+              ? ` · Size ${line.size}`
+              : " · Chưa ghi nhận size"} × {line.quantity}
           </span>
           <strong>{money(line.unit_price_vnd * line.quantity)}</strong>
         </div>

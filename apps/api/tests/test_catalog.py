@@ -263,6 +263,7 @@ async def test_arbitrary_category_depth(client: AsyncClient):
                 slug="deep-leaf",
                 name_vi="Nhánh sâu",
                 parent_id="ao-len-nam",
+                is_active=True,
                 level=3,
                 sort_order=99,
             )

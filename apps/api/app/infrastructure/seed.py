@@ -31,6 +31,7 @@ from app.infrastructure.models import (
     SourceProduct,
     User,
 )
+from app.infrastructure.sizes import initialize_sizes
 
 STAMP = datetime(2026, 10, 21, tzinfo=UTC)
 
@@ -188,6 +189,7 @@ async def seed(session: AsyncSession) -> dict[str, int]:
             version=1,
             updated_at=STAMP,
         )
+        await initialize_sizes(session, pid)
     await add(
         session,
         User,

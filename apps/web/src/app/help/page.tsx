@@ -4,10 +4,10 @@ export default function Help() {
     <div className="wrap section-block prose-page">
       <h1>Trợ giúp & quyền riêng tư</h1>
       <section>
-        <h2>Đặt thử trên HoodooMart</h2>
+        <h2>Đặt thử trên Hoodoo</h2>
         <p>
           Giá và hạn mức đặt thử là dữ liệu mô phỏng, không phải tồn kho hay giá
-          bán của Amazon. Chọn sản phẩm, thêm giỏ, đăng nhập rồi đặt thử bằng
+          bán trực tiếp của shop nguồn. Chọn sản phẩm, thêm giỏ, đăng nhập rồi đặt thử bằng
           COD hoặc thanh toán mô phỏng. Không nhập số thẻ, không có khoản thu
           hay dịch vụ giao hàng thật.
         </p>

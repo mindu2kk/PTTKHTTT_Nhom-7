@@ -47,11 +47,16 @@ class ProductResponse(BaseModel):
     brand: str | None = None
     original_name: str | None = None
     images: tuple[dict[str, str | int], ...] = ()
+    sizes: tuple[dict[str, str | int], ...] = ()
 
     @model_validator(mode="after")
     def public_notice(self) -> "ProductResponse":
         if self.data_profile == "real_demo":
-            self.data_notice = "Sản phẩm và ảnh thật từ ABO · Giá và hạn mức đặt thử mô phỏng"
+            source = {
+                "amazon-berkeley-objects": "ABO",
+                "rhodi-user-reviewed": "Rhodi",
+            }.get(self.source_id, "nguồn đã duyệt")
+            self.data_notice = f"Sản phẩm và ảnh từ {source} · Giá và hạn mức đặt thử mô phỏng"
         elif self.data_profile != "demo_seed":
             self.data_notice = "Dữ liệu đã được duyệt"
         return self

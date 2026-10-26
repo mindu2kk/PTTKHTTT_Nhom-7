@@ -1,4 +1,5 @@
 import asyncio
+import json
 import os
 import subprocess
 import sys
@@ -7,6 +8,7 @@ from pathlib import Path
 import pytest
 from dotenv import dotenv_values
 from httpx import ASGITransport, AsyncClient
+from sqlalchemy import update
 from sqlalchemy.engine import make_url
 
 ROOT = Path(__file__).resolve().parents[3]
@@ -18,6 +20,7 @@ os.environ["DATA_PROFILE"] = "demo_seed"
 os.environ["LOCAL_ONLY"] = "true"
 
 from app.infrastructure.database import engine, session_factory  # noqa: E402
+from app.infrastructure.models import CategoryRow  # noqa: E402
 from app.infrastructure.seed import seed  # noqa: E402
 from app.main import app  # noqa: E402
 
@@ -41,6 +44,14 @@ def migrate(target: str) -> None:
 async def initialize() -> None:
     async with session_factory.begin() as session:
         await seed(session)
+        # Legacy fixture regression; menswear tests explicitly switch the active tree.
+        ids = [
+            c["id"]
+            for c in json.loads(
+                (ROOT / "benchmarks/fixtures/catalog.json").read_text(encoding="utf-8")
+            )["categories"]
+        ]
+        await session.execute(update(CategoryRow).values(is_active=CategoryRow.id.in_(ids)))
     await engine.dispose()
 
 

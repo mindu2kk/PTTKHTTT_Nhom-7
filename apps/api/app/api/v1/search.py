@@ -8,10 +8,10 @@ from app.api.v1.catalog import ProductResponse
 from app.api.v1.commerce import OrderResponse, optional_actor
 from app.application.commerce import CommerceService
 from app.application.query_parser import ORDER_INTENT, normalize
-from app.application.search import SearchOrchestrator
+from app.application.search import SearchOrchestrator, SearchOutcome
 from app.core.dependencies import commerce_service, search_service
 from app.domain.commerce import Actor
-from app.domain.search import SearchOptions
+from app.domain.search import SearchOptions, SearchRecord, SearchRecordItem
 
 router = APIRouter(prefix="/api/v1/search", tags=["Tìm kiếm"])
 Service = Annotated[SearchOrchestrator, Depends(search_service)]
@@ -93,12 +93,24 @@ class OrderSearchResponse(BaseModel):
     order: OrderResponse
 
 
-async def remember_safely(
-    commerce: CommerceService, actor: Actor, body: SearchRequest, result: SearchResponse
-) -> None:
+async def remember_safely(commerce: CommerceService, actor: Actor, result: SearchOutcome) -> None:
     try:
-        await commerce.store.remember(
-            actor, body.q, body.modality, [row.product.id for row in result.items]
+        await commerce.remember(
+            actor,
+            SearchRecord(
+                result.query,
+                tuple(
+                    SearchRecordItem(
+                        row.product.id,
+                        row.rank,
+                        row.score,
+                        row.explanation,
+                        row.relevance_score,
+                        row.preference_score,
+                    )
+                    for row in result.items
+                ),
+            ),
         )
     except Exception:
         # History is optional; never expose bodies or interrupt a successful search.
@@ -123,11 +135,10 @@ async def execute(
         )
     values = body.model_dump(exclude={"q", "modality"})
     values["allow_relax"] = tuple(values["allow_relax"])
-    result = SearchResponse.model_validate(
-        await service.search(body.q, body.modality, SearchOptions(**values))
-    )
+    outcome = await service.search(body.q, body.modality, SearchOptions(**values))
+    result = SearchResponse.model_validate(outcome)
     if actor:
-        tasks.add_task(remember_safely, commerce, actor, body, result)
+        tasks.add_task(remember_safely, commerce, actor, outcome)
     return result
 
 

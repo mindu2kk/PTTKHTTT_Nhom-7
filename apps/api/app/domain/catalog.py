@@ -37,6 +37,7 @@ class Product:
     brand: str | None = None
     original_name: str | None = None
     images: tuple[dict[str, str | int], ...] = ()
+    sizes: tuple[dict[str, str | int], ...] = ()
 
 
 @dataclass(frozen=True)

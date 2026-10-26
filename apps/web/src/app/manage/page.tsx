@@ -7,15 +7,11 @@ export default async function Manage() {
   let account: Account;
   let data: Managed;
   let categories: Category[];
-  let images: { items: { id: string; url: string; alt: string }[] };
   try {
-    [account, data, categories, images] = await Promise.all([
+    [account, data, categories] = await Promise.all([
       serverApi<Account>("/auth/me"),
       serverApi<Managed>("/manage/products"),
       serverApi<Category[]>("/categories"),
-      serverApi<{ items: { id: string; url: string; alt: string }[] }>(
-        "/manage/images",
-      ),
     ]);
   } catch (e) {
     if (e instanceof ApiError && [401, 403].includes(e.status))
@@ -23,7 +19,7 @@ export default async function Manage() {
         <div className="wrap section-block">
           <h1>Khu vực quản lý</h1>
           <p>Cần tài khoản người bán đã duyệt hoặc quản trị viên.</p>
-          <Link href="/auth/login">Đăng nhập</Link>
+          <Link href="/auth/login?next=/manage">Đăng nhập</Link>
         </div>
       );
     throw e;
@@ -35,7 +31,6 @@ export default async function Manage() {
         data={data}
         categories={categories}
         admin={account.roles.includes("admin")}
-        images={images.items}
       />
     </div>
   );

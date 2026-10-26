@@ -124,3 +124,65 @@ def test_visual_ranking_uses_similarity_before_lexical_name():
     rows = [product("low", "Tai nghe"), replace(product("high"), name_vi="Bàn")]
     result = RankingService().rank(QueryRepresentation("image"), rows, {"low": 0.2, "high": 0.9})
     assert [r.product.id for r in result] == ["high", "low"]
+
+
+async def test_relaxation_uses_displayable_results_not_unindexed_candidate_count():
+    repository = AsyncMock()
+    repository.categories.return_value = []
+    repository.list_products.side_effect = [
+        ([product("indexed"), product("no-vector-1"), product("no-vector-2")], 3),
+        ([product("indexed"), product("extra-1"), product("extra-2")], 3),
+    ]
+    lookup = AsyncMock(
+        side_effect=[
+            {"indexed": 0.9},
+            {"indexed": 0.9, "extra-1": 0.8, "extra-2": 0.7},
+        ]
+    )
+    outcome = await SearchOrchestrator(repository).search(
+        "tai nghe màu đen",
+        "image",
+        SearchOptions(category="headphones", allow_relax=("color",)),
+        image_lookup=lookup,
+    )
+    assert outcome.total == 3
+    assert [f.key for f in outcome.query.relaxed_filters] == ["color"]
+    assert [f.key for f in outcome.query.hard_filters] == ["category"]
+    assert lookup.await_count == 2
+    assert repository.list_products.call_args_list[0].args[0].color == "đen"
+    assert repository.list_products.call_args_list[1].args[0].color is None
+
+
+async def test_three_unrelated_lexical_candidates_do_not_prevent_consented_relaxation():
+    repository = AsyncMock()
+    repository.categories.return_value = []
+    unrelated = replace(product("wrong", "Bàn gỗ"), category_name="Gia dụng")
+    repository.list_products.side_effect = [([unrelated] * 3, 3), ([product("match")], 1)]
+    outcome = await SearchOrchestrator(repository).search(
+        "tai nghe màu đen",
+        options=SearchOptions(allow_relax=("color",)),
+    )
+    assert [r.product.id for r in outcome.items] == ["match"]
+    assert [f.key for f in outcome.query.relaxed_filters] == ["color"]
+
+
+@pytest.mark.parametrize(
+    "key,value,operator",
+    [
+        ("brand", "preferred-brand", "eq"),
+        ("price_max", 500000, "lt"),
+        ("price_min", 500000, "gt"),
+    ],
+)
+def test_relaxed_brand_and_price_still_influence_tied_results(key, value, operator):
+    preferred = replace(
+        product("z-preferred"),
+        brand="preferred-brand",
+        price_vnd=600000 if key == "price_min" else 400000,
+    )
+    other = replace(product("a-other"), price_vnd=300000 if key == "price_min" else 600000)
+    query = QueryRepresentation(
+        "image", relaxed_filters=(FilterConstraint(key, value, "explicit_text", 1, operator),)
+    )
+    ranked = RankingService().rank(query, [other, preferred], {"a-other": 0.8, "z-preferred": 0.8})
+    assert ranked[0].product.id == "z-preferred"

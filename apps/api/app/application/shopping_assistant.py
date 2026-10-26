@@ -8,10 +8,45 @@ from app.application.query_parser import ORDER_INTENT, normalize
 from app.application.search import SearchOrchestrator, SearchOutcome
 from app.domain.catalog import Product
 from app.domain.media import ImageVectorIndex, LocalTextEncoder, MediaError
-from app.domain.search import SearchOptions
+from app.domain.search import Modality, SearchOptions
 
 # This is a finite concept mapping, not machine translation or an LLM.
 CONCEPTS = {
+    "ao pull": "t-shirt",
+    "ao thun": "t-shirt",
+    "ao phong": "t-shirt",
+    "polo": "polo shirt",
+    "ao so mi": "shirt",
+    "tanktop": "tank top",
+    "ao ba lo": "tank top",
+    "cardigan": "cardigan",
+    "khoac nhe": "lightweight jacket",
+    "ao ni": "sweatshirt",
+    "ao len": "sweater",
+    "ao khoac": "jacket",
+    "quan lung": "shorts",
+    "quan short": "shorts",
+    "quan au": "dress trousers",
+    "quan tay": "dress trousers",
+    "quan khaki": "khaki trousers",
+    "quan kaki": "khaki trousers",
+    "quan jeans": "jeans",
+    "quan jean": "jeans",
+    "quan ni": "sweatpants",
+    "vong tay": "bracelet",
+    "vong co": "necklace",
+    "charm": "jewelry charm",
+    "mu": "hat",
+    "balo": "backpack",
+    "ba lo": "backpack",
+    "tui": "bag",
+    "day lung": "belt",
+    "that lung": "belt",
+    "xich": "fashion chain",
+    "khan": "scarf",
+    "gang tay": "gloves",
+    "tat": "socks",
+    "kinh mat": "eyeglasses",
     "giay the thao": "sneakers",
     "sneaker": "sneakers",
     "giay": "shoes",
@@ -99,12 +134,14 @@ class ShoppingAssistant:
         self.encoder = encoder
         self.index = index
 
-    async def describe(self, text: str, options: SearchOptions, visual: bool) -> SearchOutcome:
+    async def describe(
+        self, text: str, options: SearchOptions, visual: bool, modality: Modality = "text"
+    ) -> SearchOutcome:
         started = perf_counter()
         if ORDER_INTENT.search(normalize(text)):
             raise MediaError(422, "Để xem đơn của bạn, hãy mở mục Đơn hàng và đăng nhập.")
         if not visual:
-            return await self.search.search(text, options=options)
+            return await self.search.search(text, modality, options=options)
         prompt = visual_prompt(text)
         if prompt is None:
             raise MediaError(
@@ -118,10 +155,11 @@ class ShoppingAssistant:
             return await self.index.search(encoded.vector, encoded.revision, allowed)
 
         result = await self.search.search(
-            text, options=options, image_lookup=lookup, use_lexical_filter=False
+            text, modality, options=options, image_lookup=lookup, use_lexical_filter=False
         )
         return replace(
             result,
+            query=replace(result.query, image_vector_ref=encoded.revision),
             latency_ms=round((perf_counter() - started) * 1000, 3),
             items=tuple(
                 replace(row, explanation="Mức tương tự giữa mô tả và ảnh; không phải xác suất đúng")

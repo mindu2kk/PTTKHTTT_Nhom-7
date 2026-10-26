@@ -18,7 +18,7 @@ Nguồn máy đọc: `openapi.json` (export bằng `scripts/export_openapi.py`);
 | History | GET/PATCH/DELETE history | Owner; opt-in mặc định false; disable/delete xóa; 100/7d; không media |
 | Manage | GET manage/products, manage/images; POST manage/products; PATCH manage/products/{id}; POST manage/products/{id}/publish,archive | Seller own approved profile; chỉ admin publish; shared approved CC0 image library |
 | Import | POST manage/imports/preview; POST manage/imports | Admin, records≤20 DraftBody; manual original-data affirmation; preview category/image errors; nháp, không auto publish |
-| Health | GET health/live, health/ready | Ready kiểm schema0005, không lộ DB URL |
+| Health | GET health/live, health/ready | Ready kiểm schema0009, không lộ DB URL |
 
 SearchResponse `search_type=products`: query/items(rank,score,explanation)/total/page/stages/engine/notices. Order response `search_type=order`: order, không có product results. Search score là heuristic relevance, không phải xác suất tin cậy. Order intent từ chối quyền không được fallthrough.
 
@@ -29,3 +29,24 @@ BFF chặn body không kết thúc sau15s bằng408, kể cả chunked và form 
 ## M8 bổ sung
 
 ProductResponse có brand/original_name và gallery images có quyền ở detail; listing giữ primary. GET products hỗ trợ available=true. real_demo chỉ nguồn/ảnh approved nhưng offer demo có nhãn rõ, không gọi là merchant-verified. GET manage/products trả read_only=true; mọi thay đổi qua form ở profile này trả409 thông báo hỗ trợ, không để UI giả tạo/duyệt ảnh. Các chức năng fixture demo_seed giữ riêng.
+
+## Chọn size — 0008
+
+GET products/{id}: thêm sizes=[{id,size,available_quantity}]. Size chỉ thuộc
+S/M/L/XL/XXL/F. Cart/checkout items nhận product_size_id cùng product_id;
+chỉ được bỏ ID nếu sản phẩm có đúng một size. Trùng cặp product/size trả422;
+size sai sản phẩm, hết hàng hoặc chưa chọn khi có nhiều size trả409.
+Cart response thêm product_size_id/size; OrderLineResponse thêm product_size_id/size
+(nullable cho đơn cũ). Cùng sản phẩm khác size được lưu thành các dòng riêng.
+GET facets và GET products?size=... dùng product_sizes.
+Chi tiết [PRODUCT_SIZES](PRODUCT_SIZES.md).
+
+## Quản trị sản phẩm — 0009
+
+Admin real_demo được POST/PATCH/publish/archive sản phẩm; seller real_demo giữ chỉ đọc.
+DraftBody nhận image_urls (1–10 URL), image_rights_confirmed, brand và sizes;
+legacy image_id/image_url còn được hỗ trợ, chỉ chọn một kiểu ảnh mỗi request.
+OfferBody nhận metadata và kho theo size, gallery đầy đủ theo thứ tự.
+GET manage/products thêm description/color/material/brand/image_urls/sizes/updated_at,
+read_only=false cho admin. Xem [ADMIN_PRODUCTS](ADMIN_PRODUCTS.md) cho ràng buộc URL,
+quyền nguồn, deadline ghi 60s, dữ liệu cũ và kiểm thử.

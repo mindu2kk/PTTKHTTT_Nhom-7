@@ -9,7 +9,13 @@ export function setCartAccount(active: boolean) {
 export function isCartAccount() {
   return accountActive;
 }
-export type CartLine = { id: string; quantity: number };
+export type CartLine = {
+  id: string;
+  product_size_id?: number;
+  quantity: number;
+};
+export const sameLine = (a: CartLine, b: CartLine) =>
+  a.id === b.id && a.product_size_id === b.product_size_id;
 const listeners = new Set<() => void>();
 export function readCart(): CartLine[] {
   try {
@@ -28,6 +34,9 @@ export function readCart(): CartLine[] {
           .filter(
             (p: CartLine) =>
               typeof p.id === "string" &&
+              (p.product_size_id === undefined ||
+                (Number.isSafeInteger(p.product_size_id) &&
+                  p.product_size_id > 0)) &&
               Number.isInteger(p.quantity) &&
               p.quantity > 0 &&
               p.quantity <= 99,
@@ -54,6 +63,7 @@ export function writeCart(items: CartLine[]) {
           {
             items: items.map((r) => ({
               product_id: r.id,
+              product_size_id: r.product_size_id,
               quantity: r.quantity,
             })),
           },

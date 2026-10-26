@@ -1,6 +1,8 @@
 from dataclasses import dataclass
 from typing import Any, Protocol
 
+from app.domain.search import SearchRecord
+
 
 class BusinessError(Exception):
     def __init__(self, status: int, message: str):
@@ -33,9 +35,7 @@ class CommerceStore(Protocol):
     async def orders(self, actor: Actor, code: str | None = None) -> list[dict[str, Any]]: ...
     async def transition(self, actor: Actor, code: str, status: str) -> dict[str, Any]: ...
     async def history(self, actor: Actor, action: str) -> list[dict[str, Any]]: ...
-    async def remember(
-        self, actor: Actor, text: str, modality: str, products: list[str]
-    ) -> None: ...
+    async def remember(self, actor: Actor, record: SearchRecord) -> None: ...
     async def manage(
         self, actor: Actor, action: str, payload: dict[str, Any]
     ) -> dict[str, Any]: ...

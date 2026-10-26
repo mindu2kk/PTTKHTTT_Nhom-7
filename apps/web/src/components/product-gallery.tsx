@@ -26,7 +26,7 @@ export function ProductGallery({
         <DialogContent className="sm:max-w-3xl">
           <DialogTitle>Ảnh sản phẩm</DialogTitle>
           <DialogDescription>
-            Ảnh chụp từ nguồn dữ liệu, được thu nhỏ và tối ưu WebP.
+            Ảnh sản phẩm từ nguồn đã duyệt.
           </DialogDescription>
           <img
             className="zoom-photo"

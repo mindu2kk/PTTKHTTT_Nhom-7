@@ -5,11 +5,16 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { api } from "@/lib/api";
 import { mutate, type Account } from "@/lib/commerce";
-import { readCart, writeCart, setCartAccount } from "@/components/guest-cart";
+import {
+  readCart,
+  writeCart,
+  setCartAccount,
+  type CartLine,
+} from "@/components/guest-cart";
 import { credentialsSchema } from "@/lib/validation";
 export function AuthForm({
   register = false,
-  next = "/account/orders",
+  next,
 }: {
   register?: boolean;
   next?: string;
@@ -32,37 +37,59 @@ export function AuthForm({
           });
           if (!checked.success)
             throw new Error(checked.error.issues[0].message);
-          await mutate<Account>(
+          const account = await mutate<Account>(
             `/auth/${register ? "register" : "login"}`,
             checked.data,
           );
           const remote = await api<{
-            items: { product_id: string; quantity: number }[];
+            items: {
+              product_id: string;
+              product_size_id: number;
+              quantity: number;
+            }[];
           }>("/cart");
-          const merged = new Map(
-            remote.items.map((i) => [i.product_id, i.quantity]),
-          );
-          for (const row of readCart())
-            merged.set(row.id, Math.max(merged.get(row.id) || 0, row.quantity));
-          const lines = [...merged]
-            .slice(0, 50)
-            .map(([id, quantity]) => ({ id, quantity }));
-          await mutate(
-            "/cart",
-            {
-              items: lines.map((r) => ({
-                product_id: r.id,
-                quantity: r.quantity,
-              })),
-            },
-            "PUT",
-          );
+          const merged = new Map<string, CartLine>();
+          for (const line of [
+            ...remote.items.map((i) => ({
+              id: i.product_id,
+              product_size_id: i.product_size_id,
+              quantity: i.quantity,
+            })),
+            ...readCart(),
+          ]) {
+            const lineKey = `${line.id}-${line.product_size_id ?? "legacy"}`;
+            const old = merged.get(lineKey);
+            merged.set(lineKey, {
+              ...line,
+              quantity: Math.max(old?.quantity ?? 0, line.quantity),
+            });
+          }
+          const lines = [...merged.values()].slice(0, 50);
+          // An old guest cart may still need a size choice; keep it without blocking sign-in.
+          if (lines.every((line) => line.product_size_id)) {
+            await mutate(
+              "/cart",
+              {
+                items: lines.map((r) => ({
+                  product_id: r.id,
+                  product_size_id: r.product_size_id,
+                  quantity: r.quantity,
+                })),
+              },
+              "PUT",
+            );
+          }
+          setCartAccount(false);
           writeCart(lines);
+          setCartAccount(true);
+          const destination =
+            next ??
+            (account.roles.includes("admin") ? "/manage" : "/account/orders");
           router.push(
-            next.startsWith("/") &&
-              !next.startsWith("//") &&
-              !next.includes("\\")
-              ? next
+            destination.startsWith("/") &&
+              !destination.startsWith("//") &&
+              !destination.includes("\\")
+              ? destination
               : "/account/orders",
           );
           router.refresh();

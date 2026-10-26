@@ -10,7 +10,7 @@ from dataclasses import replace
 
 import pytest
 
-from app.application.query_parser import RuleQueryParser, amount, shopping_clarification
+from app.application.query_parser import RuleQueryParser
 from app.application.search import RankingService
 from app.domain.catalog import Category, Product
 from app.domain.search import SearchOptions
@@ -28,9 +28,6 @@ PARSER = RuleQueryParser(
         Category("abo-goi", None, "abo-goi", "Gối", 2, 9),
         Category("abo-coc", None, "abo-coc", "Cốc", 2, 10),
     ]
-)
-KNOWN_RANK = pytest.mark.xfail(
-    strict=True, reason="Audit: phrase intent is lost to category score floor/token stop list"
 )
 
 
@@ -149,7 +146,6 @@ def simulated_product(identifier, name, category="Bàn phím", category_id="abo-
     )
 
 
-@KNOWN_RANK
 def test_wireless_phrase_should_rank_matching_product_before_same_category_wired_product():
     wired = simulated_product("a-wired", "Bàn phím có dây")
     wireless = simulated_product("z-wireless", "Bàn phím không dây")
@@ -158,7 +154,6 @@ def test_wireless_phrase_should_rank_matching_product_before_same_category_wired
     assert ranked[0].product.id == wireless.id
 
 
-@KNOWN_RANK
 def test_shape_words_should_not_tie_every_product_in_an_explicit_category():
     rectangular = simulated_product("a-rectangular", "Bàn chữ nhật", "Bàn", "abo-ban")
     round_table = replace(rectangular, id="z-round", name_vi="Bàn tròn")
@@ -169,7 +164,6 @@ def test_shape_words_should_not_tie_every_product_in_an_explicit_category():
     assert ranked[0].product.id == round_table.id
 
 
-@KNOWN_RANK
 def test_polite_filler_should_not_erase_short_product_request_without_exact_category():
     shoe = simulated_product("shoe", "Giày nam", "Giày nam", "abo-giay-nam")
     # Generic "giày" is not an exact category name in the real-demo tree.

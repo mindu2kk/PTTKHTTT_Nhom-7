@@ -1,6 +1,6 @@
+import re
 from collections.abc import Awaitable, Callable
 from dataclasses import dataclass, replace
-import re
 from time import perf_counter
 
 from app.application.query_parser import RuleQueryParser, normalize
@@ -8,6 +8,14 @@ from app.domain.catalog import CatalogFilter, CatalogRepository, Product
 from app.domain.search import Modality, QueryRepresentation, SearchOptions
 
 RELAX_ORDER = ("material", "color", "brand", "gender", "price_min", "price_max")
+FILTER_LABELS = {
+    "material": "chất liệu",
+    "color": "màu sắc",
+    "brand": "thương hiệu",
+    "gender": "giới tính",
+    "price_min": "giá tối thiểu",
+    "price_max": "giá tối đa",
+}
 
 
 @dataclass(frozen=True)
@@ -16,6 +24,8 @@ class RankedProduct:
     rank: int
     score: float
     explanation: str
+    relevance_score: float = 0.0
+    preference_score: float = 0.0
 
 
 @dataclass(frozen=True)
@@ -158,9 +168,22 @@ class RankingService:
                         0, 1 - abs(product.price_vnd - int(c.value)) / max(1, int(c.value))
                     )
                 elif (
-                    c.key in {"color", "material", "gender"} and getattr(product, c.key) == c.value
+                    c.key in {"color", "material", "brand", "gender"}
+                    and getattr(product, c.key) == c.value
                 ):
                     preference += 1
+                elif c.key in {"price_min", "price_max"}:
+                    price = product.price_vnd
+                    value = int(c.value)
+                    preference += int(
+                        price < value
+                        if c.operator == "lt"
+                        else price > value
+                        if c.operator == "gt"
+                        else price <= value
+                        if c.key == "price_max"
+                        else price >= value
+                    )
             score = min(1, 0.8 * relevance + 0.2 * min(1, preference))
             scored.append((product, relevance, preference, score))
         # Preference can reorder close lexical matches, never override visual relevance bands.
@@ -180,8 +203,10 @@ class RankingService:
                 "Độ khớp ảnh"
                 if image_scores is not None
                 else "Khớp danh mục và từ khóa; ưu tiên được xét riêng",
+                relevance_score=round(relevance, 6),
+                preference_score=round(preference, 6),
             )
-            for rank, (p, _, _, score) in enumerate(scored, 1)
+            for rank, (p, relevance, preference, score) in enumerate(scored, 1)
         ]
 
 
@@ -205,10 +230,29 @@ class SearchOrchestrator:
         parser = RuleQueryParser(await self.repository.categories())
         rep = QueryService(parser).build(text, modality, options)
         parsed = perf_counter()
-        candidates = await self.retrieval.retrieve(rep, use_lexical_filter)
         notices: list[str] = []
+        retrieval_ms = vector_ms = ranking_ms = 0.0
+
+        async def retrieve_and_rank() -> tuple[list[Product], list[RankedProduct]]:
+            nonlocal retrieval_ms, vector_ms, ranking_ms
+            stage = perf_counter()
+            candidates = await self.retrieval.retrieve(rep, use_lexical_filter)
+            retrieved = perf_counter()
+            scores = image_scores
+            if image_lookup is not None:
+                scores = await image_lookup(tuple(p.id for p in candidates))
+            vector_finished = perf_counter()
+            ranked = self.ranking.rank(
+                rep, candidates, scores, vector_precision=6 if not use_lexical_filter else 2
+            )
+            retrieval_ms += (retrieved - stage) * 1000
+            vector_ms += (vector_finished - retrieved) * 1000
+            ranking_ms += (perf_counter() - vector_finished) * 1000
+            return candidates, ranked
+
+        candidates, ranked = await retrieve_and_rank()
         for key in RELAX_ORDER:
-            if len(candidates) >= 3:
+            if len(ranked) >= 3:
                 break
             constraint = next(
                 (
@@ -228,18 +272,12 @@ class SearchOrchestrator:
                 relaxed_filters=(*rep.relaxed_filters, constraint),
             )
             notices.append(
-                f"Đã chuyển điều kiện {key} thành ưu tiên theo lựa chọn mở rộng của bạn."
+                f"Đã chuyển điều kiện {FILTER_LABELS[key]} thành ưu tiên "
+                "theo lựa chọn mở rộng của bạn."
                 if constraint.origin == "explicit_text"
-                else f"Đã nới điều kiện suy đoán {key}; danh mục được giữ nguyên."
+                else f"Đã nới điều kiện suy đoán {FILTER_LABELS[key]}; danh mục được giữ nguyên."
             )
-            candidates = await self.retrieval.retrieve(rep, use_lexical_filter)
-        retrieved = perf_counter()
-        if image_lookup is not None:
-            image_scores = await image_lookup(tuple(p.id for p in candidates))
-        vector_finished = perf_counter()
-        ranked = self.ranking.rank(
-            rep, candidates, image_scores, vector_precision=6 if not use_lexical_filter else 2
-        )
+            candidates, ranked = await retrieve_and_rank()
         if options.sort != "relevance":
             ranked.sort(
                 key=lambda r: (
@@ -261,11 +299,9 @@ class SearchOrchestrator:
             round((finished - started) * 1000, 3),
             {
                 "parse": round((parsed - started) * 1000, 3),
-                "db_prefilter_lexical": round((retrieved - parsed) * 1000, 3),
-                "vector_search": round((vector_finished - retrieved) * 1000, 3)
-                if image_lookup is not None
-                else 0.0,
-                "ranking": round((finished - vector_finished) * 1000, 3),
+                "db_prefilter_lexical": round(retrieval_ms, 3),
+                "vector_search": round(vector_ms, 3),
+                "ranking": round(ranking_ms, 3),
             },
             notices=tuple(notices),
         )

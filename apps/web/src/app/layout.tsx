@@ -13,8 +13,8 @@ import "./marketplace-ai.css";
 import "./inline-search.css";
 export const metadata: Metadata = {
   title: {
-    default: "HoodooMart — Tìm theo cách của bạn",
-    template: "%s | HoodooMart",
+    default: "Hoodoo — Tìm theo cách của bạn",
+    template: "%s | Hoodoo",
   },
   description:
     "Khám phá sản phẩm bằng văn bản, giọng nói hoặc hình ảnh. Ảnh và dữ liệu có nguồn gốc; đơn hàng đặt thử.",
@@ -43,7 +43,7 @@ export default async function RootLayout({
           <div className="wrap footer-grid">
             <div>
               <Link className="brand" href="/">
-                HoodooMart
+                Hoodoo
               </Link>
               <p>Tìm theo cách của bạn.</p>
             </div>
@@ -56,9 +56,9 @@ export default async function RootLayout({
               <Link href="/help">Trợ giúp & quyền riêng tư</Link>
             </nav>
             <p>
-              Ảnh sản phẩm ABO © Amazon.com, CC BY 4.0. Ảnh được tạo bản WebP và
-              thu nhỏ. HoodooMart độc lập, không được Amazon bảo trợ. Giá và hạn
-              mức đặt thử được mô phỏng riêng.
+              Ảnh sản phẩm được sử dụng theo quyền của từng nguồn; xem trang
+              nguồn dữ liệu để biết chi tiết. Giá và hạn mức đặt thử được mô
+              phỏng riêng.
             </p>
           </div>
         </footer>

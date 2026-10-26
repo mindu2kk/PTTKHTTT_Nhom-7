@@ -21,15 +21,11 @@ export function ProductCard({
         )}
       </Link>
       <div className="product-meta">
-        <span className="category-name">{product.category_name}</span>
         <h3>
           <Link href={`/products/${product.slug}`}>{product.name_vi}</Link>
         </h3>
         <strong>{money(product.price_vnd)}</strong>
         <p>{product.brand || product.category_name}</p>
-        <span className="card-disclosure">
-          {product.price_kind === "demo" ? "Giá đặt thử" : "Giá đã xác minh"}
-        </span>
       </div>
     </article>
   );

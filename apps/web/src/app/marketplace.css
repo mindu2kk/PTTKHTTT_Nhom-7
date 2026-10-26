@@ -1,18 +1,18 @@
 :root {
-  --primary: #b6381d;
+  --primary: #000000;
   --primary-foreground: #fff;
-  --secondary: #fff0e8;
-  --secondary-foreground: #7d2918;
-  --background: #f5f5f3;
-  --foreground: #272723;
-  --muted-foreground: #6c6b64;
-  --ring: #b6381d;
-  --border: #e5e5df;
+  --secondary: #f2f2f2;
+  --secondary-foreground: #262626;
+  --background: #f5f5f5;
+  --foreground: #262626;
+  --muted-foreground: #666666;
+  --ring: #000000;
+  --border: #e5e5e5;
   --card: #fff;
   --radius: 0.5rem;
-  --market-orange: #cf4729;
-  --market-cream: #fff1df;
-  --market-shadow: 0 4px 18px #3629180a;
+  --market-orange: #333333;
+  --market-cream: #f2f2f2;
+  --market-shadow: 0 4px 18px #0000000a;
 }
 body {
   font-family: "Segoe UI", Arial, sans-serif;
@@ -42,7 +42,7 @@ a:hover {
 .announcement {
   font-size: 11px;
   padding: 5px;
-  background: #7d2918;
+  background: #262626;
   color: #fff;
 }
 .site-header {
@@ -55,7 +55,7 @@ a:hover {
   box-shadow: 0 2px 8px #0001;
 }
 .site-header a:hover {
-  color: #fff0d9;
+  color: #d9d9d9;
 }
 .utility-bar {
   display: flex;
@@ -66,6 +66,7 @@ a:hover {
   border-bottom: 1px solid #ffffff20;
 }
 .utility-bar nav {
+  margin-inline-start: auto;
   display: flex;
   gap: 20px;
   align-items: center;
@@ -198,13 +199,13 @@ a:hover {
   line-height: 1.18;
   font-weight: 750;
   margin: 0 0 18px;
-  color: #45281f;
+  color: #262626;
 }
 .hero-story h1 span {
   color: var(--primary);
 }
 .hero-story > p:not(.eyebrow) {
-  color: #796455;
+  color: #666666;
   font-size: 14px;
   line-height: 1.7;
   margin-bottom: 22px;
@@ -222,7 +223,7 @@ a:hover {
 }
 .primary-link:hover {
   color: #fff;
-  background: #8e2d19;
+  background: #333333;
 }
 .hero-mode-links {
   display: flex;
@@ -274,7 +275,7 @@ a:hover {
   border-radius: 4px;
   padding: 3px 7px;
   font-size: 10px;
-  color: #564e44;
+  color: #525252;
 }
 .marketplace-categories {
   background: #fff;
@@ -320,7 +321,7 @@ a:hover {
 }
 .category-tiles > a:hover {
   border-color: var(--primary);
-  background: #fffaf7;
+  background: #fafafa;
 }
 .category-icon {
   display: grid;
@@ -413,7 +414,7 @@ a:hover {
 }
 .product-grid {
   gap: 14px;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 .product-card {
   background: #fff;
@@ -427,14 +428,14 @@ a:hover {
 .product-card:hover,
 .product-card:focus-within {
   transform: translateY(-3px);
-  box-shadow: 0 6px 16px #38271b12;
-  border-color: #d9ad9e;
+  box-shadow: 0 6px 16px #00000012;
+  border-color: #a3a3a3;
 }
 .product-picture {
   display: flex;
   align-items: center;
   justify-content: center;
-  aspect-ratio: 1;
+  aspect-ratio: 3 / 4;
   background: #fff;
   position: relative;
   overflow: hidden;
@@ -442,8 +443,9 @@ a:hover {
 .product-picture img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  padding: 13px;
+  aspect-ratio: auto;
+  object-fit: cover;
+  padding: 0;
 }
 .product-meta {
   padding: 13px 13px 15px;
@@ -481,8 +483,8 @@ a:hover {
 .card-disclosure {
   display: inline-block;
   font-size: 9px;
-  color: #806652;
-  border: 1px solid #ebdfd3;
+  color: #666666;
+  border: 1px solid #e5e5e5;
   padding: 2px 5px;
   border-radius: 2px;
   margin-top: 10px;
@@ -561,7 +563,7 @@ a:hover {
   display: flex;
   align-items: center;
   gap: 9px;
-  background: #eaeae6;
+  background: #eaeaea;
   padding: 12px;
   margin-bottom: 16px;
   border-radius: 5px;
@@ -587,9 +589,9 @@ a:hover {
   margin-bottom: 14px;
 }
 .active-filters span {
-  background: #fff1e8;
+  background: #f2f2f2;
   color: var(--primary);
-  border: 1px solid #e8cbb9;
+  border: 1px solid #d4d4d4;
   font-size: 11px;
 }
 .pagination {
@@ -621,15 +623,15 @@ a:hover {
 .product-detail .detail-price {
   color: var(--primary);
   font-size: 30px;
-  background: #faf4ef;
+  background: #f5f5f5;
   padding: 16px;
   margin-bottom: 10px;
 }
 .demo-note {
   font-size: 11px;
   background: var(--secondary);
-  color: #79432b;
-  border: 1px solid #ead7c9;
+  color: #525252;
+  border: 1px solid #d4d4d4;
   border-radius: 4px;
   padding: 10px 12px;
 }
@@ -1032,7 +1034,7 @@ footer {
     gap: 10px;
   }
   .product-picture img {
-    padding: 10px;
+    padding: 0;
   }
   .product-meta {
     padding: 11px;

@@ -4,6 +4,7 @@ import re
 import unicodedata
 
 from app.domain.catalog import Category
+from app.domain.menswear import MENSWEAR_GROUPS
 from app.domain.search import (
     FilterConstraint,
     Modality,
@@ -228,6 +229,14 @@ def _positive_text(text: str) -> str:
     return " ".join(" ".join(parts).split())
 
 
+def category_names(category: Category) -> tuple[str, ...]:
+    for _, _, leaves in MENSWEAR_GROUPS:
+        for identifier, _, aliases in leaves:
+            if category.id == identifier:
+                return (category.name_vi, *aliases)
+    return (category.name_vi,)
+
+
 def _category_present(raw: str, name: str) -> bool:
     canonical: dict[str, set[str]] = {}
     for token in re.findall(r"[^\W_]+", name.lower()):
@@ -255,8 +264,9 @@ def _mentions(
     found: dict[str, set[str]] = {}
     category_spans: list[tuple[int, int, str]] = []
     for category in categories:
-        for match in re.finditer(rf"\b{re.escape(normalize(category.name_vi))}\b", text):
-            category_spans.append((match.start(), match.end(), category.id))
+        for name in category_names(category):
+            for match in re.finditer(rf"\b{re.escape(normalize(name))}\b", text):
+                category_spans.append((match.start(), match.end(), category.id))
     occupied: set[int] = set()
     for start, end, identifier in sorted(category_spans, key=lambda row: -(row[1] - row[0])):
         if occupied.intersection(range(start, end)):
@@ -353,9 +363,26 @@ class RuleQueryParser:
             hard[key] = FilterConstraint(key, value, origin, 1.0, op)
 
         normalized = _positive_text(normalized)
-        matches = [c for c in self.categories if _category_present(raw, c.name_vi)]
+        matches = [
+            c
+            for c in self.categories
+            if any(_category_present(raw, name) for name in category_names(c))
+        ]
         if matches:
-            winner = max(matches, key=lambda c: (len(normalize(c.name_vi)), c.level))
+            winner = max(
+                matches,
+                key=lambda c: (
+                    max(
+                        (
+                            len(normalize(name))
+                            for name in category_names(c)
+                            if _category_present(raw, name)
+                        ),
+                        default=0,
+                    ),
+                    c.level,
+                ),
+            )
             add("category", winner.id)
         elif re.search(r"\bao len\b", normalized):
             add("category", "ao-len-nam|ao-len-nu", "inferred", "any")
@@ -377,9 +404,8 @@ class RuleQueryParser:
             _positive_text(normalize(attribute_source)),
         )
         if matches:
-            attribute_text = re.sub(
-                rf"\b{re.escape(normalize(winner.name_vi))}\b", " ", attribute_text
-            )
+            for name in category_names(winner):
+                attribute_text = re.sub(rf"\b{re.escape(normalize(name))}\b", " ", attribute_text)
         for alias, canonical in sorted(COLORS.items(), key=lambda p: -len(p[0])):
             if re.search(rf"\b{re.escape(alias)}\b", attribute_text):
                 add("color", canonical)

@@ -1825,6 +1825,18 @@
             "minLength": 1,
             "title": "Product Id"
           },
+          "product_size_id": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "exclusiveMinimum": 0.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Product Size Id"
+          },
           "quantity": {
             "type": "integer",
             "maximum": 99.0,
@@ -1924,6 +1936,18 @@
             "maxLength": 80,
             "minLength": 1,
             "title": "Product Id"
+          },
+          "product_size_id": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "exclusiveMinimum": 0.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Product Size Id"
           },
           "quantity": {
             "type": "integer",
@@ -2220,6 +2244,28 @@
       },
       "DraftBody": {
         "properties": {
+          "sizes": {
+            "anyOf": [
+              {
+                "items": {
+                  "$ref": "#/components/schemas/SizeStock"
+                },
+                "type": "array",
+                "maxItems": 6,
+                "minItems": 1
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Sizes"
+          },
+          "stock": {
+            "type": "integer",
+            "maximum": 1000000.0,
+            "minimum": 0.0,
+            "title": "Stock"
+          },
           "name": {
             "type": "string",
             "maxLength": 250,
@@ -2239,22 +2285,59 @@
             "title": "Category Id"
           },
           "image_id": {
-            "type": "string",
-            "maxLength": 100,
-            "minLength": 1,
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 100,
+                "minLength": 1
+              },
+              {
+                "type": "null"
+              }
+            ],
             "title": "Image Id"
+          },
+          "image_url": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 2048,
+                "minLength": 1
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Image Url"
+          },
+          "image_urls": {
+            "anyOf": [
+              {
+                "items": {
+                  "type": "string",
+                  "maxLength": 2048,
+                  "minLength": 1
+                },
+                "type": "array",
+                "maxItems": 10,
+                "minItems": 1
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Image Urls"
+          },
+          "image_rights_confirmed": {
+            "type": "boolean",
+            "title": "Image Rights Confirmed",
+            "default": false
           },
           "price_vnd": {
             "type": "integer",
             "maximum": 1000000000000.0,
             "exclusiveMinimum": 0.0,
             "title": "Price Vnd"
-          },
-          "stock": {
-            "type": "integer",
-            "maximum": 1000000.0,
-            "minimum": 0.0,
-            "title": "Stock"
           },
           "color": {
             "type": "string",
@@ -2274,6 +2357,18 @@
             "minLength": 1,
             "title": "Size"
           },
+          "brand": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 80
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Brand"
+          },
           "original_data_confirmed": {
             "type": "boolean",
             "const": true,
@@ -2283,12 +2378,11 @@
         "additionalProperties": false,
         "type": "object",
         "required": [
+          "stock",
           "name",
           "description",
           "category_id",
-          "image_id",
           "price_vnd",
-          "stock",
           "color",
           "material",
           "size",
@@ -2344,24 +2438,166 @@
       },
       "OfferBody": {
         "properties": {
-          "price_vnd": {
-            "type": "integer",
-            "maximum": 1000000000000.0,
-            "exclusiveMinimum": 0.0,
-            "title": "Price Vnd"
+          "sizes": {
+            "anyOf": [
+              {
+                "items": {
+                  "$ref": "#/components/schemas/SizeStock"
+                },
+                "type": "array",
+                "maxItems": 6,
+                "minItems": 1
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Sizes"
           },
           "stock": {
             "type": "integer",
             "maximum": 1000000.0,
             "minimum": 0.0,
             "title": "Stock"
+          },
+          "price_vnd": {
+            "type": "integer",
+            "maximum": 1000000000000.0,
+            "exclusiveMinimum": 0.0,
+            "title": "Price Vnd"
+          },
+          "name": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 250,
+                "minLength": 3
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Name"
+          },
+          "description": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 3000,
+                "minLength": 10
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Description"
+          },
+          "category_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 80,
+                "minLength": 1
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Category Id"
+          },
+          "image_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 100,
+                "minLength": 1
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Image Id"
+          },
+          "image_url": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 2048,
+                "minLength": 1
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Image Url"
+          },
+          "image_urls": {
+            "anyOf": [
+              {
+                "items": {
+                  "type": "string",
+                  "maxLength": 2048,
+                  "minLength": 1
+                },
+                "type": "array",
+                "maxItems": 10,
+                "minItems": 1
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Image Urls"
+          },
+          "image_rights_confirmed": {
+            "type": "boolean",
+            "title": "Image Rights Confirmed",
+            "default": false
+          },
+          "color": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 40,
+                "minLength": 1
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Color"
+          },
+          "material": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 100,
+                "minLength": 1
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Material"
+          },
+          "brand": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 80
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Brand"
           }
         },
         "additionalProperties": false,
         "type": "object",
         "required": [
-          "price_vnd",
-          "stock"
+          "stock",
+          "price_vnd"
         ],
         "title": "OfferBody"
       },
@@ -2370,6 +2606,28 @@
           "product_id": {
             "type": "string",
             "title": "Product Id"
+          },
+          "product_size_id": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Product Size Id"
+          },
+          "size": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Size"
           },
           "name": {
             "type": "string",
@@ -2645,6 +2903,24 @@
             },
             "type": "array",
             "title": "Images",
+            "default": []
+          },
+          "sizes": {
+            "items": {
+              "additionalProperties": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "integer"
+                  }
+                ]
+              },
+              "type": "object"
+            },
+            "type": "array",
+            "title": "Sizes",
             "default": []
           }
         },
@@ -2990,6 +3266,35 @@
           "notices"
         ],
         "title": "SearchResponse"
+      },
+      "SizeStock": {
+        "properties": {
+          "size": {
+            "type": "string",
+            "enum": [
+              "S",
+              "M",
+              "L",
+              "XL",
+              "XXL",
+              "F"
+            ],
+            "title": "Size"
+          },
+          "stock": {
+            "type": "integer",
+            "maximum": 1000000.0,
+            "minimum": 0.0,
+            "title": "Stock"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "size",
+          "stock"
+        ],
+        "title": "SizeStock"
       },
       "StatusBody": {
         "properties": {

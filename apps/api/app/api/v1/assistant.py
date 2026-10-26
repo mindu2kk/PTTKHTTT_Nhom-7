@@ -1,12 +1,15 @@
 from typing import Annotated, Literal
 
-from fastapi import APIRouter, Depends, HTTPException
+from fastapi import APIRouter, BackgroundTasks, Depends, HTTPException
 from pydantic import BaseModel, ConfigDict, Field, model_validator
 
 from app.api.v1.catalog import ProductResponse
-from app.api.v1.search import SearchRequest, SearchResponse
+from app.api.v1.commerce import optional_actor
+from app.api.v1.search import SearchRequest, SearchResponse, remember_safely
+from app.application.commerce import CommerceService
 from app.application.shopping_assistant import ShoppingAssistant
-from app.core.dependencies import shopping_assistant
+from app.core.dependencies import commerce_service, shopping_assistant
+from app.domain.commerce import Actor
 from app.domain.media import MediaError
 from app.domain.search import SearchOptions
 
@@ -19,11 +22,20 @@ class DescribeRequest(SearchRequest):
 
 
 @router.post("/describe", response_model=SearchResponse)
-async def describe(body: DescribeRequest, service: Service) -> SearchResponse:
+async def describe(
+    body: DescribeRequest,
+    service: Service,
+    actor: Annotated[Actor | None, Depends(optional_actor)],
+    commerce: Annotated[CommerceService, Depends(commerce_service)],
+    tasks: BackgroundTasks,
+) -> SearchResponse:
     try:
         options = SearchOptions(**body.model_dump(exclude={"q", "modality", "mode"}))
-        result = await service.describe(body.q, options, body.mode == "visual")
-        return SearchResponse.model_validate(result)
+        result = await service.describe(body.q, options, body.mode == "visual", body.modality)
+        response = SearchResponse.model_validate(result)
+        if actor:
+            tasks.add_task(remember_safely, commerce, actor, result)
+        return response
     except MediaError as error:
         raise HTTPException(error.status, error.message) from error
 

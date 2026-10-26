@@ -1,16 +1,14 @@
 import Link from "next/link";
-import { ArrowRight, Shirt, Headphones, Lamp, Footprints } from "lucide-react";
+import { ArrowRight, Shirt, ShoppingBag, Footprints } from "lucide-react";
 import { serverApi } from "@/lib/server-api";
 import type { Category, ProductPage } from "@/lib/api";
 import { ProductCard } from "@/components/product-card";
 import { MarketplaceBanner } from "@/components/marketplace-banner";
 
-const ROOT_ORDER = ["thoi-trang-nam", "thoi-trang-nu", "dien-tu", "gia-dung"];
 const CATEGORY_ICONS = {
-  "thoi-trang-nam": Shirt,
-  "thoi-trang-nu": Footprints,
-  "dien-tu": Headphones,
-  "gia-dung": Lamp,
+  "nam-ao": Shirt,
+  "nam-quan": Footprints,
+  "nam-phu-kien": ShoppingBag,
 };
 
 export default async function Home() {
@@ -19,11 +17,11 @@ export default async function Home() {
     serverApi<ProductPage>("/products?page_size=24"),
   ]);
   const roots = categories
-    .filter((c) => c.level === 0)
-    .sort((a, b) => ROOT_ORDER.indexOf(a.id) - ROOT_ORDER.indexOf(b.id));
+    .filter((c) => c.level === 1 && c.parent_id === "nam")
+    .sort((a, b) => a.sort_order - b.sort_order);
   return (
     <>
-      <h1 className="sr-only">HoodooMart</h1>
+      <h1 className="sr-only">Hoodoo</h1>
       <MarketplaceBanner />
       <nav className="wrap home-category-links" aria-label="Khám phá danh mục">
         {roots.map((category) => {

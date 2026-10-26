@@ -27,6 +27,7 @@ from app.infrastructure.models import (
     SourceProduct,
 )
 from app.infrastructure.seed import add, normalized
+from app.infrastructure.sizes import initialize_sizes
 
 ROOT = Path(__file__).resolve().parents[4]
 SOURCE = "amazon-berkeley-objects"
@@ -317,6 +318,7 @@ async def load_catalog(
             version=1,
             updated_at=stamp,
         )
+        await initialize_sizes(session, pid)
         created += 1
     return {
         "created": created,

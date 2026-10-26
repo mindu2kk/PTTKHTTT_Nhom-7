@@ -19,12 +19,17 @@ export function CartSync() {
         setCartAccount(true);
         if (!wasActive && !readCart().length) {
           const cart = await api<{
-            items: { product_id: string; quantity: number }[];
+            items: {
+              product_id: string;
+              product_size_id: number;
+              quantity: number;
+            }[];
           }>("/cart");
           if (live && cart.items.length)
             writeCart(
               cart.items.map((i) => ({
                 id: i.product_id,
+                product_size_id: i.product_size_id,
                 quantity: i.quantity,
               })),
             );

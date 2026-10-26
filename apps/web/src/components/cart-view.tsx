@@ -2,12 +2,18 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { api, money, Product } from "@/lib/api";
-import { readCart, writeCart, useCart } from "@/components/guest-cart";
+import {
+  readCart,
+  writeCart,
+  useCart,
+  sameLine,
+  type CartLine,
+} from "@/components/guest-cart";
 import { CheckoutForm } from "@/components/checkout-form";
 import { ProductPhoto } from "@/components/product-photo";
 export function CartView() {
   const cart = useCart();
-  const key = cart.map((p) => p.id).join(",");
+  const key = [...new Set(cart.map((p) => p.id))].join(",");
   const [products, setProducts] = useState<Product[]>([]);
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(true);
@@ -44,15 +50,22 @@ export function CartView() {
       (products.find((p) => p.id === line.id)?.price_vnd || 0) * line.quantity,
     0,
   );
-  function quantity(id: string, value: number) {
+  function quantity(line: CartLine, value: number) {
     if (value < 1 || value > 99) return;
-    const p = products.find((p) => p.id === id);
-    if (!p || value > p.available_quantity) {
+    const p = products.find((p) => p.id === line.id);
+    const size = p?.sizes.find((s) => s.id === line.product_size_id);
+    if (
+      !p ||
+      !size ||
+      value > Math.min(Number(size.available_quantity), p.available_quantity)
+    ) {
       setError("Số lượng vượt quá tồn kho hiện tại.");
       return;
     }
     writeCart(
-      readCart().map((p) => (p.id === id ? { ...p, quantity: value } : p)),
+      readCart().map((p) =>
+        sameLine(p, line) ? { ...p, quantity: value } : p,
+      ),
     );
   }
   if (loading) return <p role="status">Đang kiểm tra giỏ hàng…</p>;
@@ -69,7 +82,10 @@ export function CartView() {
             {cart.map((line) => {
               const product = products.find((p) => p.id === line.id);
               return (
-                <article key={line.id} className="cart-line">
+                <article
+                  key={`${line.id}-${line.product_size_id ?? "legacy"}`}
+                  className="cart-line"
+                >
                   {product && (
                     <ProductPhoto
                       src={product.image_url}
@@ -87,8 +103,59 @@ export function CartView() {
                       </Link>
                     </h2>
                     <p>
-                      {product?.color} · {product?.size}
+                      {product?.color} · Size{" "}
+                      {product?.sizes.find((s) => s.id === line.product_size_id)
+                        ?.size || "Chưa chọn"}
                     </p>
+                    {product && (
+                      <label>
+                        Size
+                        <select
+                          aria-label={`Size ${product.name_vi}`}
+                          value={line.product_size_id ?? ""}
+                          onChange={(e) => {
+                            const id = Number(e.target.value);
+                            const current = readCart();
+                            if (
+                              current.some(
+                                (r) =>
+                                  !sameLine(r, line) &&
+                                  r.id === line.id &&
+                                  r.product_size_id === id,
+                              )
+                            ) {
+                              setError(
+                                "Size này đã có trong giỏ. Hãy sửa số lượng ở dòng tương ứng.",
+                              );
+                              return;
+                            }
+                            writeCart(
+                              current.map((r) =>
+                                sameLine(r, line)
+                                  ? { ...r, product_size_id: id, quantity: 1 }
+                                  : r,
+                              ),
+                            );
+                          }}
+                        >
+                          <option value="" disabled>
+                            Chọn size
+                          </option>
+                          {product.sizes.map((s) => (
+                            <option
+                              key={s.id}
+                              value={s.id}
+                              disabled={Number(s.available_quantity) === 0}
+                            >
+                              {s.size}
+                              {Number(s.available_quantity) === 0
+                                ? " — Hết hàng"
+                                : ""}
+                            </option>
+                          ))}
+                        </select>
+                      </label>
+                    )}
                     <strong>{money(product?.price_vnd || 0)}</strong>
                     <p className="fine-print">
                       Giá đặt thử · Không có thanh toán thật
@@ -96,20 +163,22 @@ export function CartView() {
                     <div className="quantity-control">
                       <button
                         aria-label={`Giảm số lượng ${product?.name_vi}`}
-                        onClick={() => quantity(line.id, line.quantity - 1)}
+                        onClick={() => quantity(line, line.quantity - 1)}
                       >
                         −
                       </button>
                       <output aria-label="Số lượng">{line.quantity}</output>
                       <button
                         aria-label={`Tăng số lượng ${product?.name_vi}`}
-                        onClick={() => quantity(line.id, line.quantity + 1)}
+                        onClick={() => quantity(line, line.quantity + 1)}
                       >
                         +
                       </button>
                       <button
                         onClick={() =>
-                          writeCart(readCart().filter((p) => p.id !== line.id))
+                          writeCart(
+                            readCart().filter((p) => !sameLine(p, line)),
+                          )
                         }
                       >
                         Xóa

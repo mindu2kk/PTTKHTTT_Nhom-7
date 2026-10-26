@@ -41,6 +41,22 @@ class SearchOptions:
     allow_relax: tuple[str, ...] = ()
 
 
+@dataclass(frozen=True)
+class SearchRecordItem:
+    product_id: str
+    rank: int
+    score: float
+    explanation: str
+    relevance_score: float = 0.0
+    preference_score: float = 0.0
+
+
+@dataclass(frozen=True)
+class SearchRecord:
+    query: QueryRepresentation
+    items: tuple[SearchRecordItem, ...]
+
+
 class QueryParser(Protocol):
     def parse(self, text: str, modality: Modality) -> QueryRepresentation: ...
 
