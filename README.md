@@ -1,5 +1,100 @@
 # HoodooMart
 
+## Chạy project trên máy mới clone
+
+Các bước dưới đây dành cho Windows, chạy bằng PowerShell tại thư mục gốc project.
+Đây là cách khởi động với dữ liệu demo đi kèm repo; dữ liệu trên máy đang phát triển không tự đi theo Git.
+
+### 1. Chuẩn bị
+
+- Cài Git, PowerShell 7 và Python **3.12 hoặc 3.13**; thêm Python vào PATH khi cài.
+- Cài và mở Docker Desktop, sử dụng **Linux containers**.
+- Cần Internet cho lần đầu tải Docker images và dependencies. Chạy toàn bộ bằng Docker không cần cài Node.js riêng.
+
+### 2. Clone và tạo môi trường
+
+Thay `<URL_REPOSITORY>` bằng URL Git của project. Nếu đã clone thì chỉ cần mở PowerShell trong thư mục project và chạy setup.
+
+```powershell
+git clone <URL_REPOSITORY>
+cd PTTKHTTT_Nhom-7
+.\scripts\setup.ps1
+```
+
+Setup tạo `.env` với mật khẩu database ngẫu nhiên, tạo `.venv` và cài dependencies Python; giữ nguyên `.env` nếu đã tồn tại. Không đưa `.env` lên Git.
+
+Nếu PowerShell chặn chạy script, cho phép trong phiên hiện tại rồi chạy lại:
+
+```powershell
+Set-ExecutionPolicy -Scope Process Bypass
+.\scripts\setup.ps1
+```
+
+### 3. Build và khởi động
+
+Đặt `LOCAL_ONLY=true` và `DATA_PROFILE=real_demo` trong `.env` trước khi khởi động.
+
+```powershell
+docker compose --env-file .env -f infra/docker-compose.yml up -d --build --wait
+```
+
+Compose tự chạy `alembic upgrade head` qua service `migrate` trước khi khởi động API.
+
+### 4. Nhập catalog sản phẩm
+
+Sau khi các dịch vụ ở mục 3 đã khởi động, nhập dữ liệu từ file `data/demo/catalog.json` đi kèm repo:
+
+```powershell
+docker compose --env-file .env -f infra/docker-compose.yml cp data/demo/catalog.json api:/tmp/hoodoomart-catalog.json
+
+docker compose --env-file .env -f infra/docker-compose.yml exec -T api sh -c 'python -m app.infrastructure.shop_sample --rights-reviewed < /tmp/hoodoomart-catalog.json'
+```
+
+File catalog chứa 19 sản phẩm đã được duyệt cho demo, sử dụng URL ảnh trực tiếp nên cần Internet khi nhập và xem ảnh.
+
+Có thể chạy lại lệnh nhập: bản ghi giống hệt được tái sử dụng, không reset kho hoặc đơn hàng hiện có. Nếu dữ liệu nguồn khác bản đã nhập, hệ thống sẽ từ chối để đối chiếu.
+
+Không chạy `seed` hoặc `course_fixture` cho catalog này. Mở [danh sách sản phẩm](http://localhost:3000/products) để kiểm tra.
+
+### 5. Mở và kiểm tra
+
+- Website: [http://localhost:3000](http://localhost:3000).
+- API docs: [http://localhost:8000/docs](http://localhost:8000/docs).
+- Đăng ký tài khoản trên website để đặt thử. Không có mật khẩu quản trị mặc định; cấp vai trò theo [RUNBOOK](docs/RUNBOOK.md#tài-khoản-vai-trò-và-đơn-mẫu).
+
+```powershell
+docker compose --env-file .env -f infra/docker-compose.yml ps
+Invoke-RestMethod http://localhost:8000/health/ready
+```
+
+### 6. Dữ liệu hiện tại và chức năng AI
+
+Catalog 19 sản phẩm được cung cấp qua `data/demo/catalog.json`, nhập theo mục 4. Tài khoản, giỏ hàng, đơn hàng, thay đổi dữ liệu trên từng máy và model AI không tự đồng bộ qua Git. File catalog tạo dữ liệu demo ban đầu; các chỉnh sửa sản phẩm sau đó trên máy khác không tự cập nhật khi chạy lại lệnh nhập.
+
+Website, tìm chữ và giỏ hàng vẫn dùng được khi thiếu model. Tìm ảnh/nhận giọng sẽ báo thiếu model; setup và Compose không tự tải weights. Đọc dung lượng, giấy phép và bước đồng ý trước khi tải tại [RUNBOOK](docs/RUNBOOK.md#trọng-số-và-chỉ-mục-ảnh), [thiết lập giọng nói](docs/LOCAL_VOICE_SETUP.md) và [thiết lập tìm ảnh](docs/LOCAL_IMAGE_SEARCH.md). Sau khi có model ảnh và catalog đã duyệt, cần chạy indexer theo hướng dẫn tìm ảnh.
+
+### 7. Chạy lại, dừng và xem lỗi
+
+Chạy lại những lần sau; thêm `--build` khi cần build lại mã nguồn đã thay đổi:
+
+```powershell
+docker compose --env-file .env -f infra/docker-compose.yml up -d --wait
+```
+
+Dừng project, giữ dữ liệu:
+
+```powershell
+docker compose --env-file .env -f infra/docker-compose.yml stop
+```
+
+Xem log khi khởi động lỗi:
+
+```powershell
+docker compose --env-file .env -f infra/docker-compose.yml logs --tail 100
+```
+
+Nếu cổng bị chiếm hoặc bị Windows loại trừ, xem [RUNBOOK](docs/RUNBOOK.md#quan-sát-lỗi-và-dừng). Khi đổi `POSTGRES_PORT` trong `.env`, đồng bộ cổng trong `DATABASE_URL` và `TEST_DATABASE_URL`. Không dùng `down -v` để sửa lỗi vì sẽ xóa volume database.
+
 ## Voice hiện tại — PhoWhisper-base int8
 
 Đã nâng cấp model tiếng Việt và sửa cấu hình không timestamp. Trên29 câu mới khóa trước đánh giá, WER36,56%→7,53%; đây là giọng đọc, có trùng speaker, chưa chứng minh đúng mọi ngữ cảnh/micro thật. Chạy CPU cục bộ, không API trả phí; giữ câu gốc và gợi ý từ catalog cần xác nhận.157 unit API,187 integration,20 worker,20 benchmark tests và Chrome đạt. [Báo cáo, nguồn model và rollback](docs/VOICE_UPGRADE_REPORT.md).
@@ -28,9 +123,11 @@ Chạy tuần tự sau build, dùng chứng cứ mới tại docs/evidence/marke
 
 Marketplace tiếng Việt chạy cục bộ: Next.js → FastAPI → PostgreSQL/pgvector và một worker OpenCLIP/Whisper CPU. `LOCAL_ONLY=true`, không API suy luận trả phí.
 
-## M8 hiện tại
+## Lịch sử M8 — catalog ABO
 
-**318 sản phẩm public, 624 ảnh nguồn hợp lệ và 624 vector tương thích.** Metadata/ảnh từ Amazon Berkeley Objects, CC BY 4.0, có ghi nguồn và lưu tên gốc. Giá, hạn mức đặt thử và đơn hàng được mô phỏng riêng; không phải giá/tồn kho của Amazon, không có thanh toán/giao hàng thật.
+Phần này ghi lại kết quả tại thời điểm M8, không phải catalog 19 sản phẩm dùng trong hướng dẫn chạy máy mới ở đầu README.
+
+**Tại thời điểm M8: 318 sản phẩm public, 624 ảnh nguồn hợp lệ và 624 vector tương thích.** Metadata/ảnh từ Amazon Berkeley Objects, CC BY 4.0, có ghi nguồn và lưu tên gốc. Giá, hạn mức đặt thử và đơn hàng được mô phỏng riêng; không phải giá/tồn kho của Amazon, không có thanh toán/giao hàng thật.
 
 - Header tìm kiếm văn bản/giọng/ảnh, danh mục API, storefront responsive, bộ lọc URL, sorting/pagination.
 - Gallery ảnh/phóng to, thông số nguồn, related products, giỏ/quantity/remove và checkout an toàn.
@@ -49,7 +146,9 @@ docker compose --env-file .env -f infra/docker-compose.yml up -d --build --wait
 
 `.env` hiện chọn `DATA_PROFILE=real_demo`; các thông số khác và dữ liệu đã được giữ nguyên. Không reset/xóa volume để sửa lỗi.
 
-## Tái tạo catalog đã duyệt trên máy mới
+## Tham khảo: tái tạo catalog ABO cũ
+
+Đây là quy trình dữ liệu ABO của M8, không cần chạy cho catalog 19 sản phẩm ở mục 4. Chỉ dùng khi chủ động tái tạo catalog ABO; cây danh mục public hiện đã chuyển sang thời trang nam nên không dùng quy trình này để kỳ vọng có catalog hiện tại.
 
 ```powershell
 .\scripts\setup.ps1
@@ -64,7 +163,7 @@ docker compose --env-file .env -f infra/docker-compose.yml up -d --build --wait
 
 `--reviewed` dùng đúng318 external IDs đã duyệt, không lấy ngẫu nhiên320 bản ghi mới. Tải chọn lọc từ nguồn chính thức, cache/partial và hash được kiểm. Trọng số không tự tải: nếu máy mới chưa có models, đọc dung lượng/giấy phép và bước đồng ý trong [RUNBOOK](docs/RUNBOOK.md) trước khi dùng `scripts/download_models.py`. Catalog/text/cart vẫn hoạt động khi chưa có model; ảnh/ASR báo thiếu model.
 
-Đăng ký tài khoản trên giao diện để đặt thử. Không có mật khẩu quản trị mặc định. Kênh quản lý real_demo được ghi rõ chỉ đọc; nhập mới phải qua review nguồn/ảnh. `demo_seed` vẫn dành cho fixture và thao tác M6 riêng.
+Đăng ký tài khoản trên giao diện để đặt thử. Không có mật khẩu quản trị mặc định. Admin trong `real_demo` có thể thêm, sửa, xuất bản và ẩn sản phẩm theo [hướng dẫn quản trị](docs/ADMIN_PRODUCTS.md); dữ liệu và ảnh phải qua kiểm tra quyền/nguồn. `demo_seed` dành cho fixture cũ và kiểm thử riêng, không dùng để dựng catalog thời trang nam hiện tại.
 
 ## Kiểm thử và đo
 
@@ -96,4 +195,4 @@ Tests chỉ dùng `TEST_DATABASE_URL` riêng có hậu tố `_test`. Không ch�
 - [Kiến trúc](docs/ARCHITECTURE.md) · [Schema](docs/DATA_DICTIONARY.md) · [API](docs/API_CONTRACTS.md)
 - Lịch sử: [M7 audit](docs/M7_COMPLETION_AUDIT.md), [slide audit](docs/SLIDE_AUDIT.md), [lựa chọn nhận giọng](docs/INFERENCE_OPTIONS.md).
 
-Giới hạn: catalog thật chưa mở rộng1000/3000; thời trang chủ yếu giày dép. Nhãn relevance ảnh là cùng source product ID, chưa là nghiên cứu người dùng/ảnh điện thoại. CPU/RAM/đĩa vẫn được sử dụng; miễn phí API không đồng nghĩa không tốn tài nguyên. Không đưa `.env`, `models/`, `data/private/`, hồ sơ trình duyệt hay log nhạy cảm lên kho công khai.
+Giới hạn của catalog ABO tại thời điểm M8: chưa mở rộng1000/3000; thời trang chủ yếu giày dép. Nhãn relevance ảnh là cùng source product ID, chưa là nghiên cứu người dùng/ảnh điện thoại. CPU/RAM/đĩa vẫn được sử dụng; miễn phí API không đồng nghĩa không tốn tài nguyên. Không đưa `.env`, `models/`, `data/private/`, hồ sơ trình duyệt hay log nhạy cảm lên kho công khai.
