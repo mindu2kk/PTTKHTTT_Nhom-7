@@ -1,0 +1,13 @@
+{
+  "encoded": 119,
+  "skipped_unchanged": 0,
+  "approved_images": 119,
+  "elapsed_ms": 350140.41,
+  "revision": "1a25a446712ba5ee05982a381eed697ef9b435cf",
+  "first_call": {
+    "model_load_ms": 11301.576,
+    "inference_ms": 20906.248
+  },
+  "profile": "real_demo",
+  "scope": "Current public catalog, primary and gallery, hash-checked; local inference"
+}

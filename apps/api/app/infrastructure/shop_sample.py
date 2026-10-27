@@ -26,7 +26,7 @@ from app.infrastructure.models import (
     SellerOffer,
     SourceProduct,
 )
-from app.infrastructure.product_image_url import inspect_image
+from app.infrastructure.product_image_url import inspect_image, validate_image_url
 from app.infrastructure.seed import add, normalized
 from app.infrastructure.sizes import initialize_sizes
 
@@ -37,13 +37,8 @@ def validate(record: dict[str, Any], rights_reviewed: bool) -> str:
     if not rights_reviewed:
         raise ValueError("Cần xác nhận quyền sử dụng sản phẩm và ảnh trước khi nhập.")
     image = urlsplit(record["image_url"])
-    if (
-        image.scheme != "https"
-        or image.netloc != "i.postimg.cc"
-        or image.query
-        or image.fragment
-        or len(record["image_url"]) > 180
-    ):
+    validate_image_url(record["image_url"])
+    if image.netloc == "i.postimg.cc" and (image.query or len(record["image_url"]) > 180):
         raise ValueError("Chỉ nhận URL ảnh trực tiếp HTTPS từ i.postimg.cc, tối đa 180 ký tự.")
     source = urlsplit(record["source_url"])
     match = re.search(r"-p(\d+)\.html$", source.path)
@@ -52,6 +47,8 @@ def validate(record: dict[str, Any], rights_reviewed: bool) -> str:
     for field in ("name", "description", "size", "color", "category_id"):
         if not isinstance(record.get(field), str) or not record[field].strip():
             raise ValueError(f"Thiếu trường {field}.")
+    if len(record["color"]) > 40 and len(split_options(record["color"])) < 2:
+        raise ValueError("Tên màu quá dài; hãy kiểm tra danh sách màu nguồn.")
     for field, minimum in (("price_vnd", 1), ("trial_stock", 0)):
         if type(record.get(field)) is not int or record[field] < minimum:
             raise ValueError(f"{field} phải là số nguyên hợp lệ.")
@@ -131,10 +128,13 @@ async def import_record(
         source_id=SOURCE,
         external_id=external,
         field_provenance={
-            "record": "DataShopping.xlsx; operator reviewed source import",
+            "record": record.get(
+                "record_origin", "DataShopping.xlsx; operator reviewed source import"
+            ),
             "source_url": record["source_url"],
             "rights": "Explicit user confirmation in chat, 2026-10-26",
-            "price_stock": (
+            "price_stock": record.get("price_stock_provenance")
+            or (
                 "Sheet price; random demo stock 5–20 approved by user; source stock missing"
                 if record.get("trial_stock_origin")
                 else "Copied sheet values for simulated trial; not live merchant stock/price"
@@ -160,7 +160,11 @@ async def import_record(
         sku="TRIAL-" + pid.upper(),
         size=record["size"],
         color=(
-            record["color"].lower() if record["color"] != "Chưa có thông tin" else record["color"]
+            "Nhiều màu"
+            if len(record["color"]) > 40
+            else record["color"].lower()
+            if record["color"] != "Chưa có thông tin"
+            else record["color"]
         ),
         option_values={
             "sku_origin": "generated trial identifier",

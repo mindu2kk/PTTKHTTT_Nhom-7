@@ -1,0 +1,92 @@
+{
+  "products": {
+    "before": 1177,
+    "after": 1277,
+    "added": 100,
+    "old_rows_unchanged": true
+  },
+  "product_variants": {
+    "before": 1177,
+    "after": 1277,
+    "added": 100,
+    "old_rows_unchanged": true
+  },
+  "seller_offers": {
+    "before": 1177,
+    "after": 1277,
+    "added": 100,
+    "old_rows_unchanged": true
+  },
+  "inventory": {
+    "before": 1177,
+    "after": 1277,
+    "added": 100,
+    "old_rows_unchanged": true
+  },
+  "product_images": {
+    "before": 1483,
+    "after": 1583,
+    "added": 100,
+    "old_rows_unchanged": true
+  },
+  "product_sizes": {
+    "before": 1192,
+    "after": 1388,
+    "added": 196,
+    "old_rows_unchanged": true
+  },
+  "orders": {
+    "before": 9,
+    "after": 9,
+    "added": 0,
+    "old_rows_unchanged": true
+  },
+  "order_items": {
+    "before": 10,
+    "after": 10,
+    "added": 0,
+    "old_rows_unchanged": true
+  },
+  "cart_items": {
+    "before": 1,
+    "after": 1,
+    "added": 0,
+    "old_rows_unchanged": true
+  },
+  "users": {
+    "before": 21,
+    "after": 21,
+    "added": 0,
+    "old_rows_unchanged": true
+  },
+  "user_roles": {
+    "before": 21,
+    "after": 21,
+    "added": 0,
+    "old_rows_unchanged": true
+  },
+  "source_products": {
+    "before": 1179,
+    "after": 1279,
+    "added": 100,
+    "old_rows_unchanged": true
+  },
+  "product_sources": {
+    "before": 1179,
+    "after": 1279,
+    "added": 100,
+    "old_rows_unchanged": true
+  },
+  "data_sources": {
+    "before": 9,
+    "after": 9,
+    "added": 0,
+    "old_rows_unchanged": true
+  },
+  "image_embeddings": {
+    "before": 1456,
+    "after": 1575,
+    "added": 119,
+    "old_rows_unchanged": true
+  }
+}

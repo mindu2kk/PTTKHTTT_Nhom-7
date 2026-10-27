@@ -1,0 +1,8 @@
+{
+  "query_product": "rhodi-p8743",
+  "top_k": 3,
+  "total": 3,
+  "top1": "rhodi-p8743",
+  "same_image_smoke_passed": true,
+  "scope": "Same source image; not an unseen-photo quality benchmark"
+}

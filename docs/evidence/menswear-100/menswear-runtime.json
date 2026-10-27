@@ -1,0 +1,37 @@
+{
+  "public_products": 119,
+  "new_products_verified": 100,
+  "source_categories": 19,
+  "queries": [
+    {
+      "query": "áo polo dưới 400 nghìn",
+      "total": 4,
+      "new_products_in_page": 3,
+      "budget_preserved": true
+    },
+    {
+      "query": "áo sơ mi dưới 400 nghìn",
+      "total": 8,
+      "new_products_in_page": 7,
+      "budget_preserved": true
+    },
+    {
+      "query": "mũ beanie dưới 200 nghìn",
+      "total": 6,
+      "new_products_in_page": 5,
+      "budget_preserved": true
+    },
+    {
+      "query": "balo dưới 600 nghìn",
+      "total": 8,
+      "new_products_in_page": 7,
+      "budget_preserved": true
+    },
+    {
+      "query": "thắt lưng dưới 300 nghìn",
+      "total": 8,
+      "new_products_in_page": 7,
+      "budget_preserved": true
+    }
+  ]
+}

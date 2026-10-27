@@ -19,11 +19,24 @@ from app.infrastructure import product_image_url
         "https://i.postimg.cc:443/a.jpg",
         "file:///etc/passwd",
         "javascript:alert(1)",
+        "https://pos.nvncdn.com/another-store/ps/a.jpg",
+        "https://pos.nvncdn.com/afec53-228676/store/a.jpg",
+        "https://pos.nvncdn.com/afec53-228676/ps/../a.jpg",
+        "https://pos.nvncdn.com/afec53-228676/ps/%2e%2e%2fa.jpg",
+        "https://pos.nvncdn.com/afec53-228676/ps/a.jpg?url=http://localhost",
+        "https://pos.nvncdn.com.evil.invalid/afec53-228676/ps/a.jpg",
+        "https://pos.nvncdn.com@127.0.0.1/afec53-228676/ps/a.jpg",
     ],
 )
 def test_rejects_unsafe_image_url_before_network(url):
     with pytest.raises(ValueError):
         product_image_url.validate_image_url(url)
+
+
+def test_allows_only_the_reviewed_rhodi_product_image_location():
+    product_image_url.validate_image_url(
+        "https://pos.nvncdn.com/afec53-228676/ps/Somi-tho-tui-8103-QS.jpg?v=1790932084"
+    )
 
 
 def mock_response(monkeypatch, status, content_type, content):

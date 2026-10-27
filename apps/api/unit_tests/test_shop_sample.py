@@ -32,6 +32,16 @@ def test_unreviewed_source_rejected():
         validate(sample_record(), False)
 
 
+def test_native_rhodi_image_still_requires_explicit_rights_review():
+    record = {
+        **sample_record(),
+        "image_url": "https://pos.nvncdn.com/afec53-228676/ps/Somi.jpg?v=1790932084",
+    }
+    assert validate(record, True) == "p9900001"
+    with pytest.raises(ValueError, match="quyền"):
+        validate(record, False)
+
+
 @pytest.mark.parametrize(
     "url",
     [

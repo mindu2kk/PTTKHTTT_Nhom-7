@@ -50,7 +50,9 @@ docker compose --env-file .env -f infra/docker-compose.yml cp data/demo/catalog.
 docker compose --env-file .env -f infra/docker-compose.yml exec -T api sh -c 'python -m app.infrastructure.shop_sample --rights-reviewed < /tmp/hoodoomart-catalog.json'
 ```
 
-File catalog chứa 19 sản phẩm đã được duyệt cho demo, sử dụng URL ảnh trực tiếp nên cần Internet khi nhập và xem ảnh.
+File catalog chứa 119 sản phẩm đã được duyệt cho demo (19 bản ghi gốc và 100 sản phẩm nam bổ sung), sử dụng URL ảnh trực tiếp từ Postimages hoặc kho ảnh Rhodi nên cần Internet khi nhập và xem ảnh.
+
+Chi tiết dữ liệu bổ sung, kiểm chứng và giới hạn: [Bổ sung 100 sản phẩm nam](docs/MENSWEAR_EXPANSION_100.md).
 
 Có thể chạy lại lệnh nhập: bản ghi giống hệt được tái sử dụng, không reset kho hoặc đơn hàng hiện có. Nếu dữ liệu nguồn khác bản đã nhập, hệ thống sẽ từ chối để đối chiếu.
 
@@ -69,7 +71,7 @@ Invoke-RestMethod http://localhost:8000/health/ready
 
 ### 6. Dữ liệu hiện tại và chức năng AI
 
-Catalog 19 sản phẩm được cung cấp qua `data/demo/catalog.json`, nhập theo mục 4. Tài khoản, giỏ hàng, đơn hàng, thay đổi dữ liệu trên từng máy và model AI không tự đồng bộ qua Git. File catalog tạo dữ liệu demo ban đầu; các chỉnh sửa sản phẩm sau đó trên máy khác không tự cập nhật khi chạy lại lệnh nhập.
+Catalog 119 sản phẩm được cung cấp qua `data/demo/catalog.json`, nhập theo mục 4. Riêng 100 bản ghi bổ sung ở `data/demo/catalog-menswear-100.json`, hồ sơ quyền và kiểm ảnh ở `data/sources/rhodi-menswear-100-review.json`. Tài khoản, giỏ hàng, đơn hàng, thay đổi dữ liệu trên từng máy và model AI không tự đồng bộ qua Git. File catalog tạo dữ liệu demo ban đầu; các chỉnh sửa sản phẩm sau đó trên máy khác không tự cập nhật khi chạy lại lệnh nhập.
 
 Website, tìm chữ và giỏ hàng vẫn dùng được khi thiếu model. Tìm ảnh/nhận giọng sẽ báo thiếu model; setup và Compose không tự tải weights. Đọc dung lượng, giấy phép và bước đồng ý trước khi tải tại [RUNBOOK](docs/RUNBOOK.md#trọng-số-và-chỉ-mục-ảnh), [thiết lập giọng nói](docs/LOCAL_VOICE_SETUP.md) và [thiết lập tìm ảnh](docs/LOCAL_IMAGE_SEARCH.md). Sau khi có model ảnh và catalog đã duyệt, cần chạy indexer theo hướng dẫn tìm ảnh.
 
@@ -125,7 +127,7 @@ Marketplace tiếng Việt chạy cục bộ: Next.js → FastAPI → PostgreSQL
 
 ## Lịch sử M8 — catalog ABO
 
-Phần này ghi lại kết quả tại thời điểm M8, không phải catalog 19 sản phẩm dùng trong hướng dẫn chạy máy mới ở đầu README.
+Phần này ghi lại kết quả tại thời điểm M8, không phải catalog 119 sản phẩm dùng trong hướng dẫn chạy máy mới ở đầu README.
 
 **Tại thời điểm M8: 318 sản phẩm public, 624 ảnh nguồn hợp lệ và 624 vector tương thích.** Metadata/ảnh từ Amazon Berkeley Objects, CC BY 4.0, có ghi nguồn và lưu tên gốc. Giá, hạn mức đặt thử và đơn hàng được mô phỏng riêng; không phải giá/tồn kho của Amazon, không có thanh toán/giao hàng thật.
 

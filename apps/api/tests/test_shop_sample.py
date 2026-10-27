@@ -7,8 +7,65 @@ from sqlalchemy import func, select, update
 from app.domain.catalog import CatalogFilter
 from app.infrastructure.catalog import SqlCatalogRepository
 from app.infrastructure.database import engine, session_factory
-from app.infrastructure.models import CategoryRow, DataSource, Inventory, ProductRow
+from app.infrastructure.models import (
+    CategoryRow,
+    DataSource,
+    Inventory,
+    ProductRow,
+    ProductSource,
+    ProductVariant,
+)
 from app.infrastructure.shop_sample import SOURCE, import_record
+
+
+async def test_page_import_records_actual_provenance_and_preserves_existing_stock():
+    record = {
+        "name": "Polo dữ liệu kiểm thử gốc",
+        "description": "Dữ liệu gốc dành riêng cho kiểm thử nhập theo trang nguồn.",
+        "category_id": "nam-polo",
+        "size": "M, L, XL",
+        "color": "Be nhạt, Xám nhạt, Xám, Nâu, Be, Trắng, Đen",
+        "price_vnd": 300000,
+        "trial_stock": 10,
+        "image_url": "https://pos.nvncdn.com/afec53-228676/ps/test-polo.jpg?v=1790932084",
+        "source_url": "https://rhodi.vn/test-p9900010.html",
+        "record_origin": "Rhodi product page snapshot; not an Excel row",
+        "price_stock_provenance": "Observed page price; local demo capacity, not merchant stock",
+    }
+    photo = {"width": 640, "height": 800, "sha256": "b" * 64}
+    async with session_factory() as session:
+        try:
+            await session.execute(
+                update(CategoryRow).where(CategoryRow.id.like("nam%")).values(is_active=True)
+            )
+            original = await session.get(Inventory, "offer-sweater-01")
+            before = (original.on_hand, original.reserved, original.version)
+            result = await import_record(session, record, photo, rights_reviewed=True)
+            source = await session.get(ProductSource, (result["id"], SOURCE))
+            assert source.field_provenance["record"] == record["record_origin"]
+            assert source.field_provenance["price_stock"] == record["price_stock_provenance"]
+            product = await SqlCatalogRepository(session, "real_demo").get_product(result["id"])
+            assert product and product.image_url == record["image_url"]
+            assert product.price_vnd == 300000 and product.available_quantity == 10
+            assert product.color == "Nhiều màu"
+            variant = await session.get(ProductVariant, "variant-" + result["id"])
+            assert variant.option_values["available_colors"] == [
+                "Be nhạt",
+                "Xám nhạt",
+                "Xám",
+                "Nâu",
+                "Be",
+                "Trắng",
+                "Đen",
+            ]
+            assert sum(s["available_quantity"] for s in product.sizes) == 10
+            assert (original.on_hand, original.reserved, original.version) == before
+            assert (await import_record(session, record, photo, rights_reviewed=True))["reused"]
+            with pytest.raises(ValueError, match="quyền"):
+                await import_record(session, record, photo, rights_reviewed=False)
+        finally:
+            await session.rollback()
+    await engine.dispose()
 
 
 async def test_bulk_dry_run_and_invalid_category_roll_back(monkeypatch, capsys):

@@ -14,9 +14,9 @@ export default function Sources() {
       <section>
         <h2>Mẫu thời trang Rhodi</h2>
         <p>
-          Các sản phẩm từ bảng dữ liệu người vận hành cung cấp. Người vận hành
+          Các sản phẩm từ bảng dữ liệu người vận hành cung cấp và các trang sản phẩm Rhodi đã duyệt. Người vận hành
           đã xác nhận quyền sử dụng sản phẩm và ảnh cho web demo. Ảnh được tải
-          trực tiếp từ Postimages trong trình duyệt; không lưu file ảnh vào project.
+          trực tiếp từ Postimages hoặc kho ảnh Rhodi trong trình duyệt; không lưu file ảnh vào project.
           Đây không phải tuyên bố ảnh thuộc giấy phép mở hay shop bảo trợ Hoodoo.
         </p>
         <p>Giá và số lượng chỉ dùng để đặt thử, không xác nhận tồn kho trực tiếp của shop.</p>

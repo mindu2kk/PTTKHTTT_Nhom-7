@@ -1,5 +1,13 @@
 # Kế hoạch và trạng thái M0–M8
 
+## Bổ sung 100 sản phẩm nam — 2026-10-27
+
+Hoàn tất nhập100 sản phẩm Rhodi đã được người dùng duyệt quyền, public catalog119
+và19 danh mục. Giữ nguyên mọi hàng cũ qua đối chiếu hash, thêm119 vector ảnh public,
+kiểm5 truy vấn chữ và một truy vấn cùng ảnh/top1;42 tests liên quan và mypy45 file đạt.
+Không thay gate chất lượng ASR hay benchmark ảnh khác góc. Dữ liệu, lỗi vận hành,
+giới hạn và lệnh tại [MENSWEAR_EXPANSION_100](MENSWEAR_EXPANSION_100.md).
+
 ## Top-K tìm ảnh — 2026-10-26
 
 Đã thêm Top-K1–100 cho cả hai UI ảnh và API, giới hạn trước phân trang.

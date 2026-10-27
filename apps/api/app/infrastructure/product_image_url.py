@@ -2,6 +2,7 @@
 
 import hashlib
 import io
+import re
 from typing import Any
 from urllib.parse import urlsplit
 
@@ -11,13 +12,22 @@ from PIL import Image
 
 def validate_image_url(url: str) -> None:
     parsed = urlsplit(url)
+    postimages = parsed.netloc == "i.postimg.cc"
+    rhodi_photo = (
+        parsed.netloc == "pos.nvncdn.com"
+        and re.fullmatch(
+            r"/afec53-228676/ps/[A-Za-z0-9_.()-]+\.(?:jpg|jpeg|png|webp)", parsed.path, re.I
+        )
+        is not None
+        and (not parsed.query or re.fullmatch(r"v=\d+", parsed.query) is not None)
+    )
     if (
         parsed.scheme != "https"
-        or parsed.netloc != "i.postimg.cc"
+        or not (postimages or rhodi_photo)
         or parsed.fragment
         or len(url) > 2048
     ):
-        raise ValueError("Hãy dùng URL ảnh trực tiếp HTTPS từ i.postimg.cc, tối đa 2048 ký tự.")
+        raise ValueError("Hãy dùng URL ảnh HTTPS từ Postimages hoặc kho ảnh Rhodi đã duyệt.")
 
 
 async def fetch_image(url: str) -> bytes:

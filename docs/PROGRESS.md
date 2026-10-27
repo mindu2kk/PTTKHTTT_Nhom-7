@@ -1,5 +1,17 @@
 # Tiến độ hiện tại
 
+## Bổ sung 100 sản phẩm nam — 2026-10-27
+
+Đã nhập100 sản phẩm Rhodi mới sau xác nhận quyền của người dùng, cùng cấu trúc
+và19 danh mục của catalog Hùng; public19→119. File catalog tổng119 và lô100 riêng
+đã lưu trong data/demo, có manifest kiểm ảnh/quyền. Hash hàng cũ ở15 bảng giữ
+nguyên, gồm giá/kho, tài khoản/quyền, giỏ và9 đơn/10 dòng đơn. Đã index119 ảnh
+public bằng model cục bộ có sẵn; thử cùng ảnh sản phẩm mới trả đúng top1/K3.
+5 truy vấn chữ có sản phẩm mới và giữ ngân sách;42 tests liên quan, mypy45 file,
+build API/frontend đạt. Đã xem119 sản phẩm và ảnh trên trình duyệt;4 dịch vụ healthy.
+Các lỗi thiếu RAM/kết nối, giới hạn size và bằng chứng được ghi tại
+[MENSWEAR_EXPANSION_100](MENSWEAR_EXPANSION_100.md).
+
 ## Top-K tìm ảnh — 2026-10-26
 
 Hai giao diện tìm ảnh có K1–100, mặc định10. API giới hạn tổng kết quả trước

@@ -1,0 +1,752 @@
+{
+  "source_id": "rhodi-user-reviewed",
+  "batch": "menswear-100-20261026",
+  "rights_status": "approved",
+  "rights_basis": "Explicit human user confirmation in this chat: Co quyen su dung, nhap 100 san pham; 2026-10-26",
+  "allowed_use": "Local HoodooMart web catalog, same use as existing Rhodi records",
+  "license": "User-confirmed permission; no open license or shop endorsement claimed",
+  "record_count": 100,
+  "catalog_count_after_import": 119,
+  "batch_sha256": "245c0f623f241ae354051469d9650e2207c06e907cdadc13b84b110d37cc7bcb",
+  "categories": {
+    "nam-polo": 4,
+    "nam-ao-so-mi": 7,
+    "nam-tanktop": 5,
+    "nam-cardigan-khoac-nhe": 7,
+    "nam-ao-ni-len": 7,
+    "nam-ao-khoac": 5,
+    "nam-quan-lung": 2,
+    "nam-quan-au-vai": 7,
+    "nam-quan-khaki": 4,
+    "nam-quan-jeans": 2,
+    "nam-quan-ni": 1,
+    "nam-vong-charm": 7,
+    "nam-mu": 7,
+    "nam-balo-tui": 7,
+    "nam-day-lung-xich": 7,
+    "nam-khan-gang-tay": 5,
+    "nam-giay-tat": 6,
+    "nam-kinh-mat": 6,
+    "nam-ao-pull": 4
+  },
+  "images": [
+    {
+      "source_url": "https://rhodi.vn/polo-tui-tam.giac-007-binli-c3-p8743.html",
+      "sha256": "bc47aa7ad315c84a24dfcb676b59e12ec0c2d00128fd954836aebd32eefd4750",
+      "width": 2160,
+      "height": 2700,
+      "bytes": 969014
+    },
+    {
+      "source_url": "https://rhodi.vn/somi-tho-tui-8103-qs-p11834.html",
+      "sha256": "14aef609c85f340aa9c62bde10bfc3d4eb1fa596715c8d64a915918560d947cb",
+      "width": 2160,
+      "height": 2700,
+      "bytes": 1161310
+    },
+    {
+      "source_url": "https://rhodi.vn/tank-doi-mu-13325-yzz-p9689.html",
+      "sha256": "f14b24a5e285363ab4a065039edc8a0ccc20531b625bb7124fd1df9699a6c5c3",
+      "width": 2061,
+      "height": 2576,
+      "bytes": 631200
+    },
+    {
+      "source_url": "https://rhodi.vn/khoac-denim-bo-t2516.a-p12308.html",
+      "sha256": "5719c895ad1ea0c42c328535b3af141546f3f373236b11299c8afad9b2b9cae4",
+      "width": 1024,
+      "height": 1280,
+      "bytes": 303566
+    },
+    {
+      "source_url": "https://rhodi.vn/ho-theu-qp-3530-yzz-p11191.html",
+      "sha256": "f054433e98bb79df9690e0a3c46388667fc39177e4da443d0027438570965be4",
+      "width": 2048,
+      "height": 2560,
+      "bytes": 1356041
+    },
+    {
+      "source_url": "https://rhodi.vn/khoac-da-tui-13837-ktn-p11267.html",
+      "sha256": "e3bc2f19467c37982b420668abcc33ae3faca5b1c7baccf1c6e53c32ff7bdd7d",
+      "width": 1920,
+      "height": 2560,
+      "bytes": 1141598
+    },
+    {
+      "source_url": "https://rhodi.vn/quan-tag-ngua-880862-ann-c3-p9114.html",
+      "sha256": "d59d77dc94b5edff377878f5a31be8f492e0e4ab20c8816e071907d34cc74117",
+      "width": 2048,
+      "height": 2560,
+      "bytes": 815084
+    },
+    {
+      "source_url": "https://rhodi.vn/quan-cuc-den-x012-sm-c4-p8942.html",
+      "sha256": "1fffb8e36215c41c2c0a775dddbf8955908ff538537ffb3a0ca9874424f5ad3e",
+      "width": 2160,
+      "height": 2700,
+      "bytes": 1264635
+    },
+    {
+      "source_url": "https://rhodi.vn/quan-cargo-tron-23313-nx-c4-p8813.html",
+      "sha256": "caa5bbc3a16cc493277d3f832fc0e59c5683312f744dc4820940ef5aaf3b894d",
+      "width": 2044,
+      "height": 2554,
+      "bytes": 1025258
+    },
+    {
+      "source_url": "https://rhodi.vn/quan-jeans-suong-t168-ns-p12283.html",
+      "sha256": "d907beb9ff45c5ddb7bf50e77e08bbd52760fdb88305b38ae02f325ae6bee7b8",
+      "width": 2048,
+      "height": 2560,
+      "bytes": 496950
+    },
+    {
+      "source_url": "https://rhodi.vn/quan-bo-tron-23017-tl-p9840.html",
+      "sha256": "7de48923cdb3d0dcc88fd527fd6d2b67d66bbb142753549391b2cead8cd5be45",
+      "width": 2048,
+      "height": 2560,
+      "bytes": 488882
+    },
+    {
+      "source_url": "https://rhodi.vn/nhan-bac-925-n74-song-don-p12228.html",
+      "sha256": "c8473d3ff09067b5631212cf9cd7b0f9da0d28417b261e9beb4f2ca7735b1ed8",
+      "width": 2048,
+      "height": 2560,
+      "bytes": 613745
+    },
+    {
+      "source_url": "https://rhodi.vn/mu-lt-matin-26137-c3-kv-p12570.html",
+      "sha256": "7c3d398d0742240947e35aa286ed15ef65943600b67789e96c6bb926799222f3",
+      "width": 1926,
+      "height": 2568,
+      "bytes": 624587
+    },
+    {
+      "source_url": "https://rhodi.vn/tui-kinh-mini-1205-ea-p12312.html",
+      "sha256": "cd0e3fee13f438ec6f9548c364bc2d2cecf727e65aec1890acee78d50c1fe1b3",
+      "width": 1556,
+      "height": 1945,
+      "bytes": 833195
+    },
+    {
+      "source_url": "https://rhodi.vn/that-lung-tl-5205-tron-tim-p12231.html",
+      "sha256": "3510cab8bd052336bd3969aeaf1332aa29abf2047acb08cae191bebfc55f67c3",
+      "width": 1556,
+      "height": 1945,
+      "bytes": 846683
+    },
+    {
+      "source_url": "https://rhodi.vn/khan-bandana-25kh18-hoa-tiet-p12360.html",
+      "sha256": "c15a4400b62139c59deeb904fe80bf4e734bc7f25ff66f18dabaf5c275694b32",
+      "width": 1333,
+      "height": 1666,
+      "bytes": 527031
+    },
+    {
+      "source_url": "https://rhodi.vn/tat-tron-cao-co-t306-ds-p11869.html",
+      "sha256": "a5ce21a016cd71bfd391a91cd2fa93cde48206242e51404831d204e6b7be8e5e",
+      "width": 2050,
+      "height": 2560,
+      "bytes": 405449
+    },
+    {
+      "source_url": "https://rhodi.vn/kinh-kkt-tr13565220145-us-p12330.html",
+      "sha256": "3a7892575c3479248c9983b16563478120db51435e13770d500be9282423cd8f",
+      "width": 1333,
+      "height": 1666,
+      "bytes": 319567
+    },
+    {
+      "source_url": "https://rhodi.vn/polo-co-gan-51016-sp-c4-p8736.html",
+      "sha256": "c4c83c7d1b9572678d79800fe3b0ee4454cb8a002a90e4123116371f53613078",
+      "width": 2160,
+      "height": 2700,
+      "bytes": 1395987
+    },
+    {
+      "source_url": "https://rhodi.vn/somi-oxford-kg-24001-lk-p9644.html",
+      "sha256": "c706152d3e7f95e774149e58aa762be804003b15a729224193a00599010661de",
+      "width": 2048,
+      "height": 2560,
+      "bytes": 564018
+    },
+    {
+      "source_url": "https://rhodi.vn/tank-bare-kg-24004-lk-p9629.html",
+      "sha256": "563a059f079f07ec624e991a4bf6b6fb76d584050d36a12d9751091cf87c16b8",
+      "width": 2048,
+      "height": 2560,
+      "bytes": 640299
+    },
+    {
+      "source_url": "https://rhodi.vn/khoac-keo-casual-3380-dn-p11632.html",
+      "sha256": "9a2703a3ca2e1e61ea157829a5702baa654ddb8373eeaa9c3aa515de7d6a644e",
+      "width": 1556,
+      "height": 1945,
+      "bytes": 871498
+    },
+    {
+      "source_url": "https://rhodi.vn/ao-len-thung-5825-bzd-p10765.html",
+      "sha256": "229501ed0c95b326bf1e44f1dcdb83fdc5cbbdbc2e3093b00ddf86ba3060e3ad",
+      "width": 2048,
+      "height": 2560,
+      "bytes": 1238103
+    },
+    {
+      "source_url": "https://rhodi.vn/khoac-suede-phoi-1015-mr-p10998.html",
+      "sha256": "d407379ef9c379790539b302080901f12ca2b7364ac729fc3a382562eca1c8e3",
+      "width": 1478,
+      "height": 1847,
+      "bytes": 343977
+    },
+    {
+      "source_url": "https://rhodi.vn/quan-dung-li-x013-sm-c4-p8929.html",
+      "sha256": "792a19aeaf663d9c156977f4d09af03fa65c667044a606989bff629d8ace72a3",
+      "width": 2160,
+      "height": 2700,
+      "bytes": 1269217
+    },
+    {
+      "source_url": "https://rhodi.vn/quan-cargo-mai-23329-nx-c3-p8788.html",
+      "sha256": "e014ffa700ce86f94c41110978180cc5f2c8eef36a9e87c6783cba56fc65edd9",
+      "width": 2044,
+      "height": 2554,
+      "bytes": 1165019
+    },
+    {
+      "source_url": "https://rhodi.vn/quan-jeans-tron-3968-zc-p10574.html",
+      "sha256": "1195bcd4cfe3bae868e19022bc8fd557c14fe2f270299fcf30482341ba5d89d9",
+      "width": 2048,
+      "height": 2560,
+      "bytes": 473356
+    },
+    {
+      "source_url": "https://rhodi.vn/nhan-bac-925-n71-thap-tron-p12227.html",
+      "sha256": "b8c54a18ae97e7e140a0464636cb09b3f9ded06040750721af23016d0cae3d58",
+      "width": 1638,
+      "height": 2048,
+      "bytes": 248803
+    },
+    {
+      "source_url": "https://rhodi.vn/mu-beanie-noble-26132-c4-m11-p12555.html",
+      "sha256": "f310901f2bc8c15ebdbc22ee12c29e477132b9f9244b561865746ef3bacdc69d",
+      "width": 1926,
+      "height": 2568,
+      "bytes": 849199
+    },
+    {
+      "source_url": "https://rhodi.vn/balo-16812.p-da-bldd-c3-p12250.html",
+      "sha256": "5d4803b61cd42ccd3c7c6a979f5656c96dbaa5a6a2c68e9aa9f31131fbf8622c",
+      "width": 2048,
+      "height": 2560,
+      "bytes": 785453
+    },
+    {
+      "source_url": "https://rhodi.vn/that-lung-tl-5210-ba-cai-p12186.html",
+      "sha256": "fa661270156af3f5bd42da642490d6a63fae1a3987280aec2036a6ae10379934",
+      "width": 1554,
+      "height": 1945,
+      "bytes": 829042
+    },
+    {
+      "source_url": "https://rhodi.vn/khan-da-tron-2485-p12287.html",
+      "sha256": "6c730008b84504f5c90f5560fbfa7d42dbddc27514b6271c55c09d3d0408c50b",
+      "width": 2044,
+      "height": 2554,
+      "bytes": 714930
+    },
+    {
+      "source_url": "https://rhodi.vn/dep-easy-togo-xt580-g1-p11581.html",
+      "sha256": "1ff4552a4276f2bc28274b97df5a5609387397b1b44419b1cfd54507e5605551",
+      "width": 1080,
+      "height": 1350,
+      "bytes": 1615997
+    },
+    {
+      "source_url": "https://rhodi.vn/kinh-kkt-tr380295117145-af-p12326.html",
+      "sha256": "31373580b1158e39ce93d592d5a908e7cab5124599a9c4f69acb0ded14f635c3",
+      "width": 1478,
+      "height": 1847,
+      "bytes": 433855
+    },
+    {
+      "source_url": "https://rhodi.vn/ao-giu-nhiet-9018-zc-x-p10513.html",
+      "sha256": "e221cb5a34af1eb0494e17219fea09f941cb7104b82d89dc50ed6912dc9e81f9",
+      "width": 1838,
+      "height": 2560,
+      "bytes": 1243488
+    },
+    {
+      "source_url": "https://rhodi.vn/polo-vai-xuoc-84003-sp-c4-p8726.html",
+      "sha256": "17a53bb5ab649dd5b45f209bb7b48ff5f780be742bc38b8ef61dd95b52f8a0be",
+      "width": 1080,
+      "height": 1350,
+      "bytes": 1039160
+    },
+    {
+      "source_url": "https://rhodi.vn/somi-linen-kg-24002-lk-p9640.html",
+      "sha256": "79e05a40f9f43dd310315c4f45842cce7d29c012a3199bd179268eeefa2ef14e",
+      "width": 2048,
+      "height": 2560,
+      "bytes": 535411
+    },
+    {
+      "source_url": "https://rhodi.vn/tank-cuc-tan-13330-yzz-p9426.html",
+      "sha256": "c601b5c356b6d3bfa96ddd9cdc0860cbe852523113fa6f9df03a988e2a04e60e",
+      "width": 2050,
+      "height": 2560,
+      "bytes": 506362
+    },
+    {
+      "source_url": "https://rhodi.vn/khoac-set-zip-p004-add-p11276.html",
+      "sha256": "08d66692eba71d60889c0d1c65d5669306127d9e857cbb48f89a335c96131b38",
+      "width": 2048,
+      "height": 2560,
+      "bytes": 555979
+    },
+    {
+      "source_url": "https://rhodi.vn/car-len-thung-5005-bc-x-p10737.html",
+      "sha256": "d12600de8506e89a8d0bfe479ca1435bb46b611fe981aaaaa8d8456530e13f69",
+      "width": 2048,
+      "height": 2560,
+      "bytes": 1067320
+    },
+    {
+      "source_url": "https://rhodi.vn/khoac-suede-tron-995-mr-p10985.html",
+      "sha256": "b2ce90757b2dcc387dcb50ad7e9b87a648553701337d31598e4c97ed5d999294",
+      "width": 1478,
+      "height": 1847,
+      "bytes": 353221
+    },
+    {
+      "source_url": "https://rhodi.vn/quan-au-lung-27616-bc-p4-p8428.html",
+      "sha256": "28aa5d0ecdef77924de1b84f140f2c65444b5d382f090ac70c2e2fe12240b959",
+      "width": 1638,
+      "height": 2048,
+      "bytes": 181728
+    },
+    {
+      "source_url": "https://rhodi.vn/quan-suong-tho-k86-mag-c4-p8830.html",
+      "sha256": "def66768f0e21a28196bb791726ee949a612c86187fb9d939ae47b757a933ab2",
+      "width": 2160,
+      "height": 2700,
+      "bytes": 1076330
+    },
+    {
+      "source_url": "https://rhodi.vn/quan-kaki-jeans-88156-nx-c4-p8077.html",
+      "sha256": "aa0d9109c9b44e0edbce8a38a56a4271ecdb58faaf5905b1e5ac2d736e16af65",
+      "width": 2044,
+      "height": 2554,
+      "bytes": 1116033
+    },
+    {
+      "source_url": "https://rhodi.vn/nhan-bac-925-n69-thap-lon-p12226.html",
+      "sha256": "ea700d05dddeb5c8c54330e534ee2403260116c8ee54cccd29c71c02fb61550f",
+      "width": 1638,
+      "height": 2048,
+      "bytes": 275685
+    },
+    {
+      "source_url": "https://rhodi.vn/mu-beanie-chu.d-26131-c4-m11-p12551.html",
+      "sha256": "97da5e40abc082aa26bd024fef64dcad5425271c49cd70cd0348660c687b19ca",
+      "width": 1926,
+      "height": 2568,
+      "bytes": 683628
+    },
+    {
+      "source_url": "https://rhodi.vn/balo-da-16825.p-bldd-c3-p12249.html",
+      "sha256": "02818d24cf96f968b02613f745d3f8e44fb3e2e18870927a8965b18145dba884",
+      "width": 2048,
+      "height": 2560,
+      "bytes": 821871
+    },
+    {
+      "source_url": "https://rhodi.vn/that-lung-tl-5212-vuong-mem-chi-p12185.html",
+      "sha256": "5f91f39f55545c02ef834d5b11576b2f33013e0c4402854dc4368109aa582809",
+      "width": 1556,
+      "height": 1945,
+      "bytes": 797957
+    },
+    {
+      "source_url": "https://rhodi.vn/caravat-y256-do-hoa-tiet-p12224.html",
+      "sha256": "38523a42b3123d2b3242f540c570cf5e786db150f6714796a14688c9c0d5473d",
+      "width": 1333,
+      "height": 1666,
+      "bytes": 450724
+    },
+    {
+      "source_url": "https://rhodi.vn/giay-loafer-den-620121-yh-p10797.html",
+      "sha256": "56afc874f60a92187d0a926863716b5aded0acad7c915e3f91e8ff69c41fe545",
+      "width": 2048,
+      "height": 2560,
+      "bytes": 1385059
+    },
+    {
+      "source_url": "https://rhodi.vn/kinh-kkt-tr668045118131-us-p12324.html",
+      "sha256": "3eed30d2bba52dd7036a7d4c026bada2432e745b825c9acb76201b7e35aefb41",
+      "width": 1556,
+      "height": 1945,
+      "bytes": 691496
+    },
+    {
+      "source_url": "https://rhodi.vn/pull-ke-gattier-1175-sv-p9474.html",
+      "sha256": "b3c5430eda85e801c76b16b5c359209c2773e9f47df9c40890c6fe81076bcf56",
+      "width": 2048,
+      "height": 2560,
+      "bytes": 743946
+    },
+    {
+      "source_url": "https://rhodi.vn/polo-det-kim-26376-mby-c4-p8398.html",
+      "sha256": "842b236b29e21251ae17cc0b944f3e3ee5ad7c9a807a7269e909716c20e20c1c",
+      "width": 2160,
+      "height": 2700,
+      "bytes": 1180837
+    },
+    {
+      "source_url": "https://rhodi.vn/somi-drift-kg-24003-lk-p9636.html",
+      "sha256": "4e3ab8df12f1dae376b0bdc2344ae3434df52d8cd7c811b2b81420897c09faee",
+      "width": 2048,
+      "height": 2560,
+      "bytes": 553137
+    },
+    {
+      "source_url": "https://rhodi.vn/tank-dan-soi-44916-ff-p9233.html",
+      "sha256": "5056870421242921443a10906c4b003689cdee916eededd41ed10413964ba76d",
+      "width": 2080,
+      "height": 2600,
+      "bytes": 630055
+    },
+    {
+      "source_url": "https://rhodi.vn/car-len-tieu-3306-bc-x-p10659.html",
+      "sha256": "b5f83ce3c25684a2092c6b751030748d205e1669428262ff1e6fb309cc7a48f5",
+      "width": 1556,
+      "height": 1945,
+      "bytes": 711362
+    },
+    {
+      "source_url": "https://rhodi.vn/len-thung-cao-5108-jm-x-p10723.html",
+      "sha256": "c287cf7fe7b8b1759786f04f8558b0a7d423717cd69f361d4f40ecc32142c1ea",
+      "width": 2048,
+      "height": 2560,
+      "bytes": 487597
+    },
+    {
+      "source_url": "https://rhodi.vn/khoac-da-bong-8803-z.w-x-p10756.html",
+      "sha256": "9fe71374f277a6ffc0973c83ceb0b1d213fb2a6aab922d6485dd72c5bdaf721d",
+      "width": 1920,
+      "height": 2560,
+      "bytes": 336998
+    },
+    {
+      "source_url": "https://rhodi.vn/quan-au-dai-7286-sm-c4-p8440.html",
+      "sha256": "2859f349014e83f3861f8d28b5a317de42fbf2df92f1937cbcef26106ce00723",
+      "width": 1926,
+      "height": 2568,
+      "bytes": 639220
+    },
+    {
+      "source_url": "https://rhodi.vn/quan-tag-tron-23625-nx-c4-p8032.html",
+      "sha256": "6d08ed165ec6678824b821f51ec66db84660b069460e8d17f709bf2a7f2c93d8",
+      "width": 2044,
+      "height": 2554,
+      "bytes": 1083224
+    },
+    {
+      "source_url": "https://rhodi.vn/moc-keybag-2577-voi-den-p12215.html",
+      "sha256": "2381e7ebf33d33aadc5fa73c3748c6dbb68195d8a0ff0723a88faea64537a23f",
+      "width": 1478,
+      "height": 1847,
+      "bytes": 392848
+    },
+    {
+      "source_url": "https://rhodi.vn/mu-len-nhun-26130-c4-m11-p12548.html",
+      "sha256": "ca9b117e997bd8e429b2f67c1a42de38d01d339c85b018bbe1dd763f5f1e8158",
+      "width": 1926,
+      "height": 2568,
+      "bytes": 840552
+    },
+    {
+      "source_url": "https://rhodi.vn/balo-16826.p-da-bldd-c3-p12248.html",
+      "sha256": "9b2eafed4904f5094384db7aa51bc41434e9a458afefc24d2fc810dc08a81842",
+      "width": 2048,
+      "height": 2560,
+      "bytes": 735432
+    },
+    {
+      "source_url": "https://rhodi.vn/xich-deo-x17-mat-cuoi-p12117.html",
+      "sha256": "3a0b751048ef3ee4b20c7addf667bcc7bfbaa10ae26de0cfe27a9bdda3c49ea3",
+      "width": 1556,
+      "height": 1945,
+      "bytes": 727368
+    },
+    {
+      "source_url": "https://rhodi.vn/caravat-y255-soc-nen-reu-p12223.html",
+      "sha256": "6f823c9a470cdcd08fc24a76c8c330f83564f68c18b76f3c6d21c5ad85a27e74",
+      "width": 1478,
+      "height": 1847,
+      "bytes": 426532
+    },
+    {
+      "source_url": "https://rhodi.vn/giay-mule-suede-9325-yh-p4-p8702.html",
+      "sha256": "a3f6a3d43e440e1c8a9d42a01f331a5a19d34c721ab43485e629f31e5e8d9eea",
+      "width": 2160,
+      "height": 2700,
+      "bytes": 1101224
+    },
+    {
+      "source_url": "https://rhodi.vn/kinh-kkt-tr171875414146-us-p12321.html",
+      "sha256": "0f638ab82d44f01efe9b741906fe725e44d804ea211164e0e158ec8dc64458b3",
+      "width": 1459,
+      "height": 1945,
+      "bytes": 772503
+    },
+    {
+      "source_url": "https://rhodi.vn/somi-linen-tron-3206-kim-p9555.html",
+      "sha256": "05166bf44d4fdfa276737c1f3c3186158e5193ef9f87060ab220f3448b0f1aac",
+      "width": 2080,
+      "height": 2600,
+      "bytes": 716706
+    },
+    {
+      "source_url": "https://rhodi.vn/tank-coc-gogebs-5339-kps-e4-p9026.html",
+      "sha256": "daff9d29d543452fcb56cde2409a130dad95e4d9139d42544b0895a5e7559b81",
+      "width": 1638,
+      "height": 2047,
+      "bytes": 165987
+    },
+    {
+      "source_url": "https://rhodi.vn/car-vien-co-m172-x-p10598.html",
+      "sha256": "b99a9e4f87bc9380c9ee9f58d9dc7edf334ccea43bbf6bbdc03c7705ddfdc033",
+      "width": 1920,
+      "height": 2560,
+      "bytes": 428525
+    },
+    {
+      "source_url": "https://rhodi.vn/len-co-cao-72600-tll-x-p10708.html",
+      "sha256": "253b309de3b869ff3639ee56c79ebbb5d041aeeb9afcc782df45a8aaa3495fd9",
+      "width": 1920,
+      "height": 2560,
+      "bytes": 694267
+    },
+    {
+      "source_url": "https://rhodi.vn/quan-au-gon-a128-to-c4-p8344.html",
+      "sha256": "13b2c6932613703fde1797e104bee8cbf48671257715d3b89221d275a4562197",
+      "width": 2160,
+      "height": 2700,
+      "bytes": 1259574
+    },
+    {
+      "source_url": "https://rhodi.vn/moc-keybag-2576-gang-tay-supreme-barbie-p12214.html",
+      "sha256": "be66f008edb29b410ad0ddf5639e97f831cc2faf1c638d05e11100170c7f5d3f",
+      "width": 1386,
+      "height": 1732,
+      "bytes": 329198
+    },
+    {
+      "source_url": "https://rhodi.vn/mu-len-thap-26135-p12510.html",
+      "sha256": "86fe468f49aa3849920ed75aec68b10b3050c82fe3158a6863668ca1801b300f",
+      "width": 1926,
+      "height": 2568,
+      "bytes": 675564
+    },
+    {
+      "source_url": "https://rhodi.vn/balo-da-16791.p-bldd-c3-p12247.html",
+      "sha256": "b078c96267608d0bb8cc53b9d1f585d76f56c5dde386891d4061787bbeee5543",
+      "width": 2048,
+      "height": 2560,
+      "bytes": 747946
+    },
+    {
+      "source_url": "https://rhodi.vn/that-lung-tet-tl.26709-tl5-den-p12060.html",
+      "sha256": "7a32458394cfad3f728044e5d7cd4dff0981940371bf935f3cf812867c10ea9b",
+      "width": 1920,
+      "height": 2560,
+      "bytes": 2341774
+    },
+    {
+      "source_url": "https://rhodi.vn/giay-mule-suede-9310-yh-p4-p8694.html",
+      "sha256": "e670cadd05f797d2f1bfd33bec1b64a176eb8ecca617307340430da8ddf64323",
+      "width": 2160,
+      "height": 2700,
+      "bytes": 1042757
+    },
+    {
+      "source_url": "https://rhodi.vn/kinh-kkt-8460-alko-p12278.html",
+      "sha256": "09141de49922b7af081c192946e23ae43a230b0a35700d907e20f2095c88b45b",
+      "width": 1478,
+      "height": 1847,
+      "bytes": 410141
+    },
+    {
+      "source_url": "https://rhodi.vn/pull-coc-explore-9719-kps-c5-p9046.html",
+      "sha256": "897a46df14484e2548dfd8961457cc73d8f4e8525bb581b79791a13ea01eec4e",
+      "width": 1874,
+      "height": 2560,
+      "bytes": 916811
+    },
+    {
+      "source_url": "https://rhodi.vn/somi-theu-chim-038-mag-p9331.html",
+      "sha256": "bd8c201280721f52b6606ab50889d12655525e3c7203bf892fdfbffea9515bc0",
+      "width": 2057,
+      "height": 2571,
+      "bytes": 657290
+    },
+    {
+      "source_url": "https://rhodi.vn/car-double-cuc-62339-zc-x-p10552.html",
+      "sha256": "0a5233b91e4d002695257de2828cc9efdf90903ab2194ddd71dff709a8ef41a5",
+      "width": 2080,
+      "height": 2600,
+      "bytes": 1887189
+    },
+    {
+      "source_url": "https://rhodi.vn/len-polo-tron-3322-bc-x-p10677.html",
+      "sha256": "e526a67eb07848607d519cf9f60cc41ecd2d15e2402fa43a0a57ceeb477e8b28",
+      "width": 2052,
+      "height": 2566,
+      "bytes": 1273463
+    },
+    {
+      "source_url": "https://rhodi.vn/khoac-suede-co-1007-mr-p10315.html",
+      "sha256": "bc8ee6c89814306413c3101c1b341b12190738ed904366d6b1e7b32cd20c9834",
+      "width": 1478,
+      "height": 1847,
+      "bytes": 298795
+    },
+    {
+      "source_url": "https://rhodi.vn/quan-au-dung-a238-to-c4-p8327.html",
+      "sha256": "ed1db11e2ea507db4190c6fd1d6691e4feecca1dc57bda9845fd3734ca346036",
+      "width": 2160,
+      "height": 2700,
+      "bytes": 1347857
+    },
+    {
+      "source_url": "https://rhodi.vn/moc-keybag-2575-gang-do-golf-p12207.html",
+      "sha256": "abe2b3b2fc0216029e2b491856a50a8953bb8d9270834892e6db06e6ec3258f4",
+      "width": 1476,
+      "height": 1845,
+      "bytes": 284048
+    },
+    {
+      "source_url": "https://rhodi.vn/mu-coi-tron-26112-m17-nau-day-be-p12048.html",
+      "sha256": "c5dba8a8ff743288b5308366bd8e5d4b29d6b3dd748358accd450b65078275b9",
+      "width": 1170,
+      "height": 1438,
+      "bytes": 261636
+    },
+    {
+      "source_url": "https://rhodi.vn/balo-16359n-bldd-c3-p12187.html",
+      "sha256": "6cc9f610cd40cbeaf249646d1e57cd435efa98b5524fe13eb6c774964a6b2451",
+      "width": 2048,
+      "height": 2560,
+      "bytes": 658405
+    },
+    {
+      "source_url": "https://rhodi.vn/that-lung-suede-tl.26712-tl5-nau-p12057.html",
+      "sha256": "428ef4233488a670dc691c85fbbc0793dfff4665e0883fa47c8bc1c71fc8df88",
+      "width": 2048,
+      "height": 2560,
+      "bytes": 2508807
+    },
+    {
+      "source_url": "https://rhodi.vn/caravat-y253-soc-nen-than-p12221.html",
+      "sha256": "f04496a282180cc216ba0f1a4f92e2b3ef17a0d10c31f922f377928b835b779b",
+      "width": 1478,
+      "height": 1847,
+      "bytes": 785683
+    },
+    {
+      "source_url": "https://rhodi.vn/giay-tron-gan-2026-yh-p4-p7942.html",
+      "sha256": "e4af5fb9becb0fe49cacfb65e7f9c5780218a2726c012218b280065856bc99d4",
+      "width": 1642,
+      "height": 2190,
+      "bytes": 506909
+    },
+    {
+      "source_url": "https://rhodi.vn/kinh-kkt-22395617145-sp-p12149.html",
+      "sha256": "00628c78bfb952657b6af543f3323461991864bcdec59cfde02dfddd884148a5",
+      "width": 1556,
+      "height": 1945,
+      "bytes": 797002
+    },
+    {
+      "source_url": "https://rhodi.vn/pull-chu-chim-3378-kps-c5-p9039.html",
+      "sha256": "b8f4b6b4ab2314b2439585261c22a2df34940f3372ed967054671d9b9bf880e8",
+      "width": 2048,
+      "height": 2560,
+      "bytes": 1143954
+    },
+    {
+      "source_url": "https://rhodi.vn/somi-ke-streetrush-037-mag-c2-p9327.html",
+      "sha256": "bc797f7da991c2682d47966f60d954f119e4753f17900638076bebe088f040a5",
+      "width": 2042,
+      "height": 2554,
+      "bytes": 595892
+    },
+    {
+      "source_url": "https://rhodi.vn/vest-da-xuongca-232-cxh-x-p10410.html",
+      "sha256": "42473bff1e1f4e2e14c54a82e2a1711311c947c81870bbf49b6a4e4073706c74",
+      "width": 1478,
+      "height": 1847,
+      "bytes": 319633
+    },
+    {
+      "source_url": "https://rhodi.vn/ho-len-long-72566-toa-x-p10666.html",
+      "sha256": "03cc1c775cd7ad7c746e27aa931482d12824533151390abb8c9f14357ff276b3",
+      "width": 2048,
+      "height": 2560,
+      "bytes": 766660
+    },
+    {
+      "source_url": "https://rhodi.vn/quan-gan-tui-1207-sm-c4-p8304.html",
+      "sha256": "56c0b6917474e35ec81ed9444acd4b42dd159836f704b547f66ece974d29b092",
+      "width": 2160,
+      "height": 2700,
+      "bytes": 1126006
+    },
+    {
+      "source_url": "https://rhodi.vn/nhan-bac-925-n66-ban-do-p12198.html",
+      "sha256": "3ff076186e40f454b1ac657befb7e66b4b000393adb97c07b9ba385294096d5e",
+      "width": 1404,
+      "height": 1754,
+      "bytes": 386087
+    },
+    {
+      "source_url": "https://rhodi.vn/mu-coi-tron-26114-m17-thua-day-nau-p12047.html",
+      "sha256": "3f5878a9e003b9f0eb17a9e3e97906562eb7c4c834f32eee9bd55b7d7f00feb0",
+      "width": 1148,
+      "height": 1435,
+      "bytes": 358297
+    },
+    {
+      "source_url": "https://rhodi.vn/tui-mini-1213-cai-trang-p11939.html",
+      "sha256": "7e2d19aea6d307c450531e4116e234e25ea5635fae44991df7d8c4bce709eda6",
+      "width": 1478,
+      "height": 1847,
+      "bytes": 229325
+    },
+    {
+      "source_url": "https://rhodi.vn/that-lung-suede-tl.26713-tl5-kaki-p12056.html",
+      "sha256": "5a22d8046958b4399a0f770b173ec22dc1f8751e63f384836cc3b1d5eaf6191d",
+      "width": 1920,
+      "height": 2560,
+      "bytes": 2342681
+    }
+  ],
+  "excluded_cross_listings": [
+    {
+      "id": "11940",
+      "reason": "Source cross-listing does not match the pull category"
+    },
+    {
+      "id": "10558",
+      "reason": "Source cross-listing does not match the pull category"
+    },
+    {
+      "id": "9273",
+      "reason": "Source cross-listing does not match the pull category"
+    }
+  ],
+  "missing_values": "Preserved as Chua co thong tin; no material or size guessed",
+  "stock_policy": "Fixed local demo capacity 10 per new product; not live stock",
+  "publication": "Published 100 new records on 2026-10-27; API public total 119; old rows hash-verified unchanged",
+  "display_color_policy": "Full source color strings preserved in raw JSON and available_colors; over-40-character lists display Nhieu mau"
+}
